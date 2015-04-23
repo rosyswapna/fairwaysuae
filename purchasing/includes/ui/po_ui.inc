@@ -53,6 +53,10 @@ function copy_to_cart()
 }
 // ------------------------------------------------------------------------------
 
+
+//---------------------------------------------------------------------------------
+
+
 function get_supplier_details_to_order(&$order, $supplier_id)
 {
 	$sql = "SELECT curr_code, supp_name, tax_group_id, supp.tax_included,
@@ -395,8 +399,8 @@ function po_item_controls(&$order, &$rowcounter, $line_no=-1)
 //		hidden('line_no', ($_SESSION['PO']->lines_on_order + 1));
 
 		//Chaitanya : Manufcatured item can be purchased
-		stock_items_list_cells(null, 'stock_id', null, false, true, false, true);
-		//stock_purchasable_items_list_cells(null, 'stock_id', null, false, true, true);
+		//stock_items_list_cells(null, 'stock_id', null, false, true, false, true);
+		purchase_items_list_cells(null, 'stock_id', null, false, true, true);
 		if (list_updated('stock_id')) {
 			    $Ajax->activate('price');
 			    $Ajax->activate('units');
@@ -454,6 +458,35 @@ function po_item_controls(&$order, &$rowcounter, $line_no=-1)
 
 //---------------------------------------------------------------------------------------------------
 
+//--------------------------------------------------------------------------------
+function add_to_order(&$order, $new_item, $new_item_qty, $price, $description, $req_del_date)
+{
+	// calculate item price to sum of kit element prices factor for 
+	// value distribution over all exploded kit items
+	
+	$kit = get_item_kit($new_item);
+	$item_num = db_num_rows($kit);
 
+	while($item = db_fetch($kit)) {
 
-?>
+		$item_num--;
+		if (!$item_num) {
+			if ($item['quantity']) 
+				$price = $price/$item['quantity'];
+		}
+
+	 	if (!$item['is_foreign'] && $item['item_code'] != $item['stock_id'])
+	 	{	// this is sales kit - recurse
+			
+			
+			add_to_order($order, $item['stock_id'], $new_item_qty*$item['quantity'],$price); 
+			
+		}else{	// stock item record eventually with foreign code
+
+			$order->add_to_order (count($order->line_items), $item['stock_id'],$new_item_qty*$item['quantity'], $description, $price, '',$order->trans_type == ST_PURCHORDER ? $req_del_date : '', 0, 0);
+	
+	 	}
+	}
+
+}
+//---------------------------------------------------------------------------------

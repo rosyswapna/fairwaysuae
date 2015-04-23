@@ -928,6 +928,64 @@ function stock_costable_items_list_cells($label, $name, $selected_id=null,
 }
 
 //------------------------------------------------------------------------------------
+
+//
+// Select item via foreign code.
+//
+function purchase_items_list($name, $selected_id=null, $all_option=false, 
+	$submit_on_change=false, $type='', $opts=array())
+{
+	global $all_items;
+	// all sales codes
+	$sql = "SELECT i.item_code, i.description, c.description, count(*)>1 as kit,
+			 i.inactive, if(count(*)>1, '0', s.editable) as editable
+			FROM
+			".TB_PREF."stock_master s,
+			".TB_PREF."item_codes i
+			LEFT JOIN
+			".TB_PREF."stock_category c
+			ON i.category_id=c.category_id
+			WHERE i.stock_id=s.stock_id";
+
+	
+	if ($type == 'local')	{ // exclude foreign codes
+		$sql .=	" AND !i.is_foreign"; 
+	} elseif ($type == 'kits') { // sales kits
+		$sql .=	" AND !i.is_foreign AND i.item_code!=i.stock_id";
+	}
+	$sql .= " AND !i.inactive AND !s.inactive AND !s.no_sale";
+	$sql .= " GROUP BY i.item_code";
+
+	return combo_input($name, $selected_id, $sql, 'i.item_code', 'c.description',
+	array_merge(
+	  array(
+		'format' => '_format_stock_items',
+		'spec_option' => $all_option===true ?  _("All Items") : $all_option,
+		'spec_id' => $all_items,
+		'search_box' => true,
+		'search' => array("i.item_code", "c.description", "i.description"),
+		'search_submit' => get_company_pref('no_item_list')!=0,
+		'size'=>15,
+		'select_submit'=> $submit_on_change,
+		'category' => 2,
+		'order' => array('c.description','i.item_code'),
+		'editable' => 30,
+		'max' => 255
+	  ), $opts) );
+}
+
+function purchase_items_list_cells($label, $name, $selected_id=null, $all_option=false, $submit_on_change=false, $editkey=false)
+{
+	if ($editkey)
+		set_editor('item', $name, $editkey);
+
+	if ($label != null)
+		echo "<td>$label</td>\n";
+	echo purchase_items_list($name, $selected_id, $all_option, $submit_on_change,
+		'', array('cells'=>true));
+}
+
+//------------------------------------------------------------------------------------
 function stock_purchasable_items_list($name, $selected_id=null,	
 	$all_option=false, $submit_on_change=false, $all=false, $editkey=false)
 {
