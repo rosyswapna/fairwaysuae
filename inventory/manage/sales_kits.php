@@ -118,8 +118,22 @@ function update_component($kit_code, $selected_item)
 		 else
 			$msg =_("New component has been added to selected kit.");
 
+		
+
 		add_item_code( $kit_code, get_post('component'), get_post('description'),
 			 get_post('category'), input_num('quantity'), 0);
+
+		//===========add item============================
+		$component = get_item(get_post('component'));
+		add_item_from_kit($kit_code, get_post('description'),
+				'', get_post('category'), $component['tax_type_id'],
+				$component['units'], $component['mb_flag'], $component['sales_account'],
+				$component['inventory_account'], $component['cogs_account'],
+				$component['adjustment_account'], $component['assembly_account'], 
+				$component['dimension_id'], $component['dimension2_id'],
+				$component['no_sale'], $component['editable']);
+		//==============================================
+
 		display_notification($msg);
 
 	} else {

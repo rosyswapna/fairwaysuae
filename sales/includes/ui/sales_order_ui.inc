@@ -13,6 +13,7 @@ include_once($path_to_root . "/sales/includes/cart_class.inc");
 include_once($path_to_root . "/includes/manufacturing.inc");
 
 //--------------------------------------------------------------------------------
+/*
 function add_to_order(&$order, $new_item, $new_item_qty, $price, $discount, $description='')
 {
 	// calculate item price to sum of kit element prices factor for 
@@ -67,6 +68,22 @@ function add_to_order(&$order, $new_item, $new_item_qty, $price, $discount, $des
 	 }
 	}
 
+}*/
+
+function add_to_order(&$order, $new_item, $new_item_qty, $price, $discount, $description='')
+{
+
+	foreach ($order->line_items as $order_item)
+	{
+		if (strcasecmp($order_item->stock_id, $item['stock_id']) == 0)
+		{
+			display_warning(_("For Part :").$item['stock_id']. " " 
+				. _("This item is already on this document. You have been warned."));
+			break;
+		}
+	}
+	$order->add_to_cart (count($order->line_items),	$new_item, 
+			$new_item_qty, $price, $discount, 0,0, $description);
 }
 //---------------------------------------------------------------------------------
 
@@ -507,7 +524,8 @@ function sales_order_item_controls(&$order, &$rowcounter, $line_no=-1)
 	}
 	else	// prepare new line
 	{
-		sales_items_list_cells(null,'stock_id', null, false, true, true);
+		//sales_items_list_cells(null,'stock_id', null, false, true, true);
+		stock_items_list_cells(null, 'stock_id', null, false, true, false, true);
 		if (list_updated('stock_id')) {
 			    $Ajax->activate('price');
 			    $Ajax->activate('units');

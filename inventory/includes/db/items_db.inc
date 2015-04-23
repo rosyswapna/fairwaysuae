@@ -70,6 +70,34 @@ function add_item($stock_id, $description, $long_description, $category_id,
 	add_item_code($stock_id, $stock_id, $description, $category_id, 1, 0);
 }
 
+//add sales kit as item in stock master
+function add_item_from_kit($stock_id, $description, $long_description, $category_id, 
+	$tax_type_id, $units, $mb_flag,	$sales_account, $inventory_account, 
+	$cogs_account, $adjustment_account,	$assembly_account, $dimension_id, 
+	$dimension2_id, $no_sale, $editable)
+{
+	$sql = "INSERT INTO ".TB_PREF."stock_master (stock_id, description, long_description, category_id,
+		tax_type_id, units, mb_flag, sales_account, inventory_account, cogs_account,
+		adjustment_account, assembly_account, dimension_id, dimension2_id, no_sale, editable)
+		VALUES (".db_escape($stock_id).", ".db_escape($description).", ".db_escape($long_description).",
+		".db_escape($category_id).", ".db_escape($tax_type_id).", "
+		.db_escape($units).", ".db_escape($mb_flag).",
+		".db_escape($sales_account).", ".db_escape($inventory_account)
+		.", ".db_escape($cogs_account).",".db_escape($adjustment_account)
+		.", ".db_escape($assembly_account).", "
+		.db_escape($dimension_id).", ".db_escape($dimension2_id).","
+		.db_escape($no_sale).","
+		.db_escape($editable).")";
+
+	db_query($sql, "The item could not be added");
+
+	$sql = "INSERT INTO ".TB_PREF."loc_stock (loc_code, stock_id)
+		SELECT ".TB_PREF."locations.loc_code, ".db_escape($stock_id)
+		." FROM ".TB_PREF."locations";
+
+	db_query($sql, "The item locstock could not be added");
+}
+
 function delete_item($stock_id)
 {
 	$sql="DELETE FROM ".TB_PREF."stock_master WHERE stock_id=".db_escape($stock_id);

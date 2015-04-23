@@ -42,6 +42,8 @@ function add_item_code($item_code, $stock_id, $description, $category, $qty, $fo
 	  		.",".db_escape($qty).",".db_escape($foreign).")";
 
 	db_query($sql,"an item code could not be added");
+
+
 }
 
 function delete_item_code($id)

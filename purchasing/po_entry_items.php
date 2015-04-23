@@ -302,12 +302,12 @@ function handle_add_new_item()
 			if ($allow_update)
 			{
 				$myrow = db_fetch($result);
-				/*$_SESSION['PO']->add_to_order (count($_SESSION['PO']->line_items), $_POST['stock_id'], input_num('qty'), 
+				$_SESSION['PO']->add_to_order (count($_SESSION['PO']->line_items), $_POST['stock_id'], input_num('qty'), 
 					get_post('stock_id_text'), //$myrow["description"], 
 					input_num('price'), '', // $myrow["units"], (retrived in cart)
-					$_SESSION['PO']->trans_type == ST_PURCHORDER ? $_POST['req_del_date'] : '', 0, 0);*/
-				add_to_order ($_SESSION['PO'], $_POST['stock_id'], input_num('qty'),input_num('price'), 
-					get_post('stock_id_text'),$_SESSION['PO']->trans_type == ST_PURCHORDER ? $_POST['req_del_date'] : '');
+					$_SESSION['PO']->trans_type == ST_PURCHORDER ? $_POST['req_del_date'] : '', 0, 0);
+				/*add_to_order ($_SESSION['PO'], $_POST['stock_id'], input_num('qty'),input_num('price'), 
+					get_post('stock_id_text'),$_SESSION['PO']->trans_type == ST_PURCHORDER ? $_POST['req_del_date'] : '');*/
 				unset_form_variables();
 				$_POST['stock_id']	= "";
 	   		} 
