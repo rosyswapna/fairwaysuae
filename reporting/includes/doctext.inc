@@ -102,7 +102,7 @@
 			break;
 
 		case ST_SALESINVOICE:
-			$this->title = _("INVOICE");
+			$this->title = _("SALES-CASH");
 			$this->formData['document_name'] =_("Invoice No.");
 			$this->formData['domicile'] = $this->company['domicile'];
 			$Footer[0] = _("Please quote Invoice no. when paying. All amounts stated in"). " - " . $this->formData['curr_code'];
@@ -121,6 +121,8 @@
 				_("Delivery Note No.") => implode(',', $deliveries),
 				_("Due Date") => sql2date($this->formData['due_date']),
 			);
+
+			$this->headers = array(_("SN"), _("Code"), _("Description"), _("Qty"), _("Price"), _("Amount"));
 			break;
 
 		case ST_SUPPAYMENT:
