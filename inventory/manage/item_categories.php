@@ -157,6 +157,7 @@ if ($selected_id != -1)
 		$_POST['long_description'] = '';
 		$_POST['description'] = '';
 		$_POST['no_sale']  = 0;
+		
 
 		$company_record = get_company_prefs();
 
@@ -175,6 +176,9 @@ if ($selected_id != -1)
 	if (get_post('assembly_account') == "")
 		$_POST['assembly_account'] = $company_record["default_assembly_act"];
 
+}
+if(!$_POST['mb_flag']){
+	$_POST['mb_flag']  = PURCHASED;
 }
 
 text_row(_("Category Name:"), 'description', null, 30, 30);  

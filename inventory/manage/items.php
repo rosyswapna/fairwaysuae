@@ -258,11 +258,13 @@ function item_settings(&$stock_id)
 	table_section_title(_("Item"));
 
 	//------------------------------------------------------------------------------------
+	
 	if ($new_item) 
 	{
 		text_row(_("Item Code:"), 'NewStockID', null, 21, 20);
 
 		$_POST['inactive'] = 0;
+		
 	} 
 	else 
 	{ // Must be modifying an existing item
@@ -318,6 +320,7 @@ function item_settings(&$stock_id)
 		$_POST['dimension2_id'] = $category_record["dflt_dim2"];
 		$_POST['no_sale'] = $category_record["dflt_no_sale"];
 		$_POST['editable'] = 0;
+		$_POST['mb_flag']  = PURCHASED;
 
 	}
 	$fresh_item = !isset($_POST['NewStockID']) || $new_item 
@@ -463,7 +466,7 @@ tabbed_content_start('tabs', array(
 	switch (get_post('_tabs_sel')) {
 		default:
 		case 'settings':
-			item_settings($stock_id); 
+			item_settings($stock_id);
 			break;
 		case 'sales_pricing':
 			$_GET['stock_id'] = $stock_id;

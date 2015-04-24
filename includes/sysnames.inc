@@ -153,9 +153,9 @@ $quick_entry_types = array(
 //----------------------------------------------------------------------------------
 // Types of stock items
 $stock_types = array(
-	'M' => _("Manufactured"),
-	'B' => _("Purchased"),
-	'D' => _("Service")
+	MANUFACTURED => _("Manufactured"),
+	PURCHASED => _("Purchased"),
+	SERVICED => _("Service")
 );
 
 //----------------------------------------------------------------------------------

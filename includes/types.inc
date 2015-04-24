@@ -226,6 +226,12 @@ define('PTT_CASH', 2);
 define('PTT_DAYS', 3);
 define('PTT_FOLLOWING', 4);
 
+//ITEM TYPES
+define('MANUFACTURED','M');
+define('PURCHASED','B');
+define('SERVICED','D');
+
+
 include_once($path_to_root . '/includes/sysnames.inc');
 
 //---------------------------------------------------------------------------------
@@ -251,5 +257,9 @@ defined('ICON_VIEW') || define('ICON_VIEW', 'view.gif');
 defined('ICON_SUBMIT') || define('ICON_SUBMIT', 'ok.gif');
 defined('ICON_ESCAPE') || define('ICON_ESCAPE', 'escape.png');
 defined('ICON_ALLOC') || define('ICON_ALLOC', 'alloc.png');
+
+
+
+
 
 ?>
