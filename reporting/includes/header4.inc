@@ -115,6 +115,10 @@
 		for ($i = 0; $i < $count; $i++)
 			$this->TextCol($i, $i + 1, $this->headers[$i], -2);
 		$this->Font();
+		
+		$this->row = $iline10 - $this->lineHeight - 1;
+		$this->TextCol(0, 3,  _("Receiver's Signature"), -2);
+		$this->TextCol(3, 6, $this->company['coy_name'], -2);
 
 		
 

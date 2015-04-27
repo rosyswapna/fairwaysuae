@@ -80,7 +80,7 @@ function print_invoices()
 				continue;
 			$sign = 1;
 			$myrow = get_customer_trans($i, ST_SALESINVOICE);
-
+			//echo "<pre>";print_r($myrow);echo "</pre";exit;
 			if ($customer && $myrow['debtor_no'] != $customer) {
 				continue;
 			}
@@ -111,18 +111,19 @@ function print_invoices()
 			$SubTotal = 0;$slno =1;$totalDiscount = 0;
 			while ($myrow2=db_fetch($result))
 			{
+					//echo "<pre>";print_r($myrow);echo "</pre";exit;
 				if ($myrow2["quantity"] == 0)
 					continue;
 
-				$Net = round2($sign * ((1 - $myrow2["discount_percent"]) * $myrow2["unit_price"] * $myrow2["quantity"]),
+				$Net = round2($sign * ( $myrow2["unit_price"] * $myrow2["quantity"]),
 				   user_price_dec());
 				$SubTotal += $Net;
-	    			$DisplayPrice = number_format2($myrow2["unit_price"],$dec);
-	    			$DisplayQty = number_format2($sign*$myrow2["quantity"],get_qty_dec($myrow2['stock_id']));
-	    			$DisplayNet = number_format2($Net,$dec);
-	    			if($myrow2["discount_percent"]!=0)
-		  			$totalDiscount += 0;
-			
+				$DisplayPrice = number_format2($myrow2["unit_price"],$dec);
+				$DisplayQty = number_format2($sign*$myrow2["quantity"],get_qty_dec($myrow2['stock_id']));
+				$DisplayNet = number_format2($Net,$dec);
+				$totalDiscount += $Net*$myrow2["discount_percent"];
+
+		
 				$rep->TextCol(0, 1,	$slno, -2);
 				$rep->TextCol(1, 2,	$myrow2['stock_id'], -2);
 				$oldrow = $rep->row;
@@ -142,16 +143,16 @@ function print_invoices()
 				$slno++;
 			}
 			$DisplayDiscount = number_format2($totalDiscount,user_percent_dec());
+			$netAmount = $SubTotal - $totalDiscount;
+			
 
 			$memo = get_comments_string(ST_SALESINVOICE, $i);
-			if ($memo != "")
-			{
-				$rep->NewLine();
-				$rep->TextColLines(1, 5, $memo, -2);
-			}
+			
 
    			$DisplaySubTot = number_format2($SubTotal,$dec);
    			$DisplayFreight = number_format2($sign*$myrow["ov_freight"],$dec);
+			$DisplayDiscount = number_format2($sign*$DisplayDiscount,$dec);
+			$DisplayNet = number_format2($sign*$netAmount,$dec);
 
     			$rep->row = $rep->bottomMargin + (21 * $rep->lineHeight);
 			$doctype = ST_SALESINVOICE;
@@ -167,20 +168,20 @@ function print_invoices()
 			$rep->TextCol(5, 6,	$DisplayDiscount, -2);
 			$rep->NewLine(1.5);
 			$rep->TextCol(3, 5, _("Net Amount"), -2);
-			$rep->TextCol(5, 6,	$DisplayDiscount, -2);
+			$rep->TextCol(5, 6,	$DisplayNet, -2);
 			$rep->NewLine(1.5);
 			$rep->TextCol(3, 5, _("Cash Amount"), -2);
 			$rep->TextCol(5, 6,	$DisplayTotal, -2);
 			$rep->NewLine();
 			$rep->row = $tmp;
-			$words = "thousand";//price_in_words($myrow['Total'], ST_SALESINVOICE);
+			$words = price_in_words_custom($myrow['Total']);
 			if ($words != "")
 			{
 				$rep->TextCol(0, 3, $myrow['curr_code'] . " : " . $words, - 2);
 			}
-			$rep->NewLine(3);
-			$rep->TextCol(0,2, "Remarks : ".$memo, - 2);
-			$rep->NewLine(1.5);
+			$rep->NewLine(2);
+			$rep->TextCol(0,2, "Remarks : ".$myrow['memo_'], - 2);
+			$rep->NewLine(2);
 			$rep->TextCol(0,2, "SalesMan : ", - 2);
 			$rep->Font();
 			if ($email == 1)
