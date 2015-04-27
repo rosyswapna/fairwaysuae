@@ -122,7 +122,7 @@
 				_("Due Date") => sql2date($this->formData['due_date']),
 			);
 
-			$this->headers = array(_("SN"), _("Code"), _("Description"), _("Qty"), _("Price"), _("Amount"));
+			//$this->headers = array(_("SN"), _("Code"), _("Description"), _("Qty"), _("Price"), _("Amount"));
 			break;
 
 		case ST_SUPPAYMENT:

@@ -62,6 +62,7 @@ $opts = array(		// default options
 	'box_hint' => null, // box/selectors hints; null = std see below
 	'category' => false, // category column name or false
 	'show_inactive' => false, // show inactive records. 
+	'auto_complete' => false, // auto complete. 
 	'editable' => false // false, or length of editable entry field
 );
 // ------ merge options with defaults ----------
@@ -129,7 +130,7 @@ $opts = array(		// default options
 	}
 	if ($search_box) {
 		// search related sql modifications
-
+		$auto_complete = $opts['auto_complete'];
 		$rel = "rel='$search_box'"; // set relation to list
 		if ($opts['search_submit']) {
 			if (isset($_POST[$search_button])) {
@@ -279,12 +280,34 @@ $opts = array(		// default options
 // ------ make combo ----------
 	$edit_entry = '';
 	if ($search_box != false) {
-		$edit_entry = "<input $disabled type='text' name='$search_box' id='$search_box' size='".
+
+		//autocomplete
+		if($auto_complete){
+			$edit_entry = "<input $disabled type='text' name='$search_box' id='$search_box' size='".
+			$opts['size']."' maxlength='".$opts['max'].
+			"' value='$txt' class='$class' rel='$name' autocomplete='on' title='"
+			.$opts['box_hint']."'"
+			.(!fallback_mode() && !$by_id ? " style=display:none;":'')
+			.">\n";
+			$edit_entry .="<ul class='autofill' id='autofill_li' set_id = '$search_box'>";
+			if(isset($_SESSION['autofill_li'])){
+				foreach($_SESSION['autofill_li'] as $li){
+					$edit_entry .= "<li><a class='dropdown_li' _get_val ='$li'>$li</a></li>";
+				}
+			}
+			$edit_entry .="</ul>";
+			$Ajax->addUpdate($name, "autofill", $selector);
+			
+		}else{
+			$edit_entry = "<input $disabled type='text' name='$search_box' id='$search_box' size='".
 			$opts['size']."' maxlength='".$opts['max'].
 			"' value='$txt' class='$class' rel='$name' autocomplete='off' title='"
 			.$opts['box_hint']."'"
 			.(!fallback_mode() && !$by_id ? " style=display:none;":'')
 			.">\n";
+		}
+
+		
 		if ($search_submit != false || $opts['editable']) {
 			global $_search_button;
 			$edit_entry .= sprintf($_search_button, $disabled, user_theme(),
@@ -777,12 +800,12 @@ function _format_stock_items($row)
 }
 
 function stock_items_list_cells($label, $name, $selected_id=null, $all_option=false, 
-	$submit_on_change=false, $all=false, $editkey = false)
+	$submit_on_change=false, $all=false, $editkey = false, $auto_complete = false)
 {
 	if ($label != null)
 		echo "<td>$label</td>\n";
 	echo stock_items_list($name, $selected_id, $all_option, $submit_on_change,
-		array('cells'=>true, 'show_inactive'=>$all), $editkey);
+		array('cells'=>true, 'show_inactive'=>$all,'auto_complete'=>$auto_complete), $editkey);
 }
 /*
 function stock_items_list_row($label, $name, $selected_id=null, $all_option=false, $submit_on_change=false)

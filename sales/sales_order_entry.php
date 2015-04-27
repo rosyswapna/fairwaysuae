@@ -96,6 +96,23 @@ if (isset($_GET['NewDelivery']) && is_numeric($_GET['NewDelivery'])) {
 
 page($_SESSION['page_title'], false, false, "", $js);
 //-----------------------------------------------------------------------------
+$itemRs = get_items_like('10');
+$items = array();
+while($row = db_fetch($itemRs)){
+	$items[] = $row['stock_id'];
+}
+unset($_SESSION['autofill_li']);
+if(get_post('_stock_id_edit')){
+	unset($_SESSION['autofill_li']);
+	$itemRs = get_items_like(get_post('_stock_id_edit'));
+	$items = array();
+	while($row = db_fetch($itemRs)){
+		$items[] = $row['stock_id'];
+	}
+	$_SESSION['autofill_li'] = $items;
+	//$Ajax->activate('_stock_id_edit');
+	
+}
 
 if (list_updated('branch_id')) {
 	// when branch is selected via external editor also customer can change

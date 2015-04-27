@@ -520,12 +520,11 @@ function sales_order_item_controls(&$order, &$rowcounter, $line_no=-1)
 //			sales_items_list_cells(null,'item_description', null, false, true);
 //		}
 		//label_cell($order->line_items[$line_no]->item_description, "nowrap");
-	    $Ajax->activate('items_table');
+	    	$Ajax->activate('items_table');
 	}
 	else	// prepare new line
 	{
-		//sales_items_list_cells(null,'stock_id', null, false, true, true);
-		stock_items_list_cells(null, 'stock_id', null, false, true, false, true);
+		stock_items_list_cells(null, 'stock_id', null, false, true, false, true,'stock_id');
 		if (list_updated('stock_id')) {
 			    $Ajax->activate('price');
 			    $Ajax->activate('units');

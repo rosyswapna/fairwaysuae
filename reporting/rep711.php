@@ -171,7 +171,7 @@ function print_invoices()
 			$rep->TextCol(5, 6,	$DisplayNet, -2);
 			$rep->NewLine(1.5);
 			$rep->TextCol(3, 5, _("Cash Amount"), -2);
-			$rep->TextCol(5, 6,	$DisplayTotal, -2);
+			$rep->TextCol(5, 6,	$DisplayNet, -2);
 			$rep->NewLine();
 			$rep->row = $tmp;
 			$words = price_in_words_custom($myrow['Total']);

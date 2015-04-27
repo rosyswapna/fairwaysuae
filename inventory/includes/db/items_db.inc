@@ -139,6 +139,12 @@ function get_items()
 	return db_query($sql,"items could not be retreived");
 }
 
+function get_items_like($code){
+	$sql = "SELECT stock_id FROM ".TB_PREF."stock_master WHERE stock_id LIKE '$code%'";
+	
+	return db_query($sql,"items could not be retreived");
+}
+
 function item_in_foreign_codes($stock_id)
 {
 	$sqls=  array(
