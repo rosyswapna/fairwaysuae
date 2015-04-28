@@ -109,6 +109,7 @@ if(get_post('autofill_search')){
 	$_SESSION['autofill_li'] = $items;
 	
 	$Ajax->activate('items_table');
+	set_focus('autofill_search');
 	
 }
 

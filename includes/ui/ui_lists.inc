@@ -298,7 +298,7 @@ $opts = array(		// default options
 			.$opts['box_hint']."'"
 			.((!fallback_mode() && !$by_id) || $auto_complete  ? " style=display:none;":'')
 			.">\n";
-			$edit_entry .= "<input type='text' name='autofill_search' id='autofill_search' size='".
+			$edit_entry .= "<input type='text'  name='autofill_search' id='autofill_search' size='".
 			$opts['size']."' maxlength='".$opts['max'].
 			"' value='$searchVal' class='autofill_search' autocomplete='off'  title='"
 			.$opts['box_hint']."'"
@@ -331,7 +331,7 @@ $opts = array(		// default options
 				$search_submit ? $search_submit : "_{$name}_button")."\n";
 		}
 	}
-	default_focus(($search_box && $by_id) ? $search_box : $name);
+	//default_focus(($search_box && $by_id) ? $search_box : $name);
 
 	if ($search_box && $opts['cells'])
 		$str = ($edit_entry!='' ? "<td>$edit_entry</td>" : '')."<td>$selector</td>";
