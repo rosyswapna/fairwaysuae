@@ -90,6 +90,8 @@ $opts = array(		// default options
 		$class = 'combo3';
 	}
 
+	
+
 	$disabled = $opts['disabled'] ? "disabled" : '';
 	$multi = $opts['multi'];
 	
@@ -130,7 +132,7 @@ $opts = array(		// default options
 	}
 	if ($search_box) {
 		// search related sql modifications
-		$auto_complete = $opts['auto_complete'];
+		
 		$rel = "rel='$search_box'"; // set relation to list
 		if ($opts['search_submit']) {
 			if (isset($_POST[$search_button])) {
@@ -244,6 +246,11 @@ $opts = array(		// default options
 	}
 	
 	$_POST[$name] = $multi ? $selected_id : $selected_id[0];
+	
+	//=============autocomplete settings----------------------------------
+	$auto_complete = $opts['auto_complete'];
+	if($auto_complete)$class = 'combo4';
+	//==============--------------------------------------------------------
 
 	$selector = "<select autocomplete='off' ".($multi ? "multiple" : '')
 		. ($opts['height']!==false ? ' size="'.$opts['height'].'"' : '')
@@ -280,24 +287,33 @@ $opts = array(		// default options
 // ------ make combo ----------
 	$edit_entry = '';
 	if ($search_box != false) {
-
+		
 		//autocomplete
 		if($auto_complete){
+			$searchVal = (isset($_POST['autofill_search']))?$_POST['autofill_search']:'';
+
 			$edit_entry = "<input $disabled type='text' name='$search_box' id='$search_box' size='".
 			$opts['size']."' maxlength='".$opts['max'].
-			"' value='$txt' class='$class' rel='$name' autocomplete='on' title='"
+			"' value='$txt' class='$class' rel='$name' autocomplete='off' title='"
 			.$opts['box_hint']."'"
-			.(!fallback_mode() && !$by_id ? " style=display:none;":'')
+			.((!fallback_mode() && !$by_id) || $auto_complete  ? " style=display:none;":'')
 			.">\n";
-			$edit_entry .="<ul class='autofill' id='autofill_li' set_id = '$search_box'>";
+			$edit_entry .= "<input type='text' name='autofill_search' id='autofill_search' size='".
+			$opts['size']."' maxlength='".$opts['max'].
+			"' value='$searchVal' class='autofill_search' autocomplete='off'  title='"
+			.$opts['box_hint']."'"
+			//." style = 'border:1px solid red;'"
+			.">\n";
+
+			$ul_display = ($searchVal == $txt)?'none':'block';
+			$edit_entry .="<ul class='autofill' id='autofill_li' set_id = '$search_box' style='display:$ul_display;'>";
 			if(isset($_SESSION['autofill_li'])){
 				foreach($_SESSION['autofill_li'] as $li){
 					$edit_entry .= "<li><a class='dropdown_li' _get_val ='$li'>$li</a></li>";
 				}
 			}
 			$edit_entry .="</ul>";
-			$Ajax->addUpdate($name, "autofill", $selector);
-			
+						
 		}else{
 			$edit_entry = "<input $disabled type='text' name='$search_box' id='$search_box' size='".
 			$opts['size']."' maxlength='".$opts['max'].
