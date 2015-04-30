@@ -6,7 +6,7 @@
 	FA extension system documentation.
 */
 
-$next_extension_id = 2; // unique id for next installed extension
+$next_extension_id = 4; // unique id for next installed extension
 
 $installed_extensions = array (
   1 => 
@@ -17,6 +17,16 @@ $installed_extensions = array (
     'type' => 'extension',
     'active' => false,
     'path' => 'modules/import_items',
+  ),
+  3 => 
+  array (
+    'package' => 'payroll',
+    'name' => 'payroll',
+    'version' => '-',
+    'available' => '',
+    'type' => 'extension',
+    'path' => 'modules/payroll',
+    'active' => false,
   ),
 );
 ?>
