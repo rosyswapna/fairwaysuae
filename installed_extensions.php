@@ -6,7 +6,7 @@
 	FA extension system documentation.
 */
 
-$next_extension_id = 4; // unique id for next installed extension
+$next_extension_id = 9; // unique id for next installed extension
 
 $installed_extensions = array (
   1 => 
@@ -27,6 +27,51 @@ $installed_extensions = array (
     'type' => 'extension',
     'path' => 'modules/payroll',
     'active' => false,
+  ),
+  4 => 
+  array (
+    'name' => 'Check Printing based on Tom Hallman, USA',
+    'package' => 'rep_check_print',
+    'version' => '2.3.0-1',
+    'type' => 'extension',
+    'active' => false,
+    'path' => 'modules/rep_check_print',
+  ),
+  5 => 
+  array (
+    'name' => 'Dated Stock Sheet',
+    'package' => 'rep_dated_stock',
+    'version' => '2.3.3-3',
+    'type' => 'extension',
+    'active' => false,
+    'path' => 'modules/rep_dated_stock',
+  ),
+  6 => 
+  array (
+    'name' => 'Sales Summary Report',
+    'package' => 'rep_sales_summary',
+    'version' => '2.3.3-3',
+    'type' => 'extension',
+    'active' => false,
+    'path' => 'modules/rep_sales_summary',
+  ),
+  7 => 
+  array (
+    'name' => 'Bank Statement w/ Reconcile',
+    'package' => 'rep_statement_reconcile',
+    'version' => '2.3.3-3',
+    'type' => 'extension',
+    'active' => false,
+    'path' => 'modules/rep_statement_reconcile',
+  ),
+  8 => 
+  array (
+    'name' => 'Cash Flow Statement Report',
+    'package' => 'rep_cash_flow_statement',
+    'version' => '2.3.0-1',
+    'type' => 'extension',
+    'active' => false,
+    'path' => 'modules/rep_cash_flow_statement',
   ),
 );
 ?>
