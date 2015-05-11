@@ -255,6 +255,17 @@ function check_quantities()
 
 		}
 
+		if (isset($_POST['DiscAmt'.$line])) {
+			$DiscAmt = $_POST['DiscAmt'.$line];
+			$qty = $_SESSION['Items']->line_items[$line]->qty_dispatched;
+			$price = $_SESSION['Items']->line_items[$line]->price;
+			
+			$disc_percent = $DiscAmt/ ($qty*$price);
+			$_SESSION['Items']->line_items[$line]->discount_percent = $disc_percent;
+			$_SESSION['Items']->line_items[$line]->discount_amount = $DiscAmt;
+				
+		}
+
 		if (isset($_POST['Line'.$line.'Desc'])) {
 			$line_desc = $_POST['Line'.$line.'Desc'];
 			if (strlen($line_desc) > 0) {
@@ -472,7 +483,8 @@ foreach ($_SESSION['Items']->line_items as $line=>$ln_itm) {
 
 	amount_cell($ln_itm->price);
 	label_cell($ln_itm->tax_type_name);
-	label_cell($display_discount_percent, "nowrap align=right");
+	//label_cell($display_discount_percent, "nowrap align=right");
+	small_amount_cells(null, 'DiscAmt'.$line, percent_format($ln_itm->discount_amount), null, null, user_percent_dec());
 	amount_cell($line_total);
 
 	end_row();

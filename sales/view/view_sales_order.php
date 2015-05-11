@@ -217,7 +217,8 @@ foreach ($_SESSION['View']->line_items as $stock_item) {
 	qty_cell($stock_item->quantity, false, $dec);
 	label_cell($stock_item->units);
 	amount_cell($stock_item->price);
-	amount_cell($stock_item->discount_percent * 100);
+	//amount_cell($stock_item->discount_percent * 100);
+	amount_cell($stock_item->discount_amount);
 	amount_cell($line_total);
 
 	qty_cell($stock_item->qty_done, false, $dec);

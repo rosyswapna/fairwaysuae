@@ -110,7 +110,7 @@ start_table(TABLESTYLE, "width='95%'");
 if (db_num_rows($result) > 0)
 {
 	$th = array(_("Item Code"), _("Item Description"), _("Quantity"),
-		_("Unit"), _("Price"), _("Discount %"), _("Total"));
+		_("Unit"), _("Price"), _("Discount"), _("Total"));
 	table_header($th);
 
 	$k = 0;	//row colour counter
@@ -138,7 +138,8 @@ if (db_num_rows($result) > 0)
         qty_cell($myrow2["quantity"], false, get_qty_dec($myrow2["stock_id"]));
         label_cell($myrow2["units"], "align=right");
         amount_cell($myrow2["unit_price"]);
-        label_cell($display_discount, "nowrap align=right");
+        //label_cell($display_discount, "nowrap align=right");
+	amount_cell($myrow2["discount_amount"]);
         amount_cell($value);
 	end_row();
 	} //end while there are line items to print out

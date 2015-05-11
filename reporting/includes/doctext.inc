@@ -27,7 +27,7 @@
 
 	// default item column headers
 	$this->headers = array(_("Item Code"), _("Item Description"), _("Quantity"),
-		_("Unit"), _("Price"), _("Discount %"), _("Total"));
+		_("Unit"), _("Price"), _("Discount"), _("Total"));
 
 	// for links use 'text' => 'url'
 	$Footer[0] = _("All amounts stated in") . " - " . @$this->formData['curr_code'];
@@ -122,8 +122,7 @@
 				_("Due Date") => sql2date($this->formData['due_date']),
 			);
 
-			$this->headers = array(_("Item Code"), _("Item Description"), _("Quantity"),
-		_("Unit"), _("Price"), _("Discount"), _("Total"));
+			
 			break;
 
 		case ST_SUPPAYMENT:
