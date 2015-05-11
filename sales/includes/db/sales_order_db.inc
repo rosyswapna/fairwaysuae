@@ -57,12 +57,12 @@ function add_sales_order(&$order)
 		if ($loc_notification == 1 && is_inventory_item($line->stock_id))
 			$loc = calculate_reorder_level($order->Location, $line, $st_ids, $st_names, $st_num, $st_reorder); 
 
-		$sql = "INSERT INTO ".TB_PREF."sales_order_details (order_no, trans_type, stk_code, description, unit_price, quantity, discount_percent) VALUES (";
+		$sql = "INSERT INTO ".TB_PREF."sales_order_details (order_no, trans_type, stk_code, description, unit_price, quantity, discount_percent,discount_amount) VALUES (";
 		$sql .= $order_no . ",".$order->trans_type .
 				",".db_escape($line->stock_id).", "
 				.db_escape($line->item_description).", $line->price,
 				$line->quantity,
-				$line->discount_percent)";
+				$line->discount_percent,$line->discount_amount)";
 		db_query($sql, "order Details Cannot be Added");
 
 	// Now mark quotation line as processed
@@ -179,13 +179,14 @@ function update_sales_order($order)
 						SET description = ".db_escape($line->item_description) . ", 
 								unit_price = ".db_escape($line->price) . ",
 								quantity = ".db_escape($line->quantity) . ",
+								discount_amount = ".db_escape($line->discount_amount) . ",
 								discount_percent = ".db_escape($line->discount_percent) . "
 						WHERE id = {$line->id}";
 		}
 		else {
 		$sql = "INSERT INTO ".TB_PREF."sales_order_details
 		 (id, order_no, trans_type, stk_code,  description, unit_price, quantity,
-		  discount_percent, qty_sent)
+		  discount_percent,discount_amount, qty_sent)
 		 VALUES (";
 		$sql .= db_escape($line->id ? $line->id : 0) . ","
 		  .$order_no . ",".$order->trans_type.","
@@ -194,6 +195,7 @@ function update_sales_order($order)
 		  .db_escape($line->price) . ", "
 		  .db_escape($line->quantity) . ", "
 		  .db_escape($line->discount_percent) . ", "
+		  .db_escape($line->discount_amount) . ", "
 		  .db_escape($line->qty_done) ." )";
 		}
 
@@ -264,7 +266,7 @@ function get_sales_order_details($order_no, $trans_type) {
 	$sql = "SELECT id, stk_code, unit_price, "
 		.TB_PREF."sales_order_details.description,"
 		.TB_PREF."sales_order_details.quantity,
-		  discount_percent,
+		  discount_percent,discount_amount,
 		  qty_sent as qty_done, "
 		.TB_PREF."stock_master.units,"
 		.TB_PREF."stock_master.mb_flag,"
@@ -318,7 +320,7 @@ function read_sales_order($order_no, &$order, $trans_type)
 		{
 			$order->add_to_cart($line_no,$myrow["stk_code"],$myrow["quantity"],
 				$myrow["unit_price"], $myrow["discount_percent"],
-				$myrow["qty_done"], $myrow["standard_cost"], $myrow["description"], $myrow["id"] );
+				$myrow["qty_done"], $myrow["standard_cost"], $myrow["description"], $myrow["id"],0,0, $myrow["discount_amount"]);
 		$line_no++;
 		}
 	}

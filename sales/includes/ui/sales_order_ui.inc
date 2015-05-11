@@ -70,7 +70,7 @@ function add_to_order(&$order, $new_item, $new_item_qty, $price, $discount, $des
 
 }*/
 
-function add_to_order(&$order, $new_item, $new_item_qty, $price, $discount, $description='')
+function add_to_order(&$order, $new_item, $new_item_qty, $price, $discount, $description='', $discount_amount)
 {
 
 	foreach ($order->line_items as $order_item)
@@ -83,7 +83,7 @@ function add_to_order(&$order, $new_item, $new_item_qty, $price, $discount, $des
 		}
 	}
 	$order->add_to_cart (count($order->line_items),	$new_item, 
-			$new_item_qty, $price, $discount, 0,0, $description);
+			$new_item_qty, $price, $discount, 0,0, $description, 0, 0, 0, $discount_amount);
 }
 //---------------------------------------------------------------------------------
 
@@ -162,7 +162,7 @@ function display_order_summary($title, &$order, $editable_items=false)
 
 	$th = array(_("Item Code"), _("Item Description"), _("Quantity"),
 		_("Delivered"),
-		_("Unit"), $order->tax_included ? _("Price after Tax") : _("Price before Tax"), _("Discount %"), _("Total"), "");
+		_("Unit"), $order->tax_included ? _("Price after Tax") : _("Price before Tax"), _("Discount"), _("Total"), "");
 
 	if ($order->trans_no == 0) {
 	unset( $th[3] );
@@ -206,7 +206,8 @@ function display_order_summary($title, &$order, $editable_items=false)
 			label_cell($stock_item->units);
 			amount_cell($stock_item->price);
 
-			percent_cell($stock_item->discount_percent * 100);
+			//percent_cell($stock_item->discount_percent * 100);
+			percent_cell($stock_item->discount_amount);
 			amount_cell($line_total);
 
 			if ($editable_items)
@@ -506,6 +507,9 @@ function sales_order_item_controls(&$order, &$rowcounter, $line_no=-1)
 		$_POST['qty'] = number_format2($order->line_items[$id]->qty_dispatched, $dec);
 		$_POST['price'] = price_format($order->line_items[$id]->price);
 		$_POST['Disc'] = percent_format($order->line_items[$id]->discount_percent*100);
+
+		$_POST['DiscAmt'] = percent_format($order->line_items[$id]->discount_amount);
+
 		$units = $order->line_items[$id]->units;
 		$_POST['item_description'] = $order->line_items[$id]->item_description;
 		hidden('stock_id', $_POST['stock_id']);
@@ -524,7 +528,8 @@ function sales_order_item_controls(&$order, &$rowcounter, $line_no=-1)
 	}
 	else	// prepare new line
 	{
-		stock_items_list_cells(null, 'stock_id', null, false, true, false, true,'stock_id');
+		//stock_items_list_cells(null, 'stock_id', null, false, true, false, true,'stock_id');
+		stock_items_list_cells(null, 'stock_id', null, false, true, false, true,false);
 		if (list_updated('stock_id')) {
 			    $Ajax->activate('price');
 			    $Ajax->activate('units');
@@ -554,7 +559,9 @@ function sales_order_item_controls(&$order, &$rowcounter, $line_no=-1)
 
 	amount_cells(null, 'price');
 
-	small_amount_cells(null, 'Disc', percent_format($_POST['Disc']), null, null, user_percent_dec());
+	//small_amount_cells(null, 'Disc', percent_format($_POST['Disc']), null, null, user_percent_dec());
+	hidden('Disc',percent_format($_POST['Disc']));
+	small_amount_cells(null, 'DiscAmt', percent_format($_POST['DiscAmt']), null, null, user_percent_dec());
 
 	$line_total = input_num('qty') * input_num('price') * (1 - input_num('Disc') / 100);
 

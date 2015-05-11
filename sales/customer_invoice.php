@@ -197,6 +197,17 @@ function check_quantities()
 				
 		}
 
+		if (isset($_POST['DiscAmt'.$line_no])) {
+			$DiscAmt = $_POST['DiscAmt'.$line_no];
+			$qty = $_SESSION['Items']->line_items[$line_no]->qty_dispatched;
+			$price = $_SESSION['Items']->line_items[$line_no]->price;
+			
+			$disc_percent = $DiscAmt/ ($qty*$price);
+			$_SESSION['Items']->line_items[$line_no]->discount_percent = $disc_percent;
+			$_SESSION['Items']->line_items[$line_no]->discount_amount = $DiscAmt;
+				
+		}
+
 		if (isset($_POST['Line'.$line_no.'Desc'])) {
 			$line_desc = $_POST['Line'.$line_no.'Desc'];
 			if (strlen($line_desc) > 0) {
@@ -314,6 +325,8 @@ function check_data()
 
 	return true;
 }
+
+
 
 //-----------------------------------------------------------------------------
 if (isset($_POST['process_invoice']) && check_data()) {
@@ -518,10 +531,14 @@ foreach ($_SESSION['Items']->line_items as $line=>$ln_itm) {
 	$display_discount_percent = percent_format($ln_itm->discount_percent*100) . " %";
 
 	$line_total = ($ln_itm->qty_dispatched * $ln_itm->price * (1 - $ln_itm->discount_percent));
+	
 
 	amount_cell($ln_itm->price);
 	label_cell($ln_itm->tax_type_name);
-	label_cell($display_discount_percent, "nowrap align=right");
+	//label_cell($display_discount_percent, "nowrap align=right");
+	small_amount_cells(null, 'DiscAmt'.$line, percent_format($ln_itm->discount_amount), null, null, user_percent_dec());
+
+
 	amount_cell($line_total);
 
 	if ($is_batch_invoice) {

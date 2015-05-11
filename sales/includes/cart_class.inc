@@ -371,10 +371,10 @@ class cart
 	}
 
 	function add_to_cart($line_no, $stock_id, $qty, $price, $disc, $qty_done=0, $standard_cost=0, $description=null, $id=0, $src_no=0,
-		$src_id=0)
+		$src_id=0,$disc_amt)
 	{
 		$line = new line_details($stock_id, $qty, $price, $disc,
-			$qty_done,  $standard_cost, $description, $id, $src_no, $src_id);
+			$qty_done,  $standard_cost, $description, $id, $src_no, $src_id, $disc_amt);
 
 		if ($line->valid) {
 			$this->line_items[$line_no] = $line;
@@ -384,7 +384,7 @@ class cart
 		return 0;
 	}
 
-	function update_cart_item($line_no, $qty, $price, $disc, $description="")
+	function update_cart_item($line_no, $qty, $price, $disc, $description="",$disc_amt =0)
 	{
 		if ($description != "")
 			$this->line_items[$line_no]->item_description = $description;
@@ -392,6 +392,7 @@ class cart
 		$this->line_items[$line_no]->qty_dispatched = $qty;
 		$this->line_items[$line_no]->price = $price;
 		$this->line_items[$line_no]->discount_percent = $disc;
+		$this->line_items[$line_no]->discount_amount = $disc_amt;
 	}
 
 	function update_add_cart_item_qty($line_no, $qty)
@@ -599,6 +600,7 @@ class line_details
 	var $src_id;
 	var $price;
 	var $discount_percent;
+	var $discount_amount;
 	
 	var $standard_cost;
 	var $descr_editable;
@@ -632,7 +634,7 @@ class line_details
 
 
 	function line_details ($stock_id, $qty, $prc, $disc_percent,
-		$qty_done, $standard_cost, $description, $id=0, $src_no=0, $src_id=0)
+		$qty_done, $standard_cost, $description, $id=0, $src_no=0, $src_id=0,$disc_amt=0)
 	{
 	/* Constructor function to add a new LineDetail object with passed params */
 
@@ -662,6 +664,8 @@ class line_details
 		$this->qty_done = $qty_done;
 		$this->standard_cost = $standard_cost;
 		$this->valid = true;
+
+		$this->discount_amount = $disc_amt;
 	}
 
 	// get unit price as stated on document

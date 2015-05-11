@@ -109,6 +109,7 @@ function print_invoices()
 				   user_price_dec());
 				$SubTotal += $Net;
 	    		$DisplayPrice = number_format2($myrow2["unit_price"],$dec);
+			$DisplayDiscAmt = number_format2($myrow2["discount_amount"],$dec);
 	    		$DisplayQty = number_format2($sign*$myrow2["quantity"],get_qty_dec($myrow2['stock_id']));
 	    		$DisplayNet = number_format2($Net,$dec);
 	    		if ($myrow2["discount_percent"]==0)
@@ -125,7 +126,9 @@ function print_invoices()
 					$rep->TextCol(2, 3,	$DisplayQty, -2);
 					$rep->TextCol(3, 4,	$myrow2['units'], -2);
 					$rep->TextCol(4, 5,	$DisplayPrice, -2);
-					$rep->TextCol(5, 6,	$DisplayDiscount, -2);
+					//$rep->TextCol(5, 6,	$DisplayDiscount, -2);
+					$rep->TextCol(5, 6,	$DisplayDiscAmt, -2);
+					
 					$rep->TextCol(6, 7,	$DisplayNet, -2);
 				}	
 				$rep->row = $newrow;

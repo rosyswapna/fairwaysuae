@@ -463,6 +463,8 @@ if (isset($_POST['ProcessOrder']) && can_process()) {
 	$modified = ($_SESSION['Items']->trans_no != 0);
 	$so_type = $_SESSION['Items']->so_type;
 
+	//echo "<pre>";print_r($_SESSION['Items']);echo "</pre>";exit;
+
 	$ret = $_SESSION['Items']->write(1);
 	if ($ret == -1)
 	{
@@ -554,10 +556,20 @@ function check_item_data()
 
 function handle_update_item()
 {
+
+	
 	if ($_POST['UpdateItem'] != '' && check_item_data()) {
+		/*$_SESSION['Items']->update_cart_item($_POST['LineNo'],
+		 input_num('qty'), input_num('price'),
+		 input_num('Disc') / 100, $_POST['item_description'] , input_num('DiscAmt'));*/
+
+		$disc_percent = calculate_discount_percent(input_num('qty'),input_num('price'),input_num('DiscAmt'));
 		$_SESSION['Items']->update_cart_item($_POST['LineNo'],
 		 input_num('qty'), input_num('price'),
-		 input_num('Disc') / 100, $_POST['item_description'] );
+		 $disc_percent / 100, $_POST['item_description'] , input_num('DiscAmt'));
+
+
+		
 	}
 	page_modified();
   line_start_focus();
@@ -583,8 +595,14 @@ function handle_new_item()
 	if (!check_item_data()) {
 			return;
 	}
+
+	//add_to_order($_SESSION['Items'], get_post('stock_id'), input_num('qty'),
+		//input_num('price'), input_num('Disc') / 100, get_post('stock_id_text'),input_num('DiscAmt'));
+	$discount_percent = calculate_discount_percent(input_num('qty'),input_num('price'),input_num('DiscAmt'));
 	add_to_order($_SESSION['Items'], get_post('stock_id'), input_num('qty'),
-		input_num('price'), input_num('Disc') / 100, get_post('stock_id_text'));
+		input_num('price'),$discount_percent / 100, get_post('stock_id_text'),input_num('DiscAmt'));
+	
+	
 
 	unset($_POST['_stock_id_edit'], $_POST['stock_id']);
 	page_modified();
@@ -632,6 +650,13 @@ function  handle_cancel_order()
 	$Ajax->activate('_page_body');
 	processing_end();
 	display_footer_exit();
+}
+
+//-------------------------------------------------------------------------------
+function calculate_discount_percent($qty=0,$price=0,$DiscAmt=0)
+{
+	$disc_percent = ($DiscAmt*100) / ($qty*$price);
+	return $disc_percent;	
 }
 
 //--------------------------------------------------------------------------------
@@ -743,8 +768,10 @@ if ($customer_error == "") {
 
 	if ($_SESSION['Items']->trans_no == 0) {
 
-		submit_center_first('ProcessOrder', $porder,
-		    _('Check entered data and save document'), 'default');
+		//submit_center_first('ProcessOrder', $porder,
+		   // _('Check entered data and save document'), 'default');
+submit_center_first('ProcessOrder', $porder,
+		    _('Check entered data and save document'));
 		submit_center_last('CancelOrder', $cancelorder,
 	   		_('Cancels document entry or removes sales order when editing an old document'), true);
 		submit_js_confirm('CancelOrder', _('You are about to void this Document.\nDo you want to continue?'));
