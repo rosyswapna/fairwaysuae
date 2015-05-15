@@ -12,7 +12,7 @@
 $page_security = 'SA_SALESKIT';
 $path_to_root = "../..";
 include_once($path_to_root . "/includes/session.inc");
-
+if (!@$_GET['popup'])
 page(_($help_context = "Sales Kits & Alias Codes"));
 
 include_once($path_to_root . "/includes/date_functions.inc");
@@ -191,7 +191,7 @@ if ($Mode == 'RESET')
 	unset($_POST['component']);
 }
 //--------------------------------------------------------------------------------------------------
-
+if (!@$_GET['popup'])
 start_form();
 
 echo "<center>" . _("Select a sale kit:") . "&nbsp;";
@@ -260,9 +260,11 @@ if (get_post('item_code') == '') {
 
 	end_table(1);
 	submit_add_or_update_center($selected_id == -1, '', 'both');
+	if (!@$_GET['popup'])
+		
 	end_form();
 //----------------------------------------------------------------------------------
-
+if (!@$_GET['popup'])
 end_page();
 
 ?>

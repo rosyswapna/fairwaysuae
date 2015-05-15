@@ -461,6 +461,7 @@ tabbed_content_start('tabs', array(
 		'reorder_level' => array(_('&Reorder Levels'), (is_inventory_item($stock_id) ? $stock_id : null)),
 		'movement' => array(_('&Transactions'), $stock_id),
 		'status' => array(_('&Status'), $stock_id),
+		'sales_kits' => array(_('&Packing'), $stock_id),
 	));
 	
 	switch (get_post('_tabs_sel')) {
@@ -502,6 +503,13 @@ tabbed_content_start('tabs', array(
 			$_GET['popup'] = 1;
 			include_once($path_to_root."/inventory/inquiry/stock_status.php");
 			break;
+		case 'sales_kits':
+			$_GET['stock_id'] = $stock_id;
+			$_GET['popup'] = 1;
+			include_once($path_to_root."/inventory/manage/sales_kits.php");
+			break;
+		
+		
 	};
 br();
 tabbed_content_end();
