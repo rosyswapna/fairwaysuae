@@ -547,6 +547,7 @@ function sales_order_item_controls(&$order, &$rowcounter, $line_no=-1)
 		$_POST['price'] = price_format($price);
 		// default to the customer's discount %
 		$_POST['Disc'] = percent_format($order->default_discount * 100);
+		$_POST['DiscAmt'] = percent_format(0);
 	}
 
 	qty_cells(null, 'qty', $_POST['qty'], null, null, $dec);
