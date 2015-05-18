@@ -180,3 +180,9 @@
 [22-Apr-2015 12:15:30 Europe/Paris] 0::connect_db.inc:154: mysql_errno() expects parameter 1 to be resource, boolean given
 [22-Apr-2015 12:15:30 Europe/Paris] 0::connect_db.inc:114: mysql_num_rows() expects parameter 1 to be resource, null given
 [22-Apr-2015 13:40:41 Europe/Paris] 0::logout.php:50: session_destroy(): Session object destruction failed
+[15-May-2015 13:29:29 Europe/Paris] 0:admin:ui_lists.inc:818: Missing argument 2 for stock_items_list_cells(), called in C:\wamp\www\fairwaysuae\inventory\manage\sales_kits.php on line 203 and defined
+[15-May-2015 13:34:25 Europe/Paris] 0:admin:ui_lists.inc:818: Missing argument 2 for stock_items_list_cells(), called in C:\wamp\www\fairwaysuae\inventory\manage\sales_kits.php on line 203 and defined
+[15-May-2015 13:35:54 Europe/Paris] 0:admin:ui_lists.inc:818: Missing argument 2 for stock_items_list_cells(), called in C:\wamp\www\fairwaysuae\inventory\manage\sales_kits.php on line 203 and defined
+[15-May-2015 13:35:54 Europe/Paris] 0:admin:ui_lists.inc:818: Missing argument 2 for stock_items_list_cells(), called in C:\wamp\www\fairwaysuae\inventory\manage\sales_kits.php on line 240 and defined
+[15-May-2015 13:38:06 Europe/Paris] 0:admin:ui_lists.inc:818: Missing argument 2 for stock_items_list_cells(), called in C:\wamp\www\fairwaysuae\inventory\manage\sales_kits.php on line 203 and defined
+[15-May-2015 13:38:06 Europe/Paris] 0:admin:ui_lists.inc:818: Missing argument 2 for stock_items_list_cells(), called in C:\wamp\www\fairwaysuae\inventory\manage\sales_kits.php on line 240 and defined

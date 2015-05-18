@@ -15,11 +15,18 @@ include_once($path_to_root . "/includes/session.inc");
 if (!@$_GET['popup'])
 page(_($help_context = "Sales Kits & Alias Codes"));
 
+if (isset($_GET['stock_id']))
+	$_POST['stock_id'] = $_GET['stock_id'];
+
+
 include_once($path_to_root . "/includes/date_functions.inc");
 include_once($path_to_root . "/includes/ui.inc");
 include_once($path_to_root . "/includes/data_checks.inc");
 
 include_once($path_to_root . "/includes/manufacturing.inc");
+
+if (list_updated('stock_id')) 
+	$Ajax->activate('status_tbl');
 
 check_db_has_stock_items(_("There are no items defined in the system."));
 
@@ -194,9 +201,24 @@ if ($Mode == 'RESET')
 if (!@$_GET['popup'])
 start_form();
 
+if (!isset($_POST['stock_id']))
+	$_POST['stock_id'] = get_global_stock_item();
+
+if (!@$_GET['popup'])
+{
 echo "<center>" . _("Select a sale kit:") . "&nbsp;";
 echo sales_kits_list('item_code', null, _('New kit'), true);
 echo "</center><br>";
+}
+if (@$_GET['popup']){
+	global $SysPrefs, $path_to_root, $new_item, $pic_height;
+start_outer_table(TABLESTYLE3);
+
+	table_section(2);
+
+	table_section_title(_("Sales kit/Item packing"));
+}
+
 $props = get_kit_props($_POST['item_code']);
 
 if (list_updated('item_code')) {
@@ -227,8 +249,11 @@ if (get_post('item_code') == '') {
 	start_table(TABLESTYLE2);
 }
 
-	if ($Mode == 'Edit') {
-		$myrow = get_item_code($selected_id);
+	if (get_post('NewStockID') != get_post('stock_id') || get_post('addupdate')) { // first item display
+
+			$_POST['NewStockID'] = $_POST['stock_id'];
+
+			$myrow = get_item($_POST['NewStockID']);
 		$_POST['component'] = $myrow["stock_id"];
 		$_POST['quantity'] = number_format2($myrow["quantity"], get_qty_dec($myrow["stock_id"]));
 	}
