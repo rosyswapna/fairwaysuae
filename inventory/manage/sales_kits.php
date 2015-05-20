@@ -12,21 +12,14 @@
 $page_security = 'SA_SALESKIT';
 $path_to_root = "../..";
 include_once($path_to_root . "/includes/session.inc");
-if (!@$_GET['popup'])
+
 page(_($help_context = "Sales Kits & Alias Codes"));
-
-if (isset($_GET['stock_id']))
-	$_POST['stock_id'] = $_GET['stock_id'];
-
 
 include_once($path_to_root . "/includes/date_functions.inc");
 include_once($path_to_root . "/includes/ui.inc");
 include_once($path_to_root . "/includes/data_checks.inc");
 
 include_once($path_to_root . "/includes/manufacturing.inc");
-
-if (list_updated('stock_id')) 
-	$Ajax->activate('status_tbl');
 
 check_db_has_stock_items(_("There are no items defined in the system."));
 
@@ -43,7 +36,7 @@ function display_kit_items($selected_kit)
 {
 	$result = get_item_kit($selected_kit);
 	div_start('bom');
-	start_table(TABLESTYLE, "width='60%'");
+	start_table(TABLESTYLE, "width=60%");
 	$th = array(_("Stock Item"), _("Description"), _("Quantity"), _("Units"),
 		'','');
 	table_header($th);
@@ -125,22 +118,8 @@ function update_component($kit_code, $selected_item)
 		 else
 			$msg =_("New component has been added to selected kit.");
 
-		
-
 		add_item_code( $kit_code, get_post('component'), get_post('description'),
 			 get_post('category'), input_num('quantity'), 0);
-
-		//===========add item============================
-		$component = get_item(get_post('component'));
-		add_item_from_kit($kit_code, get_post('description'),
-				'', get_post('category'), $component['tax_type_id'],
-				$component['units'], $component['mb_flag'], $component['sales_account'],
-				$component['inventory_account'], $component['cogs_account'],
-				$component['adjustment_account'], $component['assembly_account'], 
-				$component['dimension_id'], $component['dimension2_id'],
-				$component['no_sale'], $component['editable']);
-		//==============================================
-
 		display_notification($msg);
 
 	} else {
@@ -198,27 +177,12 @@ if ($Mode == 'RESET')
 	unset($_POST['component']);
 }
 //--------------------------------------------------------------------------------------------------
-if (!@$_GET['popup'])
+
 start_form();
 
-if (!isset($_POST['stock_id']))
-	$_POST['stock_id'] = get_global_stock_item();
-
-if (!@$_GET['popup'])
-{
 echo "<center>" . _("Select a sale kit:") . "&nbsp;";
 echo sales_kits_list('item_code', null, _('New kit'), true);
 echo "</center><br>";
-}
-if (@$_GET['popup']){
-	global $SysPrefs, $path_to_root, $new_item, $pic_height;
-start_outer_table(TABLESTYLE3);
-
-	table_section(2);
-
-	table_section_title(_("Sales kit/Item packing"));
-}
-
 $props = get_kit_props($_POST['item_code']);
 
 if (list_updated('item_code')) {
@@ -249,11 +213,8 @@ if (get_post('item_code') == '') {
 	start_table(TABLESTYLE2);
 }
 
-	if (get_post('NewStockID') != get_post('stock_id') || get_post('addupdate')) { // first item display
-
-			$_POST['NewStockID'] = $_POST['stock_id'];
-
-			$myrow = get_item($_POST['NewStockID']);
+	if ($Mode == 'Edit') {
+		$myrow = get_item_code($selected_id);
 		$_POST['component'] = $myrow["stock_id"];
 		$_POST['quantity'] = number_format2($myrow["quantity"], get_qty_dec($myrow["stock_id"]));
 	}
@@ -285,11 +246,9 @@ if (get_post('item_code') == '') {
 
 	end_table(1);
 	submit_add_or_update_center($selected_id == -1, '', 'both');
-	if (!@$_GET['popup'])
-		
 	end_form();
 //----------------------------------------------------------------------------------
-if (!@$_GET['popup'])
+
 end_page();
 
 ?>
