@@ -231,6 +231,11 @@ define('MANUFACTURED','M');
 define('PURCHASED','B');
 define('SERVICED','D');
 
+//sales_kit
+define ('PACK','Pack');
+define ('BOX','Box');
+define ('CARTON','Carton');
+
 
 include_once($path_to_root . '/includes/sysnames.inc');
 

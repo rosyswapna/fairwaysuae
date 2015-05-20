@@ -6,7 +6,7 @@
 	FA extension system documentation.
 */
 
-$next_extension_id = 10; // unique id for next installed extension
+$next_extension_id = 11; // unique id for next installed extension
 
 $installed_extensions = array (
   1 => 
@@ -45,15 +45,6 @@ $installed_extensions = array (
     'active' => false,
     'path' => 'modules/rep_sales_summary',
   ),
-  7 => 
-  array (
-    'name' => 'Bank Statement w/ Reconcile',
-    'package' => 'rep_statement_reconcile',
-    'version' => '2.3.3-3',
-    'type' => 'extension',
-    'active' => false,
-    'path' => 'modules/rep_statement_reconcile',
-  ),
   8 => 
   array (
     'name' => 'Cash Flow Statement Report',
@@ -72,6 +63,15 @@ $installed_extensions = array (
     'type' => 'extension',
     'path' => 'modules/payroll',
     'active' => false,
+  ),
+  10 => 
+  array (
+    'name' => 'Bank Statement w/ Reconcile',
+    'package' => 'rep_statement_reconcile',
+    'version' => '2.3.3-3',
+    'type' => 'extension',
+    'active' => false,
+    'path' => 'modules/rep_statement_reconcile',
   ),
 );
 ?>

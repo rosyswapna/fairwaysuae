@@ -905,6 +905,27 @@ function sales_local_items_list_row($label, $name, $selected_id=null, $all_optio
 	echo "</td></tr>";
 }
 //------------------------------------------------------------------------------------
+function sales_kit_list_row($label, $name, $selected_id=null, $submit_on_change=false)
+{
+	global $kit;
+	
+	echo "<tr>";
+	if ($label != null)
+		echo "<td class='label'>$label</td>\n";
+	echo "<td>";
+	
+	echo array_selector($name, $selected_id, $kit, 
+		array( 
+			'select_submit'=> $submit_on_change
+		) );
+	echo "</td></tr>";
+}
+
+
+	
+
+
+//------------------------------------------------------------------------------------
 
 function stock_manufactured_items_list($name, $selected_id=null,
 	$all_option=false, $submit_on_change=false)
@@ -2428,6 +2449,11 @@ function payment_type_list_row($label, $name, $selected_id=null, $submit_on_chan
 		) );
 	echo "</td></tr>\n";
 }
+
+
+
+
+
 
 function coa_list_row($label, $name, $value=null)
 {

@@ -291,7 +291,7 @@ function item_settings(&$stock_id)
 			$_POST['no_sale']	= $myrow['no_sale'];
 			$_POST['del_image'] = 0;	
 			$_POST['inactive'] = $myrow["inactive"];
-			$_POST['editable'] = $myrow["editable"];
+			$_POST['editable'] = $myrow["editable"]; 
 		}
 		label_row(_("Item Code:"),$_POST['NewStockID']);
 		hidden('NewStockID', $_POST['NewStockID']);
@@ -313,7 +313,7 @@ function item_settings(&$stock_id)
 		$_POST['mb_flag'] = $category_record["dflt_mb_flag"];
 		$_POST['inventory_account'] = $category_record["dflt_inventory_act"];
 		$_POST['cogs_account'] = $category_record["dflt_cogs_act"];
-		$_POST['sales_account'] = $category_record["dflt_sales_act"];
+		$_POST['sales_account'] = $category_record["dflt_sales_act"];  
 		$_POST['adjustment_account'] = $category_record["dflt_adjustment_act"];
 		$_POST['assembly_account'] = $category_record["dflt_assembly_act"];
 		$_POST['dimension_id'] = $category_record["dflt_dim1"];
