@@ -16,7 +16,7 @@ if (!@$_GET['popup'])
 page(_($help_context = "Sales Kits & Alias Codes"));
 
 if (isset($_GET['stock_id']))
-	$_POST['stock_id'] = $_GET['stock_id'];
+	$_POST['component'] = $_GET['kitcode']= $_GET['stock_id'];
 
 
 include_once($path_to_root . "/includes/date_functions.inc");
@@ -214,7 +214,7 @@ if (@$_GET['popup']){
 	global $SysPrefs, $path_to_root, $new_item, $pic_height;
 start_outer_table(TABLESTYLE3);
 
-	table_section(2);
+	table_section(1);
 
 	table_section_title(_("Sales kit/Item packing"));
 }
