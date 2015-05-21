@@ -73,6 +73,14 @@ class cart
 	var $credit;
 	var $ex_rate;
 
+	//billing suppliments
+	var $freight_charge = 0;
+	var $insurance = 0;
+	var $packing_charge = 0;
+	var $duties = 0;
+	var $service_charge = 0;
+	var $commission = 0;
+
 	//-------------------------------------------------------------------------
 	//
 	//  $trans_no==0 => open new/direct document

@@ -238,6 +238,43 @@ function display_order_summary($title, &$order, $editable_items=false)
 	small_amount_cells(null, 'freight_cost', price_format(get_post('freight_cost',0)));
 	label_cell('', 'colspan=2');
 	end_row();
+	//billing suppliments-------------------
+	start_row();
+	label_cell(_("Freight Charge"), "colspan=$colspan align=right");
+	small_amount_cells(null, 'freight_charge', price_format(get_post('freight_charge',0)));
+	label_cell('', 'colspan=2');
+	end_row();
+
+	start_row();
+	label_cell(_("Insurance"), "colspan=$colspan align=right");
+	small_amount_cells(null, 'insurance', price_format(get_post('insurance',0)));
+	label_cell('', 'colspan=2');
+	end_row();
+
+	start_row();
+	label_cell(_("Packing Charge"), "colspan=$colspan align=right");
+	small_amount_cells(null, 'packing_charge', price_format(get_post('packing_charge',0)));
+	label_cell('', 'colspan=2');
+	end_row();
+
+	start_row();
+	label_cell(_("Duties"), "colspan=$colspan align=right");
+	small_amount_cells(null, 'duties', price_format(get_post('duties',0)));
+	label_cell('', 'colspan=2');
+	end_row();
+
+	start_row();
+	label_cell(_("Service Charge"), "colspan=$colspan align=right");
+	small_amount_cells(null, 'service_charge', price_format(get_post('service_charge',0)));
+	label_cell('', 'colspan=2');
+	end_row();
+
+	start_row();
+	label_cell(_("Commission"), "colspan=$colspan align=right");
+	small_amount_cells(null, 'commission', price_format(get_post('commission',0)));
+	label_cell('', 'colspan=2');
+	end_row();
+	//----------------------------------------------
 	$display_sub_total = price_format($total + input_num('freight_cost'));
 	label_row(_("Sub-total"), $display_sub_total, "colspan=$colspan align=right","align=right", 2);
 	$taxes = $order->get_taxes(input_num('freight_cost'));

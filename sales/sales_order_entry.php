@@ -304,6 +304,14 @@ function copy_to_cart()
 		$cart->dimension2_id = $_POST['dimension2_id'];
 	}
 	$cart->ex_rate = input_num('_ex_rate', null);
+
+	//billing suppliments
+	$cart->freight_charge = input_num('freight_charge');
+	$cart->insurance = input_num('insurance');
+	$cart->packing_charge = input_num('packing_charge');
+	$cart->duties = input_num('duties');
+	$cart->service_charge = input_num('service_charge');
+	$cart->commission = input_num('commission');
 }
 
 //-----------------------------------------------------------------------------
@@ -337,6 +345,14 @@ function copy_from_cart()
 	}
 	$_POST['cart_id'] = $cart->cart_id;
 	$_POST['_ex_rate'] = $cart->ex_rate;
+
+	//billing suppliments
+	$_POST['freight_charge'] = price_format($cart->freight_charge);
+	$_POST['insurance'] = price_format($cart->insurance);
+	$_POST['packing_charge'] = price_format($cart->packing_charge);
+	$_POST['duties'] = price_format($cart->duties);
+	$_POST['service_charge'] = price_format($cart->service_charge);
+	$_POST['commission'] = price_format($cart->commission);
 }
 //--------------------------------------------------------------------------------
 
