@@ -16,7 +16,7 @@
 //
 global $systypes_array, $bank_account_types, $bank_transfer_types, 
 	$payment_person_types, $wo_types_array, $wo_cost_types, $class_types,
-	$quick_actions, $quick_entry_types, $stock_types, $tag_types;
+	$quick_actions, $quick_entry_types, $stock_types, $tag_types,$kit;
 
 $systypes_array = array (
 	ST_JOURNAL => _("Journal Entry"),
@@ -164,6 +164,12 @@ $tag_types = array (
 	TAG_ACCOUNT   => _("Account"),
 	TAG_DIMENSION => _("Dimension")
 );
+//----------------------------------------------------------------------------------
+
+$kit=array(
+PACK=>_("Pack"),
+BOX=>_("Box"),
+CARTON=>_("Carton"));
 
 //----------------------------------------------------------------------------------
 // crm contacts categories
@@ -185,5 +191,8 @@ $pterm_types = array(
 //----------------------------------------------------------------------------------
 // This month array is for use with the last 3 dateformats. 
 $tmonths = array("", _("Jan"),_("Feb"),_("Mar"),_("Apr"),_("May"),_("Jun"),_("Jul"),_("Aug"),_("Sep"),_("Oct"),_("Nov"),_("Dec"));
+//----------------------------------------------------------------------------------
+//sles kit
+
 
 ?>

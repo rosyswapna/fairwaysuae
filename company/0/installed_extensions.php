@@ -42,15 +42,6 @@ $installed_extensions = array (
     'active' => 1,
     'path' => 'modules/rep_sales_summary',
   ),
-  7 => 
-  array (
-    'name' => 'Bank Statement w/ Reconcile',
-    'package' => 'rep_statement_reconcile',
-    'version' => '2.3.3-3',
-    'type' => 'extension',
-    'active' => 1,
-    'path' => 'modules/rep_statement_reconcile',
-  ),
   8 => 
   array (
     'name' => 'Cash Flow Statement Report',
@@ -69,6 +60,15 @@ $installed_extensions = array (
     'type' => 'extension',
     'path' => 'modules/payroll',
     'active' => 1,
+  ),
+  10 => 
+  array (
+    'name' => 'Bank Statement w/ Reconcile',
+    'package' => 'rep_statement_reconcile',
+    'version' => '2.3.3-3',
+    'type' => 'extension',
+    'active' => 1,
+    'path' => 'modules/rep_statement_reconcile',
   ),
 );
 ?>

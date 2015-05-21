@@ -186,3 +186,107 @@
 [15-May-2015 13:35:54 Europe/Paris] 0:admin:ui_lists.inc:818: Missing argument 2 for stock_items_list_cells(), called in C:\wamp\www\fairwaysuae\inventory\manage\sales_kits.php on line 240 and defined
 [15-May-2015 13:38:06 Europe/Paris] 0:admin:ui_lists.inc:818: Missing argument 2 for stock_items_list_cells(), called in C:\wamp\www\fairwaysuae\inventory\manage\sales_kits.php on line 203 and defined
 [15-May-2015 13:38:06 Europe/Paris] 0:admin:ui_lists.inc:818: Missing argument 2 for stock_items_list_cells(), called in C:\wamp\www\fairwaysuae\inventory\manage\sales_kits.php on line 240 and defined
+[18-May-2015 08:15:22 Europe/Paris] 0:admin:sales_kits.php:24: include_once(../../includes/ui_lists.inc): failed to open stream: No such file or directory
+[18-May-2015 08:15:22 Europe/Paris] 0:admin:sales_kits.php:24: include_once(): Failed opening '../../includes/ui_lists.inc' for inclusion (include_path='.;C:\php\pear')
+[18-May-2015 08:16:09 Europe/Paris] 0:admin:sales_kits.php:24: include_once(../../includes/ui_lists.inc): failed to open stream: No such file or directory
+[18-May-2015 08:16:09 Europe/Paris] 0:admin:sales_kits.php:24: include_once(): Failed opening '../../includes/ui_lists.inc' for inclusion (include_path='.;C:\php\pear')
+[18-May-2015 08:17:13 Europe/Paris] 0:admin:sales_kits.php:24: include_once(../../includes/ui_lists.inc): failed to open stream: No such file or directory
+[18-May-2015 08:17:13 Europe/Paris] 0:admin:sales_kits.php:24: include_once(): Failed opening '../../includes/ui_lists.inc' for inclusion (include_path='.;C:\php\pear')
+[18-May-2015 08:24:50 Europe/Paris] 0:admin:sales_kits.php:24: include_once(../../includes/ui_lists.inc): failed to open stream: No such file or directory
+[18-May-2015 08:24:50 Europe/Paris] 0:admin:sales_kits.php:24: include_once(): Failed opening '../../includes/ui_lists.inc' for inclusion (include_path='.;C:\php\pear')
+[18-May-2015 08:35:54 Europe/Paris] 0:admin:sales_kits.php:24: include_once(../../includes/ui_lists.inc): failed to open stream: No such file or directory
+[18-May-2015 08:35:54 Europe/Paris] 0:admin:sales_kits.php:24: include_once(): Failed opening '../../includes/ui_lists.inc' for inclusion (include_path='.;C:\php\pear')
+[18-May-2015 08:39:35 Europe/Paris] 0:admin:sales_kits.php:24: include_once(../../includes/ui_lists.inc): failed to open stream: No such file or directory
+[18-May-2015 08:39:35 Europe/Paris] 0:admin:sales_kits.php:24: include_once(): Failed opening '../../includes/ui_lists.inc' for inclusion (include_path='.;C:\php\pear')
+[18-May-2015 08:42:06 Europe/Paris] 0:admin:sales_kits.php:24: include_once(../../includes/ui_lists.inc): failed to open stream: No such file or directory
+[18-May-2015 08:42:06 Europe/Paris] 0:admin:sales_kits.php:24: include_once(): Failed opening '../../includes/ui_lists.inc' for inclusion (include_path='.;C:\php\pear')
+[18-May-2015 08:43:01 Europe/Paris] 0:admin:sales_kits.php:24: include_once(../../includes/ui_lists.inc): failed to open stream: No such file or directory
+[18-May-2015 08:43:01 Europe/Paris] 0:admin:sales_kits.php:24: include_once(): Failed opening '../../includes/ui_lists.inc' for inclusion (include_path='.;C:\php\pear')
+[18-May-2015 08:45:07 Europe/Paris] 0:admin:sales_kits.php:24: include_once(../../includes/ui_lists.inc): failed to open stream: No such file or directory
+[18-May-2015 08:45:07 Europe/Paris] 0:admin:sales_kits.php:24: include_once(): Failed opening '../../includes/ui_lists.inc' for inclusion (include_path='.;C:\php\pear')
+[18-May-2015 08:46:32 Europe/Paris] 0:admin:sales_kits.php:24: include_once(../../includes/ui_lists.inc): failed to open stream: No such file or directory
+[18-May-2015 08:46:32 Europe/Paris] 0:admin:sales_kits.php:24: include_once(): Failed opening '../../includes/ui_lists.inc' for inclusion (include_path='.;C:\php\pear')
+[18-May-2015 08:47:41 Europe/Paris] 0:admin:sales_kits.php:24: include_once(../../includes/ui_lists.inc): failed to open stream: No such file or directory
+[18-May-2015 08:47:41 Europe/Paris] 0:admin:sales_kits.php:24: include_once(): Failed opening '../../includes/ui_lists.inc' for inclusion (include_path='.;C:\php\pear')
+[18-May-2015 08:47:50 Europe/Paris] 0:admin:sales_kits.php:24: include_once(../../includes/ui_lists.inc): failed to open stream: No such file or directory
+[18-May-2015 08:47:50 Europe/Paris] 0:admin:sales_kits.php:24: include_once(): Failed opening '../../includes/ui_lists.inc' for inclusion (include_path='.;C:\php\pear')
+[18-May-2015 08:48:14 Europe/Paris] 0:admin:sales_kits.php:24: include_once(../../includes/ui_lists.inc): failed to open stream: No such file or directory
+[18-May-2015 08:48:14 Europe/Paris] 0:admin:sales_kits.php:24: include_once(): Failed opening '../../includes/ui_lists.inc' for inclusion (include_path='.;C:\php\pear')
+[18-May-2015 08:49:45 Europe/Paris] 0:admin:sales_kits.php:24: include_once(../../includes/ui_lists.inc): failed to open stream: No such file or directory
+[18-May-2015 08:49:45 Europe/Paris] 0:admin:sales_kits.php:24: include_once(): Failed opening '../../includes/ui_lists.inc' for inclusion (include_path='.;C:\php\pear')
+[18-May-2015 08:53:43 Europe/Paris] 0:admin:sales_kits.php:24: include_once(../../includes/ui_lists.inc): failed to open stream: No such file or directory
+[18-May-2015 08:53:43 Europe/Paris] 0:admin:sales_kits.php:24: include_once(): Failed opening '../../includes/ui_lists.inc' for inclusion (include_path='.;C:\php\pear')
+[18-May-2015 09:07:29 Europe/Paris] 0:admin:sales_kits.php:24: include_once(../../includes/ui_lists.inc): failed to open stream: No such file or directory
+[18-May-2015 09:07:29 Europe/Paris] 0:admin:sales_kits.php:24: include_once(): Failed opening '../../includes/ui_lists.inc' for inclusion (include_path='.;C:\php\pear')
+[18-May-2015 09:10:25 Europe/Paris] 0:admin:sales_kits.php:24: include_once(../../includes/ui_lists.inc): failed to open stream: No such file or directory
+[18-May-2015 09:10:25 Europe/Paris] 0:admin:sales_kits.php:24: include_once(): Failed opening '../../includes/ui_lists.inc' for inclusion (include_path='.;C:\php\pear')
+[18-May-2015 09:13:22 Europe/Paris] 0:admin:sales_kits.php:24: include_once(../../includes/ui_lists.inc): failed to open stream: No such file or directory
+[18-May-2015 09:13:22 Europe/Paris] 0:admin:sales_kits.php:24: include_once(): Failed opening '../../includes/ui_lists.inc' for inclusion (include_path='.;C:\php\pear')
+[18-May-2015 09:14:21 Europe/Paris] 0:admin:sales_kits.php:24: include_once(../../includes/ui_lists.inc): failed to open stream: No such file or directory
+[18-May-2015 09:14:21 Europe/Paris] 0:admin:sales_kits.php:24: include_once(): Failed opening '../../includes/ui_lists.inc' for inclusion (include_path='.;C:\php\pear')
+[18-May-2015 09:14:21 Europe/Paris] 0:admin:sales_kits.php:237: _() expects exactly 1 parameter, 0 given
+[18-May-2015 09:14:41 Europe/Paris] 0:admin:sales_kits.php:24: include_once(../../includes/ui_lists.inc): failed to open stream: No such file or directory
+[18-May-2015 09:14:41 Europe/Paris] 0:admin:sales_kits.php:24: include_once(): Failed opening '../../includes/ui_lists.inc' for inclusion (include_path='.;C:\php\pear')
+[18-May-2015 09:15:36 Europe/Paris] 0:admin:sales_kits.php:24: include_once(../../includes/ui_lists.inc): failed to open stream: No such file or directory
+[18-May-2015 09:15:36 Europe/Paris] 0:admin:sales_kits.php:24: include_once(): Failed opening '../../includes/ui_lists.inc' for inclusion (include_path='.;C:\php\pear')
+[18-May-2015 09:16:31 Europe/Paris] 0:admin:sales_kits.php:24: include_once(../../includes/ui_lists.inc): failed to open stream: No such file or directory
+[18-May-2015 09:16:31 Europe/Paris] 0:admin:sales_kits.php:24: include_once(): Failed opening '../../includes/ui_lists.inc' for inclusion (include_path='.;C:\php\pear')
+[18-May-2015 09:17:29 Europe/Paris] 0:admin:sales_kits.php:24: include_once(../../includes/ui_lists.inc): failed to open stream: No such file or directory
+[18-May-2015 09:17:29 Europe/Paris] 0:admin:sales_kits.php:24: include_once(): Failed opening '../../includes/ui_lists.inc' for inclusion (include_path='.;C:\php\pear')
+[18-May-2015 09:17:32 Europe/Paris] 0:admin:sales_kits.php:24: include_once(../../includes/ui_lists.inc): failed to open stream: No such file or directory
+[18-May-2015 09:17:32 Europe/Paris] 0:admin:sales_kits.php:24: include_once(): Failed opening '../../includes/ui_lists.inc' for inclusion (include_path='.;C:\php\pear')
+[18-May-2015 09:17:47 Europe/Paris] 0:admin:sales_kits.php:24: include_once(../../includes/ui_lists.inc): failed to open stream: No such file or directory
+[18-May-2015 09:17:47 Europe/Paris] 0:admin:sales_kits.php:24: include_once(): Failed opening '../../includes/ui_lists.inc' for inclusion (include_path='.;C:\php\pear')
+[18-May-2015 09:18:06 Europe/Paris] 0:admin:sales_kits.php:24: include_once(../../includes/ui_lists.inc): failed to open stream: No such file or directory
+[18-May-2015 09:18:06 Europe/Paris] 0:admin:sales_kits.php:24: include_once(): Failed opening '../../includes/ui_lists.inc' for inclusion (include_path='.;C:\php\pear')
+[18-May-2015 09:18:15 Europe/Paris] 0:admin:sales_kits.php:24: include_once(../../includes/ui_lists.inc): failed to open stream: No such file or directory
+[18-May-2015 09:18:15 Europe/Paris] 0:admin:sales_kits.php:24: include_once(): Failed opening '../../includes/ui_lists.inc' for inclusion (include_path='.;C:\php\pear')
+[18-May-2015 09:18:18 Europe/Paris] 0:admin:sales_kits.php:24: include_once(../../includes/ui_lists.inc): failed to open stream: No such file or directory
+[18-May-2015 09:18:18 Europe/Paris] 0:admin:sales_kits.php:24: include_once(): Failed opening '../../includes/ui_lists.inc' for inclusion (include_path='.;C:\php\pear')
+[18-May-2015 09:18:48 Europe/Paris] 0:admin:sales_kits.php:24: include_once(../../includes/ui_lists.inc): failed to open stream: No such file or directory
+[18-May-2015 09:18:48 Europe/Paris] 0:admin:sales_kits.php:24: include_once(): Failed opening '../../includes/ui_lists.inc' for inclusion (include_path='.;C:\php\pear')
+[18-May-2015 09:19:05 Europe/Paris] 0:admin:sales_kits.php:24: include_once(../../includes/ui_lists.inc): failed to open stream: No such file or directory
+[18-May-2015 09:19:05 Europe/Paris] 0:admin:sales_kits.php:24: include_once(): Failed opening '../../includes/ui_lists.inc' for inclusion (include_path='.;C:\php\pear')
+[18-May-2015 09:19:10 Europe/Paris] 0:admin:sales_kits.php:24: include_once(../../includes/ui_lists.inc): failed to open stream: No such file or directory
+[18-May-2015 09:19:10 Europe/Paris] 0:admin:sales_kits.php:24: include_once(): Failed opening '../../includes/ui_lists.inc' for inclusion (include_path='.;C:\php\pear')
+[18-May-2015 09:19:24 Europe/Paris] 0:admin:sales_kits.php:24: include_once(../../includes/ui_lists.inc): failed to open stream: No such file or directory
+[18-May-2015 09:19:24 Europe/Paris] 0:admin:sales_kits.php:24: include_once(): Failed opening '../../includes/ui_lists.inc' for inclusion (include_path='.;C:\php\pear')
+[18-May-2015 09:19:28 Europe/Paris] 0:admin:sales_kits.php:24: include_once(../../includes/ui_lists.inc): failed to open stream: No such file or directory
+[18-May-2015 09:19:28 Europe/Paris] 0:admin:sales_kits.php:24: include_once(): Failed opening '../../includes/ui_lists.inc' for inclusion (include_path='.;C:\php\pear')
+[18-May-2015 09:19:31 Europe/Paris] 0:admin:sales_kits.php:24: include_once(../../includes/ui_lists.inc): failed to open stream: No such file or directory
+[18-May-2015 09:19:31 Europe/Paris] 0:admin:sales_kits.php:24: include_once(): Failed opening '../../includes/ui_lists.inc' for inclusion (include_path='.;C:\php\pear')
+[18-May-2015 09:19:34 Europe/Paris] 0:admin:sales_kits.php:24: include_once(../../includes/ui_lists.inc): failed to open stream: No such file or directory
+[18-May-2015 09:19:34 Europe/Paris] 0:admin:sales_kits.php:24: include_once(): Failed opening '../../includes/ui_lists.inc' for inclusion (include_path='.;C:\php\pear')
+[18-May-2015 09:19:37 Europe/Paris] 0:admin:sales_kits.php:24: include_once(../../includes/ui_lists.inc): failed to open stream: No such file or directory
+[18-May-2015 09:19:37 Europe/Paris] 0:admin:sales_kits.php:24: include_once(): Failed opening '../../includes/ui_lists.inc' for inclusion (include_path='.;C:\php\pear')
+[18-May-2015 09:19:41 Europe/Paris] 0:admin:sales_kits.php:24: include_once(../../includes/ui_lists.inc): failed to open stream: No such file or directory
+[18-May-2015 09:19:41 Europe/Paris] 0:admin:sales_kits.php:24: include_once(): Failed opening '../../includes/ui_lists.inc' for inclusion (include_path='.;C:\php\pear')
+[18-May-2015 09:19:44 Europe/Paris] 0:admin:sales_kits.php:24: include_once(../../includes/ui_lists.inc): failed to open stream: No such file or directory
+[18-May-2015 09:19:44 Europe/Paris] 0:admin:sales_kits.php:24: include_once(): Failed opening '../../includes/ui_lists.inc' for inclusion (include_path='.;C:\php\pear')
+[18-May-2015 09:19:47 Europe/Paris] 0:admin:sales_kits.php:24: include_once(../../includes/ui_lists.inc): failed to open stream: No such file or directory
+[18-May-2015 09:19:47 Europe/Paris] 0:admin:sales_kits.php:24: include_once(): Failed opening '../../includes/ui_lists.inc' for inclusion (include_path='.;C:\php\pear')
+[18-May-2015 09:19:50 Europe/Paris] 0:admin:sales_kits.php:24: include_once(../../includes/ui_lists.inc): failed to open stream: No such file or directory
+[18-May-2015 09:19:50 Europe/Paris] 0:admin:sales_kits.php:24: include_once(): Failed opening '../../includes/ui_lists.inc' for inclusion (include_path='.;C:\php\pear')
+[18-May-2015 09:19:53 Europe/Paris] 0:admin:sales_kits.php:24: include_once(../../includes/ui_lists.inc): failed to open stream: No such file or directory
+[18-May-2015 09:19:53 Europe/Paris] 0:admin:sales_kits.php:24: include_once(): Failed opening '../../includes/ui_lists.inc' for inclusion (include_path='.;C:\php\pear')
+[18-May-2015 09:20:19 Europe/Paris] 0:admin:sales_kits.php:24: include_once(../../includes/ui_lists.inc): failed to open stream: No such file or directory
+[18-May-2015 09:20:19 Europe/Paris] 0:admin:sales_kits.php:24: include_once(): Failed opening '../../includes/ui_lists.inc' for inclusion (include_path='.;C:\php\pear')
+[18-May-2015 09:20:24 Europe/Paris] 0:admin:sales_kits.php:24: include_once(../../includes/ui_lists.inc): failed to open stream: No such file or directory
+[18-May-2015 09:20:24 Europe/Paris] 0:admin:sales_kits.php:24: include_once(): Failed opening '../../includes/ui_lists.inc' for inclusion (include_path='.;C:\php\pear')
+[18-May-2015 09:20:28 Europe/Paris] 0:admin:sales_kits.php:24: include_once(../../includes/ui_lists.inc): failed to open stream: No such file or directory
+[18-May-2015 09:20:28 Europe/Paris] 0:admin:sales_kits.php:24: include_once(): Failed opening '../../includes/ui_lists.inc' for inclusion (include_path='.;C:\php\pear')
+[18-May-2015 09:20:31 Europe/Paris] 0:admin:sales_kits.php:24: include_once(../../includes/ui_lists.inc): failed to open stream: No such file or directory
+[18-May-2015 09:20:31 Europe/Paris] 0:admin:sales_kits.php:24: include_once(): Failed opening '../../includes/ui_lists.inc' for inclusion (include_path='.;C:\php\pear')
+[18-May-2015 09:26:23 Europe/Paris] 0:admin:sales_kits.php:24: include_once(../../includes/ui_lists.inc): failed to open stream: No such file or directory
+[18-May-2015 09:26:23 Europe/Paris] 0:admin:sales_kits.php:24: include_once(): Failed opening '../../includes/ui_lists.inc' for inclusion (include_path='.;C:\php\pear')
+[18-May-2015 09:26:35 Europe/Paris] 0:admin:sales_kits.php:24: include_once(../../includes/ui_lists.inc): failed to open stream: No such file or directory
+[18-May-2015 09:26:35 Europe/Paris] 0:admin:sales_kits.php:24: include_once(): Failed opening '../../includes/ui_lists.inc' for inclusion (include_path='.;C:\php\pear')
+[18-May-2015 09:26:39 Europe/Paris] 0:admin:sales_kits.php:24: include_once(../../includes/ui_lists.inc): failed to open stream: No such file or directory
+[18-May-2015 09:26:39 Europe/Paris] 0:admin:sales_kits.php:24: include_once(): Failed opening '../../includes/ui_lists.inc' for inclusion (include_path='.;C:\php\pear')
+[18-May-2015 09:26:41 Europe/Paris] 0:admin:sales_kits.php:24: include_once(../../includes/ui_lists.inc): failed to open stream: No such file or directory
+[18-May-2015 09:26:41 Europe/Paris] 0:admin:sales_kits.php:24: include_once(): Failed opening '../../includes/ui_lists.inc' for inclusion (include_path='.;C:\php\pear')
+[18-May-2015 09:26:45 Europe/Paris] 0:admin:sales_kits.php:24: include_once(../../includes/ui_lists.inc): failed to open stream: No such file or directory
+[18-May-2015 09:26:45 Europe/Paris] 0:admin:sales_kits.php:24: include_once(): Failed opening '../../includes/ui_lists.inc' for inclusion (include_path='.;C:\php\pear')
+[18-May-2015 11:48:13 Europe/Paris] 0::logout.php:50: session_destroy(): Session object destruction failed
+[19-May-2015 11:22:09 Europe/Paris] 0:admin:packages.inc:103: rmdir(../modules/rep_statement_reconcile): Directory not empty
+[19-May-2015 11:22:10 Europe/Paris] 0:admin:packages.inc:429: rmdir(../modules/_cache/rep_statement_reconcile-2.3.3-3): Directory not empty

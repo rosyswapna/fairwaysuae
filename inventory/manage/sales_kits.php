@@ -13,6 +13,7 @@ $page_security = 'SA_SALESKIT';
 $path_to_root = "../..";
 include_once($path_to_root . "/includes/session.inc");
 
+
 page(_($help_context = "Sales Kits & Alias Codes"));
 
 include_once($path_to_root . "/includes/date_functions.inc");
@@ -183,6 +184,7 @@ start_form();
 echo "<center>" . _("Select a sale kit:") . "&nbsp;";
 echo sales_kits_list('item_code', null, _('New kit'), true);
 echo "</center><br>";
+
 $props = get_kit_props($_POST['item_code']);
 
 if (list_updated('item_code')) {
