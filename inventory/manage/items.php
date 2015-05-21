@@ -506,7 +506,7 @@ tabbed_content_start('tabs', array(
 		case 'sales_kits':
 			$_GET['stock_id'] = $stock_id;
 			$_GET['popup'] = 1;
-			include_once($path_to_root."/inventory/manage/sales_kits.php");
+			include_once($path_to_root."/inventory/manage/item_sales_kits.php");
 			break;
 		
 		

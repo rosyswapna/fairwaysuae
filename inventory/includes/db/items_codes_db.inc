@@ -100,6 +100,27 @@ function get_item_kit($item_code)
 	return $result;
 }
 
+//get item kits
+function get_item_kits($stock_id)
+{
+	$sql="SELECT DISTINCT kit.*, item.units, comp.description as comp_name 
+		FROM "
+		.TB_PREF."item_codes kit,"
+		.TB_PREF."item_codes comp
+		LEFT JOIN "
+		.TB_PREF."stock_master item
+		ON 
+			item.stock_id=comp.item_code
+		WHERE
+			kit.stock_id=comp.item_code
+			AND kit.stock_id=".db_escape($stock_id)." AND kit.stock_id <> kit.item_code";
+
+	$result = db_query($sql,"item kits could not be retrieved");
+
+	return $result;
+}
+
+
 function get_item_code_dflts($stock_id)
 {
 	$sql = "SELECT units, decimals, description, category_id
