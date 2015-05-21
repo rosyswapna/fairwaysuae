@@ -66,6 +66,7 @@ function can_process()
 
 if (isset($_POST['submit']) && can_process())
 {
+
 	update_company_prefs( get_post( array( 'retained_earnings_act', 'profit_loss_year_act',
 		'debtors_act', 'pyt_discount_act', 'creditors_act', 'freight_act',
 		'exchange_diff_act', 'bank_charge_act', 'default_sales_act', 'default_sales_discount_act',
@@ -74,7 +75,9 @@ if (isset($_POST['submit']) && can_process())
 		'past_due_days', 'default_workorder_required', 'default_dim_required',
 		'default_delivery_required', 'default_quote_valid_days', 'grn_clearing_act',
 		'allow_negative_stock'=> 0, 'accumulate_shipping'=> 0,
-		'po_over_receive' => 0.0, 'po_over_charge' => 0.0, 'default_credit_limit'=>0.0
+		'po_over_receive' => 0.0, 'po_over_charge' => 0.0, 'default_credit_limit'=>0.0,
+		'default_frieght','default_insurance','default_pck_charge','default_duties',
+		'default_service_charge','default_commission'
 )));
 
 	display_notification(_("The general GL setup has been updated."));
@@ -137,7 +140,17 @@ $_POST['default_dim_required'] = $myrow['default_dim_required'];
 $_POST['default_delivery_required'] = $myrow['default_delivery_required'];
 $_POST['default_quote_valid_days'] = $myrow['default_quote_valid_days'];
 
+//billing suppliments
+$_POST['default_frieght'] = $myrow['default_frieght'];
+$_POST['default_insurance'] = $myrow['default_insurance'];
+$_POST['default_pck_charge'] = $myrow['default_pck_charge'];
+$_POST['default_duties'] = $myrow['default_duties'];
+$_POST['default_service_charge'] = $myrow['default_service_charge'];
+$_POST['default_commission'] = $myrow['default_commission'];
+
 //---------------
+
+//echo "<pre>";print_r($myrow);echo "</pre>";exit;
 
 
 table_section_title(_("General GL"));
@@ -181,14 +194,10 @@ text_row(_("Quote Valid Days:"), 'default_quote_valid_days', $_POST['default_quo
 
 text_row(_("Delivery Required By:"), 'default_delivery_required', $_POST['default_delivery_required'], 6, 6, '', "", _("days"));
 
-//----------------
-
-table_section(2);
-
 table_section_title(_("Dimension Defaults"));
 
 text_row(_("Dimension Required By After:"), 'default_dim_required', $_POST['default_dim_required'], 6, 6, '', "", _("days"));
-//---------------
+
 
 table_section_title(_("Suppliers and Purchasing"));
 
@@ -196,6 +205,14 @@ percent_row(_("Delivery Over-Receive Allowance:"), 'po_over_receive');
 
 percent_row(_("Invoice Over-Charge Allowance:"), 'po_over_charge');
 
+
+
+//----------------
+
+table_section(2);
+
+
+//---------------
 table_section_title(_("Suppliers and Purchasing Defaults"));
 
 gl_all_accounts_list_row(_("Payable Account:"), 'creditors_act', $_POST['creditors_act']);
@@ -203,6 +220,7 @@ gl_all_accounts_list_row(_("Payable Account:"), 'creditors_act', $_POST['credito
 gl_all_accounts_list_row(_("Purchase Discount Account:"), 'pyt_discount_act', $_POST['pyt_discount_act']);
 
 gl_all_accounts_list_row(_("GRN Clearing Account:"), 'grn_clearing_act', get_post('grn_clearing_act'), true, false, _("No postings on GRN"));
+
 
 table_section_title(_("Inventory"));
 
@@ -227,11 +245,21 @@ table_section_title(_("Manufacturing Defaults"));
 text_row(_("Work Order Required By After:"), 'default_workorder_required', $_POST['default_workorder_required'], 6, 6, '', "", _("days"));
 
 
+table_section_title(_("Billing Suppliments"));
+gl_all_accounts_list_row(_("Frieght Charge:"), 'default_frieght', $_POST['default_frieght']);
+gl_all_accounts_list_row(_("Insurance:"), 'default_insurance', $_POST['default_insurance']);
+gl_all_accounts_list_row(_("Paking Charge:"), 'default_pck_charge', $_POST['default_pck_charge']);
+gl_all_accounts_list_row(_("Duties:"), 'default_duties', $_POST['default_duties']);
+gl_all_accounts_list_row(_("Service Charge:"), 'default_service_charge', $_POST['default_service_charge']);
+gl_all_accounts_list_row(_("Commission:"), 'default_commission', $_POST['default_commission']);
+
+
 //----------------
 
 end_outer_table(1);
 
-submit_center('submit', _("Update"), true, '', 'default');
+//submit_center('submit', _("Update"), true, '', 'default');
+submit_center('submit', _("Update"), true);
 
 end_form(2);
 
