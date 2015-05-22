@@ -43,6 +43,14 @@ class supp_trans
 	var $credit = 0;
 	var $tax_overrides = array();		// array of taxes manually inserted during sales invoice entry
 
+	//billing suppliments
+	var $freight_charge = 0;
+	var $insurance = 0;
+	var $packing_charge = 0;
+	var $duties = 0;
+	var $service_charge = 0;
+	var $commission = 0;
+
 	function supp_trans($trans_type)
 	{
 		$this->trans_type = $trans_type;

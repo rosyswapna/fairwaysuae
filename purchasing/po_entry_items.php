@@ -487,6 +487,7 @@ function handle_commit_order()
 			$inv->duties 		= price_format($cart->duties);
 			$inv->service_charge 	= price_format($cart->service_charge);
 			$inv->commission 	= price_format($cart->commission);
+			$inv->ov_amount += $cart->freight_charge+$cart->insurance+$cart->packing_charge+$cart->duties+$cart->service_charge+$cart->commission;
 
 
 			$inv_no = add_supp_invoice($inv);

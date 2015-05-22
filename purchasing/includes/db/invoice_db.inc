@@ -159,7 +159,10 @@ function add_supp_invoice($supp_trans, $invoice_no=0) // do not receive as ref b
     /*First insert the invoice into the supp_trans table*/
 	$invoice_id = write_supp_trans($trans_type, 0, $supp_trans->supplier_id, $date_, $supp_trans->due_date,
 		$supp_trans->reference, $supp_trans->supp_reference,
-		$invoice_items_total, $item_added_tax, $supp_trans->ov_discount, "", 0, $supp_trans->tax_included);
+		$invoice_items_total, $item_added_tax, $supp_trans->ov_discount, "", 0, $supp_trans->tax_included,
+		$supp_trans->freight_charge,$supp_trans->insurance,$supp_trans->packing_charge,
+		$supp_trans->duties,$supp_trans->service_charge,$supp_trans->commission
+		);
 
 	$total = 0;
 
@@ -193,11 +196,32 @@ function add_supp_invoice($supp_trans, $invoice_no=0) // do not receive as ref b
     if ($trans_type == ST_SUPPCREDIT)
 		$net_diff = -$net_diff;
 
+
+	//billing suppliments total
+	$billing_suppliments_total = $supp_trans->freight_charge + $supp_trans->insurance + $supp_trans->packing_charge + $supp_trans->duties + $supp_trans->service_charge + $supp_trans->commission;
+
     /* Now the AP account */
     $total += add_gl_trans_supplier($trans_type, $invoice_id, $date_, $supplier["payable_account"], 0, 0,
-		-($invoice_items_total +  $item_added_tax + $supp_trans->ov_discount),
+		-($invoice_items_total +  $item_added_tax + $supp_trans->ov_discount+$billing_suppliments_total),
 		$supp_trans->supplier_id,
 		"The general ledger transaction for the control total could not be added");
+
+	//------------billing suppliments gl entries start here---------------------------------------------
+	$billing_suppliments_gl_entries = array(
+			get_company_pref('default_freight')=>$supp_trans->freight_charge,
+			get_company_pref('default_insurance')=>$supp_trans->insurance,
+			get_company_pref('default_pck_charge')=>$supp_trans->packing_charge,
+			get_company_pref('default_duties')=>$supp_trans->duties,
+			get_company_pref('default_service_charge')=>$supp_trans->service_charge,
+			get_company_pref('default_commission')=>$supp_trans->commission,
+			);
+	foreach($billing_suppliments_gl_entries as $gl_code=>$amount){
+		if ($amount != 0) {
+
+			$total += add_gl_trans_supplier($trans_type, $invoice_id, $date_, $gl_code, 0, 0,$amount,$supp_trans->supplier_id, "The freight charge GL posting could not be inserted");
+		}
+	}
+	//-----------billing suppliments gl entries ends here---------------------------------------------
 
     foreach ($supp_trans->gl_codes as $entered_gl_code)
     {
