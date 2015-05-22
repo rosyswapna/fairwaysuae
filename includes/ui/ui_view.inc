@@ -567,6 +567,7 @@ function display_allocations($alloc_result, $total, $payments=false)
     	end_row();
 
     	$total_allocated += $alloc_row['amt'];
+	
     }
     start_row();
    	label_cell(_("Total Allocated:"), "align=right colspan=5");

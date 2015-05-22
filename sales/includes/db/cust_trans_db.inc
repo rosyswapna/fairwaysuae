@@ -129,7 +129,7 @@ function get_customer_trans($trans_id, $trans_type)
 	global $go_debug;
 
 	$sql = "SELECT trans.*,"
-		."ov_amount+ov_gst+ov_freight+ov_freight_tax+ov_discount AS Total,"
+		."ov_amount+ov_gst+ov_freight+ov_freight_tax+ov_discount+ov_freight_charge+ov_insurance+ov_packing_charge+ov_duties+ov_service_charge+ov_commission AS Total,"
 		."cust.name AS DebtorName, cust.address, "
 		."cust.curr_code, "
 		."cust.tax_id, "
@@ -258,6 +258,8 @@ function void_customer_trans($type, $type_no)
 {
 	// clear all values and mark as void
 	$sql = "UPDATE ".TB_PREF."debtor_trans SET ov_amount=0, ov_discount=0, ov_gst=0, ov_freight=0,
+		ov_freight_charge=0,ov_insurance=0,ov_packing_charge=0,ov_duties=0,ov_service_charge=0,
+		ov_commission=0,
 		ov_freight_tax=0, alloc=0, version=version+1 WHERE type=".db_escape($type)." AND trans_no=".db_escape($type_no);
 
 	db_query($sql, "could not void debtor transactions for type=$type and trans_no=$type_no");
@@ -308,9 +310,13 @@ function get_sql_for_customer_inquiry()
 		branch.br_name,
 		debtor.curr_code,
 		(trans.ov_amount + trans.ov_gst + trans.ov_freight 
-			+ trans.ov_freight_tax + trans.ov_discount)	AS TotalAmount, "; 
+			+ trans.ov_freight_tax + trans.ov_discount
+			+ trans.ov_freight_charge + trans.ov_insurance
+			+ trans.ov_packing_charge + trans.ov_duties 
+			+ trans.ov_service_charge + trans.ov_commission
+			)	AS TotalAmount, "; 
    	if ($_POST['filterType'] != ALL_TEXT)
-		$sql .= "@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freight_tax + trans.ov_discount), ";
+		$sql .= "@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freight_tax + trans.ov_discount + trans.ov_freight_charge + trans.ov_insurance + trans.ov_packing_charge + trans.ov_duties + trans.ov_service_charge + trans.ov_commission), ";
 
 //	else
 //		$sql .= "IF(trans.type=".ST_CUSTDELIVERY.",'', IF(trans.type=".ST_SALESINVOICE." OR trans.type=".ST_BANKPAYMENT.",@bal := @bal+
@@ -363,7 +369,9 @@ function get_sql_for_customer_inquiry()
     		$today =  date2sql(Today());
     		$sql .= " AND trans.due_date < '$today'
 				AND (trans.ov_amount + trans.ov_gst + trans.ov_freight_tax + 
-				trans.ov_freight + trans.ov_discount - trans.alloc > 0) ";
+				trans.ov_freight + trans.ov_discount + trans.ov_freight_charge + trans.ov_insurance
+			+ trans.ov_packing_charge + trans.ov_duties 
+			+ trans.ov_service_charge + trans.ov_commission - trans.alloc > 0) ";
     	}
    	}
 	$sql .= " GROUP BY trans.trans_no, trans.type";
@@ -382,7 +390,7 @@ function get_sql_for_sales_deliveries_view($selected_customer, $selected_stock_i
 			sorder.customer_ref,
 			trans.tran_date,
 			trans.due_date,
-			(ov_amount+ov_gst+ov_freight+ov_freight_tax) AS DeliveryValue,
+			(ov_amount+ov_gst+ov_freight+ov_freight_tax+ov_freight_charge+ov_insurance+ov_packing_charge + ov_duties + ov_service_charge + ov_commission) AS DeliveryValue,
 			debtor.curr_code,
 			Sum(line.quantity-line.qty_done) AS Outstanding,
 			Sum(line.qty_done) AS Done
