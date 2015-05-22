@@ -290,3 +290,5 @@
 [18-May-2015 11:48:13 Europe/Paris] 0::logout.php:50: session_destroy(): Session object destruction failed
 [19-May-2015 11:22:09 Europe/Paris] 0:admin:packages.inc:103: rmdir(../modules/rep_statement_reconcile): Directory not empty
 [19-May-2015 11:22:10 Europe/Paris] 0:admin:packages.inc:429: rmdir(../modules/_cache/rep_statement_reconcile-2.3.3-3): Directory not empty
+[22-May-2015 08:24:12 Europe/Paris] 0:admin:connect_db.inc:98: mysql_fetch_array() expects parameter 1 to be resource, null given
+[22-May-2015 08:25:30 Europe/Paris] 0:admin:connect_db.inc:98: mysql_fetch_array() expects parameter 1 to be resource, null given

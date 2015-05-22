@@ -156,9 +156,21 @@ else
 	display_note(_("There are no line items on this invoice."), 1, 2);
 
 $display_freight = price_format($myrow["ov_freight"]);
+$display_freight1 = price_format($myrow["ov_freight_charge"]);
+$display_insurance = price_format($myrow["ov_insurance"]);
+$display_packing = price_format($myrow["ov_packing_charge"]);
+$display_duties = price_format($myrow["ov_duties"]);
+$display_service = price_format($myrow["ov_service_charge"]);
+$display_commision = price_format($myrow["ov_commission"]);
 
 /*Print out the invoice text entered */
 label_row(_("Shipping"), $display_freight, "colspan=6 align=right", "nowrap align=right");
+label_row(_("Freight"), $display_freight1, "colspan=6 align=right", "nowrap align=right");
+label_row(_("Insurance"), $display_insurance, "colspan=6 align=right", "nowrap align=right");
+label_row(_("Packing"), $display_packing, "colspan=6 align=right", "nowrap align=right");
+label_row(_("Duties"), $display_duties, "colspan=6 align=right", "nowrap align=right");
+label_row(_("Service"), $display_service, "colspan=6 align=right", "nowrap align=right");
+label_row(_("Commission"), $display_commision, "colspan=6 align=right", "nowrap align=right");
 
 $tax_items = get_trans_tax_details(ST_SALESINVOICE, $trans_id);
 display_customer_trans_tax_details($tax_items, 6);
