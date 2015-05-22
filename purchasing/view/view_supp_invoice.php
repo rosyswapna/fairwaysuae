@@ -35,6 +35,8 @@ $supp_trans = new supp_trans(ST_SUPPINVOICE);
 
 read_supp_invoice($trans_no, ST_SUPPINVOICE, $supp_trans);
 
+
+
 $supplier_curr_code = get_supplier_currency($supp_trans->supplier_id);
 
 display_heading(_("SUPPLIER INVOICE") . " # " . $trans_no);
@@ -56,18 +58,35 @@ comments_display_row(ST_SUPPINVOICE, $trans_no);
 
 end_table(1);
 
+
 $total_gl = display_gl_items($supp_trans, 2);
 $total_grn = display_grn_items($supp_trans, 2);
 
+
 $display_sub_tot = number_format2($total_gl+$total_grn,user_price_dec());
+$display_frieght=number_format2($supp_trans->freight_charge,user_price_dec());
+$display_packing=number_format2($supp_trans->packing_charge,user_price_dec());
+$display_duties=number_format2($supp_trans->duties,user_price_dec());
+$display_service=number_format2($supp_trans->service_charge,user_price_dec());
+$display_commission=number_format2($supp_trans->commission,user_price_dec());
+$display_insurance=number_format2($supp_trans->insurance,user_price_dec());
+
 
 start_table(TABLESTYLE, "width='95%'");
 label_row(_("Sub Total"), $display_sub_tot, "align=right", "nowrap align=right width='15%'");
+label_row(_("Freight"), $display_frieght, "align=right", "nowrap align=right width='15%'");
+label_row(_("Insurance"), $display_insurance, "align=right", "nowrap align=right width='15%'");
+label_row(_("Packing"),$display_packing, "align=right", "nowrap align=right width='15%'");
+label_row(_("Duties"), $display_duties, "align=right", "nowrap align=right width='15%'");
+label_row(_("Service"), $display_service, "align=right", "nowrap align=right width='15%'");
+label_row(_("Commission"), $display_commission, "align=right", "nowrap align=right width='15%'");
 
 $tax_items = get_trans_tax_details(ST_SUPPINVOICE, $trans_no);
 display_supp_trans_tax_details($tax_items, 1);
 
-$display_total = number_format2($supp_trans->ov_amount + $supp_trans->ov_gst,user_price_dec());
+$billing_suppliments_total = $supp_trans->freight_charge + $supp_trans->insurance + $supp_trans->packing_charge + $supp_trans->duties + $supp_trans->service_charge + $supp_trans->commission;
+
+$display_total = number_format2($supp_trans->ov_amount + $supp_trans->ov_gst+$billing_suppliments_total ,user_price_dec());
 
 label_row(_("TOTAL INVOICE"), $display_total, "colspan=1 align=right", "nowrap align=right");
 

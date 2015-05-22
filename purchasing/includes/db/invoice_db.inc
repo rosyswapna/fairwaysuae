@@ -447,7 +447,8 @@ function read_supp_invoice($trans_no, $trans_type, &$supp_trans)
 	if (db_num_rows($result) == 1)
 	{
 		$trans_row = db_fetch($result);
-
+	
+		
 		$supp_trans->supplier_id = $trans_row["supplier_id"];
 		$supp_trans->supplier_name = $trans_row["supp_name"];
 		$supp_trans->tran_date = sql2date($trans_row["tran_date"]);
@@ -459,6 +460,13 @@ function read_supp_invoice($trans_no, $trans_type, &$supp_trans)
 		$supp_trans->ov_discount = $trans_row["ov_discount"];
 		$supp_trans->ov_gst = $trans_row["ov_gst"];
 		$supp_trans->tax_included = $trans_row["tax_included"];
+		
+		$supp_trans->freight_charge = $trans_row["ov_freight_charge"];
+		$supp_trans->insurance = $trans_row["ov_insurance"];
+		$supp_trans->packing_charge = $trans_row["ov_packing_charge"];
+		$supp_trans->duties = $trans_row["ov_duties"];
+		$supp_trans->service_charge = $trans_row["ov_service_charge"];
+		$supp_trans->commission = $trans_row["ov_commission"];
 
 		$id = $trans_row["trans_no"];
 
