@@ -14,7 +14,7 @@
 //	FIXME - this should be revised for transaction update case.
 //
 function write_supp_trans($type, $trans_no, $supplier_id, $date_, $due_date, $reference, $supp_reference,
-	$amount, $amount_tax, $discount, $err_msg="", $rate=0, $included=0)
+	$amount, $amount_tax, $discount, $err_msg="", $rate=0, $included=0, $freight_charge=0, $insurance=0, $packing_charge=0, $duties=0, $service_charge=0, $commission=0)
 {
 	$new = $trans_no==0;
 	$date = date2sql($date_);
@@ -33,11 +33,13 @@ function write_supp_trans($type, $trans_no, $supplier_id, $date_, $due_date, $re
 
 
 	$sql = "INSERT INTO ".TB_PREF."supp_trans (trans_no, type, supplier_id, tran_date, due_date,
-		reference, supp_reference, ov_amount, ov_gst, rate, ov_discount, tax_included) ";
+		reference, supp_reference, ov_amount, ov_gst, rate, ov_discount, tax_included,ov_freight_charge,ov_insurance,ov_packing_charge,ov_duties,ov_service_charge,ov_commission) ";
 	$sql .= "VALUES (".db_escape($trans_no).", ".db_escape($type)
 	.", ".db_escape($supplier_id).", '$date', '$due_date',
 		".db_escape($reference).", ".db_escape($supp_reference).", ".db_escape($amount)
-		.", ".db_escape($amount_tax).", ".db_escape($rate).", ".db_escape($discount).", ".db_escape($included).")";
+		.", ".db_escape($amount_tax).", ".db_escape($rate).", ".db_escape($discount).", ".db_escape($included).", ".db_escape($freight_charge).", "
+		.db_escape($insurance).", ".db_escape($packing_charge).", ".db_escape($duties).", "
+		.db_escape($service_charge).", ".db_escape($commission).")";
 
 	if ($err_msg == "")
 		$err_msg = "Cannot insert a supplier transaction record";
