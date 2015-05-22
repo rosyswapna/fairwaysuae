@@ -238,6 +238,7 @@ function display_order_summary($title, &$order, $editable_items=false)
 	small_amount_cells(null, 'freight_cost', price_format(get_post('freight_cost',0)));
 	label_cell('', 'colspan=2');
 	end_row();
+
 	//billing suppliments-------------------
 	start_row();
 	label_cell(_("Freight Charge"), "colspan=$colspan align=right");
@@ -275,12 +276,16 @@ function display_order_summary($title, &$order, $editable_items=false)
 	label_cell('', 'colspan=2');
 	end_row();
 	//----------------------------------------------
-	$display_sub_total = price_format($total + input_num('freight_cost'));
+
+	//$display_sub_total = price_format($total + input_num('freight_cost'));
+	$billing_suppliments_total = input_num('freight_charge') + input_num('insurance') + input_num('packing_charge') + input_num('duties') + input_num('service_charge') + input_num('commission');
+	$display_sub_total = price_format($total + input_num('freight_cost') + $billing_suppliments_total);
+
 	label_row(_("Sub-total"), $display_sub_total, "colspan=$colspan align=right","align=right", 2);
 	$taxes = $order->get_taxes(input_num('freight_cost'));
 	$tax_total = display_edit_tax_items($taxes, $colspan, $order->tax_included, 2);
 
-	$display_total = price_format(($total + input_num('freight_cost') + $tax_total));
+	$display_total = price_format(($total + input_num('freight_cost') + $tax_total + $billing_suppliments_total));
 
 	start_row();
 	label_cells(_("Amount Total"), $display_total, "colspan=$colspan align=right","align=right");
