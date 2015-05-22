@@ -41,7 +41,7 @@ function delete_supp_allocation($trans_id)
 
 function get_supp_trans_allocation_balance($trans_type, $trans_no)
 {
-	$sql = "SELECT (ov_amount+ov_gst-ov_discount-alloc) AS BalToAllocate
+	$sql = "SELECT (ov_amount+ov_gst+ov_freight_charge+ov_insurance+ov_packing_charge+ov_duties+ov_service_charge+ov_commission-ov_discount-alloc) AS BalToAllocate
 		FROM ".TB_PREF."supp_trans WHERE trans_no="
 		.db_escape($trans_no)." AND type=".db_escape($trans_type);
 	$result = db_query($sql,"calculate the allocation");
@@ -226,7 +226,9 @@ function get_sql_for_supplier_allocation_inquiry()
     	trans.tran_date, 
 		trans.due_date,
 		supplier.curr_code, 
-    	(trans.ov_amount + trans.ov_gst  + trans.ov_discount) AS TotalAmount, 
+    	(trans.ov_amount + trans.ov_gst  + trans.ov_discount + trans.ov_freight_charge + trans.ov_insurance 
+	+ trans.ov_packing_charge + trans.ov_duties + trans.ov_service_charge + trans.ov_commission
+) AS TotalAmount, 
 		trans.alloc AS Allocated,
 		((trans.type = ".ST_SUPPINVOICE." OR trans.type = ".ST_SUPPCREDIT.") AND trans.due_date < '" . date2sql(Today()) . "') AS OverDue,
 		trans.supplier_id

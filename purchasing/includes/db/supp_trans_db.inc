@@ -54,7 +54,7 @@ function write_supp_trans($type, $trans_no, $supplier_id, $date_, $due_date, $re
 
 function get_supp_trans($trans_no, $trans_type=-1)
 {
-	$sql = "SELECT ".TB_PREF."supp_trans.*, (".TB_PREF."supp_trans.ov_amount+".TB_PREF."supp_trans.ov_gst+".TB_PREF."supp_trans.ov_discount) AS Total,
+	$sql = "SELECT ".TB_PREF."supp_trans.*, (".TB_PREF."supp_trans.ov_amount+".TB_PREF."supp_trans.ov_gst+".TB_PREF."supp_trans.ov_discount + ".TB_PREF."supp_trans.ov_freight_charge + ".TB_PREF."supp_trans.ov_insurance + ".TB_PREF."supp_trans.ov_packing_charge + ".TB_PREF."supp_trans.ov_duties + ".TB_PREF."supp_trans.ov_service_charge + ".TB_PREF."supp_trans.ov_commission) AS Total,
 		".TB_PREF."suppliers.supp_name AS supplier_name, ".TB_PREF."suppliers.curr_code AS curr_code ";
 
 	if ($trans_type == ST_SUPPAYMENT || $trans_type == ST_BANKPAYMENT)
@@ -125,7 +125,9 @@ function exists_supp_trans($type, $type_no)
 function void_supp_trans($type, $type_no)
 {
 	$sql = "UPDATE ".TB_PREF."supp_trans SET ov_amount=0, ov_discount=0, ov_gst=0,
-		alloc=0 WHERE type=".db_escape($type)." AND trans_no=".db_escape($type_no);
+		ov_freight_charge=0,ov_insurance=0,ov_packing_charge=0,ov_duties=0,ov_service_charge=0,
+		ov_commission=0,alloc=0 
+		WHERE type=".db_escape($type)." AND trans_no=".db_escape($type_no);
 
 	db_query($sql, "could not void supp transactions for type=$type and trans_no=$type_no");
 }
@@ -178,7 +180,10 @@ function get_sql_for_supplier_inquiry($filter, $after_date, $to_date, $supplier_
     	trans.tran_date, 
 		trans.due_date,
 		supplier.curr_code, 
-    	(trans.ov_amount + trans.ov_gst  + trans.ov_discount) AS TotalAmount, 
+    	(trans.ov_amount + trans.ov_gst  + trans.ov_discount
+	+ trans.ov_freight_charge + trans.ov_insurance
+	+ trans.ov_packing_charge + trans.ov_duties 
+	+ trans.ov_service_charge + trans.ov_commission) AS TotalAmount, 
 		trans.alloc AS Allocated,
 		((trans.type = ".ST_SUPPINVOICE." OR trans.type = ".ST_SUPPCREDIT.") AND trans.due_date < '" . date2sql(Today()) . "') AS OverDue,
     	(ABS(trans.ov_amount + trans.ov_gst  + trans.ov_discount) - trans.alloc <= ".FLOAT_COMP_DELTA.") AS Settled
