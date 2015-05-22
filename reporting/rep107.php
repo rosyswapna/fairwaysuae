@@ -133,7 +133,7 @@ function print_invoices()
 				}	
 				$rep->row = $newrow;
 				//$rep->NewLine(1);
-				if ($rep->row < $rep->bottomMargin + (15 * $rep->lineHeight))
+				if ($rep->row < $rep->bottomMargin + (18 * $rep->lineHeight))
 					$rep->NewPage();
 			}
 
@@ -146,8 +146,13 @@ function print_invoices()
 
    			$DisplaySubTot = number_format2($SubTotal,$dec);
    			$DisplayFreight = number_format2($sign*$myrow["ov_freight"],$dec);
-
-    		$rep->row = $rep->bottomMargin + (15 * $rep->lineHeight);
+			$DisplayFreight1 = number_format2($sign*$myrow["ov_freight_charge"],$dec);
+			$Displayinsurance = number_format2($sign*$myrow["ov_insurance"],$dec);
+			$Displaypacking = number_format2($sign*$myrow["ov_packing_charge"],$dec);
+			$Displayduties = number_format2($sign*$myrow["ov_duties"],$dec);
+			$Displayservice = number_format2($sign*$myrow["ov_service_charge"],$dec);
+			$Displaycommission = number_format2($sign*$myrow["ov_commission"],$dec);
+    		$rep->row = $rep->bottomMargin + (18 * $rep->lineHeight);
 			$doctype = ST_SALESINVOICE;
 
 			$rep->TextCol(3, 6, _("Sub-total"), -2);
@@ -155,6 +160,25 @@ function print_invoices()
 			$rep->NewLine();
 			$rep->TextCol(3, 6, _("Shipping"), -2);
 			$rep->TextCol(6, 7,	$DisplayFreight, -2);
+			
+			$rep->NewLine();
+			$rep->TextCol(3, 6, _("Freight"), -2);
+			$rep->TextCol(6, 7,	$DisplayFreight1, -2);
+			$rep->NewLine();
+			$rep->TextCol(3, 6, _("Insurance"), -2);
+			$rep->TextCol(6, 7,	$Displayinsurance, -2);
+			$rep->NewLine();
+			$rep->TextCol(3, 6, _("Packing "), -2);
+			$rep->TextCol(6, 7,	$Displaypacking, -2);
+			$rep->NewLine();
+			$rep->TextCol(3, 6, _("Duties"), -2);
+			$rep->TextCol(6, 7,	$Displayduties, -2);
+			$rep->NewLine();
+			$rep->TextCol(3, 6, _("Service"), -2);
+			$rep->TextCol(6, 7,	$Displayservice, -2);
+			$rep->NewLine();
+			$rep->TextCol(3, 6, _("Commission"), -2);
+			$rep->TextCol(6, 7,	$Displaycommission, -2);
 			$rep->NewLine();
 			$tax_items = get_trans_tax_details(ST_SALESINVOICE, $i);
 			$first = true;
@@ -174,7 +198,7 @@ function print_invoices()
     				if (isset($alternative_tax_include_on_docs) && $alternative_tax_include_on_docs == 1)
     				{
     					if ($first)
-    					{
+    					{	
 							$rep->TextCol(3, 6, _("Total Tax Excluded"), -2);
 							$rep->TextCol(6, 7,	number_format2($sign*$tax_item['net_amount'], $dec), -2);
 							$rep->NewLine();
@@ -184,6 +208,7 @@ function print_invoices()
 						$first = false;
     				}
     				else
+						
 						$rep->TextCol(3, 7, _("Included") . " " . $tax_type_name . _("Amount") . ": " . $DisplayTax, -2);
 				}
     			else
@@ -195,8 +220,10 @@ function print_invoices()
     		}
 
     		$rep->NewLine();
+			
+			$billing_total=$myrow["ov_freight_charge"] + $myrow["ov_insurance"] + $myrow["ov_packing_charge"] + $myrow["ov_duties"] + $myrow["ov_service_charge"] + $myrow["ov_commission"];
 			$DisplayTotal = number_format2($sign*($myrow["ov_freight"] + $myrow["ov_gst"] +
-				$myrow["ov_amount"]+$myrow["ov_freight_tax"]),$dec);
+				$myrow["ov_amount"]+$myrow["ov_freight_tax"]+$billing_total),$dec);
 			$rep->Font('bold');
 			$rep->TextCol(3, 6, _("TOTAL INVOICE"), - 2);
 			$rep->TextCol(6, 7, $DisplayTotal, -2);
