@@ -123,7 +123,7 @@ function get_alloc_supp_sql($extra_fields=null, $extra_conditions=null, $extra_t
  		trans.tran_date,
 		supplier.supp_name, 
 		supplier.curr_code, 
-		ov_amount+ov_gst+ov_discount AS Total,
+		ov_amount+ov_gst+ov_discount+ov_freight_charge+ov_insurance+ov_packing_charge+ov_duties+ov_service_charge+ov_commission AS Total,
 		trans.alloc,
 		trans.due_date,
 		trans.supplier_id,
@@ -181,7 +181,7 @@ function get_allocatable_to_supp_transactions($supplier_id, $trans_no=null, $typ
 	}
 	else
 	{
-		$sql = get_alloc_supp_sql(null, "round(ABS(ov_amount+ov_gst+ov_discount)-alloc,6) > 0
+		$sql = get_alloc_supp_sql(null, "round(ABS(ov_amount+ov_gst+ov_discount+ov_freight_charge+ov_insurance+ov_packing_charge+ov_duties+ov_service_charge+ov_commission)-alloc,6) > 0
 			AND trans.type NOT IN (".implode(',',array(ST_SUPPAYMENT, ST_BANKPAYMENT, ST_SUPPCREDIT)).")
 			AND trans.supplier_id=".db_escape($supplier_id));
 	}

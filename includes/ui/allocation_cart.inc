@@ -125,6 +125,7 @@ class allocation
 				$trans = $this->person_type == PT_SUPPLIER ? get_supp_trans($trans_no, $type, $person_id)
 					: get_customer_trans($trans_no, $type, $person_id);
 
+
 				$this->person_id = $trans[$this->person_type == PT_SUPPLIER ? 'supplier_id':'debtor_no'];
 				$this->person_name = $trans[$this->person_type == PT_SUPPLIER ? "supplier_name":"DebtorName"];
 				$this->date_ = sql2date($trans["tran_date"]);
@@ -146,8 +147,11 @@ class allocation
 				$trans_items = get_allocatable_to_supp_transactions($this->person_id);
 			else
 		 		$trans_items = get_allocatable_to_cust_transactions($this->person_id);
+
+			
 			while ($myrow = db_fetch($trans_items))
 			{
+				//echo "<pre>";print_r($myrow); echo "</pre>";exit;
 				$this->add_item($myrow["type"], $myrow["trans_no"],
 					sql2date($myrow["tran_date"]),
 					sql2date($myrow["due_date"]),
@@ -278,6 +282,7 @@ function show_allocatable($show_totals) {
     $k = $counter = $total_allocated = 0;
 
 	$cart = $_SESSION['alloc'];
+	
 	$supp_ref = in_array($cart->type, array(ST_SUPPCREDIT, ST_SUPPAYMENT, ST_BANKPAYMENT));
 
 	if (count($cart->allocs)) 
