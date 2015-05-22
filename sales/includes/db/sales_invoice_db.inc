@@ -131,8 +131,25 @@ function write_sales_invoice(&$invoice)
 		} /*quantity dispatched is more than 0 */
 	} /*end of delivery_line loop */
 
-	//billing suppliments total
-	$billing_suppliments_total = $invoice->freight_charge + $invoice->insurance + $invoice->packing_charge + $invoice->duties + $invoice->service_charge + $invoice->commission;
+	//=============billing suppliments gl entries start here====================
+	$billing_suppliments_gl = array(
+				$company_data["default_freight"]	=> $invoice->freight_charge,
+				$company_data["default_insurance"]	=> $invoice->insurance,
+				$company_data["default_pck_charge"]	=> $invoice->packing_charge,
+				$company_data["default_duties"]		=> $invoice->duties,
+				$company_data["default_service_charge"]	=> $invoice->service_charge,
+				$company_data["default_commission"]	=> $invoice->commission	
+				);
+	$billing_suppliments_total = 0;
+	foreach($billing_suppliments_gl as $gl_code=>$amount){
+		if ($amount != 0) {
+			$total += add_gl_trans_customer(ST_SALESINVOICE, $invoice_no, $date_, $gl_code, 0, 0,
+				-$amount, $invoice->customer_id,
+				"The freight charge GL posting could not be inserted");
+		}
+		$billing_suppliments_total += $amount;
+	}
+	//================billing suppliments gl entries ends here====================
 
 	if (($items_total + $charge_shipping + $billing_suppliments_total) != 0) {
 		$total += add_gl_trans_customer(ST_SALESINVOICE, $invoice_no, $date_, $branch_data["receivables_account"], 0, 0,
@@ -145,48 +162,6 @@ function write_sales_invoice(&$invoice)
 			-$invoice->get_tax_free_shipping(), $invoice->customer_id,
 			"The freight GL posting could not be inserted");
 	}
-
-	//billing suppliments gl entries start here
-	if ($invoice->freight_charge != 0) {
-		$total += add_gl_trans_customer(ST_SALESINVOICE, $invoice_no, $date_, $company_data["default_freight"], 0, 0,
-			-$invoice->freight_charge, $invoice->customer_id,
-			"The freight charge GL posting could not be inserted");
-	}
-
-	if ($invoice->insurance != 0) {
-		$total += add_gl_trans_customer(ST_SALESINVOICE, $invoice_no, $date_, $company_data["default_insurance"], 0, 0,
-			-$invoice->insurance, $invoice->customer_id,
-			"The insurance amount GL posting could not be inserted");
-	}
-
-	if ($invoice->packing_charge != 0) {
-		$total += add_gl_trans_customer(ST_SALESINVOICE, $invoice_no, $date_, $company_data["default_pck_charge"], 0, 0,
-			-$invoice->packing_charge, $invoice->customer_id,
-			"The packing charge GL posting could not be inserted");
-	}
-
-	if ($invoice->duties != 0) {
-		$total += add_gl_trans_customer(ST_SALESINVOICE, $invoice_no, $date_, $company_data["default_duties"], 0, 0,
-			-$invoice->duties, $invoice->customer_id,
-			"The duties amount GL posting could not be inserted");
-	}
-
-	if ($invoice->service_charge != 0) {
-		$total += add_gl_trans_customer(ST_SALESINVOICE, $invoice_no, $date_, $company_data["default_service_charge"], 0, 0,
-			-$invoice->service_charge, $invoice->customer_id,
-			"The freight charge GL posting could not be inserted");
-	}
-
-	if ($invoice->commission != 0) {
-		$total += add_gl_trans_customer(ST_SALESINVOICE, $invoice_no, $date_, $company_data["default_commission"], 0, 0,
-			-$invoice->commission, $invoice->customer_id,
-			"The freight charge GL posting could not be inserted");
-	}
-
-	//billing suppliments gl entries ends here
-
-
-
 
 	// post all taxes
 	foreach ($taxes as $taxitem) {
@@ -212,7 +187,7 @@ function write_sales_invoice(&$invoice)
 		$Refs->save(ST_SALESINVOICE, $invoice_no, $invoice->reference);
 		if ($invoice->payment_terms['cash_sale'] && $invoice->pos['pos_account']) {
 			$amount = $items_total + $items_added_tax + $invoice->freight_cost 
-				+ $freight_added_tax;
+				+ $freight_added_tax + $billing_suppliments_total;
 
 			// to use debtors.pmt_discount on cash sale:
 			// extend invoice entry page with final amount after discount 

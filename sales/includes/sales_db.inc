@@ -283,6 +283,14 @@ function read_sales_trans($doc_type, $trans_no, &$cart)
 			$cart->Comments .= get_comments_string($doc_type,$trans);
 		}
 
+		//billing suppliments
+		$cart->freight_charge 	= $myrow["ov_freight_charge"];
+		$cart->insurance 	= $myrow["ov_insurance"];
+		$cart->packing_charge	= $myrow["ov_packing_charge"];
+		$cart->duties		= $myrow["ov_duties"];
+		$cart->service_charge	= $myrow["ov_service_charge"];
+		$cart->commission	= $myrow["ov_commission"];
+
 		// FIX this should be calculated sum() for multiply parents
 
 		$cart->set_delivery($myrow["ship_via"], $myrow["br_name"],

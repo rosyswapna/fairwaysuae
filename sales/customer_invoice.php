@@ -253,6 +253,12 @@ function copy_to_cart()
 	$cart->dimension_id =  $_POST['dimension_id'];
 	$cart->dimension2_id =  $_POST['dimension2_id'];
 
+	$cart->freight_charge 	= input_num('FreightCharge');
+	$cart->insurance 	= input_num('Insurance');
+	$cart->packing_charge	= input_num('PackingCharge');
+	$cart->duties		= input_num('Duties');
+	$cart->service_charge	= input_num('ServiceCharge');
+	$cart->commission	= input_num('Commission');
 }
 //-----------------------------------------------------------------------------
 
@@ -269,6 +275,13 @@ function copy_from_cart()
 	$_POST['payment'] = $cart->payment;
 	$_POST['dimension_id'] = $cart->dimension_id;
 	$_POST['dimension2_id'] = $cart->dimension2_id;
+
+	$_POST['FreightCharge'] = price_format($cart->freight_charge);
+	$_POST['Insurance'] = price_format($cart->insurance);
+	$_POST['PackingCharge'] = price_format($cart->packing_charge);
+	$_POST['Duties'] = price_format($cart->duties);
+	$_POST['ServiceCharge'] = price_format($cart->service_charge);
+	$_POST['Commission'] = price_format($cart->commission);
 }
 
 //-----------------------------------------------------------------------------
@@ -584,16 +597,71 @@ label_cell('', 'colspan=2');
 }
 
 end_row();
+
+//billing suppliments--------------------start
+start_row();
+	label_cell(_("Freight Charge"), "colspan=$colspan align=right");
+	small_amount_cells(null, 'FreightCharge', null);
+	if ($is_batch_invoice) {
+	label_cell('', 'colspan=2');
+	}
+end_row();
+
+start_row();
+	label_cell(_("Insurance"), "colspan=$colspan align=right");
+	small_amount_cells(null, 'Insurance', null);
+	if ($is_batch_invoice) {
+	label_cell('', 'colspan=2');
+	}
+end_row();
+
+start_row();
+	label_cell(_("Packing Charge"), "colspan=$colspan align=right");
+	small_amount_cells(null, 'PackingCharge', null);
+	if ($is_batch_invoice) {
+	label_cell('', 'colspan=2');
+	}
+end_row();
+
+start_row();
+	label_cell(_("Duties"), "colspan=$colspan align=right");
+	small_amount_cells(null, 'Duties', null);
+	if ($is_batch_invoice) {
+	label_cell('', 'colspan=2');
+	}
+end_row();
+
+start_row();
+	label_cell(_("Service Charge"), "colspan=$colspan align=right");
+	small_amount_cells(null, 'ServiceCharge', null);
+	if ($is_batch_invoice) {
+	label_cell('', 'colspan=2');
+	}
+end_row();
+
+start_row();
+	label_cell(_("Commission"), "colspan=$colspan align=right");
+	small_amount_cells(null, 'Commission', null);
+	if ($is_batch_invoice) {
+	label_cell('', 'colspan=2');
+	}
+end_row();
+
+$billing_suppliments_total = input_num('FreightCharge')+input_num('Insurance')+input_num('PackingCharge')+input_num('Duties')+input_num('ServiceCharge')+input_num('Commission');
+//billing suppliments--------------------end
+
+
+
 $inv_items_total = $_SESSION['Items']->get_items_total_dispatch();
 
-$display_sub_total = price_format($inv_items_total + input_num('ChargeFreightCost'));
+$display_sub_total = price_format($inv_items_total + input_num('ChargeFreightCost') + $billing_suppliments_total);
 
 label_row(_("Sub-total"), $display_sub_total, "colspan=$colspan align=right","align=right", $is_batch_invoice ? 2 : 0);
 
 $taxes = $_SESSION['Items']->get_taxes(input_num('ChargeFreightCost'));
 $tax_total = display_edit_tax_items($taxes, $colspan, $_SESSION['Items']->tax_included, $is_batch_invoice ? 2:0);
 
-$display_total = price_format(($inv_items_total + input_num('ChargeFreightCost') + $tax_total));
+$display_total = price_format(($inv_items_total + input_num('ChargeFreightCost') + $tax_total+$billing_suppliments_total));
 
 label_row(_("Invoice Total"), $display_total, "colspan=$colspan align=right","align=right", $is_batch_invoice ? 2 : 0);
 
