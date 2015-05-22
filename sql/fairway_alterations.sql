@@ -25,3 +25,5 @@ INSERT INTO `fairwayuae`.`0_sys_prefs` (`name`, `category`, `type`, `length`, `v
 ALTER TABLE `0_debtor_trans`  ADD `ov_freight_charge` DOUBLE NOT NULL DEFAULT '0' AFTER `ov_discount`,  ADD `ov_insurance` DOUBLE NOT NULL DEFAULT '0' AFTER `ov_freight_charge`,  ADD `ov_packing_charge` DOUBLE NOT NULL DEFAULT '0' AFTER `ov_insurance`,  ADD `ov_duties` DOUBLE NOT NULL DEFAULT '0' AFTER `ov_packing_charge`,  ADD `ov_service_charge` DOUBLE NOT NULL DEFAULT '0' AFTER `ov_duties`,  ADD `ov_commission` DOUBLE NOT NULL DEFAULT '0' AFTER `ov_service_charge`;
 
 
+ALTER TABLE `0_supp_trans`  ADD `ov_freight_charge` DOUBLE NOT NULL DEFAULT '0' AFTER `ov_discount`,  ADD `ov_insurance` DOUBLE NOT NULL DEFAULT '0' AFTER `ov_freight_charge`,  ADD `ov_packing_charge` DOUBLE NOT NULL DEFAULT '0' AFTER `ov_insurance`,  ADD `ov_duties` DOUBLE NOT NULL DEFAULT '0' AFTER `ov_packing_charge`,  ADD `ov_service_charge` DOUBLE NOT NULL DEFAULT '0' AFTER `ov_duties`,  ADD `ov_commission` DOUBLE NOT NULL DEFAULT '0' AFTER `ov_service_charge`;
+

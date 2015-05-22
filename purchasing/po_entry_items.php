@@ -480,6 +480,15 @@ function handle_commit_order()
 			}
 			$inv->ex_rate = $cart->ex_rate;
 
+			//billing suppliments
+			$inv->freight_charge 	= price_format($cart->freight_charge);
+			$inv->insurance 	= price_format($cart->insurance);
+			$inv->packing_charge 	= price_format($cart->packing_charge);
+			$inv->duties 		= price_format($cart->duties);
+			$inv->service_charge 	= price_format($cart->service_charge);
+			$inv->commission 	= price_format($cart->commission);
+
+
 			$inv_no = add_supp_invoice($inv);
 			commit_transaction(); // save PO+GRN+PI
 			// FIXME payment for cash terms. (Needs cash account selection)

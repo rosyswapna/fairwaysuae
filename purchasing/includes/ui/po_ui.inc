@@ -21,14 +21,23 @@ function copy_from_cart()
 	$_POST['OrderDate'] = $cart->orig_order_date;
 	if ($cart->trans_type==ST_SUPPINVOICE)
 		$_POST['due_date'] = $cart->due_date;
-    $_POST['supp_ref'] = $cart->supp_ref;
-    $_POST['ref'] = $cart->reference;
+	$_POST['supp_ref'] = $cart->supp_ref;
+	$_POST['ref'] = $cart->reference;
 	$_POST['Comments'] = $cart->Comments;
-    $_POST['StkLocation'] = $cart->Location;
-    $_POST['delivery_address'] = $cart->delivery_address;
+	$_POST['StkLocation'] = $cart->Location;
+	$_POST['delivery_address'] = $cart->delivery_address;
 	$_POST['_ex_rate'] = $cart->ex_rate;
-    foreach($cart->tax_overrides as $id => $value)
-	    $_POST['mantax'][$id] = price_format($value);
+	foreach($cart->tax_overrides as $id => $value)
+		$_POST['mantax'][$id] = price_format($value);
+
+
+	//billing suppliments
+	$_POST['freight_charge'] = price_format($cart->freight_charge);
+	$_POST['insurance'] = price_format($cart->insurance);
+	$_POST['packing_charge'] = price_format($cart->packing_charge);
+	$_POST['duties'] = price_format($cart->duties);
+	$_POST['service_charge'] = price_format($cart->service_charge);
+	$_POST['commission'] = price_format($cart->commission);
 }
 
 function copy_to_cart()
@@ -45,6 +54,14 @@ function copy_to_cart()
 	$cart->Location = $_POST['StkLocation'];
 	$cart->delivery_address = $_POST['delivery_address'];
 	$cart->ex_rate = input_num('_ex_rate', null);
+
+	//billing suppliments
+	$cart->freight_charge = input_num('freight_charge');
+	$cart->insurance = input_num('insurance');
+	$cart->packing_charge = input_num('packing_charge');
+	$cart->duties = input_num('duties');
+	$cart->service_charge = input_num('service_charge');
+	$cart->commission = input_num('commission');
 
     if (isset($_POST['mantax'])) {
 		foreach($_POST['mantax'] as $id => $tax) {
@@ -288,12 +305,53 @@ function display_po_items(&$order, $editable=true)
 	$display_sub_total = price_format($total);
 
 	label_row(_("Sub-total"), $display_sub_total, "colspan=$colspan align=right","align=right", 2);
+	//billing suppliments-------------------
+	start_row();
+	label_cell(_("Freight Charge"), "colspan=$colspan align=right");
+	small_amount_cells(null, 'freight_charge', price_format(get_post('freight_charge',0)));
+	label_cell('', 'colspan=2');
+	end_row();
+
+	start_row();
+	label_cell(_("Insurance"), "colspan=$colspan align=right");
+	small_amount_cells(null, 'insurance', price_format(get_post('insurance',0)));
+	label_cell('', 'colspan=2');
+	end_row();
+
+	start_row();
+	label_cell(_("Packing Charge"), "colspan=$colspan align=right");
+	small_amount_cells(null, 'packing_charge', price_format(get_post('packing_charge',0)));
+	label_cell('', 'colspan=2');
+	end_row();
+
+	start_row();
+	label_cell(_("Duties"), "colspan=$colspan align=right");
+	small_amount_cells(null, 'duties', price_format(get_post('duties',0)));
+	label_cell('', 'colspan=2');
+	end_row();
+
+	start_row();
+	label_cell(_("Service Charge"), "colspan=$colspan align=right");
+	small_amount_cells(null, 'service_charge', price_format(get_post('service_charge',0)));
+	label_cell('', 'colspan=2');
+	end_row();
+
+	start_row();
+	label_cell(_("Commission"), "colspan=$colspan align=right");
+	small_amount_cells(null, 'commission', price_format(get_post('commission',0)));
+	label_cell('', 'colspan=2');
+	end_row();
+	
+	$billing_suppliments_total = input_num('freight_charge') + input_num('insurance') + input_num('packing_charge') + input_num('duties') + input_num('service_charge') + input_num('commission');
+	$display_sub_total = price_format($total + input_num('freight_cost') + $billing_suppliments_total);
+	//-------------billing suppliments rows ends here----------------------------------------------
+
 
 	$taxes = $order->get_taxes(input_num('freight_cost'));
 	
 	$tax_total = display_edit_tax_items($taxes, $colspan, $order->tax_included, 2, $order->trans_type==ST_SUPPINVOICE);
 
-	$display_total = price_format(($total + input_num('freight_cost') + $tax_total));
+	$display_total = price_format($total + input_num('freight_cost') + $tax_total + $billing_suppliments_total);
 
 	start_row();
 	label_cells(_("Amount Total"), $display_total, "colspan=$colspan align='right'","align='right'");

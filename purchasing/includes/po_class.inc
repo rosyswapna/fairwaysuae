@@ -38,6 +38,15 @@ class purch_order
 	var $reference;
 	var $tax_overrides = array();		// array of taxes manually inserted during sales invoice entry (direct invoice)
 	
+
+	//billing suppliments
+	var $freight_charge = 0;
+	var $insurance = 0;
+	var $packing_charge = 0;
+	var $duties = 0;
+	var $service_charge = 0;
+	var $commission = 0;
+
 	function purch_order()
 	{
 		/*Constructor function initialises a new purchase order object */
