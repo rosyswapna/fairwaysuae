@@ -101,7 +101,7 @@ function get_alloc_trans_sql($extra_fields=null, $extra_conditions=null, $extra_
 		trans.tran_date,
 		debtor.name AS DebtorName, 
 		debtor.curr_code, 
-		ov_amount+ov_gst+ov_freight+ov_freight_tax+ov_discount AS Total,
+		ov_amount+ov_gst+ov_freight+ov_freight_tax+ov_discount+ov_freight_charge+ov_insurance+ov_packing_charge+ov_duties+ov_service_charge+ov_commission AS Total,
 		trans.alloc,
 		trans.due_date,
 		debtor.address,
@@ -159,7 +159,7 @@ function get_allocatable_to_cust_transactions($customer_id, $trans_no=null, $typ
 	}
 	else
 	{
-		$sql = get_alloc_trans_sql(null, "round(ov_amount+ov_gst+ov_freight+ov_freight_tax+ov_discount-alloc,6) > 0
+		$sql = get_alloc_trans_sql(null, "round(ov_amount+ov_gst+ov_freight+ov_freight_tax+ov_discount+ov_freight_charge+ov_insurance+ov_packing_charge+ov_duties+ov_service_charge+ov_commission-alloc,6) > 0
 			AND trans.type <> " . ST_CUSTPAYMENT . "
 			AND trans.type <> " . ST_BANKDEPOSIT . "
 			AND trans.type <> " . ST_CUSTCREDIT . "
