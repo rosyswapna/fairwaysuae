@@ -13,7 +13,7 @@ INSERT INTO `0_chart_master` (`account_code`, `account_code2`, `account_name`, `
 ('2390', '', 'Commision', '4', 0);
 
 --new gl system setup----
-INSERT INTO `fairwayuae`.`0_sys_prefs` (`name`, `category`, `type`, `length`, `value`) VALUES
+INSERT INTO `0_sys_prefs` (`name`, `category`, `type`, `length`, `value`) VALUES
 ('default_freight', 'glsetup.general', 'varchar', '15', '2385'),
 ('default_insurance', 'glsetup.general', 'varchar', '15', '2386'),
 ('default_pck_charge', 'glsetup.general', 'varchar', '15', '2387'),
