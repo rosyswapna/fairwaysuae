@@ -57,8 +57,7 @@ CREATE TABLE `0_payroll_tax_type` (
   `name` VARCHAR(100) NOT NULL, -- relevant description
   `type` INT NOT NULL, -- tax or deduction
   `responsibility` tinytext NOT NULL, -- employer/employee
-  `tax_base` INT NOT NULL, -- see includes/ui/taxes_ui.inc: base salary, realized salary or other
---  `allowance` float NOT NULL,
+  `tax_base` INT NOT NULL, -- see includes/ui/taxes_ui.inc: base salary, realized salary or other--  `allowance` float NOT NULL,
   `accrual_gl_code` VARCHAR(15) NOT NULL, -- accounting stuff
   `expense_gl_code` VARCHAR(15) NOT NULL, -- accounting stuff
   `tax_period` int(11) NOT NULL, --time basis for figures - annual, monthly, etc.

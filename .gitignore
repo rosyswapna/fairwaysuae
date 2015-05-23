@@ -3,6 +3,7 @@
 /config.php
 
 company/0/pdf_files/
+company/0/js_cache/
 
 .gitignore~
 

@@ -40,6 +40,12 @@ function write_sales_delivery(&$delivery,$bo_policy)
 		$taxitem['Value'] =  round2($taxitem['Value'], user_price_dec());
 		$tax_total +=  $taxitem['Value'];
 	}
+
+	if($delivery->pos)
+		$custom_pos = $delivery->pos['id'];
+	else
+		$custom_pos = 0;
+
 	/* Insert/update the debtor_trans */
 	$delivery_no = write_customer_trans(ST_CUSTDELIVERY, $trans_no, $delivery->customer_id,
 		$delivery->Branch, $delivery->document_date, $delivery->reference,
@@ -51,7 +57,7 @@ function write_sales_delivery(&$delivery,$bo_policy)
 		$delivery->ship_via, $delivery->due_date, 0, 0, $delivery->dimension_id, 
 		$delivery->dimension2_id, $delivery->payment,
 		$delivery->freight_charge,$delivery->insurance,$delivery->packing_charge,
-		$delivery->duties,$delivery->service_charge,$delivery->commission);
+		$delivery->duties,$delivery->service_charge,$delivery->commission,$custom_pos);
 
 	if ($trans_no == 0) {
 		$delivery->trans_no = array($delivery_no=>0);

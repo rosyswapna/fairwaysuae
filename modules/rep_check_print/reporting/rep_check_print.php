@@ -57,7 +57,110 @@ function get_allocations_for_remittance($supplier_id, $type, $trans_no)
 	$sql .= " ORDER BY trans_no";
 	return db_query($sql, "Cannot retreive alloc to transactions");
 }
+//-------------------------------------------------------------------------------------------------
+function price_in_words_custom($number)
+{    
+       
+    if (strpos($number, '.') !== false) {
+               list($number, $fraction) = explode('.', $number);
+        if(strlen($fraction) == 1){
+            $temp = $fraction;
+            $fraction = $fraction * 10;
+        }
 
+        }
+
+
+    $Bn = floor($number / 1000000000); /* Billions (giga) */
+    $number -= $Bn * 1000000000;
+    $Gn = floor($number / 1000000);  /* Millions (mega) */
+    $number -= $Gn * 1000000;
+    $kn = floor($number / 1000);     /* Thousands (kilo) */
+    $number -= $kn * 1000;
+    $Hn = floor($number / 100);      /* Hundreds (hecto) */
+    $number -= $Hn * 100;
+    $Dn = floor($number / 10);       /* Tens (deca) */
+    $n = $number % 10;               /* Ones */
+
+    $res = "";
+    $rupe = "";
+
+    if ($Bn)
+        $rupe .= _number_to_words($Bn) . " Billion";
+    if ($Gn)
+        $rupe .= (empty($rupe) ? "" : " ") . _number_to_words($Gn) . " Million";
+    if ($kn)
+        $rupe .= (empty($rupe) ? "" : " ") . _number_to_words($kn) . " Thousand";
+    if ($Hn)
+        $rupe .= (empty($rupe) ? "" : " ") . _number_to_words($Hn) . " Hundred";
+
+    $ones = array("", "One", "Two", "Three", "Four", "Five", "Six",
+        "Seven", "Eight", "Nine", "Ten", "Eleven", "Twelve", "Thirteen",
+        "Fourteen", "Fifteen", "Sixteen", "Seventeen", "Eighteen",
+        "Nineteen");
+    $tens = array("", "", "Twenty", "Thirty", "Fourty", "Fifty", "Sixty",
+        "Seventy", "Eighty", "Ninety");
+   
+    $paise ='';
+    //fraction part
+    if (null !== $fraction && is_numeric($fraction)) {
+       
+       
+
+        if($fraction%10 == 0){
+            if($temp == 1)
+                $paise .= " ".$ones[$fraction];
+            else
+                $paise .= " ".$tens[$temp];
+        }else{
+            $f = floor($fraction / 10);       /* Tens (deca) */
+            $s = $fraction % 10;               /* Ones */
+            if ($f < 2)
+                $paise .= $ones[$f * 10 + $s];
+            else
+            {
+                $paise .= " ".$tens[$f];
+                if ($s)
+                $paise .= "-" . $ones[$s];
+            }
+        }
+        $paise .= " Paise";
+
+    }
+
+    //------tens
+    if ($Dn || $n)
+    {
+        if (!empty($rupe) && empty($paise))
+            $rupe .= " and ";
+        if ($Dn < 2)
+            $rupe .= " ".$ones[$Dn * 10 + $n];
+        else
+        {
+            $rupe .= " ".$tens[$Dn];
+            if ($n)
+            $rupe .= "-" . $ones[$n];
+        }
+    }
+    if(!empty($paise)){
+        if(!empty($rupe))
+            $res .= "Rupees ".$rupe." and ".$paise;
+        else
+            $res .= $paise;
+    }else if(!empty($rupe)){
+        $res .= $rupe;
+    }
+       
+   
+
+
+    if (empty($res))
+        $res = "zero";
+
+    //echo $res;exit;
+    return $res;
+
+} 
 
 //----------------------------------------------------------------------------------------------------
 
@@ -97,31 +200,37 @@ function print_check()
     // Check portion
     
     $rep->NewLine(1,0,76);
-    $rep->cols = array(63, 340, 470, 565);
-    $rep->aligns = array('left', 'left', 'right', 'right');
+    $rep->cols = array(63,300, 340);
+    $rep->aligns = array('left', 'left', 'left','right');
     
-    // Pay to    
+		// Date
+		$rep->NewLine(0,0,76);
+    $rep->DateCol(2,10, $rep->DatePrettyPrint($date, 0, 3));
+
+    // Pay to  
+		$rep->NewLine(1,0,23);  
     $rep->TextCol(0, 1, $from_trans['supp_name']);
     
-    // Date
-    $rep->DateCol(1, 2, $rep->DatePrettyPrint($date, 0, 0));
+    // Amount (words)
+		
+    $rep->NewLine(1,0,23);
+    $rep->TextCol(0, 2,  price_in_words_custom(-$total_amt));
     
     // Amount (numeric)
-    $rep->TextCol(2, 3, '***'.number_format2(-$total_amt, $dec));
+		$rep->NewLine(0.5,0,26);
+    $rep->TextCol(2, 10, number_format2(-$total_amt, $dec));
     
-    // Amount (words)
-    $rep->NewLine(1,0,23);
-    $rep->TextCol(0, 2, $from_trans['curr_code'].": ". price_in_words(-$total_amt, ST_CHEQUE));
+    
     
     // Memo
-    $rep->NewLine(1,0,78);
+   /* $rep->NewLine(1,0,78);
     $rep->TextCol(0, 1, $memo);
 
-  	$rep->company = get_company_prefs();
+  	$rep->company = get_company_prefs();*/
   /////////////////////
     // Item details x 2 
     
-    for ($section=1; $section<=2; $section++) 
+    for ($section=1; $section<=0; $section++) 
     {
         $rep->fontSize = 12;        
         // Move down to the correct section

@@ -58,7 +58,7 @@ function write_customer_trans($trans_type, $trans_no, $debtor_no, $BranchNo,
 	$sales_type=0, $order_no=0, $ship_via=0, $due_date="",
 	$AllocAmt=0, $rate=0, $dimension_id=0, $dimension2_id=0, $payment_terms=null,
 	$freight_charge=0,$insurance=0,$packing_charge=0,
-	$duties=0,$service_charge=0,$commission=0)
+	$duties=0,$service_charge=0,$commission=0,$custom_pos=0)
 {
 	$new = $trans_no==0;
 	$curr = get_customer_currency($debtor_no);
@@ -88,7 +88,7 @@ function write_customer_trans($trans_type, $trans_no, $debtor_no, $BranchNo,
 		ov_gst, ov_freight, ov_freight_tax,
 		rate, ship_via, alloc,
 		dimension_id, dimension2_id, payment_terms,ov_freight_charge,ov_insurance,ov_packing_charge,
-		ov_duties,ov_service_charge,ov_commission
+		ov_duties,ov_service_charge,ov_commission,custom_pos
 		) VALUES (".db_escape($trans_no).", ".db_escape($trans_type).",
 		".db_escape($debtor_no).", ".db_escape($BranchNo).",
 		'$SQLDate', '$SQLDueDate', ".db_escape($reference).",
@@ -98,7 +98,7 @@ function write_customer_trans($trans_type, $trans_no, $debtor_no, $BranchNo,
 		".db_escape($dimension_id).", ".db_escape($dimension2_id).", "
 		.db_escape($payment_terms, true).", ".db_escape($freight_charge).", "
 		.db_escape($insurance).", ".db_escape($packing_charge).", ".db_escape($duties).", "
-		.db_escape($service_charge).", ".db_escape($commission).")";
+		.db_escape($service_charge).", ".db_escape($commission).",".db_escape($commission).")";
 	} else {	// may be optional argument should stay unchanged ?
 	$sql = "UPDATE ".TB_PREF."debtor_trans SET
 		debtor_no=".db_escape($debtor_no)." , branch_code=".db_escape($BranchNo).",

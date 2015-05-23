@@ -18,6 +18,7 @@ define('RC_MANUFACTURE', 3);
 define('RC_DIMENSIONS', 4);
 define('RC_BANKING', 5);
 define('RC_GL', 6);
+define('RC_POS', 7);
 
 class BoxReports
 {
@@ -425,6 +426,12 @@ class BoxReports
 						$tag_type = TAG_DIMENSION;
 					//return tag_list($name, 5, $tag_type, true, false, _("No tags"));
 					return tag_list($name, 5, $tag_type, true);
+				case 'POS':
+					$IV = $type_shortcuts[ST_SALESINVOICE];
+					$ref = ($print_invoice_no == 1 ? "trans_no" : "reference");
+					$sql = "SELECT pos.id,pos.pos_name as name FROM  "
+						.TB_PREF."sales_pos as pos";
+						return combo_input($name, '', $sql, 'id', 'name',array('order'=>false));
 
 			}
 		return '';
