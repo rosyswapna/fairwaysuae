@@ -519,6 +519,7 @@ $reports->addReport(RC_POS, 802, _('Pos &Sales Inventory Report'),
 			_('Comments') => 'TEXTBOX',
 			_('Orientation') => 'ORIENTATION',
 			_('Destination') => 'DESTINATION'));
+/*
 $reports->addReport(RC_POS, 803, _('Pos Sales Items Report'),
 	array(	_('Start Date') => 'DATEBEGINM',
 			_('End Date') => 'DATEENDM',
@@ -526,6 +527,15 @@ $reports->addReport(RC_POS, 803, _('Pos Sales Items Report'),
 			_('Location') => 'LOCATIONS',
 			_('Pos')=> 'POS',
 			_('Customer') => 'CUSTOMERS_NO_FILTER',
+			_('Comments') => 'TEXTBOX',
+			_('Orientation') => 'ORIENTATION',
+			_('Destination') => 'DESTINATION'));
+*/
+$reports->addReport(RC_POS, 803, _('Pos Sales Items Report'),
+	array(	_('Start Date') => 'DATEBEGINM',
+			_('End Date') => 'DATEENDM',
+			_('Inventory Category') => 'CATEGORIES',
+			_('Pos')=> 'POS',
 			_('Comments') => 'TEXTBOX',
 			_('Orientation') => 'ORIENTATION',
 			_('Destination') => 'DESTINATION'));

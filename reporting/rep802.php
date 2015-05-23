@@ -29,7 +29,7 @@ include_once($path_to_root . "/inventory/includes/db/items_category_db.inc");
 
 print_inventory_sales();
 
-function getTransactions($category, $location, $fromcust, $from, $to)
+function getTransactions($category, $location, $fromcust, $from, $to,$pos)
 {
 	$from = date2sql($from);
 	$to = date2sql($to);
@@ -135,7 +135,7 @@ function print_inventory_sales()
     $rep->Info($params, $cols, $headers, $aligns);
     $rep->NewPage();
 
-	$res = getTransactions($category, $location, $fromcust, $from, $to);
+	$res = getTransactions($category, $location, $fromcust, $from, $to,$pos);
 	$total = $grandtotal = 0.0;
 	$total1 = $grandtotal1 = 0.0;
 	$total2 = $grandtotal2 = 0.0;

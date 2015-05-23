@@ -29,7 +29,7 @@ include_once($path_to_root . "/inventory/includes/db/items_category_db.inc");
 
 print_inventory_sales();
 
-function getTransactions($category, $from, $to)
+function getTransactions($category, $from, $to, $pos)
 {
 	$from = date2sql($from);
 	$to = date2sql($to);
@@ -52,7 +52,7 @@ function getTransactions($category, $from, $to)
 		AND line.quantity<>0
 		AND line.debtor_trans_type = ".ST_SALESINVOICE;
 		if ($pos)
-		$sql .= "AND ".TB_PREF."debtor_trans.custom_pos=".db_escape($pos)." " ;
+			$sql .= " AND trans.custom_pos=".db_escape($pos)." " ;
 		if ($category != 0)
 			$sql .= " AND item.category_id = ".db_escape($category);
 		$sql .= " GROUP BY item.category_id,
@@ -74,20 +74,20 @@ function print_inventory_sales()
 {
     global $path_to_root;
 
-	$from = $_POST['PARAM_0'];
-	$to = $_POST['PARAM_1'];
-    $category = $_POST['PARAM_2'];
-	$pos=$_POST['PARAM_3'];
-	$comments = $_POST['PARAM_4'];
-	$orientation = $_POST['PARAM_5'];
-	$destination = $_POST['PARAM_6'];
+	$from 		= $_POST['PARAM_0'];
+	$to 		= $_POST['PARAM_1'];
+    	$category 	= $_POST['PARAM_2'];
+	$pos 		= $_POST['PARAM_3'];
+	$comments 	= $_POST['PARAM_4'];
+	$orientation 	= $_POST['PARAM_5'];
+	$destination 	= $_POST['PARAM_6'];
 	if ($destination)
 		include_once($path_to_root . "/reporting/includes/excel_report.inc");
 	else
 		include_once($path_to_root . "/reporting/includes/pdf_report.inc");
 
 	$orientation = ($orientation ? 'L' : 'P');
-    $dec = user_price_dec();
+    	$dec = user_price_dec();
 
 	if ($category == ALL_NUMERIC)
 		$category = 0;
@@ -102,19 +102,19 @@ function print_inventory_sales()
 
 	$aligns = array('left',	'left',	'right', 'right', 'right', 'right', 'left');
 
-    $params =   array( 	0 => $comments,
-    				    1 => array('text' => _('Period'),'from' => $from, 'to' => $to),
-    				    2 => array('text' => _('Category'), 'from' => $cat, 'to' => ''));
+    	$params =   array( 0 => $comments,
+    			1 => array('text' => _('Period'),'from' => $from, 'to' => $to),
+    			2 => array('text' => _('Category'), 'from' => $cat, 'to' => ''));
 
-    $rep = new FrontReport(_('Item Sales Summary Report'), "ItemSalesSummaryReport", user_pagesize(), 9, $orientation);
-    if ($orientation == 'L')
-    	recalculate_cols($cols);
+    	$rep = new FrontReport(_('Item Sales Summary Report'), "ItemSalesSummaryReport", user_pagesize(), 9, $orientation);
+	if ($orientation == 'L')
+		recalculate_cols($cols);
 
-    $rep->Font();
-    $rep->Info($params, $cols, $headers, $aligns);
-    $rep->NewPage();
+	$rep->Font();
+	$rep->Info($params, $cols, $headers, $aligns);
+	$rep->NewPage();
 
-	$res = getTransactions($category, $from, $to);
+	$res = getTransactions($category, $from, $to, $pos);
 	$total = $grandtotal = 0.0;
 	$total1 = $grandtotal1 = 0.0;
 	$total2 = $grandtotal2 = 0.0;
