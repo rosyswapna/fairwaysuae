@@ -258,6 +258,9 @@ class BoxReports
 				case 'SYS_TYPES':
 					return gl_systypes_list($name, null, _("No Type Filter"));
 
+				case 'SYS_TYPES_NO_FILTER':
+					return gl_systypes_list($name);
+
 				case 'SYS_TYPES_ALL':
 					return systypes_list($name, null, _("No Type Filter"));
 
@@ -372,6 +375,80 @@ class BoxReports
 						".TB_PREF."supp_trans.type) AS TNO, concat(".TB_PREF."supp_trans.$ref, if (type=".ST_BANKPAYMENT.", ' $BP ', if (type=".ST_SUPPAYMENT.", ' $SP ', ' $CN ')), ".TB_PREF."suppliers.supp_name) as IName
 						FROM ".TB_PREF."suppliers, ".TB_PREF."supp_trans WHERE (type=".ST_BANKPAYMENT." OR type=".ST_SUPPAYMENT." OR type=".ST_SUPPCREDIT.") AND ".TB_PREF."suppliers.supplier_id=".TB_PREF."supp_trans.supplier_id ORDER BY ".TB_PREF."supp_trans.trans_no DESC";
 					return combo_input($name, '', $sql, 'TNO', 'IName',array('order'=>false));
+
+				case 'GL_REMITTANCE':
+					$BD = $type_shortcuts[ST_BANKDEPOSIT];   
+					$BT = $type_shortcuts[ST_BANKTRANSFER];   
+					$SI = $type_shortcuts[ST_SALESINVOICE];   
+					$CN = $type_shortcuts[ST_CUSTCREDIT];   
+					$CP = $type_shortcuts[ST_CUSTPAYMENT];   
+					$DN = $type_shortcuts[ST_CUSTDELIVERY];   
+					$IT = $type_shortcuts[ST_LOCTRANSFER];    
+					$IA = $type_shortcuts[ST_INVADJUST];   
+					$PO = $type_shortcuts[ST_PURCHORDER];   
+					$PI = $type_shortcuts[ST_SUPPINVOICE];    
+					$PC = $type_shortcuts[ST_SUPPCREDIT];   
+					$SP = $type_shortcuts[ST_SUPPAYMENT];   
+					$GRN = $type_shortcuts[ST_SUPPRECEIVE];   
+					$WO = $type_shortcuts[ST_WORKORDER];   
+					$WI = $type_shortcuts[ST_MANUISSUE];   
+					$WP = $type_shortcuts[ST_MANURECEIVE];   
+					$SO = $type_shortcuts[ST_SALESORDER];   
+					$SQ = $type_shortcuts[ST_SALESQUOTE];   
+					$CU = $type_shortcuts[ST_COSTUPDATE];   
+					$Dim = $type_shortcuts[ST_DIMENSION]; 
+					
+					$sql = "SELECT counter AS TNO, CONCAT(type_no,' ',
+							if (type=".ST_JOURNAL.", ' $GL ', 
+							if (type=".ST_BANKPAYMENT.", ' $BP ', 
+							if (type=".ST_BANKDEPOSIT.", ' $BD',
+							if (type=".ST_BANKTRANSFER.", ' $BT',
+							if (type=".ST_SALESINVOICE.", ' $SI',
+							if (type=".ST_CUSTCREDIT.", ' $CN',
+							if (type=".ST_CUSTPAYMENT.", ' $CP',
+							if (type=".ST_CUSTDELIVERY.", ' $DN',
+							if (type=".ST_LOCTRANSFER .", ' $IT ',
+							if (type=".ST_INVADJUST.", ' $IA',
+							if (type=".ST_PURCHORDER.", ' $PO',
+							if (type=".ST_SUPPINVOICE .", ' $PI ',
+							if (type=".ST_SUPPCREDIT.", ' $PC',
+							if (type=".ST_SUPPAYMENT.", ' $SP',
+							if (type=".ST_SUPPRECEIVE.", ' $GRN',
+							if (type=".ST_WORKORDER.", ' $WO',
+							if (type=".ST_MANUISSUE.", ' $WI',
+							if (type=".ST_MANURECEIVE.", ' $WP',
+							if (type=".ST_SALESORDER.", ' $SO',
+							if (type=".ST_SALESQUOTE.", ' $SQ',
+							if (type=".ST_COSTUPDATE.", ' $CU',			
+							if (type=".ST_DIMENSION.", ' $Dim ', 'NO ')
+							))))))))))))))))))))),
+							' - ',
+							if(person_type_id =".PT_CUSTOMER.",debtor.name,
+							if(person_type_id =".PT_SUPPLIER.",supplier.supp_name,
+							'')),
+							' - ',
+							if(person_type_id =".PT_CUSTOMER.",debtor.curr_code,
+							if(person_type_id =".PT_SUPPLIER.",supplier.curr_code,
+							'')),
+							amount
+							
+							
+							
+						) AS IName
+						 FROM ".TB_PREF."gl_trans "
+				 ."LEFT JOIN ".TB_PREF."debtors_master debtor ON debtor.debtor_no = person_id "
+				 
+				."LEFT JOIN ".TB_PREF."suppliers supplier ON supplier.supplier_id = person_id "
+						 ."WHERE person_type_id <> ''
+						GROUP BY type,type_no
+						 ";
+					return combo_input($name, '', $sql, 'TNO', 'IName',
+					array('order'=>false,
+						'spec_option' => _("No Filter"),
+						'spec_id' => -1
+					)
+					
+					);
 
 				case 'RECEIPT':
 					$BD = $type_shortcuts[ST_BANKDEPOSIT];
