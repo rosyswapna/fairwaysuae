@@ -706,6 +706,8 @@ class FrontReport extends Cpdf
 				return(date('F Y', mktime(12, 0, 0, $month, $day, $year)));
 			elseif ($output_format == 2)
 				return(date('M Y', mktime(12, 0, 0, $month, $day, $year)));
+			elseif ($output_format == 3)
+				return(date('d m Y', mktime(12, 0, 0, $month, $day, $year)));
 		}
 		else
 			return $date;

@@ -540,6 +540,16 @@ $reports->addReport(RC_POS, 803, _('Pos Sales Items Report'),
 			_('Orientation') => 'ORIENTATION',
 			_('Destination') => 'DESTINATION'));
 
+$reports->addReportClass(_('POS'), RC_POS);
+$reports->addReport(RC_POS, 801, _('Pos Sale Summary Report'),
+	array(	_('Start Date') => 'DATEBEGINTAX',
+			_('End Date') => 'DATEENDTAX',
+			_('Tax Id Only') => 'YES_NO',
+			_('Pos')=> 'POS',
+			_('Comments') => 'TEXTBOX',
+			_('Orientation') => 'ORIENTATION',
+			_('Destination') => 'DESTINATION'));
+
 add_custom_reports($reports);
 
 echo $reports->getDisplay();

@@ -58,109 +58,7 @@ function get_allocations_for_remittance($supplier_id, $type, $trans_no)
 	return db_query($sql, "Cannot retreive alloc to transactions");
 }
 //-------------------------------------------------------------------------------------------------
-function price_in_words_custom($number)
-{    
-       
-    if (strpos($number, '.') !== false) {
-               list($number, $fraction) = explode('.', $number);
-        if(strlen($fraction) == 1){
-            $temp = $fraction;
-            $fraction = $fraction * 10;
-        }
 
-        }
-
-
-    $Bn = floor($number / 1000000000); /* Billions (giga) */
-    $number -= $Bn * 1000000000;
-    $Gn = floor($number / 1000000);  /* Millions (mega) */
-    $number -= $Gn * 1000000;
-    $kn = floor($number / 1000);     /* Thousands (kilo) */
-    $number -= $kn * 1000;
-    $Hn = floor($number / 100);      /* Hundreds (hecto) */
-    $number -= $Hn * 100;
-    $Dn = floor($number / 10);       /* Tens (deca) */
-    $n = $number % 10;               /* Ones */
-
-    $res = "";
-    $rupe = "";
-
-    if ($Bn)
-        $rupe .= _number_to_words($Bn) . " Billion";
-    if ($Gn)
-        $rupe .= (empty($rupe) ? "" : " ") . _number_to_words($Gn) . " Million";
-    if ($kn)
-        $rupe .= (empty($rupe) ? "" : " ") . _number_to_words($kn) . " Thousand";
-    if ($Hn)
-        $rupe .= (empty($rupe) ? "" : " ") . _number_to_words($Hn) . " Hundred";
-
-    $ones = array("", "One", "Two", "Three", "Four", "Five", "Six",
-        "Seven", "Eight", "Nine", "Ten", "Eleven", "Twelve", "Thirteen",
-        "Fourteen", "Fifteen", "Sixteen", "Seventeen", "Eighteen",
-        "Nineteen");
-    $tens = array("", "", "Twenty", "Thirty", "Fourty", "Fifty", "Sixty",
-        "Seventy", "Eighty", "Ninety");
-   
-    $paise ='';
-    //fraction part
-    if (null !== $fraction && is_numeric($fraction)) {
-       
-       
-
-        if($fraction%10 == 0){
-            if($temp == 1)
-                $paise .= " ".$ones[$fraction];
-            else
-                $paise .= " ".$tens[$temp];
-        }else{
-            $f = floor($fraction / 10);       /* Tens (deca) */
-            $s = $fraction % 10;               /* Ones */
-            if ($f < 2)
-                $paise .= $ones[$f * 10 + $s];
-            else
-            {
-                $paise .= " ".$tens[$f];
-                if ($s)
-                $paise .= "-" . $ones[$s];
-            }
-        }
-        $paise .= " Paise";
-
-    }
-
-    //------tens
-    if ($Dn || $n)
-    {
-        if (!empty($rupe) && empty($paise))
-            $rupe .= " and ";
-        if ($Dn < 2)
-            $rupe .= " ".$ones[$Dn * 10 + $n];
-        else
-        {
-            $rupe .= " ".$tens[$Dn];
-            if ($n)
-            $rupe .= "-" . $ones[$n];
-        }
-    }
-    if(!empty($paise)){
-        if(!empty($rupe))
-            $res .= "Rupees ".$rupe." and ".$paise;
-        else
-            $res .= $paise;
-    }else if(!empty($rupe)){
-        $res .= $rupe;
-    }
-       
-   
-
-
-    if (empty($res))
-        $res = "zero";
-
-    //echo $res;exit;
-    return $res;
-
-} 
 
 //----------------------------------------------------------------------------------------------------
 
@@ -169,8 +67,13 @@ function print_check()
     global $path_to_root, $systypes_array, $print_invoice_no;
 
     // Get the payment
-    $from = $_POST['PARAM_0'];
-    $destination = $_POST['PARAM_1'];
+		$fromd = $_POST['PARAM_0'];
+	$tod = $_POST['PARAM_1'];
+	$fromd = date2sql($fromd);
+	$tod = date2sql($tod);
+
+    $from = $_POST['PARAM_2'];
+    $destination = $_POST['PARAM_3'];
  	
  	$trans_no = explode("-", $from);
 

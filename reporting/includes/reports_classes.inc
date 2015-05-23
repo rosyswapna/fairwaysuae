@@ -19,6 +19,7 @@ define('RC_DIMENSIONS', 4);
 define('RC_BANKING', 5);
 define('RC_GL', 6);
 define('RC_POS', 7);
+define('RC_CHECK', 8);
 
 class BoxReports
 {
