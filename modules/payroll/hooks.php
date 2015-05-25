@@ -7,36 +7,60 @@ class payroll_app extends application
         {
 		global $path_to_root;
 
-                $this->application("payroll", _($this->help_context = "P&ayroll"));
+                $this->application("payroll", _($this->help_context = "HR P&ayroll"));
 
                 $this->add_module(_("Transactions"));
-                $this->add_lapp_function(0, _("&Create Paychecks"),
-                        $path_to_root.'/modules/payroll/paycheck.php', 'SA_PAYROLL', MENU_TRANSACTION);
-                $this->add_lapp_function(0, _("Pay Payroll &Liabilities"),
-                        $path_to_root.'/modules/payroll/payroll_liabilities.php', 'SA_PAYROLL', MENU_TRANSACTION);
+                $this->add_lapp_function(0, _("Manage &Employee Payslip"),
+                        $path_to_root.'/modules/payroll/', 'SA_PAYROLL', MENU_TRANSACTION);
+                $this->add_lapp_function(0, _("Create Pay&slip Batches"),
+                        $path_to_root.'/modules/payroll/', 'SA_PAYROLL', MENU_TRANSACTION);
+				$this->add_lapp_function(0, _("Make &Payment Advices"),
+                        $path_to_root.'/modules/payroll/', 'SA_PAYROLL', MENU_TRANSACTION);
+                $this->add_rapp_function(0, _("Manage Employee $Leave"),
+                        $path_to_root.'/modules/payroll/', 'SA_PAYROLL', MENU_TRANSACTION);
+				$this->add_rapp_function(0, _("Manage &Employee Expenses"),
+                        $path_to_root.'/modules/payroll/', 'SA_PAYROLL', MENU_TRANSACTION);
+                $this->add_rapp_function(0, _("Manage Pay&check Printable"),
+                        $path_to_root.'/modules/payroll/', 'SA_PAYROLL', MENU_TRANSACTION);
 
+
+						
                 $this->add_module(_("Inquiries and Reports"));
-                $this->add_lapp_function(1, _("Form 941"),
-                        $path_to_root.'/modules/payroll/form_941.php', 'SA_PAYROLL', MENU_INQUIRY);
-                $this->add_lapp_function(1, _("Form W2"),
-                        $path_to_root.'/modules/payroll/form_w2.php', 'SA_PAYROLL', MENU_INQUIRY);
-
+                $this->add_lapp_function(1, _("Employee Tr&anscation Inquiry"),
+                        $path_to_root.'/modules/payroll/', 'SA_PAYROLL', MENU_INQUIRY);
+                $this->add_lapp_function(1, _("Payroll Liabialities &Inquiry"),
+                        $path_to_root.'/modules/payroll/', 'SA_PAYROLL', MENU_INQUIRY);
+				$this->add_rapp_function(1, _("Employee Pay&roll Reports"),
+                        $path_to_root.'/modules/payroll/', 'SA_PAYROLL', MENU_INQUIRY);
+											
+						
+						
+						
                 $this->add_module(_("Maintenance"));
-                $this->add_lapp_function(2, _("&Employees"),
+				$this->add_lapp_function(2, _("Manage &Employees"),
                         $path_to_root.'/modules/payroll/employees.php', 'SA_PAYROLL', MENU_MAINTENANCE);
-                $this->add_rapp_function(2, _("Deprecated - Payroll Taxes"),
-                        $path_to_root.'/modules/payroll/payroll_taxes.php', 'SA_PAYROLL', MENU_MAINTENANCE);
-                //$this->add_rapp_function(2, _("Payroll Tax Groups"),
-                //        $path_to_root.'/modules/payroll/payroll_tax_groups.php', 'SA_PAYROLL', MENU_MAINTENANCE);
-                //$this->add_rapp_function(2, _("File Template"),
-                //        $path_to_root.'/modules/payroll/template.php', 'SA_PAYROLL', MENU_MAINTENANCE);
-
-                $this->add_lapp_function(2, _("Pay Types"),
+				$this->add_lapp_function(2, _("Employee &Contracts"),
+                        $path_to_root.'/modules/payroll/', 'SA_PAYROLL', MENU_MAINTENANCE);
+						
+						
+						
+                $this->add_rapp_function(2, _("Manage &Departments"),
+                        $path_to_root.'/modules/payroll/', 'SA_PAYROLL', MENU_MAINTENANCE);
+				$this->add_rapp_function(2, _("Manage &Job Positions"),
+                        $path_to_root.'/modules/payroll/', 'SA_PAYROLL', MENU_MAINTENANCE);
+				$this->add_rapp_function(2, _("Manage &Leave Types"),
+                        $path_to_root.'/modules/payroll/', 'SA_PAYROLL', MENU_MAINTENANCE);
+				$this->add_rapp_function(2, _("Payroll Rules"),
+                        $path_to_root.'/modules/payroll/', 'SA_PAYROLL', MENU_MAINTENANCE);
+				$this->add_rapp_function(2, _("Leave Rules"),
+                      $path_to_root.'/modules/payroll/', 'SA_PAYROLL', MENU_MAINTENANCE);
+                $this->add_rapp_function(2, _("Salary Structures"),
+                      $path_to_root.'/modules/payroll/', 'SA_PAYROLL', MENU_MAINTENANCE);
+             /*    $this->add_rapp_function(2, _("Pay Types"),
                         $path_to_root.'/modules/payroll/managePayType.php', 'SA_PAYROLL', MENU_MAINTENANCE);
-
                 $this->add_rapp_function(2, _("&Taxes & Deductions"),
-                        $path_to_root.'/modules/payroll/manageTaxes.php', 'SA_PAYROLL', MENU_MAINTENANCE);
-
+                        $path_to_root.'/modules/payroll/manageTaxes.php', 'SA_PAYROLL', MENU_MAINTENANCE); */
+						
                 $this->add_extensions();
         }
 }
