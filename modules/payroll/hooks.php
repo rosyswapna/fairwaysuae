@@ -49,13 +49,15 @@ class payroll_app extends application
 				$this->add_rapp_function(2, _("Manage &Job Positions"),
                         $path_to_root.'/modules/payroll/jobpositions.php', 'SA_PAYROLL', MENU_MAINTENANCE);
 				$this->add_rapp_function(2, _("Manage &Leave Types"),
-                        $path_to_root.'/modules/payroll/', 'SA_PAYROLL', MENU_MAINTENANCE);
+                        $path_to_root.'/modules/payroll/manage/leavetypes.php', 'SA_PAYROLL', MENU_MAINTENANCE);
 				$this->add_rapp_function(2, _("Payroll Rules"),
                         $path_to_root.'/modules/payroll/', 'SA_PAYROLL', MENU_MAINTENANCE);
 				$this->add_rapp_function(2, _("Leave Rules"),
                       $path_to_root.'/modules/payroll/', 'SA_PAYROLL', MENU_MAINTENANCE);
                 $this->add_rapp_function(2, _("Salary Structures"),
                       $path_to_root.'/modules/payroll/', 'SA_PAYROLL', MENU_MAINTENANCE);
+				$this->add_rapp_function(2, _("P&ayroll Settings"),
+                      $path_to_root.'/modules/payroll/manage/gl_accounts.php', 'SA_PAYROLL', MENU_MAINTENANCE);
              /*    $this->add_rapp_function(2, _("Pay Types"),
                         $path_to_root.'/modules/payroll/managePayType.php', 'SA_PAYROLL', MENU_MAINTENANCE);
                 $this->add_rapp_function(2, _("&Taxes & Deductions"),

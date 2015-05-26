@@ -9,17 +9,25 @@
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  
     See the License here <http://www.gnu.org/licenses/gpl-3.0.html>.
 ***********************************************************************/
-$page_security = 'SA_GLACCOUNTGROUP';
-$path_to_root = "../..";
+$page_security = 'SA_PAYROLL';
+$path_to_root = "../../..";
+include($path_to_root . "/includes/db_pager.inc");
 include($path_to_root . "/includes/session.inc");
+add_access_extensions();
 
-page(_($help_context = "GL Account Groups"));
+$js = "";
+if ($use_popup_windows)
+	$js .= get_js_open_window(900, 500);
+if ($use_date_picker)
+	$js .= get_js_date_picker();
 
-include($path_to_root . "/gl/includes/gl_db.inc");
+page(_($help_context = "Payroll Settings"), @$_REQUEST['popup'], false, "", $js);
 
+
+include_once($path_to_root . "/modules/payroll/includes/gl_db.inc");
 include($path_to_root . "/includes/ui.inc");
 
-simple_page_mode(false);
+
 //-----------------------------------------------------------------------------------
 
 function can_process($selected_id) 

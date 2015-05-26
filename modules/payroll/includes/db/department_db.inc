@@ -39,7 +39,7 @@ function delete_department($dept_id)
 }
 
 //--------------------------------------------------------------------------------------------
-function get_all_department($active=true){
+function get_all_leave($active=true){
   //get only active departments by default
   if ($active == true)
     $act_sql = "WHERE inactive = 0";
@@ -51,7 +51,7 @@ function get_all_department($active=true){
 }
 
 //--------------------------------------------------------------------------------------------
-function get_department($department_id)
+function get_leave($department_id)
 {
 	$sql = "SELECT * FROM ".TB_PREF."departments WHERE dept_id=".db_escape($department_id);
 
@@ -61,7 +61,7 @@ function get_department($department_id)
 }
 
 //--------------------------------------------------------------------------------------------
-function db_has_departments()
+function db_has_leaves()
 {
 	return check_empty_result("SELECT COUNT(*) FROM ".TB_PREF."departments");
 }
