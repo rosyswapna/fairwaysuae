@@ -5,41 +5,41 @@
 /////////////////////////////////////////////////////
 //department Database Functions
 /////////////////////////////////////////////////////
-function add_department($name)
+function add_jobnames($name)
 {
-	$sql = "INSERT INTO ".TB_PREF."departments (dept_name ) VALUES ("
+	$sql = "INSERT INTO ".TB_PREF."jobnames (job_name ) VALUES ("
 		.db_escape($name).")";
 
-	db_query($sql,"The department could not be added");
+	db_query($sql,"The job could not be added");
 }
 
 
 //--------------------------------------------------------------------------------------------
-function update_department($id,$name)
+function update_jobnames($id,$name)
 {
 
-	$sql = "UPDATE ".TB_PREF."departments SET
-		dept_name=".db_escape($name)."
+	$sql = "UPDATE ".TB_PREF."jobnames SET
+		job_name=".db_escape($name)."
 		WHERE dept_id=".db_escape($id);
 
-	db_query($sql,"The department could not be updated");
+	db_query($sql,"The jobnames could not be updated");
 
 }
 
 //--------------------------------------------------------------------------------------------
 
-function delete_department($dept_id)
+function delete_jobnames($dept_id)
 {
 	begin_transaction();
 	delete_entity_contacts('customer', $customer_id);
 
 	$sql = "DELETE FROM ".TB_PREF."departments WHERE dept_id=".db_escape($dept_id);;
-	db_query($sql,"cannot delete department");
+	db_query($sql,"cannot delete customer");
 	commit_transaction();
 }
 
 //--------------------------------------------------------------------------------------------
-function get_all_department($active=true){
+function get_all_job($active=true){
   //get only active departments by default
   if ($active == true)
     $act_sql = "WHERE inactive = 0";

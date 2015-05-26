@@ -45,9 +45,9 @@ class payroll_app extends application
 						
 						
                 $this->add_rapp_function(2, _("Manage &Departments"),
-                        $path_to_root.'/modules/payroll/', 'SA_PAYROLL', MENU_MAINTENANCE);
+                        $path_to_root.'/modules/payroll/manage/department.php', 'SA_PAYROLL', MENU_MAINTENANCE);
 				$this->add_rapp_function(2, _("Manage &Job Positions"),
-                        $path_to_root.'/modules/payroll/', 'SA_PAYROLL', MENU_MAINTENANCE);
+                        $path_to_root.'/modules/payroll/jobpositions.php', 'SA_PAYROLL', MENU_MAINTENANCE);
 				$this->add_rapp_function(2, _("Manage &Leave Types"),
                         $path_to_root.'/modules/payroll/', 'SA_PAYROLL', MENU_MAINTENANCE);
 				$this->add_rapp_function(2, _("Payroll Rules"),
