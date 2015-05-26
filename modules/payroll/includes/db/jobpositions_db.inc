@@ -20,7 +20,7 @@ function update_jobnames($id,$name)
 
 	$sql = "UPDATE ".TB_PREF."jobnames SET
 		job_name=".db_escape($name)."
-		WHERE dept_id=".db_escape($id);
+		WHERE job_name_id=".db_escape($id);
 
 	db_query($sql,"The jobnames could not be updated");
 
@@ -28,42 +28,41 @@ function update_jobnames($id,$name)
 
 //--------------------------------------------------------------------------------------------
 
-function delete_jobnames($dept_id)
+function delete_jobnames($job_id)
 {
-	begin_transaction();
-	delete_entity_contacts('customer', $customer_id);
+	
 
-	$sql = "DELETE FROM ".TB_PREF."departments WHERE dept_id=".db_escape($dept_id);;
-	db_query($sql,"cannot delete customer");
+	$sql = "DELETE FROM ".TB_PREF."jobnames WHERE job_name_id=".db_escape($job_id);;
+	db_query($sql,"cannot delete job");
 	commit_transaction();
 }
 
 //--------------------------------------------------------------------------------------------
 function get_all_job($active=true){
-  //get only active departments by default
+  //get only active jobnames by default
   if ($active == true)
     $act_sql = "WHERE inactive = 0";
 
-  $sql = "SELECT dept_id, dept_name FROM ".TB_PREF."departments $act_sql";
+  $sql = "SELECT job_name_id, job_name FROM ".TB_PREF."jobnames $act_sql";
   
-  return db_query($sql, "The departments table is inaccessible");
+  return db_query($sql, "The jobnames table is inaccessible");
 
 }
 
 //--------------------------------------------------------------------------------------------
-function get_department($department_id)
+function get_jobs($job_id)
 {
-	$sql = "SELECT * FROM ".TB_PREF."departments WHERE dept_id=".db_escape($department_id);
+	$sql = "SELECT * FROM ".TB_PREF."jobnames WHERE job_name_id=".db_escape($job_id);
 
-	$result = db_query($sql, "could not get department");
+	$result = db_query($sql, "could not get jobnames");
 
 	return db_fetch($result);
 }
 
 //--------------------------------------------------------------------------------------------
-function db_has_departments()
+function db_has_jobs()
 {
-	return check_empty_result("SELECT COUNT(*) FROM ".TB_PREF."departments");
+	return check_empty_result("SELECT COUNT(*) FROM ".TB_PREF."jobnames");
 }
 
 

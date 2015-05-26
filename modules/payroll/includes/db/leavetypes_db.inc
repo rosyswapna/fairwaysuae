@@ -19,8 +19,8 @@ function update_leaves($id,$name)
 {
 
 	$sql = "UPDATE ".TB_PREF."leavetypes SET
-		dept_name=".db_escape($name)."
-		WHERE dept_id=".db_escape($id);
+		ltyp_name=".db_escape($name)."
+		WHERE ltyp_id=".db_escape($id);
 
 	db_query($sql,"The leave could not be updated");
 
@@ -28,12 +28,11 @@ function update_leaves($id,$name)
 
 //--------------------------------------------------------------------------------------------
 
-function delete_leaves($dept_id)
+function delete_leaves($ltyp_id)
 {
-	begin_transaction();
-	delete_entity_contacts('customer', $customer_id);
+	
 
-	$sql = "DELETE FROM ".TB_PREF."leaves WHERE dept_id=".db_escape($dept_id);;
+	$sql = "DELETE FROM ".TB_PREF."leavetypes WHERE ltyp_id=".db_escape($ltyp_id);;
 	db_query($sql,"cannot delete leaves");
 	commit_transaction();
 }
@@ -44,7 +43,7 @@ function get_all_leaves($active=true){
   if ($active == true)
     $act_sql = "WHERE inactive = 0";
 
-  $sql = "SELECT dept_id, dept_name FROM ".TB_PREF."leaves $act_sql";
+  $sql = "SELECT ltyp_id, ltyp_name FROM ".TB_PREF."leavetypes $act_sql";
   
   return db_query($sql, "The leaves table is inaccessible");
 
@@ -53,7 +52,7 @@ function get_all_leaves($active=true){
 //--------------------------------------------------------------------------------------------
 function get_leaves($leaves_id)
 {
-	$sql = "SELECT * FROM ".TB_PREF."leaves WHERE dept_id=".db_escape($leaves_id);
+	$sql = "SELECT * FROM ".TB_PREF."leavetypes WHERE ltyp_id=".db_escape($leaves_id);
 
 	$result = db_query($sql, "could not get leaves");
 
@@ -61,9 +60,9 @@ function get_leaves($leaves_id)
 }
 
 //--------------------------------------------------------------------------------------------
-function db_has_leavess()
+function db_has_leaves()
 {
-	return check_empty_result("SELECT COUNT(*) FROM ".TB_PREF."leaves");
+	return check_empty_result("SELECT COUNT(*) FROM ".TB_PREF."leavetypes");
 }
 
 

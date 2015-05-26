@@ -9,7 +9,7 @@
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  
     See the License here <http://www.gnu.org/licenses/gpl-3.0.html>.
 ***********************************************************************/
-$page_security = 'SA_PAYROLL';
+$page_security = 'SA_PAYROLL_SETTINGS';
 $path_to_root = "../../..";
 include($path_to_root . "/includes/db_pager.inc");
 include($path_to_root . "/includes/session.inc");
@@ -20,7 +20,7 @@ if ($use_popup_windows)
 	$js .= get_js_open_window(900, 500);
 if ($use_date_picker)
 	$js .= get_js_date_picker();
-page(_($help_context = "Payroll Settings"), @$_REQUEST['popup'], false, "", $js);
+page(_($help_context = "Payroll Rules"), @$_REQUEST['popup'], false, "", $js);
 
 include($path_to_root . "/includes/ui.inc");
 include_once($path_to_root . "/modules/payroll/includes/db/gl_db.inc");
@@ -201,7 +201,7 @@ if (db_has_gl_accounts())
 {
 	start_table(TABLESTYLE_NOBORDER);
 	start_row();
-    gl_all_accounts_list_cells(null, 'AccountList', null, false, false,
+    payroll_list_cells(null, 'AccountList', null, false, false,
 		_('New account'), true, check_value('show_inactive'));
 	check_cells(_("Show inactive:"), 'show_inactive', null, true);
 	end_row();
@@ -235,7 +235,7 @@ if ($selected_account != "")
 	hidden('account_code', $_POST['account_code']);
 	hidden('selected_account', $selected_account);
 		
-	label_row(_("Account Code:"), $_POST['account_code']);
+	label_row(_("Payroll Rule Code:"), $_POST['account_code']);
 } 
 else
 {
@@ -245,18 +245,18 @@ else
 		$_POST['account_name']	= $_POST['account_type'] = '';
  		$_POST['inactive'] = 0;
 	}
-	text_row_ex(_("Account Code:"), 'account_code', 15);
+	text_row_ex(_("Payroll Rule Code:"), 'account_code', 15);
 }
 
-text_row_ex(_("Account Code 2:"), 'account_code2', 15);
+//text_row_ex(_("Account Code 2:"), 'account_code2', 15);
 
-text_row_ex(_("Account Name:"), 'account_name', 60);
+text_row_ex(_("Payroll Rule Name:"), 'account_name', 60);
 
-gl_account_types_list_row(_("Account Group:"), 'account_type', null);
+label_row(_("Payroll Rule Class:"), 'payroll expenses');
 
-tag_list_row(_("Account Tags:"), 'account_tags', 5, TAG_ACCOUNT, true);
+//tag_list_row(_("Account Tags:"), 'account_tags', 5, TAG_ACCOUNT, true);
 
-record_status_list_row(_("Account status:"), 'inactive');
+record_status_list_row(_("Status:"), 'inactive');
 end_table(1);
 
 if ($selected_account == "") 

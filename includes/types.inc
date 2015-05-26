@@ -236,6 +236,9 @@ define ('PACK','Pack');
 define ('BOX','Box');
 define ('CARTON','Carton');
 
+//payroll
+define ('AC_TYPE_PAYROLL',11);
+
 
 include_once($path_to_root . '/includes/sysnames.inc');
 

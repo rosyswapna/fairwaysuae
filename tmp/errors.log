@@ -343,3 +343,134 @@
 [25-May-2015 14:58:07 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\data_checks.inc:462:<br>could not do check empty query<br>error code : 1146<br>error message : La table 'fair.0_employees' n'existe pas<br>sql that failed was : SELECT COUNT(*) FROM 0_employees<br><br><br>
 [25-May-2015 14:58:07 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\data_checks.inc:462:<br>could not do check empty query<br>error code : 1146<br>error message : La table 'fair.0_employees' n'existe pas<br>sql that failed was : SELECT COUNT(*) FROM 0_employees<br><br><br>
 [25-May-2015 15:58:54 Europe/Paris] 0::logout.php:50: session_destroy(): Session object destruction failed
+[26-May-2015 08:45:29 Europe/Paris] 0:admin:ui_controls.inc:59: implode(): Invalid arguments passed
+[26-May-2015 08:47:12 Europe/Paris] 0:admin:ui_controls.inc:59: implode(): Invalid arguments passed
+[26-May-2015 08:47:12 Europe/Paris] 0:admin:ui_controls.inc:59: implode(): Invalid arguments passed
+[26-May-2015 08:49:01 Europe/Paris] 0::logout.php:50: session_destroy(): Session object destruction failed
+[26-May-2015 08:50:10 Europe/Paris] 0::logout.php:50: session_destroy(): Session object destruction failed
+[26-May-2015 09:18:45 Europe/Paris] 0::logout.php:50: session_destroy(): Session object destruction failed
+[26-May-2015 09:24:42 Europe/Paris] 0::logout.php:50: session_destroy(): Session object destruction failed
+[26-May-2015 09:24:52 Europe/Paris] 0:admin:gl_accounts.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[26-May-2015 09:24:52 Europe/Paris] 0:admin:gl_accounts.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[26-May-2015 09:24:52 Europe/Paris] 0:admin:gl_accounts.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[26-May-2015 09:24:52 Europe/Paris] 0:admin:gl_accounts.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[26-May-2015 09:26:28 Europe/Paris] 0:admin:gl_accounts.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[26-May-2015 09:26:28 Europe/Paris] 0:admin:gl_accounts.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[26-May-2015 09:33:27 Europe/Paris] 0:admin:gl_accounts.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[26-May-2015 09:33:27 Europe/Paris] 0:admin:gl_accounts.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[26-May-2015 09:34:31 Europe/Paris] 0:admin:gl_accounts.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[26-May-2015 09:34:31 Europe/Paris] 0:admin:gl_accounts.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[26-May-2015 09:34:33 Europe/Paris] 0:admin:gl_accounts.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[26-May-2015 09:34:33 Europe/Paris] 0:admin:gl_accounts.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[26-May-2015 09:53:37 Europe/Paris] 0::logout.php:50: session_destroy(): Session object destruction failed
+[26-May-2015 11:07:29 Europe/Paris] 0:admin:gl_accounts.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[26-May-2015 11:07:29 Europe/Paris] 0:admin:gl_accounts.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[26-May-2015 11:07:29 Europe/Paris] 0:admin:gl_accounts.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[26-May-2015 11:07:29 Europe/Paris] 0:admin:gl_accounts.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[26-May-2015 11:16:40 Europe/Paris] 0:admin:gl_accounts.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[26-May-2015 11:16:40 Europe/Paris] 0:admin:gl_accounts.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[26-May-2015 11:17:00 Europe/Paris] 0:admin:gl_accounts.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[26-May-2015 11:17:00 Europe/Paris] 0:admin:gl_accounts.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[26-May-2015 11:17:31 Europe/Paris] 0:admin:gl_accounts.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[26-May-2015 11:17:31 Europe/Paris] 0:admin:gl_accounts.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[26-May-2015 11:32:37 Europe/Paris] 0::logout.php:50: session_destroy(): Session object destruction failed
+[26-May-2015 11:45:30 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\includes\db\leavetypes_db.inc:25:<br>The leave could not be updated<br>error code : 1054<br>error message : Champ 'dept_name' inconnu dans field list<br>sql that failed was : UPDATE 0_leavetypes SET
+		dept_name='casuall'
+		WHERE ltyp_id='1'<br><br><br>
+[26-May-2015 11:45:32 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\includes\db\leavetypes_db.inc:25:<br>The leave could not be updated<br>error code : 1054<br>error message : Champ 'dept_name' inconnu dans field list<br>sql that failed was : UPDATE 0_leavetypes SET
+		dept_name='casuall'
+		WHERE ltyp_id='1'<br><br><br>
+[26-May-2015 11:54:29 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\includes\db\leavetypes_db.inc:25:<br>The leave could not be updated<br>error code : 1054<br>error message : Champ 'dept_name' inconnu dans field list<br>sql that failed was : UPDATE 0_leavetypes SET
+		dept_name='casual1'
+		WHERE ltyp_id='1'<br><br><br>
+[26-May-2015 12:04:19 Europe/Paris] 0:admin:gl_accounts.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[26-May-2015 12:04:19 Europe/Paris] 0:admin:gl_accounts.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[26-May-2015 12:04:19 Europe/Paris] 0:admin:gl_accounts.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[26-May-2015 12:04:19 Europe/Paris] 0:admin:gl_accounts.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[26-May-2015 12:05:26 Europe/Paris] 0:admin:gl_accounts.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[26-May-2015 12:05:26 Europe/Paris] 0:admin:gl_accounts.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[26-May-2015 12:06:25 Europe/Paris] 0:admin:gl_accounts.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[26-May-2015 12:06:25 Europe/Paris] 0:admin:gl_accounts.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[26-May-2015 12:06:45 Europe/Paris] 0:admin:gl_accounts.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[26-May-2015 12:06:45 Europe/Paris] 0:admin:gl_accounts.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[26-May-2015 12:07:40 Europe/Paris] 0:admin:gl_accounts.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[26-May-2015 12:07:40 Europe/Paris] 0:admin:gl_accounts.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[26-May-2015 12:08:00 Europe/Paris] 0:admin:gl_accounts.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[26-May-2015 12:08:00 Europe/Paris] 0:admin:gl_accounts.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[26-May-2015 12:27:35 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[26-May-2015 12:27:35 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[26-May-2015 12:27:36 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[26-May-2015 12:27:36 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[26-May-2015 12:31:33 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[26-May-2015 12:31:33 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[26-May-2015 12:31:33 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[26-May-2015 12:31:33 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[26-May-2015 12:34:06 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[26-May-2015 12:34:06 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[26-May-2015 12:35:02 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[26-May-2015 12:35:02 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[26-May-2015 12:39:50 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[26-May-2015 12:39:50 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[26-May-2015 12:43:12 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[26-May-2015 12:43:13 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[26-May-2015 13:06:20 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[26-May-2015 13:06:20 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[26-May-2015 13:06:22 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[26-May-2015 13:06:22 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[26-May-2015 13:06:55 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[26-May-2015 13:06:55 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[26-May-2015 13:12:04 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[26-May-2015 13:12:04 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[26-May-2015 13:23:35 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[26-May-2015 13:23:35 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[26-May-2015 13:25:11 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[26-May-2015 13:25:11 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[26-May-2015 13:25:16 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[26-May-2015 13:25:16 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[26-May-2015 13:29:33 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[26-May-2015 13:29:33 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[26-May-2015 13:29:33 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[26-May-2015 13:29:33 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[26-May-2015 13:44:56 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[26-May-2015 13:44:56 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[26-May-2015 13:45:04 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[26-May-2015 13:45:04 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[26-May-2015 13:45:23 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[26-May-2015 13:45:23 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[26-May-2015 13:45:23 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[26-May-2015 13:45:23 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[26-May-2015 13:47:01 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[26-May-2015 13:47:01 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[26-May-2015 13:47:15 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[26-May-2015 13:47:15 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[26-May-2015 13:48:03 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[26-May-2015 13:48:03 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[26-May-2015 13:48:30 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[26-May-2015 13:48:30 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[26-May-2015 13:48:36 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[26-May-2015 13:48:36 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[26-May-2015 13:48:36 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[26-May-2015 13:48:36 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[26-May-2015 13:49:05 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[26-May-2015 13:49:05 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[26-May-2015 13:49:05 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[26-May-2015 13:49:05 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[26-May-2015 13:52:11 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[26-May-2015 13:52:11 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[26-May-2015 13:52:11 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[26-May-2015 13:52:11 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[26-May-2015 13:52:22 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[26-May-2015 13:52:22 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[26-May-2015 13:52:26 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[26-May-2015 13:52:26 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[26-May-2015 13:54:59 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[26-May-2015 13:54:59 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[26-May-2015 13:54:59 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[26-May-2015 13:54:59 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[26-May-2015 13:57:00 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[26-May-2015 13:57:00 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[26-May-2015 13:57:00 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[26-May-2015 13:57:00 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[26-May-2015 13:58:06 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\data_checks.inc:462:<br>could not do check empty query<br>error code : 1146<br>error message : La table 'fair.0_payroll_pay_type' n'existe pas<br>sql that failed was : SELECT COUNT(*) FROM 0_payroll_pay_type<br><br><br>
+[26-May-2015 13:58:08 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\data_checks.inc:462:<br>could not do check empty query<br>error code : 1146<br>error message : La table 'fair.0_payroll_tax_type' n'existe pas<br>sql that failed was : SELECT COUNT(*) FROM 0_payroll_tax_type<br><br><br>
+[26-May-2015 13:58:09 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\data_checks.inc:462:<br>could not do check empty query<br>error code : 1146<br>error message : La table 'fair.0_payroll_pay_type' n'existe pas<br>sql that failed was : SELECT COUNT(*) FROM 0_payroll_pay_type<br><br><br>
