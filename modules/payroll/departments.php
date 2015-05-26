@@ -42,17 +42,17 @@ include_once($path_to_root . "/modules/payroll/includes/payroll_ui.inc");
 function can_process()
 {
 	if (strlen($_POST['EmpFirstName']) == 0){
-		display_error(_("The employee first name must be entered."));
+		display_error(_("Who is this? Surely they have a name?"));
 		set_focus('EmpFirstName');
 		return false;
 	} 
 	if (strlen($_POST['EmpLastName']) == 0){
-		display_error(_("The employee Last name must be entered."));
+		display_error(_("Who is this? Surely they have a name?"));
 		set_focus('EmpLastName');
 		return false;
 	} 
 	if (strlen($_POST['EmpAddress']) == 0){
-		display_error(_("The employee address must be entered."));
+		display_error(_("What? You hired a homeless guy?"));
 		set_focus('EmpAddress');
 		return false;
 	} 
@@ -113,7 +113,7 @@ function handle_submit(&$selected_id)
 		//TODO update release date for inactive employees
 
 		$Ajax->activate('EmpId'); // in case of status change //html field name
-		display_notification(_("Employee details has been updated."));
+		display_notification(_("Employee has been updated."));
 	} 
 	else 
 	{ 	//it is a new employee
@@ -226,13 +226,13 @@ function employee_settings($selected_id){
 
 	table_section_title(_("Employment Information"));
 
-	text_row(_("Enrollment Number:"), 'EmpTaxId', $_POST['EmpTaxId'], 40, 80);
-	payroll_emp_role_list_row(_("Designated Role:"), 'EmpRole', $_POST['EmpRole']); //Officer/Employee...
-	payroll_payfreq_list_row(_("Payroll Frequency:"), 'EmpFrequency', $_POST['EmpFrequency']);//weekly/biweekly/semi-monthly...
-	payroll_filing_status_list_row(_("Current Status:"), 'EmpStatus', $_POST['EmpStatus']);//Single, Married...
-	text_row(_("Allowances:"), 'EmpAllowances', $_POST['EmpAllowances'], 40, 80);
+	text_row(_("Tax ID:"), 'EmpTaxId', $_POST['EmpTaxId'], 11, 11);
+	payroll_emp_role_list_row(_("Role:"), 'EmpRole', $_POST['EmpRole']); //Officer/Employee...
+	payroll_payfreq_list_row(_("Pay Frequency:"), 'EmpFrequency', $_POST['EmpFrequency']);//weekly/biweekly/semi-monthly...
+	payroll_filing_status_list_row(_("Filing Status:"), 'EmpStatus', $_POST['EmpStatus']);//Single, Married...
+	text_row(_("Allowances:"), 'EmpAllowances', $_POST['EmpAllowances'], 2, 2);
 	amount_row(_("Extra Witholding:"), 'EmpExtraWH', $_POST['EmpExtraWH']);
-	
+
 	table_section_title(_(" "));//just a spacer
 	date_row(_("Hire Date:"), 'EmpHireDate');
 
@@ -322,19 +322,19 @@ function employee_taxes($selected_id){
 //Page Director
 /////////////////////////////////////////////////////
 
-page(_($help_context = "Manage Employees"), @$_REQUEST['popup'], false, "", $js); //TODO look into help_context and 'popup'
+page(_($help_context = "Manage Departments"), @$_REQUEST['popup'], false, "", $js); //TODO look into help_context and 'popup'
 
 start_form();
 
 $selected_id = get_post('EmpId','');
 
-//top selector box for adding/editing employees
+//top selector box for adding/editing departments
 //--------------------------------------------------------------------------------------------
 if (db_has_employees()){
 	start_table(TABLESTYLE_NOBORDER);
 	start_row();
-	employee_list_cells(_("Select an employee: "), 'EmpId', null,
-		_('New employee'), true, check_value('show_inactive'));
+	employee_list_cells(_("Select a department: "), 'EmpId', null,
+		_('New Department'), true, check_value('show_inactive'));
 	check_cells(_("Show inactive:"), 'show_inactive', null, true);
 	end_row();
 	end_table();
@@ -344,7 +344,7 @@ if (db_has_employees()){
 		set_focus('EmpId');
 	}
 } else {
-    display_notification("Add and Manage Employees");
+    display_notification("Time to enter some employees, eh?");
     hidden('EmpId');
 }
 
