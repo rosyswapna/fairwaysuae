@@ -45,7 +45,7 @@ class payroll_app extends application
 						
 						
                 $this->add_rapp_function(2, _("Manage &Departments"),
-                        $path_to_root.'/modules/payroll/manage/department.php', 'SA_PAYROLL', MENU_MAINTENANCE);
+                        $path_to_root.'/modules/payroll/manage/department.php', 'SA_DEPARTMENT', MENU_MAINTENANCE);
 				$this->add_rapp_function(2, _("Manage &Job Positions"),
                         $path_to_root.'/modules/payroll/jobpositions.php', 'SA_PAYROLL', MENU_MAINTENANCE);
 				$this->add_rapp_function(2, _("Manage &Leave Types"),
@@ -77,6 +77,7 @@ class hooks_payroll extends hooks {
         function install_access() {
                 $security_sections[SS_PAYROLL] = _("Payroll");
                 $security_areas['SA_PAYROLL'] = array(SS_PAYROLL|1, _("Process Payroll and Reports "));
+		$security_areas['SA_DEPARTMENT'] = array(SS_PAYROLL|1, _("Manage Departments "));
                 return array($security_areas, $security_sections);
         }
 

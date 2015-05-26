@@ -31,7 +31,6 @@ function update_department($id,$name)
 function delete_department($dept_id)
 {
 	begin_transaction();
-	delete_entity_contacts('customer', $customer_id);
 
 	$sql = "DELETE FROM ".TB_PREF."departments WHERE dept_id=".db_escape($dept_id);;
 	db_query($sql,"cannot delete department");
