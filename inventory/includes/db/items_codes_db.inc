@@ -30,6 +30,7 @@ function update_item_code($id, $item_code, $stock_id, $description, $category, $
 	else
 		$sql .= "id = ".db_escape($id);
 
+
 	db_query($sql,"an item code could not be updated");
 }
 
@@ -160,7 +161,7 @@ function check_item_in_kit($old_id, $kit_code, $item_code, $recurse=false)
 
 function get_kit_props($kit_code)
 {
-	$sql = "SELECT description, category_id FROM ".TB_PREF."item_codes "
+	$sql = "SELECT description, category_id,stock_id FROM ".TB_PREF."item_codes "
 		. " WHERE item_code=".db_escape($kit_code);
 	$res = db_query($sql, "kit name query failed");
 	return db_fetch($res);

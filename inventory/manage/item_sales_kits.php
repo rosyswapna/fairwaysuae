@@ -14,7 +14,7 @@ $path_to_root = "../..";
 include_once($path_to_root . "/includes/session.inc");
 
 if (!@$_GET['popup'])
-page(_($help_context = "Sales Kits & Alias Codes"));
+	page(_($help_context = "Sales Kits & Alias Codes"));
 
 include_once($path_to_root . "/includes/date_functions.inc");
 include_once($path_to_root . "/includes/ui.inc");
@@ -25,6 +25,42 @@ include_once($path_to_root . "/includes/manufacturing.inc");
 simple_page_mode(true);
 //--------------------------------------------------------------------------------------------------
 
+if ($Mode=='ADD_ITEM' || $Mode == 'UPDATE_ITEM'){
+	add_sales_kit($_POST['item_code'],$selected_id);
+}
+if($Mode == 'Delete'){
+	// Before removing last component from selected kit check 
+	// if selected kit is not included in any other kit. 
+	// 
+	$other_kits = get_where_used($_POST['item_code']);
+	$num_kits = db_num_rows($other_kits);
+
+	$kit = get_item_kit($_POST['item_code']);
+	if ((db_num_rows($kit) == 1) && $num_kits) {
+
+		$msg = _("This item cannot be deleted because it is the last item in the kit used by following kits")
+			.':<br>';
+
+		while($num_kits--) {
+			$kit = db_fetch($other_kits);
+			$msg .= "'".$kit[0]."'";
+			if ($num_kits) $msg .= ',';
+		}
+		display_error($msg);
+	} else {
+		delete_item_code($selected_id);
+		display_notification(_("The component item has been deleted from this bom"));
+		$Mode = 'RESET';
+	}
+}
+
+if ($Mode == 'RESET')
+{
+	$selected_id = -1;
+	unset($_POST['quantity']);
+	unset($_POST['component']);
+	//$_POST['description'] = '';
+}
 
 function display_item_kits($stock_id)
 {
@@ -35,9 +71,9 @@ function display_item_kits($stock_id)
 		table_section_title(_("Manage Item Packing"));
 		echo "<td>";
 		div_start('bom');
-			start_table(TABLESTYLE, "width=100%");
-			//$th = array(_("KIT"), _("Quantity"), _("Units"),'','');
-			$th = array(_("KIT"), _("Quantity"), _("Units"));
+			start_table(TABLESTYLE, "width=80%");
+			$th = array(_("KIT"), _("Quantity"), _("Units"),'','');
+			//$th = array(_("KIT"), _("Quantity"), _("Units"));
 			table_header($th);
 			$k = 0;
 			while($kit = db_fetch($kits)){
@@ -46,8 +82,8 @@ function display_item_kits($stock_id)
 					qty_cell($kit["quantity"], false, 
 						$kit["units"] == '' ? 0 : get_qty_dec($kit["comp_name"]));
 					label_cell($kit["units"] == '' ? _('kit') : $kit["units"]);
-			 		//edit_button_cell("Edit".$kit['id'], _("Edit"));
-			 		//delete_button_cell("Delete".$kit['id'], _("Delete"));
+			 		edit_button_cell("Edit".$kit['id'], _("Edit"));
+			 		delete_button_cell("Delete".$kit['id'], _("Delete"));
 				end_row();
 			}
 
@@ -59,7 +95,7 @@ function display_item_kits($stock_id)
 
 //--------------------------------------------------------------------------------------------------
 
-function add_sales_kit($kit_code)
+function add_sales_kit($kit_code,$selected_item)
 {
 
 	global $Mode,$Ajax;
@@ -93,7 +129,7 @@ function add_sales_kit($kit_code)
 				return;
 		}
 
-
+		
 		add_item_code( $new_kit_code, get_post('component'), get_post('description'),
 			 get_post('category'), input_num('quantity'), 0);
 		display_notification("New alias code has been created.");
@@ -101,25 +137,22 @@ function add_sales_kit($kit_code)
 		
 	}else{//edit
 		$props = get_kit_props($_POST['item_code']);
-		update_item_code($selected_item, $kit_code, get_post('component'),
-			$props['description'], $props['category_id'], input_num('quantity'), 0);
+		
+		update_item_code($selected_item, $kit_code, $props['stock_id'],
+			$_POST['description'], $props['category_id'], input_num('quantity'), 0);
 		display_notification(_("Component of selected kit has been updated."));
+		
 	}
-	$_POST['item_code'] = $kit_code;
+	//$_POST['item_code'] = $kit_code;
 	$Mode = 'RESET';
 	$Ajax->activate('_page_body');
+	
 	
 	
 }
 //--------------------------------------------------------------------------------------------------
 
-if ($Mode == 'RESET')
-{
-	$selected_id = -1;
-	unset($_POST['quantity']);
-	unset($_POST['component']);
-	//$_POST['description'] = '';
-}
+
 if (isset($_GET['stock_id'])){
 	$_POST['component'] = $_GET['stock_id'];
 	$_POST['kit_code'] = $_GET['stock_id'];
@@ -128,37 +161,9 @@ if (isset($_GET['stock_id'])){
 $selected_item = $_POST['component'];
 //--------------------------------------------------------------------------------------------------
 
-if (isset($_POST['addupdatekit'])){
-	add_sales_kit($_POST['item_code']);
-}
 
-if ($Mode=='ADD_ITEM' || 'UPDATE_ITEM'){
-	add_sales_kit($_POST['item_code']);
-}elseif ($Mode == 'Delete'){
-	// Before removing last component from selected kit check 
-	// if selected kit is not included in any other kit. 
-	// 
-	$other_kits = get_where_used($_POST['item_code']);
-	$num_kits = db_num_rows($other_kits);
 
-	$kit = get_item_kit($_POST['item_code']);
-	if ((db_num_rows($kit) == 1) && $num_kits) {
 
-		$msg = _("This item cannot be deleted because it is the last item in the kit used by following kits")
-			.':<br>';
-
-		while($num_kits--) {
-			$kit = db_fetch($other_kits);
-			$msg .= "'".$kit[0]."'";
-			if ($num_kits) $msg .= ',';
-		}
-		display_error($msg);
-	} else {
-		delete_item_code($selected_id);
-		display_notification(_("The component item has been deleted from this bom"));
-		$Mode = 'RESET';
-	}
-}
 
 //--------------------------------------------------------------------------------------------------
 if (!@$_GET['popup'])
@@ -171,13 +176,19 @@ $selected_kit = $_POST['item_code'];
 
 
 //------modified view start--------------------
-hidden('item_code', $selected_id);
 
 if ($Mode == 'Edit') {
 
 	$myrow = get_item_code($selected_id);
+	
 	$_POST['component'] = $myrow["stock_id"];
+	$_POST['description'] = $myrow["description"];
 	$_POST['quantity'] = number_format2($myrow["quantity"], get_qty_dec($myrow["stock_id"]));
+	$_POST['item_code'] = $myrow["item_code"];
+}else{
+	$_POST['description'] = '';
+	$_POST['quantity'] = 1;
+	$_POST['item_code'] = -1;
 }
 hidden("selected_id", $selected_id);
 start_outer_table(TABLESTYLE2);
@@ -186,8 +197,10 @@ start_outer_table(TABLESTYLE2);
 	table_section_title(_("Sales Kit/Item Packing"));
 		if ($Mode == 'Edit') {
 			label_row(_("Kit Code:"), $myrow["item_code"]);
+			
 			text_row(_("Packing Name:"), 'description', null, 33, 33);
 			stock_categories_list_row(_("Category:"), 'category', null);
+			qty_row(_("Quantity:"), 'quantity', $_POST['quantity'], '', $units, $dec);
 		}else{
 			/*start_row();
 				text_cells(_("Alias/kit code:"), 'kit_code', null, 15, 21);
@@ -201,6 +214,7 @@ start_outer_table(TABLESTYLE2);
 			sales_local_items_list_row(_("Component:"),'component', null, false, true);
 			qty_row(_("Quantity:"), 'quantity', number_format2(1, $dec), '', $units, $dec);
 		}
+		hidden('item_code');
 
 		display_item_kits($selected_item);
 	

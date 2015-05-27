@@ -187,6 +187,10 @@ $security_areas =array(
 	'SA_ITEMSANALYTIC' => array(SS_ITEMS_A|2, _("Items analytical reports and inquiries")),
 	'SA_ITEMSVALREP' => array(SS_ITEMS_A|3, _("Inventory valuation report")),
 
+	'SA_ITEMSALESKIT' => array(SS_ITEMS_A|3, _("Sales Kits & Alias Codes")),
+
+
+
 //
 // Manufacturing module 
 //
