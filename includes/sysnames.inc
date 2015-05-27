@@ -195,4 +195,9 @@ $tmonths = array("", _("Jan"),_("Feb"),_("Mar"),_("Apr"),_("May"),_("Jun"),_("Ju
 //sles kit
 
 
+$ac_types = array(
+	AC_TYPE_PAYROLL => _("Payroll Expenses"),
+);
+
+
 ?>

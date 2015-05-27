@@ -252,7 +252,8 @@ else
 
 text_row_ex(_("Payroll Rule Name:"), 'account_name', 60);
 
-label_row(_("Payroll Rule Class:"), 'payroll expenses');
+label_row(_("Payroll Rule Class:"), $ac_types[AC_TYPE_PAYROLL]);
+hidden('account_type',AC_TYPE_PAYROLL);
 
 //tag_list_row(_("Account Tags:"), 'account_tags', 5, TAG_ACCOUNT, true);
 
