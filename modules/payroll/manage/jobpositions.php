@@ -10,7 +10,7 @@
     See the License here <http://www.gnu.org/licenses/gpl-3.0.html>.
 ***********************************************************************/
 $page_security = 'SA_JOB_POSITIONS';
-$path_to_root = "../..";
+$path_to_root = "../../..";
 
 include($path_to_root . "/includes/db_pager.inc");
 include_once($path_to_root . "/includes/session.inc");
@@ -33,8 +33,8 @@ function can_process()
 {
 	if (strlen($_POST['job_name']) == 0) 
 	{
-		display_error(_("The job name cannot be empty."));
-		set_focus('CustName');
+		display_error(_("The name cannot be empty."));
+		set_focus('job_name');
 		return false;
 	} 
 
@@ -54,17 +54,17 @@ function handle_submit(&$selected_id)
 	{
 		update_jobnames($_POST['job_name_id'], $_POST['job_name']);		
 		$Ajax->activate('job_name_id'); // in case of status change
-		display_notification(_("Job has been updated."));
+		display_notification(_("Job position has been updated."));
 	} 
 	else 
-	{ 	//it is a new department
+	{ 	//it is a new job position
 
 		begin_transaction();
 			add_jobnames($_POST['job_name']);
 			$selected_id = $_POST['job_name_id'] = db_insert_id();
 		commit_transaction();
 
-		display_notification(_("A new job has been added."));		
+		display_notification(_("A new job position has been added."));		
 		$Ajax->activate('_page_body');
 	}
 }
@@ -85,16 +85,16 @@ if (isset($_POST['delete']))
 	{	//display_notification($selected_id);exit;
 		delete_jobnames($selected_id);
 
-		display_notification(_("Selected job has been deleted."));
+		display_notification(_("Selected job position has been deleted."));
 		unset($_POST['job_name_id']);
 		$selected_id = '';
 		$Ajax->activate('_page_body');
-	} //end if Delete department
+	} //end if Delete job position
 }
 
-function job_settings($selected_id) 
+function job_position_settings($selected_id) 
 {
-	global $SysPrefs, $path_to_root, $auto_create_branch;
+	global $SysPrefs, $path_to_root;
 	
 	if (!$selected_id) 
 	{
@@ -104,26 +104,26 @@ function job_settings($selected_id)
 	}
 	else 
 	{
-		$myrow = get_jobs($selected_id);
+		$myrow = get_job($selected_id);
 		$_POST['job_name'] = $myrow["job_name"];
 	}
 
 	start_table(TABLESTYLE2);
-		text_row(_("Job Type:").$selected_id, 'job_name', $_POST['job_name'], 40, 40);	
+		text_row(_("Job position Name:").$selected_id, 'job_name', $_POST['job_name'], 40, 40);	
 	end_table();
 
 	div_start('controls');
 	if (!$selected_id)
 	{
-		submit_center('submit', _("Add New Job"), true, '', 'default');
+		submit_center('submit', _("Add New Job position"), true, '', 'default');
 	} 
 	else 
 	{
-		submit_center_first('submit', _("Update Job"), 
-		  _('Update Job data'), @$_REQUEST['popup'] ? true : 'default');
-		submit_return('select', $selected_id, _("Select this Job and return to document entry."));
-		submit_center_last('delete', _("Delete JOb"), 
-		  _('Delete Job data if have been never used'), true);
+		submit_center_first('submit', _("Update Job position"), 
+		  _('Update Job position data'), @$_REQUEST['popup'] ? true : 'default');
+		submit_return('select', $selected_id, _("Select this job position and return to document entry."));
+		submit_center_last('delete', _("Delete Job position"), 
+		  _('Delete job position data if have been never used'), true);
 	}
 	div_end();
 }
@@ -136,8 +136,8 @@ if (db_has_jobs())
 {
 	start_table(TABLESTYLE_NOBORDER);
 	start_row();
-	job_list_cells(_("Select a job_type: "), 'job_name_id', null,
-		_('New Job'), true, check_value('show_inactive'));
+	job_list_cells(_("Select a job position: "), 'job_name_id', null,
+		_('New job position'), true, check_value('show_inactive'));
 	check_cells(_("Show inactive:"), 'show_inactive', null, true);
 	end_row();
 
@@ -152,7 +152,7 @@ else
 	hidden('job_name_id');
 }
 
-job_settings($selected_id); 
+job_position_settings($selected_id); 
 
 hidden('popup', @$_REQUEST['popup']);
 end_form();

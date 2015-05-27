@@ -94,7 +94,7 @@ if (isset($_POST['delete']))
 
 function department_settings($selected_id) 
 {
-	global $SysPrefs, $path_to_root, $auto_create_branch;
+	global $SysPrefs, $path_to_root;
 	
 	if (!$selected_id) 
 	{

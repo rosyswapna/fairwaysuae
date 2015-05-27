@@ -50,7 +50,7 @@ function get_all_job($active=true){
 }
 
 //--------------------------------------------------------------------------------------------
-function get_jobs($job_id)
+function get_job($job_id)
 {
 	$sql = "SELECT * FROM ".TB_PREF."jobnames WHERE job_name_id=".db_escape($job_id);
 
