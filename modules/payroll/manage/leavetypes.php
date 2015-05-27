@@ -9,7 +9,7 @@
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  
     See the License here <http://www.gnu.org/licenses/gpl-3.0.html>.
 ***********************************************************************/
-$page_security = 'SA_LEAVE_TYPES';
+$page_security = 'SA_LEAVETYPE';
 $path_to_root = "../../..";
 
 include($path_to_root . "/includes/db_pager.inc");
@@ -33,8 +33,8 @@ function can_process()
 {
 	if (strlen($_POST['ltyp_name']) == 0) 
 	{
-		display_error(_("The leave name cannot be empty."));
-		set_focus('CustName');
+		display_error(_("The name cannot be empty."));
+		set_focus('ltyp_name');
 		return false;
 	} 
 
@@ -52,19 +52,19 @@ function handle_submit(&$selected_id)
 		
 	if ($selected_id) 
 	{
-		update_leaves($_POST['ltyp_id'], $_POST['ltyp_name']);		
+		update_leave_type($_POST['ltyp_id'], $_POST['ltyp_name']);		
 		$Ajax->activate('ltyp_id'); // in case of status change
-		display_notification(_("Leave has been updated."));
+		display_notification(_("Leave Type has been updated."));
 	} 
 	else 
-	{ 	//it is a new department
+	{ 	//it is a new leave type
 
 		begin_transaction();
-			add_leave($_POST['ltyp_name']);
+			add_leave_type($_POST['ltyp_name']);
 			$selected_id = $_POST['ltyp_id'] = db_insert_id();
 		commit_transaction();
 
-		display_notification(_("A new leave has been added."));		
+		display_notification(_("A new Leave type has been added."));		
 		$Ajax->activate('_page_body');
 	}
 }
@@ -83,18 +83,18 @@ if (isset($_POST['delete']))
 
 	if ($cancel_delete == 0) 
 	{	//display_notification($selected_id);exit;
-		delete_leaves($selected_id);
+		delete_leave_type($selected_id);
 
-		display_notification(_("Selected leave has been deleted."));
+		display_notification(_("Selected Leave type has been deleted."));
 		unset($_POST['ltyp_id']);
 		$selected_id = '';
 		$Ajax->activate('_page_body');
-	} //end if Delete department
+	} //end if Delete Leave type
 }
 
-function leave_settings($selected_id) 
+function leave_type_settings($selected_id) 
 {
-	global $SysPrefs, $path_to_root, $auto_create_branch;
+	global $SysPrefs, $path_to_root;
 	
 	if (!$selected_id) 
 	{
@@ -104,26 +104,26 @@ function leave_settings($selected_id)
 	}
 	else 
 	{
-		$myrow = get_leaves($selected_id);
+		$myrow = get_leave_type($selected_id);
 		$_POST['ltyp_name'] = $myrow["ltyp_name"];
 	}
 
 	start_table(TABLESTYLE2);
-		text_row(_("Leave Type:").$selected_id, 'ltyp_name', $_POST['ltyp_name'], 40, 40);	
+		text_row(_("Leave type Name:").$selected_id, 'ltyp_name', $_POST['ltyp_name'], 40, 40);	
 	end_table();
 
 	div_start('controls');
 	if (!$selected_id)
 	{
-		submit_center('submit', _("Add New Leave"), true, '', 'default');
+		submit_center('submit', _("Add New Leave Type"), true, '', 'default');
 	} 
 	else 
 	{
-		submit_center_first('submit', _("Update Leave"), 
-		  _('Update Leave data'), @$_REQUEST['popup'] ? true : 'default');
-		submit_return('select', $selected_id, _("Select this Leave and return to document entry."));
-		submit_center_last('delete', _("Delete Leave"), 
-		  _('Delete Leavet data if have been never used'), true);
+		submit_center_first('submit', _("Update Leave Type"), 
+		  _('Update Leave Type data'), @$_REQUEST['popup'] ? true : 'default');
+		submit_return('select', $selected_id, _("Select this leave type and return to document entry."));
+		submit_center_last('delete', _("Delete Leave Type"), 
+		  _('Delete leave type data if have been never used'), true);
 	}
 	div_end();
 }
@@ -132,12 +132,12 @@ function leave_settings($selected_id)
  
 start_form();
 
-if (db_has_leaves()) 
+if (db_has_leave_types()) 
 {
 	start_table(TABLESTYLE_NOBORDER);
 	start_row();
 	leave_list_cells(_("Select a leave_type: "), 'ltyp_id', null,
-		_('New Leave'), true, check_value('show_inactive'));
+		_('New Leave Type'), true, check_value('show_inactive'));
 	check_cells(_("Show inactive:"), 'show_inactive', null, true);
 	end_row();
 
@@ -151,8 +151,7 @@ else
 {
 	hidden('ltyp_id');
 }
-
-leave_settings($selected_id); 
+leave_type_settings($selected_id); 
 
 hidden('popup', @$_REQUEST['popup']);
 end_form();

@@ -5,7 +5,7 @@
 /////////////////////////////////////////////////////
 //leaves Database Functions
 /////////////////////////////////////////////////////
-function add_leave($name)
+function add_leave_type($name)
 {
 	$sql = "INSERT INTO ".TB_PREF."leavetypes (ltyp_name ) VALUES ("
 		.db_escape($name).")";
@@ -15,7 +15,7 @@ function add_leave($name)
 
 
 //--------------------------------------------------------------------------------------------
-function update_leaves($id,$name)
+function update_leave_type($id,$name)
 {
 
 	$sql = "UPDATE ".TB_PREF."leavetypes SET
@@ -28,7 +28,7 @@ function update_leaves($id,$name)
 
 //--------------------------------------------------------------------------------------------
 
-function delete_leaves($ltyp_id)
+function delete_leave_type($ltyp_id)
 {
 	
 
@@ -50,7 +50,7 @@ function get_all_leaves($active=true){
 }
 
 //--------------------------------------------------------------------------------------------
-function get_leaves($leaves_id)
+function get_leave_type($leaves_id)
 {
 	$sql = "SELECT * FROM ".TB_PREF."leavetypes WHERE ltyp_id=".db_escape($leaves_id);
 
@@ -60,7 +60,7 @@ function get_leaves($leaves_id)
 }
 
 //--------------------------------------------------------------------------------------------
-function db_has_leaves()
+function db_has_leave_types()
 {
 	return check_empty_result("SELECT COUNT(*) FROM ".TB_PREF."leavetypes");
 }
