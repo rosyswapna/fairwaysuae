@@ -202,7 +202,7 @@ if (db_has_gl_accounts())
 	start_table(TABLESTYLE_NOBORDER);
 	start_row();
     payroll_list_cells(null, 'AccountList', null, false, false,
-		_('New account'), true, check_value('show_inactive'));
+		_('New Payroll Rule'), true, check_value('show_inactive'));
 	check_cells(_("Show inactive:"), 'show_inactive', null, true);
 	end_row();
 	end_table();

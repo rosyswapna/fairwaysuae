@@ -10,7 +10,6 @@ function add_jobnames($name)
 	$sql = "INSERT INTO ".TB_PREF."jobnames (job_name ) VALUES ("
 		.db_escape($name).")";
 	
-	
 	db_query($sql,"The job could not be added");
 	
 }

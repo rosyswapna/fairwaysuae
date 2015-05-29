@@ -1948,7 +1948,7 @@ function payroll_accounts_list($name, $selected_id=null, $skip_bank_accounts=fal
 	
 		$sql = "SELECT chart.account_code, chart.account_name, type.name, chart.inactive, type.id
 			FROM ".TB_PREF."chart_master chart,".TB_PREF."chart_types type
-			WHERE chart.account_type=type.id and chart.account_type=11";
+			WHERE chart.account_type=type.id and chart.account_type=".AC_TYPE_PAYROLL;
 
 	return combo_input($name, $selected_id, $sql, 'chart.account_code', 'chart.account_name',
 	array(

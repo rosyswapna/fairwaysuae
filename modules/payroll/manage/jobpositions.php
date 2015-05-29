@@ -53,7 +53,7 @@ function handle_submit(&$selected_id)
 	if ($selected_id) 
 	{	
 			
-		update_jobnames($_POST['job_name_id'], $_POST['job_position_id'],$selected_id,$payroll);		
+		update_jobnames($_POST['job_name_id'], $_POST['job_name']);		
 		$Ajax->activate('job_name_id'); // in case of status change
 		display_notification(_("Job position has been updated."));
 	} 
@@ -61,7 +61,7 @@ function handle_submit(&$selected_id)
 	{ 	//it is a new job position
 
 		begin_transaction();
-			add_jobnames($_POST['account_code']);
+			add_jobnames($_POST['job_name']);
 			
 			$selected_id = $_POST['job_name_id'] = db_insert_id();
 		commit_transaction();
@@ -123,21 +123,7 @@ function job_position_settings($selected_id)
 //---------------------------------------------------------------------------------check_box
 
 
-start_table(TABLESTYLE2);
-	$th=array(_("Payroll"),'');
-	table_header($th);
-	
-	
-	$result_rules=get_payroll_rules();
-	
-	while($row_rule=db_fetch($result_rules))
-	{
-		
-		check_row($row_rule["account_name"], 'Payroll'.$row_rule["account_code"],$row_rule["account_code"]);
-		
-	}
 
-end_table(1);
 
 //---------------------------------------------------------------------------------
 	div_start('controls');
