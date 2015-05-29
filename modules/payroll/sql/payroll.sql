@@ -158,6 +158,20 @@ INSERT INTO `0_payrollcategory` (`pc_id`, `pc_name`, `pc_type`, `inactive`) VALU
 (5, 'Gross', 1, 0);
 
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `0_salary_structure`
+--
+
+CREATE TABLE IF NOT EXISTS `0_salary_structure` (
+  `job_position_id` int(11) NOT NULL,
+  `payroll_rule` text NOT NULL,
+  KEY `job_position_id` (`job_position_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+
 
 
 

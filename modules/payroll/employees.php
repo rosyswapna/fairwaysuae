@@ -391,10 +391,10 @@ if (get_post('_EmpInactive_update')) {
 if (!$selected_id)
   unset($_POST['_tabs_sel']); // force settings tab for new employee
 
-tabbed_content_start('tabs', array(
+/*tabbed_content_start('tabs', array(
 		     'settings' => array(_('&General settings'), $selected_id),
 		     'comp' => array(_('&Compensation'), $selected_id),
-		     'taxes' => array(_('&Taxes & Deductions'), $selected_id) ));
+		     'taxes' => array(_('&Taxes & Deductions'), $selected_id) ));*/
 
   switch (get_post('_tabs_sel')) {
     default:

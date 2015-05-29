@@ -109,7 +109,7 @@ function department_settings($selected_id)
 	}
 
 	start_table(TABLESTYLE2);
-		text_row(_("Department Name:").$selected_id, 'dept_name', $_POST['dept_name'], 40, 40);	
+		text_row(_("Department Name:"), 'dept_name', $_POST['dept_name'], 40, 40);	
 	end_table();
 
 	div_start('controls');

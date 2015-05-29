@@ -474,3 +474,370 @@
 [26-May-2015 13:58:06 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\data_checks.inc:462:<br>could not do check empty query<br>error code : 1146<br>error message : La table 'fair.0_payroll_pay_type' n'existe pas<br>sql that failed was : SELECT COUNT(*) FROM 0_payroll_pay_type<br><br><br>
 [26-May-2015 13:58:08 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\data_checks.inc:462:<br>could not do check empty query<br>error code : 1146<br>error message : La table 'fair.0_payroll_tax_type' n'existe pas<br>sql that failed was : SELECT COUNT(*) FROM 0_payroll_tax_type<br><br><br>
 [26-May-2015 13:58:09 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\data_checks.inc:462:<br>could not do check empty query<br>error code : 1146<br>error message : La table 'fair.0_payroll_pay_type' n'existe pas<br>sql that failed was : SELECT COUNT(*) FROM 0_payroll_pay_type<br><br><br>
+[27-May-2015 06:32:29 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[27-May-2015 06:32:29 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[27-May-2015 11:50:30 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[27-May-2015 11:50:30 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[27-May-2015 11:50:31 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[27-May-2015 11:50:31 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[27-May-2015 11:51:04 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[27-May-2015 11:51:04 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[27-May-2015 11:51:04 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[27-May-2015 11:51:04 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[27-May-2015 11:54:28 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[27-May-2015 11:54:28 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[27-May-2015 11:54:28 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[27-May-2015 11:54:28 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[27-May-2015 11:55:24 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[27-May-2015 11:55:24 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[27-May-2015 11:55:24 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[27-May-2015 11:55:24 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[27-May-2015 11:58:37 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[27-May-2015 11:58:37 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[27-May-2015 12:06:41 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[27-May-2015 12:06:41 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[27-May-2015 12:21:24 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[27-May-2015 12:21:24 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[27-May-2015 12:21:25 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[27-May-2015 12:21:25 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[27-May-2015 12:23:34 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[27-May-2015 12:23:34 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[27-May-2015 12:23:34 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[27-May-2015 12:23:34 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[27-May-2015 12:24:40 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[27-May-2015 12:24:40 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[27-May-2015 12:24:43 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[27-May-2015 12:24:43 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[27-May-2015 13:34:28 Europe/Paris] 0:admin:ui_controls.inc:346: Invalid argument supplied for foreach()
+[27-May-2015 13:34:29 Europe/Paris] 0:admin:ui_controls.inc:346: Invalid argument supplied for foreach()
+[27-May-2015 13:34:44 Europe/Paris] 0:admin:ui_controls.inc:346: Invalid argument supplied for foreach()
+[27-May-2015 13:34:44 Europe/Paris] 0:admin:ui_controls.inc:346: Invalid argument supplied for foreach()
+[27-May-2015 13:38:43 Europe/Paris] 0:admin:ui_controls.inc:346: Invalid argument supplied for foreach()
+[27-May-2015 13:47:15 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[27-May-2015 13:47:15 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[27-May-2015 13:47:16 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[27-May-2015 13:47:16 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[27-May-2015 14:26:49 Europe/Paris] 0:admin:jobpositions_db.inc:8: Missing argument 2 for add_jobnames(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\jobpositions.php on line 63 and defined
+[27-May-2015 14:28:01 Europe/Paris] 0:admin:jobpositions_db.inc:8: Missing argument 2 for add_jobnames(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\jobpositions.php on line 63 and defined
+[27-May-2015 14:51:56 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[27-May-2015 14:51:56 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[27-May-2015 14:51:57 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[27-May-2015 14:51:57 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[28-May-2015 07:42:06 Europe/Paris] 0:admin:jobpositions_db.inc:8: Missing argument 2 for add_jobnames(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\jobpositions.php on line 63 and defined
+[28-May-2015 07:50:45 Europe/Paris] 0:admin:jobpositions_db.inc:8: Missing argument 2 for add_jobnames(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\jobpositions.php on line 63 and defined
+[28-May-2015 08:07:31 Europe/Paris] 0:admin:jobpositions_db.inc:8: Missing argument 2 for add_jobnames(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\jobpositions.php on line 63 and defined
+[28-May-2015 08:49:29 Europe/Paris] 0:admin:jobpositions_db.inc:8: Missing argument 2 for add_jobnames(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\jobpositions.php on line 63 and defined
+[28-May-2015 08:49:29 Europe/Paris] 0:admin:jobpositions_db.inc:13: implode(): Invalid arguments passed
+[28-May-2015 08:52:36 Europe/Paris] 0:admin:jobpositions_db.inc:8: Missing argument 2 for add_jobnames(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\jobpositions.php on line 63 and defined
+[28-May-2015 08:52:36 Europe/Paris] 0:admin:jobpositions_db.inc:13: implode(): Invalid arguments passed
+[28-May-2015 08:55:49 Europe/Paris] 0:admin:jobpositions_db.inc:8: Missing argument 2 for add_jobnames(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\jobpositions.php on line 63 and defined
+[28-May-2015 08:55:49 Europe/Paris] 0:admin:jobpositions_db.inc:13: implode(): Invalid arguments passed
+[28-May-2015 08:55:49 Europe/Paris] 0:admin:jobpositions_db.inc:8: Missing argument 2 for add_jobnames(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\jobpositions.php on line 64 and defined
+[28-May-2015 08:55:49 Europe/Paris] 0:admin:jobpositions_db.inc:13: implode(): Invalid arguments passed
+[28-May-2015 09:20:19 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:20:19 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:20:19 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:20:19 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:20:19 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:20:19 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:20:19 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:20:19 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:20:19 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:20:19 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:20:19 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:20:19 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:20:21 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:20:21 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:20:21 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:20:21 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:20:21 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:20:21 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:20:21 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:20:21 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:20:21 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:20:21 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:20:21 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:20:21 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:20:54 Europe/Paris] 0:admin:jobpositions_db.inc:8: Missing argument 2 for add_jobnames(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\jobpositions.php on line 63 and defined
+[28-May-2015 09:20:54 Europe/Paris] 0:admin:jobpositions_db.inc:8: Missing argument 3 for add_jobnames(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\jobpositions.php on line 63 and defined
+[28-May-2015 09:20:54 Europe/Paris] 0:admin:jobpositions_db.inc:13: implode(): Invalid arguments passed
+[28-May-2015 09:20:54 Europe/Paris] 0:admin:jobpositions_db.inc:14: implode(): Invalid arguments passed
+[28-May-2015 09:20:54 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:20:54 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:20:54 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:20:54 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:20:54 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:20:54 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:20:54 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:20:54 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:20:54 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:20:54 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:20:54 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:20:54 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:21:22 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:21:22 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:21:22 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:21:22 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:21:22 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:21:22 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:21:22 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:21:22 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:21:22 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:21:22 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:21:22 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:21:22 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:21:25 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:21:25 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:21:25 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:21:25 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:21:25 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:21:25 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:21:25 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:21:25 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:21:25 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:21:25 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:21:25 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:21:25 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:21:28 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:21:28 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:21:28 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:21:28 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:21:28 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:21:28 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:21:28 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:21:28 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:21:28 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:21:28 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:21:28 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:21:28 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:21:29 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:21:29 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:21:29 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:21:29 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:21:29 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:21:29 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:21:29 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:21:29 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:21:29 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:21:29 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:21:29 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:21:29 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:21:30 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:21:30 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:21:30 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:21:30 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:21:30 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:21:30 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:21:30 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:21:30 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:21:30 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:21:30 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:21:30 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:21:30 Europe/Paris] 0:admin:jobpositions.php:131: Illegal string offset 'account_code'
+[28-May-2015 09:26:10 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:10 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:10 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:10 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:10 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:10 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:10 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:10 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:10 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:10 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:10 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:10 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:19 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:19 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:19 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:19 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:19 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:19 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:19 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:19 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:19 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:19 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:19 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:19 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:23 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:23 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:23 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:23 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:23 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:23 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:23 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:23 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:23 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:23 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:23 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:23 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:25 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:25 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:25 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:25 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:25 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:25 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:25 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:25 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:25 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:25 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:25 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:25 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:27 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:27 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:27 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:27 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:27 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:27 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:27 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:27 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:27 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:27 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:27 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:27 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:29 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:29 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:29 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:29 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:29 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:29 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:29 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:29 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:29 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:29 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:29 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:29 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:31 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:31 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:31 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:31 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:31 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:31 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:31 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:31 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:31 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:31 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:31 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:31 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:33 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:33 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:33 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:33 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:33 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:33 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:33 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:33 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:33 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:33 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:33 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:33 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:35 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:35 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:35 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:35 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:35 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:35 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:35 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:35 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:35 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:35 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:35 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:35 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:41 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:41 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:41 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:41 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:41 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:41 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:41 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:41 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:41 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:41 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:41 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:41 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:43 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:43 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:43 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:43 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:43 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:43 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:43 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:43 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:44 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:44 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:44 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:44 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:45 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:45 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:45 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:45 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:45 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:45 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:45 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:45 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:45 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:45 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:45 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:45 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:47 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:47 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:47 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:47 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:47 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:48 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:48 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:48 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:48 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:48 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:48 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:26:48 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:36:16 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:36:16 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:36:16 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:36:16 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:36:16 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:36:16 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:36:16 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:36:16 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:36:16 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:36:16 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:36:16 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:36:16 Europe/Paris] 0:admin:jobpositions.php:132: Illegal string offset 'account_code'
+[28-May-2015 09:40:20 Europe/Paris] 0:admin:jobpositions_db.inc:8: Missing argument 2 for add_jobnames(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\jobpositions.php on line 63 and defined
+[28-May-2015 09:40:20 Europe/Paris] 0:admin:jobpositions_db.inc:8: Missing argument 3 for add_jobnames(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\jobpositions.php on line 63 and defined
+[28-May-2015 09:40:20 Europe/Paris] 0:admin:jobpositions_db.inc:13: implode(): Invalid arguments passed
+[28-May-2015 09:40:20 Europe/Paris] 0:admin:jobpositions_db.inc:14: implode(): Invalid arguments passed
+[28-May-2015 09:42:06 Europe/Paris] 0:admin:jobpositions_db.inc:8: Missing argument 3 for add_jobnames(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\jobpositions.php on line 63 and defined
+[28-May-2015 09:42:06 Europe/Paris] 0:admin:jobpositions_db.inc:13: implode(): Invalid arguments passed
+[28-May-2015 09:42:06 Europe/Paris] 0:admin:jobpositions_db.inc:14: implode(): Invalid arguments passed
+[28-May-2015 09:47:02 Europe/Paris] 0:admin:jobpositions_db.inc:8: Missing argument 3 for add_jobnames(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\jobpositions.php on line 63 and defined
+[28-May-2015 09:47:02 Europe/Paris] 0:admin:jobpositions_db.inc:13: implode(): Invalid arguments passed
+[28-May-2015 09:47:02 Europe/Paris] 0:admin:jobpositions_db.inc:14: implode(): Invalid arguments passed
+[28-May-2015 09:59:12 Europe/Paris] 0:admin:jobpositions_db.inc:8: Missing argument 3 for add_jobnames(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\jobpositions.php on line 63 and defined
+[28-May-2015 09:59:12 Europe/Paris] 0:admin:jobpositions_db.inc:13: implode(): Invalid arguments passed
+[28-May-2015 09:59:12 Europe/Paris] 0:admin:jobpositions_db.inc:14: implode(): Invalid arguments passed
+[28-May-2015 11:32:01 Europe/Paris] 0:admin:jobpositions_db.inc:8: Missing argument 2 for add_jobnames(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\jobpositions.php on line 63 and defined
+[28-May-2015 11:32:01 Europe/Paris] 0:admin:jobpositions_db.inc:8: Missing argument 3 for add_jobnames(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\jobpositions.php on line 63 and defined
+[28-May-2015 11:32:01 Europe/Paris] 0:admin:jobpositions_db.inc:13: implode(): Invalid arguments passed
+[28-May-2015 11:32:01 Europe/Paris] 0:admin:jobpositions_db.inc:14: implode(): Invalid arguments passed
+[28-May-2015 11:34:22 Europe/Paris] 0:admin:jobpositions_db.inc:8: Missing argument 2 for add_jobnames(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\jobpositions.php on line 63 and defined
+[28-May-2015 11:34:22 Europe/Paris] 0:admin:jobpositions_db.inc:8: Missing argument 3 for add_jobnames(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\jobpositions.php on line 63 and defined
+[28-May-2015 11:34:22 Europe/Paris] 0:admin:jobpositions_db.inc:13: implode(): Invalid arguments passed
+[28-May-2015 11:34:22 Europe/Paris] 0:admin:jobpositions_db.inc:14: implode(): Invalid arguments passed
+[28-May-2015 11:59:17 Europe/Paris] 0::logout.php:50: session_destroy(): Session object destruction failed
+[28-May-2015 11:59:35 Europe/Paris] 0::logout.php:50: session_destroy(): Session object destruction failed
+[28-May-2015 12:20:30 Europe/Paris] 0:admin:jobpositions_db.inc:8: Missing argument 2 for add_jobnames(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\jobpositions.php on line 63 and defined
+[28-May-2015 12:20:30 Europe/Paris] 0:admin:jobpositions_db.inc:8: Missing argument 3 for add_jobnames(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\jobpositions.php on line 63 and defined
+[28-May-2015 12:20:30 Europe/Paris] 0:admin:jobpositions_db.inc:13: implode(): Invalid arguments passed
+[28-May-2015 12:20:30 Europe/Paris] 0:admin:jobpositions_db.inc:14: implode(): Invalid arguments passed
+[28-May-2015 13:37:39 Europe/Paris] 0:admin:jobpositions_db.inc:8: Missing argument 2 for add_jobnames(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\jobpositions.php on line 63 and defined
+[28-May-2015 13:37:39 Europe/Paris] 0:admin:jobpositions_db.inc:8: Missing argument 3 for add_jobnames(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\jobpositions.php on line 63 and defined
+[28-May-2015 13:37:39 Europe/Paris] 0:admin:jobpositions_db.inc:13: implode(): Invalid arguments passed
+[28-May-2015 13:37:39 Europe/Paris] 0:admin:jobpositions_db.inc:14: implode(): Invalid arguments passed
+[29-May-2015 06:33:34 Europe/Paris] 0:admin:jobpositions_db.inc:8: Missing argument 2 for add_jobnames(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\jobpositions.php on line 72 and defined
+[29-May-2015 06:33:34 Europe/Paris] 0:admin:jobpositions_db.inc:8: Missing argument 3 for add_jobnames(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\jobpositions.php on line 72 and defined
+[29-May-2015 06:33:34 Europe/Paris] 0:admin:jobpositions_db.inc:13: implode(): Invalid arguments passed
+[29-May-2015 06:33:34 Europe/Paris] 0:admin:jobpositions_db.inc:14: implode(): Invalid arguments passed
+[29-May-2015 06:46:51 Europe/Paris] 0:admin:jobpositions_db.inc:8: Missing argument 2 for add_jobnames(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\jobpositions.php on line 75 and defined
+[29-May-2015 06:46:51 Europe/Paris] 0:admin:jobpositions_db.inc:8: Missing argument 3 for add_jobnames(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\jobpositions.php on line 75 and defined
+[29-May-2015 06:46:51 Europe/Paris] 0:admin:jobpositions_db.inc:13: implode(): Invalid arguments passed
+[29-May-2015 06:46:51 Europe/Paris] 0:admin:jobpositions_db.inc:14: implode(): Invalid arguments passed

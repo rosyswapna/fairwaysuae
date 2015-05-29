@@ -109,7 +109,7 @@ function leave_type_settings($selected_id)
 	}
 
 	start_table(TABLESTYLE2);
-		text_row(_("Leave type Name:").$selected_id, 'ltyp_name', $_POST['ltyp_name'], 40, 40);	
+		text_row(_("Leave type Name:"), 'ltyp_name', $_POST['ltyp_name'], 40, 40);	
 	end_table();
 
 	div_start('controls');

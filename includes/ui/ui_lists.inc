@@ -590,7 +590,7 @@ function department_list($name, $selected_id=null, $spec_option=false, $submit_o
 	$sql = "SELECT dept_id,dept_name FROM ".TB_PREF."departments ";
 
 	$mode = get_company_pref('no_department_list');
-
+	
 	if ($editkey)
 		set_editor('department', $name, $editkey);
 
@@ -1982,6 +1982,12 @@ function payroll_list_cells($label, $name, $selected_id=null,
 		$skip_bank_accounts, $cells, $all_option, $submit_on_change, $all);
 	echo "</td>\n";
 }
+
+
+
+
+
+
 
 //------------------------------------------------------------------------------------------
 
