@@ -89,14 +89,19 @@ function handle_submit(&$selected_id)
 			
 		}
 	}
-	
-	if(exists_salary_structure($selected_id)){
-		reset_salary_structure($selected_id);
-	}
 
-	add_salary_structure($payroll_rules);
+	if(empty($payroll_rules)){
+		display_error(_("No data entered"));
+	}else{
+	
+		if(exists_salary_structure($selected_id)){
+			reset_salary_structure($selected_id);
+		}
+
+		add_salary_structure($payroll_rules);
 			
-	display_notification(_("Salary Structure Updated."));		
+		display_notification(_("Salary Structure Updated."));		
+	}
 	$Ajax->activate('_page_body');
 }
 //--------------------------------------------------------------------------------------------
