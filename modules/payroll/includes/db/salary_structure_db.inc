@@ -1,42 +1,63 @@
+
+<?php
 ////////////////////////////////////////////////////
 //salary_structure Database Functions
 /////////////////////////////////////////////////////
 
-
-function add_salary_structure($job_id,$rule)
+function add_salary_structure($pay_rules=array())
 {
-	$sql = "INSERT INTO ".TB_PREF."salary_structure (job_position_id, payroll_rule)VALUES ("
-	
-	.db_escape(job_id).","
-	.db_escape(implode(';', $rule)).")";
+	if(empty($pay_rules))
+		return false;
 
-	db_query($sql, "could not add new security role");
+	begin_transaction();
+		foreach($pay_rules as $rule){
+			insert_structure($rule['job_position_id'],
+			$rule['pay_rule_id'],$rule['pay_amount'],$rule['type']);
+		}
 
+	commit_transaction();
 }
 
 
 
-function update_employee($job_id,$rule )
+function insert_structure($job_position_id,$pay_rule_id,$pay_amount,$type)
 {
+	$date_ = date2sql(Today());
+	$sql = "INSERT INTO ".TB_PREF."salary_structure(date,job_position_id, pay_rule_id,pay_amount,type)VALUES ('"
+	.$date_."',".db_escape($job_position_id).",".db_escape($pay_rule_id).","
+	.db_escape($pay_amount).",".db_escape($type).")";
 
-	$sql = "UPDATE ".TB_PREF."salary_structure job_position_id =".db_escape($id)
-    	.",description=".db_escape($description)
-    	.",sections=".db_escape(implode(';', $sections))
-    	.",areas=".db_escape(implode(';', $areas))
-    	." WHERE id=".(int)$id;
-    	db_query($sql, "could not update role");
+	db_query($sql, "could not add salary structure");
+}
 
+function exists_salary_structure($job_position_id)
+{
+	$sql = "SELECT id FROM ".TB_PREF."salary_structure WHERE job_position_id=".db_escape($job_position_id);
+
+	$result = db_query($sql, "Cannot retreive a salary structure");
+
+	return (db_num_rows($result) > 0);
 }
 
 
-function get_all_structure($active=true){
-  //get only active employees by default
-  if ($active == true)
-    $act_sql = "WHERE inactive = 0";
 
-  $sql = "SELECT job_position_id, payroll_rule FROM ".TB_PREF."salary_structure $act_sql";
+function reset_salary_structure($job_position_id)
+{
+
+	$sql = "DELETE FROM ".TB_PREF."salary_structure WHERE job_position_id =".db_escape($job_position_id);
+    	db_query($sql, "could not reset salary structure role");
+}
+
+
+function get_salary_structure($job_position_id){
+
+	$sql = "SELECT * FROM ".TB_PREF."salary_structure WHERE job_position_id =".db_escape($job_position_id);
   
-  return db_query($sql, "The employee table is inaccessible");
-
+  	return db_query($sql, "Could not get salary structure");
 }
+
+
+
+
+?>
 

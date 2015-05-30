@@ -25,18 +25,33 @@ page(_($help_context = "Manage Salary Structure"), @$_REQUEST['popup'], false, "
 
 include_once($path_to_root . "/includes/date_functions.inc");
 include_once($path_to_root . "/includes/ui.inc");
+include_once($path_to_root . "/includes/data_checks.inc");
 include_once($path_to_root . "/modules/payroll/includes/db/jobpositions_db.inc");
+include_once($path_to_root . "/modules/payroll/includes/db/salary_structure_db.inc");
 $selected_id = get_post('job_position_id','');
 //--------------------------------------------------------------------------------------------
 
-function can_process()
+function can_process($selected_id)
 {
-	if (strlen($_POST['job_name']) == 0) 
+	if (!$selected_id) 
 	{
-		display_error(_("The name cannot be empty."));
-		set_focus('job_name');
+		display_error(_("Select job position"));
+		set_focus('job_position_id');
 		return false;
 	} 
+
+	foreach($_POST as $p=>$val){
+
+		if(substr($p,0,7) == "Account"){
+
+			if(input_num("Debit".$val) > 0 && input_num("Credit".$val)){
+				display_error(_("Both Credit and Debit amount for a payroll rule not allowed."));
+				set_focus("Debit".$val);
+				return false;
+			}
+
+		}
+	}
 
 	return true;
 }
@@ -47,28 +62,47 @@ function handle_submit(&$selected_id)
 {
 	global $path_to_root, $Ajax;
 
-	if (!can_process())
+	if (!can_process($selected_id))
 		return;
-		
-	if ($selected_id) 
-	{	
-			
-		update_jobnames($_POST['job_position_id'], $_POST['job_position_id'],$selected_id,$payroll);		
-		$Ajax->activate('job_position_id'); // in case of status change
-		display_notification(_("Job position has been updated."));
-	} 
-	else 
-	{ 	//it is a new job position
 
-		begin_transaction();
-			add_jobnames($_POST['account_code']);
-			
-			$selected_id = $_POST['job_position_id'] = db_insert_id();
-		commit_transaction();
+	//echo "<pre>";print_r($_POST);echo "</pre>";exit;
+	$payroll_rules = array();
+	foreach($_POST as $p=>$val){
+		if(substr($p,0,7) == "Account"){
 
-		display_notification(_("A new job position has been added."));		
-		$Ajax->activate('_page_body');
+			if(input_num("Debit".$val) > 0){
+				$type = DEBIT;
+				$amount = @input_num("Debit".$val);
+			}else{
+				$type = CREDIT;
+				$amount = @input_num("Credit".$val);
+			}
+
+			if($amount > 0){
+				$payroll_rules[] = array(
+				'job_position_id'=> $selected_id,
+				'pay_rule_id'	=> $val,
+				'pay_amount'	=> $amount,
+				'type'		=> $type
+				);
+			}
+			
+		}
 	}
+
+	if(empty($payroll_rules)){
+		display_error(_("No data entered"));
+	}else{
+	
+		if(exists_salary_structure($selected_id)){
+			reset_salary_structure($selected_id);
+		}
+
+		add_salary_structure($payroll_rules);
+			
+		display_notification(_("Salary Structure Updated."));		
+	}
+	$Ajax->activate('_page_body');
 }
 //--------------------------------------------------------------------------------------------
 
@@ -84,10 +118,10 @@ if (isset($_POST['delete']))
 	$cancel_delete = 0;
 
 	if ($cancel_delete == 0) 
-	{	//display_notification($selected_id);exit;
-		delete_jobnames($selected_id);
+	{	
+		reset_salary_structure($selected_id);
 
-		display_notification(_("Selected job position has been deleted."));
+		display_notification(_("Selected job position's salary structure has been deleted."));
 		unset($_POST['job_position_id']);
 		$selected_id = '';
 		$Ajax->activate('_page_body');
@@ -97,21 +131,47 @@ if (isset($_POST['delete']))
 function payroll_rules_settings($selected_id) 
 {
 	global $SysPrefs, $path_to_root;
-	
-	if (!$selected_id) 
+
+	$new = true;
+
+	$result_rules=get_payroll_rules();
+	$rules = array();
+	while($row_rule=db_fetch($result_rules))
 	{
-	 	if (list_updated('job_position_id') || !isset($_POST['job_name'])) {
-			//$myrow = get_salary_structure($selected_id);
-			//echo "ok";exit;
+		$rules[] = array(
+			'account_input' => "Account".$row_rule['account_code'],
+			'debit_input' 	=> "Debit".$row_rule['account_code'],
+			'credit_input'	=> "Credit".$row_rule['account_code'],
+			'account_code'	=> $row_rule['account_code'],
+			'account_name'	=> $row_rule['account_name'],
+			);
+		$_POST["Debit".$row_rule['account_code']] = price_format(0);
+		$_POST["Credit".$row_rule['account_code']] = price_format(0);
 			
-		}
 	}
-	else 
+
+
+	
+	if ($selected_id) 
 	{
-		$myrow = get_salary_structure($selected_id);
-		$_POST['job_position_id'] = $myrow["job_position_id"];
+		$rsStr = get_salary_structure($selected_id);
+		if(db_num_rows($rsStr) > 0)
+			$new = false;
+		else
+			$new = true;
+		
+		while($rowStr = db_fetch($rsStr)){
+			if($rowStr['type'] == DEBIT){//debit side
+				$_POST["Debit".$rowStr['pay_rule_id']] = $rowStr['pay_amount'];
+			}else{//credit side
+				$_POST["Credit".$rowStr['pay_rule_id']] = $rowStr['pay_amount'];
+			}
+		}
+		$_POST['job_position_id'] = $selected_id;
 		
 	}
+
+	
 
 	br();
 
@@ -121,35 +181,33 @@ function payroll_rules_settings($selected_id)
 	
 		$result_rules=get_payroll_rules();
 	
-		while($row_rule=db_fetch($result_rules))
+		foreach($rules as $rule)
 		{
-			$account_name = "Account".$row_rule['account_code'];
-			$debit_name = "Debit".$row_rule['account_code'];
-			$credit_name = "Credit".$row_rule['account_code'];
+
+			
 			start_row();
-				hidden($account_name,$row_rule['account_code']);
-				label_cell($row_rule["account_name"]);
-				amount_cells(null,$debit_name);
-				amount_cells(null,$credit_name);
+				hidden($rule['account_input'],$rule['account_code']);
+				label_cell($rule["account_name"]);
+				amount_cells(null,$rule['debit_input']);
+				amount_cells(null,$rule['credit_input']);
 			end_row();
 		}
 
 	end_table(1);
 
 //---------------------------------------------------------------------------------
+
 	div_start('controls');
-	if (!$selected_id)
-	{
-		submit_center('submit', _("Add"), true, '', 'default');
-	} 
-	else 
-	{
-		submit_center_first('submit', _("Update"), 
-		  _('Update Job position data'), @$_REQUEST['popup'] ? true : 'default');
-		submit_return('select', $selected_id, _("Select this job position and return to document entry."));
-		submit_center_last('delete', _("Delete"), 
-		  _('Delete job position data if have been never used'), true);
-	}
+
+		if($new){
+			submit_center('submit', _("Save Salary Structure"), true, '', 'default');
+		}else{
+			submit_center_first('submit', _("Save Salary Structure"), 
+			  _('Update Salary Structure data'), @$_REQUEST['popup'] ? true : 'default');
+			submit_center_last('delete', _("Delete Salary Structure"), 
+			  _('Delete Salary Structure data if have been never used'), true);
+		}
+
 	div_end();
 }
 
@@ -162,7 +220,7 @@ if (db_has_jobs())
 	start_table(TABLESTYLE2);
 	start_row();
 	job_list_cells(_("Select a job position: "), 'job_position_id', null,
-		_('New job position'), true, check_value('show_inactive'));
+		_('Select job position'), true, check_value('show_inactive'));
 	
 	end_row();
 
