@@ -878,3 +878,219 @@
 [29-May-2015 08:46:35 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
 [29-May-2015 08:48:41 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
 [29-May-2015 08:48:41 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[29-May-2015 11:06:28 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[29-May-2015 11:06:28 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[29-May-2015 11:34:25 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[29-May-2015 11:34:25 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[29-May-2015 11:34:26 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[29-May-2015 11:34:26 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[29-May-2015 11:52:48 Europe/Paris] 0::logout.php:50: session_destroy(): Session object destruction failed
+[29-May-2015 11:59:00 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[29-May-2015 11:59:00 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[29-May-2015 11:59:00 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[29-May-2015 11:59:00 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[29-May-2015 12:15:10 Europe/Paris] 0::logout.php:50: session_destroy(): Session object destruction failed
+[29-May-2015 12:18:36 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[29-May-2015 12:18:36 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[29-May-2015 12:18:37 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[29-May-2015 12:18:37 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[29-May-2015 12:53:24 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[29-May-2015 12:53:24 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[29-May-2015 12:53:24 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[29-May-2015 12:53:24 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[29-May-2015 12:53:30 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[29-May-2015 12:53:30 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[29-May-2015 12:55:41 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(../../../modules/payroll/includes/db/gl_db.inc): failed to open stream: No such file or directory
+[29-May-2015 12:55:41 Europe/Paris] 0:admin:payroll_settings.php:26: include_once(): Failed opening '../../../modules/payroll/includes/db/gl_db.inc' for inclusion (include_path='.;C:\php\pear')
+[29-May-2015 13:55:22 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:55:22 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:55:22 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:55:22 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:55:22 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:55:22 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:55:22 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:55:22 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:55:22 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:55:22 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:55:22 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:55:22 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:55:22 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:55:22 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:55:22 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:55:22 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:55:22 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:55:22 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:55:22 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:55:22 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:55:22 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:55:22 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:55:22 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:55:22 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:56:26 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:56:26 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:56:26 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:56:26 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:56:26 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:56:26 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:56:26 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:56:26 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:56:26 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:56:26 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:56:26 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:56:26 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:57:09 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:57:09 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:57:09 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:57:09 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:57:09 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:57:09 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:57:09 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:57:09 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:57:09 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:57:09 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:57:09 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:57:09 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:57:10 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:57:10 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:57:10 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:57:10 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:57:10 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:57:10 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:57:10 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:57:10 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:57:10 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:57:10 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:57:10 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:57:10 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:58:31 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:58:31 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 3 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:58:31 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:58:31 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:58:31 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:58:31 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 3 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:58:31 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:58:31 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:58:31 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:58:31 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 3 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:58:31 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:58:31 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:58:31 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:58:31 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 3 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:58:31 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:58:31 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:58:31 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:58:31 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 3 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:58:31 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:58:31 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:58:31 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:58:31 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 3 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:58:31 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:58:31 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:58:31 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:58:31 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 3 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:58:31 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:58:31 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:58:31 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:58:31 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 3 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:58:31 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:58:31 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:58:31 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:58:31 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 3 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:58:31 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:58:31 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:58:31 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:58:31 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 3 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:58:31 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:58:31 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:58:31 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:58:31 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 3 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:58:31 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:58:31 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:58:31 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:58:31 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 3 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:58:31 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:58:31 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:59:57 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:59:57 Europe/Paris] 0:admin:salary_structure.php:136: _() expects exactly 1 parameter, 0 given
+[29-May-2015 13:59:57 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 2 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:59:57 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 3 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:59:57 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:59:57 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:59:57 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:59:57 Europe/Paris] 0:admin:salary_structure.php:136: _() expects exactly 1 parameter, 0 given
+[29-May-2015 13:59:57 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 2 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:59:57 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 3 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:59:57 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:59:57 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:59:57 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:59:57 Europe/Paris] 0:admin:salary_structure.php:136: _() expects exactly 1 parameter, 0 given
+[29-May-2015 13:59:57 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 2 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:59:57 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 3 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:59:57 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:59:57 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:59:57 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:59:57 Europe/Paris] 0:admin:salary_structure.php:136: _() expects exactly 1 parameter, 0 given
+[29-May-2015 13:59:57 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 2 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:59:57 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 3 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:59:57 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:59:57 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:59:57 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:59:57 Europe/Paris] 0:admin:salary_structure.php:136: _() expects exactly 1 parameter, 0 given
+[29-May-2015 13:59:57 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 2 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:59:57 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 3 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:59:57 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:59:57 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:59:57 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:59:57 Europe/Paris] 0:admin:salary_structure.php:136: _() expects exactly 1 parameter, 0 given
+[29-May-2015 13:59:57 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 2 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:59:57 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 3 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:59:57 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:59:57 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:59:57 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:59:57 Europe/Paris] 0:admin:salary_structure.php:136: _() expects exactly 1 parameter, 0 given
+[29-May-2015 13:59:57 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 2 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:59:57 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 3 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:59:57 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:59:57 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:59:57 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:59:57 Europe/Paris] 0:admin:salary_structure.php:136: _() expects exactly 1 parameter, 0 given
+[29-May-2015 13:59:57 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 2 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:59:57 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 3 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:59:57 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:59:57 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:59:57 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:59:57 Europe/Paris] 0:admin:salary_structure.php:136: _() expects exactly 1 parameter, 0 given
+[29-May-2015 13:59:57 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 2 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:59:57 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 3 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:59:57 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:59:57 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:59:57 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:59:57 Europe/Paris] 0:admin:salary_structure.php:136: _() expects exactly 1 parameter, 0 given
+[29-May-2015 13:59:57 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 2 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:59:57 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 3 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:59:57 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:59:57 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:59:57 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:59:57 Europe/Paris] 0:admin:salary_structure.php:136: _() expects exactly 1 parameter, 0 given
+[29-May-2015 13:59:57 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 2 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:59:57 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 3 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:59:57 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:59:57 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:59:57 Europe/Paris] 0:admin:ui_input.inc:480: Missing argument 2 for label_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 135 and defined
+[29-May-2015 13:59:57 Europe/Paris] 0:admin:salary_structure.php:136: _() expects exactly 1 parameter, 0 given
+[29-May-2015 13:59:57 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 2 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:59:57 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 3 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:59:57 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 13:59:57 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 14:14:27 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 14:14:27 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 14:14:27 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 14:14:27 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 14:14:27 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 14:14:27 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 14:14:27 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 14:14:27 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 14:14:27 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 14:14:27 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 14:14:27 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined
+[29-May-2015 14:14:27 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\manage\salary_structure.php on line 136 and defined

@@ -200,4 +200,12 @@ $ac_types = array(
 );
 
 
+//salary
+$salary_debit=array(
+DEBIT=>_("Debit"),
+);
+$salary_credit=array(
+CREDIT=>_("Credit"),
+);
+
 ?>

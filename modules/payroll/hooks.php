@@ -52,10 +52,10 @@ class payroll_app extends application
                         $path_to_root.'/modules/payroll/manage/leavetypes.php', 'SA_LEAVETYPE', MENU_MAINTENANCE);
 				$this->add_rapp_function(2, _("Payroll Rules"),
                         $path_to_root.'/modules/payroll/manage/payroll_settings.php', 'SA_PAYROLL_SETTINGS', MENU_MAINTENANCE);
-				$this->add_rapp_function(2, _("Leave Rules"),
-                      $path_to_root.'/modules/payroll/', 'SA_PAYROLL', MENU_MAINTENANCE);
+				$this->add_rapp_function(2, _("PayRule Structure"),
+                      $path_to_root.'/modules/payroll/manage/payrule_structure.php', 'PAYRULE_STRUCTURE', MENU_MAINTENANCE);
                 $this->add_rapp_function(2, _("Salary Structures"),
-                      $path_to_root.'/modules/payroll/', 'SA_PAYROLL', MENU_MAINTENANCE);
+                      $path_to_root.'/modules/payroll/manage/salary_structure.php', 'SA_SALARY_STRUCTURE', MENU_MAINTENANCE);
              /*    $this->add_rapp_function(2, _("Pay Types"),
                         $path_to_root.'/modules/payroll/managePayType.php', 'SA_PAYROLL', MENU_MAINTENANCE);
                 $this->add_rapp_function(2, _("&Taxes & Deductions"),
@@ -81,6 +81,9 @@ class hooks_payroll extends hooks {
 		$security_areas['SA_PAYROLL_SETTINGS'] = array(SS_PAYROLL|1, _("Payroll Settings"));
 		$security_areas['SA_LEAVETYPE'] = array(SS_PAYROLL|1, _("Manage Leaves"));
 		$security_areas['SA_JOB_POSITIONS'] = array(SS_PAYROLL|1, _("Manage Job Positions"));
+		$security_areas['SA_SALARY_STRUCTURE'] = array(SS_PAYROLL|1, _("Manage Salary Structure"));
+		$security_areas['PAYRULE_STRUCTURE'] = array(SS_PAYROLL|1, _("Manage Payrule Structure"));
+		
                 return array($security_areas, $security_sections);
         }
 
