@@ -161,14 +161,30 @@ INSERT INTO `0_payrollcategory` (`pc_id`, `pc_name`, `pc_type`, `inactive`) VALU
 -- --------------------------------------------------------
 
 --
--- Table structure for table `0_salary_structure`
+-- Table structure for table `0_payroll_structure`
 --
 
-CREATE TABLE IF NOT EXISTS `0_salary_structure` (
+CREATE TABLE IF NOT EXISTS `0_payroll_structure` (
   `job_position_id` int(11) NOT NULL,
   `payroll_rule` text NOT NULL,
   KEY `job_position_id` (`job_position_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+--
+-- Table structure for table `0_salary_structure`
+--
+
+CREATE TABLE IF NOT EXISTS `0_salary_structure` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `date` date NOT NULL,
+  `job_position_id` int(11) NOT NULL,
+  `pay_rule _id` int(11) NOT NULL,
+  `pay_amount` double NOT NULL,
+  `type` tinyint(4) NOT NULL COMMENT '0 for credit,1 for debit',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
 
 
 
