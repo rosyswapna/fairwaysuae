@@ -220,7 +220,7 @@ if (db_has_jobs())
 	start_table(TABLESTYLE2);
 	start_row();
 	job_list_cells(_("Select a job position: "), 'job_position_id', null,
-		_('New job position'), true, check_value('show_inactive'));
+		_('Select job position'), true, check_value('show_inactive'));
 	
 	end_row();
 
