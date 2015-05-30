@@ -118,4 +118,13 @@ function employee_list_cells($label, $name, $selected_id=null, $all_option=false
 	echo "</td>\n";
 }
 
+function employee_list_row($label, $name, $selected_id=null, $all_option = false, 
+	$submit_on_change=false, $show_inactive=false, $editkey = false)
+{
+	echo "<tr><td class='label'>$label</td><td>";
+	echo employee_list($name, $selected_id, $all_option, $submit_on_change,
+		$all, $editkey);
+	echo "</td></tr>\n";
+}
+
 ?> 
