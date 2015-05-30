@@ -25,11 +25,11 @@ page(_($help_context = "Manage Payrule Structure"), @$_REQUEST['popup'], false, 
 
 include_once($path_to_root . "/includes/date_functions.inc");
 include_once($path_to_root . "/includes/ui.inc");
-include_once($path_to_root . "/modules/payroll/includes/db/jobpositions_db.inc");
+include_once($path_to_root . "/modules/payroll/includes/db/payroll_structure_db.inc");
 $selected_id = get_post('job_name_id','');
 //--------------------------------------------------------------------------------------------
 
-function can_process()
+/*function can_process()
 {
 	if (strlen($_POST['job_name']) == 0) 
 	{
@@ -39,9 +39,10 @@ function can_process()
 	} 
 
 	return true;
-}
+}*/
 
 //--------------------------------------------------------------------------------------------
+
 
 function handle_submit(&$selected_id)
 {
@@ -52,23 +53,32 @@ function handle_submit(&$selected_id)
 		
 	if ($selected_id) 
 	{	
-			
-		update_jobnames($_POST['job_name_id'], $_POST['job_position_id'],$selected_id,$payroll);		
+
+		$payrule = array();
+		foreach($_POST as $p =>$val) 
+		{
+			if (substr($p,0,7) == 'Payroll' && $val == 1) 
+			{
+				$a = substr($p,7);
+		$payrule[] = (int)$a;
+			}
+		}
+		update_payrule($_POST['job_position_id'], $_POST['payroll_rule'],'',$payrule);		
 		$Ajax->activate('job_name_id'); // in case of status change
 		display_notification(_("Job position has been updated."));
 	} 
-	else 
+	/*else 
 	{ 	//it is a new job position
 
 		begin_transaction();
-			add_jobnames($_POST['account_code']);
+			add_payrule($_POST['job_name_id'],$_POST['account_code']);
 			
 			$selected_id = $_POST['job_name_id'] = db_insert_id();
 		commit_transaction();
 
 		display_notification(_("A new job position has been added."));		
 		$Ajax->activate('_page_body');
-	}
+	}*/
 }
 //--------------------------------------------------------------------------------------------
 
@@ -85,7 +95,7 @@ if (isset($_POST['delete']))
 
 	if ($cancel_delete == 0) 
 	{	//display_notification($selected_id);exit;
-		delete_jobnames($selected_id);
+		delete_payrule($selected_id);
 
 		display_notification(_("Selected job position has been deleted."));
 		unset($_POST['job_name_id']);
@@ -94,7 +104,7 @@ if (isset($_POST['delete']))
 	} //end if Delete job position
 }
 
-function job_position_settings($selected_id) 
+function payroll_rule_settings($selected_id) 
 {
 	global $SysPrefs, $path_to_root;
 	
@@ -114,47 +124,42 @@ function job_position_settings($selected_id)
 		
 		
 	}
-
-	//start_table(TABLESTYLE2);
-		//text_row(_("Job position Name:"), 'job_name', $_POST['job_name'], 40, 40);	
 	
-	//end_table();
-
-//---------------------------------------------------------------------------------check_box
-
-
-start_table(TABLESTYLE2);
+	
+	start_table(TABLESTYLE2);
 	$th=array(_("Select Payroll Rules"),'');
 	table_header($th);
 	
 	
 	$result_rules=get_payroll_rules();
-	
+
 	while($row_rule=db_fetch($result_rules))
 	{
-		
-		check_row($row_rule["account_name"], 'Payroll '.$row_rule["account_code"],$row_rule["account_code"]);
-		
+		check_row($row_rule["account_name"], 'Payroll'.$row_rule["account_code"]);	
 	}
-
 end_table(1);
 
 //---------------------------------------------------------------------------------
 	div_start('controls');
-	if (!$selected_id)
-	{
-		submit_center('submit', _("Add New Job position"), true, '', 'default');
-	} 
-	else 
-	{
+	
+	
 		submit_center_first('submit', _("Update"), 
-		  _('Update Job position data'), @$_REQUEST['popup'] ? true : 'default');
+		  _('Update payrule data'), @$_REQUEST['popup'] ? true : 'default');
 		submit_return('select', $selected_id, _("Select this job position and return to document entry."));
 		submit_center_last('delete', _("Delete"), 
 		  _('Delete job position data if have been never used'), true);
-	}
+	
 	div_end();
+	//start_table(TABLESTYLE2);
+		//text_row(_("Job position Name:"), 'job_name', $_POST['job_name'], 40, 40);	
+	
+	//end_table();
 }
+//---------------------------------------------------------------------------------check_box
+
+
+
+
 
 //--------------------------------------------------------------------------------------------
  
@@ -165,7 +170,7 @@ if (db_has_jobs())
 	start_table(TABLESTYLE_NOBORDER);
 	start_row();
 	job_list_cells(_("Select a job position: "), 'job_name_id', null,
-		_('New job position'), true, check_value('show_inactive'));
+		_('select'), true, check_value('show_inactive'));
 	check_cells(_("Show inactive:"), 'show_inactive', null, true);
 	end_row();
 
@@ -180,7 +185,7 @@ else
 	hidden('job_name_id');
 }
 
-job_position_settings($selected_id); 
+payroll_rule_settings($selected_id); 
 
 hidden('popup', @$_REQUEST['popup']);
 end_form();
