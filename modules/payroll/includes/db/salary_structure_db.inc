@@ -56,6 +56,15 @@ function get_salary_structure($job_position_id){
   	return db_query($sql, "Could not get salary structure");
 }
 
+function get_emp_salary_structure($emp_id)
+{
+	$sql = "SELECT str.* FROM ".TB_PREF."salary_structure str, ".TB_PREF."employees  emp
+		WHERE str.job_position_id = emp.job_position_id AND emp.emp_id =".db_escape($emp_id);
+
+	//echo $sql;exit;
+	return db_query($sql, "Could not get employee salary structure");
+}
+
 
 
 

@@ -93,6 +93,7 @@ define('PT_CUSTOMER', 2);
 define('PT_SUPPLIER', 3);
 define('PT_QUICKENTRY', 4);
 define('PT_DIMESION', 5);
+define('PT_EMPLOYEE', 6);
 
 function payment_person_currency($type, $person_id)  {
 	switch ($type)

@@ -30,6 +30,7 @@ class items_cart
 	var $branch_id;
 	var $reference;
 	var $original_amount;
+	var $paytype;
 	
 	function items_cart($type)
 	{

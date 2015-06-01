@@ -95,7 +95,8 @@ $payment_person_types = array (
 				_("Work Order"),
 				_("Customer"),
 				_("Supplier"),
-				_("Quick Entry")
+				_("Quick Entry"),
+				_("Employee")
 	);
 
 //----------------------------------------------------------------------------------

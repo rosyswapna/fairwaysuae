@@ -187,6 +187,11 @@ CREATE TABLE IF NOT EXISTS `0_salary_structure` (
 
 
 
+----31may 2015-
+ALTER TABLE `0_employees`  ADD `job_position_id` INT(11) NOT NULL AFTER `emp_notes`,  ADD INDEX (`job_position_id`);
+
+
+
 
 
 
