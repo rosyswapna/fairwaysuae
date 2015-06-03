@@ -127,4 +127,12 @@ function employee_list_row($label, $name, $selected_id=null, $all_option = false
 	echo "</td></tr>\n";
 }
 
+function employee_name($first_name,$last_name)
+{
+$sql = "SELECT emp_first_name,emp_last_name FROM ".TB_PREF."employees ";
+
+$ret =combo_input($sql,'emp_first_name','emp_last_name');
+return $ret;
+}
+
 ?> 

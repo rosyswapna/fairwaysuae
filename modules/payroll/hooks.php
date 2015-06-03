@@ -11,9 +11,9 @@ class payroll_app extends application
 
                 $this->add_module(_("Transactions"));
                 $this->add_lapp_function(0, _("Manage &Employee Payslip"),
-                        $path_to_root.'/modules/payroll/', 'SA_PAYROLL', MENU_TRANSACTION);
-                $this->add_lapp_function(0, _("Create Pay&slip Batches"),
                         $path_to_root.'/modules/payroll/emp_payslip.php?NewPayslip=Yes', 'SA_PAYSLIP', MENU_TRANSACTION);
+                $this->add_lapp_function(0, _("Create Pay&slip Batches"),
+                        $path_to_root.'/modules/payroll/payslip_batches.php', 'SA_PAYSLIP_BATCHES', MENU_TRANSACTION);
 				$this->add_lapp_function(0, _("Make &Payment Advices"),
                         $path_to_root.'/modules/payroll/', 'SA_PAYROLL', MENU_TRANSACTION);
                 $this->add_rapp_function(0, _("Manage Employee $Leave"),
@@ -84,6 +84,7 @@ class hooks_payroll extends hooks {
 		$security_areas['SA_SALARY_STRUCTURE'] = array(SS_PAYROLL|1, _("Manage Salary Structure"));
 		$security_areas['PAYRULE_STRUCTURE'] = array(SS_PAYROLL|1, _("Manage Payrule Structure"));
 		$security_areas['SA_PAYSLIP'] = array(SS_PAYROLL|1, _("Manage Employee Payslip"));
+		$security_areas['SA_PAYSLIP_BATCHES'] = array(SS_PAYROLL|1, _("Manage Payslip Batches"));
 		
                 return array($security_areas, $security_sections);
         }
