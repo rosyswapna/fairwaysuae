@@ -28,6 +28,7 @@ include_once($path_to_root . "/includes/ui.inc");
 include_once($path_to_root . "/includes/data_checks.inc");
 include_once($path_to_root . "/modules/payroll/includes/db/jobpositions_db.inc");
 include_once($path_to_root . "/modules/payroll/includes/db/salary_structure_db.inc");
+include_once($path_to_root . "/modules/payroll/includes/db/payroll_structure_db.inc");
 $selected_id = get_post('job_position_id','');
 //--------------------------------------------------------------------------------------------
 
@@ -134,7 +135,82 @@ function payroll_rules_settings($selected_id)
 
 	$new = true;
 
-	$result_rules=get_payroll_rules();
+	$rules = array();
+
+	$payroll_structure = get_payroll_structure($selected_id);
+	if($payroll_structure){
+
+		foreach($payroll_structure['payroll_rule'] as $rule_code){
+			$ac = get_gl_account($rule_code);
+			$rules[] = array(
+				'account_input' => "Account".$rule_code,
+				'debit_input' 	=> "Debit".$rule_code,
+				'credit_input'	=> "Credit".$rule_code,
+				'account_code'	=> $rule_code,
+				'account_name'	=> $ac['account_name'],
+				);
+			$_POST["Debit".$rule_code] = price_format(0);
+			$_POST["Credit".$rule_code] = price_format(0);
+
+		}
+		$rsStr = get_salary_structure($selected_id);
+		if(db_num_rows($rsStr) > 0){
+			while($rowStr = db_fetch($rsStr)){
+				if($rowStr['type'] == DEBIT){//debit side
+					$_POST["Debit".$rowStr['pay_rule_id']] = $rowStr['pay_amount'];
+				}else{//credit side
+					$_POST["Credit".$rowStr['pay_rule_id']] = $rowStr['pay_amount'];
+				}
+			}
+		}
+
+		//rules table
+		br();
+		start_table(TABLESTYLE2);
+		$th=array(_("Payroll Rules"),_("Debit"),("Credit"));
+		table_header($th);
+		foreach($rules as $rule)
+		{			
+			start_row();
+				hidden($rule['account_input'],$rule['account_code']);
+				label_cell($rule["account_name"]);
+				amount_cells(null,$rule['debit_input']);
+				amount_cells(null,$rule['credit_input']);
+			end_row();
+		}
+		end_table(1);
+
+		
+
+		div_start('controls');
+
+			if($new){
+				submit_center('submit', _("Save Salary Structure"), true, '', 'default');
+			}else{
+				submit_center_first('submit', _("Save Salary Structure"), 
+				  _('Update Salary Structure data'), @$_REQUEST['popup'] ? true : 'default');
+				submit_center_last('delete', _("Delete Salary Structure"), 
+				  _('Delete Salary Structure data if have been never used'), true);
+			}
+
+		div_end();
+
+	}else{
+		display_error("Payroll Structure not defined for this job position");
+	}
+
+	//display table for salary structure from job position payroll rule
+	/*if($rules){
+		br();
+
+		start_table(TABLESTYLE2);
+			$th=array(_("Payroll Rules"),_("Debit"),("Credit"));
+			table_header($th);
+		end_table(1);
+	}*/
+	
+
+	/*$result_rules=get_payroll_rules();
 	$rules = array();
 	while($row_rule=db_fetch($result_rules))
 	{
@@ -193,22 +269,11 @@ function payroll_rules_settings($selected_id)
 			end_row();
 		}
 
-	end_table(1);
+	end_table(1);*/
 
 //---------------------------------------------------------------------------------
 
-	div_start('controls');
-
-		if($new){
-			submit_center('submit', _("Save Salary Structure"), true, '', 'default');
-		}else{
-			submit_center_first('submit', _("Save Salary Structure"), 
-			  _('Update Salary Structure data'), @$_REQUEST['popup'] ? true : 'default');
-			submit_center_last('delete', _("Delete Salary Structure"), 
-			  _('Delete Salary Structure data if have been never used'), true);
-		}
-
-	div_end();
+	
 }
 
 //--------------------------------------------------------------------------------------------
@@ -235,7 +300,8 @@ else
 	hidden('job_position_id');
 }
 
-payroll_rules_settings($selected_id); 
+if($selected_id)
+	payroll_rules_settings($selected_id); 
 
 hidden('popup', @$_REQUEST['popup']);
 end_form();
