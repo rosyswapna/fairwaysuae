@@ -2972,3 +2972,33 @@
 [04-Jun-2015 06:24:42 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
 [04-Jun-2015 06:24:43 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
 [04-Jun-2015 06:24:43 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 06:29:27 Europe/Paris] 0:admin:connect_db.inc:114: mysql_num_rows() expects parameter 1 to be resource, array given
+[04-Jun-2015 06:29:30 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 06:29:30 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 06:29:30 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 06:29:30 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 06:29:32 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 06:29:32 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 06:29:36 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 3 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 37 and defined
+[04-Jun-2015 06:29:36 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 37 and defined
+[04-Jun-2015 06:29:36 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 37 and defined
+[04-Jun-2015 06:29:36 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 3 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 37 and defined
+[04-Jun-2015 06:29:36 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 37 and defined
+[04-Jun-2015 06:29:36 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 37 and defined
+[04-Jun-2015 06:29:40 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 3 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 37 and defined
+[04-Jun-2015 06:29:40 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 37 and defined
+[04-Jun-2015 06:29:40 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 37 and defined
+[04-Jun-2015 06:29:40 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\includes\db\salary_structure_db.inc:65:<br>Could not get employee salary structure<br>error code : 1054<br>error message : Champ 'emp.job_position_id' inconnu dans where clause<br>sql that failed was : SELECT str.* FROM 0_salary_structure str, 0_employees  emp
+		WHERE str.job_position_id = emp.job_position_id AND emp.emp_id ='1'<br><br><br>
+[04-Jun-2015 06:29:46 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 67 and defined
+[04-Jun-2015 06:29:46 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 68 and defined
+[04-Jun-2015 06:29:46 Europe/Paris] 0:admin:ui_input.inc:374: Missing argument 2 for check_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 69 and defined
+[04-Jun-2015 06:29:46 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 67 and defined
+[04-Jun-2015 06:29:46 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 68 and defined
+[04-Jun-2015 06:29:46 Europe/Paris] 0:admin:ui_input.inc:374: Missing argument 2 for check_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 69 and defined
+[04-Jun-2015 06:29:46 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 67 and defined
+[04-Jun-2015 06:29:46 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 68 and defined
+[04-Jun-2015 06:29:46 Europe/Paris] 0:admin:ui_input.inc:374: Missing argument 2 for check_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 69 and defined
+[04-Jun-2015 06:29:46 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 67 and defined
+[04-Jun-2015 06:29:46 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 68 and defined
+[04-Jun-2015 06:29:46 Europe/Paris] 0:admin:ui_input.inc:374: Missing argument 2 for check_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 69 and defined
