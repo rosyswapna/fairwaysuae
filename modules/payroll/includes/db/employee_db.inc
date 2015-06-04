@@ -139,6 +139,23 @@ function remove_employee_compensation($rate_id){
 }
 
 //--------------------------------------------------------------------------------------------
+function add_labour($labour_card,$lbr_card_isuue_date,$lbr_card_exp_date,$health_card_no,$hc_issue_date,$hc_exp_date,$hc_information,
+						$phone,$email){
+		
+		"INSERT INTO ".TB_PREF."labour (labour_card, lbr_card_isuue_date, lbr_card_exp_date, health_card_no, hc_issue_date,hc_exp_date, hc_information, 
+			phone, email) VALUES ("
+		.db_escape($labour_card).", "
+		.db_escape($lbr_card_isuue_date).", "
+		.db_escape($lbr_card_exp_date).", "
+		.db_escape($health_card_no).", "
+		.db_escape($hc_issue_date).", '"
+		.date2sql($hc_exp_date)."', "
+		.db_escape($hc_information).", "
+		.db_escape($phone).", "
+		.db_escape($email).")";
+		
+			}			
+//--------------------------------------------------------------------------------------------
 function update_labour($labour_card,$lbr_card_isuue_date,$lbr_card_exp_date,$health_card_no,$hc_issue_date,$hc_exp_date,$hc_information,
 						$phone,$email,$selected_id){
 
@@ -187,7 +204,40 @@ function get_visa($selected_id)
 {
 	$sql = "SELECT * FROM ".TB_PREF."visa WHERE id=".db_escape($selected_id);
 
-	$result = db_query($sql, "could not get employee");
+	$result = db_query($sql, "could not get visa details");
+
+	return db_fetch($result);
+}
+function update_passport($empcode,$empname,$fathersname,$nationality,$placeofbirth,$dateofbirth,$gender,$passport,
+						$passissuedate,$passexpirydate,$passplaceissued,$addr1,$addr2,$addr3,$remark,
+						$alocation,$abscondeddate,$selected_id){
+
+	$sql="UPDATE ".TB_PREF."passport SET
+	emp_code=".db_escape($empcode).",
+	emp_name=".db_escape($empname).",
+	fathers_name=".db_escape($fathersname).",
+	nationality=".db_escape($nationality).",
+	birth_place=".db_escape($placeofbirth).",
+	birth_date='".date2sql($dateofbirth)."',
+	gender=".db_escape($gender).",
+	passport_no=".db_escape($passport).",
+	pspt_issue_date='".date2sql($passissuedate)."',
+	pspt_expiry_date='".date2sql($passexpirydate)."',
+	pspt_issue_place=".db_escape($passplaceissued).",
+	addr1=".db_escape($addr1).",
+	addr2=".db_escape($addr2).",
+	addr3=".db_escape($addr3).",
+	remark=".db_escape($remark).",
+	site_allocation=".db_escape($alocation).",
+	absconded_date='".date2sql($abscondeddate)."'
+	WHERE id=".db_escape($selected_id);
+	 db_query($sql,"The pay rate could not be added/updated");
+}
+function get_passport($selected_id)
+{
+	$sql = "SELECT * FROM ".TB_PREF."passport WHERE id=".db_escape($selected_id);
+
+	$result = db_query($sql, "could not get passport details");
 
 	return db_fetch($result);
 }

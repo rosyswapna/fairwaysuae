@@ -243,9 +243,9 @@ define ('AC_TYPE_PAYROLL',11);
 //salary
 define('DEBIT',1);
 define('CREDIT',0);
-
-
-
+//Gender
+define('MALE',1);
+define('FEMALE',0);
 
 include_once($path_to_root . '/includes/sysnames.inc');
 
