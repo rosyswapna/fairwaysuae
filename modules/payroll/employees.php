@@ -143,22 +143,17 @@ if ($_POST['labour_id'] == "")
 	
 	if (input_num('labour_id')>0)
 		{
-		
 			update_labour($_POST['Labourcard'],$_POST['Labourcardissuedate'],$_POST['Labourcardexpirydate'],$_POST['HealthCard'],
 			$_POST['Healthcardissuedate'],$_POST['Healthcardexpirydate'],$_POST['HealthCardinformation'],$_POST['Phone'],$_POST['Email'],$_POST['labour_id']);
-
-			display_notification("Labour details Updated");
-			
+			display_notification("Labour details Updated");	
 		}
 	else
-		{
-			
+		{	
 			add_labour($selected_id,$_POST['Labourcard'],$_POST['Labourcardissuedate'],$_POST['Labourcardexpirydate'],
 			$_POST['HealthCard'],$_POST['Healthcardissuedate'],$_POST['Healthcardexpirydate'],$_POST['HealthCardinformation'],
 			$_POST['Phone'],$_POST['Email']);
 
-			display_notification("Labour details Added");
-			
+			display_notification("Labour details Added");	
 		}
 }
 function handle_submit2(&$selected_id)
@@ -166,30 +161,43 @@ function handle_submit2(&$selected_id)
 	global $Ajax;
 		if ($_POST['visa_id'] == "")
 			$_POST['visa_id'] =0;
-	echo $_POST['visa_id'] ;
+	
 	if (input_num('visa_id')>0)
 	{
-		
 		update_visa($_POST['visa'],$_POST['fileno'],$_POST['idcardno'],$_POST['visaIssueDate'],$_POST['visaExpiryDate'],
 		$_POST['visaRenewDate'],$_POST['IdCardIssued'],$_POST['IdCardExpiry'],$_POST['designation'],
-		$_POST['designationvisa'],$_POST['profession'],$_POST['attenidno'],$selected_id);
+		$_POST['designationvisa'],$_POST['profession'],$_POST['attenidno'],$_POST['visa_id']);
+		display_notification("visa details Updated");	
 	}
 	else
+	{
 		add_visa($selected_id,$_POST['visa'],$_POST['fileno'],$_POST['idcardno'],$_POST['visaIssueDate'],$_POST['visaExpiryDate'],
 		$_POST['visaRenewDate'],$_POST['IdCardIssued'],$_POST['IdCardExpiry'],$_POST['designation'],
 		$_POST['designationvisa'],$_POST['profession'],$_POST['attenidno']);
+		display_notification("visa details Added");	
+	}
 }
 
 function handle_submit3(&$selected_id)
 {
 	global $Ajax;	
-	if ($selected_id) 
+	if ($_POST['passport_id'] == "")
+			$_POST['passport_id'] =0;
+	
+	if (input_num('passport_id')>0) 
 	{
 		
 		update_passport($_POST['empcode'],$_POST['empname'],$_POST['fathersname'],$_POST['nationality'],$_POST['placeofbirth'],
 		$_POST['dateofbirth'],$_POST['gender'],$_POST['passport'],$_POST['passissuedate'],$_POST['passexpirydate'],
 		$_POST['passplaceissued'],$_POST['addr1'],$_POST['addr2'],$_POST['addr3'],$_POST['remark'],$_POST['alocation'],
-		$_POST['abscondeddate'],$selected_id);
+		$_POST['abscondeddate'],$_POST['passport_id']);
+	}
+	else
+	{
+		add_passport($selected_id,$_POST['empcode'],$_POST['empname'],$_POST['fathersname'],$_POST['nationality'],$_POST['placeofbirth'],
+		$_POST['dateofbirth'],$_POST['gender'],$_POST['passport'],$_POST['passissuedate'],$_POST['passexpirydate'],
+		$_POST['passplaceissued'],$_POST['addr1'],$_POST['addr2'],$_POST['addr3'],$_POST['remark'],$_POST['alocation'],
+		$_POST['abscondeddate']);
 	}
 }
 //--------------------------------------------------------------------------------------------
@@ -370,19 +378,22 @@ function employee_comp($emp_id){
 //--------------------------------------------------------------------------------------------
 function passport($selected_id)
 {
-	if (!$selected_id) 
+	$myrow = get_passport($selected_id);
+	$new_passport=true;
+	if (!$myrow) 
 	{
 	 	//if (list_updated('EmpId') || !isset($_POST['EmpId'])) {//what is this?
 			$_POST['empcode'] = $_POST['empname'] = $_POST['fathersname'] = $_POST['nationality'] = $_POST['placeofbirth'] 
 			= $_POST['dateofbirth'] = $_POST['gender'] = $_POST['passport'] =$_POST['passissuedate'] = $_POST['passexpirydate'] 
 			=$_POST['passplaceissued'] =$_POST['addr1'] =$_POST['addr2'] =$_POST['addr3'] =$_POST['remark'] =$_POST['alocation']
-			=$_POST['abscondeddate'] =Today();
+			=$_POST['abscondeddate'] =$_POST['passport_id']='';
   
 		//}
 	}
 	else 
 	{
-	    $myrow = get_passport($selected_id);
+	    $new_passport=false;
+		$_POST['passport_id'] = $myrow["id"];
 	    $_POST['empcode'] = $myrow["emp_code"];
 	    $_POST['empname'] = $myrow["emp_name"];
 	    $_POST['fathersname'] =  $myrow["fathers_name"];
@@ -404,6 +415,7 @@ function passport($selected_id)
 	start_outer_table(TABLESTYLE2);
 	table_section(1);
 	table_section_title(_("Employee Details"));
+	hidden("passport_id");
 	text_row(_("Emp Code:"), 'empcode', $_POST['empcode'], 40, 80);
 	text_row(_("Emp Name:"), 'empname',$_POST['empname'], 40, 80);
 	text_row(_("Fathers Name:"), 'fathersname', $_POST['fathersname'], 40, 80);
@@ -419,7 +431,7 @@ function passport($selected_id)
 	end_row();
 	table_section(2);
 	table_section_title(_("Passport Details"));
-	text_row(_("EMP:"), 'passport',$_POST['EmpId'], 40, 80);
+	//text_row(_("EMP:"), 'passport',$_POST['EmpId'], 40, 80);
 	text_row(_("Passport:"), 'passport',$_POST['passport'], 40, 80);
 	date_row(_("Pasport Issue Date :"), 'passissuedate',$_POST['passissuedate']);
 	date_row(_("Pasport Expiry Date :"), 'passexpirydate',$_POST['passexpirydate']);
@@ -433,7 +445,7 @@ function passport($selected_id)
 	end_outer_table(TABLESTYLE2);
 	div_start('controls');
 	
-	if ($selected_id)
+	if ($new_passport)
 		submit_center('submit3', _("Add New passport"), true, '', 'default');
 	else 
 		submit_center('submit3', _("Update Passport Details"), _('Update Passport Details'), @$_REQUEST['popup'] ? true : 'passportupdate');
@@ -441,14 +453,15 @@ function passport($selected_id)
 	div_end();
 }
 function visa($selected_id){
-	
-	if (!$selected_id) 
+	$myrow = get_visa($selected_id);
+	$new_visa=true;
+	if (!$myrow) 
 	{	
-		$myrow = get_visa($selected_id);
-		$new_visa=true;
+		
 	 	//if (list_updated('EmpId') || !isset($_POST['EmpId'])) {//what is this?
-			$_POST['Visa'] = $_POST['fileno'] = $_POST['Labourcardexpirydate'] = $_POST['HealthCard'] = $_POST['Healthcardissuedate'] = $_POST['Healthcardexpirydate'] = $_POST['HealthCardinformation'] = $_POST['Phone'] =
-			$_POST['Email'] = Today();
+			$_POST['Visa'] = $_POST['fileno'] = $_POST['visaIssueDate'] = $_POST['visaExpiryDate'] = $_POST['visaRenewDate'] 
+			= $_POST['idcardno'] = $_POST['IdCardIssued'] = $_POST['IdCardExpiry'] =$_POST['designation'] = $_POST['designationvisa']
+			=$_POST['profession']=$_POST['attenidno']=$_POST['visa_id']='';
   
 		//}
 	}
@@ -498,7 +511,6 @@ function visa($selected_id){
 
 function labour($selected_id){
 	 $myrow = get_labour($selected_id);
-	 //display_notification($myrow['id']);
 	 $new_labour=true;
 	if (!$myrow) 
 	{
@@ -587,13 +599,13 @@ if (isset($_POST['submit']))
   handle_submit($selected_id);
 
 if (isset($_POST['submit1'])) 
-  handle_submit1($selected_id);
+  handle_submit1($selected_id); //labour
 
 if (isset($_POST['submit2'])) 
-  handle_submit2($selected_id);
+  handle_submit2($selected_id);//visa
 
 if (isset($_POST['submit3'])) 
-  handle_submit3($selected_id);
+  handle_submit3($selected_id);//passport
 
 
 //--------------------------------------------------------------------------------------------

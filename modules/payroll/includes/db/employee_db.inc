@@ -139,8 +139,8 @@ function remove_employee_compensation($rate_id){
 }
 
 //--------------------------------------------------------------------------------------------
-function add_labour($selected_id,$labour_card,$lbr_card_isuue_date,$lbr_card_exp_date,$health_card_no,$hc_issue_date,$hc_exp_date,$hc_information,
-						$phone,$email){
+function add_labour($selected_id,$labour_card,$lbr_card_isuue_date,$lbr_card_exp_date,$health_card_no,$hc_issue_date,$hc_exp_date,
+					$hc_information,$phone,$email){
 		
 		$sql="INSERT INTO ".TB_PREF."labour (emp_id,labour_card, lbr_card_isuue_date, lbr_card_exp_date, health_card_no, hc_issue_date,hc_exp_date, hc_information, 
 			phone, email) VALUES ("
@@ -192,16 +192,17 @@ function add_visa($selected_id,$visa,$fileno,$idcardno,$visaIssueDate,$visaExpir
 		.db_escape($visa).", "
 		.db_escape($fileno).", "
 		.db_escape($idcardno).", "
-		.db_escape($visaIssueDate).", "
+		.date2sql($visaIssueDate).", "
 		.db_escape($visaExpiryDate).", '"
 		.date2sql($visaRenewDate)."', "
+		.db_escape($IdCardIssued).", "
 		.db_escape($IdCardIssued).", "
 		.db_escape($designation).", "
 		.db_escape($designationvisa).", "
 		.db_escape($profession).", "
 		.db_escape($attenidno).")";
 		
-		db_query($sql,"The employee could not be added");				
+		db_query($sql,"The visa could not be added");				
 						
 						
 }
@@ -287,7 +288,8 @@ function update_passport($empcode,$empname,$fathersname,$nationality,$placeofbir
 	site_allocation=".db_escape($alocation).",
 	absconded_date='".date2sql($abscondeddate)."'
 	WHERE id=".db_escape($selected_id);
-	 db_query($sql,"The pay rate could not be added/updated");
+	
+	db_query($sql,"The pay rate could not be added/updated");
 }
 function get_passport($selected_id)
 {

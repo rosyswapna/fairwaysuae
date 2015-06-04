@@ -4296,3 +4296,454 @@
 [04-Jun-2015 13:29:45 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
 [04-Jun-2015 13:29:46 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
 [04-Jun-2015 13:29:46 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:03:16 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:03:16 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:03:16 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:03:16 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:04:08 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:04:08 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:04:11 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:04:11 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:04:11 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:04:11 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:04:27 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:04:27 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:04:37 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:04:37 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:04:38 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:04:38 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:04:40 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:04:40 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:04:42 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:04:42 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:05:20 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:05:20 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:05:24 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:05:24 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:05:25 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:05:25 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:05:26 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:05:26 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:05:28 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:05:28 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:05:32 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:05:32 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:05:34 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:05:34 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:05:34 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:05:34 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:12:20 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:12:20 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:12:20 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:12:20 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:12:23 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:12:23 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:12:24 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:12:24 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:13:54 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:13:54 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:13:56 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:13:56 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:13:57 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:13:57 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:14:39 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:14:39 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:14:39 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:14:39 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:14:40 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:14:40 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:14:42 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:14:42 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:15:12 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:15:12 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:15:12 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\includes\db\employee_db.inc:204:<br>The employee could not be added<br>error code : 1136<br>error message : Column count doesn't match value count at row 1<br>sql that failed was : INSERT INTO 0_visa (emp_id,visa_no, file_no, id_card, visa_date_issued, visa_date_expiry,id_card_issued, id_card_expiry, 
+			designation, profession_id,atten_id) VALUES ('1', '1', '2', '6', '03/06/2015', '04/06/2015', '2015-06-05', '07/06/2015', '9', '10', '11', '12')<br><br><br>
+[04-Jun-2015 14:15:36 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:15:36 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:15:36 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\includes\db\employee_db.inc:204:<br>The employee could not be added<br>error code : 1136<br>error message : Column count doesn't match value count at row 1<br>sql that failed was : INSERT INTO 0_visa (emp_id,visa_no, file_no, id_card, visa_date_issued, visa_date_expiry,id_card_issued, id_card_expiry, 
+			designation, profession_id,atten_id) VALUES ('1', '1', '2', '6', '03/06/2015', '04/06/2015', '2015-06-05', '07/06/2015', '9', '10', '11', '12')<br><br><br>
+[04-Jun-2015 14:18:30 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:18:30 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:18:30 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\includes\db\employee_db.inc:205:<br>The employee could not be added<br>error code : 1136<br>error message : Column count doesn't match value count at row 1<br>sql that failed was : INSERT INTO 0_visa (emp_id,visa_no, file_no, id_card, visa_date_issued, visa_date_expiry,id_card_issued, id_card_expiry, 
+			designation, profession_id,atten_id) VALUES ('1', '1', '2', '6', 2015-06-03, '04/06/2015', '2015-06-05', '07/06/2015', '07/06/2015', '9', '10', '11', '12')<br><br><br>
+[04-Jun-2015 14:18:31 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:18:31 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:18:33 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:18:33 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:18:35 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:18:35 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:18:40 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:18:40 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:18:40 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\includes\db\employee_db.inc:205:<br>The employee could not be added<br>error code : 1136<br>error message : Column count doesn't match value count at row 1<br>sql that failed was : INSERT INTO 0_visa (emp_id,visa_no, file_no, id_card, visa_date_issued, visa_date_expiry,id_card_issued, id_card_expiry, 
+			designation, profession_id,atten_id) VALUES ('1', '1', '2', '', 2015-06-04, '04/06/2015', '2015-06-04', '04/06/2015', '04/06/2015', '', '', '', '')<br><br><br>
+[04-Jun-2015 14:19:18 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:19:18 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:19:24 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:19:24 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:19:25 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:19:25 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:19:26 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:19:26 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:19:36 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:19:36 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:19:38 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:19:38 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:19:38 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:19:38 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:25:10 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:25:10 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:25:13 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:25:13 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:25:13 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\includes\db\employee_db.inc:205:<br>The visa could not be added<br>error code : 1136<br>error message : Column count doesn't match value count at row 1<br>sql that failed was : INSERT INTO 0_visa (emp_id,visa_no, file_no, id_card, visa_date_issued, visa_date_expiry,id_card_issued, id_card_expiry, 
+			designation, profession_id,atten_id) VALUES ('1', '', '', '', 2015-06-04, '04/06/2015', '2015-06-04', '04/06/2015', '04/06/2015', '', '', '', '')<br><br><br>
+[04-Jun-2015 14:25:15 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:25:15 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:25:15 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\includes\db\employee_db.inc:205:<br>The visa could not be added<br>error code : 1136<br>error message : Column count doesn't match value count at row 1<br>sql that failed was : INSERT INTO 0_visa (emp_id,visa_no, file_no, id_card, visa_date_issued, visa_date_expiry,id_card_issued, id_card_expiry, 
+			designation, profession_id,atten_id) VALUES ('1', '', '', '', 2015-06-04, '04/06/2015', '2015-06-04', '04/06/2015', '04/06/2015', '', '', '', '')<br><br><br>
+[04-Jun-2015 14:25:16 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:25:16 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:25:17 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:25:17 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:25:19 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:25:19 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:25:22 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:25:22 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:27:03 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:27:03 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:27:03 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:27:03 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:27:06 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:27:06 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:27:07 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:27:07 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:27:12 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:27:12 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:27:12 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\includes\db\employee_db.inc:205:<br>The visa could not be added<br>error code : 1136<br>error message : Column count doesn't match value count at row 1<br>sql that failed was : INSERT INTO 0_visa (emp_id,visa_no, file_no, id_card, visa_date_issued, visa_date_expiry,id_card_issued, id_card_expiry, 
+			designation, profession_id,atten_id) VALUES ('1', '1', '', '', 2015-06-04, '04/06/2015', '2015-06-04', '04/06/2015', '04/06/2015', '', '', '', '')<br><br><br>
+[04-Jun-2015 14:27:14 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:27:14 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:27:14 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\includes\db\employee_db.inc:205:<br>The visa could not be added<br>error code : 1136<br>error message : Column count doesn't match value count at row 1<br>sql that failed was : INSERT INTO 0_visa (emp_id,visa_no, file_no, id_card, visa_date_issued, visa_date_expiry,id_card_issued, id_card_expiry, 
+			designation, profession_id,atten_id) VALUES ('1', '1', '', '', 2015-06-04, '04/06/2015', '2015-06-04', '04/06/2015', '04/06/2015', '', '', '', '')<br><br><br>
+[04-Jun-2015 14:27:14 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:27:14 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:27:14 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\includes\db\employee_db.inc:205:<br>The visa could not be added<br>error code : 1136<br>error message : Column count doesn't match value count at row 1<br>sql that failed was : INSERT INTO 0_visa (emp_id,visa_no, file_no, id_card, visa_date_issued, visa_date_expiry,id_card_issued, id_card_expiry, 
+			designation, profession_id,atten_id) VALUES ('1', '1', '', '', 2015-06-04, '04/06/2015', '2015-06-04', '04/06/2015', '04/06/2015', '', '', '', '')<br><br><br>
+[04-Jun-2015 14:27:15 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:27:15 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:27:15 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\includes\db\employee_db.inc:205:<br>The visa could not be added<br>error code : 1136<br>error message : Column count doesn't match value count at row 1<br>sql that failed was : INSERT INTO 0_visa (emp_id,visa_no, file_no, id_card, visa_date_issued, visa_date_expiry,id_card_issued, id_card_expiry, 
+			designation, profession_id,atten_id) VALUES ('1', '1', '', '', 2015-06-04, '04/06/2015', '2015-06-04', '04/06/2015', '04/06/2015', '', '', '', '')<br><br><br>
+[04-Jun-2015 14:27:15 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:27:15 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:27:15 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\includes\db\employee_db.inc:205:<br>The visa could not be added<br>error code : 1136<br>error message : Column count doesn't match value count at row 1<br>sql that failed was : INSERT INTO 0_visa (emp_id,visa_no, file_no, id_card, visa_date_issued, visa_date_expiry,id_card_issued, id_card_expiry, 
+			designation, profession_id,atten_id) VALUES ('1', '1', '', '', 2015-06-04, '04/06/2015', '2015-06-04', '04/06/2015', '04/06/2015', '', '', '', '')<br><br><br>
+[04-Jun-2015 14:27:15 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:27:15 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:27:15 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\includes\db\employee_db.inc:205:<br>The visa could not be added<br>error code : 1136<br>error message : Column count doesn't match value count at row 1<br>sql that failed was : INSERT INTO 0_visa (emp_id,visa_no, file_no, id_card, visa_date_issued, visa_date_expiry,id_card_issued, id_card_expiry, 
+			designation, profession_id,atten_id) VALUES ('1', '1', '', '', 2015-06-04, '04/06/2015', '2015-06-04', '04/06/2015', '04/06/2015', '', '', '', '')<br><br><br>
+[04-Jun-2015 14:27:17 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:27:17 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:27:17 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\includes\db\employee_db.inc:205:<br>The visa could not be added<br>error code : 1136<br>error message : Column count doesn't match value count at row 1<br>sql that failed was : INSERT INTO 0_visa (emp_id,visa_no, file_no, id_card, visa_date_issued, visa_date_expiry,id_card_issued, id_card_expiry, 
+			designation, profession_id,atten_id) VALUES ('1', '1', '', '', 2015-06-04, '04/06/2015', '2015-06-04', '04/06/2015', '04/06/2015', '', '', '', '')<br><br><br>
+[04-Jun-2015 14:30:45 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:30:45 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:30:48 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:30:48 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:30:53 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:30:53 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:30:55 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:30:55 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:31:01 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:31:01 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:31:01 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\includes\db\employee_db.inc:205:<br>The visa could not be added<br>error code : 1136<br>error message : Column count doesn't match value count at row 1<br>sql that failed was : INSERT INTO 0_visa (emp_id,visa_no, file_no, id_card, visa_date_issued, visa_date_expiry,id_card_issued, id_card_expiry, 
+			designation, profession_id,atten_id) VALUES ('1', '', '', '', 2015-06-04, '04/06/2015', '2015-06-04', '04/06/2015', '04/06/2015', '', '', '', '')<br><br><br>
+[04-Jun-2015 14:31:02 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:31:02 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:31:02 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\includes\db\employee_db.inc:205:<br>The visa could not be added<br>error code : 1136<br>error message : Column count doesn't match value count at row 1<br>sql that failed was : INSERT INTO 0_visa (emp_id,visa_no, file_no, id_card, visa_date_issued, visa_date_expiry,id_card_issued, id_card_expiry, 
+			designation, profession_id,atten_id) VALUES ('1', '', '', '', 2015-06-04, '04/06/2015', '2015-06-04', '04/06/2015', '04/06/2015', '', '', '', '')<br><br><br>
+[04-Jun-2015 14:31:03 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:31:03 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:31:04 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:31:04 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:31:35 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:31:35 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:31:35 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:31:35 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:31:36 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:31:36 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:31:37 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:31:37 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:31:41 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:31:41 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:31:41 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\includes\db\employee_db.inc:205:<br>The visa could not be added<br>error code : 1136<br>error message : Column count doesn't match value count at row 1<br>sql that failed was : INSERT INTO 0_visa (emp_id,visa_no, file_no, id_card, visa_date_issued, visa_date_expiry,id_card_issued, id_card_expiry, 
+			designation, profession_id,atten_id) VALUES ('1', '', '', '', 2015-06-04, '04/06/2015', '2015-06-04', '04/06/2015', '04/06/2015', '', '', '', '')<br><br><br>
+[04-Jun-2015 14:31:43 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:31:43 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:31:43 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\includes\db\employee_db.inc:205:<br>The visa could not be added<br>error code : 1136<br>error message : Column count doesn't match value count at row 1<br>sql that failed was : INSERT INTO 0_visa (emp_id,visa_no, file_no, id_card, visa_date_issued, visa_date_expiry,id_card_issued, id_card_expiry, 
+			designation, profession_id,atten_id) VALUES ('1', '', '', '', 2015-06-04, '04/06/2015', '2015-06-04', '04/06/2015', '04/06/2015', '', '', '', '')<br><br><br>
+[04-Jun-2015 14:31:44 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:31:44 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:31:44 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\includes\db\employee_db.inc:205:<br>The visa could not be added<br>error code : 1136<br>error message : Column count doesn't match value count at row 1<br>sql that failed was : INSERT INTO 0_visa (emp_id,visa_no, file_no, id_card, visa_date_issued, visa_date_expiry,id_card_issued, id_card_expiry, 
+			designation, profession_id,atten_id) VALUES ('1', '', '', '', 2015-06-04, '04/06/2015', '2015-06-04', '04/06/2015', '04/06/2015', '', '', '', '')<br><br><br>
+[04-Jun-2015 14:33:46 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:33:46 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:33:47 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:33:47 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:33:50 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:33:50 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:33:50 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\includes\db\employee_db.inc:205:<br>The visa could not be added<br>error code : 1136<br>error message : Column count doesn't match value count at row 1<br>sql that failed was : INSERT INTO 0_visa (emp_id,visa_no, file_no, id_card, visa_date_issued, visa_date_expiry,id_card_issued, id_card_expiry, 
+			designation, profession_id,atten_id) VALUES ('1', '1', '', '', 2015-06-04, '04/06/2015', '2015-06-04', '04/06/2015', '04/06/2015', '', '', '', '')<br><br><br>
+[04-Jun-2015 14:37:04 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:37:04 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:37:06 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:37:06 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:39:13 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:39:13 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:39:14 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:39:14 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:39:21 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:39:21 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:40:45 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:40:45 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:40:45 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:40:45 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:40:48 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:40:48 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:40:49 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:40:49 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:42:38 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:42:38 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:42:40 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:42:40 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:42:41 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:42:41 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:42:46 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:42:46 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:42:46 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\includes\db\employee_db.inc:205:<br>The visa could not be added<br>error code : 1136<br>error message : Column count doesn't match value count at row 1<br>sql that failed was : INSERT INTO 0_visa (emp_id,visa_no, file_no, id_card, visa_date_issued, visa_date_expiry,id_card_issued, id_card_expiry, 
+			designation, profession_id,atten_id) VALUES ('1', '1', '', '', 2015-06-04, '04/06/2015', '2015-06-04', '04/06/2015', '04/06/2015', '', '', '', '')<br><br><br>
+[04-Jun-2015 14:42:47 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:42:47 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:42:48 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:42:48 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:47:39 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:47:39 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:47:43 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:47:43 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:47:43 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\includes\db\employee_db.inc:205:<br>The visa could not be added<br>error code : 1136<br>error message : Column count doesn't match value count at row 1<br>sql that failed was : INSERT INTO 0_visa (emp_id,visa_no, file_no, id_card, visa_date_issued, visa_date_expiry,id_card_issued, id_card_expiry, 
+			designation, profession_id,atten_id) VALUES ('1', '1', '', '', 2015-06-04, '04/06/2015', '2015-06-04', '04/06/2015', '04/06/2015', '', '', '', '')<br><br><br>
+[04-Jun-2015 14:52:03 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:52:03 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:52:04 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:52:04 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:52:07 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:52:07 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:52:07 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\includes\db\employee_db.inc:205:<br>The visa could not be added<br>error code : 1136<br>error message : Column count doesn't match value count at row 1<br>sql that failed was : INSERT INTO 0_visa (emp_id,visa_no, file_no, id_card, visa_date_issued, visa_date_expiry,id_card_issued, id_card_expiry, 
+			designation, profession_id,atten_id) VALUES ('1', '1', '', '', 2015-06-04, '04/06/2015', '2015-06-04', '04/06/2015', '04/06/2015', '', '', '', '')<br><br><br>
+[04-Jun-2015 14:53:53 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:53:53 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:53:55 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:53:55 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:53:57 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:53:57 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:53:57 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:53:57 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:54:01 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:54:01 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:54:01 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\includes\db\employee_db.inc:262:<br>The employee could not be added<br>error code : 1136<br>error message : Column count doesn't match value count at row 1<br>sql that failed was : INSERT INTO 0_visa (emp_id,emp_code, emp_name, fathers_name, nationality, birth_place,birth_date, gender, passport_no, pspt_issue_date,pspt_expiry_date,pspt_issue_place,addr1,addr2,addr3,remark,site_allocation,absconded_date) VALUES ('1', '1', '', '', '', '', '2015-06-04', '0', '', '04/06/2015', '04/06/2015', '', '', '', '', '', '')<br><br><br>
+[04-Jun-2015 14:54:02 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 14:54:02 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 14:54:02 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\includes\db\employee_db.inc:262:<br>The employee could not be added<br>error code : 1136<br>error message : Column count doesn't match value count at row 1<br>sql that failed was : INSERT INTO 0_visa (emp_id,emp_code, emp_name, fathers_name, nationality, birth_place,birth_date, gender, passport_no, pspt_issue_date,pspt_expiry_date,pspt_issue_place,addr1,addr2,addr3,remark,site_allocation,absconded_date) VALUES ('1', '1', '', '', '', '', '2015-06-04', '0', '', '04/06/2015', '04/06/2015', '', '', '', '', '', '')<br><br><br>
+[04-Jun-2015 15:02:50 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:02:50 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:02:50 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:02:50 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:02:52 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:02:52 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:02:54 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:02:54 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:02:56 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:02:56 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:02:59 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:02:59 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:02:59 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\includes\db\employee_db.inc:205:<br>The visa could not be added<br>error code : 1136<br>error message : Column count doesn't match value count at row 1<br>sql that failed was : INSERT INTO 0_visa (emp_id,visa_no, file_no, id_card, visa_date_issued, visa_date_expiry,id_card_issued, id_card_expiry, 
+			designation, profession_id,atten_id) VALUES ('1', '', '', '', 2015-06-04, '04/06/2015', '2015-06-04', '04/06/2015', '04/06/2015', '', '', '', '')<br><br><br>
+[04-Jun-2015 15:03:00 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:03:00 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:03:00 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\includes\db\employee_db.inc:205:<br>The visa could not be added<br>error code : 1136<br>error message : Column count doesn't match value count at row 1<br>sql that failed was : INSERT INTO 0_visa (emp_id,visa_no, file_no, id_card, visa_date_issued, visa_date_expiry,id_card_issued, id_card_expiry, 
+			designation, profession_id,atten_id) VALUES ('1', '', '', '', 2015-06-04, '04/06/2015', '2015-06-04', '04/06/2015', '04/06/2015', '', '', '', '')<br><br><br>
+[04-Jun-2015 15:03:00 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:03:00 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:03:00 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\includes\db\employee_db.inc:205:<br>The visa could not be added<br>error code : 1136<br>error message : Column count doesn't match value count at row 1<br>sql that failed was : INSERT INTO 0_visa (emp_id,visa_no, file_no, id_card, visa_date_issued, visa_date_expiry,id_card_issued, id_card_expiry, 
+			designation, profession_id,atten_id) VALUES ('1', '', '', '', 2015-06-04, '04/06/2015', '2015-06-04', '04/06/2015', '04/06/2015', '', '', '', '')<br><br><br>
+[04-Jun-2015 15:03:01 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:03:01 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:03:01 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\includes\db\employee_db.inc:205:<br>The visa could not be added<br>error code : 1136<br>error message : Column count doesn't match value count at row 1<br>sql that failed was : INSERT INTO 0_visa (emp_id,visa_no, file_no, id_card, visa_date_issued, visa_date_expiry,id_card_issued, id_card_expiry, 
+			designation, profession_id,atten_id) VALUES ('1', '', '', '', 2015-06-04, '04/06/2015', '2015-06-04', '04/06/2015', '04/06/2015', '', '', '', '')<br><br><br>
+[04-Jun-2015 15:03:01 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:03:01 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:03:01 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\includes\db\employee_db.inc:205:<br>The visa could not be added<br>error code : 1136<br>error message : Column count doesn't match value count at row 1<br>sql that failed was : INSERT INTO 0_visa (emp_id,visa_no, file_no, id_card, visa_date_issued, visa_date_expiry,id_card_issued, id_card_expiry, 
+			designation, profession_id,atten_id) VALUES ('1', '', '', '', 2015-06-04, '04/06/2015', '2015-06-04', '04/06/2015', '04/06/2015', '', '', '', '')<br><br><br>
+[04-Jun-2015 15:03:01 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:03:01 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:03:01 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\includes\db\employee_db.inc:205:<br>The visa could not be added<br>error code : 1136<br>error message : Column count doesn't match value count at row 1<br>sql that failed was : INSERT INTO 0_visa (emp_id,visa_no, file_no, id_card, visa_date_issued, visa_date_expiry,id_card_issued, id_card_expiry, 
+			designation, profession_id,atten_id) VALUES ('1', '', '', '', 2015-06-04, '04/06/2015', '2015-06-04', '04/06/2015', '04/06/2015', '', '', '', '')<br><br><br>
+[04-Jun-2015 15:03:05 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:03:05 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:03:05 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\includes\db\employee_db.inc:205:<br>The visa could not be added<br>error code : 1136<br>error message : Column count doesn't match value count at row 1<br>sql that failed was : INSERT INTO 0_visa (emp_id,visa_no, file_no, id_card, visa_date_issued, visa_date_expiry,id_card_issued, id_card_expiry, 
+			designation, profession_id,atten_id) VALUES ('1', '1', '', '', 2015-06-04, '04/06/2015', '2015-06-04', '04/06/2015', '04/06/2015', '', '', '', '')<br><br><br>
+[04-Jun-2015 15:03:07 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:03:07 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:03:12 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:03:12 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:31:10 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:31:10 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:31:14 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:31:14 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:31:15 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:31:15 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:31:19 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:31:19 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:31:24 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:31:24 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:31:24 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\includes\db\employee_db.inc:205:<br>The visa could not be added<br>error code : 1136<br>error message : Column count doesn't match value count at row 1<br>sql that failed was : INSERT INTO 0_visa (emp_id,visa_no, file_no, id_card, visa_date_issued, visa_date_expiry,id_card_issued, id_card_expiry, 
+			designation, profession_id,atten_id) VALUES ('1', '1', '', '', 2015-06-04, '04/06/2015', '2015-06-04', '04/06/2015', '04/06/2015', '', '', '', '')<br><br><br>
+[04-Jun-2015 15:35:19 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:35:19 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:35:22 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:35:22 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:35:23 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:35:23 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:35:31 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:35:31 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:35:31 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\includes\db\employee_db.inc:205:<br>The visa could not be added<br>error code : 1136<br>error message : Column count doesn't match value count at row 1<br>sql that failed was : INSERT INTO 0_visa (emp_id,visa_no, file_no, id_card, visa_date_issued, visa_date_expiry,id_card_issued, id_card_expiry, 
+			designation, profession_id,atten_id) VALUES ('1', '1', '', '', 2015-06-04, '04/06/2015', '2015-06-04', '04/06/2015', '04/06/2015', '', '', '', '')<br><br><br>
+[04-Jun-2015 15:35:32 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:35:32 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:35:32 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\includes\db\employee_db.inc:205:<br>The visa could not be added<br>error code : 1136<br>error message : Column count doesn't match value count at row 1<br>sql that failed was : INSERT INTO 0_visa (emp_id,visa_no, file_no, id_card, visa_date_issued, visa_date_expiry,id_card_issued, id_card_expiry, 
+			designation, profession_id,atten_id) VALUES ('1', '1', '', '', 2015-06-04, '04/06/2015', '2015-06-04', '04/06/2015', '04/06/2015', '', '', '', '')<br><br><br>
+[04-Jun-2015 15:35:35 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:35:35 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:35:41 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:35:41 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:35:41 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\includes\db\employee_db.inc:262:<br>The employee could not be added<br>error code : 1136<br>error message : Column count doesn't match value count at row 1<br>sql that failed was : INSERT INTO 0_visa (emp_id,emp_code, emp_name, fathers_name, nationality, birth_place,birth_date, gender, passport_no, pspt_issue_date,pspt_expiry_date,pspt_issue_place,addr1,addr2,addr3,remark,site_allocation,absconded_date) VALUES ('1', '', '', '', '1', '', '2015-06-04', '0', '', '04/06/2015', '04/06/2015', '', '', '', '', '', '')<br><br><br>
+[04-Jun-2015 15:36:08 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:36:08 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:36:08 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:36:08 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:36:11 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:36:11 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:36:39 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:36:39 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:36:40 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:36:40 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:36:42 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:36:42 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:42:19 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:42:19 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:42:21 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:42:21 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:42:24 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:42:24 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:42:27 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:42:27 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:42:29 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:42:29 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:42:34 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:42:34 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:42:47 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:42:47 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:42:49 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:42:49 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:42:52 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:42:52 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:42:58 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:42:58 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:43:03 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:43:03 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:43:03 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:43:03 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:43:06 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:43:06 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:43:07 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:43:07 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:45:30 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:45:30 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:45:51 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:45:51 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:45:51 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:45:51 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:45:55 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:45:55 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:45:56 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:45:56 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:47:16 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:47:16 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:47:18 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:47:18 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:47:20 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:47:20 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:47:37 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:47:37 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:47:39 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:47:39 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:47:40 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:47:40 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:48:05 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:48:05 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:48:08 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:48:08 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:48:09 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:48:09 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:48:42 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:48:42 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:48:44 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:48:44 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:48:46 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:48:46 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:51:56 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:51:56 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:52:08 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:52:08 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:52:09 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:52:09 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:52:49 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:52:49 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:52:50 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:52:50 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:53:02 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:53:02 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:57:08 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:57:08 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:57:10 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:57:10 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:57:47 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:57:47 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:57:51 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:57:51 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:57:52 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:57:52 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:57:53 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:57:53 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:59:00 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:59:00 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:59:14 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:59:14 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:59:20 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:59:20 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:59:22 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:59:22 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:59:23 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:59:23 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:59:27 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:59:27 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:59:29 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:59:29 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 15:59:31 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 15:59:31 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 16:00:07 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 16:00:07 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 16:00:09 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 16:00:09 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 16:00:10 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 16:00:10 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 16:00:16 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 16:00:16 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')

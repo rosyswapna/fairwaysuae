@@ -262,4 +262,6 @@ CREATE TABLE IF NOT EXISTS `0_labour` (
 
 ALTER TABLE `0_labour`  ADD `emp_id` INT(11) NOT NULL AFTER `id`,  ADD INDEX (`emp_id`) ;
 
+ALTER TABLE `0_passport` ADD `emp_id` INT(11) NOT NULL AFTER `id`, ADD INDEX (`emp_id`) ;
 
+ALTER TABLE `0_visa` ADD `emp_id` INT(11) NOT NULL AFTER `id`, ADD INDEX (`emp_id`) ;
