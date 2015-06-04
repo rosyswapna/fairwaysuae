@@ -29,12 +29,9 @@ if ($use_date_picker)
 include_once($path_to_root . "/includes/date_functions.inc");
 include_once($path_to_root . "/includes/banking.inc");
 include_once($path_to_root . "/includes/ui.inc");
-
 include_once($path_to_root . "/modules/payroll/includes/payroll_db.inc");
-echo "hai";
 include_once($path_to_root . "/modules/payroll/includes/payroll_ui.inc");
 include_once($path_to_root . "/modules/payroll/labour.php");
-
 
 
 /////////////////////////////////////////////////////
@@ -111,7 +108,7 @@ function handle_submit(&$selected_id)
 				$_POST['EmpFrequency'], $_POST['EmpStatus'], $_POST['EmpAllowances'],
 				input_num('EmpExtraWH'), $_POST['EmpTaxId'], $_POST['EmpRole'], $_POST['EmpHireDate'], 
 				$_POST['EmpNotes'], $selected_id, get_post('EmpInactive'), get_post('EmpInactive') ? $_POST['EmpReleaseDate'] : null);
-		add_labour($_POST[labour_card]);
+		
 
 		//update_record_status($_POST['EmpId'], $_POST['EmpInactive'], 'employees', 'emp_id');//from sql_functions.inc
 		//TODO update release date for inactive employees
@@ -139,30 +136,44 @@ function handle_submit(&$selected_id)
 //-------------------------------------------------------------------------------------------submit1
 function handle_submit1(&$selected_id)
 {
-	global $Ajax;	
+	global $Ajax;
 	
-	if (check_num(get_post('labour_id'),0) )
+if ($_POST['labour_id'] == "")
+			$_POST['labour_id'] =0;
+	echo $_POST['labour_id'] ;
+	if (input_num('labour_id')>0)
 		{
-		
+		echo 'update';
 			update_labour($_POST['Labourcard'],$_POST['Labourcardissuedate'],$_POST['Labourcardexpirydate'],$_POST['HealthCard'],
 			$_POST['Healthcardissuedate'],$_POST['Healthcardexpirydate'],$_POST['HealthCardinformation'],$_POST['Phone'],$_POST['Email'],$selected_id);
+			
 		}
 	else
 		{
-			add_labour($_POST['Labourcard'],$_POST['Labourcardissuedate'],$_POST['Labourcardexpirydate'],$_POST['HealthCard'],
-			$_POST['Healthcardissuedate'],$_POST['Healthcardexpirydate'],$_POST['HealthCardinformation'],$_POST['Phone'],$_POST['Email']);
+			echo 'add';
+			add_labour($selected_id,$_POST['Labourcard'],$_POST['Labourcardissuedate'],$_POST['Labourcardexpirydate'],
+			$_POST['HealthCard'],$_POST['Healthcardissuedate'],$_POST['Healthcardexpirydate'],$_POST['HealthCardinformation'],
+			$_POST['Phone'],$_POST['Email']);
+			
 		}
 }
 function handle_submit2(&$selected_id)
 {
-	global $Ajax;	
-	if ($selected_id) 
+	global $Ajax;
+		if ($_POST['visa_id'] == "")
+			$_POST['visa_id'] =0;
+	echo $_POST['visa_id'] ;
+	if (input_num('visa_id')>0)
 	{
 		
 		update_visa($_POST['visa'],$_POST['fileno'],$_POST['idcardno'],$_POST['visaIssueDate'],$_POST['visaExpiryDate'],
 		$_POST['visaRenewDate'],$_POST['IdCardIssued'],$_POST['IdCardExpiry'],$_POST['designation'],
 		$_POST['designationvisa'],$_POST['profession'],$_POST['attenidno'],$selected_id);
 	}
+	else
+		add_visa($selected_id,$_POST['visa'],$_POST['fileno'],$_POST['idcardno'],$_POST['visaIssueDate'],$_POST['visaExpiryDate'],
+		$_POST['visaRenewDate'],$_POST['IdCardIssued'],$_POST['IdCardExpiry'],$_POST['designation'],
+		$_POST['designationvisa'],$_POST['profession'],$_POST['attenidno']);
 }
 
 function handle_submit3(&$selected_id)
@@ -428,7 +439,9 @@ function passport($selected_id)
 function visa($selected_id){
 	
 	if (!$selected_id) 
-	{
+	{	
+		$myrow = get_visa($selected_id);
+		$new_visa=true;
 	 	//if (list_updated('EmpId') || !isset($_POST['EmpId'])) {//what is this?
 			$_POST['Visa'] = $_POST['fileno'] = $_POST['Labourcardexpirydate'] = $_POST['HealthCard'] = $_POST['Healthcardissuedate'] = $_POST['Healthcardexpirydate'] = $_POST['HealthCardinformation'] = $_POST['Phone'] =
 			$_POST['Email'] = Today();
@@ -437,7 +450,8 @@ function visa($selected_id){
 	}
 	else 
 	{
-	    $myrow = get_visa($selected_id);
+	    $new_visa=false;
+		$_POST['visa_id']=$myrow["id"];
 	    $_POST['visa'] = $myrow["visa_no"];
 	    $_POST['fileno'] = $myrow["file_no"];
 	    $_POST['visaIssueDate'] =  sql2date($myrow["visa_date_issued"]);
@@ -455,6 +469,7 @@ function visa($selected_id){
 	start_outer_table(TABLESTYLE2);
 	table_section(1);
 	table_section_title(_("Visa"));
+	hidden("visa_id");
 	text_row(_("Visa:"), 'visa', $_POST['visa'], 40, 80);
 	text_row(_("File no:"), 'fileno',$_POST['fileno'], 40, 80);
 	date_row(_("visa  Date Issued:"), 'visaIssueDate',$_POST['visaIssueDate']);
@@ -469,8 +484,8 @@ function visa($selected_id){
 	text_row(_("Atten Id no:"), 'attenidno', $_POST['attenidno'], 40, 80);
 	end_outer_table(TABLESTYLE2);
 	div_start('controls');
-	if (!$selected_id)
-		submit_center('submit2', _("Add New Employee"), true, '', 'default');
+	if ($new_visa)
+		submit_center('submit2', _("Add visa"), true, '', 'default');
 	else 
 		submit_center('submit2', _("Update visa"), _('Update employee data'), @$_REQUEST['popup'] ? true : 'labourupdate');
 	
@@ -479,13 +494,14 @@ function visa($selected_id){
 
 function labour($selected_id){
 	 $myrow = get_labour($selected_id);
+	 //display_notification($myrow['id']);
 	 $new_labour=true;
 	if (!$myrow) 
 	{
 		
 	 	//if (list_updated('EmpId') || !isset($_POST['EmpId'])) {//what is this?
 			$_POST['Labourcard'] = $_POST['Labourcardissuedate'] = $_POST['Labourcardexpirydate'] = $_POST['HealthCard'] = $_POST['Healthcardissuedate'] = $_POST['Healthcardexpirydate'] = $_POST['HealthCardinformation'] = $_POST['Phone'] =
-			$_POST['Email'] = '';
+			$_POST['Email'] =$_POST['labour_id']= '';
   
 		//}
 	}
@@ -508,8 +524,7 @@ function labour($selected_id){
 	table_section(1);
 	table_section_title(_("Labour"));
 	hidden("labour_id");
-	text_row(_("Labour card:"), 'Labourcard',$_POST['labour_id'], 40, 80);
-	text_row(_("Labour card:"), 'Labourcard',$_POST['Labourcard'], 40, 80);
+	text_row(_("Labour card:"), 'Labourcard',$_POST['labour_card'], 40, 80);
 	date_row(_("Labour Card Issue Date:"), 'Labourcardissuedate', $_POST['Labourcardissuedate']);
 	date_row(_("Labour Card expiry Date:"), 'Labourcardexpirydate',$_POST['Labourcardexpirydate']);
 	text_row(_("Health card no:"), 'HealthCard',$_POST['HealthCard'], 40, 80);
@@ -520,6 +535,7 @@ function labour($selected_id){
 	text_row(_("Email:"), 'Email',$_POST['Email'], 40, 80);
 	end_outer_table(TABLESTYLE2);
 	div_start('controls');
+	//submit_center('submit1', _("Add Labour"), true);
 	if ($new_labour)
 		submit_center('submit1', _("Add Labour"), true, '', 'default');
 	else 
