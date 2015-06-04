@@ -157,8 +157,7 @@ function add_labour($selected_id,$labour_card,$lbr_card_isuue_date,$lbr_card_exp
 		db_query($sql,"The employee could not be added");
 			}			
 //--------------------------------------------------------------------------------------------
-function update_labour($labour_card,$lbr_card_isuue_date,$lbr_card_exp_date,$health_card_no,$hc_issue_date,$hc_exp_date,$hc_information,
-						$phone,$email,$selected_id){
+function update_labour($labour_card,$lbr_card_isuue_date,$lbr_card_exp_date,$health_card_no,$hc_issue_date,$hc_exp_date,$hc_information,$phone,$email,$id){
 
 	$sql="UPDATE ".TB_PREF."labour SET
 	labour_card=".db_escape($labour_card).",
@@ -170,7 +169,8 @@ function update_labour($labour_card,$lbr_card_isuue_date,$lbr_card_exp_date,$hea
 	hc_information=".db_escape($hc_information).",
 	phone=".db_escape($phone).",
 	email=".db_escape($email)."
-	WHERE id=".db_escape($selected_id);
+	WHERE id=".db_escape($id);
+//echo $sql;exit;
 	 db_query($sql,"The pay rate could not be added/updated");
 }
 function get_labour($selected_id)

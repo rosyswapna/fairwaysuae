@@ -140,20 +140,24 @@ function handle_submit1(&$selected_id)
 	
 if ($_POST['labour_id'] == "")
 			$_POST['labour_id'] =0;
-	echo $_POST['labour_id'] ;
+	
 	if (input_num('labour_id')>0)
 		{
-		echo 'update';
+		
 			update_labour($_POST['Labourcard'],$_POST['Labourcardissuedate'],$_POST['Labourcardexpirydate'],$_POST['HealthCard'],
-			$_POST['Healthcardissuedate'],$_POST['Healthcardexpirydate'],$_POST['HealthCardinformation'],$_POST['Phone'],$_POST['Email'],$selected_id);
+			$_POST['Healthcardissuedate'],$_POST['Healthcardexpirydate'],$_POST['HealthCardinformation'],$_POST['Phone'],$_POST['Email'],$_POST['labour_id']);
+
+			display_notification("Labour details Updated");
 			
 		}
 	else
 		{
-			echo 'add';
+			
 			add_labour($selected_id,$_POST['Labourcard'],$_POST['Labourcardissuedate'],$_POST['Labourcardexpirydate'],
 			$_POST['HealthCard'],$_POST['Healthcardissuedate'],$_POST['Healthcardexpirydate'],$_POST['HealthCardinformation'],
 			$_POST['Phone'],$_POST['Email']);
+
+			display_notification("Labour details Added");
 			
 		}
 }
