@@ -9,7 +9,7 @@
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  
     See the License here <http://www.gnu.org/licenses/gpl-3.0.html>.
 ***********************************************************************/
-$page_security = 'PAYRULE_STRUCTURE';
+$page_security = 'SA_PAYRULE_STRUCTURE';
 $path_to_root = "../../..";
 
 include($path_to_root . "/includes/db_pager.inc");
@@ -25,7 +25,9 @@ page(_($help_context = "Manage Payrule Structure"), @$_REQUEST['popup'], false, 
 
 include_once($path_to_root . "/includes/date_functions.inc");
 include_once($path_to_root . "/includes/ui.inc");
+
 include_once($path_to_root . "/modules/payroll/includes/db/payroll_structure_db.inc");
+include_once($path_to_root . "/modules/payroll/includes/db/jobpositions_db.inc");
 $selected_id = get_post('job_position_id','');
 //--------------------------------------------------------------------------------------------
 
@@ -119,23 +121,29 @@ function payroll_rule_settings($selected_id)
 	global $SysPrefs, $path_to_root;
 	
 	$new = true;
-	
-	if (!$selected_id) 
-	{	
-
-	
-	 	if (list_updated('job_position_id') || !isset($_POST['job_name'])) {
-			$_POST['job_name'] = '';
-			
+	foreach($_POST as $p =>$val) 
+	{
+		if (substr($p,0,7) == 'Payroll') 
+		{
+			$_POST[$p] = '';
 		}
 	}
-	else 
+	
+	if ($selected_id) 
 	{
-		$rsStr = get_payroll($selected_id);
-		if(db_num_rows($rsStr) > 0)
+		$payroll_structure = get_payroll_structure($selected_id);
+
+
+		if($payroll_structure){
 			$new = false;
-		else
-			$new = true;
+			foreach($payroll_structure['payroll_rule'] as $rule_code){
+				$_POST['Payroll'.$rule_code] = 1;
+			}
+			
+		}else{
+			
+		}
+
 		$_POST['job_position_id'] = $selected_id;
 	
 	}
@@ -151,7 +159,7 @@ function payroll_rule_settings($selected_id)
 
 	while($row_rule=db_fetch($result_rules))
 	{
-		check_row($row_rule["account_name"], 'Payroll'.$row_rule["account_code"]);	
+		check_row($row_rule["account_name"], 'Payroll'.$row_rule["account_code"],null);	
 	}
 end_table(1);
 

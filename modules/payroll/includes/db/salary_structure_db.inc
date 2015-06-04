@@ -52,7 +52,7 @@ function reset_salary_structure($job_position_id)
 function get_salary_structure($job_position_id){
 
 	$sql = "SELECT * FROM ".TB_PREF."salary_structure WHERE job_position_id =".db_escape($job_position_id);
-  
+
   	return db_query($sql, "Could not get salary structure");
 }
 

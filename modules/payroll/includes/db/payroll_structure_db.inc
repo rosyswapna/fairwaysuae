@@ -70,20 +70,21 @@ function get_all_payroll($active=true){
 }
 
 //--------------------------------------------------------------------------------------------
-function get_payroll($job_position_id)
+function get_payroll_structure($job_position_id)
 {
 	$sql = "SELECT * FROM ".TB_PREF."payroll_structure WHERE job_position_id=".db_escape($job_position_id);
 
 	$result = db_query($sql, "could not get jobnames");
 
-	return db_fetch($result);
+	$row = db_fetch($result);
+	if ($row != false) {
+		$row['payroll_rule'] = explode(';', $row['payroll_rule']);
+	}
+
+	return $row;
+
 }
 
-//--------------------------------------------------------------------------------------------
-function db_has_jobs()
-{
-	return check_empty_result("SELECT COUNT(*) FROM ".TB_PREF."payroll_structure");
-}
 
 
 
