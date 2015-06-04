@@ -150,7 +150,7 @@ function handle_submit1(&$selected_id)
 	else
 		{
 			add_labour($_POST['Labourcard'],$_POST['Labourcardissuedate'],$_POST['Labourcardexpirydate'],$_POST['HealthCard'],
-			$_POST['Healthcardissuedate'],$_POST['Healthcardexpirydate'],$_POST['HealthCardinformation'],$_POST['Phone'],$_POST['Email'],$selected_id);
+			$_POST['Healthcardissuedate'],$_POST['Healthcardexpirydate'],$_POST['HealthCardinformation'],$_POST['Phone'],$_POST['Email']);
 		}
 }
 function handle_submit2(&$selected_id)
