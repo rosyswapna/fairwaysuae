@@ -191,10 +191,71 @@ CREATE TABLE IF NOT EXISTS `0_salary_structure` (
 ALTER TABLE `0_employees`  ADD `job_position_id` INT(11) NOT NULL AFTER `emp_notes`,  ADD INDEX (`job_position_id`);
 
 
+----03june 2015
+-- Table structure for table `0_passport`
+--
+CREATE TABLE IF NOT EXISTS `0_passport` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `emp_code` int(11) NOT NULL,
+  `emp_name` varchar(50) NOT NULL,
+  `fathers_name` varchar(50) NOT NULL,
+  `nationality` varchar(15) NOT NULL,
+  `birth_place` varchar(15) NOT NULL,
+  `birth_date` date NOT NULL,
+  `gender` binary(10) NOT NULL,
+  `passport_no` varchar(50) NOT NULL,
+  `pspt_issue_date` date NOT NULL,
+  `pspt_expiry_date` date NOT NULL,
+  `pspt_issue_place` date NOT NULL,
+  `addr1` varchar(50) NOT NULL,
+  `addr2` varchar(50) NOT NULL,
+  `addr3` varchar(50) NOT NULL,
+  `remark` varchar(50) NOT NULL,
+  `site_allocation` varchar(50) NOT NULL,
+  `absconded_date` date NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `emp_code` (`emp_code`,`passport_no`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 
+-- Table structure for table `0_visa`
+--
+CREATE TABLE IF NOT EXISTS `0_visa` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `visa_no` varchar(15) NOT NULL,
+  `file_no` int(11) NOT NULL,
+  `id_card` varchar(15) NOT NULL,
+  `visa_date_issued` date NOT NULL,
+  `visa_date_expiry` date NOT NULL,
+  `visa_date_renew` date NOT NULL,
+  `id_card_issued` date NOT NULL,
+  `id_card_expiry` date NOT NULL,
+  `designation` varchar(15) NOT NULL,
+  `designation_visa` varchar(15) NOT NULL,
+  `profession_id` varchar(15) NOT NULL,
+  `atten_id` varchar(15) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `visa_no` (`visa_no`,`file_no`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 
+--
+-- Table structure for table `0_labour`
+--
 
+CREATE TABLE IF NOT EXISTS `0_labour` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `labour_card` varchar(15) DEFAULT NULL,
+  `lbr_card_isuue_date` date DEFAULT NULL,
+  `lbr_card_exp_date` date DEFAULT NULL,
+  `health_card_no` varchar(15) DEFAULT NULL,
+  `hc_issue_date` date DEFAULT NULL,
+  `hc_exp_date` date DEFAULT NULL,
+  `hc_information` varchar(15) NOT NULL,
+  `phone` int(11) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `labour_card` (`labour_card`,`health_card_no`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 

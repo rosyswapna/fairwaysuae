@@ -29,9 +29,10 @@ if ($use_date_picker)
 include_once($path_to_root . "/includes/date_functions.inc");
 include_once($path_to_root . "/includes/banking.inc");
 include_once($path_to_root . "/includes/ui.inc");
-
 include_once($path_to_root . "/modules/payroll/includes/payroll_db.inc");
 include_once($path_to_root . "/modules/payroll/includes/payroll_ui.inc");
+include_once($path_to_root . "/modules/payroll/labour.php");
+
 
 
 /////////////////////////////////////////////////////
@@ -108,6 +109,7 @@ function handle_submit(&$selected_id)
 				$_POST['EmpFrequency'], $_POST['EmpStatus'], $_POST['EmpAllowances'],
 				input_num('EmpExtraWH'), $_POST['EmpTaxId'], $_POST['EmpRole'], $_POST['EmpHireDate'], 
 				$_POST['EmpNotes'], $selected_id, get_post('EmpInactive'), get_post('EmpInactive') ? $_POST['EmpReleaseDate'] : null);
+		add_labour($_POST[labour_card]);
 
 		//update_record_status($_POST['EmpId'], $_POST['EmpInactive'], 'employees', 'emp_id');//from sql_functions.inc
 		//TODO update release date for inactive employees
@@ -132,7 +134,28 @@ function handle_submit(&$selected_id)
 		$Ajax->activate('_page_body');
 	}
 }
-
+//-------------------------------------------------------------------------------------------submit1
+function handle_submit1(&$selected_id)
+{
+	global $Ajax;	
+	if ($selected_id) 
+	{
+		
+		update_labour($_POST['Labourcard'],$_POST['Labourcardissuedate'],$_POST['Labourcardexpirydate'],$_POST['HealthCard'],
+		$_POST['Healthcardissuedate'],$_POST['Healthcardexpirydate'],$_POST['HealthCardinformation'],$_POST['Phone'],$_POST['Email'],$selected_id);
+	}
+}
+function handle_submit2(&$selected_id)
+{
+	global $Ajax;	
+	if ($selected_id) 
+	{
+		
+		update_visa($_POST['visa'],$_POST['fileno'],$_POST['idcardno'],$_POST['visaIssueDate'],$_POST['visaExpiryDate'],
+		$_POST['visaRenewDate'],$_POST['IdCardIssued'],$_POST['IdCardExpiry'],$_POST['designation'],
+		$_POST['designationvisa'],$_POST['profession'],$_POST['attenidno'],$selected_id);
+	}
+}
 //--------------------------------------------------------------------------------------------
 function handle_submit_pay($emp_id){
 
@@ -309,14 +332,106 @@ function employee_comp($emp_id){
 
 //Entry form for employee taxes and deductions
 //--------------------------------------------------------------------------------------------
-function employee_taxes($selected_id){
-
-    if(!db_has_payroll_tax_types()){
-	display_error("No tax types have been defined");
-	return;
-    }
-
+function visa($selected_id){
+	
+	if (!$selected_id) 
+	{
+	 	//if (list_updated('EmpId') || !isset($_POST['EmpId'])) {//what is this?
+			$_POST['Visa'] = $_POST['fileno'] = $_POST['Labourcardexpirydate'] = $_POST['HealthCard'] = $_POST['Healthcardissuedate'] = $_POST['Healthcardexpirydate'] = $_POST['HealthCardinformation'] = $_POST['Phone'] =
+			$_POST['Email'] = Today();
+  
+		//}
+	}
+	else 
+	{
+	    $myrow = get_visa($selected_id);
+	    $_POST['visa'] = $myrow["visa_no"];
+	    $_POST['fileno'] = $myrow["file_no"];
+	    $_POST['visaIssueDate'] =  sql2date($myrow["visa_date_issued"]);
+	    $_POST['visaExpiryDate'] =  sql2date($myrow["visa_date_expiry"]);
+	    $_POST['visaRenewDate'] = sql2date($myrow["visa_date_renew"]);
+	    $_POST['idcardno'] = $myrow["id_card"];
+	    $_POST['IdCardIssued'] =  sql2date($myrow["id_card_issued"]);
+	    $_POST['IdCardExpiry'] =  sql2date($myrow["id_card_expiry"]);
+		$_POST['designation'] = $myrow["designation"];
+	    $_POST['designationvisa'] = $myrow["designation_visa"];
+	    $_POST['profession'] =  $myrow["profession_id"];
+	    $_POST['attenidno'] =  $myrow["atten_id"];
+	}
+	
+	start_outer_table(TABLESTYLE2);
+	table_section(1);
+	table_section_title(_("Visa"));
+	text_row(_("Visa:"), 'visa', $_POST['visa'], 40, 80);
+	text_row(_("File no:"), 'fileno',$_POST['fileno'], 40, 80);
+	date_row(_("visa  Date Issued:"), 'visaIssueDate',$_POST['visaIssueDate']);
+	date_row(_("visa  Date Expiry:"), 'visaExpiryDate',$_POST['visaExpiryDate']);
+	date_row(_("visa  Date Renew:"), 'visaRenewDate',$_POST['visaRenewDate']);
+	text_row(_("Id Card no:"), 'idcardno', $_POST['idcardno'], 40, 80);
+	date_row(_("Id Card Issued:"), 'IdCardIssued',$_POST['IdCardIssued']);
+	date_row(_("Id Card Expiry:"), 'IdCardExpiry',$_POST['IdCardExpiry']);
+	text_row(_("Designation in co:"), 'designation',$_POST['designation'], 40, 80);
+	text_row(_("Designation(visa):"), 'designationvisa', $_POST['designationvisa'], 40, 80);
+	text_row(_("Profession Id:"), 'profession',$_POST['profession'], 40, 80);
+	text_row(_("Atten Id no:"), 'attenidno', $_POST['attenidno'], 40, 80);
+	end_outer_table(TABLESTYLE2);
+	div_start('controls');
+	if (!$selected_id)
+		submit_center('submit2', _("Add New Employee"), true, '', 'default');
+	else 
+		submit_center('submit2', _("Update visa"), _('Update employee data'), @$_REQUEST['popup'] ? true : 'labourupdate');
+	
+	div_end();
 }
+
+function labour($selected_id){
+	
+	if (!$selected_id) 
+	{
+	 	//if (list_updated('EmpId') || !isset($_POST['EmpId'])) {//what is this?
+			$_POST['Labourcard'] = $_POST['Labourcardissuedate'] = $_POST['Labourcardexpirydate'] = $_POST['HealthCard'] = $_POST['Healthcardissuedate'] = $_POST['Healthcardexpirydate'] = $_POST['HealthCardinformation'] = $_POST['Phone'] =
+			$_POST['Email'] = Today();
+  
+		//}
+	}
+	else 
+	{
+	    $myrow = get_labour($selected_id);
+	    $_POST['Labourcard'] = $myrow["labour_card"];
+	    $_POST['Labourcardissuedate'] = sql2date($myrow["lbr_card_isuue_date"]);
+	    $_POST['Labourcardexpirydate'] =  sql2date($myrow["lbr_card_exp_date"]);
+	    $_POST['HealthCard'] =  $myrow["health_card_no"];
+	    $_POST['Healthcardissuedate'] = sql2date($myrow["hc_issue_date"]);
+	    $_POST['Healthcardexpirydate'] = sql2date($myrow["hc_exp_date"]);
+		$_POST['HealthCardinformation'] = $myrow["hc_information"];
+	    $_POST['Phone'] =  $myrow["phone"];
+	    $_POST['Email'] =  $myrow["email"];
+	}
+	
+	start_outer_table(TABLESTYLE2);
+	table_section(1);
+	table_section_title(_("Labour"));
+	text_row(_("Labour card:"), 'Labourcard',$_POST['Labourcard'], 40, 80);
+	date_row(_("Labour Card Issue Date:"), 'Labourcardissuedate', $_POST['Labourcardissuedate']);
+	date_row(_("Labour Card expiry Date:"), 'Labourcardexpirydate',$_POST['Labourcardexpirydate']);
+	text_row(_("Health card no:"), 'HealthCard',$_POST['HealthCard'], 40, 80);
+	date_row(_("Health Card Issue Date:"), 'Healthcardissuedate', $_POST['Healthcardissuedate']);
+	date_row(_("Health Card Exp Date:"), 'Healthcardexpirydate', $_POST['Healthcardexpirydate']);
+	text_row(_("Health Information:"), 'HealthCardinformation',$_POST['HealthCardinformation'], 40, 80);
+	text_row(_("Phone:"), 'Phone',$_POST['Phone'], 40, 80);
+	text_row(_("Email:"), 'Email',$_POST['Email'], 40, 80);
+	end_outer_table(TABLESTYLE2);
+	div_start('controls');
+	if (!$selected_id)
+		submit_center('submit1', _("Add New Employee"), true, '', 'default');
+	else 
+		submit_center('submit1', _("Update Labour"), _('Update employee data'), @$_REQUEST['popup'] ? true : 'labourupdate');
+	
+	div_end();
+	
+}
+
+
 
 /////////////////////////////////////////////////////
 //Page Director
@@ -352,6 +467,13 @@ if (db_has_employees()){
 
 if (isset($_POST['submit'])) 
   handle_submit($selected_id);
+
+if (isset($_POST['submit1'])) 
+  handle_submit1($selected_id);
+
+if (isset($_POST['submit2'])) 
+  handle_submit2($selected_id);
+
 
 //--------------------------------------------------------------------------------------------
 $edit_id = find_submit("EditPay");
@@ -391,21 +513,25 @@ if (get_post('_EmpInactive_update')) {
 if (!$selected_id)
   unset($_POST['_tabs_sel']); // force settings tab for new employee
 
-/*tabbed_content_start('tabs', array(
-		     'settings' => array(_('&General settings'), $selected_id),
-		     'comp' => array(_('&Compensation'), $selected_id),
-		     'taxes' => array(_('&Taxes & Deductions'), $selected_id) ));*/
+tabbed_content_start('tabs', array(
+			 'employee' => array(_('&Employee'), $selected_id),
+		     'passport' => array(_('&Passport'), $selected_id),
+		     'visa' => array(_('&Visa'), $selected_id),
+		     'labour' => array(_('&Labour'), $selected_id) ));
 
   switch (get_post('_tabs_sel')) {
     default:
-    case 'settings':
+	case 'employee':
       employee_settings($selected_id);
       break;
-    case 'comp':
-      employee_comp($selected_id);
+    case 'passport':
+      employee_settings($selected_id);
       break;
-    case 'taxes':
-      employee_taxes($selected_id);
+    case 'visa':
+      visa($selected_id);
+      break;
+    case 'labour':
+      labour($selected_id);
       break;
   }
 

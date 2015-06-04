@@ -2102,3 +2102,873 @@
 [03-Jun-2015 06:43:55 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\includes\db\salary_structure_db.inc:30:<br>could not add salary structure<br>error code : 1054<br>error message : Champ 'pay_rule_id' inconnu dans field list<br>sql that failed was : INSERT INTO 0_salary_structure(date,job_position_id, pay_rule_id,pay_amount,type)VALUES ('2015-06-03','5','5410','50000','0')<br><br><br>
 [03-Jun-2015 06:43:55 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\includes\db\salary_structure_db.inc:30:<br>could not add salary structure<br>error code : 1054<br>error message : Champ 'pay_rule_id' inconnu dans field list<br>sql that failed was : INSERT INTO 0_salary_structure(date,job_position_id, pay_rule_id,pay_amount,type)VALUES ('2015-06-03','5','5410','50000','0')<br><br><br>
 [03-Jun-2015 06:54:50 Europe/Paris] 0:admin:connect_db.inc:114: mysql_num_rows() expects parameter 1 to be resource, boolean given
+[03-Jun-2015 07:05:21 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 67 and defined
+[03-Jun-2015 07:05:21 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 68 and defined
+[03-Jun-2015 07:05:21 Europe/Paris] 0:admin:ui_input.inc:374: Missing argument 2 for check_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 69 and defined
+[03-Jun-2015 07:05:21 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 67 and defined
+[03-Jun-2015 07:05:21 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 68 and defined
+[03-Jun-2015 07:05:21 Europe/Paris] 0:admin:ui_input.inc:374: Missing argument 2 for check_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 69 and defined
+[03-Jun-2015 07:05:21 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 67 and defined
+[03-Jun-2015 07:05:21 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 68 and defined
+[03-Jun-2015 07:05:21 Europe/Paris] 0:admin:ui_input.inc:374: Missing argument 2 for check_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 69 and defined
+[03-Jun-2015 07:05:21 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 67 and defined
+[03-Jun-2015 07:05:21 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 68 and defined
+[03-Jun-2015 07:05:21 Europe/Paris] 0:admin:ui_input.inc:374: Missing argument 2 for check_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 69 and defined
+[03-Jun-2015 07:07:00 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 67 and defined
+[03-Jun-2015 07:07:00 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 68 and defined
+[03-Jun-2015 07:07:00 Europe/Paris] 0:admin:ui_input.inc:374: Missing argument 2 for check_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 69 and defined
+[03-Jun-2015 07:07:00 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 67 and defined
+[03-Jun-2015 07:07:00 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 68 and defined
+[03-Jun-2015 07:07:00 Europe/Paris] 0:admin:ui_input.inc:374: Missing argument 2 for check_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 69 and defined
+[03-Jun-2015 07:07:00 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 67 and defined
+[03-Jun-2015 07:07:00 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 68 and defined
+[03-Jun-2015 07:07:00 Europe/Paris] 0:admin:ui_input.inc:374: Missing argument 2 for check_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 69 and defined
+[03-Jun-2015 07:07:00 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 67 and defined
+[03-Jun-2015 07:07:00 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 68 and defined
+[03-Jun-2015 07:07:00 Europe/Paris] 0:admin:ui_input.inc:374: Missing argument 2 for check_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 69 and defined
+[03-Jun-2015 07:07:02 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 67 and defined
+[03-Jun-2015 07:07:02 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 68 and defined
+[03-Jun-2015 07:07:02 Europe/Paris] 0:admin:ui_input.inc:374: Missing argument 2 for check_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 69 and defined
+[03-Jun-2015 07:07:02 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 67 and defined
+[03-Jun-2015 07:07:02 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 68 and defined
+[03-Jun-2015 07:07:02 Europe/Paris] 0:admin:ui_input.inc:374: Missing argument 2 for check_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 69 and defined
+[03-Jun-2015 07:07:22 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 67 and defined
+[03-Jun-2015 07:07:22 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 68 and defined
+[03-Jun-2015 07:07:22 Europe/Paris] 0:admin:ui_input.inc:374: Missing argument 2 for check_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 69 and defined
+[03-Jun-2015 07:07:22 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 67 and defined
+[03-Jun-2015 07:07:22 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 68 and defined
+[03-Jun-2015 07:07:22 Europe/Paris] 0:admin:ui_input.inc:374: Missing argument 2 for check_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 69 and defined
+[03-Jun-2015 07:07:38 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 67 and defined
+[03-Jun-2015 07:07:38 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 68 and defined
+[03-Jun-2015 07:07:38 Europe/Paris] 0:admin:ui_input.inc:374: Missing argument 2 for check_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 69 and defined
+[03-Jun-2015 07:07:38 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 67 and defined
+[03-Jun-2015 07:07:38 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 68 and defined
+[03-Jun-2015 07:07:38 Europe/Paris] 0:admin:ui_input.inc:374: Missing argument 2 for check_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 69 and defined
+[03-Jun-2015 07:20:11 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 67 and defined
+[03-Jun-2015 07:20:11 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 68 and defined
+[03-Jun-2015 07:20:11 Europe/Paris] 0:admin:ui_input.inc:374: Missing argument 2 for check_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 69 and defined
+[03-Jun-2015 07:20:11 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 67 and defined
+[03-Jun-2015 07:20:11 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 68 and defined
+[03-Jun-2015 07:20:11 Europe/Paris] 0:admin:ui_input.inc:374: Missing argument 2 for check_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 69 and defined
+[03-Jun-2015 07:20:11 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 67 and defined
+[03-Jun-2015 07:20:11 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 68 and defined
+[03-Jun-2015 07:20:11 Europe/Paris] 0:admin:ui_input.inc:374: Missing argument 2 for check_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 69 and defined
+[03-Jun-2015 07:20:11 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 67 and defined
+[03-Jun-2015 07:20:11 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 68 and defined
+[03-Jun-2015 07:20:12 Europe/Paris] 0:admin:ui_input.inc:374: Missing argument 2 for check_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 69 and defined
+[03-Jun-2015 07:20:34 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 67 and defined
+[03-Jun-2015 07:20:34 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 68 and defined
+[03-Jun-2015 07:20:34 Europe/Paris] 0:admin:ui_input.inc:374: Missing argument 2 for check_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 69 and defined
+[03-Jun-2015 07:20:34 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 67 and defined
+[03-Jun-2015 07:20:34 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 68 and defined
+[03-Jun-2015 07:20:34 Europe/Paris] 0:admin:ui_input.inc:374: Missing argument 2 for check_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 69 and defined
+[03-Jun-2015 07:20:34 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 67 and defined
+[03-Jun-2015 07:20:34 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 68 and defined
+[03-Jun-2015 07:20:34 Europe/Paris] 0:admin:ui_input.inc:374: Missing argument 2 for check_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 69 and defined
+[03-Jun-2015 07:20:34 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 67 and defined
+[03-Jun-2015 07:20:34 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 68 and defined
+[03-Jun-2015 07:20:34 Europe/Paris] 0:admin:ui_input.inc:374: Missing argument 2 for check_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 69 and defined
+[03-Jun-2015 07:20:37 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 3 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 37 and defined
+[03-Jun-2015 07:20:37 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 37 and defined
+[03-Jun-2015 07:20:37 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 37 and defined
+[03-Jun-2015 07:20:38 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 3 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 37 and defined
+[03-Jun-2015 07:20:38 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 37 and defined
+[03-Jun-2015 07:20:38 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 37 and defined
+[03-Jun-2015 07:22:42 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 67 and defined
+[03-Jun-2015 07:22:42 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 68 and defined
+[03-Jun-2015 07:22:42 Europe/Paris] 0:admin:ui_input.inc:374: Missing argument 2 for check_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 69 and defined
+[03-Jun-2015 07:22:42 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 67 and defined
+[03-Jun-2015 07:22:42 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 68 and defined
+[03-Jun-2015 07:22:42 Europe/Paris] 0:admin:ui_input.inc:374: Missing argument 2 for check_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 69 and defined
+[03-Jun-2015 07:22:42 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 67 and defined
+[03-Jun-2015 07:22:42 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 68 and defined
+[03-Jun-2015 07:22:42 Europe/Paris] 0:admin:ui_input.inc:374: Missing argument 2 for check_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 69 and defined
+[03-Jun-2015 07:22:42 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 67 and defined
+[03-Jun-2015 07:22:42 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 68 and defined
+[03-Jun-2015 07:22:42 Europe/Paris] 0:admin:ui_input.inc:374: Missing argument 2 for check_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 69 and defined
+[03-Jun-2015 07:23:05 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 67 and defined
+[03-Jun-2015 07:23:05 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 68 and defined
+[03-Jun-2015 07:23:05 Europe/Paris] 0:admin:ui_input.inc:374: Missing argument 2 for check_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 69 and defined
+[03-Jun-2015 07:23:05 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 67 and defined
+[03-Jun-2015 07:23:05 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 68 and defined
+[03-Jun-2015 07:23:05 Europe/Paris] 0:admin:ui_input.inc:374: Missing argument 2 for check_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 69 and defined
+[03-Jun-2015 07:23:05 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 67 and defined
+[03-Jun-2015 07:23:05 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 68 and defined
+[03-Jun-2015 07:23:05 Europe/Paris] 0:admin:ui_input.inc:374: Missing argument 2 for check_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 69 and defined
+[03-Jun-2015 07:23:05 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 67 and defined
+[03-Jun-2015 07:23:05 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 68 and defined
+[03-Jun-2015 07:23:05 Europe/Paris] 0:admin:ui_input.inc:374: Missing argument 2 for check_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 69 and defined
+[03-Jun-2015 07:28:26 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 67 and defined
+[03-Jun-2015 07:28:26 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 68 and defined
+[03-Jun-2015 07:28:26 Europe/Paris] 0:admin:ui_input.inc:374: Missing argument 2 for check_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 69 and defined
+[03-Jun-2015 07:28:26 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 67 and defined
+[03-Jun-2015 07:28:26 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 68 and defined
+[03-Jun-2015 07:28:26 Europe/Paris] 0:admin:ui_input.inc:374: Missing argument 2 for check_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 69 and defined
+[03-Jun-2015 07:28:26 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 67 and defined
+[03-Jun-2015 07:28:26 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 68 and defined
+[03-Jun-2015 07:28:26 Europe/Paris] 0:admin:ui_input.inc:374: Missing argument 2 for check_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 69 and defined
+[03-Jun-2015 07:28:26 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 67 and defined
+[03-Jun-2015 07:28:26 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 68 and defined
+[03-Jun-2015 07:28:26 Europe/Paris] 0:admin:ui_input.inc:374: Missing argument 2 for check_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 69 and defined
+[03-Jun-2015 07:54:41 Europe/Paris] 0:admin:connect_db.inc:114: mysql_num_rows() expects parameter 1 to be resource, array given
+[03-Jun-2015 09:43:53 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\data_checks.inc:462:<br>could not do check empty query<br>error code : 1146<br>error message : La table 'fair.0_payroll_tax_type' n'existe pas<br>sql that failed was : SELECT COUNT(*) FROM 0_payroll_tax_type<br><br><br>
+[03-Jun-2015 09:44:05 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\data_checks.inc:462:<br>could not do check empty query<br>error code : 1146<br>error message : La table 'fair.0_payroll_tax_type' n'existe pas<br>sql that failed was : SELECT COUNT(*) FROM 0_payroll_tax_type<br><br><br>
+[03-Jun-2015 09:44:06 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\data_checks.inc:462:<br>could not do check empty query<br>error code : 1146<br>error message : La table 'fair.0_payroll_tax_type' n'existe pas<br>sql that failed was : SELECT COUNT(*) FROM 0_payroll_tax_type<br><br><br>
+[03-Jun-2015 09:45:39 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\data_checks.inc:462:<br>could not do check empty query<br>error code : 1146<br>error message : La table 'fair.0_payroll_tax_type' n'existe pas<br>sql that failed was : SELECT COUNT(*) FROM 0_payroll_tax_type<br><br><br>
+[03-Jun-2015 09:45:45 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\data_checks.inc:462:<br>could not do check empty query<br>error code : 1146<br>error message : La table 'fair.0_payroll_tax_type' n'existe pas<br>sql that failed was : SELECT COUNT(*) FROM 0_payroll_tax_type<br><br><br>
+[03-Jun-2015 09:45:46 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\data_checks.inc:462:<br>could not do check empty query<br>error code : 1146<br>error message : La table 'fair.0_payroll_tax_type' n'existe pas<br>sql that failed was : SELECT COUNT(*) FROM 0_payroll_tax_type<br><br><br>
+[03-Jun-2015 09:46:05 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\data_checks.inc:462:<br>could not do check empty query<br>error code : 1146<br>error message : La table 'fair.0_payroll_tax_type' n'existe pas<br>sql that failed was : SELECT COUNT(*) FROM 0_payroll_tax_type<br><br><br>
+[03-Jun-2015 09:46:24 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 2 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\employees.php on line 319 and defined
+[03-Jun-2015 09:46:24 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 3 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\employees.php on line 319 and defined
+[03-Jun-2015 09:46:24 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\employees.php on line 319 and defined
+[03-Jun-2015 09:46:24 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\employees.php on line 319 and defined
+[03-Jun-2015 09:47:00 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 2 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\employees.php on line 319 and defined
+[03-Jun-2015 09:47:00 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 3 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\employees.php on line 319 and defined
+[03-Jun-2015 09:47:00 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\employees.php on line 319 and defined
+[03-Jun-2015 09:47:00 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\employees.php on line 319 and defined
+[03-Jun-2015 09:47:11 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 2 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\employees.php on line 318 and defined
+[03-Jun-2015 09:47:11 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 3 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\employees.php on line 318 and defined
+[03-Jun-2015 09:47:11 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\employees.php on line 318 and defined
+[03-Jun-2015 09:47:11 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\employees.php on line 318 and defined
+[03-Jun-2015 09:47:11 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\data_checks.inc:462:<br>could not do check empty query<br>error code : 1146<br>error message : La table 'fair.0_payroll_pay_type' n'existe pas<br>sql that failed was : SELECT COUNT(*) FROM 0_payroll_pay_type<br><br><br>
+[03-Jun-2015 09:47:12 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 2 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\employees.php on line 318 and defined
+[03-Jun-2015 09:47:12 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 3 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\employees.php on line 318 and defined
+[03-Jun-2015 09:47:12 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\employees.php on line 318 and defined
+[03-Jun-2015 09:47:12 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\employees.php on line 318 and defined
+[03-Jun-2015 09:51:45 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\employees.php on line 321 and defined
+[03-Jun-2015 09:54:44 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\employees.php on line 321 and defined
+[03-Jun-2015 09:54:44 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\employees.php on line 322 and defined
+[03-Jun-2015 09:55:05 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\employees.php on line 322 and defined
+[03-Jun-2015 09:55:38 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\data_checks.inc:462:<br>could not do check empty query<br>error code : 1146<br>error message : La table 'fair.0_payroll_pay_type' n'existe pas<br>sql that failed was : SELECT COUNT(*) FROM 0_payroll_pay_type<br><br><br>
+[03-Jun-2015 09:56:48 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\data_checks.inc:462:<br>could not do check empty query<br>error code : 1146<br>error message : La table 'fair.0_payroll_pay_type' n'existe pas<br>sql that failed was : SELECT COUNT(*) FROM 0_payroll_pay_type<br><br><br>
+[03-Jun-2015 09:57:01 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\data_checks.inc:462:<br>could not do check empty query<br>error code : 1146<br>error message : La table 'fair.0_payroll_pay_type' n'existe pas<br>sql that failed was : SELECT COUNT(*) FROM 0_payroll_pay_type<br><br><br>
+[03-Jun-2015 09:57:28 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\data_checks.inc:462:<br>could not do check empty query<br>error code : 1146<br>error message : La table 'fair.0_payroll_pay_type' n'existe pas<br>sql that failed was : SELECT COUNT(*) FROM 0_payroll_pay_type<br><br><br>
+[03-Jun-2015 09:58:26 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\data_checks.inc:462:<br>could not do check empty query<br>error code : 1146<br>error message : La table 'fair.0_payroll_pay_type' n'existe pas<br>sql that failed was : SELECT COUNT(*) FROM 0_payroll_pay_type<br><br><br>
+[03-Jun-2015 10:55:37 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\data_checks.inc:462:<br>could not do check empty query<br>error code : 1146<br>error message : La table 'fair.0_payroll_pay_type' n'existe pas<br>sql that failed was : SELECT COUNT(*) FROM 0_payroll_pay_type<br><br><br>
+[03-Jun-2015 10:59:18 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\data_checks.inc:462:<br>could not do check empty query<br>error code : 1146<br>error message : La table 'fair.0_payroll_pay_type' n'existe pas<br>sql that failed was : SELECT COUNT(*) FROM 0_payroll_pay_type<br><br><br>
+[03-Jun-2015 11:02:03 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\data_checks.inc:462:<br>could not do check empty query<br>error code : 1146<br>error message : La table 'fair.0_payroll_pay_type' n'existe pas<br>sql that failed was : SELECT COUNT(*) FROM 0_payroll_pay_type<br><br><br>
+[03-Jun-2015 11:03:36 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\data_checks.inc:462:<br>could not do check empty query<br>error code : 1146<br>error message : La table 'fair.0_payroll_pay_type' n'existe pas<br>sql that failed was : SELECT COUNT(*) FROM 0_payroll_pay_type<br><br><br>
+[03-Jun-2015 11:03:58 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\data_checks.inc:462:<br>could not do check empty query<br>error code : 1146<br>error message : La table 'fair.0_payroll_pay_type' n'existe pas<br>sql that failed was : SELECT COUNT(*) FROM 0_payroll_pay_type<br><br><br>
+[03-Jun-2015 11:26:18 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\data_checks.inc:462:<br>could not do check empty query<br>error code : 1146<br>error message : La table 'fair.0_payroll_pay_type' n'existe pas<br>sql that failed was : SELECT COUNT(*) FROM 0_payroll_pay_type<br><br><br>
+[03-Jun-2015 11:26:24 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\data_checks.inc:462:<br>could not do check empty query<br>error code : 1146<br>error message : La table 'fair.0_payroll_pay_type' n'existe pas<br>sql that failed was : SELECT COUNT(*) FROM 0_payroll_pay_type<br><br><br>
+[03-Jun-2015 11:28:13 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\data_checks.inc:462:<br>could not do check empty query<br>error code : 1146<br>error message : La table 'fair.0_payroll_pay_type' n'existe pas<br>sql that failed was : SELECT COUNT(*) FROM 0_payroll_pay_type<br><br><br>
+[03-Jun-2015 11:39:15 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\data_checks.inc:462:<br>could not do check empty query<br>error code : 1146<br>error message : La table 'fair.0_payroll_pay_type' n'existe pas<br>sql that failed was : SELECT COUNT(*) FROM 0_payroll_pay_type<br><br><br>
+[03-Jun-2015 11:41:00 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\data_checks.inc:462:<br>could not do check empty query<br>error code : 1146<br>error message : La table 'fair.0_payroll_pay_type' n'existe pas<br>sql that failed was : SELECT COUNT(*) FROM 0_payroll_pay_type<br><br><br>
+[03-Jun-2015 11:41:47 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\data_checks.inc:462:<br>could not do check empty query<br>error code : 1146<br>error message : La table 'fair.0_payroll_pay_type' n'existe pas<br>sql that failed was : SELECT COUNT(*) FROM 0_payroll_pay_type<br><br><br>
+[03-Jun-2015 11:43:46 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\data_checks.inc:462:<br>could not do check empty query<br>error code : 1146<br>error message : La table 'fair.0_payroll_pay_type' n'existe pas<br>sql that failed was : SELECT COUNT(*) FROM 0_payroll_pay_type<br><br><br>
+[03-Jun-2015 11:44:05 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\data_checks.inc:462:<br>could not do check empty query<br>error code : 1146<br>error message : La table 'fair.0_payroll_pay_type' n'existe pas<br>sql that failed was : SELECT COUNT(*) FROM 0_payroll_pay_type<br><br><br>
+[03-Jun-2015 11:44:47 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\data_checks.inc:462:<br>could not do check empty query<br>error code : 1146<br>error message : La table 'fair.0_payroll_pay_type' n'existe pas<br>sql that failed was : SELECT COUNT(*) FROM 0_payroll_pay_type<br><br><br>
+[03-Jun-2015 11:52:14 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\data_checks.inc:462:<br>could not do check empty query<br>error code : 1146<br>error message : La table 'fair.0_payroll_pay_type' n'existe pas<br>sql that failed was : SELECT COUNT(*) FROM 0_payroll_pay_type<br><br><br>
+[03-Jun-2015 11:56:57 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\data_checks.inc:462:<br>could not do check empty query<br>error code : 1146<br>error message : La table 'fair.0_payroll_pay_type' n'existe pas<br>sql that failed was : SELECT COUNT(*) FROM 0_payroll_pay_type<br><br><br>
+[03-Jun-2015 11:57:00 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\data_checks.inc:462:<br>could not do check empty query<br>error code : 1146<br>error message : La table 'fair.0_payroll_pay_type' n'existe pas<br>sql that failed was : SELECT COUNT(*) FROM 0_payroll_pay_type<br><br><br>
+[03-Jun-2015 12:18:21 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\data_checks.inc:462:<br>could not do check empty query<br>error code : 1146<br>error message : La table 'fair.0_payroll_pay_type' n'existe pas<br>sql that failed was : SELECT COUNT(*) FROM 0_payroll_pay_type<br><br><br>
+[03-Jun-2015 12:19:40 Europe/Paris] 0:admin:employees.php:35: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:19:40 Europe/Paris] 0:admin:employees.php:35: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:19:42 Europe/Paris] 0:admin:employees.php:35: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:19:42 Europe/Paris] 0:admin:employees.php:35: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:19:43 Europe/Paris] 0:admin:employees.php:35: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:19:43 Europe/Paris] 0:admin:employees.php:35: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:19:45 Europe/Paris] 0:admin:employees.php:35: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:19:45 Europe/Paris] 0:admin:employees.php:35: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:19:45 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\data_checks.inc:462:<br>could not do check empty query<br>error code : 1146<br>error message : La table 'fair.0_payroll_pay_type' n'existe pas<br>sql that failed was : SELECT COUNT(*) FROM 0_payroll_pay_type<br><br><br>
+[03-Jun-2015 12:19:46 Europe/Paris] 0:admin:employees.php:35: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:19:46 Europe/Paris] 0:admin:employees.php:35: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:19:48 Europe/Paris] 0:admin:employees.php:35: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:19:48 Europe/Paris] 0:admin:employees.php:35: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:19:48 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\data_checks.inc:462:<br>could not do check empty query<br>error code : 1146<br>error message : La table 'fair.0_payroll_pay_type' n'existe pas<br>sql that failed was : SELECT COUNT(*) FROM 0_payroll_pay_type<br><br><br>
+[03-Jun-2015 12:19:49 Europe/Paris] 0:admin:employees.php:35: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:19:49 Europe/Paris] 0:admin:employees.php:35: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:19:50 Europe/Paris] 0:admin:employees.php:35: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:19:50 Europe/Paris] 0:admin:employees.php:35: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:19:51 Europe/Paris] 0:admin:employees.php:35: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:19:51 Europe/Paris] 0:admin:employees.php:35: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:19:51 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\data_checks.inc:462:<br>could not do check empty query<br>error code : 1146<br>error message : La table 'fair.0_payroll_pay_type' n'existe pas<br>sql that failed was : SELECT COUNT(*) FROM 0_payroll_pay_type<br><br><br>
+[03-Jun-2015 12:19:52 Europe/Paris] 0:admin:employees.php:35: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:19:52 Europe/Paris] 0:admin:employees.php:35: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:20:33 Europe/Paris] 0:admin:employees.php:35: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:20:33 Europe/Paris] 0:admin:employees.php:35: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:20:33 Europe/Paris] 0:admin:employees.php:35: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:20:33 Europe/Paris] 0:admin:employees.php:35: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:20:36 Europe/Paris] 0:admin:employees.php:35: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:20:36 Europe/Paris] 0:admin:employees.php:35: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:20:38 Europe/Paris] 0:admin:employees.php:35: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:20:38 Europe/Paris] 0:admin:employees.php:35: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:20:40 Europe/Paris] 0:admin:employees.php:35: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:20:40 Europe/Paris] 0:admin:employees.php:35: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:21:18 Europe/Paris] 0:admin:employees.php:35: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:21:18 Europe/Paris] 0:admin:employees.php:35: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:21:20 Europe/Paris] 0:admin:employees.php:35: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:21:20 Europe/Paris] 0:admin:employees.php:35: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:21:20 Europe/Paris] 0:admin:employees.php:35: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:21:20 Europe/Paris] 0:admin:employees.php:35: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:21:21 Europe/Paris] 0:admin:employees.php:35: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:21:21 Europe/Paris] 0:admin:employees.php:35: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:21:21 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\data_checks.inc:462:<br>could not do check empty query<br>error code : 1146<br>error message : La table 'fair.0_payroll_pay_type' n'existe pas<br>sql that failed was : SELECT COUNT(*) FROM 0_payroll_pay_type<br><br><br>
+[03-Jun-2015 12:22:30 Europe/Paris] 0:admin:employees.php:35: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:22:30 Europe/Paris] 0:admin:employees.php:35: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:22:32 Europe/Paris] 0:admin:employees.php:35: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:22:32 Europe/Paris] 0:admin:employees.php:35: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:22:33 Europe/Paris] 0:admin:employees.php:35: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:22:33 Europe/Paris] 0:admin:employees.php:35: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:22:33 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\data_checks.inc:462:<br>could not do check empty query<br>error code : 1146<br>error message : La table 'fair.0_payroll_tax_type' n'existe pas<br>sql that failed was : SELECT COUNT(*) FROM 0_payroll_tax_type<br><br><br>
+[03-Jun-2015 12:22:35 Europe/Paris] 0:admin:employees.php:35: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:22:35 Europe/Paris] 0:admin:employees.php:35: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:22:35 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\data_checks.inc:462:<br>could not do check empty query<br>error code : 1146<br>error message : La table 'fair.0_payroll_pay_type' n'existe pas<br>sql that failed was : SELECT COUNT(*) FROM 0_payroll_pay_type<br><br><br>
+[03-Jun-2015 12:22:36 Europe/Paris] 0:admin:employees.php:35: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:22:36 Europe/Paris] 0:admin:employees.php:35: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:22:37 Europe/Paris] 0:admin:employees.php:35: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:22:37 Europe/Paris] 0:admin:employees.php:35: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:22:37 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\data_checks.inc:462:<br>could not do check empty query<br>error code : 1146<br>error message : La table 'fair.0_payroll_tax_type' n'existe pas<br>sql that failed was : SELECT COUNT(*) FROM 0_payroll_tax_type<br><br><br>
+[03-Jun-2015 12:22:59 Europe/Paris] 0:admin:employees.php:35: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:22:59 Europe/Paris] 0:admin:employees.php:35: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:23:02 Europe/Paris] 0:admin:employees.php:35: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:23:02 Europe/Paris] 0:admin:employees.php:35: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:23:03 Europe/Paris] 0:admin:employees.php:35: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:23:03 Europe/Paris] 0:admin:employees.php:35: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:23:05 Europe/Paris] 0:admin:employees.php:35: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:23:05 Europe/Paris] 0:admin:employees.php:35: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:23:05 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\data_checks.inc:462:<br>could not do check empty query<br>error code : 1146<br>error message : La table 'fair.0_payroll_pay_type' n'existe pas<br>sql that failed was : SELECT COUNT(*) FROM 0_payroll_pay_type<br><br><br>
+[03-Jun-2015 12:24:33 Europe/Paris] 0:admin:employees.php:35: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:24:33 Europe/Paris] 0:admin:employees.php:35: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:24:35 Europe/Paris] 0:admin:employees.php:35: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:24:35 Europe/Paris] 0:admin:employees.php:35: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:24:35 Europe/Paris] 0:admin:employees.php:35: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:24:36 Europe/Paris] 0:admin:employees.php:35: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:25:17 Europe/Paris] 0:admin:employees.php:35: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:25:17 Europe/Paris] 0:admin:employees.php:35: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:25:20 Europe/Paris] 0:admin:employees.php:35: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:25:20 Europe/Paris] 0:admin:employees.php:35: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:25:20 Europe/Paris] 0:admin:employees.php:35: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:25:20 Europe/Paris] 0:admin:employees.php:35: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:25:22 Europe/Paris] 0:admin:employees.php:35: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:25:22 Europe/Paris] 0:admin:employees.php:35: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:25:22 Europe/Paris] 0:admin:employees.php:35: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:25:22 Europe/Paris] 0:admin:employees.php:35: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:25:27 Europe/Paris] 0:admin:employees.php:35: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:25:27 Europe/Paris] 0:admin:employees.php:35: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:26:39 Europe/Paris] 0:admin:employees.php:35: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:26:39 Europe/Paris] 0:admin:employees.php:35: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:26:43 Europe/Paris] 0:admin:employees.php:35: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:26:43 Europe/Paris] 0:admin:employees.php:35: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:26:46 Europe/Paris] 0:admin:employees.php:35: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:26:46 Europe/Paris] 0:admin:employees.php:35: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:26:46 Europe/Paris] 0:admin:employees.php:35: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:26:46 Europe/Paris] 0:admin:employees.php:35: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:26:49 Europe/Paris] 0:admin:employees.php:35: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:26:49 Europe/Paris] 0:admin:employees.php:35: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:26:50 Europe/Paris] 0:admin:employees.php:35: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:26:50 Europe/Paris] 0:admin:employees.php:35: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:26:55 Europe/Paris] 0:admin:employees.php:35: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:26:55 Europe/Paris] 0:admin:employees.php:35: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:28:13 Europe/Paris] 0:admin:employees.php:35: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:28:13 Europe/Paris] 0:admin:employees.php:35: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:28:13 Europe/Paris] 0:admin:employees.php:35: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:28:13 Europe/Paris] 0:admin:employees.php:35: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:28:15 Europe/Paris] 0:admin:employees.php:35: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:28:15 Europe/Paris] 0:admin:employees.php:35: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:28:16 Europe/Paris] 0:admin:employees.php:35: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:28:16 Europe/Paris] 0:admin:employees.php:35: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:28:57 Europe/Paris] 0:admin:employees.php:35: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:28:57 Europe/Paris] 0:admin:employees.php:35: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:28:59 Europe/Paris] 0:admin:employees.php:35: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:28:59 Europe/Paris] 0:admin:employees.php:35: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:29:01 Europe/Paris] 0:admin:employees.php:35: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:29:01 Europe/Paris] 0:admin:employees.php:35: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:30:28 Europe/Paris] 0:admin:employees.php:35: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:30:28 Europe/Paris] 0:admin:employees.php:35: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:30:32 Europe/Paris] 0:admin:employees.php:35: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:30:32 Europe/Paris] 0:admin:employees.php:35: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:30:33 Europe/Paris] 0:admin:employees.php:35: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:30:33 Europe/Paris] 0:admin:employees.php:35: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:33:09 Europe/Paris] 0:admin:employees.php:35: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:33:09 Europe/Paris] 0:admin:employees.php:35: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:33:09 Europe/Paris] 0:admin:employees.php:35: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:33:09 Europe/Paris] 0:admin:employees.php:35: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:33:11 Europe/Paris] 0:admin:employees.php:35: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:33:11 Europe/Paris] 0:admin:employees.php:35: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:33:12 Europe/Paris] 0:admin:employees.php:35: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:33:12 Europe/Paris] 0:admin:employees.php:35: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:33:17 Europe/Paris] 0:admin:employees.php:35: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:33:17 Europe/Paris] 0:admin:employees.php:35: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:36:32 Europe/Paris] 0:admin:employees.php:35: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:36:32 Europe/Paris] 0:admin:employees.php:35: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:36:35 Europe/Paris] 0:admin:employees.php:35: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:36:35 Europe/Paris] 0:admin:employees.php:35: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:36:35 Europe/Paris] 0:admin:employees.php:35: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:36:35 Europe/Paris] 0:admin:employees.php:35: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:36:38 Europe/Paris] 0:admin:employees.php:35: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:36:38 Europe/Paris] 0:admin:employees.php:35: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:37:20 Europe/Paris] 0:admin:employees.php:35: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:37:20 Europe/Paris] 0:admin:employees.php:35: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:37:20 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\data_checks.inc:462:<br>could not do check empty query<br>error code : 1146<br>error message : La table 'fair.0_payroll_pay_type' n'existe pas<br>sql that failed was : SELECT COUNT(*) FROM 0_payroll_pay_type<br><br><br>
+[03-Jun-2015 12:37:21 Europe/Paris] 0:admin:employees.php:35: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:37:21 Europe/Paris] 0:admin:employees.php:35: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:41:50 Europe/Paris] 0:admin:employees.php:35: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:41:50 Europe/Paris] 0:admin:employees.php:35: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:42:18 Europe/Paris] 0:admin:employees.php:35: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:42:18 Europe/Paris] 0:admin:employees.php:35: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:49:57 Europe/Paris] 0:admin:employees.php:35: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:49:57 Europe/Paris] 0:admin:employees.php:35: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:49:57 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\includes\db\employee_db.inc:147:<br>The pay rate could not be added/updated<br>error code : 1064<br>error message : Erreur de syntaxe près de '/    /,
+	WHERE id=234' à la ligne 2<br>sql that failed was : UPDATE 0_labour SET
+	labour_card=    /    /,
+	WHERE id=234<br><br><br>
+[03-Jun-2015 12:50:36 Europe/Paris] 0:admin:employees.php:35: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:50:36 Europe/Paris] 0:admin:employees.php:35: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:50:36 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\includes\db\employee_db.inc:147:<br>The pay rate could not be added/updated<br>error code : 1064<br>error message : Erreur de syntaxe près de '/    /,
+	WHERE id=234' à la ligne 2<br>sql that failed was : UPDATE 0_labour SET
+	labour_card=    /    /,
+	WHERE id=234<br><br><br>
+[03-Jun-2015 12:50:49 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:50:49 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:50:49 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\includes\db\employee_db.inc:147:<br>The pay rate could not be added/updated<br>error code : 1064<br>error message : Erreur de syntaxe près de '/    /,
+	WHERE id=234' à la ligne 2<br>sql that failed was : UPDATE 0_labour SET
+	labour_card=    /    /,
+	WHERE id=234<br><br><br>
+[03-Jun-2015 12:54:06 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:54:06 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:54:06 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\includes\db\employee_db.inc:147:<br>The pay rate could not be added/updated<br>error code : 1054<br>error message : Champ 'emp_notes' inconnu dans field list<br>sql that failed was : UPDATE 0_labour SET
+	emp_notes=''
+	WHERE id='    /    /'<br><br><br>
+[03-Jun-2015 12:54:10 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:54:10 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:54:10 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:54:10 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:54:13 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:54:13 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:54:14 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:54:14 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:54:19 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:54:19 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:54:19 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\includes\db\employee_db.inc:147:<br>The pay rate could not be added/updated<br>error code : 1054<br>error message : Champ 'emp_notes' inconnu dans field list<br>sql that failed was : UPDATE 0_labour SET
+	emp_notes=''
+	WHERE id='    /    /'<br><br><br>
+[03-Jun-2015 12:54:36 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:54:36 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:54:36 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:54:36 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:54:38 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:54:38 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:54:39 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:54:39 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:54:43 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:54:43 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:54:43 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\includes\db\employee_db.inc:147:<br>The pay rate could not be added/updated<br>error code : 1054<br>error message : Champ 'emp_notes' inconnu dans field list<br>sql that failed was : UPDATE 0_labour SET
+	emp_notes=''
+	WHERE id='    /    /'<br><br><br>
+[03-Jun-2015 12:57:11 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:57:11 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:57:11 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:57:11 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:57:14 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:57:14 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:57:15 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:57:15 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:58:03 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:58:03 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:58:06 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:58:06 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:58:06 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:58:06 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:58:09 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:58:09 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:58:11 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:58:11 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:58:16 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:58:16 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:58:16 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\includes\db\employee_db.inc:147:<br>The pay rate could not be added/updated<br>error code : 1054<br>error message : Champ 'emp_notes' inconnu dans field list<br>sql that failed was : UPDATE 0_labour SET
+	emp_notes=''
+	WHERE id='    /    /'<br><br><br>
+[03-Jun-2015 12:59:39 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:59:39 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:59:39 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\includes\db\employee_db.inc:147:<br>The pay rate could not be added/updated<br>error code : 1054<br>error message : Champ 'emp_notes' inconnu dans field list<br>sql that failed was : UPDATE 0_labour SET
+	emp_notes=''
+	WHERE id='1'<br><br><br>
+[03-Jun-2015 12:59:41 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:59:41 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:59:42 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:59:42 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:59:44 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:59:44 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:59:45 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:59:45 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:59:49 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 12:59:49 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 12:59:49 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\includes\db\employee_db.inc:147:<br>The pay rate could not be added/updated<br>error code : 1054<br>error message : Champ 'emp_notes' inconnu dans field list<br>sql that failed was : UPDATE 0_labour SET
+	emp_notes=''
+	WHERE id='1'<br><br><br>
+[03-Jun-2015 13:00:48 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 13:00:48 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 13:00:48 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 13:00:48 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 13:00:50 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 13:00:50 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 13:00:51 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 13:00:51 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 13:00:56 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 13:00:56 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 13:16:04 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 13:16:04 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 13:16:08 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 13:16:08 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 13:16:08 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 13:16:08 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 13:16:11 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 13:16:11 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 13:16:12 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 13:16:12 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 13:16:35 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 13:16:35 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 13:17:41 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 13:17:42 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 13:24:48 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 13:24:48 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 13:24:48 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 13:24:48 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 13:24:51 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 13:24:51 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 13:24:52 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 13:24:52 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 13:25:03 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 13:25:03 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 13:25:18 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 13:25:18 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 13:25:38 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 13:25:38 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 13:36:51 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 13:36:51 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 13:36:51 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 13:36:51 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 13:38:32 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 13:38:32 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 13:38:33 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 13:38:33 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 13:40:22 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 13:40:22 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 13:40:22 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\data_checks.inc:462:<br>could not do check empty query<br>error code : 1146<br>error message : La table 'fair.0_payroll_pay_type' n'existe pas<br>sql that failed was : SELECT COUNT(*) FROM 0_payroll_pay_type<br><br><br>
+[03-Jun-2015 13:40:23 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 13:40:23 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 13:41:03 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 13:41:03 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 13:41:05 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 13:41:05 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 13:41:06 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 13:41:06 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 13:41:53 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 13:41:53 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 13:41:56 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 13:41:56 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 13:41:57 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 13:41:57 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 13:42:35 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 13:42:35 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 13:43:29 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 13:43:29 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 13:43:34 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 13:43:34 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 13:43:37 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 13:43:37 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 13:43:37 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 13:43:37 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 13:43:39 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 13:43:39 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 13:43:40 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 13:43:40 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 13:45:43 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 13:45:43 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 13:45:46 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 13:45:46 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 13:45:47 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 13:45:47 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 13:46:08 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 13:46:08 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 13:47:25 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 13:47:25 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 13:47:29 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 13:47:29 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 13:47:29 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\data_checks.inc:462:<br>could not do check empty query<br>error code : 1146<br>error message : La table 'fair.0_payroll_pay_type' n'existe pas<br>sql that failed was : SELECT COUNT(*) FROM 0_payroll_pay_type<br><br><br>
+[03-Jun-2015 13:47:30 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 13:47:30 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 13:47:35 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 13:47:35 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 13:48:27 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 13:48:27 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 13:48:31 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 13:48:31 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 13:48:43 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 13:48:43 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 13:48:43 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\data_checks.inc:462:<br>could not do check empty query<br>error code : 1146<br>error message : La table 'fair.0_payroll_pay_type' n'existe pas<br>sql that failed was : SELECT COUNT(*) FROM 0_payroll_pay_type<br><br><br>
+[03-Jun-2015 13:48:44 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 13:48:44 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 13:48:46 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 13:48:46 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 13:48:46 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\data_checks.inc:462:<br>could not do check empty query<br>error code : 1146<br>error message : La table 'fair.0_payroll_pay_type' n'existe pas<br>sql that failed was : SELECT COUNT(*) FROM 0_payroll_pay_type<br><br><br>
+[03-Jun-2015 13:48:47 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 13:48:47 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 13:50:08 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 13:50:08 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 13:50:08 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\data_checks.inc:462:<br>could not do check empty query<br>error code : 1146<br>error message : La table 'fair.0_payroll_pay_type' n'existe pas<br>sql that failed was : SELECT COUNT(*) FROM 0_payroll_pay_type<br><br><br>
+[03-Jun-2015 13:50:09 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 13:50:09 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 13:50:10 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 13:50:10 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 13:50:10 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\data_checks.inc:462:<br>could not do check empty query<br>error code : 1146<br>error message : La table 'fair.0_payroll_pay_type' n'existe pas<br>sql that failed was : SELECT COUNT(*) FROM 0_payroll_pay_type<br><br><br>
+[03-Jun-2015 13:56:50 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 13:56:50 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 13:56:50 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 13:56:50 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 13:56:52 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 13:56:52 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 13:56:53 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 13:56:53 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 14:00:21 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 14:00:21 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 14:00:24 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 14:00:24 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 14:00:25 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 14:00:25 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 14:02:36 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 14:02:36 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 14:02:36 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 14:02:36 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 14:13:50 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 14:13:50 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 14:13:55 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 14:13:55 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 14:13:56 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 14:13:56 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 14:18:33 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 14:18:33 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 14:18:52 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 14:18:52 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 14:18:53 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 14:18:53 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 14:18:54 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 14:18:54 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 14:18:55 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 14:18:55 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 14:18:57 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 14:18:57 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 14:19:06 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 14:19:06 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 14:19:19 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 14:19:19 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 14:19:26 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 14:19:26 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 14:19:44 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 14:19:44 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 14:19:55 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 14:19:55 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 14:20:01 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 14:20:01 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 14:20:30 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 14:20:30 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 14:20:32 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 14:20:32 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 14:21:22 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 14:21:22 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 14:21:23 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 14:21:23 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 14:21:35 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 14:21:35 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 14:21:37 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 14:21:37 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 14:21:54 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 14:21:54 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 14:27:12 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 14:27:12 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 14:27:16 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 14:27:16 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 14:27:16 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 14:27:16 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 14:27:18 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 14:27:18 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 14:27:20 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 14:27:20 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 14:27:22 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 14:27:22 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 14:27:35 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 14:27:35 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 14:30:01 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 14:30:01 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 14:30:55 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 14:30:55 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 14:32:14 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 14:32:14 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 14:32:15 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 14:32:15 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 14:32:24 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 14:32:24 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 14:33:08 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 14:33:08 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 14:33:32 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 14:33:32 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 14:34:09 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 14:34:09 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 14:39:41 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 14:39:41 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 14:41:55 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 14:41:55 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 14:47:09 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 14:47:09 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 14:47:31 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 14:47:31 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 14:53:26 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 14:53:26 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 14:56:51 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 14:56:51 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 14:56:54 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 14:56:54 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 14:57:01 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 14:57:01 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 14:57:01 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 14:57:01 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 14:57:04 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 14:57:04 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 14:57:05 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 14:57:05 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 14:57:06 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 14:57:06 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 14:57:08 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 14:57:08 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 14:59:45 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 14:59:45 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 14:59:45 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 14:59:45 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 14:59:48 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 14:59:48 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 14:59:49 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 14:59:49 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 15:00:16 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 15:00:16 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 15:00:19 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 15:00:19 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 15:00:20 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 15:00:20 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 15:00:33 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 15:00:33 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 15:00:38 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 15:00:38 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 15:00:38 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 15:00:38 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 15:00:41 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 15:00:41 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 15:00:42 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 15:00:42 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 15:02:31 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 15:02:31 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 15:02:31 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 15:02:31 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 15:02:34 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 15:02:34 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 15:02:36 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 15:02:36 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 15:03:45 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 15:03:45 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 15:03:49 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 15:03:49 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 15:03:52 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 15:03:52 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 15:03:56 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 15:03:56 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 15:03:56 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 15:03:56 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 15:03:58 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 15:03:58 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 15:04:01 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 15:04:01 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 15:04:05 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 15:04:05 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 15:04:06 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 15:04:06 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 15:04:08 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 15:04:08 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 15:07:59 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 15:07:59 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 15:08:03 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 15:08:03 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 15:08:04 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 15:08:04 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 15:08:37 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 15:08:37 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 15:08:42 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 15:08:42 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 15:08:42 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 15:08:42 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 15:08:44 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 15:08:44 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 15:08:45 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 15:08:45 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 15:12:58 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 15:12:58 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 15:13:01 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 15:13:01 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 15:13:03 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 15:13:03 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 15:13:13 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 15:13:13 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 15:15:11 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 15:15:11 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 15:15:21 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 15:15:21 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 15:15:24 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 15:15:24 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 15:15:25 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 15:15:25 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 15:16:29 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 15:16:29 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 15:16:31 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 15:16:31 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 15:16:32 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 15:16:32 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 15:16:40 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 15:16:40 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 15:16:42 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 15:16:42 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 15:16:44 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 15:16:44 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 15:16:45 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 15:16:45 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 15:17:46 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 15:17:46 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 15:17:47 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 15:17:47 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[03-Jun-2015 15:20:25 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[03-Jun-2015 15:20:25 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 06:05:24 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 3 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 37 and defined
+[04-Jun-2015 06:05:24 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 37 and defined
+[04-Jun-2015 06:05:24 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 37 and defined
+[04-Jun-2015 06:05:27 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 67 and defined
+[04-Jun-2015 06:05:27 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 68 and defined
+[04-Jun-2015 06:05:27 Europe/Paris] 0:admin:ui_input.inc:374: Missing argument 2 for check_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 69 and defined
+[04-Jun-2015 06:05:27 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 67 and defined
+[04-Jun-2015 06:05:27 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 68 and defined
+[04-Jun-2015 06:05:27 Europe/Paris] 0:admin:ui_input.inc:374: Missing argument 2 for check_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 69 and defined
+[04-Jun-2015 06:13:44 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 67 and defined
+[04-Jun-2015 06:13:44 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 68 and defined
+[04-Jun-2015 06:13:44 Europe/Paris] 0:admin:ui_input.inc:374: Missing argument 2 for check_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 69 and defined
+[04-Jun-2015 06:13:44 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 67 and defined
+[04-Jun-2015 06:13:44 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 68 and defined
+[04-Jun-2015 06:13:44 Europe/Paris] 0:admin:ui_input.inc:374: Missing argument 2 for check_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 69 and defined
+[04-Jun-2015 06:13:44 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 67 and defined
+[04-Jun-2015 06:13:44 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 68 and defined
+[04-Jun-2015 06:13:44 Europe/Paris] 0:admin:ui_input.inc:374: Missing argument 2 for check_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 69 and defined
+[04-Jun-2015 06:13:44 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 67 and defined
+[04-Jun-2015 06:13:44 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 68 and defined
+[04-Jun-2015 06:13:44 Europe/Paris] 0:admin:ui_input.inc:374: Missing argument 2 for check_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 69 and defined
+[04-Jun-2015 06:15:39 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 06:15:39 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 06:17:04 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 3 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 37 and defined
+[04-Jun-2015 06:17:04 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 37 and defined
+[04-Jun-2015 06:17:04 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 37 and defined
+[04-Jun-2015 06:17:05 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 3 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 37 and defined
+[04-Jun-2015 06:17:05 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 37 and defined
+[04-Jun-2015 06:17:05 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 37 and defined
+[04-Jun-2015 06:18:21 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 67 and defined
+[04-Jun-2015 06:18:21 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 68 and defined
+[04-Jun-2015 06:18:21 Europe/Paris] 0:admin:ui_input.inc:374: Missing argument 2 for check_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 69 and defined
+[04-Jun-2015 06:18:21 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 67 and defined
+[04-Jun-2015 06:18:21 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 68 and defined
+[04-Jun-2015 06:18:21 Europe/Paris] 0:admin:ui_input.inc:374: Missing argument 2 for check_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 69 and defined
+[04-Jun-2015 06:18:21 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 67 and defined
+[04-Jun-2015 06:18:21 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 68 and defined
+[04-Jun-2015 06:18:21 Europe/Paris] 0:admin:ui_input.inc:374: Missing argument 2 for check_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 69 and defined
+[04-Jun-2015 06:18:21 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 67 and defined
+[04-Jun-2015 06:18:21 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 68 and defined
+[04-Jun-2015 06:18:21 Europe/Paris] 0:admin:ui_input.inc:374: Missing argument 2 for check_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 69 and defined
+[04-Jun-2015 06:18:28 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 06:18:28 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 06:18:28 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 06:18:28 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 06:18:30 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 06:18:30 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 06:18:31 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 06:18:31 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 06:18:33 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 06:18:33 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 06:18:35 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 06:18:35 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 06:18:35 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 06:18:35 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 06:18:38 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 06:18:38 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 06:18:40 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 06:18:40 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 06:18:44 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 06:18:44 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 06:18:45 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 06:18:45 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 06:18:46 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 06:18:46 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 06:22:14 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 67 and defined
+[04-Jun-2015 06:22:14 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 68 and defined
+[04-Jun-2015 06:22:14 Europe/Paris] 0:admin:ui_input.inc:374: Missing argument 2 for check_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 69 and defined
+[04-Jun-2015 06:22:14 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 67 and defined
+[04-Jun-2015 06:22:14 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 68 and defined
+[04-Jun-2015 06:22:14 Europe/Paris] 0:admin:ui_input.inc:374: Missing argument 2 for check_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 69 and defined
+[04-Jun-2015 06:22:14 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 67 and defined
+[04-Jun-2015 06:22:14 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 68 and defined
+[04-Jun-2015 06:22:14 Europe/Paris] 0:admin:ui_input.inc:374: Missing argument 2 for check_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 69 and defined
+[04-Jun-2015 06:22:14 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 67 and defined
+[04-Jun-2015 06:22:14 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 68 and defined
+[04-Jun-2015 06:22:14 Europe/Paris] 0:admin:ui_input.inc:374: Missing argument 2 for check_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 69 and defined
+[04-Jun-2015 06:22:21 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 67 and defined
+[04-Jun-2015 06:22:21 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 68 and defined
+[04-Jun-2015 06:22:21 Europe/Paris] 0:admin:ui_input.inc:374: Missing argument 2 for check_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 69 and defined
+[04-Jun-2015 06:22:21 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 67 and defined
+[04-Jun-2015 06:22:21 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 68 and defined
+[04-Jun-2015 06:22:21 Europe/Paris] 0:admin:ui_input.inc:374: Missing argument 2 for check_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 69 and defined
+[04-Jun-2015 06:22:21 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 67 and defined
+[04-Jun-2015 06:22:21 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 68 and defined
+[04-Jun-2015 06:22:21 Europe/Paris] 0:admin:ui_input.inc:374: Missing argument 2 for check_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 69 and defined
+[04-Jun-2015 06:22:21 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 67 and defined
+[04-Jun-2015 06:22:21 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 68 and defined
+[04-Jun-2015 06:22:21 Europe/Paris] 0:admin:ui_input.inc:374: Missing argument 2 for check_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 69 and defined
+[04-Jun-2015 06:22:39 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 3 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 37 and defined
+[04-Jun-2015 06:22:40 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 37 and defined
+[04-Jun-2015 06:22:40 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 37 and defined
+[04-Jun-2015 06:22:40 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 3 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 37 and defined
+[04-Jun-2015 06:22:40 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 37 and defined
+[04-Jun-2015 06:22:40 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 37 and defined
+[04-Jun-2015 06:22:48 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 67 and defined
+[04-Jun-2015 06:22:48 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 68 and defined
+[04-Jun-2015 06:22:48 Europe/Paris] 0:admin:ui_input.inc:374: Missing argument 2 for check_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 69 and defined
+[04-Jun-2015 06:22:48 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 67 and defined
+[04-Jun-2015 06:22:48 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 68 and defined
+[04-Jun-2015 06:22:48 Europe/Paris] 0:admin:ui_input.inc:374: Missing argument 2 for check_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 69 and defined
+[04-Jun-2015 06:22:48 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 67 and defined
+[04-Jun-2015 06:22:48 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 68 and defined
+[04-Jun-2015 06:22:48 Europe/Paris] 0:admin:ui_input.inc:374: Missing argument 2 for check_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 69 and defined
+[04-Jun-2015 06:22:48 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 67 and defined
+[04-Jun-2015 06:22:48 Europe/Paris] 0:admin:ui_input.inc:763: Missing argument 2 for amount_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 68 and defined
+[04-Jun-2015 06:22:48 Europe/Paris] 0:admin:ui_input.inc:374: Missing argument 2 for check_cells(), called in C:\wamp\www\fairwaysuae\modules\payroll\payslip_batches.php on line 69 and defined
+[04-Jun-2015 06:23:05 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 06:23:05 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 06:23:05 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 06:23:05 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 06:23:08 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 06:23:08 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 06:23:10 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 06:23:10 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 06:23:11 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 06:23:11 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 06:23:14 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 06:23:14 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 06:23:26 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 06:23:26 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 06:23:27 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 06:23:27 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 06:23:52 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 06:23:52 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 06:23:52 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 06:23:52 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 06:23:58 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 06:23:58 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 06:24:28 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 06:24:28 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 06:24:40 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 06:24:40 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 06:24:42 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 06:24:42 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[04-Jun-2015 06:24:43 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[04-Jun-2015 06:24:43 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')

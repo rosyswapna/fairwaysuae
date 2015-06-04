@@ -138,6 +138,57 @@ function remove_employee_compensation($rate_id){
 
 }
 
+//--------------------------------------------------------------------------------------------
+function update_labour($labour_card,$lbr_card_isuue_date,$lbr_card_exp_date,$health_card_no,$hc_issue_date,$hc_exp_date,$hc_information,
+						$phone,$email,$selected_id){
 
+	$sql="UPDATE ".TB_PREF."labour SET
+	labour_card=".db_escape($labour_card).",
+	lbr_card_isuue_date='".date2sql($lbr_card_isuue_date)."',
+	lbr_card_exp_date='".date2sql($lbr_card_exp_date)."',
+	health_card_no=".db_escape($health_card_no).",
+	hc_issue_date='".date2sql($hc_issue_date)."',
+	hc_exp_date='".date2sql($hc_exp_date)."',
+	hc_information=".db_escape($hc_information).",
+	phone=".db_escape($phone).",
+	email=".db_escape($email)."
+	WHERE id=".db_escape($selected_id);
+	 db_query($sql,"The pay rate could not be added/updated");
+}
+function get_labour($selected_id)
+{
+	$sql = "SELECT * FROM ".TB_PREF."labour WHERE id=".db_escape($selected_id);
 
+	$result = db_query($sql, "could not get employee");
+
+	return db_fetch($result);
+}
+//--------------------------------------------------------------------------------------------
+function update_visa($visa,$fileno,$idcardno,$visaIssueDate,$visaExpiryDate,$visaRenewDate,$IdCardIssued,
+						$IdCardExpiry,$designation,$designationvisa,$profession,$attenidno,$selected_id){
+
+	$sql="UPDATE ".TB_PREF."visa SET
+	visa_no=".db_escape($visa).",
+	file_no=".db_escape($fileno).",
+	id_card=".db_escape($idcardno).",
+	visa_date_issued='".date2sql($visaIssueDate)."',
+	visa_date_expiry='".date2sql($visaExpiryDate)."',
+	visa_date_renew='".date2sql($visaRenewDate)."',
+	id_card_issued='".date2sql($IdCardIssued)."',
+	id_card_expiry='".date2sql($IdCardExpiry)."',
+	designation=".db_escape($designation).",
+	designation_visa=".db_escape($designationvisa).",
+	profession_id=".db_escape($profession).",
+	atten_id=".db_escape($attenidno)."
+	WHERE id=".db_escape($selected_id);
+	 db_query($sql,"The pay rate could not be added/updated");
+}
+function get_visa($selected_id)
+{
+	$sql = "SELECT * FROM ".TB_PREF."visa WHERE id=".db_escape($selected_id);
+
+	$result = db_query($sql, "could not get employee");
+
+	return db_fetch($result);
+}
 ?>
