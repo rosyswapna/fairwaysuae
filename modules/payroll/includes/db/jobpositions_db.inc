@@ -62,7 +62,7 @@ function get_job($job_id)
 
 //--------------------------------------------------------------------------------------------
 function db_has_jobs()
-{
+{	
 	return check_empty_result("SELECT COUNT(*) FROM ".TB_PREF."jobnames");
 }
 
