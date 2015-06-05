@@ -265,3 +265,9 @@ ALTER TABLE `0_labour`  ADD `emp_id` INT(11) NOT NULL AFTER `id`,  ADD INDEX (`e
 ALTER TABLE `0_passport` ADD `emp_id` INT(11) NOT NULL AFTER `id`, ADD INDEX (`emp_id`) ;
 
 ALTER TABLE `0_visa` ADD `emp_id` INT(11) NOT NULL AFTER `id`, ADD INDEX (`emp_id`) ;
+
+------05-06-2015------
+ALTER TABLE `0_passport` CHANGE `pspt_issue_place` `pspt_issue_place` VARCHAR(50) NOT NULL;
+ALTER TABLE `0_passport` CHANGE `emp_code` `emp_code` VARCHAR(50) NOT NULL;
+
+

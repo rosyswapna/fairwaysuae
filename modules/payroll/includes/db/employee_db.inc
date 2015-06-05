@@ -186,17 +186,16 @@ function get_labour($selected_id)
 function add_visa($selected_id,$visa,$fileno,$idcardno,$visaIssueDate,$visaExpiryDate,$visaRenewDate,$IdCardIssued,
 						$IdCardExpiry,$designation,$designationvisa,$profession,$attenidno){
 						
-		$sql="INSERT INTO ".TB_PREF."visa (emp_id,visa_no, file_no, id_card, visa_date_issued, visa_date_expiry,id_card_issued, id_card_expiry, 
-			designation, profession_id,atten_id) VALUES ("
+		$sql="INSERT INTO ".TB_PREF."visa (emp_id,visa_no, file_no, id_card, visa_date_issued, visa_date_expiry,visa_date_renew, id_card_issued, id_card_expiry, designation, designation_visa, profession_id,atten_id) VALUES ("
 		.db_escape($selected_id).", "
 		.db_escape($visa).", "
 		.db_escape($fileno).", "
-		.db_escape($idcardno).", "
-		.date2sql($visaIssueDate).", "
-		.db_escape($visaExpiryDate).", '"
-		.date2sql($visaRenewDate)."', "
-		.db_escape($IdCardIssued).", "
-		.db_escape($IdCardIssued).", "
+		.db_escape($idcardno).", '"
+		.date2sql($visaIssueDate)."', '"
+		.date2sql($visaExpiryDate)."', '"
+		.date2sql($visaRenewDate)."', '"
+		.date2sql($IdCardIssued)."', '"
+		.date2sql($IdCardExpiry)."', "
 		.db_escape($designation).", "
 		.db_escape($designationvisa).", "
 		.db_escape($profession).", "
@@ -208,7 +207,7 @@ function add_visa($selected_id,$visa,$fileno,$idcardno,$visaIssueDate,$visaExpir
 }
 
 function update_visa($visa,$fileno,$idcardno,$visaIssueDate,$visaExpiryDate,$visaRenewDate,$IdCardIssued,
-						$IdCardExpiry,$designation,$designationvisa,$profession,$attenidno,$selected_id){
+		$IdCardExpiry,$designation,$designationvisa,$profession,$attenidno,$selected_id){
 
 	$sql="UPDATE ".TB_PREF."visa SET
 	visa_no=".db_escape($visa).",
@@ -235,30 +234,31 @@ function get_visa($selected_id)
 	return db_fetch($result);
 }
 //-------------------------------------------------------------------------------------
-function add_passport($selected_id,$empname,$fathersname,$nationality,$placeofbirth,$dateofbirth,$gender,$passport,
-						$passissuedate,$passexpirydate,$passplaceissued,$addr1,$addr2,$addr3,$remark,
-						$alocation,$abscondeddate){
+function add_passport($selected_id,$empcode,$empname,$fathersname,$nationality,$placeofbirth,
+		$dateofbirth,$gender,$passport,$passissuedate,$passexpirydate,$passplaceissued,
+		$addr1,$addr2,$addr3,$remark, $alocation,$abscondeddate){
 						
 						
-		$sql="INSERT INTO ".TB_PREF."visa (emp_id,emp_code, emp_name, fathers_name, nationality, birth_place,birth_date, gender, passport_no, pspt_issue_date,pspt_expiry_date,pspt_issue_place,addr1,addr2,addr3,remark,site_allocation,absconded_date) VALUES ("
+		$sql="INSERT INTO ".TB_PREF."passport (emp_id,emp_code, emp_name, fathers_name, nationality, birth_place,birth_date, gender, passport_no, pspt_issue_date,pspt_expiry_date,pspt_issue_place,addr1,addr2,addr3,remark,site_allocation,absconded_date) VALUES ("
 		.db_escape($selected_id).", "
+		.db_escape($empcode).", "
 		.db_escape($empname).", "
 		.db_escape($fathersname).", "
 		.db_escape($nationality).", "
-		.db_escape($placeofbirth).", "
-		.db_escape($dateofbirth).", '"
-		.date2sql($gender)."', "
-		.db_escape($passport).", "
-		.db_escape($passissuedate).", "
-		.db_escape($passexpirydate).", "
+		.db_escape($placeofbirth).", '"
+		.date2sql($dateofbirth)."', "
+		.db_escape($gender).", "
+		.db_escape($passport).", '"
+		.date2sql($passissuedate)."', '"
+		.date2sql($passexpirydate)."', "
 		.db_escape($passplaceissued).", "
 		.db_escape($addr1).", "
 		.db_escape($addr2).", "
 		.db_escape($addr3).", "
 		.db_escape($remark).", "
-		.db_escape($alocation).", "
-		.db_escape($abscondeddate).")";
-		
+		.db_escape($alocation).",' "
+		.date2sql($abscondeddate)."')";
+		//echo $sql;exit;
 		db_query($sql,"The employee could not be added");
 				
 	}
@@ -266,8 +266,8 @@ function add_passport($selected_id,$empname,$fathersname,$nationality,$placeofbi
 
 
 function update_passport($empcode,$empname,$fathersname,$nationality,$placeofbirth,$dateofbirth,$gender,$passport,
-						$passissuedate,$passexpirydate,$passplaceissued,$addr1,$addr2,$addr3,$remark,
-						$alocation,$abscondeddate,$selected_id){
+			$passissuedate,$passexpirydate,$passplaceissued,$addr1,$addr2,$addr3,$remark,
+			$alocation,$abscondeddate,$selected_id){
 
 	$sql="UPDATE ".TB_PREF."passport SET
 	emp_code=".db_escape($empcode).",
@@ -288,7 +288,7 @@ function update_passport($empcode,$empname,$fathersname,$nationality,$placeofbir
 	site_allocation=".db_escape($alocation).",
 	absconded_date='".date2sql($abscondeddate)."'
 	WHERE id=".db_escape($selected_id);
-	
+	//echo $sql;exit;
 	db_query($sql,"The pay rate could not be added/updated");
 }
 function get_passport($selected_id)
