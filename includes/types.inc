@@ -240,6 +240,8 @@ define ('CARTON','Carton');
 //payroll
 define ('AC_TYPE_PAYROLL',11);
 
+define ('AC_PAYABLE',2100);
+
 //salary
 define('DEBIT',1);
 define('CREDIT',0);

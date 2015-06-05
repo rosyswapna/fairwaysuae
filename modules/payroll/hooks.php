@@ -16,7 +16,7 @@ class payroll_app extends application
                         $path_to_root.'/modules/payroll/payslip_batches.php', 'SA_PAYSLIP_BATCHES', MENU_TRANSACTION);
 				$this->add_lapp_function(0, _("Make &Payment Advices"),
                         $path_to_root.'/modules/payroll/', 'SA_PAYROLL', MENU_TRANSACTION);
-                $this->add_rapp_function(0, _("Manage Employee $Leave"),
+                $this->add_rapp_function(0, _("Make Employee Payment Advice"),
                         $path_to_root.'/modules/payroll/', 'SA_PAYROLL', MENU_TRANSACTION);
 				$this->add_rapp_function(0, _("Manage &Employee Expenses"),
                         $path_to_root.'/modules/payroll/', 'SA_PAYROLL', MENU_TRANSACTION);

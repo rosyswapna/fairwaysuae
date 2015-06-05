@@ -31,6 +31,10 @@ class items_cart
 	var $reference;
 	var $original_amount;
 	var $paytype;
+
+
+	var $to_the_order_of;
+	var $payslip_no;
 	
 	function items_cart($type)
 	{

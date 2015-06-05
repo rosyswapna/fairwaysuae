@@ -34,7 +34,13 @@ function display_order_header(&$Order)
 		hidden('PayType', PT_EMPLOYEE);
 		employee_list_row(_("Pay To: "), 'person_id',null, _("Select Employee"), true, false, true);
 		
-		text_row(_("To the Order of:"),'to_order_of');
+		text_row(_("To the Order of:"),'to_the_order_of',$_POST['to_the_order_of']);
+
+		if(!isset($_POST['PaySlipNo'])){
+			$_POST['PaySlipNo'] = get_next_payslip_no();
+		}
+		hidden('PaySlipNo',$_POST['PaySlipNo']);
+		label_row(_("Payslip No:"),$_POST['PaySlipNo']);
 
 	table_section(3, "35%");
 

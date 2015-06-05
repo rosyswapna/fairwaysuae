@@ -203,18 +203,4 @@ function gl_account_in_bank_accounts($acc)
 }
 //--------------------------------------------------------------------------
 
-function get_payroll_rules()
-{
-	
-		$sql = "SELECT chart.account_code, chart.account_name, type.name, chart.inactive, type.id
-			FROM ".TB_PREF."chart_master chart,".TB_PREF."chart_types type
-			WHERE chart.account_type=type.id and chart.account_type=".AC_TYPE_PAYROLL;
-		return db_query($sql,"oops");
-		
-	
-}
-
-
-
-//---------------------------------------------------------------------------------------
 ?>

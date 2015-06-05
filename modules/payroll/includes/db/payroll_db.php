@@ -1,4 +1,5 @@
 <?php
+/*
 function get_payroll_rules()
 {
 	
@@ -10,5 +11,19 @@ function get_payroll_rules()
 		return db_query($sql,"oops");
 			
 }
+
+function get_next_payslip_no(){
+	$sql = "SELECT MAX(payslip_no)+1 FROM ".TB_PREF."gl_trans";
+	$result = db_query($sql,"The next payslip number could not be retreived");
+
+    	$row = db_fetch_row($result);
+    	return $row[0];
+
+
+
+
+
+ 
+}*/
 
 ?>

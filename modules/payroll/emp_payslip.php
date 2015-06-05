@@ -21,7 +21,7 @@ include_once($path_to_root . "/includes/data_checks.inc");
 
 include_once($path_to_root . "/modules/payroll/includes/ui/payslip_ui.inc");
 include_once($path_to_root . "/modules/payroll/includes/ui/employee_ui.inc");
-include_once($path_to_root . "/modules/payroll/includes/db/salary_structure_db.inc");
+include_once($path_to_root . "/modules/payroll/includes/payroll_db.inc");
 include_once($path_to_root . "/gl/includes/gl_db.inc");
 include_once($path_to_root . "/gl/includes/gl_ui.inc");
 
@@ -195,6 +195,9 @@ if (isset($_POST['Process']))
 
 	$cart->person_id = $_POST['person_id'];
 	$cart->paytype = $_POST['PayType'];
+
+	$cart->to_the_order_of = $_POST['to_the_order_of'];
+	$cart->payslip_no = $_POST['PaySlipNo'];
 
 	//echo "<pre>";print_r($cart);echo "</pre>";exit;
 
