@@ -39,8 +39,7 @@ class payroll_app extends application
                 $this->add_module(_("Maintenance"));
 				$this->add_lapp_function(2, _("Manage &Employees"),
                         $path_to_root.'/modules/payroll/employees.php', 'SA_PAYROLL', MENU_MAINTENANCE);
-				$this->add_lapp_function(2, _("Employee &Contracts"),
-                        $path_to_root.'/modules/payroll/', 'SA_PAYROLL', MENU_MAINTENANCE);
+				
 						
 						
 						

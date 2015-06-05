@@ -6,11 +6,11 @@
 //Employee Database Functions
 /////////////////////////////////////////////////////
 function add_employee($firstname, $lastname, $address, $phone, $email, $bdate, $payfreq, 
-	$filing_status, $allowances, $extra_witholding, $taxid, $role, $hire_date, $notes)
+	$filing_status, $allowances, $extra_witholding, $taxid, $role, $hire_date, $notes, $department, $jobposition)
 {
 	$sql = "INSERT INTO ".TB_PREF."employees (emp_first_name, emp_last_name, emp_address, emp_phone, emp_email, emp_birthdate, 
 			emp_payfrequency, emp_filingstatus, emp_allowances,
-			emp_extrawitholding, emp_taxid, emp_type, emp_hiredate, emp_notes) VALUES ("
+			emp_extrawitholding, emp_taxid, emp_type, emp_hiredate, emp_notes,department_id,job_position_id) VALUES ("
 		.db_escape($firstname).", "
 		.db_escape($lastname).", "
 		.db_escape($address).", "
@@ -24,7 +24,9 @@ function add_employee($firstname, $lastname, $address, $phone, $email, $bdate, $
 		.db_escape($taxid).", "
 		.db_escape($role).", '"
 		.date2sql($hire_date)."', "
-		.db_escape($notes).")";
+		.db_escape($notes).", "
+		.db_escape($department).", "
+		.db_escape($jobposition).")";
 
 	db_query($sql,"The employee could not be added");
 }
@@ -32,7 +34,7 @@ function add_employee($firstname, $lastname, $address, $phone, $email, $bdate, $
 
 //--------------------------------------------------------------------------------------------
 function update_employee($firstname, $lastname, $address, $phone, $email, $bdate, $payfreq, 
-	$filing_status, $allowances, $extra_witholding, $taxid, $role, $hire_date, $notes, $selected_id, $inactive, $release_date )
+	$filing_status, $allowances, $extra_witholding, $taxid, $role, $hire_date, $notes, $selected_id, $inactive, $release_date, $department, $jobposition )
 {
 
 	$sql = "UPDATE ".TB_PREF."employees SET
@@ -50,10 +52,12 @@ function update_employee($firstname, $lastname, $address, $phone, $email, $bdate
 		emp_type=".db_escape($role).",
 		emp_hiredate='".date2sql($hire_date)."',
 		emp_releasedate='".date2sql($release_date)."',
+		department_id = ".db_escape($department).",
+		job_position_id = ".db_escape($jobposition).",
 		inactive=".db_escape($inactive).",
-		emp_notes=".db_escape($notes)."
+		emp_notes=".db_escape($notes)." 
 		WHERE emp_id=".db_escape($selected_id);
-
+//echo $sql;exit;
 	db_query($sql,"The employee could not be updated");
 
 }

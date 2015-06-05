@@ -596,7 +596,6 @@ function department_list($name, $selected_id=null, $spec_option=false, $submit_o
 
 	$ret = combo_input($name, $selected_id, $sql, 'dept_id', 'dept_name',
 	array(
-	    'format' => '_format_add_curr',
 	    'order' => array('dept_name'),
 		'search_box' => $mode!=0,
 		'type' => 1,
@@ -626,6 +625,17 @@ function department_list_cells($label, $name, $selected_id=null, $all_option=fal
 	echo department_list($name, $selected_id, $all_option, $submit_on_change,
 		$show_inactive, $editkey);
 	echo "</td>\n";
+}
+
+function department_list_row($label, $name, $selected_id=null, $all_option=false, 
+	$submit_on_change=false, $show_inactive=false, $editkey = false){
+
+	echo "<tr>";
+	department_list_cells($label, $name, $selected_id, $all_option, 
+	$submit_on_change, $show_inactive, $editkey);
+	echo "</tr>";
+
+	
 }
 
 
@@ -691,7 +701,6 @@ function job_list($name, $selected_id=null, $spec_option=false, $submit_on_chang
 
 	$ret = combo_input($name, $selected_id, $sql, 'job_name_id', 'job_name',
 	array(
-	    'format' => '_format_add_curr',
 	    'order' => array('job_name'),
 		'search_box' => $mode!=0,
 		'type' => 1,
@@ -720,6 +729,15 @@ function job_list_cells($label, $name, $selected_id=null, $all_option=false,
 	echo job_list($name, $selected_id, $all_option, $submit_on_change,
 		$show_inactive, $editkey);
 	echo "</td>\n";
+}
+
+function job_list_row($label, $name, $selected_id=null, $all_option=false, 
+	$submit_on_change=false, $show_inactive=false, $editkey = false)
+{
+	echo "<tr>";
+	job_list_cells($label, $name, $selected_id, $all_option, 
+	$submit_on_change, $show_inactive, $editkey);
+	echo "</tr>";
 }
 
 

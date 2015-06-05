@@ -270,4 +270,6 @@ ALTER TABLE `0_visa` ADD `emp_id` INT(11) NOT NULL AFTER `id`, ADD INDEX (`emp_i
 ALTER TABLE `0_passport` CHANGE `pspt_issue_place` `pspt_issue_place` VARCHAR(50) NOT NULL;
 ALTER TABLE `0_passport` CHANGE `emp_code` `emp_code` VARCHAR(50) NOT NULL;
 
+ALTER TABLE `0_employees`  ADD `department_id` INT(11) NOT NULL AFTER `job_position_id`,  ADD INDEX (`department_id`) 
+
 

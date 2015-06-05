@@ -107,7 +107,7 @@ function handle_submit(&$selected_id)
 				$_POST['EmpPhone'], $_POST['EmpEmail'], $_POST['EmpBirthDate'],
 				$_POST['EmpFrequency'], $_POST['EmpStatus'], $_POST['EmpAllowances'],
 				input_num('EmpExtraWH'), $_POST['EmpTaxId'], $_POST['EmpRole'], $_POST['EmpHireDate'], 
-				$_POST['EmpNotes'], $selected_id, get_post('EmpInactive'), get_post('EmpInactive') ? $_POST['EmpReleaseDate'] : null);
+				$_POST['EmpNotes'], $selected_id, get_post('EmpInactive'), get_post('EmpInactive') ? $_POST['EmpReleaseDate'] : null, $_POST['Department'],$_POST['JobPosition']);
 		
 
 		//update_record_status($_POST['EmpId'], $_POST['EmpInactive'], 'employees', 'emp_id');//from sql_functions.inc
@@ -122,7 +122,7 @@ function handle_submit(&$selected_id)
 		begin_transaction();
 		add_employee($_POST['EmpFirstName'], $_POST['EmpLastName'], $_POST['EmpAddress'], $_POST['EmpPhone'], $_POST['EmpEmail'], $_POST['EmpBirthDate'],
 				$_POST['EmpFrequency'], $_POST['EmpStatus'], $_POST['EmpAllowances'],
-				input_num('EmpExtraWH'), $_POST['EmpTaxId'], $_POST['EmpRole'], $_POST['EmpHireDate'], $_POST['EmpNotes']);
+				input_num('EmpExtraWH'), $_POST['EmpTaxId'], $_POST['EmpRole'], $_POST['EmpHireDate'], $_POST['EmpNotes'],$_POST['Department'],$_POST['JobPosition']);
 
 		$selected_id = $_POST['EmpId'] = db_insert_id();
          
@@ -272,6 +272,8 @@ function employee_settings($selected_id){
 	    $_POST['EmpHireDate'] = sql2date($myrow["emp_hiredate"]);
 	    $_POST['EmpInactive'] = $myrow["inactive"];
 	    $_POST['EmpReleaseDate'] = sql2date($myrow["emp_releasedate"]); 
+	    $_POST['Department'] = $myrow["department_id"];
+	    $_POST['JobPosition'] = $myrow["job_position_id"];
 	}
 
 	div_start('emp_info');
@@ -303,6 +305,9 @@ function employee_settings($selected_id){
 	
 	table_section_title(_(" "));//just a spacer
 	date_row(_("Hire Date:"), 'EmpHireDate');
+
+	department_list_row(_("Department"),'Department',$_POST['Department'],false);
+	job_list_row(_("Job Position"),'JobPosition',$_POST['JobPosition'],false);
 
 	if ($selected_id) {
 	    check_row('Inactive:', 'EmpInactive');
