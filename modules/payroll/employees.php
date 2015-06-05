@@ -600,7 +600,6 @@ if (db_has_employees()){
 		set_focus('EmpId');
 	}
 } else {
-    display_notification("Add and Manage Employees");
     hidden('EmpId');
 }
 

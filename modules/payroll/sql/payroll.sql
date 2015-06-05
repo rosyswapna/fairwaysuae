@@ -105,7 +105,7 @@ CREATE TABLE `0_payroll_pay_type` (
 );
 
 
-Department
+--Department
 ---------------------------------------------------------------------------
 CREATE TABLE IF NOT EXISTS `0_departments` (
   `dept_id` int(11) NOT NULL AUTO_INCREMENT,
@@ -117,7 +117,7 @@ CREATE TABLE IF NOT EXISTS `0_departments` (
 
 
 
-job Names
+--job Names
 -----------------------------------------------------------------------------
 CREATE TABLE IF NOT EXISTS `0_jobnames` (
   `job_name_id` int(11) NOT NULL AUTO_INCREMENT,
@@ -128,7 +128,7 @@ CREATE TABLE IF NOT EXISTS `0_jobnames` (
 
 
 
-Leave Types
+--Leave Types
 -----------------------------------------------------------------------------
 CREATE TABLE IF NOT EXISTS `0_leavetypes` (
   `ltyp_id` int(11) NOT NULL AUTO_INCREMENT,
@@ -140,7 +140,7 @@ CREATE TABLE IF NOT EXISTS `0_leavetypes` (
 
 
 
-Payroll Category 
+--Payroll Category 
 -----------------------------------------------------------------------------
 CREATE TABLE IF NOT EXISTS `0_payrollcategory` (
   `pc_id` int(11) NOT NULL AUTO_INCREMENT,
@@ -270,6 +270,6 @@ ALTER TABLE `0_visa` ADD `emp_id` INT(11) NOT NULL AFTER `id`, ADD INDEX (`emp_i
 ALTER TABLE `0_passport` CHANGE `pspt_issue_place` `pspt_issue_place` VARCHAR(50) NOT NULL;
 ALTER TABLE `0_passport` CHANGE `emp_code` `emp_code` VARCHAR(50) NOT NULL;
 
-ALTER TABLE `0_employees`  ADD `department_id` INT(11) NOT NULL AFTER `job_position_id`,  ADD INDEX (`department_id`) 
+ALTER TABLE `0_employees`  ADD `department_id` INT(11) NOT NULL AFTER `job_position_id`,  ADD INDEX (`department_id`);
 
 
