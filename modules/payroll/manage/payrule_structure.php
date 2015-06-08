@@ -28,6 +28,9 @@ include_once($path_to_root . "/includes/ui.inc");
 
 include_once($path_to_root . "/modules/payroll/includes/db/payroll_structure_db.inc");
 include_once($path_to_root . "/modules/payroll/includes/db/jobpositions_db.inc");
+
+include_once($path_to_root . "/modules/payroll/includes/payroll_db.inc");
+
 $selected_id = get_post('job_position_id','');
 //--------------------------------------------------------------------------------------------
 
@@ -133,19 +136,17 @@ function payroll_rule_settings($selected_id)
 	{
 		$payroll_structure = get_payroll_structure($selected_id);
 
-
+		
 		if($payroll_structure){
 			$new = false;
 			foreach($payroll_structure['payroll_rule'] as $rule_code){
+
 				$_POST['Payroll'.$rule_code] = 1;
+				
 			}
-			
-		}else{
-			
 		}
 
 		$_POST['job_position_id'] = $selected_id;
-	
 	}
 	
 	
@@ -159,6 +160,7 @@ function payroll_rule_settings($selected_id)
 
 	while($row_rule=db_fetch($result_rules))
 	{
+
 		check_row($row_rule["account_name"], 'Payroll'.$row_rule["account_code"],null);	
 	}
 end_table(1);
@@ -168,7 +170,7 @@ end_table(1);
 	//submit_center_first('submit', _("Update"), 
 		 // _('Update payrule data'));
 	if($new){
-			submit_center('submit', _("Save payroll Structure"), true);
+			submit_center('submit', _("Save"), true,_("Save Payroll Structure"),'default');
 		}
 	else{
 		submit_center_first('submit', _("Update"), 

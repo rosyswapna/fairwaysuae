@@ -16,13 +16,38 @@ include_once($path_to_root . "/includes/ui/items_cart.inc");
 
 
 	
-	
-	function display_employee_batch_payslip()
+function display_employee_batch_payslip()
 {	
 	
 	
-	$sql = "SELECT * FROM ".TB_PREF."employees";
-	return db_query($sql,"oops");
+	$sql = get_sql_for_payslip_batch();
+	$cols = array(
+		_("Employee Name ") , 
+		_("Job Position"), 
+		_("Debit")=>array('type'=>'amount'), 
+		_("Credit")=>array('type'=>'amount'),
+		_("Payable")=>array('fun'=>'ac_payable','align'=>'right'), 
+		submit('BatchPaySlip',_("Batch"), false, _("Batch Payslip")) 
+			=> array('insert'=>true, 'fun'=>'batch_checkbox', 'align'=>'center')
+		
+		);
+	$table =& new_db_pager('payslip_tbl', $sql, $cols);
+	display_db_pager($table);
 	
 }
+
+function display_payslip_header()
+{
+	start_table(TABLESTYLE2);
+		start_row();
+		date_cells(_("Date:"),'date_');
+		text_cells(_("To the order Of:"),'to_the_order_of');
+		text_cells(_("Narration"),'narration');
+		end_row();
+	end_table();
+}
+
+
+
+
 ?>

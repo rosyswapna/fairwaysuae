@@ -22,14 +22,29 @@ include_once($path_to_root."/modules/payroll/includes/db/taxes_db.inc");
 
 
 //get all payroll accounts from chart master
+/*function get_payroll_rules()
+{
+	
+
+	$sql = "SELECT salary.pay_rule_id as payroll_rule, chart.account_name 
+		FROM ".TB_PREF."chart_types type, ".TB_PREF."salary_structure salary
+		INNER JOIN ".TB_PREF."chart_master chart
+		ON salary.pay_rule_id = chart.account_code
+		WHERE chart.account_type=type.id and chart.account_type=".AC_TYPE_PAYROLL;
+
+
+	return db_query($sql,"oops");
+			
+}*/
+
 function get_payroll_rules()
 {
 	
-	$sql = "SELECT salary.payroll_rule, chart.account_name 
-		FROM ".TB_PREF."salary_structure salary, ".TB_PREF."chart_types type
-		INNER JOIN ".TB_PREF."chart_master chart
-		ON salary.payroll_rule = chart.account_code
-		WHERE chart.account_type=type.id and chart.account_type=".AC_TYPE_PAYROLL;
+
+	$sql = "SELECT account_code, account_name 
+		FROM ".TB_PREF."chart_master
+		WHERE account_type=".AC_TYPE_PAYROLL;
+
 	return db_query($sql,"oops");
 			
 }
@@ -84,5 +99,22 @@ function get_sql_for_pmt_advices($employee,$from,$to){
 	return $sql;
 }
 
+
+function  get_sql_for_payslip_batch()
+{
+
+	$sql = "SELECT CONCAT(emp.emp_first_name,' ',emp.emp_last_name) as emp_name,job.job_name,
+SUM(IF(str.type = 0,str.pay_amount,0)) AS Cr, 
+SUM(IF(str.type =1, str.pay_amount,0)) AS Dr,
+emp.job_position_id
+FROM ".TB_PREF."employees  emp
+LEFT JOIN ".TB_PREF."jobnames as job ON emp.job_position_id = job.job_name_id
+LEFT JOIN ".TB_PREF."salary_structure str ON str.job_position_id= emp.job_position_id
+GROUP BY emp.emp_id,emp.job_position_id";
+
+	
+	//echo $sql;exit;
+	return $sql;
+}
 
 ?>

@@ -12,18 +12,18 @@
 $page_security = 'SA_PAYSLIP_BATCHES';
 $path_to_root = "../..";
 include_once($path_to_root . "/includes/ui/items_cart.inc");
-
+include($path_to_root . "/includes/db_pager.inc");
 include_once($path_to_root . "/includes/session.inc");
 add_access_extensions();
 
 include_once($path_to_root . "/includes/date_functions.inc");
 include_once($path_to_root . "/includes/data_checks.inc");
 
-include_once($path_to_root . "/modules/payroll/includes/ui/payslip_batches_ui.inc");
-include_once($path_to_root . "/modules/payroll/includes/ui/employee_ui.inc");
-include_once($path_to_root . "/modules/payroll/includes/db/salary_structure_db.inc");
-include_once($path_to_root . "/gl/includes/gl_db.inc");
-include_once($path_to_root . "/gl/includes/gl_ui.inc");
+//include_once($path_to_root . "/gl/includes/gl_db.inc");
+//include_once($path_to_root . "/gl/includes/gl_ui.inc");
+
+include_once($path_to_root . "/modules/payroll/includes/payroll_ui.inc");
+include_once($path_to_root . "/modules/payroll/includes/payroll_db.inc");
 
 $js = '';
 if ($use_popup_windows)
@@ -31,48 +31,56 @@ if ($use_popup_windows)
 if ($use_date_picker)
 	$js .= get_js_date_picker();
 
-if (isset($_GET['ModifyPaySlip'])) {
-	$_SESSION['page_title'] = sprintf(_("Modifying Employee Payslip # %d."), 
-		$_GET['trans_no']);
-	$help_context = "Modifying Employee Payslip";
-} else
-	$_SESSION['page_title'] = _($help_context = "Manage Employee Payslip Batches");
+
+$_SESSION['page_title'] = _($help_context = "Manage Employee Payslip Batches");
 
 page($_SESSION['page_title'], false, false,'', $js);
-//--------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------
 
-function line_start_focus() {
-  global 	$Ajax;
 
-  $Ajax->activate('items_table');
-  set_focus('_code_id_edit');
+function batch_checkbox($row)
+{
+	$name = "Sel_" .$row['job_name_id'];
+	return "<input type='checkbox' name='$name' value='1' >"
+	 ."<input name='Sel_[".$row['job_name_id']."]' type='hidden' value='"
+	 .$row['job_name_id']."'>\n";
+}
+
+function ac_payable($row)
+{
+	$amt_pay = $row['Cr']-$row['Dr'];
+	if($amt_pay < 0)
+		return price_format(abs($amt_pay))." Cr";
+	else if($amt_pay > 0)
+		return price_format($amt_pay)." Dr";
+	else
+		return price_format($amt_pay);
 }
 //-----------------------------------------------------------------------------------------------
 
-
-//-----------------------------------------------------------------------------------------------
-$batch=display_employee_batch_payslip();
 start_form();
-start_table(TABLESTYLE2, "width='70%'", 10);
 
-	$th=array(_("Employee Name"),_("Debit"),_("Credit"),_("Accounts payable"),_("Particulars"),_(""));
-table_header($th);
-$result_rules=get_payroll_rules();
-$rule=db_fetch($result_rules);
-	while($res=db_fetch($batch))
-	{
-	label_cell($res["emp_first_name"]." ".$res["emp_last_name"]);
-	amount_cells(null,$rule['debit_input']);
-	amount_cells(null,$rule['credit_input']);
-	amount_cells(null);
-	amount_cells(null);
-	check_cells(null);
-	end_row();
-	}
+	start_table(TABLESTYLE_NOBORDER);
+		start_row();
+			job_list_cells(_("Job Position"), "employee",null,_("All Jobs"));
+
+			department_list_cells(_("Department"),'department',null,_("All Departments"));
+
+			submit_cells('Search', _("Search"), '', '', 'default');
+		end_row();
+	end_table();
 
 
-end_table(1);
-echo '<br>';
+	start_table(TABLESTYLE, "width='80%'", 10);
+		echo "<tr><td>";
+		display_payslip_header();
+		echo "</td></tr>";
+		echo "<tr><td>";
+		display_employee_batch_payslip();
+		echo "</td></tr>";
+	end_table(1);
+
+
 
 
 
