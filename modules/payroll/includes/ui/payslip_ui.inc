@@ -53,21 +53,22 @@ function display_order_header(&$Order)
 		$Order->clear_items();
 		$salary_rules = get_emp_salary_structure(get_post('person_id'));
 
-		$totalCredit = $totalDebit = 0;
-		while($myrow = db_fetch($salary_rules)){
-			//echo "<pre>";print_r($myrow);echo "</pre>";exit;
-			$Order->add_gl_item($myrow['pay_rule_id'], 0,0, ($myrow['type'] == CREDIT) ? -$myrow['pay_amount']:$myrow['pay_amount'], '');
+		if(db_num_rows($salary_rules) > 0){
 
-			if($myrow['type'] == CREDIT){
-				$totalCredit += $myrow['pay_amount'];
-			}else{
-				$totalDebit += $myrow['pay_amount'];
+			$totalCredit = $totalDebit = 0;
+			while($myrow = db_fetch($salary_rules)){
+				//echo "<pre>";print_r($myrow);echo "</pre>";exit;
+				$Order->add_gl_item($myrow['pay_rule_id'], 0,0, ($myrow['type'] == CREDIT) ? -$myrow['pay_amount']:$myrow['pay_amount'], '');
+
+				if($myrow['type'] == CREDIT){
+					$totalCredit += $myrow['pay_amount'];
+				}else{
+					$totalDebit += $myrow['pay_amount'];
+				}
 			}
-		
+			$ac_payable_amount = $totalCredit - $totalDebit;
+			$Order->add_gl_item(AC_PAYABLE, 0,0, $ac_payable_amount, '');
 		}
-		$ac_payable_amount = $totalCredit - $totalDebit;
-		$Order->add_gl_item(AC_PAYABLE, 0,0, $ac_payable_amount, '');
-
 		//------------------------------------------------==================
 		unset($_POST['totamount']); // enable default
 		$Ajax->activate('totamount');
