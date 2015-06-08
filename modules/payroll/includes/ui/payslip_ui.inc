@@ -52,11 +52,22 @@ function display_order_header(&$Order)
 		//get employee salary structure----------------====================
 		$Order->clear_items();
 		$salary_rules = get_emp_salary_structure(get_post('person_id'));
+
+		$totalCredit = $totalDebit = 0;
 		while($myrow = db_fetch($salary_rules)){
 			//echo "<pre>";print_r($myrow);echo "</pre>";exit;
 			$Order->add_gl_item($myrow['pay_rule_id'], 0,0, ($myrow['type'] == CREDIT) ? -$myrow['pay_amount']:$myrow['pay_amount'], '');
+
+			if($myrow['type'] == CREDIT){
+				$totalCredit += $myrow['pay_amount'];
+			}else{
+				$totalDebit += $myrow['pay_amount'];
+			}
 		
 		}
+		$ac_payable_amount = $totalCredit - $totalDebit;
+		$Order->add_gl_item(AC_PAYABLE, 0,0, $ac_payable_amount, '');
+
 		//------------------------------------------------==================
 		unset($_POST['totamount']); // enable default
 		$Ajax->activate('totamount');
@@ -132,30 +143,30 @@ function display_gl_items($title, &$order)
 	{
 		if ($id != $line)
 		{
-    		alt_table_row_color($k);
+	    		alt_table_row_color($k);
 
-			label_cells($item->code_id, $item->description);
-    		if ($dim >= 1)
-   				label_cell(get_dimension_string($item->dimension_id, true));
-    		if ($dim > 1)
-   				label_cell(get_dimension_string($item->dimension2_id, true));
-    		if ($item->amount > 0)
-    		{
-    			amount_cell(abs($item->amount));
-    			label_cell("");
-    		}	
-    		else
-    		{
-    			label_cell("");
-    			amount_cell(abs($item->amount));
-    		}	
-			label_cell($item->reference);
+				label_cells($item->code_id, $item->description);
+	    		if ($dim >= 1)
+	   				label_cell(get_dimension_string($item->dimension_id, true));
+	    		if ($dim > 1)
+	   				label_cell(get_dimension_string($item->dimension2_id, true));
+	    		if ($item->amount > 0)
+	    		{
+	    			amount_cell(abs($item->amount));
+	    			label_cell("");
+	    		}	
+	    		else
+	    		{
+	    			label_cell("");
+	    			amount_cell(abs($item->amount));
+	    		}	
+				label_cell($item->reference);
 
-			edit_button_cell("Edit$line", _("Edit"),
-				_('Edit journal line'));
-			delete_button_cell("Delete$line", _("Delete"),
-				_('Remove line from journal'));
-    		end_row();
+				edit_button_cell("Edit$line", _("Edit"),
+					_('Edit journal line'));
+				delete_button_cell("Delete$line", _("Delete"),
+					_('Remove line from journal'));
+	    		end_row();
 		} 
 		else 
 		{
@@ -163,8 +174,8 @@ function display_gl_items($title, &$order)
 		}
 	}
 
-	if ($id == -1)
-		gl_edit_item_controls($order, $dim);
+	//if ($id == -1)
+		//gl_edit_item_controls($order, $dim);
 
 	if ($order->count_gl_items()) 
 	{
