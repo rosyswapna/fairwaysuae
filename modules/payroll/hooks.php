@@ -88,6 +88,8 @@ class hooks_payroll extends hooks {
 		$security_areas['SA_PMTADVICE'] = array(SS_PAYROLL|1, _("Make Payment Advices"));
 		$security_areas['SA_LBLTYQRY'] = array(SS_PAYROLL|1, _("Payroll Liabialities Inquiry"));
 
+		$security_areas['SA_PMTADVICE'] = array(SS_PAYROLL|1, _("Payment Advice"));
+
 		
                 return array($security_areas, $security_sections);
         }

@@ -67,7 +67,8 @@ function get_sql_for_pmt_advices($employee,$from,$to){
 		ABS(gl.amount) as amount,
 		com.memo_,
 		IF(ISNULL(a.gl_seq),0,a.gl_seq) as gl_seq,
-		COUNT(gl.payslip_no) as PaySlip
+		COUNT(gl.payslip_no) as PaySlip,
+		gl.type_no
 		
 		FROM ".TB_PREF."gl_trans as gl
 		 LEFT JOIN ".TB_PREF."audit_trail as a ON

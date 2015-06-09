@@ -20,6 +20,22 @@ if ($use_date_picker)
 page(_($help_context = "Make Payment Advices"), @$_REQUEST['popup'], false, "", $js);
 
 
+function pmt_advice_link($row)
+{
+	return pager_link(_('PaymentAdvice'), "/modules/payroll/payment_advice.php?PaymentAdvice=" 
+			.$row['type_no'], ICON_DOC);
+}
+
+function batch_checkbox($row)
+{
+	$name = "Sel_" .$row['type_no'];
+	return 	"<input type='checkbox' name='$name' value='1' >"
+	 ."<input name='Sel_[".$row['type_no']."]' type='hidden' value='"
+	 .$row['type_no']."'>\n";
+}
+
+
+
 start_form();
 
 start_table(TABLESTYLE_NOBORDER);
@@ -44,7 +60,10 @@ $cols = array(
 	_("Department") , 
 	_("To The Order Of"), 
 	_("Amount Payable") => array('type'=>'amount'),
-	_("Narration")
+	_("Narration"),
+	submit('BatchPaymentAdvice',_("Batch"), false, _("Batch Payment Advice")) 
+			=> array('insert'=>true, 'fun'=>'batch_checkbox', 'align'=>'center'),
+	array('insert'=>true, 'fun'=>'pmt_advice_link')
 );
 
 $table =& new_db_pager('pmt_advs_tbl', $sql, $cols);
