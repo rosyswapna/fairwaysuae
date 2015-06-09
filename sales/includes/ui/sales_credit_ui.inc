@@ -118,7 +118,9 @@ function display_credit_header(&$order)
 	if (!isset($_POST['OrderDate']) || $_POST['OrderDate'] == "")
 		$_POST['OrderDate'] = $order->document_date;
 
-	date_row(_("Date:"), 'OrderDate', '', $order->trans_no==0, 0, 0, 0, null, true);
+	//date_row(_("Date:"), 'OrderDate', '', $order->trans_no==0, 0, 0, 0, null, true);
+	date_row(_("Return Date:"), 'OrderDate', '', $order->trans_no==0, 0, 0, 0, null, true);
+
 	if (isset($_POST['_OrderDate_changed'])) {
 		if (!is_company_currency($order->customer_currency) 
 			&& (get_base_sales_type()>0)) {
@@ -320,7 +322,8 @@ function credit_options_controls($credit)
 	div_start('options');
 	start_table(TABLESTYLE2);
 
-	credit_type_list_row(_("Credit Note Type"), 'CreditType', null, true);
+	//credit_type_list_row(_("Credit Note Type"), 'CreditType', null, true);
+	credit_type_list_row(_("Return Policy"), 'CreditType', null, true);
 
 	if ($_POST['CreditType'] == "Return")
 	{

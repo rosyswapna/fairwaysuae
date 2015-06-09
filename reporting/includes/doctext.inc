@@ -88,9 +88,14 @@
 			break;
 
 		case ST_CUSTCREDIT:
-			$this->title = _("CREDIT NOTE");
+			/*$this->title = _("CREDIT NOTE");
 			$this->formData['document_name'] =_("Credit No.");
-			$Footer[0] = _("Please quote Credit no. when paying. All amounts stated in") . " - " . $this->formData['curr_code'];
+			$Footer[0] = _("Please quote Credit no. when paying. All amounts stated in") . " - " . $this->formData['curr_code'];*/
+			$this->title = _("SALES RETURN");
+			$this->formData['document_name'] =_("Sales Return No.");
+			$Footer[0] = _("Please quote Sales Return no. when paying. All amounts stated in") . " - " . $this->formData['curr_code'];
+
+
 
 			$aux_info = array(
 				_("Customer's Reference") => @$this->formData["customer_ref"],

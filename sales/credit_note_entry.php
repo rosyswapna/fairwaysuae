@@ -65,16 +65,16 @@ if (isset($_GET['AddedID'])) {
 	$credit_no = $_GET['AddedID'];
 	$trans_type = ST_CUSTCREDIT;
 
-	display_notification_centered(sprintf(_("Credit Note # %d has been processed"),$credit_no));
+	display_notification_centered(sprintf(_("Sales Return # %d has been processed"),$credit_no));
 
-	display_note(get_customer_trans_view_str($trans_type, $credit_no, _("&View this credit note")), 0, 1);
+	display_note(get_customer_trans_view_str($trans_type, $credit_no, _("&View this Sales Return")), 0, 1);
 
-	display_note(print_document_link($credit_no."-".$trans_type, _("&Print This Credit Invoice"), true, ST_CUSTCREDIT),0, 1);
-	display_note(print_document_link($credit_no."-".$trans_type, _("&Email This Credit Invoice"), true, ST_CUSTCREDIT, false, "printlink", "", 1),0, 1);
+	display_note(print_document_link($credit_no."-".$trans_type, _("&Print This Sales Return"), true, ST_CUSTCREDIT),0, 1);
+	display_note(print_document_link($credit_no."-".$trans_type, _("&Email This Sales Return"), true, ST_CUSTCREDIT, false, "printlink", "", 1),0, 1);
 
-	display_note(get_gl_view_str($trans_type, $credit_no, _("View the GL &Journal Entries for this Credit Note")));
+	display_note(get_gl_view_str($trans_type, $credit_no, _("View the GL &Journal Entries for this Sales Return")));
 
-	hyperlink_params($_SERVER['PHP_SELF'], _("Enter Another &Credit Note"), "NewCredit=yes");
+	hyperlink_params($_SERVER['PHP_SELF'], _("Enter Another &Sales Return"), "NewCredit=yes");
 
 	hyperlink_params("$path_to_root/admin/attachments.php", _("Add an Attachment"), "filterType=$trans_type&trans_no=$credit_no");
 
@@ -274,7 +274,7 @@ $customer_error = display_credit_header($_SESSION['Items']);
 if ($customer_error == "") {
 	start_table(TABLESTYLE, "width='80%'", 10);
 	echo "<tr><td>";
-	display_credit_items(_("Credit Note Items"), $_SESSION['Items']);
+	display_credit_items(_("Sales Return Items"), $_SESSION['Items']);
 	credit_options_controls($_SESSION['Items']);
 	echo "</td></tr>";
 	end_table();
@@ -284,7 +284,8 @@ if ($customer_error == "") {
 
 echo "<br><center><table><tr>";
 submit_cells('Update', _("Update"));
-submit_cells('ProcessCredit', _("Process Credit Note"), '', false, 'default');
+//submit_cells('ProcessCredit', _("Process Credit Note"), '', false, 'default');
+submit_cells('ProcessCredit', _("Process Sales Return"), '', false, 'default');
 echo "</tr></table></center>";
 
 end_form();

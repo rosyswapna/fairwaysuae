@@ -39,7 +39,7 @@ class customers_app extends application
 		
 		$this->add_lapp_function(0, _("Customer &Payments"),
 			"sales/customer_payments.php?", 'SA_SALESPAYMNT', MENU_TRANSACTION);
-		$this->add_lapp_function(0, _("Customer &Credit Notes"),
+		$this->add_lapp_function(0, _("Sales Return"),
 			"sales/credit_note_entry.php?NewCredit=Yes", 'SA_SALESCREDIT', MENU_TRANSACTION);
 		$this->add_rapp_function(0, _("&Allocate Customer Payments or Credit Notes"),
 			"sales/allocations/customer_allocation_main.php?", 'SA_SALESALLOC', MENU_TRANSACTION);

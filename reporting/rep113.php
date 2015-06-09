@@ -64,7 +64,8 @@ function print_credits()
 	$cur = get_company_Pref('curr_default');
 
 	if ($email == 0)
-		$rep = new FrontReport(_('CREDIT NOTE'), "InvoiceBulk", user_pagesize(), 9, $orientation);
+		//$rep = new FrontReport(_('CREDIT NOTE'), "InvoiceBulk", user_pagesize(), 9, $orientation);
+		$rep = new FrontReport(_('SALES RETURN'), "InvoiceBulk", user_pagesize(), 9, $orientation);
     if ($orientation == 'L')
     	recalculate_cols($cols);
 
@@ -86,8 +87,10 @@ function print_credits()
 			if ($email == 1)
 			{
 				$rep = new FrontReport("", "", user_pagesize(), 9, $orientation);
-				$rep->title = _('CREDIT NOTE');
-				$rep->filename = "CreditNote" . $myrow['reference'] . ".pdf";
+				//$rep->title = _('CREDIT NOTE');
+				$rep->title = _('SALES RETURN');
+				//$rep->filename = "CreditNote" . $myrow['reference'] . ".pdf";
+				$rep->filename = "SalesReturn" . $myrow['reference'] . ".pdf";
 			}
 		    $rep->SetHeaderType('Header2');
 			$rep->currency = $cur;
