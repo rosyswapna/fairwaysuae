@@ -62,9 +62,9 @@ start_form();
 
 	start_table(TABLESTYLE_NOBORDER);
 		start_row();
-			job_list_cells(_("Job Position"), "employee",null,_("All Jobs"));
+			job_list_cells(_("Job Position"), "job_position_id",null,_("All Jobs"));
 
-			department_list_cells(_("Department"),'department',null,_("All Departments"));
+			department_list_cells(_("Department"),'department_id',null,_("All Departments"));
 
 			submit_cells('Search', _("Search"), '', '', 'default');
 		end_row();

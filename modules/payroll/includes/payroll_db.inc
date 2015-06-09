@@ -102,15 +102,26 @@ function get_sql_for_pmt_advices($employee,$from,$to){
 
 function  get_sql_for_payslip_batch()
 {
+	
 
 	$sql = "SELECT CONCAT(emp.emp_first_name,' ',emp.emp_last_name) as emp_name,job.job_name,
-SUM(IF(str.type = 0,str.pay_amount,0)) AS Cr, 
-SUM(IF(str.type =1, str.pay_amount,0)) AS Dr,
-emp.job_position_id
-FROM ".TB_PREF."employees  emp
-LEFT JOIN ".TB_PREF."jobnames as job ON emp.job_position_id = job.job_name_id
-LEFT JOIN ".TB_PREF."salary_structure str ON str.job_position_id= emp.job_position_id
-GROUP BY emp.emp_id,emp.job_position_id";
+		SUM(IF(str.type = 0,str.pay_amount,0)) AS Cr, 
+		SUM(IF(str.type =1, str.pay_amount,0)) AS Dr,
+		emp.job_position_id
+		FROM ".TB_PREF."employees  emp
+		LEFT JOIN ".TB_PREF."jobnames as job ON emp.job_position_id = job.job_name_id
+		LEFT JOIN ".TB_PREF."salary_structure str ON str.job_position_id= emp.job_position_id
+		WHERE emp.inactive = 0";
+
+	if($_POST['job_position_id'] != ALL_TEXT){
+		$sql .= " AND emp.job_position_id = ".db_escape($_POST['job_position_id']);
+	}
+
+	if($_POST['department_id'] != ALL_TEXT){
+		$sql .= " AND emp.department_id = ".db_escape($_POST['department_id']);
+	}
+
+	$sql .= " GROUP BY emp.emp_id,emp.job_position_id";
 
 	
 	//echo $sql;exit;
