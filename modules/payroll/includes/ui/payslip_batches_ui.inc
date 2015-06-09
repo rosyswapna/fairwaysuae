@@ -42,7 +42,7 @@ function display_payslip_header()
 		start_row();
 		date_cells(_("Date:"),'date_');
 		text_cells(_("To the order Of:"),'to_the_order_of');
-		text_cells(_("Narration"),'narration');
+		text_cells(_("Narration"),'memo_');
 		end_row();
 	end_table();
 }

@@ -107,7 +107,8 @@ function  get_sql_for_payslip_batch()
 	$sql = "SELECT CONCAT(emp.emp_first_name,' ',emp.emp_last_name) as emp_name,job.job_name,
 		SUM(IF(str.type = 0,str.pay_amount,0)) AS Cr, 
 		SUM(IF(str.type =1, str.pay_amount,0)) AS Dr,
-		emp.job_position_id
+		emp.job_position_id,
+		emp.emp_id
 		FROM ".TB_PREF."employees  emp
 		LEFT JOIN ".TB_PREF."jobnames as job ON emp.job_position_id = job.job_name_id
 		LEFT JOIN ".TB_PREF."salary_structure str ON str.job_position_id= emp.job_position_id

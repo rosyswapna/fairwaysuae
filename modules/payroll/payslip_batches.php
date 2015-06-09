@@ -38,12 +38,79 @@ page($_SESSION['page_title'], false, false,'', $js);
 //-----------------------------------------------------------------------------------------------
 
 
+if (isset($_GET['BatchPaySlip'])) {
+
+	$batch 	= $_SESSION['PaySlipBatch']['employees'];
+	$post 	= $_SESSION['PaySlipBatch']['post'];
+	unset($_SESSION['PaySlipBatch']);
+
+	foreach($batch as $emp_id){
+		write_cart($emp_id,$post['to_the_order_of'],$post['date_'],$post['memo_']);
+	}
+
+	display_notification("Batch Payslip processed");
+}
+
+//create cart
+function write_cart($emp_id,$to_the_order_of,$date_,$narration)
+{
+	global $Refs;
+	$type = $trans_no = 0;
+	if (isset($_SESSION['journal_items']))
+	{
+		unset ($_SESSION['journal_items']);
+	}
+
+	$cart = new items_cart($type);
+	$cart->clear_items();
+
+    	$cart->order_id = $trans_no;
+	$cart->paytype = PT_EMPLOYEE;
+	$cart->person_id = $emp_id;
+	$cart->to_the_order_of = $to_the_order_of;
+	$cart->payslip_no = get_next_payslip_no();
+	
+	$cart->reference = $Refs->get_next(0);
+	$cart->tran_date = new_doc_date();
+	if (!is_date_in_fiscalyear($cart->tran_date))
+		$cart->tran_date = end_fiscalyear();
+	
+	$cart->memo_	 = $narration;
+	$cart->tran_date = $date_;
+
+
+	//get employee salary structure----------------====================
+	$salary_rules = get_emp_salary_structure($emp_id);
+
+	if(db_num_rows($salary_rules) > 0){
+
+		$totalCredit = $totalDebit = 0;
+		while($myrow = db_fetch($salary_rules)){
+			//echo "<pre>";print_r($myrow);echo "</pre>";exit;
+			$cart->add_gl_item($myrow['pay_rule_id'], 0,0, ($myrow['type'] == CREDIT) ? -$myrow['pay_amount']:$myrow['pay_amount'], '');
+
+			if($myrow['type'] == CREDIT){
+				$totalCredit += $myrow['pay_amount'];
+			}else{
+				$totalDebit += $myrow['pay_amount'];
+			}
+		}
+		$ac_payable_amount = $totalCredit - $totalDebit;
+		$cart->add_gl_item(AC_PAYABLE, 0,0, $ac_payable_amount, '');
+	}
+
+	$_SESSION['journal_items'] = &$cart;
+
+	$trans_no = write_payslip($cart, check_value('Reverse'));
+	//echo "<pre>";print_r($_SESSION['journal_items']);echo "</pre>";exit;
+}
+
 function batch_checkbox($row)
 {
-	$name = "Sel_" .$row['job_name_id'];
+	$name = "Sel_" .$row['emp_id'];
 	return "<input type='checkbox' name='$name' value='1' >"
-	 ."<input name='Sel_[".$row['job_name_id']."]' type='hidden' value='"
-	 .$row['job_name_id']."'>\n";
+	 ."<input name='Sel_[".$row['emp_id']."]' type='hidden' value='"
+	 .$row['emp_id']."'>\n";
 }
 
 function ac_payable($row)
@@ -55,6 +122,32 @@ function ac_payable($row)
 		return price_format($amt_pay)." Dr";
 	else
 		return price_format($amt_pay);
+}
+
+if (isset($_POST['BatchPaySlip']))
+{
+	
+	$del_count = 0;
+	foreach($_POST['Sel_'] as $emp_id) {
+	  	$checkbox = 'Sel_'.$emp_id;
+	  	if (check_value($checkbox)){
+		    	$selected[] = $emp_id;
+		    	$del_count++;
+	  	}
+	}
+
+	if (!$del_count) {
+		display_error(_('For batch payslip you should
+		    select at least one.'));
+	} else {
+		$_SESSION['PaySlipBatch']['employees'] = $selected;
+		$_SESSION['PaySlipBatch']['post'] = array('to_the_order_of' => $_POST['to_the_order_of'],
+							'date_' => $_POST['date_'],
+							'memo_' => $_POST['memo_']
+							);
+		meta_forward($_SERVER['PHP_SELF'],'BatchPaySlip=Yes');
+	}
+
 }
 //-----------------------------------------------------------------------------------------------
 
