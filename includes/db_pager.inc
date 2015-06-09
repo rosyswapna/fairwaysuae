@@ -47,8 +47,9 @@ class db_pager {
 		$where,
 	    $from,
 		$group,
-		$order;
+		$order,$having;
 	var	$extra_where;
+
 	
 	var $ready = false; // this var is false after change in sql before first
 						// and before first query.
@@ -88,6 +89,13 @@ class db_pager {
 				}
 				else {
 					// parse the query
+
+						$parts = preg_split('/\sHAVING\s/si', $sql, 2);
+					if(count($parts) == 2) {
+						$sql = $parts[0];
+						$this->having = $parts[1];
+					}
+
 						$parts = preg_split('/\sORDER\s*BY\s/si', $sql, 2);
 					if(count($parts) == 2) {
 						$sql = $parts[0];
@@ -97,7 +105,9 @@ class db_pager {
 					if(count($parts) == 2) {
 						$sql = $parts[0];
 						$this->group = $parts[1];
-					}
+					}				
+
+
 						$parts = preg_split('/\sWHERE\s/si', $sql, 2);
 					if(count($parts) == 2) {
 						$sql = $parts[0];
@@ -281,6 +291,8 @@ class db_pager {
 		$group = $this->group;
 		$order = $this->order;
 
+		$having = $this->having;
+
 		if(count($this->extra_where)) {
 		    $where .= ($where=='' ? '' : ' AND ')
 				.implode(' AND ', $this->extra_where);
@@ -322,6 +334,8 @@ class db_pager {
 			if($order)
 				$sql .= " ORDER BY $order"; // original base query order
 		}
+
+		if ($having) $sql.= " HAVING $having";
 
 	    $page_len = $this->page_len;
 	    $offset = ($this->curr_page - 1) * $page_len;
