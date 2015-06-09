@@ -34,10 +34,12 @@ if ($use_date_picker) {
 }
 
 if(isset($_GET['NewCredit'])) {
-	$_SESSION['page_title'] = _($help_context = "Customer Credit Note");
+	//$_SESSION['page_title'] = _($help_context = "Customer Credit Note");
+	$_SESSION['page_title'] = _($help_context = "Sales Return");
 	handle_new_credit(0);
 } elseif (isset($_GET['ModifyCredit'])) {
-	$_SESSION['page_title'] = sprintf(_("Modifying Customer Credit Note #%d"), $_GET['ModifyCredit']);
+	//$_SESSION['page_title'] = sprintf(_("Modifying Customer Credit Note #%d"), $_GET['ModifyCredit']);
+	$_SESSION['page_title'] = sprintf(_("Modifying Sales Return #%d"), $_GET['ModifyCredit']);
 	handle_new_credit($_GET['ModifyCredit']);
 	$help_context = "Modifying Customer Credit Note";
 }
