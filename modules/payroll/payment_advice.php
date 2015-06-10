@@ -27,21 +27,22 @@ include_once($path_to_root . "/gl/includes/gl_ui.inc");
 
 
 
-
 $js = '';
 if ($use_popup_windows)
 	$js .= get_js_open_window(800, 500);
 if ($use_date_picker)
 	$js .= get_js_date_picker();
 
-if (isset($_GET['BatchPaymentAdvice'])) 
-	$_SESSION['page_title'] = _($help_context = "Batch Payment Advice");
-else
+if(isset($_GET['PaymentAdvice'])) {
+	$_SESSION['page_title'] = _($help_context = "Make Payment Advice for Payslip #".$_GET['PaymentAdvice']);	
+}else{
 	$_SESSION['page_title'] = _($help_context = "Make Payment Advice");
+}
 
 page($_SESSION['page_title'], false, false,'', $js);
 //--------------------------------------------------------------------------------------------------
 
+//-----------------------------------------------------------------------------------------------------
 function line_start_focus() {
   global 	$Ajax;
 
@@ -81,20 +82,32 @@ if (isset($_GET['AddedID']))
 
 if (isset($_GET['PaymentAdvice']))
 {
-	create_cart(0,0);
-} 
-elseif (isset($_GET['ModifyPaySlip']))
-{
-	if (!isset($_GET['trans_type']) || $_GET['trans_type']!= 0) {
-		display_error(_("You can edit directly only journal entries created via Journal Entry page."));
-		hyperlink_params("$path_to_root/gl/gl_journal.php", _("Entry &New Journal Entry"), "NewJournal=Yes");
+
+	if(has_payment_advice($_GET['PaymentAdvice'])){
+
+		display_error(_("Payment advice exist"));
+		hyperlink_params("$path_to_root/modules/payroll/inquiry/payment_advices.php",_("Payment Advices"));
 		display_footer_exit();
+	}else{
+		$payslip = get_payslip($_GET['PaymentAdvice']);
+
+		$_POST['person_id'] = $payslip['person_id'];
+		$_POST['to_the_order_of'] = $payslip['to_the_order_of'];
+		$_POST['PaySlipNo'] = $payslip['payslip_no'];
+		$_POST['memo_'] = "Payment advice gl entry For Payslip".$payslip['payslip_no'];
 	}
-	create_cart($_GET['trans_type'], $_GET['trans_no']);
+
+	create_cart(0,0,$payslip);
+}elseif (isset($_GET['NewPaymentAdvice'])){
+		create_cart(0,0);
+	
 }
 
-function create_cart($type=0, $trans_no=0)
+
+function create_cart($type = 0, $trans_no =0,$payslip=array())
 {
+	
+	//echo "<pre>";print_r($payslip);echo "</pre>";exit;
 	global $Refs;
 
 	if (isset($_SESSION['journal_items']))
@@ -103,36 +116,36 @@ function create_cart($type=0, $trans_no=0)
 	}
 
 	$cart = new items_cart($type);
+	$cart->clear_items();
+	
     	$cart->order_id = $trans_no;
-
 	$cart->paytype = PT_EMPLOYEE;
+	
 
-	if ($trans_no) {
-		$result = get_gl_trans($type, $trans_no);
+	$cart->reference = $Refs->get_next(0);
+	$cart->tran_date = new_doc_date();
+	if (!is_date_in_fiscalyear($cart->tran_date))
+		$cart->tran_date = end_fiscalyear();
+	$_POST['ref_original'] = -1;
+	
 
-		if ($result) {
-			while ($row = db_fetch($result)) {
-				if ($row['amount'] == 0) continue;
-				$date = $row['tran_date'];
-				$cart->add_gl_item($row['account'], $row['dimension_id'], 
-					$row['dimension2_id'], $row['amount'], $row['memo_']);
-			}
-		}
-		$cart->memo_ = get_comments_string($type, $trans_no);
-		$cart->tran_date = sql2date($date);
-		$cart->reference = $Refs->get($type, $trans_no);
-		$_POST['ref_original'] = $cart->reference; // Store for comparison when updating
-	} else {
-		$cart->reference = $Refs->get_next(0);
-		$cart->tran_date = new_doc_date();
-		if (!is_date_in_fiscalyear($cart->tran_date))
-			$cart->tran_date = end_fiscalyear();
-		$_POST['ref_original'] = -1;
-	}
-
-	$_POST['memo_'] = $cart->memo_;
+	$cart->memo_ = $_POST['memo_'];
 	$_POST['ref'] = $cart->reference;
 	$_POST['date_'] = $cart->tran_date;
+
+	if($payslip){
+		$cart->person_id = $payslip['person_id'];
+		$cart->to_the_order_of = $payslip['to_the_order_of'];
+		$cart->payslip_no = $payslip['payslip_no'];
+
+		$ac_pmt_amt = -($payslip['amount']);
+		$cash_amt = -($ac_pmt_amt);
+
+		$bank = get_default_bank_account();
+	
+		$cart->add_gl_item(AC_PAYABLE, 0, 0, $ac_pmt_amt, '');
+		$cart->add_gl_item($bank['account_code'], 0, 0, $cash_amt, '');
+	}
 
 	$_SESSION['journal_items'] = &$cart;
 }
@@ -335,7 +348,7 @@ if (isset($_POST['go']))
 
 start_form();
 
-display_order_header($_SESSION['journal_items']);
+display_advice_header($_SESSION['journal_items']);
 
 start_table(TABLESTYLE2, "width='90%'", 10);
 start_row();
@@ -348,7 +361,7 @@ end_table(1);
 
 /*submit_center('Process', _("Process PaySlip"), true , 
 	_('Process journal entry only if debits equal to credits'), 'default');*/
-submit_center('Process', _("Process PaySlip"), true , 
+submit_center('Process', _("Process Payment Advice"), true , 
 	_('Process journal entry only if debits equal to credits'));
 
 end_form();

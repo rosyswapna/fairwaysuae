@@ -63,7 +63,8 @@ $opts = array(		// default options
 	'category' => false, // category column name or false
 	'show_inactive' => false, // show inactive records. 
 	'auto_complete' => false, // auto complete. 
-	'editable' => false // false, or length of editable entry field
+	'editable' => false, // false, or length of editable entry field
+	'opt_value'=>false //option value from sql
 );
 // ------ merge options with defaults ----------
 	if($options != null)
@@ -188,7 +189,9 @@ $opts = array(		// default options
 //if($name=='curr_default') display_notification($opts['search_submit']);
 	if($result = db_query($sql)) {
 		while ($contact_row = db_fetch($result)) {
-			$value = $contact_row[0];
+
+			$value = ($opts['opt_value'])?$contact_row[$opts['opt_value']]:$contact_row[0];
+			//$value = $contact_row[0];
 			$descr = $opts['format']==null ?  $contact_row[1] :
 				call_user_func($opts['format'], $contact_row);
 			$sel = '';

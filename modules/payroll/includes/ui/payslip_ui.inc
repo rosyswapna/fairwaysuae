@@ -111,6 +111,96 @@ function display_order_header(&$Order)
 	end_outer_table(1);
 }
 
+
+function display_advice_header(&$Order)
+{
+	global $Ajax;
+
+
+	$qes = has_quick_entries(QE_JOURNAL);
+	$new = $Order->order_id==0;
+
+	hidden('ref_original');
+	start_outer_table(TABLESTYLE2, "width='90%'");
+
+	table_section(1);
+
+   		date_row(_("Date:"), 'date_', '', $new);
+		ref_row(_("Reference:"), 'ref', '');
+
+	table_section(2, "35%");
+		
+		hidden('PayType', PT_EMPLOYEE);
+
+		$employee = get_employee($Order->person_id);
+
+		if(isset($_GET['PaymentAdvice'])){
+			label_row(_("Pay To: "),$employee['emp_first_name']." ".$employee['emp_last_name']);
+			hidden('person_id',$Order->person_id);
+			label_row(_("To the Order of:"),$Order->to_the_order_of);
+		}else{
+			employee_list_row(_("Pay To: "), 'person_id',null, _("Select Employee"), true, false, true);
+			text_row(_("To the Order of:"),'to_the_order_of',$_POST['to_the_order_of']);
+		}
+		
+	table_section(3, "35%");	
+		if(!isset($_POST['PaySlipNo'])){
+			$_POST['PaySlipNo'] = 0;
+		}
+		
+
+	/*table_section(3, "35%");
+
+		bank_accounts_list_row(_("From:"), 'bank_account', null, true);
+		bank_balance_row(price_format(0));*/
+	
+	if(!isset($_GET['PaymentAdvice'])){
+		employee_payslip_list_row(_("Pay Slip:"),'for_payslip',$_POST['for_payslip'],get_post('person_id'),_("Select One"),true);
+
+	}
+	if(!isset($_POST['PaySlipNo'])){
+		$Order->payslip_no = 0;
+	}
+	
+	
+	if (list_updated('person_id')) {//get payslip for selected employee
+		$Order->clear_items();
+		//------------------------------------------------==================
+		unset($_POST['totamount']); // enable default
+		$Ajax->activate('totamount');
+		$Ajax->activate('for_payslip');
+	}
+
+	if (list_updated('for_payslip')) {
+		$Order->clear_items();
+		
+		$payslip = get_payslip(get_post('for_payslip'));
+		
+		if($payslip){
+			$Order->person_id = $payslip['person_id'];
+			$Order->to_the_order_of = $payslip['to_the_order_of'];
+			$Order->payslip_no = $_POST['PaySlipNo'] = $payslip['payslip_no'];
+
+			$ac_pmt_amt = -($payslip['amount']);
+			$cash_amt = -($ac_pmt_amt);
+
+			$bank = get_default_bank_account();
+	
+			$Order->add_gl_item(AC_PAYABLE, 0, 0, $ac_pmt_amt, '');
+			$Order->add_gl_item($bank['account_code'], 0, 0, $cash_amt, '');
+
+			$_POST['memo_'] = "Payment advice gl entry For Payslip".$payslip['payslip_no'];
+			
+		}
+		$Ajax->activate('items_table');
+	}
+
+	hidden('PaySlipNo',$Order->payslip_no);
+	label_row(_("Payslip No:"),$Order->payslip_no);
+	
+	end_outer_table(1);
+}
+
 //---------------------------------------------------------------------------------
 
 function display_gl_items($title, &$order)
@@ -191,6 +281,7 @@ function display_gl_items($title, &$order)
 
     end_table();
 	div_end();
+	
 }
 
 //---------------------------------------------------------------------------------
@@ -289,5 +380,67 @@ function gl_options_controls()
 
 
 //---------------------------------------------------------------------------------
+
+
+function _format_emp_payslip($row)
+{
+	
+	
+	return "Trans# ".$row['type_no'] ." - ". $row['job_name'];
+}
+
+function employee_payslip_list($name, $selected_id=null,$employee_id, $spec_option=false, $submit_on_change=false, 
+	$show_inactive=false, $editkey = false)
+{
+	global $all_items;
+
+	$sql = get_sql_for_payslips($employee_id);
+	//display_notification($sql);exit;
+	$mode = 0;//We don't have many employees, hardcoding to no search
+
+	if ($editkey)
+		set_editor('employee', $name, $editkey);//what is this? //set_editor defined in ui_controls.inc
+
+	$ret = combo_input($name, $selected_id, $sql, 'type_no', 'job_name', //sql fields
+	array(
+	    'format' => '_format_emp_payslip',
+	    
+		'search_box' => $mode!=0,
+		'type' => 1,
+		'size' => 20,
+		'spec_option' => $spec_option === true ? _("All Payslip") : $spec_option,
+		'spec_id' => $all_items,//what is this?
+		'select_submit'=> $submit_on_change,
+		'async' => false,
+		'sel_hint' => $mode ? _('Press Space tab to filter by name fragment; F2 - entry new employee') :
+		_('Select employee'),
+		'show_inactive' => $show_inactive,
+		'opt_value' => 'type_no'
+	) );
+	if ($editkey)
+		$ret .= add_edit_combo('employee');
+	return $ret;
+}
+
+//--------------------------------------------------------------------------------------------
+function employee_payslip_list_cells($label, $name, $selected_id=null,$employee_id, $all_option=false, 
+	$submit_on_change=false, $show_inactive=false, $editkey = false)
+{
+	if ($label != null)
+		echo "<td>$label</td>\n";
+	echo "<td nowrap>";
+	echo employee_payslip_list($name, $selected_id,$employee_id, $all_option, $submit_on_change,
+		$show_inactive, $editkey);
+	echo "</td>\n";
+}
+
+function employee_payslip_list_row($label, $name, $selected_id=null, $employee_id, $all_option = false, 
+	$submit_on_change=false, $show_inactive=false, $editkey = false)
+{
+	echo "<tr><td class='label'>$label</td><td>";
+	echo employee_payslip_list($name, $selected_id,$employee_id, $all_option, $submit_on_change,
+		$all, $editkey);
+	echo "</td></tr>\n";
+}
 
 ?>

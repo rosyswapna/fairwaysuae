@@ -58,7 +58,7 @@ function get_next_payslip_no(){
     	return $row[0];
 }
 
-function get_sql_for_pmt_advices($employee,$from,$to){
+function get_sql_for_payslips($employee,$from,$to){
 	$sql = "SELECT	gl.tran_date,
 		CONCAT(emp.emp_first_name,' ',emp.emp_last_name),
 		job.job_name,
@@ -82,10 +82,13 @@ function get_sql_for_pmt_advices($employee,$from,$to){
 		 LEFT JOIN ".TB_PREF."departments as dept ON
 			emp.department_id = dept.dept_id
 		WHERE gl.person_type_id = ".PT_EMPLOYEE."
-		AND gl.account = " .AC_PAYABLE . "
-		AND gl.tran_date >= '" . date2sql($from) . "'
-		AND gl.tran_date <= '" . date2sql($to) . "'
-		AND gl.amount!=0 ";
+		AND gl.account = " .AC_PAYABLE ;
+		if($from != '' && $to != ''){
+			$sql .= " AND gl.tran_date >= '" . date2sql($from) . "'
+				AND gl.tran_date <= '" . date2sql($to) . "'";
+		}
+		
+		$sql .= " AND gl.amount!=0 ";
 	
 	if ($employee != -1) {
 		$sql .= " AND gl.person_id=".db_escape($employee);
@@ -129,5 +132,36 @@ function  get_sql_for_payslip_batch()
 	//echo $sql;exit;
 	return $sql;
 }
+
+function has_payment_advice($trans_id)
+{
+	$sql = "SELECT type_no FROM ".TB_PREF."gl_trans 
+		WHERE type=" .ST_JOURNAL. " AND account = " .AC_PAYABLE 
+		." AND payslip_no IN 
+		(SELECT payslip_no FROM ".TB_PREF."gl_trans WHERE type_no=".db_escape($trans_id).")";
+		
+	$result = db_query($sql, "Cannot retreive a payslip");
+	if(db_num_rows($result) == 1){
+		return false;
+	}else{
+		return true;
+	}
+	
+}
+
+
+function get_payslip($trans_id)
+{
+	$sql = "SELECT * FROM ".TB_PREF."gl_trans 
+		WHERE type=" .ST_JOURNAL. " AND account = " .AC_PAYABLE 
+		." AND type_no=".db_escape($trans_id);
+		
+	$result = db_query($sql, "Cannot retreive a gl transaction");
+
+    	return db_fetch($result);
+}
+
+
+
 
 ?>
