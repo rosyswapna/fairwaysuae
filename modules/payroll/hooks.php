@@ -27,7 +27,7 @@ class payroll_app extends application
 						
                 $this->add_module(_("Inquiries and Reports"));
                 $this->add_lapp_function(1, _("Employee Tr&anscation Inquiry"),
-                        $path_to_root.'/modules/payroll/', 'SA_PAYROLL', MENU_INQUIRY);
+                        $path_to_root.'/modules/payroll/inquiry/employee_inquiry.php', 'SA_EMPTRANS', MENU_INQUIRY);
                 $this->add_lapp_function(1, _("Payroll Liabialities &Inquiry"),
                          $path_to_root.'/modules/payroll/inquiry/payroll_liabialities.php', 'SA_LBLTYQRY', MENU_INQUIRY);
 				$this->add_rapp_function(1, _("Employee Pay&roll Reports"),
@@ -87,8 +87,11 @@ class hooks_payroll extends hooks {
 
 		$security_areas['SA_PMTADVICE'] = array(SS_PAYROLL|1, _("Make Payment Advices"));
 		$security_areas['SA_LBLTYQRY'] = array(SS_PAYROLL|1, _("Payroll Liabialities Inquiry"));
+		$security_areas['SA_EMPTRANS'] = array(SS_PAYROLL|1, _("Employee Inquiry"));
 
 		$security_areas['SA_PMTADVICE'] = array(SS_PAYROLL|1, _("Payment Advice"));
+
+
 
 		
                 return array($security_areas, $security_sections);

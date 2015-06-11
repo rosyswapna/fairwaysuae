@@ -168,6 +168,53 @@ function get_payslip($trans_id)
 }
 
 
+//sql for employee transaction inquiry
+function get_sql_for_emp_inquiry($employee,$job_position,$department,$from,$to){
+	$sql = "SELECT	gl.tran_date,
+		CONCAT(emp.emp_first_name,' ',emp.emp_last_name),
+		job.job_name,
+		dept.dept_name,
+		gl.to_the_order_of,
+		ABS(gl.amount) as amount,
+		com.memo_,
+		IF(ISNULL(a.gl_seq),0,a.gl_seq) as gl_seq,
+		COUNT(gl.payslip_no) as PaySlip,
+		gl.type_no
+		
+		FROM ".TB_PREF."gl_trans as gl
+		 LEFT JOIN ".TB_PREF."audit_trail as a ON
+			(gl.type=a.type AND gl.type_no=a.trans_no)
+		 LEFT JOIN ".TB_PREF."comments as com ON
+			(gl.type=com.type AND gl.type_no=com.id)
+		 LEFT JOIN ".TB_PREF."employees as emp ON
+			emp.emp_id = gl.person_id
+		 LEFT JOIN ".TB_PREF."jobnames as job ON
+			emp.job_position_id = job.job_name_id
+		 LEFT JOIN ".TB_PREF."departments as dept ON
+			emp.department_id = dept.dept_id
+		WHERE gl.person_type_id = ".PT_EMPLOYEE."
+		AND gl.account = " .AC_PAYABLE ;
+		if($from != '' && $to != ''){
+			$sql .= " AND gl.tran_date >= '" . date2sql($from) . "'
+				AND gl.tran_date <= '" . date2sql($to) . "'";
+		}
+		
+		$sql .= " AND gl.amount!=0 ";
+	
+	if ($employee != -1) {
+		$sql .= " AND gl.person_id=".db_escape($employee);
+	}
+
+	$sql .= " GROUP BY gl.payslip_no";
+	$sql .= " HAVING PaySlip = 1";
+	
+	//$sql .= " GROUP BY gl.tran_date, a.gl_seq, gl.type, gl.type_no";
+
+	//echo $sql;
+	return $sql;
+}
+
+
 
 
 ?>
