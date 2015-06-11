@@ -105,14 +105,9 @@ function job_position_settings($selected_id)
 		}
 	}
 	else 
-	{
-		$myrow = get_job($selected_id);
+	{	
+		$myrow = get_job($selected_id);	
 		$_POST['job_name'] = $myrow["job_name"];
-		$_POST['job_name_id'] = $myrow["job_name_id"];
-		$result_rules=get_payroll_rules();
-		$_POST['job_position_id']=$row_rule["account_code"];
-		
-		
 	}
 
 	start_table(TABLESTYLE2);
@@ -120,12 +115,6 @@ function job_position_settings($selected_id)
 	
 	end_table();
 
-//---------------------------------------------------------------------------------check_box
-
-
-
-
-//---------------------------------------------------------------------------------
 	div_start('controls');
 	if (!$selected_id)
 	{
