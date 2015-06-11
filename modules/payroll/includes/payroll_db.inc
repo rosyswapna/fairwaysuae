@@ -135,16 +135,22 @@ function  get_sql_for_payslip_batch()
 
 function has_payment_advice($trans_id)
 {
-	$sql = "SELECT type_no FROM ".TB_PREF."gl_trans 
-		WHERE type=" .ST_JOURNAL. " AND account = " .AC_PAYABLE 
-		." AND payslip_no IN 
-		(SELECT payslip_no FROM ".TB_PREF."gl_trans WHERE type_no=".db_escape($trans_id).")";
+	
+	$sql = "SELECT COUNT(*) AS PaySlip FROM ".TB_PREF."gl_trans 
+		WHERE account = " .AC_PAYABLE. " AND payslip_no IN (
+			SELECT payslip_no  
+			FROM ".TB_PREF."gl_trans 
+			WHERE type = " .ST_JOURNAL. " AND account = ".AC_PAYABLE." 
+				AND person_type_id = ".PT_EMPLOYEE." and type_no = ".db_escape($trans_id).")";
 		
+	//echo $sql;exit;
+	
 	$result = db_query($sql, "Cannot retreive a payslip");
-	if(db_num_rows($result) == 1){
-		return false;
-	}else{
+	$row = db_fetch($result);
+	if($row['PaySlip'] > 1){
 		return true;
+	}else{
+		return false;
 	}
 	
 }
