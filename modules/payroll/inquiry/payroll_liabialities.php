@@ -34,7 +34,7 @@ start_table(TABLESTYLE_NOBORDER);
 end_table();
 
 
-$sql = get_sql_for_pmt_advices(get_post('employee', -1), get_post('FromDate'),
+$sql = get_sql_for_payslips(get_post('employee', -1), get_post('FromDate'),
 	get_post('ToDate'));
 
 $cols = array(
