@@ -272,4 +272,4 @@ ALTER TABLE `0_passport` CHANGE `emp_code` `emp_code` VARCHAR(50) NOT NULL;
 
 ALTER TABLE `0_employees`  ADD `department_id` INT(11) NOT NULL AFTER `job_position_id`,  ADD INDEX (`department_id`);
 
-
+ALTER TABLE `0_gl_trans` ADD `to_the_order_of` VARCHAR(225) NULL , ADD `payslip_no` INT(11) NOT NULL DEFAULT '0' ;

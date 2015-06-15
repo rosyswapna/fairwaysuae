@@ -21,7 +21,7 @@ class payroll_app extends application
 				$this->add_rapp_function(0, _("Manage &Employee Expenses"),
                         $path_to_root.'/modules/payroll/', 'SA_PAYROLL', MENU_TRANSACTION);
                 $this->add_rapp_function(0, _("Manage Pay&check Printable"),
-                        $path_to_root.'/modules/payroll/', 'SA_PAYROLL', MENU_TRANSACTION);
+                        $path_to_root.'/modules/payroll/paycheck_printable.php', 'SA_PAYCHECK_PRINTABLE', MENU_TRANSACTION);
 
 
 						
@@ -90,6 +90,7 @@ class hooks_payroll extends hooks {
 		$security_areas['SA_EMPTRANS'] = array(SS_PAYROLL|1, _("Employee Inquiry"));
 
 		$security_areas['SA_PMTADVICE'] = array(SS_PAYROLL|1, _("Payment Advice"));
+		$security_areas['SA_PAYCHECK_PRINTABLE'] = array(SS_PAYROLL|1, _("paycheck printable"));
 
 
 

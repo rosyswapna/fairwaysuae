@@ -213,8 +213,21 @@ function get_sql_for_emp_inquiry($employee,$job_position,$department,$from,$to){
 	//echo $sql;
 	return $sql;
 }
+function get_sql_for_payment_advices($employee,$job_position,$department,$from,$to)
+{
+	$sql="SELECT 1,gl.tran_date,CONCAT(emp.emp_first_name,' ',emp.emp_last_name),'',gl.memo_,gl.account,gl.amount 
+	FROM ".TB_PREF."gl_trans as gl 
+	LEFT JOIN ".TB_PREF."employees as emp ON
+			emp.emp_id = gl.person_id
+	WHERE type =  " .ST_JOURNAL. " AND account IN (select account_code from ".TB_PREF."bank_accounts) AND person_type_id = ".PT_EMPLOYEE." AND payslip_no > 0  ";
+	
+	if ($employee != -1) {
+		$sql .= " AND gl.person_id=".db_escape($employee);
+	}
+	
+	return $sql;
 
-
+}
 
 
 ?>
