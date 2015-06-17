@@ -262,12 +262,12 @@ end_table(1);
 
 if ($selected_account == "") 
 {
-	submit_center('add', _("Add Account"), true, '', 'default');
+	submit_center('add', _("Add Payroll Rule"), true, '', 'default');
 } 
 else 
 {
-    submit_center_first('update', _("Update Account"), '', 'default');
-    submit_center_last('delete', _("Delete account"), '',true);
+    submit_center_first('update', _("Update Payroll Rule"), '', 'default');
+    submit_center_last('delete', _("Delete Payroll Rule"), '',true);
 }
 end_form();
 

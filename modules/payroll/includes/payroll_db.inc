@@ -55,7 +55,7 @@ function get_next_payslip_no(){
 	$result = db_query($sql,"The next payslip number could not be retreived");
 
     	$row = db_fetch_row($result);
-    	return $row[0];
+    	return ($row[0])?$row[0]:1;
 }
 
 function get_sql_for_payslips($employee,$from,$to){
@@ -215,18 +215,57 @@ function get_sql_for_emp_inquiry($employee,$job_position,$department,$from,$to){
 }
 function get_sql_for_payment_advices($employee,$job_position,$department,$from,$to)
 {
-	$sql="SELECT 1,gl.tran_date,CONCAT(emp.emp_first_name,' ',emp.emp_last_name),'',gl.memo_,gl.account,gl.amount 
+	$sql="SELECT 1,gl.tran_date,CONCAT(emp.emp_first_name,' ',emp.emp_last_name),'',gl.memo_,gl.account,gl.amount,bt.cheque_no,gl.type_no 
 	FROM ".TB_PREF."gl_trans as gl 
 	LEFT JOIN ".TB_PREF."employees as emp ON
 			emp.emp_id = gl.person_id
-	WHERE type =  " .ST_JOURNAL. " AND account IN (select account_code from ".TB_PREF."bank_accounts) AND person_type_id = ".PT_EMPLOYEE." AND payslip_no > 0  ";
+	LEFT JOIN ".TB_PREF."bank_trans as bt ON
+			bt.type = gl.type AND bt.trans_no=gl.type_no
+	WHERE gl.type =  " .ST_JOURNAL. " AND gl.account IN (select account_code from ".TB_PREF."bank_accounts) AND gl.person_type_id = ".PT_EMPLOYEE." AND gl.payslip_no > 0  ";
 	
 	if ($employee != -1) {
 		$sql .= " AND gl.person_id=".db_escape($employee);
 	}
-	
 	return $sql;
+}
+function get_payment_advice_details($trans_no)
+{
+	$sql="SELECT gl.tran_date,CONCAT(emp.emp_first_name,' ',emp.emp_last_name) as emp_name,'',gl.memo_,gl.account,gl.amount,gl.type_no,dp.dept_name,jb.job_name,ba.bank_account_name,ba.bank_account_number,
+	ba.bank_name,ba.bank_address,ba.account_type,bt.id
+	FROM ".TB_PREF."gl_trans as gl
+	LEFT JOIN ".TB_PREF."employees as emp ON
+			emp.emp_id = gl.person_id
+	LEFT JOIN ".TB_PREF."departments as dp ON
+			dp.dept_id = gl.person_id
+	LEFT JOIN ".TB_PREF."jobnames as jb ON
+			jb.job_name_id = emp.job_position_id
+	LEFT JOIN ".TB_PREF."bank_trans as bt ON
+			bt.trans_no = gl.type_no AND bt.type=gl.type
+	LEFT JOIN ".TB_PREF."bank_accounts as ba ON
+			ba.id = bt.bank_act
+	
+	WHERE gl.type=" .ST_JOURNAL. " AND gl.account IN (select account_code from ".TB_PREF."bank_accounts) AND type_no=".db_escape($trans_no);
+	
+	$res=db_query($sql,"oops");
+	return db_fetch($res);
+	 echo $res;
+	
+}
 
+function update_cheque($chequedate,$chequeno,$id)
+{		
+		
+		$sql="UPDATE ".TB_PREF."bank_trans SET
+		cheque_date='".date2sql($chequedate)."',
+		cheque_no=".db_escape($chequeno)."
+		WHERE id=".db_escape($id);
+		//display_notification($sql);
+		//exit;
+		db_query($sql,"cant add cheque details");
+		
+		
+		
+		
 }
 
 
