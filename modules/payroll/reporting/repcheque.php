@@ -9,8 +9,7 @@
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  
     See the License here <http://www.gnu.org/licenses/gpl-3.0.html>.
 ***********************************************************************/
-$page_security = $_POST['PARAM_0'] == $_POST['PARAM_1'] ?
-	'SA_SUPPTRANSVIEW' : 'SA_SUPPBULKREP';
+$page_security ='SA_PAYCHECK_PRINTABLE';
 // ----------------------------------------------------------------
 // $ Revision:	2.2 $
 // Creator:	Joe Hunt - Based on the new Report Engine by Tom Hallman
@@ -19,7 +18,8 @@ $page_security = $_POST['PARAM_0'] == $_POST['PARAM_1'] ?
 // Title:	Printable Check
 // ----------------------------------------------------------------
 $path_to_root="..";
-
+echo "hai";
+exit;
 include_once($path_to_root . "/includes/session.inc");
 include_once($path_to_root . "/includes/date_functions.inc");
 include_once($path_to_root . "/includes/data_checks.inc");
@@ -31,9 +31,8 @@ print_check();
 //----------------------------------------------------------------------------------------------------
 function get_remittance($type, $trans_no)
 {
-   	$sql="SELECT gl.tran_date,CONCAT(emp.emp_first_name,' ',emp.emp_last_name) as emp_name,'',gl.memo_,gl.account,gl.amount,gl.type_no,dp.dept_name,jb.job_name,ba.bank_account_name,ba.bank_account_number,
-	ba.bank_name,ba.bank_address,ba.account_type,bt.id
-	FROM ".TB_PREF."gl_trans as gl
+   	$sql="SELECT bt.cheque_date,bt.cheque_no,CONCAT(emp.emp_first_name,' ',emp.emp_last_name) as emp_name,gl.amount
+	FROM ".TB_PREF."bank_trans as bt
 	LEFT JOIN ".TB_PREF."employees as emp ON
 			emp.emp_id = gl.person_id
 	LEFT JOIN ".TB_PREF."departments as dp ON
@@ -51,17 +50,7 @@ function get_remittance($type, $trans_no)
 	return db_fetch($res);
 }
 
-function get_allocations_for_remittance($supplier_id, $type, $trans_no)
-{
-	$sql = get_alloc_supp_sql("amt, supp_reference, trans.alloc", "trans.trans_no = alloc.trans_no_to
-		AND trans.type = alloc.trans_type_to
-		AND alloc.trans_no_from=".db_escape($trans_no)."
-		AND alloc.trans_type_from=".db_escape($type)."
-		AND trans.supplier_id=".db_escape($supplier_id),
-		TB_PREF."supp_allocations as alloc");
-	$sql .= " ORDER BY trans_no";
-	return db_query($sql, "Cannot retreive alloc to transactions");
-}
+
 //-------------------------------------------------------------------------------------------------
 function price_in_words_custom($number)
 {    
@@ -179,11 +168,12 @@ function print_check()
 	$fromd = date2sql($fromd);
 	$tod = date2sql($tod);
 
-    $from = $_POST['PARAM_2'];
+    $from = $_POST['PARAM_0'];
     $destination = $_POST['PARAM_3'];
  	
  	$trans_no = explode("-", $from);
-
+$trans_no[1]=$_POST['PARAM_2'];
+$trans_no[0]=$_POST['PARAM_3'];
 	$dec = user_price_dec();
 	if ($destination)
 		include_once($path_to_root . "/reporting/includes/excel_report.inc");

@@ -26,6 +26,7 @@ if ($use_date_picker)
 include_once($path_to_root . "/includes/date_functions.inc");
 include_once($path_to_root . "/includes/ui.inc");
 include_once($path_to_root . "/includes/data_checks.inc");
+include_once($path_to_root . "/reporting/includes/reporting.inc");
 require("includes/payroll_calc.inc");
 require("includes/payroll_db.inc");
 
@@ -44,19 +45,15 @@ elseif(isset($_GET['NewPayCheque']))
 	
 function handle_submit()
 {	
-	
+
 	update_cheque($_POST['chequedate'],$_POST['chequeno'],$_POST['id']);
 	display_notification("cheque details added");
 }
-function handle_submit_print()
-{
-	
-}
+
 //-------------------------------------------------------------------------
 if(isset($_POST['submit'])) 
 		handle_submit();
-if(isset($_POST['print'])) 
-		handle_submit_print();	
+
 	
 	
 
@@ -89,7 +86,13 @@ start_form();
 				text_row(_("Cheque no:"), 'chequeno',  40, 30);
 				end_outer_table(TABLESTYLE2);
 				submit_center('submit', _("Update Cheque details"), true, '', 'default');
-				submit_center_first('print', _("Print Cheque details"), true, '', ICON_PRINT);
+				$button_label='<button type="button" class="inputsubmit">PRINT CHEQUE</button>';
+				$ar = array('PARAM_0' => Today(), 'PARAM_1' => Today(), 'PARAM_2' => $_GET['EditPayCheque'],'PARAM_3' =>ST_JOURNAL); 
+				//$ar = array('PARAM_2' => $_GET['EditPayCheque']."-".ST_JOURNAL);
+				echo print_link($button_label,'cheque',$ar);
+				
+				//echo print_document_link("4-0", _("Print"), true, 0, ICON_PRINT);
+				//echo print_document_link( null,_("Print"),true,'', ICON_PRINT);
 
 			}
 			else
