@@ -310,7 +310,6 @@ function copy_file($file, $from, $to)
 function find_custom_file($rep)
 {
 	global $installed_extensions, $path_to_root, $local_path_to_root;
-
 	// customized per company version
 	$path = company_path();
 	$file = $path.$rep;
@@ -328,6 +327,7 @@ function find_custom_file($rep)
 			if (($ext['active'] && $ext['type'] == 'extension')) {
 				$path = $path_to_root.'/'.$ext['path'];
 				$file = $path.$rep;
+				
 				if (file_exists($file)) {
 					set_include_path($path.PATH_SEPARATOR.get_include_path());
 					$local_path_to_root = $path;

@@ -18,8 +18,7 @@ $page_security ='SA_PAYCHECK_PRINTABLE';
 // Title:	Printable Check
 // ----------------------------------------------------------------
 $path_to_root="..";
-echo "hai";
-exit;
+
 include_once($path_to_root . "/includes/session.inc");
 include_once($path_to_root . "/includes/date_functions.inc");
 include_once($path_to_root . "/includes/data_checks.inc");

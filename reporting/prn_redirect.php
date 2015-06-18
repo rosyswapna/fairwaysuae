@@ -67,7 +67,7 @@ $rep = preg_replace('/[^a-z_0-9]/i', '', $_POST['REP_ID']);
 
 $rep_file = find_custom_file("/reporting/rep$rep.php");
 
-if ($rep_file) {
+if ($rep_file) {echo "oops";exit;
 	require($rep_file);
 } else
 	display_error("Cannot find report file '$rep'");

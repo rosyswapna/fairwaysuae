@@ -10056,3 +10056,53 @@
 [17-Jun-2015 14:05:02 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
 [17-Jun-2015 14:05:02 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
 [17-Jun-2015 14:05:02 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\paycheque.php on line 86 and defined
+[17-Jun-2015 14:33:06 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[17-Jun-2015 14:33:06 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[18-Jun-2015 05:56:15 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[18-Jun-2015 05:56:15 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[18-Jun-2015 06:14:03 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[18-Jun-2015 06:14:03 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[18-Jun-2015 06:14:03 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 143 and defined
+[18-Jun-2015 06:14:03 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 143 and defined
+[18-Jun-2015 06:14:03 Europe/Paris] 0:admin:payroll_db.inc:61: Missing argument 2 for get_sql_for_payslips(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 397 and defined
+[18-Jun-2015 06:14:03 Europe/Paris] 0:admin:payroll_db.inc:61: Missing argument 3 for get_sql_for_payslips(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 397 and defined
+[18-Jun-2015 06:14:10 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[18-Jun-2015 06:14:10 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[18-Jun-2015 06:14:10 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[18-Jun-2015 06:14:10 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[18-Jun-2015 06:15:43 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[18-Jun-2015 06:15:43 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[18-Jun-2015 06:15:43 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\paycheque.php on line 86 and defined
+[18-Jun-2015 06:59:26 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[18-Jun-2015 06:59:26 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[18-Jun-2015 06:59:26 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\paycheque.php on line 86 and defined
+[18-Jun-2015 07:33:20 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[18-Jun-2015 07:33:20 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[18-Jun-2015 07:33:20 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\paycheque.php on line 86 and defined
+[18-Jun-2015 07:33:22 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[18-Jun-2015 07:33:22 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[18-Jun-2015 07:33:22 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\paycheque.php on line 86 and defined
+[18-Jun-2015 07:54:14 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[18-Jun-2015 07:54:14 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[18-Jun-2015 07:54:38 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[18-Jun-2015 07:54:38 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[18-Jun-2015 07:54:38 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[18-Jun-2015 07:54:38 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[18-Jun-2015 07:54:40 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[18-Jun-2015 07:54:40 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[18-Jun-2015 07:54:40 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\paycheque.php on line 86 and defined
+[18-Jun-2015 07:54:44 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[18-Jun-2015 07:54:44 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[18-Jun-2015 07:56:51 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[18-Jun-2015 07:56:51 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[18-Jun-2015 07:56:51 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\paycheque.php on line 86 and defined
+[18-Jun-2015 07:59:50 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[18-Jun-2015 07:59:50 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[18-Jun-2015 07:59:50 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\paycheque.php on line 86 and defined
+[18-Jun-2015 08:13:59 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[18-Jun-2015 08:13:59 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[18-Jun-2015 08:14:00 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[18-Jun-2015 08:14:00 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[18-Jun-2015 08:14:01 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[18-Jun-2015 08:14:01 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[18-Jun-2015 08:14:02 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\paycheque.php on line 86 and defined
