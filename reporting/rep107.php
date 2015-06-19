@@ -55,10 +55,10 @@ function print_invoices()
 	$from = min($fno[0], $tno[0]);
 	$to = max($fno[0], $tno[0]);
 
-	$cols = array(4, 60, 225, 300, 325, 385, 450, 515);
+	$cols = array(2, 30, 120, 300, 340, 380, 420, 480);
 
 	// $headers in doctext.inc
-	$aligns = array('left',	'left',	'right', 'left', 'right', 'right', 'right');
+	$aligns = array('left', 'left', 'left',	'left', 'left', 'left', 'left', 'right');
 
 	$params = array('comments' => $comments);
 
@@ -122,20 +122,21 @@ function print_invoices()
 		  			$DisplayDiscount ="";
 	    		else
 		  			$DisplayDiscount = number_format2($myrow2["discount_percent"]*100,user_percent_dec()) . "%";
-				$rep->TextCol(0, 1,	$myrow2['stock_id'], -2);
+				$rep->TextCol(0, 1,	" ", -2);
+				$rep->TextCol(1, 2,	$myrow2['stock_id'], -2);
 				$oldrow = $rep->row;
-				$rep->TextColLines(1, 2, $myrow2['StockDescription'], -2);
+				$rep->TextColLines(2, 3, $myrow2['StockDescription'], -2);
 				$newrow = $rep->row;
 				$rep->row = $oldrow;
 				if ($Net != 0.0 || !is_service($myrow2['mb_flag']) || !isset($no_zero_lines_amount) || $no_zero_lines_amount == 0)
 				{
-					$rep->TextCol(2, 3,	$DisplayQty, -2);
-					$rep->TextCol(3, 4,	$myrow2['units'], -2);
-					$rep->TextCol(4, 5,	$DisplayPrice, -2);
+					$rep->TextCol(3, 4,	$DisplayQty, -2);
+					$rep->TextCol(4, 5,	$myrow2['units'], -2);
+					$rep->TextCol(5, 6,	$DisplayPrice, -2);
 					//$rep->TextCol(5, 6,	$DisplayDiscount, -2);
-					$rep->TextCol(5, 6,	$DisplayDiscAmt, -2);
+					$rep->TextCol(6, 7,	$DisplayDiscAmt, -2);
 					
-					$rep->TextCol(6, 7,	$DisplayNet, -2);
+					$rep->TextCol(7, 8,	$DisplayNet, -2);
 				}	
 				$rep->row = $newrow;
 				//$rep->NewLine(1);
@@ -161,43 +162,44 @@ function print_invoices()
     		$rep->row = $rep->bottomMargin + (18 * $rep->lineHeight);
 			$doctype = ST_SALESINVOICE;
 
-			$rep->TextCol(3, 6, _("Sub-total"), -2);
-			$rep->TextCol(6, 7,	$DisplaySubTot, -2);
+			$rep->TextCol(4, 7, _("Sub-total"), -2);
+			$rep->TextCol(7, 8,	$DisplaySubTot, -2);
 			$rep->NewLine();
 			if($DisplayFreight>0){
-			$rep->TextCol(3, 6, _("Shipping"), -2);
-			$rep->TextCol(6, 7,	$DisplayFreight, -2);
+			$rep->TextCol(4, 7, _("Shipping"), -2);
+			$rep->TextCol(7, 8,	$DisplayFreight, -2);
 			}
 			if($DisplayFreight1>0){
 			$rep->NewLine();
-			$rep->TextCol(3, 6, _("Freight"), -2);
-			$rep->TextCol(6, 7,	$DisplayFreight1, -2);
+			$rep->TextCol(4, 7, _("Freight"), -2);
+			$rep->TextCol(7, 8,	$DisplayFreight1, -2);
 			}
 			if($Displayinsurance>0){
 			$rep->NewLine();
-			$rep->TextCol(3, 6, _("Insurance"), -2);
-			$rep->TextCol(6, 7,	$Displayinsurance, -2);
+			$rep->TextCol(4, 7, _("Insurance"), -2);
+			$rep->TextCol(7, 8,	$Displayinsurance, -2);
 			}
 			if($Displaypacking>0){
 			$rep->NewLine();
-			$rep->TextCol(3, 6, _("Packing "), -2);
-			$rep->TextCol(6, 7,	$Displaypacking, -2);
+			$rep->TextCol(4, 7, _("Packing "), -2);
+			$rep->TextCol(7, 8,	$Displaypacking, -2);
 			}
 			if($Displayduties>0){
 			$rep->NewLine();
-			$rep->TextCol(3, 6, _("Duties"), -2);
-			$rep->TextCol(6, 7,	$Displayduties, -2);
+			$rep->TextCol(4, 7, _("Duties"), -2);
+			$rep->TextCol(7, 8,	$Displayduties, -2);
 			}
 			if($Displayservice>0){
 			$rep->NewLine();
-			$rep->TextCol(3, 6, _("Service"), -2);
-			$rep->TextCol(6, 7,	$Displayservice, -2);
+			$rep->TextCol(4, 7, _("Service"), -2);
+			$rep->TextCol(7, 8,	$Displayservice, -2);
 			}
 			if($Displaycommission>0){
 			$rep->NewLine();
-			$rep->TextCol(3, 6, _("Commission"), -2);
-			$rep->TextCol(6, 7,	$Displaycommission, -2);
+			$rep->TextCol(4, 7, _("Commission"), -2);
+			$rep->TextCol(7, 8,	$Displaycommission, -2);
 			}
+			
 			$rep->NewLine();
 			$tax_items = get_trans_tax_details(ST_SALESINVOICE, $i);
 			$first = true;
@@ -218,12 +220,12 @@ function print_invoices()
     				{
     					if ($first)
     					{	
-							$rep->TextCol(3, 6, _("Total Tax Excluded"), -2);
-							$rep->TextCol(6, 7,	number_format2($sign*$tax_item['net_amount'], $dec), -2);
+							$rep->TextCol(4, 7, _("Total Tax Excluded"), -2);
+							$rep->TextCol(7, 8,	number_format2($sign*$tax_item['net_amount'], $dec), -2);
 							$rep->NewLine();
     					}
-						$rep->TextCol(3, 6, $tax_type_name, -2);
-						$rep->TextCol(6, 7,	$DisplayTax, -2);
+						$rep->TextCol(4, 7, $tax_type_name, -2);
+						$rep->TextCol(7, 8,	$DisplayTax, -2);
 						$first = false;
     				}
     				else
@@ -232,20 +234,24 @@ function print_invoices()
 				}
     			else
     			{
-					$rep->TextCol(3, 6, $tax_type_name, -2);
-					$rep->TextCol(6, 7,	$DisplayTax, -2);
+					$rep->TextCol(4, 7, $tax_type_name, -2);
+					$rep->TextCol(7, 8,	$DisplayTax, -2);
 				}
 				$rep->NewLine();
     		}
-
+		/*$rep->NewLine();
+			$rep->TextCol(4, 7, _("Total Discount"), -2);
+			$rep->TextCol(7, 8,	$DisplayDiscAmt, -2);*/
     		$rep->NewLine();
 			
 			$billing_total=$myrow["ov_freight_charge"] + $myrow["ov_insurance"] + $myrow["ov_packing_charge"] + $myrow["ov_duties"] + $myrow["ov_service_charge"] + $myrow["ov_commission"];
 			$DisplayTotal = number_format2($sign*($myrow["ov_freight"] + $myrow["ov_gst"] +
 				$myrow["ov_amount"]+$myrow["ov_freight_tax"]+$billing_total),$dec);
+				
+				
 			$rep->Font('bold');
-			$rep->TextCol(3, 6, _("TOTAL INVOICE"), - 2);
-			$rep->TextCol(6, 7, $DisplayTotal, -2);
+			$rep->TextCol(4, 7, _("TOTAL INVOICE"), - 2);
+			$rep->TextCol(7, 8, $DisplayTotal, -2);
 			$words = price_in_words($myrow['Total'], ST_SALESINVOICE);
 			if ($words != "")
 			{

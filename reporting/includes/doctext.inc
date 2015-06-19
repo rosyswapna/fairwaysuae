@@ -26,7 +26,7 @@
 	);
 
 	// default item column headers
-	$this->headers = array(_("Item Code"), _("Item Description"), _("Quantity"),
+	$this->headers = array(_("Sl No"),_("Item Code"), _("Item Description"), _("Quantity"),
 		_("Unit"), _("Price"), _("Discount"), _("Total"));
 
 	// for links use 'text' => 'url'

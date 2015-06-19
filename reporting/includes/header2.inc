@@ -37,6 +37,7 @@
 		$icol = $this->pageWidth / 2;
 		$ccol = $this->cols[0] + 4;
 		$c2col = $ccol + 60;
+		$c3col = $ccol + 40;
 		$ccol2 = $icol / 2;
 		$mcol = $icol + 8;
 		$mcol2 = $this->pageWidth - $ccol2;
@@ -62,7 +63,9 @@
 		}
 		$this->LineTo($right, $iline2 ,$right, $iline4);
 		$this->LineTo($this->leftMargin, $iline5 ,$this->leftMargin, $iline7);
-		$this->LineTo($this->cols[$cols - 2] + 4, $iline5 ,$this->cols[$cols - 2] + 4, $iline7);
+		$this->LineTo($this->cols[$cols - 7] - 4, $iline5 ,$this->cols[$cols - 7] - 4, $iline7);
+		$this->LineTo($this->cols[$cols - 5] - 4, $iline5 ,$this->cols[$cols - 5] - 4, $iline7);
+		$this->LineTo($this->cols[$cols - 1] - 8, $iline5 ,$this->cols[$cols - 1] - 8, $iline7);
 		$this->LineTo($right, $iline5 ,$right, $iline7);
 
 		// Company Logo
@@ -93,28 +96,28 @@
 
 		// Company data
 		$this->TextWrapLines($ccol, $icol, $this->company['postal_address']);
-		$this->Font('italic');
+		//$this->Font('italic');
 		if (@$this->company['phone'])
 		{
-			$this->Text($ccol, _("Phone"), $c2col);
-			$this->Text($c2col, $this->company['phone'], $mcol);
+			$this->Text($ccol, _("Phone No: "), $c3col);
+			$this->Text($c3col, $this->company['phone'], $mcol);
 			$this->NewLine();
 		}
 		if (@$this->company['fax'])
 		{
-			$this->Text($ccol, _("Fax"), $c2col);
-			$this->Text($c2col, $this->company['fax'], $mcol);
+			$this->Text($ccol, _("Fax"), $c3col);
+			$this->Text($c3col, $this->company['fax'], $mcol);
 			$this->NewLine();
 		}
 		if (@$this->company['email'])
 		{
-			$this->Text($ccol, _("Email"), $c2col);
+			$this->Text($ccol, _("Email Id:"), $c3col);
 
 			$url = "mailto:" . $this->company['email'];
 			$this->SetTextColor(0, 0, 255);
-			$this->Text($c2col, $this->company['email'], $mcol);
+			$this->Text($c3col, $this->company['email'], $mcol);
 			$this->SetTextColor(0, 0, 0);
-			$this->addLink($url, $c2col, $this->row, $mcol, $this->row + $this->lineHeight);
+			$this->addLink($url, $c3col, $this->row, $mcol, $this->row + $this->lineHeight);
 
 			$this->NewLine();
 		}
