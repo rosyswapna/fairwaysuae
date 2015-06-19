@@ -85,14 +85,13 @@ start_form();
 				date_row(_("Cheque date:"),'chequedate');
 				text_row(_("Cheque no:"), 'chequeno',  40, 30);
 				end_outer_table(TABLESTYLE2);
-				submit_center('submit', _("Update Cheque details"), true, '', 'default');
-				$button_label='<button type="button" class="inputsubmit">PRINT CHEQUE</button>';
+				div_start('controls');
+				submit_center_first('submit', _("Update Cheque details"), true, '', 'default');
+				$button_label='<button type="button" class="inputsubmit">Print cheque</button>';
 				$ar = array('PARAM_0' => $_GET['EditPayCheque'],'PARAM_1' =>ST_JOURNAL); 
-				//$ar = array('PARAM_2' => $_GET['EditPayCheque']."-".ST_JOURNAL);
 				echo print_link($button_label,'cheque',$ar);
+				div_end();
 				
-				//echo print_document_link("4-0", _("Print"), true, 0, ICON_PRINT);
-				//echo print_document_link( null,_("Print"),true,'', ICON_PRINT);
 
 			}
 			else
