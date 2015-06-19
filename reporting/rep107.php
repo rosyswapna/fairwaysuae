@@ -91,9 +91,9 @@ function print_invoices()
 			}
 
 			if($myrow['payment_terms']==PM_CASH)
-				$rep->title = _('CASH-SALE');
+				$rep->title = _('CASH-SALES');
 			else
-				$rep->title = _('CREDIT-SALE');
+				$rep->title = _('CREDIT-SALES');
 			
 			$rep->SetHeaderType('Header2');
 			$rep->currency = $cur;
@@ -164,27 +164,40 @@ function print_invoices()
 			$rep->TextCol(3, 6, _("Sub-total"), -2);
 			$rep->TextCol(6, 7,	$DisplaySubTot, -2);
 			$rep->NewLine();
+			if($DisplayFreight>0){
 			$rep->TextCol(3, 6, _("Shipping"), -2);
 			$rep->TextCol(6, 7,	$DisplayFreight, -2);
-			
+			}
+			if($DisplayFreight1>0){
 			$rep->NewLine();
 			$rep->TextCol(3, 6, _("Freight"), -2);
 			$rep->TextCol(6, 7,	$DisplayFreight1, -2);
+			}
+			if($Displayinsurance>0){
 			$rep->NewLine();
 			$rep->TextCol(3, 6, _("Insurance"), -2);
 			$rep->TextCol(6, 7,	$Displayinsurance, -2);
+			}
+			if($Displaypacking>0){
 			$rep->NewLine();
 			$rep->TextCol(3, 6, _("Packing "), -2);
 			$rep->TextCol(6, 7,	$Displaypacking, -2);
+			}
+			if($Displayduties>0){
 			$rep->NewLine();
 			$rep->TextCol(3, 6, _("Duties"), -2);
 			$rep->TextCol(6, 7,	$Displayduties, -2);
+			}
+			if($Displayservice>0){
 			$rep->NewLine();
 			$rep->TextCol(3, 6, _("Service"), -2);
 			$rep->TextCol(6, 7,	$Displayservice, -2);
+			}
+			if($Displaycommission>0){
 			$rep->NewLine();
 			$rep->TextCol(3, 6, _("Commission"), -2);
 			$rep->TextCol(6, 7,	$Displaycommission, -2);
+			}
 			$rep->NewLine();
 			$tax_items = get_trans_tax_details(ST_SALESINVOICE, $i);
 			$first = true;
