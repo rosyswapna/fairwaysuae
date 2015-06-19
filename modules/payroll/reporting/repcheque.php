@@ -29,27 +29,28 @@ add_access_extensions();
 print_check();
 
 //----------------------------------------------------------------------------------------------------
-function get_remittance($type, $trans_no)
+function get_remittance($type,$trans_no)
 {
-   $sql="SELECT bt.cheque_date,bt.cheque_no,gl.amount
+	
+   $sql="SELECT bt.cheque_date,bt.cheque_no,bt.amount,CONCAT(emp.emp_first_name,' ',emp.emp_last_name) as emp_name
 	FROM ".TB_PREF."bank_trans as bt
 	
-	LEFT JOIN ".TB_PREF."gl_trans as gl ON
-			gl.type_no = bt.trans_no AND gl.type=bt.type
+	LEFT JOIN ".TB_PREF."employees as emp ON
+			bt.person_id = emp.emp_id
+			
 	
-	
-	
-	WHERE gl.type=" .ST_JOURNAL. " AND gl.account IN (select account_code from ".TB_PREF."bank_accounts) AND type_no=".db_escape($trans_no);
+	WHERE bt.type=".db_escape($type)." AND  bt.trans_no=".db_escape($trans_no);
 	
 	$res=db_query($sql,"oops");
 	
+	//display_notification($sql);
+	
 	return db_fetch($res);
-	display_notification($sql);
+	
 }
 
 
 //-------------------------------------------------------------------------------------------------
-
 
 //----------------------------------------------------------------------------------------------------
 
@@ -58,29 +59,27 @@ function print_check()
     global $path_to_root, $systypes_array, $print_invoice_no;
 
     // Get the payment
-	$counter = $_POST['PARAM_0'];
-	$issueDate = $_POST['PARAM_1'];
-	$payeName = $_POST['PARAM_2'];
-	$amount = $_POST['PARAM_3'];
-    	$destination = $_POST['PARAM_4'];
+	
+	
+	$trans_no = $_POST['PARAM_0'];
+	$type = $_POST['PARAM_1'];
+    
  	
- 	
+	//echo $trans_no;
+	
 	$dec = user_price_dec();
-	if ($destination)
-		include_once($path_to_root . "/reporting/includes/excel_report.inc");
-	else
+	
 		include_once($path_to_root . "/reporting/includes/pdf_report.inc");
 
-	if($counter > 0){
-		$from_trans = get_remittance($trans_no[1], $trans_no[0]);
-		$Name = $from_trans['Name'];
-		$total_amt = abs($from_trans['Total']);
-   		$date = sql2date($from_trans['tran_date']);
-	}else{
-		$Name = $payeName;
-		$total_amt = (float)$amount;
-   		$date = $issueDate;
-	}
+	
+		
+		$from_trans = get_remittance($type,$trans_no);
+		//print_r($from_trans);
+		
+		$date = sql2date($from_trans['cheque_date']);
+		$cheque_no = $from_trans['cheque_no'];
+		$total_amt = abs($from_trans['amount']);
+		$Name = $from_trans['emp_name'];
     
 
 	// Get check information

@@ -563,7 +563,7 @@ function write_journal_entries(&$cart, $reverse, $use_transaction=true)
 
 	return $trans_id;
 }
-
+//write payslip and payment advice
 function write_payslip(&$cart, $reverse, $use_transaction=true)
 {
 	global $Refs;
@@ -600,7 +600,7 @@ function write_payslip(&$cart, $reverse, $use_transaction=true)
 	    	if ($is_bank_to)
 	    	{
 	    		add_bank_trans($trans_type, $trans_id, $is_bank_to, $ref,
-	    			$date_, $journal_item->amount,	0, "", get_company_currency(),
+	    			$date_, $journal_item->amount,$cart->paytype,$cart->person_id, get_company_currency(),
 	    			"Cannot insert a destination bank transaction");
 	    	}
 

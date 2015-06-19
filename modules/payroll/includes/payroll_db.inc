@@ -215,7 +215,7 @@ function get_sql_for_emp_inquiry($employee,$job_position,$department,$from,$to){
 }
 function get_sql_for_payment_advices($employee,$job_position,$department,$from,$to)
 {
-	$sql="SELECT 1,gl.tran_date,CONCAT(emp.emp_first_name,' ',emp.emp_last_name),'',gl.memo_,gl.account,gl.amount,bt.cheque_no,gl.type_no 
+	$sql="SELECT gl.tran_date,CONCAT(emp.emp_first_name,' ',emp.emp_last_name),'',gl.memo_,gl.account,gl.amount,bt.cheque_no,gl.type_no 
 	FROM ".TB_PREF."gl_trans as gl 
 	LEFT JOIN ".TB_PREF."employees as emp ON
 			emp.emp_id = gl.person_id
@@ -248,7 +248,7 @@ function get_payment_advice_details($trans_no)
 	
 	$res=db_query($sql,"oops");
 	return db_fetch($res);
-	 echo $res;
+	 //echo $res;
 	
 }
 

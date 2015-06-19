@@ -87,7 +87,7 @@ start_form();
 				end_outer_table(TABLESTYLE2);
 				submit_center('submit', _("Update Cheque details"), true, '', 'default');
 				$button_label='<button type="button" class="inputsubmit">PRINT CHEQUE</button>';
-				$ar = array('PARAM_0' => Today(), 'PARAM_1' => Today(), 'PARAM_2' => $_GET['EditPayCheque'],'PARAM_3' =>ST_JOURNAL); 
+				$ar = array('PARAM_0' => $_GET['EditPayCheque'],'PARAM_1' =>ST_JOURNAL); 
 				//$ar = array('PARAM_2' => $_GET['EditPayCheque']."-".ST_JOURNAL);
 				echo print_link($button_label,'cheque',$ar);
 				

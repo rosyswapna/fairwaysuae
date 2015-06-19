@@ -10406,3 +10406,684 @@
 [18-Jun-2015 13:22:52 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
 [18-Jun-2015 13:22:55 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
 [18-Jun-2015 13:22:55 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[18-Jun-2015 13:31:42 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[18-Jun-2015 13:31:42 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[18-Jun-2015 13:31:42 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 143 and defined
+[18-Jun-2015 13:31:42 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 143 and defined
+[18-Jun-2015 13:31:42 Europe/Paris] 0:admin:payroll_db.inc:61: Missing argument 2 for get_sql_for_payslips(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 397 and defined
+[18-Jun-2015 13:31:42 Europe/Paris] 0:admin:payroll_db.inc:61: Missing argument 3 for get_sql_for_payslips(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 397 and defined
+[18-Jun-2015 13:31:47 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[18-Jun-2015 13:31:47 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[18-Jun-2015 13:31:47 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 143 and defined
+[18-Jun-2015 13:31:47 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 143 and defined
+[18-Jun-2015 13:31:47 Europe/Paris] 0:admin:payroll_db.inc:61: Missing argument 2 for get_sql_for_payslips(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 397 and defined
+[18-Jun-2015 13:31:47 Europe/Paris] 0:admin:payroll_db.inc:61: Missing argument 3 for get_sql_for_payslips(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 397 and defined
+[18-Jun-2015 13:31:50 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[18-Jun-2015 13:31:50 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[18-Jun-2015 13:31:50 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 143 and defined
+[18-Jun-2015 13:31:50 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 143 and defined
+[18-Jun-2015 13:31:50 Europe/Paris] 0:admin:payroll_db.inc:61: Missing argument 2 for get_sql_for_payslips(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 397 and defined
+[18-Jun-2015 13:31:50 Europe/Paris] 0:admin:payroll_db.inc:61: Missing argument 3 for get_sql_for_payslips(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 397 and defined
+[18-Jun-2015 13:31:54 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[18-Jun-2015 13:31:54 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[18-Jun-2015 13:31:54 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 143 and defined
+[18-Jun-2015 13:31:54 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 143 and defined
+[18-Jun-2015 13:31:54 Europe/Paris] 0:admin:payroll_db.inc:61: Missing argument 2 for get_sql_for_payslips(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 397 and defined
+[18-Jun-2015 13:31:54 Europe/Paris] 0:admin:payroll_db.inc:61: Missing argument 3 for get_sql_for_payslips(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 397 and defined
+[18-Jun-2015 13:31:54 Europe/Paris] 0:admin:gl_db_bank_accounts.inc:298: Missing argument 1 for get_default_bank_account(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 187 and defined
+[18-Jun-2015 13:31:58 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[18-Jun-2015 13:31:58 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[18-Jun-2015 13:32:01 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[18-Jun-2015 13:32:01 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[18-Jun-2015 13:36:35 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[18-Jun-2015 13:36:35 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[18-Jun-2015 13:36:43 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[18-Jun-2015 13:36:43 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[18-Jun-2015 13:36:43 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\paycheque.php on line 86 and defined
+[18-Jun-2015 13:36:46 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\repcheque.php:44:<br>oops<br>error code : 1054<br>error message : Unknown column 'gl.type' in 'where clause'<br>sql that failed was : SELECT bt.cheque_date,bt.cheque_no,bt.amount,CONCAT(emp.emp_first_name,' ',emp.emp_last_name) as emp_name
+	FROM 0_bank_trans as bt
+	
+	LEFT JOIN 0_employees as emp ON
+			bt.person_id = emp.emp_id
+	
+	
+	
+	WHERE gl.type=''  AND bt.trans_no=''<br><br><br>
+[18-Jun-2015 13:36:46 Europe/Paris] 0:admin:ui_controls.inc:59: implode(): Invalid arguments passed
+[18-Jun-2015 13:36:48 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\repcheque.php:44:<br>oops<br>error code : 1054<br>error message : Unknown column 'gl.type' in 'where clause'<br>sql that failed was : SELECT bt.cheque_date,bt.cheque_no,bt.amount,CONCAT(emp.emp_first_name,' ',emp.emp_last_name) as emp_name
+	FROM 0_bank_trans as bt
+	
+	LEFT JOIN 0_employees as emp ON
+			bt.person_id = emp.emp_id
+	
+	
+	
+	WHERE gl.type=''  AND bt.trans_no=''<br><br><br>
+[18-Jun-2015 13:36:48 Europe/Paris] 0:admin:ui_controls.inc:59: implode(): Invalid arguments passed
+[18-Jun-2015 13:36:50 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\repcheque.php:44:<br>oops<br>error code : 1054<br>error message : Unknown column 'gl.type' in 'where clause'<br>sql that failed was : SELECT bt.cheque_date,bt.cheque_no,bt.amount,CONCAT(emp.emp_first_name,' ',emp.emp_last_name) as emp_name
+	FROM 0_bank_trans as bt
+	
+	LEFT JOIN 0_employees as emp ON
+			bt.person_id = emp.emp_id
+	
+	
+	
+	WHERE gl.type=''  AND bt.trans_no=''<br><br><br>
+[18-Jun-2015 13:36:50 Europe/Paris] 0:admin:ui_controls.inc:59: implode(): Invalid arguments passed
+[18-Jun-2015 13:40:37 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\repcheque.php:44:<br>oops<br>error code : 1054<br>error message : Unknown column 'gl.type' in 'where clause'<br>sql that failed was : SELECT bt.cheque_date,bt.cheque_no,bt.amount,CONCAT(emp.emp_first_name,' ',emp.emp_last_name) as emp_name
+	FROM 0_bank_trans as bt
+	
+	LEFT JOIN 0_employees as emp ON
+			bt.person_id = emp.emp_id
+	
+	
+	
+	WHERE gl.type=''  AND bt.trans_no=''<br><br><br>
+[18-Jun-2015 13:40:37 Europe/Paris] 0:admin:ui_controls.inc:59: implode(): Invalid arguments passed
+[18-Jun-2015 13:43:14 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[18-Jun-2015 13:43:14 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[18-Jun-2015 13:43:21 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[18-Jun-2015 13:43:21 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[18-Jun-2015 13:43:21 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\paycheque.php on line 86 and defined
+[18-Jun-2015 13:47:28 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\repcheque.php:44:<br>oops<br>error code : 1054<br>error message : Unknown column 'gl.type' in 'where clause'<br>sql that failed was : SELECT bt.cheque_date,bt.cheque_no,bt.amount,CONCAT(emp.emp_first_name,' ',emp.emp_last_name) as emp_name
+	FROM 0_bank_trans as bt
+	
+	LEFT JOIN 0_employees as emp ON
+			bt.person_id = emp.emp_id
+	
+	
+	
+	WHERE gl.type='0'  AND bt.trans_no='14'<br><br><br>
+[18-Jun-2015 13:47:28 Europe/Paris] 0:admin:ui_controls.inc:59: implode(): Invalid arguments passed
+[18-Jun-2015 13:54:04 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\repcheque.php:44:<br>oops<br>error code : 1054<br>error message : Unknown column 'gl.type' in 'where clause'<br>sql that failed was : SELECT bt.cheque_date,bt.cheque_no,bt.amount,CONCAT(emp.emp_first_name,' ',emp.emp_last_name) as emp_name
+	FROM 0_bank_trans as bt
+	
+	LEFT JOIN 0_employees as emp ON
+			bt.person_id = emp.emp_id
+	
+	
+	
+	WHERE gl.type='0'  AND bt.trans_no='14'<br><br><br>
+[18-Jun-2015 13:54:04 Europe/Paris] 0:admin:ui_controls.inc:59: implode(): Invalid arguments passed
+[18-Jun-2015 13:54:06 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\repcheque.php:44:<br>oops<br>error code : 1054<br>error message : Unknown column 'gl.type' in 'where clause'<br>sql that failed was : SELECT bt.cheque_date,bt.cheque_no,bt.amount,CONCAT(emp.emp_first_name,' ',emp.emp_last_name) as emp_name
+	FROM 0_bank_trans as bt
+	
+	LEFT JOIN 0_employees as emp ON
+			bt.person_id = emp.emp_id
+	
+	
+	
+	WHERE gl.type='0'  AND bt.trans_no='14'<br><br><br>
+[18-Jun-2015 13:54:06 Europe/Paris] 0:admin:ui_controls.inc:59: implode(): Invalid arguments passed
+[18-Jun-2015 13:55:00 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\repcheque.php:44:<br>oops<br>error code : 1054<br>error message : Unknown column 'gl.type' in 'where clause'<br>sql that failed was : SELECT bt.cheque_date,bt.cheque_no,bt.amount,CONCAT(emp.emp_first_name,' ',emp.emp_last_name) as emp_name
+	FROM 0_bank_trans as bt
+	
+	LEFT JOIN 0_employees as emp ON
+			bt.person_id = emp.emp_id
+	
+	
+	
+	WHERE gl.type='0'  AND bt.trans_no='14'<br><br><br>
+[18-Jun-2015 13:55:00 Europe/Paris] 0:admin:ui_controls.inc:59: implode(): Invalid arguments passed
+[18-Jun-2015 14:13:36 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\repcheque.php:42:<br>oops<br>error code : 1054<br>error message : Unknown column 'gl.type' in 'where clause'<br>sql that failed was : SELECT bt.cheque_date,bt.cheque_no,bt.amount,CONCAT(emp.emp_first_name,' ',emp.emp_last_name) as emp_name
+	FROM 0_bank_trans as bt
+	
+	LEFT JOIN 0_employees as emp ON
+			bt.person_id = emp.emp_id
+	
+	WHERE gl.type='0'  AND bt.trans_no='14'<br><br><br>
+[18-Jun-2015 14:13:36 Europe/Paris] 0:admin:ui_controls.inc:59: implode(): Invalid arguments passed
+[18-Jun-2015 14:13:38 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\repcheque.php:42:<br>oops<br>error code : 1054<br>error message : Unknown column 'gl.type' in 'where clause'<br>sql that failed was : SELECT bt.cheque_date,bt.cheque_no,bt.amount,CONCAT(emp.emp_first_name,' ',emp.emp_last_name) as emp_name
+	FROM 0_bank_trans as bt
+	
+	LEFT JOIN 0_employees as emp ON
+			bt.person_id = emp.emp_id
+	
+	WHERE gl.type='0'  AND bt.trans_no='14'<br><br><br>
+[18-Jun-2015 14:13:38 Europe/Paris] 0:admin:ui_controls.inc:59: implode(): Invalid arguments passed
+[18-Jun-2015 14:13:42 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\repcheque.php:42:<br>oops<br>error code : 1054<br>error message : Unknown column 'gl.type' in 'where clause'<br>sql that failed was : SELECT bt.cheque_date,bt.cheque_no,bt.amount,CONCAT(emp.emp_first_name,' ',emp.emp_last_name) as emp_name
+	FROM 0_bank_trans as bt
+	
+	LEFT JOIN 0_employees as emp ON
+			bt.person_id = emp.emp_id
+	
+	WHERE gl.type='0'  AND bt.trans_no='14'<br><br><br>
+[18-Jun-2015 14:13:42 Europe/Paris] 0:admin:ui_controls.inc:59: implode(): Invalid arguments passed
+[18-Jun-2015 14:13:43 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\repcheque.php:42:<br>oops<br>error code : 1054<br>error message : Unknown column 'gl.type' in 'where clause'<br>sql that failed was : SELECT bt.cheque_date,bt.cheque_no,bt.amount,CONCAT(emp.emp_first_name,' ',emp.emp_last_name) as emp_name
+	FROM 0_bank_trans as bt
+	
+	LEFT JOIN 0_employees as emp ON
+			bt.person_id = emp.emp_id
+	
+	WHERE gl.type='0'  AND bt.trans_no='14'<br><br><br>
+[18-Jun-2015 14:13:43 Europe/Paris] 0:admin:ui_controls.inc:59: implode(): Invalid arguments passed
+[18-Jun-2015 14:13:44 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\repcheque.php:42:<br>oops<br>error code : 1054<br>error message : Unknown column 'gl.type' in 'where clause'<br>sql that failed was : SELECT bt.cheque_date,bt.cheque_no,bt.amount,CONCAT(emp.emp_first_name,' ',emp.emp_last_name) as emp_name
+	FROM 0_bank_trans as bt
+	
+	LEFT JOIN 0_employees as emp ON
+			bt.person_id = emp.emp_id
+	
+	WHERE gl.type='0'  AND bt.trans_no='14'<br><br><br>
+[18-Jun-2015 14:13:44 Europe/Paris] 0:admin:ui_controls.inc:59: implode(): Invalid arguments passed
+[18-Jun-2015 14:19:04 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\repcheque.php:42:<br>oops<br>error code : 1054<br>error message : Unknown column 'gl.type' in 'where clause'<br>sql that failed was : SELECT bt.cheque_date,bt.cheque_no,bt.amount,CONCAT(emp.emp_first_name,' ',emp.emp_last_name) as emp_name
+	FROM 0_bank_trans as bt
+	
+	LEFT JOIN 0_employees as emp ON
+			bt.person_id = emp.emp_id
+	
+	WHERE gl.type='0'  AND bt.trans_no='14'<br><br><br>
+[18-Jun-2015 14:19:04 Europe/Paris] 0:admin:ui_controls.inc:59: implode(): Invalid arguments passed
+[18-Jun-2015 14:19:06 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\repcheque.php:42:<br>oops<br>error code : 1054<br>error message : Unknown column 'gl.type' in 'where clause'<br>sql that failed was : SELECT bt.cheque_date,bt.cheque_no,bt.amount,CONCAT(emp.emp_first_name,' ',emp.emp_last_name) as emp_name
+	FROM 0_bank_trans as bt
+	
+	LEFT JOIN 0_employees as emp ON
+			bt.person_id = emp.emp_id
+	
+	WHERE gl.type='0'  AND bt.trans_no='14'<br><br><br>
+[18-Jun-2015 14:19:06 Europe/Paris] 0:admin:ui_controls.inc:59: implode(): Invalid arguments passed
+[18-Jun-2015 14:21:07 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\repcheque.php:42:<br>oops<br>error code : 1054<br>error message : Unknown column 'gl.type' in 'where clause'<br>sql that failed was : SELECT bt.cheque_date,bt.cheque_no,bt.amount,CONCAT(emp.emp_first_name,' ',emp.emp_last_name) as emp_name
+	FROM 0_bank_trans as bt
+	
+	LEFT JOIN 0_employees as emp ON
+			bt.person_id = emp.emp_id
+	
+	WHERE gl.type='0'  AND bt.trans_no='14'<br><br><br>
+[18-Jun-2015 14:21:07 Europe/Paris] 0:admin:ui_controls.inc:59: implode(): Invalid arguments passed
+[18-Jun-2015 14:21:34 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\repcheque.php:42:<br>oops<br>error code : 1054<br>error message : Unknown column 'gl.type' in 'where clause'<br>sql that failed was : SELECT bt.cheque_date,bt.cheque_no,bt.amount,CONCAT(emp.emp_first_name,' ',emp.emp_last_name) as emp_name
+	FROM 0_bank_trans as bt
+	
+	LEFT JOIN 0_employees as emp ON
+			bt.person_id = emp.emp_id
+	
+	WHERE gl.type='0'  AND bt.trans_no='14'<br><br><br>
+[18-Jun-2015 14:21:34 Europe/Paris] 0:admin:ui_controls.inc:59: implode(): Invalid arguments passed
+[18-Jun-2015 14:22:04 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\repcheque.php:42:<br>oops<br>error code : 1054<br>error message : Unknown column 'gl.type' in 'where clause'<br>sql that failed was : SELECT bt.cheque_date,bt.cheque_no,bt.amount,CONCAT(emp.emp_first_name,' ',emp.emp_last_name) as emp_name
+	FROM 0_bank_trans as bt
+	
+	LEFT JOIN 0_employees as emp ON
+			bt.person_id = emp.emp_id
+	
+	WHERE gl.type='0'  AND bt.trans_no='14'<br><br><br>
+[18-Jun-2015 14:22:04 Europe/Paris] 0:admin:ui_controls.inc:59: implode(): Invalid arguments passed
+[18-Jun-2015 14:22:29 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\repcheque.php:42:<br>oops<br>error code : 1054<br>error message : Unknown column 'gl.type' in 'where clause'<br>sql that failed was : SELECT bt.cheque_date,bt.cheque_no,bt.amount,CONCAT(emp.emp_first_name,' ',emp.emp_last_name) as emp_name
+	FROM 0_bank_trans as bt
+	
+	LEFT JOIN 0_employees as emp ON
+			bt.person_id = emp.emp_id
+	
+	WHERE gl.type='0'  AND bt.trans_no='14'<br><br><br>
+[18-Jun-2015 14:22:29 Europe/Paris] 0:admin:ui_controls.inc:59: implode(): Invalid arguments passed
+[19-Jun-2015 05:55:38 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[19-Jun-2015 05:55:38 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[19-Jun-2015 05:59:11 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[19-Jun-2015 05:59:11 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[19-Jun-2015 05:59:11 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\paycheque.php on line 86 and defined
+[19-Jun-2015 05:59:16 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\repcheque.php:42:<br>oops<br>error code : 1054<br>error message : Unknown column 'gl.type' in 'where clause'<br>sql that failed was : SELECT bt.cheque_date,bt.cheque_no,bt.amount,CONCAT(emp.emp_first_name,' ',emp.emp_last_name) as emp_name
+	FROM 0_bank_trans as bt
+	
+	LEFT JOIN 0_employees as emp ON
+			bt.person_id = emp.emp_id
+	
+	WHERE gl.type='0'  AND bt.trans_no='14'<br><br><br>
+[19-Jun-2015 05:59:16 Europe/Paris] 0:admin:ui_controls.inc:59: implode(): Invalid arguments passed
+[19-Jun-2015 05:59:19 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\repcheque.php:42:<br>oops<br>error code : 1054<br>error message : Unknown column 'gl.type' in 'where clause'<br>sql that failed was : SELECT bt.cheque_date,bt.cheque_no,bt.amount,CONCAT(emp.emp_first_name,' ',emp.emp_last_name) as emp_name
+	FROM 0_bank_trans as bt
+	
+	LEFT JOIN 0_employees as emp ON
+			bt.person_id = emp.emp_id
+	
+	WHERE gl.type='0'  AND bt.trans_no='14'<br><br><br>
+[19-Jun-2015 05:59:19 Europe/Paris] 0:admin:ui_controls.inc:59: implode(): Invalid arguments passed
+[19-Jun-2015 06:13:33 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[19-Jun-2015 06:13:33 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[19-Jun-2015 06:13:33 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\paycheque.php on line 86 and defined
+[19-Jun-2015 06:13:38 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\repcheque.php:42:<br>oops<br>error code : 1054<br>error message : Unknown column 'gl.type' in 'where clause'<br>sql that failed was : SELECT bt.cheque_date,bt.cheque_no,bt.amount,CONCAT(emp.emp_first_name,' ',emp.emp_last_name) as emp_name
+	FROM 0_bank_trans as bt
+	
+	LEFT JOIN 0_employees as emp ON
+			bt.person_id = emp.emp_id
+	
+	WHERE gl.type='0'  AND bt.trans_no='14'<br><br><br>
+[19-Jun-2015 06:13:38 Europe/Paris] 0:admin:ui_controls.inc:59: implode(): Invalid arguments passed
+[19-Jun-2015 06:19:44 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[19-Jun-2015 06:19:44 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[19-Jun-2015 06:19:46 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[19-Jun-2015 06:19:46 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[19-Jun-2015 06:19:46 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\paycheque.php on line 86 and defined
+[19-Jun-2015 06:21:06 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[19-Jun-2015 06:21:06 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[19-Jun-2015 06:21:06 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\paycheque.php on line 86 and defined
+[19-Jun-2015 06:21:12 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\repcheque.php:42:<br>oops<br>error code : 1054<br>error message : Unknown column 'gl.type' in 'where clause'<br>sql that failed was : SELECT bt.cheque_date,bt.cheque_no,bt.amount,CONCAT(emp.emp_first_name,' ',emp.emp_last_name) as emp_name
+	FROM 0_bank_trans as bt
+	
+	LEFT JOIN 0_employees as emp ON
+			bt.person_id = emp.emp_id
+	
+	WHERE gl.type='0'  AND bt.trans_no='14'<br><br><br>
+[19-Jun-2015 06:21:12 Europe/Paris] 0:admin:ui_controls.inc:59: implode(): Invalid arguments passed
+[19-Jun-2015 06:21:23 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[19-Jun-2015 06:21:23 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[19-Jun-2015 06:21:23 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\paycheque.php on line 86 and defined
+[19-Jun-2015 06:21:26 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\repcheque.php:42:<br>oops<br>error code : 1054<br>error message : Unknown column 'gl.type' in 'where clause'<br>sql that failed was : SELECT bt.cheque_date,bt.cheque_no,bt.amount,CONCAT(emp.emp_first_name,' ',emp.emp_last_name) as emp_name
+	FROM 0_bank_trans as bt
+	
+	LEFT JOIN 0_employees as emp ON
+			bt.person_id = emp.emp_id
+	
+	WHERE gl.type='0'  AND bt.trans_no='15'<br><br><br>
+[19-Jun-2015 06:21:26 Europe/Paris] 0:admin:ui_controls.inc:59: implode(): Invalid arguments passed
+[19-Jun-2015 06:39:48 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[19-Jun-2015 06:39:49 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[19-Jun-2015 06:39:53 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[19-Jun-2015 06:39:53 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[19-Jun-2015 06:39:53 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\paycheque.php on line 86 and defined
+[19-Jun-2015 06:40:19 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\repcheque.php:42:<br>oops<br>error code : 1054<br>error message : Unknown column 'gl.type' in 'where clause'<br>sql that failed was : SELECT bt.cheque_date,bt.cheque_no,bt.amount,CONCAT(emp.emp_first_name,' ',emp.emp_last_name) as emp_name
+	FROM 0_bank_trans as bt
+	
+	LEFT JOIN 0_employees as emp ON
+			bt.person_id = emp.emp_id
+	
+	WHERE gl.type='0'  AND bt.trans_no='14'<br><br><br>
+[19-Jun-2015 06:40:19 Europe/Paris] 0:admin:ui_controls.inc:59: implode(): Invalid arguments passed
+[19-Jun-2015 06:42:13 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[19-Jun-2015 06:42:13 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[19-Jun-2015 06:42:23 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[19-Jun-2015 06:42:23 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[19-Jun-2015 06:42:23 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\paycheque.php on line 86 and defined
+[19-Jun-2015 06:42:31 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\repcheque.php:42:<br>oops<br>error code : 1054<br>error message : Unknown column 'gl.type' in 'where clause'<br>sql that failed was : SELECT bt.cheque_date,bt.cheque_no,bt.amount,CONCAT(emp.emp_first_name,' ',emp.emp_last_name) as emp_name
+	FROM 0_bank_trans as bt
+	
+	LEFT JOIN 0_employees as emp ON
+			bt.person_id = emp.emp_id
+	
+	WHERE gl.type='0'  AND bt.trans_no='16'<br><br><br>
+[19-Jun-2015 06:42:31 Europe/Paris] 0:admin:ui_controls.inc:59: implode(): Invalid arguments passed
+[19-Jun-2015 06:46:52 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[19-Jun-2015 06:46:52 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[19-Jun-2015 06:47:00 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[19-Jun-2015 06:47:00 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[19-Jun-2015 06:47:00 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\paycheque.php on line 86 and defined
+[19-Jun-2015 06:49:32 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[19-Jun-2015 06:49:32 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[19-Jun-2015 06:50:34 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[19-Jun-2015 06:50:34 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[19-Jun-2015 06:52:13 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[19-Jun-2015 06:52:13 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[19-Jun-2015 06:52:51 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[19-Jun-2015 06:52:51 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[19-Jun-2015 06:52:51 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\paycheque.php on line 86 and defined
+[19-Jun-2015 06:52:55 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\repcheque.php:42:<br>oops<br>error code : 1054<br>error message : Unknown column 'gl.type' in 'where clause'<br>sql that failed was : SELECT bt.cheque_date,bt.cheque_no,bt.amount,CONCAT(emp.emp_first_name,' ',emp.emp_last_name) as emp_name
+	FROM 0_bank_trans as bt
+	
+	LEFT JOIN 0_employees as emp ON
+			bt.person_id = emp.emp_id
+	
+	WHERE gl.type='0'  AND bt.trans_no='14'<br><br><br>
+[19-Jun-2015 06:52:55 Europe/Paris] 0:admin:ui_controls.inc:59: implode(): Invalid arguments passed
+[19-Jun-2015 06:53:00 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\repcheque.php:42:<br>oops<br>error code : 1054<br>error message : Unknown column 'gl.type' in 'where clause'<br>sql that failed was : SELECT bt.cheque_date,bt.cheque_no,bt.amount,CONCAT(emp.emp_first_name,' ',emp.emp_last_name) as emp_name
+	FROM 0_bank_trans as bt
+	
+	LEFT JOIN 0_employees as emp ON
+			bt.person_id = emp.emp_id
+	
+	WHERE gl.type='0'  AND bt.trans_no='14'<br><br><br>
+[19-Jun-2015 06:53:00 Europe/Paris] 0:admin:ui_controls.inc:59: implode(): Invalid arguments passed
+[19-Jun-2015 06:53:04 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\repcheque.php:42:<br>oops<br>error code : 1054<br>error message : Unknown column 'gl.type' in 'where clause'<br>sql that failed was : SELECT bt.cheque_date,bt.cheque_no,bt.amount,CONCAT(emp.emp_first_name,' ',emp.emp_last_name) as emp_name
+	FROM 0_bank_trans as bt
+	
+	LEFT JOIN 0_employees as emp ON
+			bt.person_id = emp.emp_id
+	
+	WHERE gl.type='0'  AND bt.trans_no='14'<br><br><br>
+[19-Jun-2015 06:53:04 Europe/Paris] 0:admin:ui_controls.inc:59: implode(): Invalid arguments passed
+[19-Jun-2015 06:53:06 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\repcheque.php:42:<br>oops<br>error code : 1054<br>error message : Unknown column 'gl.type' in 'where clause'<br>sql that failed was : SELECT bt.cheque_date,bt.cheque_no,bt.amount,CONCAT(emp.emp_first_name,' ',emp.emp_last_name) as emp_name
+	FROM 0_bank_trans as bt
+	
+	LEFT JOIN 0_employees as emp ON
+			bt.person_id = emp.emp_id
+	
+	WHERE gl.type='0'  AND bt.trans_no='14'<br><br><br>
+[19-Jun-2015 06:53:06 Europe/Paris] 0:admin:ui_controls.inc:59: implode(): Invalid arguments passed
+[19-Jun-2015 06:53:21 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\repcheque.php:42:<br>oops<br>error code : 1054<br>error message : Unknown column 'gl.type' in 'where clause'<br>sql that failed was : SELECT bt.cheque_date,bt.cheque_no,bt.amount,CONCAT(emp.emp_first_name,' ',emp.emp_last_name) as emp_name
+	FROM 0_bank_trans as bt
+	
+	LEFT JOIN 0_employees as emp ON
+			bt.person_id = emp.emp_id
+	
+	WHERE gl.type='0'  AND bt.trans_no='14'<br><br><br>
+[19-Jun-2015 06:53:21 Europe/Paris] 0:admin:ui_controls.inc:59: implode(): Invalid arguments passed
+[19-Jun-2015 06:54:57 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[19-Jun-2015 06:54:57 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[19-Jun-2015 06:54:57 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\paycheque.php on line 86 and defined
+[19-Jun-2015 06:55:02 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\repcheque.php:42:<br>oops<br>error code : 1054<br>error message : Unknown column 'gl.type' in 'where clause'<br>sql that failed was : SELECT bt.cheque_date,bt.cheque_no,bt.amount,CONCAT(emp.emp_first_name,' ',emp.emp_last_name) as emp_name
+	FROM 0_bank_trans as bt
+	
+	LEFT JOIN 0_employees as emp ON
+			bt.person_id = emp.emp_id
+	
+	WHERE gl.type='0'  AND bt.trans_no='14'<br><br><br>
+[19-Jun-2015 06:55:03 Europe/Paris] 0:admin:ui_controls.inc:59: implode(): Invalid arguments passed
+[19-Jun-2015 06:55:23 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[19-Jun-2015 06:55:23 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[19-Jun-2015 06:55:23 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\paycheque.php on line 86 and defined
+[19-Jun-2015 06:55:32 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\repcheque.php:42:<br>oops<br>error code : 1054<br>error message : Unknown column 'gl.type' in 'where clause'<br>sql that failed was : SELECT bt.cheque_date,bt.cheque_no,bt.amount,CONCAT(emp.emp_first_name,' ',emp.emp_last_name) as emp_name
+	FROM 0_bank_trans as bt
+	
+	LEFT JOIN 0_employees as emp ON
+			bt.person_id = emp.emp_id
+	
+	WHERE gl.type='0'  AND bt.trans_no='14'<br><br><br>
+[19-Jun-2015 06:55:32 Europe/Paris] 0:admin:ui_controls.inc:59: implode(): Invalid arguments passed
+[19-Jun-2015 06:56:14 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\repcheque.php:42:<br>oops<br>error code : 1054<br>error message : Unknown column 'gl.type' in 'where clause'<br>sql that failed was : SELECT bt.cheque_date,bt.cheque_no,bt.amount,CONCAT(emp.emp_first_name,' ',emp.emp_last_name) as emp_name
+	FROM 0_bank_trans as bt
+	
+	LEFT JOIN 0_employees as emp ON
+			bt.person_id = emp.emp_id
+	
+	WHERE gl.type='0'  AND bt.trans_no='14'<br><br><br>
+[19-Jun-2015 06:56:14 Europe/Paris] 0:admin:ui_controls.inc:59: implode(): Invalid arguments passed
+[19-Jun-2015 06:59:32 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\repcheque.php:42:<br>oops<br>error code : 1054<br>error message : Unknown column 'gl.type' in 'where clause'<br>sql that failed was : SELECT bt.cheque_date,bt.cheque_no,bt.amount,CONCAT(emp.emp_first_name,' ',emp.emp_last_name) as emp_name
+	FROM 0_bank_trans as bt
+	
+	LEFT JOIN 0_employees as emp ON
+			bt.person_id = emp.emp_id
+	
+	WHERE gl.type='0'  AND bt.trans_no='14'<br><br><br>
+[19-Jun-2015 06:59:32 Europe/Paris] 0:admin:ui_controls.inc:59: implode(): Invalid arguments passed
+[19-Jun-2015 06:59:53 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\repcheque.php:42:<br>oops<br>error code : 1054<br>error message : Unknown column 'gl.type' in 'where clause'<br>sql that failed was : SELECT bt.cheque_date,bt.cheque_no,bt.amount,CONCAT(emp.emp_first_name,' ',emp.emp_last_name) as emp_name
+	FROM 0_bank_trans as bt
+	
+	LEFT JOIN 0_employees as emp ON
+			bt.person_id = emp.emp_id
+	
+	WHERE gl.type='0'  AND bt.trans_no='14'<br><br><br>
+[19-Jun-2015 06:59:53 Europe/Paris] 0:admin:ui_controls.inc:59: implode(): Invalid arguments passed
+[19-Jun-2015 07:00:26 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\repcheque.php:43:<br>oops<br>error code : 1054<br>error message : Unknown column 'gl.type' in 'where clause'<br>sql that failed was : SELECT bt.cheque_date,bt.cheque_no,bt.amount,CONCAT(emp.emp_first_name,' ',emp.emp_last_name) as emp_name
+	FROM 0_bank_trans as bt
+	
+	LEFT JOIN 0_employees as emp ON
+			bt.person_id = emp.emp_id
+	
+	WHERE gl.type='0'  AND bt.trans_no='14'<br><br><br>
+[19-Jun-2015 07:00:26 Europe/Paris] 0:admin:ui_controls.inc:59: implode(): Invalid arguments passed
+[19-Jun-2015 07:00:43 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\repcheque.php:43:<br>oops<br>error code : 1054<br>error message : Unknown column 'gl.type' in 'where clause'<br>sql that failed was : SELECT bt.cheque_date,bt.cheque_no,bt.amount,CONCAT(emp.emp_first_name,' ',emp.emp_last_name) as emp_name
+	FROM 0_bank_trans as bt
+	
+	LEFT JOIN 0_employees as emp ON
+			bt.person_id = emp.emp_id
+	
+	WHERE gl.type='0'  AND bt.trans_no='14'<br><br><br>
+[19-Jun-2015 07:00:43 Europe/Paris] 0:admin:ui_controls.inc:59: implode(): Invalid arguments passed
+[19-Jun-2015 07:01:20 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\repcheque.php:43:<br>oops<br>error code : 1054<br>error message : Unknown column 'gl.type' in 'where clause'<br>sql that failed was : SELECT bt.cheque_date,bt.cheque_no,bt.amount,CONCAT(emp.emp_first_name,' ',emp.emp_last_name) as emp_name
+	FROM 0_bank_trans as bt
+	
+	LEFT JOIN 0_employees as emp ON
+			bt.person_id = emp.emp_id
+	
+	WHERE gl.type='0'  AND bt.trans_no='14'<br><br><br>
+[19-Jun-2015 07:01:20 Europe/Paris] 0:admin:ui_controls.inc:59: implode(): Invalid arguments passed
+[19-Jun-2015 07:01:56 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\repcheque.php:43:<br>oops<br>error code : 1054<br>error message : Unknown column 'gl.type' in 'where clause'<br>sql that failed was : SELECT bt.cheque_date,bt.cheque_no,bt.amount,CONCAT(emp.emp_first_name,' ',emp.emp_last_name) as emp_name
+	FROM 0_bank_trans as bt
+	
+	LEFT JOIN 0_employees as emp ON
+			bt.person_id = emp.emp_id
+	
+	WHERE gl.type='0'  AND bt.trans_no='14'<br><br><br>
+[19-Jun-2015 07:01:56 Europe/Paris] 0:admin:ui_controls.inc:59: implode(): Invalid arguments passed
+[19-Jun-2015 07:03:17 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\repcheque.php:43:<br>oops<br>error code : 1054<br>error message : Unknown column 'gl.type' in 'where clause'<br>sql that failed was : SELECT bt.cheque_date,bt.cheque_no,bt.amount,CONCAT(emp.emp_first_name,' ',emp.emp_last_name) as emp_name
+	FROM 0_bank_trans as bt
+	
+	LEFT JOIN 0_employees as emp ON
+			bt.person_id = emp.emp_id
+	
+	WHERE gl.type='0'  AND bt.trans_no='14'<br><br><br>
+[19-Jun-2015 07:03:17 Europe/Paris] 0:admin:ui_controls.inc:59: implode(): Invalid arguments passed
+[19-Jun-2015 07:05:37 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\repcheque.php:43:<br>oops<br>error code : 1054<br>error message : Unknown column 'gl.type' in 'where clause'<br>sql that failed was : SELECT bt.cheque_date,bt.cheque_no,bt.amount,CONCAT(emp.emp_first_name,' ',emp.emp_last_name) as emp_name
+	FROM 0_bank_trans as bt
+	
+	LEFT JOIN 0_employees as emp ON
+			bt.person_id = emp.emp_id
+	
+	WHERE gl.type='0'  AND bt.trans_no='14'<br><br><br>
+[19-Jun-2015 07:05:37 Europe/Paris] 0:admin:ui_controls.inc:59: implode(): Invalid arguments passed
+[19-Jun-2015 07:05:54 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\repcheque.php:43:<br>oops<br>error code : 1054<br>error message : Unknown column 'gl.type' in 'where clause'<br>sql that failed was : SELECT bt.cheque_date,bt.cheque_no,bt.amount,CONCAT(emp.emp_first_name,' ',emp.emp_last_name) as emp_name
+	FROM 0_bank_trans as bt
+	
+	LEFT JOIN 0_employees as emp ON
+			bt.person_id = emp.emp_id
+	
+	WHERE gl.type='0'  AND bt.trans_no='14'<br><br><br>
+[19-Jun-2015 07:05:54 Europe/Paris] 0:admin:ui_controls.inc:59: implode(): Invalid arguments passed
+[19-Jun-2015 07:06:09 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\repcheque.php:43:<br>oops<br>error code : 1054<br>error message : Unknown column 'gl.type' in 'where clause'<br>sql that failed was : SELECT bt.cheque_date,bt.cheque_no,bt.amount,CONCAT(emp.emp_first_name,' ',emp.emp_last_name) as emp_name
+	FROM 0_bank_trans as bt
+	
+	LEFT JOIN 0_employees as emp ON
+			bt.person_id = emp.emp_id
+	
+	WHERE gl.type='0'  AND bt.trans_no='14'<br><br><br>
+[19-Jun-2015 07:06:09 Europe/Paris] 0:admin:ui_controls.inc:59: implode(): Invalid arguments passed
+[19-Jun-2015 07:06:20 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\repcheque.php:43:<br>oops<br>error code : 1054<br>error message : Unknown column 'gl.type' in 'where clause'<br>sql that failed was : SELECT bt.cheque_date,bt.cheque_no,bt.amount,CONCAT(emp.emp_first_name,' ',emp.emp_last_name) as emp_name
+	FROM 0_bank_trans as bt
+	
+	LEFT JOIN 0_employees as emp ON
+			bt.person_id = emp.emp_id
+	
+	WHERE gl.type='0'  AND bt.trans_no='14'<br><br><br>
+[19-Jun-2015 07:06:20 Europe/Paris] 0:admin:ui_controls.inc:59: implode(): Invalid arguments passed
+[19-Jun-2015 07:06:49 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\repcheque.php:43:<br>oops<br>error code : 1054<br>error message : Unknown column 'gl.type' in 'where clause'<br>sql that failed was : SELECT bt.cheque_date,bt.cheque_no,bt.amount,CONCAT(emp.emp_first_name,' ',emp.emp_last_name) as emp_name
+	FROM 0_bank_trans as bt
+	
+	LEFT JOIN 0_employees as emp ON
+			bt.person_id = emp.emp_id
+	
+	WHERE gl.type='0'  AND bt.trans_no='14'<br><br><br>
+[19-Jun-2015 07:06:49 Europe/Paris] 0:admin:ui_controls.inc:59: implode(): Invalid arguments passed
+[19-Jun-2015 07:06:50 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\repcheque.php:43:<br>oops<br>error code : 1054<br>error message : Unknown column 'gl.type' in 'where clause'<br>sql that failed was : SELECT bt.cheque_date,bt.cheque_no,bt.amount,CONCAT(emp.emp_first_name,' ',emp.emp_last_name) as emp_name
+	FROM 0_bank_trans as bt
+	
+	LEFT JOIN 0_employees as emp ON
+			bt.person_id = emp.emp_id
+	
+	WHERE gl.type='0'  AND bt.trans_no='14'<br><br><br>
+[19-Jun-2015 07:06:50 Europe/Paris] 0:admin:ui_controls.inc:59: implode(): Invalid arguments passed
+[19-Jun-2015 07:08:34 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\repcheque.php:43:<br>oops<br>error code : 1054<br>error message : Unknown column 'gl.type' in 'where clause'<br>sql that failed was : SELECT bt.cheque_date,bt.cheque_no,bt.amount,CONCAT(emp.emp_first_name,' ',emp.emp_last_name) as emp_name
+	FROM 0_bank_trans as bt
+	
+	LEFT JOIN 0_employees as emp ON
+			bt.person_id = emp.emp_id
+	
+	WHERE gl.type='0'  AND bt.trans_no='14'<br><br><br>
+[19-Jun-2015 07:08:34 Europe/Paris] 0:admin:ui_controls.inc:59: implode(): Invalid arguments passed
+[19-Jun-2015 07:09:39 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\repcheque.php:43:<br>oops<br>error code : 1054<br>error message : Unknown column 'gl.type' in 'where clause'<br>sql that failed was : SELECT bt.cheque_date,bt.cheque_no,bt.amount,CONCAT(emp.emp_first_name,' ',emp.emp_last_name) as emp_name
+	FROM 0_bank_trans as bt
+	
+	LEFT JOIN 0_employees as emp ON
+			bt.person_id = emp.emp_id
+	
+	WHERE gl.type='0' AND bt.trans_no='14'<br><br><br>
+[19-Jun-2015 07:09:39 Europe/Paris] 0:admin:ui_controls.inc:59: implode(): Invalid arguments passed
+[19-Jun-2015 07:10:19 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\repcheque.php:43:<br>oops<br>error code : 1054<br>error message : Unknown column 'gl.type' in 'where clause'<br>sql that failed was : SELECT bt.cheque_date,bt.cheque_no,bt.amount,CONCAT(emp.emp_first_name,' ',emp.emp_last_name) as emp_name
+	FROM 0_bank_trans as bt
+	
+	LEFT JOIN 0_employees as emp ON
+			bt.person_id = emp.emp_id
+	
+	WHERE gl.type='0' AND bt.trans_no='14'<br><br><br>
+[19-Jun-2015 07:10:19 Europe/Paris] 0:admin:ui_controls.inc:59: implode(): Invalid arguments passed
+[19-Jun-2015 07:11:17 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\repcheque.php:43:<br>oops<br>error code : 1054<br>error message : Unknown column 'gl.type' in 'where clause'<br>sql that failed was : SELECT bt.cheque_date,bt.cheque_no,bt.amount,CONCAT(emp.emp_first_name,' ',emp.emp_last_name) as emp_name
+	FROM 0_bank_trans as bt
+	
+	LEFT JOIN 0_employees as emp ON
+			bt.person_id = emp.emp_id
+	
+	WHERE gl.type='0' AND bt.trans_no='14'<br><br><br>
+[19-Jun-2015 07:11:17 Europe/Paris] 0:admin:ui_controls.inc:59: implode(): Invalid arguments passed
+[19-Jun-2015 07:12:06 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[19-Jun-2015 07:12:06 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[19-Jun-2015 07:12:15 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[19-Jun-2015 07:12:15 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[19-Jun-2015 07:12:15 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\paycheque.php on line 86 and defined
+[19-Jun-2015 07:12:22 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\repcheque.php:43:<br>oops<br>error code : 1054<br>error message : Unknown column 'gl.type' in 'where clause'<br>sql that failed was : SELECT bt.cheque_date,bt.cheque_no,bt.amount,CONCAT(emp.emp_first_name,' ',emp.emp_last_name) as emp_name
+	FROM 0_bank_trans as bt
+	
+	LEFT JOIN 0_employees as emp ON
+			bt.person_id = emp.emp_id
+	
+	WHERE gl.type='0' AND bt.trans_no='14'<br><br><br>
+[19-Jun-2015 07:12:22 Europe/Paris] 0:admin:ui_controls.inc:59: implode(): Invalid arguments passed
+[19-Jun-2015 07:13:02 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\repcheque.php:43:<br>oops<br>error code : 1054<br>error message : Unknown column 'gl.type' in 'where clause'<br>sql that failed was : SELECT bt.cheque_date,bt.cheque_no,bt.amount,CONCAT(emp.emp_first_name,' ',emp.emp_last_name) as emp_name
+	FROM 0_bank_trans as bt
+	
+	LEFT JOIN 0_employees as emp ON
+			bt.person_id = emp.emp_id
+	
+	WHERE gl.type='0' AND bt.trans_no='14'<br><br><br>
+[19-Jun-2015 07:13:02 Europe/Paris] 0:admin:ui_controls.inc:59: implode(): Invalid arguments passed
+[19-Jun-2015 07:13:05 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[19-Jun-2015 07:13:05 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[19-Jun-2015 07:13:05 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\paycheque.php on line 86 and defined
+[19-Jun-2015 07:15:53 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[19-Jun-2015 07:15:53 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[19-Jun-2015 07:15:53 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\paycheque.php on line 86 and defined
+[19-Jun-2015 07:15:59 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\repcheque.php:43:<br>oops<br>error code : 1054<br>error message : Unknown column 'gl.type' in 'where clause'<br>sql that failed was : SELECT bt.cheque_date,bt.cheque_no,bt.amount,CONCAT(emp.emp_first_name,' ',emp.emp_last_name) as emp_name
+	FROM 0_bank_trans as bt
+	
+	LEFT JOIN 0_employees as emp ON
+			emp.emp_id=bt.person_id 
+	
+	WHERE gl.type='0' AND bt.trans_no='14'<br><br><br>
+[19-Jun-2015 07:15:59 Europe/Paris] 0:admin:ui_controls.inc:59: implode(): Invalid arguments passed
+[19-Jun-2015 07:16:52 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\repcheque.php:43:<br>oops<br>error code : 1054<br>error message : Unknown column 'gl.type' in 'where clause'<br>sql that failed was : SELECT bt.cheque_date,bt.cheque_no,bt.amount,CONCAT(emp.emp_first_name,' ',emp.emp_last_name) as emp_name
+	FROM 0_bank_trans as bt
+	
+	LEFT JOIN 0_employees as emp ON
+			 emp.emp_id=bt.person_id
+	
+	WHERE gl.type='0' AND bt.trans_no='14'<br><br><br>
+[19-Jun-2015 07:16:52 Europe/Paris] 0:admin:ui_controls.inc:59: implode(): Invalid arguments passed
+[19-Jun-2015 07:16:56 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[19-Jun-2015 07:16:56 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[19-Jun-2015 07:16:56 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\paycheque.php on line 86 and defined
+[19-Jun-2015 08:02:47 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[19-Jun-2015 08:02:47 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[19-Jun-2015 08:02:48 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 37 and defined
+[19-Jun-2015 08:02:48 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 37 and defined
+[19-Jun-2015 08:04:57 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[19-Jun-2015 08:04:57 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[19-Jun-2015 08:05:01 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[19-Jun-2015 08:05:01 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[19-Jun-2015 08:05:01 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\paycheque.php on line 86 and defined
+[19-Jun-2015 08:13:32 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[19-Jun-2015 08:13:32 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[19-Jun-2015 08:13:32 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\paycheque.php on line 86 and defined
+[19-Jun-2015 08:13:44 Europe/Paris] 0:admin:ui_msgs.inc:19: trigger_error() expects parameter 1 to be string, resource given
+[19-Jun-2015 08:21:50 Europe/Paris] 0:admin:ui_msgs.inc:19: trigger_error() expects parameter 1 to be string, array given
+[19-Jun-2015 08:31:12 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[19-Jun-2015 08:31:12 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[19-Jun-2015 08:31:12 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\paycheque.php on line 86 and defined
+[19-Jun-2015 08:34:16 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[19-Jun-2015 08:34:16 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[19-Jun-2015 08:34:16 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\paycheque.php on line 86 and defined
+[19-Jun-2015 08:38:51 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[19-Jun-2015 08:38:51 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[19-Jun-2015 08:38:51 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\paycheque.php on line 86 and defined
+[19-Jun-2015 08:40:03 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[19-Jun-2015 08:40:03 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[19-Jun-2015 08:40:10 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[19-Jun-2015 08:40:10 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[19-Jun-2015 08:40:10 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\paycheque.php on line 86 and defined
+[19-Jun-2015 08:40:17 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[19-Jun-2015 08:40:17 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[19-Jun-2015 08:40:17 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\paycheque.php on line 86 and defined
+[19-Jun-2015 08:40:28 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[19-Jun-2015 08:40:28 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[19-Jun-2015 08:40:28 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\paycheque.php on line 86 and defined
+[19-Jun-2015 08:40:37 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[19-Jun-2015 08:40:37 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[19-Jun-2015 08:40:37 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\paycheque.php on line 86 and defined
+[19-Jun-2015 08:41:37 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[19-Jun-2015 08:41:37 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[19-Jun-2015 08:41:37 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\paycheque.php on line 86 and defined
+[19-Jun-2015 08:49:32 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[19-Jun-2015 08:49:32 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[19-Jun-2015 08:49:37 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[19-Jun-2015 08:49:37 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[19-Jun-2015 08:49:37 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\paycheque.php on line 86 and defined
+[19-Jun-2015 08:49:59 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[19-Jun-2015 08:49:59 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[19-Jun-2015 08:49:59 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\paycheque.php on line 86 and defined
+[19-Jun-2015 08:53:29 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[19-Jun-2015 08:53:29 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[19-Jun-2015 08:53:29 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\paycheque.php on line 86 and defined
+[19-Jun-2015 09:07:38 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[19-Jun-2015 09:07:38 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[19-Jun-2015 09:07:38 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[19-Jun-2015 09:07:38 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[19-Jun-2015 09:07:41 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[19-Jun-2015 09:07:41 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[19-Jun-2015 09:07:41 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\paycheque.php on line 86 and defined
+[19-Jun-2015 09:07:49 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[19-Jun-2015 09:07:49 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[19-Jun-2015 09:07:54 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[19-Jun-2015 09:07:54 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[19-Jun-2015 09:07:54 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[19-Jun-2015 09:07:54 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[19-Jun-2015 09:07:56 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[19-Jun-2015 09:07:56 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[19-Jun-2015 09:07:56 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\paycheque.php on line 86 and defined
+[19-Jun-2015 09:08:03 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[19-Jun-2015 09:08:03 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[19-Jun-2015 09:08:07 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[19-Jun-2015 09:08:07 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[19-Jun-2015 09:08:07 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\paycheque.php on line 86 and defined
+[19-Jun-2015 09:08:13 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[19-Jun-2015 09:08:13 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[19-Jun-2015 09:08:47 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[19-Jun-2015 09:08:47 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[19-Jun-2015 09:08:47 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\paycheque.php on line 86 and defined
+[19-Jun-2015 09:09:18 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[19-Jun-2015 09:09:18 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[19-Jun-2015 09:09:18 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\paycheque.php on line 86 and defined
+[19-Jun-2015 09:09:20 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[19-Jun-2015 09:09:20 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[19-Jun-2015 09:09:20 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\paycheque.php on line 86 and defined
+[19-Jun-2015 09:09:21 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[19-Jun-2015 09:09:21 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[19-Jun-2015 09:09:21 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\paycheque.php on line 86 and defined
+[19-Jun-2015 09:15:02 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[19-Jun-2015 09:15:02 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[19-Jun-2015 09:15:02 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\paycheque.php on line 86 and defined
+[19-Jun-2015 09:16:23 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[19-Jun-2015 09:16:23 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[19-Jun-2015 09:16:23 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[19-Jun-2015 09:16:23 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[19-Jun-2015 09:16:26 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[19-Jun-2015 09:16:26 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[19-Jun-2015 09:16:26 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\paycheque.php on line 86 and defined
+[19-Jun-2015 09:17:00 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[19-Jun-2015 09:17:00 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[19-Jun-2015 09:17:00 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\paycheque.php on line 86 and defined
+[19-Jun-2015 09:19:06 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[19-Jun-2015 09:19:06 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[19-Jun-2015 09:19:06 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\paycheque.php on line 86 and defined
+[19-Jun-2015 09:20:18 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[19-Jun-2015 09:20:18 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[19-Jun-2015 09:20:18 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\paycheque.php on line 86 and defined
+[19-Jun-2015 09:21:04 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[19-Jun-2015 09:21:04 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[19-Jun-2015 09:21:04 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\paycheque.php on line 86 and defined
+[19-Jun-2015 09:21:51 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[19-Jun-2015 09:21:51 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[19-Jun-2015 09:21:51 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\paycheque.php on line 86 and defined
+[19-Jun-2015 09:23:28 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[19-Jun-2015 09:23:28 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[19-Jun-2015 09:23:28 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\paycheque.php on line 86 and defined
+[19-Jun-2015 09:23:36 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[19-Jun-2015 09:23:36 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[19-Jun-2015 09:23:39 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[19-Jun-2015 09:23:39 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[19-Jun-2015 09:23:39 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[19-Jun-2015 09:23:39 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[19-Jun-2015 09:23:41 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[19-Jun-2015 09:23:41 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[19-Jun-2015 09:23:41 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\paycheque.php on line 86 and defined

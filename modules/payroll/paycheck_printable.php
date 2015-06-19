@@ -84,7 +84,7 @@ start_form();
 		get_post('ToDate'));
 
 	$cols = array(
-		_("SlNo"), 
+		//_("SlNo"), 
 		_("Date") => array('type' => 'date'),
 		_("Employee") , 
 		_("Reference") , 
