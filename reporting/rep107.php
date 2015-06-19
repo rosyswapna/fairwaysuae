@@ -86,9 +86,15 @@ function print_invoices()
 			if ($email == 1)
 			{
 				$rep = new FrontReport("", "", user_pagesize(), 9, $orientation);
-				$rep->title = _('INVOICE');
+				//$rep->title = _('INVOICE');
 				$rep->filename = "Invoice" . $myrow['reference'] . ".pdf";
-			}	
+			}
+
+			if($myrow['payment_terms']==PM_CASH)
+				$rep->title = _('CASH-SALE');
+			else
+				$rep->title = _('CREDIT-SALE');
+			
 			$rep->SetHeaderType('Header2');
 			$rep->currency = $cur;
 			$rep->Font();
