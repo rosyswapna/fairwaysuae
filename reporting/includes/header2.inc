@@ -55,9 +55,10 @@
 		$this->Line($iline7);
 		$this->LineTo($this->leftMargin, $iline2 ,$this->leftMargin, $iline4);
 		$col = $this->leftMargin;
-		for ($i = 0; $i < 5; $i++)
+		$width_line = ($right - $this->leftMargin) / 4;
+		for ($i = 0; $i < 4; $i++)
 		{
-			$this->LineTo($col += $width, $iline2,$col, $iline4);
+			$this->LineTo($col += $width_line, $iline2,$col, $iline4);
 		}
 		$this->LineTo($right, $iline2 ,$right, $iline4);
 		$this->LineTo($this->leftMargin, $iline5 ,$this->leftMargin, $iline7);
@@ -168,7 +169,7 @@
 			$this->TextWrap($col, $this->row, $width, $info_header, 'C');
 			$this->row = $iline3 - $this->lineHeight - 1;
 			$this->TextWrap($col, $this->row, $width, $info_content, 'C');
-			$col += $width;
+			$col += $width_line;
 		}
 		// Payment terms
 		$this->row -= (2 * $this->lineHeight);

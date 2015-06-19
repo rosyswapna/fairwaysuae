@@ -122,7 +122,7 @@
 			$aux_info = array(
 				_("Customer's Reference") => $this->formData["customer_ref"],
 				_("Sales Person") => get_salesman_name($this->formData['salesman']),
-				_("Your VAT no.") => $this->formData['tax_id'],
+				//_("Your VAT no.") => $this->formData['tax_id'],
 				_("Delivery Note No.") => implode(',', $deliveries),
 				_("Due Date") => sql2date($this->formData['due_date']),
 			);
