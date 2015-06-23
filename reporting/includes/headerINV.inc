@@ -69,14 +69,14 @@
 		$this->LineTo($right, $iline5 ,$right, $iline7);
 
 		// Company Logo
-		$this->NewLine(4);
+		$this->NewLine();
 		$this->fontSize += 4;
 			$this->Font('bold');
 			$this->Text($ccol, $this->company['coy_name'], $icol);
 			$this->Font();
 			$this->fontSize -= 4;
 		$logo = company_path() . "/images/" . $this->company['coy_logo'];
-		$this->AddImage($logo,$ccol + 120, $this->row , 0, 40);
+		//$this->AddImage($logo,$ccol + 120, $this->row , 0, 40);
 		//if ($this->company['coy_logo'] != '' && file_exists($logo))
 		//{
 			//$this->AddImage($logo, $ccol, $this->row, 0, 40);
@@ -102,6 +102,7 @@
 
 		// Company data
 		$this->TextWrapLines($ccol, $icol, $this->company['postal_address']);
+		$this->AddImage($logo,$icol, $this->row , 0, 40);
 		//$this->Font('italic');
 		if (@$this->company['phone'])
 		{
