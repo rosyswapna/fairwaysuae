@@ -19,7 +19,9 @@ $reports->addReport(RC_HR, 'slip', _('Employee Pay Slip Report'),
 			_('Orientation') => 'ORIENTATION',
 			_('Destination') => 'DESTINATION'));
 $reports->addReport(RC_HR, 'advice', _('Employee Payment Advice Report'),
-	array(	_('Employees') => 'EMPLOYEES',
+	array(	_('Employees') => 'EMPLOYEES_NO_FILTER',
+			_('Departments') => 'DEPARTMENTS_NO_FILTER',
+			_('Jobpositions') => 'JOBPOSITIONS_NO_FILTER',
 			_('Orientation') => 'ORIENTATION',
 			_('Destination') => 'DESTINATION'));
 $reports->addReport(RC_HR, 'release', _('Employee Payment Releases Report'),
