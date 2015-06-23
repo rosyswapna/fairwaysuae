@@ -25,13 +25,16 @@ $reports->addReport(RC_HR, 'advice', _('Employee Payment Advice Report'),
 			_('Orientation') => 'ORIENTATION',
 			_('Destination') => 'DESTINATION'));
 $reports->addReport(RC_HR, 'release', _('Employee Payment Releases Report'),
-	array(	_('Employees') => 'EMPLOYEES',
-			_('End Date') => 'DATEENDTAX',
+	array(	_('Employees') => 'EMPLOYEES_NO_FILTER',
+			_('Departments') => 'DEPARTMENTS_NO_FILTER',
+			_('Jobpositions') => 'JOBPOSITIONS_NO_FILTER',
 			_('Orientation') => 'ORIENTATION',
 			_('Destination') => 'DESTINATION'));
 $reports->addReport(RC_HR, 'list', _('Employee Detail Listing Report'),
 	array(	
-			_('Employees') => 'EMPLOYEES',
+			_('Employees') => 'EMPLOYEES_NO_FILTER',
+			_('Departments') => 'DEPARTMENTS_NO_FILTER',
+			_('Jobpositions') => 'JOBPOSITIONS_NO_FILTER',
 			_('Orientation') => 'ORIENTATION',
 			_('Destination') => 'DESTINATION'));
 ?>

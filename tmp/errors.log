@@ -11455,3 +11455,93 @@
 [23-Jun-2015 12:42:01 Europe/Paris] 0:admin:payroll_ui.inc:4: include_once(): Failed opening '../../../modules/payroll/includes/ui/employee_ui.inc' for inclusion (include_path='.;C:\php\pear')
 [23-Jun-2015 12:42:01 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
 [23-Jun-2015 12:42:01 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[23-Jun-2015 12:49:38 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[23-Jun-2015 12:49:38 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='../modules/payroll;.;C:\php\pear')
+[23-Jun-2015 12:49:53 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[23-Jun-2015 12:49:53 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='../modules/payroll;.;C:\php\pear')
+[23-Jun-2015 12:50:00 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[23-Jun-2015 12:50:00 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='../modules/payroll;.;C:\php\pear')
+[23-Jun-2015 12:50:09 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[23-Jun-2015 12:50:09 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='../modules/payroll;.;C:\php\pear')
+[23-Jun-2015 12:50:14 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[23-Jun-2015 12:50:14 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='../modules/payroll;.;C:\php\pear')
+[23-Jun-2015 12:50:20 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[23-Jun-2015 12:50:20 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='../modules/payroll;.;C:\php\pear')
+[23-Jun-2015 12:50:26 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[23-Jun-2015 12:50:26 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='../modules/payroll;.;C:\php\pear')
+[23-Jun-2015 12:50:36 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[23-Jun-2015 12:50:36 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='../modules/payroll;.;C:\php\pear')
+[23-Jun-2015 13:02:06 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[23-Jun-2015 13:02:06 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='../modules/payroll;.;C:\php\pear')
+[23-Jun-2015 13:03:41 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[23-Jun-2015 13:03:41 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[23-Jun-2015 13:03:41 Europe/Paris] 0:admin:payroll_ui.inc:4: include_once(../../modules/payroll/includes/ui/employee_ui.inc): failed to open stream: No such file or directory
+[23-Jun-2015 13:03:41 Europe/Paris] 0:admin:payroll_ui.inc:4: include_once(): Failed opening '../../modules/payroll/includes/ui/employee_ui.inc' for inclusion (include_path='.;C:\php\pear')
+[23-Jun-2015 13:03:41 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[23-Jun-2015 13:03:41 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[23-Jun-2015 13:03:59 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[23-Jun-2015 13:03:59 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[23-Jun-2015 13:03:59 Europe/Paris] 0:admin:payroll_ui.inc:4: include_once(../../modules/payroll/includes/ui/employee_ui.inc): failed to open stream: No such file or directory
+[23-Jun-2015 13:03:59 Europe/Paris] 0:admin:payroll_ui.inc:4: include_once(): Failed opening '../../modules/payroll/includes/ui/employee_ui.inc' for inclusion (include_path='.;C:\php\pear')
+[23-Jun-2015 13:03:59 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[23-Jun-2015 13:03:59 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[23-Jun-2015 13:03:59 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[23-Jun-2015 13:03:59 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[23-Jun-2015 13:03:59 Europe/Paris] 0:admin:payroll_ui.inc:4: include_once(../../modules/payroll/includes/ui/employee_ui.inc): failed to open stream: No such file or directory
+[23-Jun-2015 13:03:59 Europe/Paris] 0:admin:payroll_ui.inc:4: include_once(): Failed opening '../../modules/payroll/includes/ui/employee_ui.inc' for inclusion (include_path='.;C:\php\pear')
+[23-Jun-2015 13:03:59 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[23-Jun-2015 13:03:59 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[23-Jun-2015 13:04:10 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[23-Jun-2015 13:04:10 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[23-Jun-2015 13:04:10 Europe/Paris] 0:admin:payroll_ui.inc:4: include_once(../../modules/payroll/includes/ui/employee_ui.inc): failed to open stream: No such file or directory
+[23-Jun-2015 13:04:10 Europe/Paris] 0:admin:payroll_ui.inc:4: include_once(): Failed opening '../../modules/payroll/includes/ui/employee_ui.inc' for inclusion (include_path='.;C:\php\pear')
+[23-Jun-2015 13:04:10 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[23-Jun-2015 13:04:10 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[23-Jun-2015 13:04:10 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[23-Jun-2015 13:04:10 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[23-Jun-2015 13:04:10 Europe/Paris] 0:admin:payroll_ui.inc:4: include_once(../../modules/payroll/includes/ui/employee_ui.inc): failed to open stream: No such file or directory
+[23-Jun-2015 13:04:10 Europe/Paris] 0:admin:payroll_ui.inc:4: include_once(): Failed opening '../../modules/payroll/includes/ui/employee_ui.inc' for inclusion (include_path='.;C:\php\pear')
+[23-Jun-2015 13:04:10 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[23-Jun-2015 13:04:10 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[23-Jun-2015 13:05:36 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[23-Jun-2015 13:05:36 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='../modules/payroll;.;C:\php\pear')
+[23-Jun-2015 13:05:44 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[23-Jun-2015 13:05:44 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='../modules/payroll;.;C:\php\pear')
+[23-Jun-2015 13:06:01 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[23-Jun-2015 13:06:01 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='../modules/payroll;.;C:\php\pear')
+[23-Jun-2015 13:06:08 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[23-Jun-2015 13:06:08 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='../modules/payroll;.;C:\php\pear')
+[23-Jun-2015 13:06:39 Europe/Paris] 0:admin:payroll_ui.inc:4: include_once(../../../modules/payroll/includes/ui/employee_ui.inc): failed to open stream: No such file or directory
+[23-Jun-2015 13:06:39 Europe/Paris] 0:admin:payroll_ui.inc:4: include_once(): Failed opening '../../../modules/payroll/includes/ui/employee_ui.inc' for inclusion (include_path='.;C:\php\pear')
+[23-Jun-2015 13:06:39 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[23-Jun-2015 13:06:39 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[23-Jun-2015 13:06:39 Europe/Paris] 0:admin:payroll_ui.inc:4: include_once(../../../modules/payroll/includes/ui/employee_ui.inc): failed to open stream: No such file or directory
+[23-Jun-2015 13:06:39 Europe/Paris] 0:admin:payroll_ui.inc:4: include_once(): Failed opening '../../../modules/payroll/includes/ui/employee_ui.inc' for inclusion (include_path='.;C:\php\pear')
+[23-Jun-2015 13:06:39 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[23-Jun-2015 13:06:39 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[23-Jun-2015 13:07:46 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[23-Jun-2015 13:07:46 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='../modules/payroll;.;C:\php\pear')
+[23-Jun-2015 13:08:02 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[23-Jun-2015 13:08:02 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='../modules/payroll;.;C:\php\pear')
+[23-Jun-2015 13:08:17 Europe/Paris] 0:admin:payroll_ui.inc:4: include_once(../../modules/payroll/includes/ui/employee_ui.inc): failed to open stream: No such file or directory
+[23-Jun-2015 13:08:17 Europe/Paris] 0:admin:payroll_ui.inc:4: include_once(): Failed opening '../../modules/payroll/includes/ui/employee_ui.inc' for inclusion (include_path='.;C:\php\pear')
+[23-Jun-2015 13:08:17 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[23-Jun-2015 13:08:17 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[23-Jun-2015 13:08:23 Europe/Paris] 0:admin:payroll_ui.inc:4: include_once(../../modules/payroll/includes/ui/employee_ui.inc): failed to open stream: No such file or directory
+[23-Jun-2015 13:08:23 Europe/Paris] 0:admin:payroll_ui.inc:4: include_once(): Failed opening '../../modules/payroll/includes/ui/employee_ui.inc' for inclusion (include_path='.;C:\php\pear')
+[23-Jun-2015 13:08:23 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[23-Jun-2015 13:08:23 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[23-Jun-2015 13:08:23 Europe/Paris] 0:admin:payroll_ui.inc:4: include_once(../../modules/payroll/includes/ui/employee_ui.inc): failed to open stream: No such file or directory
+[23-Jun-2015 13:08:23 Europe/Paris] 0:admin:payroll_ui.inc:4: include_once(): Failed opening '../../modules/payroll/includes/ui/employee_ui.inc' for inclusion (include_path='.;C:\php\pear')
+[23-Jun-2015 13:08:23 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[23-Jun-2015 13:08:23 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[23-Jun-2015 13:08:27 Europe/Paris] 0:admin:payroll_ui.inc:4: include_once(../../../modules/payroll/includes/ui/employee_ui.inc): failed to open stream: No such file or directory
+[23-Jun-2015 13:08:27 Europe/Paris] 0:admin:payroll_ui.inc:4: include_once(): Failed opening '../../../modules/payroll/includes/ui/employee_ui.inc' for inclusion (include_path='.;C:\php\pear')
+[23-Jun-2015 13:08:27 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[23-Jun-2015 13:08:27 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[23-Jun-2015 13:08:27 Europe/Paris] 0:admin:payroll_ui.inc:4: include_once(../../../modules/payroll/includes/ui/employee_ui.inc): failed to open stream: No such file or directory
+[23-Jun-2015 13:08:27 Europe/Paris] 0:admin:payroll_ui.inc:4: include_once(): Failed opening '../../../modules/payroll/includes/ui/employee_ui.inc' for inclusion (include_path='.;C:\php\pear')
+[23-Jun-2015 13:08:27 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[23-Jun-2015 13:08:27 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[23-Jun-2015 13:08:35 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[23-Jun-2015 13:08:35 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='../modules/payroll;.;C:\php\pear')
