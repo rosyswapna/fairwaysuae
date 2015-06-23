@@ -11451,3 +11451,7 @@
 	
 	LEFT JOIN 0_departments as dpt ON
 		dpt.dep_id=emp.emp_id<br><br><br>
+[23-Jun-2015 12:42:01 Europe/Paris] 0:admin:payroll_ui.inc:4: include_once(../../../modules/payroll/includes/ui/employee_ui.inc): failed to open stream: No such file or directory
+[23-Jun-2015 12:42:01 Europe/Paris] 0:admin:payroll_ui.inc:4: include_once(): Failed opening '../../../modules/payroll/includes/ui/employee_ui.inc' for inclusion (include_path='.;C:\php\pear')
+[23-Jun-2015 12:42:01 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[23-Jun-2015 12:42:01 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
