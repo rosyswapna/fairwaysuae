@@ -228,10 +228,10 @@ function get_sql_for_payment_advices($employee,$job_position,$department,$from,$
 {
 	$sql="SELECT gl.tran_date,
 		CONCAT(emp.emp_first_name,' ',emp.emp_last_name) as emp_name,
-		'',
-		gl.memo_,
-		gl.account,
-		gl.amount,
+		gl.type_no,
+		com.memo_,
+		ac.account_name,
+		ABS(gl.amount) as amount,
 		bt.cheque_no,
 		gl.type_no,
 		job.job_name as job_position,
@@ -246,12 +246,22 @@ function get_sql_for_payment_advices($employee,$job_position,$department,$from,$
 			emp.job_position_id = job.job_name_id
 	LEFT JOIN ".TB_PREF."departments as dept ON
 			emp.department_id = dept.dept_id
+	LEFT JOIN ".TB_PREF."chart_master ac ON
+			gl.account = ac.account_code
+	LEFT JOIN ".TB_PREF."comments as com ON
+			(gl.type=com.type AND gl.type_no=com.id)
 
 	WHERE gl.type =  " .ST_JOURNAL. " AND gl.account IN (select account_code from ".TB_PREF."bank_accounts) AND gl.person_type_id = ".PT_EMPLOYEE." AND gl.payslip_no > 0  ";
 	
-	if ($employee != -1) {
+	if ($employee != -1 && $employee != '') {
 		$sql .= " AND gl.person_id=".db_escape($employee);
 	}
+
+	if($from != '' && $to != ''){
+		$sql .= " AND gl.tran_date >= '" . date2sql($from) . "'
+			AND gl.tran_date <= '" . date2sql($to) . "'";
+	}
+
 	return $sql;
 }
 function get_payment_advice_details($trans_no)
