@@ -226,12 +226,27 @@ function get_sql_for_emp_inquiry($employee,$job_position,$department,$from,$to){
 }
 function get_sql_for_payment_advices($employee,$job_position,$department,$from,$to)
 {
-	$sql="SELECT gl.tran_date,CONCAT(emp.emp_first_name,' ',emp.emp_last_name),'',gl.memo_,gl.account,gl.amount,bt.cheque_no,gl.type_no 
+	$sql="SELECT gl.tran_date,
+		CONCAT(emp.emp_first_name,' ',emp.emp_last_name) as emp_name,
+		'',
+		gl.memo_,
+		gl.account,
+		gl.amount,
+		bt.cheque_no,
+		gl.type_no,
+		job.job_name as job_position,
+		dept.dept_name as department
+		
 	FROM ".TB_PREF."gl_trans as gl 
 	LEFT JOIN ".TB_PREF."employees as emp ON
 			emp.emp_id = gl.person_id
 	LEFT JOIN ".TB_PREF."bank_trans as bt ON
 			bt.type = gl.type AND bt.trans_no=gl.type_no
+	LEFT JOIN ".TB_PREF."jobnames as job ON
+			emp.job_position_id = job.job_name_id
+	LEFT JOIN ".TB_PREF."departments as dept ON
+			emp.department_id = dept.dept_id
+
 	WHERE gl.type =  " .ST_JOURNAL. " AND gl.account IN (select account_code from ".TB_PREF."bank_accounts) AND gl.person_type_id = ".PT_EMPLOYEE." AND gl.payslip_no > 0  ";
 	
 	if ($employee != -1) {
