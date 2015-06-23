@@ -43,7 +43,7 @@ function print_struct_report()
 	$destination = $_POST['PARAM_4'];
 	
 	$orientation = ($orientation ? 'L' : 'P');
-	$cols = array(2, 50, 340, 440);
+	$cols = array(2, 30, 340, 440);
 	
 	$headers=array(_('SlNo'), _('Paystructure Rules'),  _('Credits'), _('Debit'));
 	
@@ -75,11 +75,12 @@ function print_struct_report()
 		if(!exists_salary_structure($myrow['job_position_id'])){
 
 			$rep->Font('I');
-			$rep->NewLine();
 			$rep->TextCol(1, 4,_("Salary Stucture Not defined!"));
+			$rep->NewLine();
 			$rep->Font();
 
 			$line = $rep->row;
+			
 		}else{
 		
 			$strRes = get_salary_structure($myrow['job_position_id']);
@@ -101,9 +102,8 @@ function print_struct_report()
 				$rep->TextCol(2, 3,$credit);
 				$rep->TextCol(3, 4, $debit);
 
-			
 
-				$rep->NewLine();
+				$rep->NewLine(1.2);
 
 				$line = $rep->row;
 				$slno++;
