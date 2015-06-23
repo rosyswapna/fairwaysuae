@@ -11,7 +11,10 @@ include_once($path_to_root . "/includes/data_checks.inc");
 //include_once($path_to_root . "/modules/payroll/includes/db/payroll_structure_db.inc");
 add_access_extensions();
 
+
 print_payslip_report();
+
+
 
 function print_payslip_report()
 {
@@ -38,9 +41,8 @@ function print_payslip_report()
 			$rep->Font();
 			$rep->Info($params,$cols,$headers,$aligns);
 			$rep->NewPage();
-	//$myrow=get_payroll_structure();
-
-			
+	
+	
 	
 	$rep->End();
 	

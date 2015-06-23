@@ -11413,3 +11413,41 @@
 [23-Jun-2015 08:40:03 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 37 and defined
 [23-Jun-2015 08:57:57 Europe/Paris] 0:admin:repstruct.php:17: Missing argument 1 for get_payroll_structure_print(), called in C:\wamp\www\fairwaysuae\modules\payroll\reporting\repstruct.php on line 60 and defined
 [23-Jun-2015 08:57:57 Europe/Paris] 0:admin:connect_db.inc:114: mysql_num_rows() expects parameter 1 to be resource, boolean given
+[23-Jun-2015 09:45:46 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\repslip.php:45:<br>could not get employees<br>error code : 1054<br>error message : Unknown column 'emp_id' in 'where clause'<br>sql that failed was : SELECT * FROM 0_departments WHERE emp_id='5'<br><br><br>
+[23-Jun-2015 09:45:51 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\repslip.php:45:<br>could not get employees<br>error code : 1054<br>error message : Unknown column 'emp_id' in 'where clause'<br>sql that failed was : SELECT * FROM 0_departments WHERE emp_id='5'<br><br><br>
+[23-Jun-2015 09:46:14 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\repslip.php:45:<br>could not get employees<br>error code : 1054<br>error message : Unknown column 'emp_id' in 'where clause'<br>sql that failed was : SELECT * FROM 0_departments WHERE emp_id='5'<br><br><br>
+[23-Jun-2015 09:54:39 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\repslip.php:32:<br>could not get employees<br>error code : 1054<br>error message : Unknown column 'dpt.dep_id' in 'on clause'<br>sql that failed was : SELECT * FROM 0_employees as emp
+	
+	LEFT JOIN 0_departments as dpt ON
+		emp.emp_id=dpt.dep_id<br><br><br>
+[23-Jun-2015 09:54:41 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\repslip.php:32:<br>could not get employees<br>error code : 1054<br>error message : Unknown column 'dpt.dep_id' in 'on clause'<br>sql that failed was : SELECT * FROM 0_employees as emp
+	
+	LEFT JOIN 0_departments as dpt ON
+		emp.emp_id=dpt.dep_id<br><br><br>
+[23-Jun-2015 09:54:46 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\repslip.php:32:<br>could not get employees<br>error code : 1054<br>error message : Unknown column 'dpt.dep_id' in 'on clause'<br>sql that failed was : SELECT * FROM 0_employees as emp
+	
+	LEFT JOIN 0_departments as dpt ON
+		emp.emp_id=dpt.dep_id<br><br><br>
+[23-Jun-2015 09:54:53 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\repslip.php:32:<br>could not get employees<br>error code : 1054<br>error message : Unknown column 'dpt.dep_id' in 'on clause'<br>sql that failed was : SELECT * FROM 0_employees as emp
+	
+	LEFT JOIN 0_departments as dpt ON
+		emp.emp_id=dpt.dep_id<br><br><br>
+[23-Jun-2015 09:55:59 Europe/Paris] 0:admin:payroll_ui.inc:4: include_once(../../modules/payroll/includes/ui/employee_ui.inc): failed to open stream: No such file or directory
+[23-Jun-2015 09:55:59 Europe/Paris] 0:admin:payroll_ui.inc:4: include_once(): Failed opening '../../modules/payroll/includes/ui/employee_ui.inc' for inclusion (include_path='.;C:\php\pear')
+[23-Jun-2015 09:55:59 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[23-Jun-2015 09:55:59 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[23-Jun-2015 11:23:35 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[23-Jun-2015 11:23:35 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[23-Jun-2015 11:23:35 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\paycheque.php on line 86 and defined
+[23-Jun-2015 11:40:20 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\repslip.php:33:<br>could not get employees<br>error code : 1054<br>error message : Unknown column 'dpt.dep_id' in 'on clause'<br>sql that failed was : SELECT * FROM 0_employees as emp
+	
+	LEFT JOIN 0_departments as dpt ON
+		dpt.dep_id=emp.emp_id<br><br><br>
+[23-Jun-2015 11:40:21 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\repslip.php:33:<br>could not get employees<br>error code : 1054<br>error message : Unknown column 'dpt.dep_id' in 'on clause'<br>sql that failed was : SELECT * FROM 0_employees as emp
+	
+	LEFT JOIN 0_departments as dpt ON
+		dpt.dep_id=emp.emp_id<br><br><br>
+[23-Jun-2015 11:42:20 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\repslip.php:33:<br>could not get employees<br>error code : 1054<br>error message : Unknown column 'dpt.dep_id' in 'on clause'<br>sql that failed was : SELECT * FROM 0_employees as emp
+	
+	LEFT JOIN 0_departments as dpt ON
+		dpt.dep_id=emp.emp_id<br><br><br>
