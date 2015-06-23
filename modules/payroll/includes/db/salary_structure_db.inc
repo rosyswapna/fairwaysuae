@@ -51,7 +51,8 @@ function reset_salary_structure($job_position_id)
 
 function get_salary_structure($job_position_id){
 
-	$sql = "SELECT * FROM ".TB_PREF."salary_structure WHERE job_position_id =".db_escape($job_position_id);
+	$sql = "SELECT st.*,ac.account_name FROM ".TB_PREF."salary_structure st, ".TB_PREF."chart_master ac
+		WHERE ac.account_code = st.pay_rule_id AND st.job_position_id =".db_escape($job_position_id);
 
   	return db_query($sql, "Could not get salary structure");
 }

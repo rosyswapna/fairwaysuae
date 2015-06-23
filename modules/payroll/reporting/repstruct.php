@@ -8,26 +8,29 @@ $path_to_root="..";
 include_once($path_to_root . "/includes/session.inc");
 include_once($path_to_root . "/includes/date_functions.inc");
 include_once($path_to_root . "/includes/data_checks.inc");
+
 include_once($path_to_root . "/modules/payroll/includes/db/salary_structure_db.inc");
 
 add_access_extensions();
 
 print_struct_report();
 
-function get_payroll_structure_print($job_position_id)
+function get_emp_list($emp, $department, $position)
 {
-	$sql = "SELECT * FROM ".TB_PREF."payroll_structure WHERE job_position_id=".db_escape($job_position_id);
 
-	$result = db_query($sql, "could not get jobnames");
+	$sql = "SELECT * FROM ".TB_PREF."employees";
 
-	$row = db_fetch($result);
-	if ($row != false) {
-		$row['payroll_rule'] = explode(';', $row['payroll_rule']);
+	if($department){
+		$sql .= " WHERE department_id=".db_escape($department);
+	}elseif($position){
+		$sql .= " WHERE job_position_id=".db_escape($department);
+	}elseif($emp){
+		$sql .= " WHERE emp_id=".db_escape($emp);
 	}
 
-	return $row;
-
+	return db_query($sql, "could not get employees");
 }
+
 
 function print_struct_report()
 {
@@ -40,32 +43,80 @@ function print_struct_report()
 	$destination = $_POST['PARAM_4'];
 	
 	$orientation = ($orientation ? 'L' : 'P');
-	$cols = array(2, 50, 220, 400);
+	$cols = array(2, 50, 340, 440);
 	
 	$headers=array(_('SlNo'), _('Paystructure Rules'),  _('Credits'), _('Debit'));
 	
 	$aligns = array('left', 'left', 'left',	'left');
 	
 	
-	
 	$rep = new FrontReport(_('Pay Structure Report'), "Pay Structure Report", user_pagesize(), 9, $orientation);
 	
 	if ($orientation == 'L')
 		recalculate_cols($cols);
+
+	$dec = user_price_dec();
 			
-			$rep->Font();
-			$rep->Info($params,$cols, $headers, $aligns);
-			$rep->NewPage();
+	$rep->Font();
+	$rep->Info($params,$cols, $headers, $aligns);
+	$rep->NewPage();
 		
-	$result=get_payroll_structure_print();
-	$slno=1;
-	if(db_num_rows($result) > 0){
-		while ($myrow2=db_fetch($result))
-		{
-			$rep->TextCol(0,1,$slno, -2);
+	$result = get_emp_list($employee,$department,$jobposition);
+
+	
+	while ($myrow=db_fetch($result))
+	{
+
+		$rep->Font('B');
+		$rep->TextCol(1, 2,_("Employee : ").$myrow['emp_first_name']." ".$myrow['emp_last_name']);
+		$rep->Font();
+		$rep->NewLine(2);
+
+		if(!exists_salary_structure($myrow['job_position_id'])){
+
+			$rep->Font('I');
+			$rep->NewLine();
+			$rep->TextCol(1, 4,_("Salary Stucture Not defined!"));
+			$rep->Font();
+
+			$line = $rep->row;
+		}else{
+		
+			$strRes = get_salary_structure($myrow['job_position_id']);
+			$slno=1;
+			while($strRow = db_fetch($strRes)){
+				$rep->TextCol(0, 1,$slno);
+				$rep->TextCol(1, 2,$strRow['account_name']);
+
+				number_format2($myrow2["unit_price"],$dec);
+
+				if($strRow['type'] == CREDIT){
+					$credit = number_format2($strRow['pay_amount'],$dec);
+					$debit = number_format2(0,$dec);
+				}else{
+					$credit = number_format2(0,$dec);
+					$debit = number_format2($strRow['pay_amount'],$dec);
+				}
+
+				$rep->TextCol(2, 3,$credit);
+				$rep->TextCol(3, 4, $debit);
+
+			
+
+				$rep->NewLine();
+
+				$line = $rep->row;
+				$slno++;
+			}
+			
 		}
+
+		$rep->Line($line);
+		
+		$rep->NewLine();
+
 	}
-		$slno++;		
+			
 	
 	$rep->End();
 }
