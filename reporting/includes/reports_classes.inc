@@ -20,6 +20,7 @@ define('RC_BANKING', 5);
 define('RC_GL', 6);
 define('RC_POS', 7);
 define('RC_CHECK', 8);
+define('RC_HR', 9);
 
 class BoxReports
 {
@@ -316,7 +317,7 @@ class BoxReports
 						return supplier_list($name, null, _("No Supplier Filter"));
 					else
 						return supplier_list($name);
-
+				
 				case 'INVOICE':
 					$IV = $type_shortcuts[ST_SALESINVOICE];
 					$ref = ($print_invoice_no == 1 ? "trans_no" : "reference");
@@ -510,6 +511,16 @@ class BoxReports
 					$sql = "SELECT pos.id,pos.pos_name as name FROM  "
 						.TB_PREF."sales_pos as pos";
 						return combo_input($name, '', $sql, 'id', 'name',array('order'=>false));
+				
+				case 'EMPLOYEES':
+					$sql = "SELECT emp_id, CONCAT_WS(' ', emp_first_name, emp_last_name) as emp_name, inactive FROM ".TB_PREF."employees ";		
+					return combo_input($name,'',$sql,'emp_id','emp_name');
+					
+				case 'DEPARTMENTS':
+					return department_list($name);
+				
+				case 'JOBPOSITIONS':
+					return job_list($name);
 
 			}
 		return '';

@@ -59,12 +59,14 @@ function delete_payroll($job_id)
 
 //--------------------------------------------------------------------------------------------
 function get_all_payroll($active=true){
+
+	
   //get only active jobnames by default
   if ($active == true)
     $act_sql = "WHERE inactive = 0";
 
   $sql = "SELECT payroll_rule, job_name FROM ".TB_PREF."payroll_structure $act_sql";
-  
+  display_notification($sql);
   return db_query($sql, "The jobnames table is inaccessible");
 
 }

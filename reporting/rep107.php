@@ -95,7 +95,7 @@ function print_invoices()
 			else
 				$rep->title = _('CREDIT-SALES');
 			
-			$rep->SetHeaderType('Header2');
+			$rep->SetHeaderType('HeaderINV');
 			$rep->currency = $cur;
 			$rep->Font();
 			$rep->Info($params, $cols, null, $aligns);
@@ -106,6 +106,8 @@ function print_invoices()
 			$rep->NewPage();
    			$result = get_customer_trans_details(ST_SALESINVOICE, $i);
 			$SubTotal = 0;
+			$slno=1;
+			$total_discount=0;
 			while ($myrow2=db_fetch($result))
 			{
 				if ($myrow2["quantity"] == 0)
@@ -116,13 +118,15 @@ function print_invoices()
 				$SubTotal += $Net;
 	    		$DisplayPrice = number_format2($myrow2["unit_price"],$dec);
 			$DisplayDiscAmt = number_format2($myrow2["discount_amount"],$dec);
+			$total_discount+=$DisplayDiscAmt;
 	    		$DisplayQty = number_format2($sign*$myrow2["quantity"],get_qty_dec($myrow2['stock_id']));
 	    		$DisplayNet = number_format2($Net,$dec);
 	    		if ($myrow2["discount_percent"]==0)
 		  			$DisplayDiscount ="";
 	    		else
 		  			$DisplayDiscount = number_format2($myrow2["discount_percent"]*100,user_percent_dec()) . "%";
-				$rep->TextCol(0, 1,	" ", -2);
+				
+				$rep->TextCol(0, 1,$slno, -2);
 				$rep->TextCol(1, 2,	$myrow2['stock_id'], -2);
 				$oldrow = $rep->row;
 				$rep->TextColLines(2, 3, $myrow2['StockDescription'], -2);
@@ -138,6 +142,7 @@ function print_invoices()
 					
 					$rep->TextCol(7, 8,	$DisplayNet, -2);
 				}	
+				$slno++;
 				$rep->row = $newrow;
 				//$rep->NewLine(1);
 				if ($rep->row < $rep->bottomMargin + (18 * $rep->lineHeight))
@@ -199,6 +204,9 @@ function print_invoices()
 			$rep->TextCol(4, 7, _("Commission"), -2);
 			$rep->TextCol(7, 8,	$Displaycommission, -2);
 			}
+			$rep->NewLine();
+			$rep->TextCol(4, 7, _("Total Discount"), -2);
+			$rep->TextCol(7, 8,	$total_discount, -2);
 			
 			$rep->NewLine();
 			$tax_items = get_trans_tax_details(ST_SALESINVOICE, $i);
@@ -239,15 +247,13 @@ function print_invoices()
 				}
 				$rep->NewLine();
     		}
-		/*$rep->NewLine();
-			$rep->TextCol(4, 7, _("Total Discount"), -2);
-			$rep->TextCol(7, 8,	$DisplayDiscAmt, -2);*/
+		
     		$rep->NewLine();
-			
 			$billing_total=$myrow["ov_freight_charge"] + $myrow["ov_insurance"] + $myrow["ov_packing_charge"] + $myrow["ov_duties"] + $myrow["ov_service_charge"] + $myrow["ov_commission"];
 			$DisplayTotal = number_format2($sign*($myrow["ov_freight"] + $myrow["ov_gst"] +
 				$myrow["ov_amount"]+$myrow["ov_freight_tax"]+$billing_total),$dec);
 				
+			
 				
 			$rep->Font('bold');
 			$rep->TextCol(4, 7, _("TOTAL INVOICE"), - 2);

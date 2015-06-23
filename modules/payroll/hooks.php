@@ -31,7 +31,9 @@ class payroll_app extends application
                 $this->add_lapp_function(1, _("Payroll Liabialities &Inquiry"),
                          $path_to_root.'/modules/payroll/inquiry/payroll_liabialities.php', 'SA_LBLTYQRY', MENU_INQUIRY);
 				$this->add_rapp_function(1, _("Employee Pay&roll Reports"),
-                        $path_to_root.'/modules/payroll/', 'SA_PAYROLL', MENU_INQUIRY);
+                        $path_to_root.'/reporting/reports_main.php?Class=9', 'SA_PAYROLL_REPORTS', MENU_REPORT);
+				//$this->add_rapp_function(1, _("Customer and Sales &Reports"),
+			//"reporting/reports_main.php?Class=0", 'SA_SALESTRANSVIEW', MENU_REPORT);
 											
 						
 						
@@ -92,6 +94,14 @@ class hooks_payroll extends hooks {
 		$security_areas['SA_PMTADVICE'] = array(SS_PAYROLL|1, _("Payment Advice"));
 		$security_areas['SA_PAYCHECK_PRINTABLE'] = array(SS_PAYROLL|1, _("paycheck printable"));
 		$security_areas['SA_PAYCHECK_REPORT'] = array(SS_PAYROLL|1, _("paycheck report"));
+		
+		$security_areas['SA_PAYROLL_REPORTS'] = array(SS_PAYROLL|1, _("payroll report"));
+		$security_areas['SA_PAYROLL_REPORTS_STRUCT'] = array(SS_PAYROLL|1, _("payroll report structure"));
+		$security_areas['SA_PAYROLL_REPORTS_SLIP'] = array(SS_PAYROLL|1, _("payroll report slip"));
+		$security_areas['SA_PAYROLL_REPORTS_ADVICE'] = array(SS_PAYROLL|1, _("payroll report advice"));
+		$security_areas['SA_PAYROLL_REPORTS_LIST'] = array(SS_PAYROLL|1, _("payroll report list"));
+		$security_areas['SA_PAYROLL_REPORTS_RELEASE'] = array(SS_PAYROLL|1, _("payroll report release"));
+		
 
 
 
