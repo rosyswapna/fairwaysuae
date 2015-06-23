@@ -743,6 +743,60 @@ function job_list_row($label, $name, $selected_id=null, $all_option=false,
 	echo "</tr>";
 }
 
+function employee_list($name, $selected_id=null, $spec_option=false, $submit_on_change=false, 
+	$show_inactive=false, $editkey = false)
+{
+	global $all_items;
+
+	$sql = "SELECT emp_id, CONCAT_WS(' ', emp_first_name, emp_last_name), inactive FROM ".TB_PREF."employees ";
+
+	$mode = 0;//We don't have many employees, hardcoding to no search
+
+	if ($editkey)
+		set_editor('employee', $name, $editkey);//what is this? //set_editor defined in ui_controls.inc
+
+	$ret = combo_input($name, $selected_id, $sql, 'emp_id', 'emp_first_name', //sql fields
+	array(
+	    //'format' => '_format_add_curr',
+	    'order' => array('emp_first_name'),//order by sql field 
+		'search_box' => $mode!=0,
+		'type' => 1,
+		'size' => 20,
+		'spec_option' => $spec_option === true ? _("All Employees") : $spec_option,
+		'spec_id' => $all_items,//what is this?
+		'select_submit'=> $submit_on_change,
+		'async' => false,
+		'sel_hint' => $mode ? _('Press Space tab to filter by name fragment; F2 - entry new employee') :
+		_('Select employee'),
+		'show_inactive' => $show_inactive
+	) );
+	if ($editkey)
+		$ret .= add_edit_combo('employee');
+	return $ret;
+}
+
+function employee_list_cells($label, $name, $selected_id=null, $all_option=false, 
+	$submit_on_change=false, $show_inactive=false, $editkey = false)
+{
+	if ($label != null)
+		echo "<td>$label</td>\n";
+	echo "<td nowrap>";
+	echo employee_list($name, $selected_id, $all_option, $submit_on_change,
+		$show_inactive, $editkey);
+	echo "</td>\n";
+}
+
+function employee_list_row($label, $name, $selected_id=null, $all_option = false, 
+	$submit_on_change=false, $show_inactive=false, $editkey = false)
+{
+	echo "<tr><td class='label'>$label</td><td>";
+	echo employee_list($name, $selected_id, $all_option, $submit_on_change,
+		$all, $editkey);
+	echo "</td></tr>\n";
+}
+
+
+
 
 //------------------------------------------------------------------------------------------------
 

@@ -11390,3 +11390,26 @@
 [23-Jun-2015 07:24:11 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
 [23-Jun-2015 07:48:51 Europe/Paris] 0:admin:repstruct.php:17: Missing argument 1 for get_payroll_structure_print(), called in C:\wamp\www\fairwaysuae\modules\payroll\reporting\repstruct.php on line 60 and defined
 [23-Jun-2015 07:48:51 Europe/Paris] 0:admin:connect_db.inc:114: mysql_num_rows() expects parameter 1 to be resource, boolean given
+[23-Jun-2015 07:54:08 Europe/Paris] 0:admin:payroll_structure_db.inc:75: Missing argument 1 for get_payroll_structure(), called in C:\wamp\www\fairwaysuae\modules\payroll\reporting\repslip.php on line 38 and defined
+[23-Jun-2015 08:20:44 Europe/Paris] 0:admin:ui_lists.inc:29: Missing argument 2 for combo_input(), called in C:\wamp\www\fairwaysuae\reporting\includes\reports_classes.inc on line 521 and defined
+[23-Jun-2015 08:20:44 Europe/Paris] 0:admin:ui_lists.inc:29: Missing argument 3 for combo_input(), called in C:\wamp\www\fairwaysuae\reporting\includes\reports_classes.inc on line 521 and defined
+[23-Jun-2015 08:20:44 Europe/Paris] 0:admin:ui_lists.inc:29: Missing argument 4 for combo_input(), called in C:\wamp\www\fairwaysuae\reporting\includes\reports_classes.inc on line 521 and defined
+[23-Jun-2015 08:20:44 Europe/Paris] 0:admin:ui_lists.inc:29: Missing argument 5 for combo_input(), called in C:\wamp\www\fairwaysuae\reporting\includes\reports_classes.inc on line 521 and defined
+[23-Jun-2015 08:25:07 Europe/Paris] 0:admin:ui_lists.inc:29: Missing argument 4 for combo_input(), called in C:\wamp\www\fairwaysuae\reporting\includes\reports_classes.inc on line 519 and defined
+[23-Jun-2015 08:25:07 Europe/Paris] 0:admin:ui_lists.inc:29: Missing argument 5 for combo_input(), called in C:\wamp\www\fairwaysuae\reporting\includes\reports_classes.inc on line 519 and defined
+[23-Jun-2015 08:26:56 Europe/Paris] 0:admin:ui_lists.inc:29: Missing argument 4 for combo_input(), called in C:\wamp\www\fairwaysuae\reporting\includes\reports_classes.inc on line 519 and defined
+[23-Jun-2015 08:26:56 Europe/Paris] 0:admin:ui_lists.inc:29: Missing argument 5 for combo_input(), called in C:\wamp\www\fairwaysuae\reporting\includes\reports_classes.inc on line 519 and defined
+[23-Jun-2015 08:27:08 Europe/Paris] 0:admin:ui_lists.inc:29: Missing argument 4 for combo_input(), called in C:\wamp\www\fairwaysuae\reporting\includes\reports_classes.inc on line 519 and defined
+[23-Jun-2015 08:27:08 Europe/Paris] 0:admin:ui_lists.inc:29: Missing argument 5 for combo_input(), called in C:\wamp\www\fairwaysuae\reporting\includes\reports_classes.inc on line 519 and defined
+[23-Jun-2015 08:28:05 Europe/Paris] 0:admin:ui_lists.inc:29: Missing argument 4 for combo_input(), called in C:\wamp\www\fairwaysuae\reporting\includes\reports_classes.inc on line 519 and defined
+[23-Jun-2015 08:28:05 Europe/Paris] 0:admin:ui_lists.inc:29: Missing argument 5 for combo_input(), called in C:\wamp\www\fairwaysuae\reporting\includes\reports_classes.inc on line 519 and defined
+[23-Jun-2015 08:28:14 Europe/Paris] 0:admin:ui_lists.inc:29: Missing argument 4 for combo_input(), called in C:\wamp\www\fairwaysuae\reporting\includes\reports_classes.inc on line 519 and defined
+[23-Jun-2015 08:28:14 Europe/Paris] 0:admin:ui_lists.inc:29: Missing argument 5 for combo_input(), called in C:\wamp\www\fairwaysuae\reporting\includes\reports_classes.inc on line 519 and defined
+[23-Jun-2015 08:40:02 Europe/Paris] 0:admin:emp_payslip.php:23: include_once(../../modules/payroll/includes/ui/employee_ui.inc): failed to open stream: No such file or directory
+[23-Jun-2015 08:40:02 Europe/Paris] 0:admin:emp_payslip.php:23: include_once(): Failed opening '../../modules/payroll/includes/ui/employee_ui.inc' for inclusion (include_path='.;C:\php\pear')
+[23-Jun-2015 08:40:02 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
+[23-Jun-2015 08:40:02 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
+[23-Jun-2015 08:40:03 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 37 and defined
+[23-Jun-2015 08:40:03 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 37 and defined
+[23-Jun-2015 08:57:57 Europe/Paris] 0:admin:repstruct.php:17: Missing argument 1 for get_payroll_structure_print(), called in C:\wamp\www\fairwaysuae\modules\payroll\reporting\repstruct.php on line 60 and defined
+[23-Jun-2015 08:57:57 Europe/Paris] 0:admin:connect_db.inc:114: mysql_num_rows() expects parameter 1 to be resource, boolean given

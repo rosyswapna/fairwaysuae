@@ -7,15 +7,15 @@ global $reports, $dim;
 $reports->addReportClass(_('Payroll Reports'), RC_HR);
 $reports->addReport(RC_HR, 'struct', _('Employee Pay Structure Report'),
 	array(	
-			_('Employees') => 'EMPLOYEES',
-			_('Departments') => 'DEPARTMENTS',
-			_('Jobpositions') => 'JOBPOSITIONS',
+			_('Employees') => 'EMPLOYEES_NO_FILTER',
+			_('Departments') => 'DEPARTMENTS_NO_FILTER',
+			_('Jobpositions') => 'JOBPOSITIONS_NO_FILTER',
 			_('Orientation') => 'ORIENTATION',
 			_('Destination') => 'DESTINATION'));
 $reports->addReport(RC_HR, 'slip', _('Employee Pay Slip Report'),
-	array(	_('Employees') => 'EMPLOYEES',
-			_('Departments') => 'DEPARTMENTS',
-			_('Jobpositions') => 'JOBPOSITIONS',
+	array(	_('Employees') => 'EMPLOYEES_NO_FILTER',
+			_('Departments') => 'DEPARTMENTS_NO_FILTER',
+			_('Jobpositions') => 'JOBPOSITIONS_NO_FILTER',
 			_('Orientation') => 'ORIENTATION',
 			_('Destination') => 'DESTINATION'));
 $reports->addReport(RC_HR, 'advice', _('Employee Payment Advice Report'),
