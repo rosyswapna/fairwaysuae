@@ -1,0 +1,48 @@
+<?php
+
+$page_security='SA_PAYROLL_REPORTS_STRUCT';
+
+
+$path_to_root="..";
+
+include_once($path_to_root . "/includes/session.inc");
+include_once($path_to_root . "/includes/date_functions.inc");
+include_once($path_to_root . "/includes/data_checks.inc");
+include_once($path_to_root . "/modules/payroll/includes/db/payroll_structure_db.inc");
+add_access_extensions();
+
+print_struc_report();
+
+function print_struc_report()
+{
+	global $path_to_root;
+	include_once($path_to_root . "/reporting/includes/pdf_report.inc");
+	$employee = $_POST['PARAM_0'];
+	$department = $_POST['PARAM_1'];
+	$jobposition = $_POST['PARAM_2'];
+	$orientation = $_POST['PARAM_3'];
+	$destination = $_POST['PARAM_4'];
+	
+	$orientation = ($orientation ? 'L' : 'P');
+	$cols = array(2, 30, 120, 300, 340);
+	
+	$aligns = array('left', 'left', 'left',	'left', 'left');
+	
+	$rep = new FrontReport(_('Pay Slip Report'), "Pay Slip Report", user_pagesize(), 9, $orientation);
+	
+	if ($orientation == 'L')
+		recalculate_cols($cols);
+			$rep->NewPage();
+			$rep->Font();
+		
+	$myrow=get_payroll_structure();
+
+			
+	
+	$rep->End();
+	
+}
+
+
+
+?>
