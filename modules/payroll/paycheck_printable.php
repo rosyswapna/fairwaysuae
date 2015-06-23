@@ -90,8 +90,7 @@ start_form();
 		_("Reference") , 
 		_("Memo"), 
 		_("Account") ,
-		_("Amount"),
-		//_(" ") => array('align'=>'right', 'type'=>'amount'),
+		_("Amount") => array('align'=>'right', 'type'=>'amount'),
 			array('insert'=>true, 'fun'=>'fn_paycheque_link')	
 	);
 
