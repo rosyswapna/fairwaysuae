@@ -44,7 +44,7 @@ function print_advice_report()
 	$rep->Info($params,$cols,$headers,$aligns);
 	$rep->NewPage();
 	
-	$sql = get_sql_for_payment_advices($employee,$jobposition,$department);
+	$sql = get_sql_for_payment_advices($employee,$jobposition,$department,'','','advice');
 	//display_notification($sql);exit;
 	$result = db_query($sql, "could not get payslips");
 

@@ -224,8 +224,9 @@ function get_sql_for_emp_inquiry($employee,$job_position,$department,$from,$to){
 	//echo $sql;
 	return $sql;
 }
-function get_sql_for_payment_advices($employee,$job_position,$department,$from,$to)
+function get_sql_for_payment_advices($employee,$job_position,$department,$from,$to,$advice = 'all')
 {
+	
 	$sql="SELECT gl.tran_date,
 		CONCAT(emp.emp_first_name,' ',emp.emp_last_name) as emp_name,
 		gl.type_no,
@@ -238,6 +239,7 @@ function get_sql_for_payment_advices($employee,$job_position,$department,$from,$
 		dept.dept_name as department
 		
 	FROM ".TB_PREF."gl_trans as gl 
+
 	LEFT JOIN ".TB_PREF."employees as emp ON
 			emp.emp_id = gl.person_id
 	LEFT JOIN ".TB_PREF."bank_trans as bt ON
@@ -260,6 +262,16 @@ function get_sql_for_payment_advices($employee,$job_position,$department,$from,$
 	if($from != '' && $to != ''){
 		$sql .= " AND gl.tran_date >= '" . date2sql($from) . "'
 			AND gl.tran_date <= '" . date2sql($to) . "'";
+	}
+
+	/*advice => 'all' - return all payment advices
+	advice => 'released' - return payment advices have cheque no
+	advice => 'advice' - return payment advices have cheque no*/
+
+	if($advice == 'released'){
+		$sql .= " AND bt.cheque_no <> ''";
+	}elseif($advice == 'advice'){
+		$sql .= " AND bt.cheque_no = ''";
 	}
 
 	return $sql;
