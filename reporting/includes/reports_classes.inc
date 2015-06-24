@@ -19,8 +19,7 @@ define('RC_DIMENSIONS', 4);
 define('RC_BANKING', 5);
 define('RC_GL', 6);
 define('RC_POS', 7);
-define('RC_CHECK', 8);
-define('RC_HR', 9);
+
 
 class BoxReports
 {
@@ -512,7 +511,7 @@ class BoxReports
 						.TB_PREF."sales_pos as pos";
 						return combo_input($name, '', $sql, 'id', 'name',array('order'=>false));
 						
-				case 'EMPLOYEES_NO_FILTER':
+				/*case 'EMPLOYEES_NO_FILTER':
 				case 'EMPLOYEES':
 					$sql = "SELECT emp_id, CONCAT_WS(' ', emp_first_name, emp_last_name) as emp_name, inactive FROM ".TB_PREF."employees ";	
 					if ($type == 'EMPLOYEES_NO_FILTER')
@@ -535,6 +534,7 @@ class BoxReports
 					else
 						return job_list($name);
 					//return job_list($name);
+*/
 
 			}
 		return '';

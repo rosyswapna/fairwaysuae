@@ -1,7 +1,5 @@
 <?php
-include_once($path_to_root . "/includes/banking.inc");
-include_once($path_to_root . "/includes/types.inc");
-include_once($path_to_root . "/includes/current_user.inc");
+
 
 $_search_button = "<input %s type='submit' class='combo_submit' style='border:0;background:url($path_to_root/themes/"
 	."%s/images/locate.png) no-repeat;%s' aspect='fallback' name='%s' value=' ' title='"._("Set filter")."'> ";
@@ -23,18 +21,17 @@ function department_list($name, $selected_id=null, $spec_option=false, $submit_o
 	$sql = "SELECT dept_id,dept_name FROM ".TB_PREF."departments ";
 
 	$mode = get_company_pref('no_department_list');
-
+	
 	if ($editkey)
 		set_editor('department', $name, $editkey);
 
 	$ret = combo_input($name, $selected_id, $sql, 'dept_id', 'dept_name',
 	array(
-	    'format' => '_format_add_curr',
 	    'order' => array('dept_name'),
 		'search_box' => $mode!=0,
 		'type' => 1,
 		'size' => 20,
-        'search' => array("dept_name"),        
+        'search' => array("dept_name","name","tax_id"),        
 		'spec_option' => $spec_option === true ? _("All departments") : $spec_option,
 		'spec_id' => $all_items,
 		'select_submit'=> $submit_on_change,
@@ -61,5 +58,15 @@ function department_list_cells($label, $name, $selected_id=null, $all_option=fal
 	echo "</td>\n";
 }
 
+function department_list_row($label, $name, $selected_id=null, $all_option=false, 
+	$submit_on_change=false, $show_inactive=false, $editkey = false){
+
+	echo "<tr>";
+	department_list_cells($label, $name, $selected_id, $all_option, 
+	$submit_on_change, $show_inactive, $editkey);
+	echo "</tr>";
+
+	
+}
 
 ?> 

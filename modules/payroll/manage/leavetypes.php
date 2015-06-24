@@ -25,7 +25,8 @@ page(_($help_context = "Manage Leave Types"), @$_REQUEST['popup'], false, "", $j
 
 include_once($path_to_root . "/includes/date_functions.inc");
 include_once($path_to_root . "/includes/ui.inc");
-include_once($path_to_root . "/modules/payroll/includes/db/leavetypes_db.inc");
+include_once($path_to_root . "/modules/payroll/includes/payroll_db.inc");
+include_once($path_to_root . "/modules/payroll/includes/payroll_ui.inc");
 $selected_id = get_post('ltyp_id','');
 //--------------------------------------------------------------------------------------------
 

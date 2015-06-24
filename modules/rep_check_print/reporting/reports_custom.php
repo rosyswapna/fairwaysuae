@@ -1,9 +1,9 @@
 <?php
 
 global $reports, $dim;
-
-$reports->addReportClass(_('Check'), RC_CHECK);
-$reports->addReport(RC_CHECK  	, "_check_print",_('Printable &Check'),
+define('RC_CHEQUE', 8);
+$reports->addReportClass(_('Check'), RC_CHEQUE);
+$reports->addReport(RC_CHEQUE  	, "_check_print",_('Printable &Check'),
     array(
 	_('Transaction') => 'GL_REMITTANCE',
 	_("Issue Date") => 'DATE',

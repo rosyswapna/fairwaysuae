@@ -25,7 +25,10 @@ page(_($help_context = "Manage Department"), @$_REQUEST['popup'], false, "", $js
 
 include_once($path_to_root . "/includes/date_functions.inc");
 include_once($path_to_root . "/includes/ui.inc");
-include_once($path_to_root . "/modules/payroll/includes/db/department_db.inc");
+
+
+include_once($path_to_root . "/modules/payroll/includes/payroll_db.inc");
+include_once($path_to_root . "/modules/payroll/includes/payroll_ui.inc");
 $selected_id = get_post('dept_id','');
 //--------------------------------------------------------------------------------------------
 

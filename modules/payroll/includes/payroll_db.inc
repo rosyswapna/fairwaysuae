@@ -13,7 +13,7 @@ include_once($path_to_root."/modules/payroll/includes/db/taxes_db.inc");
 
 include_once($path_to_root."/modules/payroll/includes/db/department_db.inc");
 include_once($path_to_root."/modules/payroll/includes/db/employee_db.inc");
-include_once($path_to_root."/modules/payroll/includes/db/job_positions_db.inc");
+include_once($path_to_root."/modules/payroll/includes/db/jobpositions_db.inc");
 include_once($path_to_root."/modules/payroll/includes/db/leavetypes_db.inc");
 include_once($path_to_root."/modules/payroll/includes/db/payroll_structure_db.inc");
 include_once($path_to_root."/modules/payroll/includes/db/paytype_db.inc");

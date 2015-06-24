@@ -25,7 +25,10 @@ page(_($help_context = "Manage Job Positions"), @$_REQUEST['popup'], false, "", 
 
 include_once($path_to_root . "/includes/date_functions.inc");
 include_once($path_to_root . "/includes/ui.inc");
-include_once($path_to_root . "/modules/payroll/includes/db/jobpositions_db.inc");
+
+include_once($path_to_root . "/modules/payroll/includes/payroll_db.inc");
+include_once($path_to_root . "/modules/payroll/includes/payroll_ui.inc");
+
 $selected_id = get_post('job_name_id','');
 //--------------------------------------------------------------------------------------------
 
