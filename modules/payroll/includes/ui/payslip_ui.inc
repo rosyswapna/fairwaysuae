@@ -111,6 +111,10 @@ function display_order_header(&$Order)
 	end_outer_table(1);
 }
 
+function display_advice_header1(&$Order){
+
+}
+
 
 function display_advice_header(&$Order)
 {
@@ -119,6 +123,8 @@ function display_advice_header(&$Order)
 
 	$qes = has_quick_entries(QE_JOURNAL);
 	$new = $Order->order_id==0;
+
+	
 
 	hidden('ref_original');
 	start_outer_table(TABLESTYLE2, "width='90%'");
@@ -134,10 +140,14 @@ function display_advice_header(&$Order)
 
 		$employee = get_employee($Order->person_id);
 
-		if(isset($_GET['PaymentAdvice'])){
+		if(isset($_GET['PaymentAdvice']) || isset($_POST['PaymentAdvice'])){
 			label_row(_("Pay To: "),$employee['emp_first_name']." ".$employee['emp_last_name']);
 			hidden('person_id',$Order->person_id);
 			label_row(_("To the Order of:"),$Order->to_the_order_of);
+
+			if(!isset($_POST['PaymentAdvice']))
+				$_POST['PaymentAdvice'] =$_GET['PaymentAdvice'];
+			hidden('PaymentAdvice');
 		}else{
 			employee_list_row(_("Pay To: "), 'person_id',null, _("Select Employee"), true, false, true);
 			text_row(_("To the Order of:"),'to_the_order_of',$_POST['to_the_order_of']);
@@ -145,58 +155,74 @@ function display_advice_header(&$Order)
 		
 	table_section(3, "35%");	
 		if(!isset($_POST['PaySlipNo'])){
-			$_POST['PaySlipNo'] = 0;
+			$_POST['PaySlipNo'] = $Order->payslip_no = 0;
 		}
 		
-
-	/*table_section(3, "35%");
 
 		bank_accounts_list_row(_("From:"), 'bank_account', null, true);
-		bank_balance_row(price_format(0));*/
+		bank_balance_row(price_format(0));
 	
-	if(!isset($_GET['PaymentAdvice'])){
-		employee_payslip_list_row(_("Pay Slip:"),'for_payslip',$_POST['for_payslip'],get_post('person_id'),_("Select One"),true);
-
-	}
-	if(!isset($_POST['PaySlipNo'])){
-		$Order->payslip_no = 0;
-	}
-	
-	
-	if (list_updated('person_id')) {//get payslip for selected employee
-		$Order->clear_items();
-		//------------------------------------------------==================
-		unset($_POST['totamount']); // enable default
-		$Ajax->activate('totamount');
-		$Ajax->activate('for_payslip');
-	}
-
-	if (list_updated('for_payslip')) {
-		$Order->clear_items();
-		
-		$payslip = get_payslip(get_post('for_payslip'));
-		
-		if($payslip){
-			$Order->person_id = $payslip['person_id'];
-			$Order->to_the_order_of = $payslip['to_the_order_of'];
-			$Order->payslip_no = $_POST['PaySlipNo'] = $payslip['payslip_no'];
-
-			$ac_pmt_amt = -($payslip['amount']);
-			$cash_amt = -($ac_pmt_amt);
-
-			$bank = get_default_bank_account();
-	
-			$Order->add_gl_item(AC_PAYABLE, 0, 0, $ac_pmt_amt, '');
-			$Order->add_gl_item($bank['account_code'], 0, 0, $cash_amt, '');
-
-			$_POST['memo_'] = "Payment advice gl entry For Payslip".$payslip['payslip_no'];
+		if(isset($_GET['PaymentAdvice']) || isset($_POST['PaymentAdvice'])){
 			
-		}
-		$Ajax->activate('items_table');
-	}
 
-	hidden('PaySlipNo',$Order->payslip_no);
-	label_row(_("Payslip No:"),$Order->payslip_no);
+		}else{
+			employee_payslip_list_row(_("Pay Slip:"),'for_payslip',$_POST['for_payslip'],get_post('person_id'),_("Select One"),true);
+		}
+
+		
+		//on change employee
+		if (list_updated('person_id')) {//get payslip for selected employee
+			$Order->clear_items();
+			unset($_POST['totamount']); // enable default
+			$Ajax->activate('totamount');
+			$Ajax->activate('for_payslip');
+			$Order->payslip_no = 0;	
+		}
+
+		
+		//on change payslip transaction or on change bank account
+		if (list_updated('for_payslip') || list_updated('bank_account')) {
+			$Order->clear_items();
+			$_POST['memo_'] = "";
+
+			if(list_updated('for_payslip')){
+				unset($_POST['PaySlipNo']);
+				$Order->payslip_no = 0;	
+				$Order->payslip_trans_no = get_post('for_payslip');
+			}
+
+			$payslip = get_payslip($Order->payslip_trans_no);
+		
+			if($payslip){
+				$_POST['memo_'] = "Payment advice gl entry For Payslip".$payslip['payslip_no'];
+
+				if(list_updated('for_payslip')){
+					$Order->payslip_trans_no = $payslip['type_no'];
+					$Order->person_id = $payslip['person_id'];
+					$Order->to_the_order_of = $payslip['to_the_order_of'];
+					$Order->payslip_no = $_POST['PaySlipNo'] = $payslip['payslip_no'];
+					
+				}
+				$ac_pmt_amt = -($payslip['amount']);
+				$cash_amt = -($ac_pmt_amt);
+
+				$bank_ac_code = get_bank_gl_account(get_post('bank_account'));
+	
+				$Order->add_gl_item(AC_PAYABLE, 0, 0, $ac_pmt_amt, '');
+				$Order->add_gl_item($bank_ac_code, 0, 0, $cash_amt, '');
+
+				
+			
+			}
+			$Ajax->activate('items_table');
+		}
+
+		
+		
+
+
+		hidden('PaySlipNo',$Order->payslip_no);
+		label_row(_("Payslip No:"),$Order->payslip_no);
 	
 	end_outer_table(1);
 }
@@ -394,6 +420,7 @@ function employee_payslip_list($name, $selected_id=null,$employee_id, $spec_opti
 {
 	global $all_items;
 
+	if($employee_id)
 	$sql = get_sql_for_payslips($employee_id);
 	//display_notification($sql);exit;
 	$mode = 0;//We don't have many employees, hardcoding to no search
