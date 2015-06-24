@@ -11545,3 +11545,129 @@
 [23-Jun-2015 13:08:27 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../../../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='.;C:\php\pear')
 [23-Jun-2015 13:08:35 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(../modules/payroll/includes/db/job_positions_db.inc): failed to open stream: No such file or directory
 [23-Jun-2015 13:08:35 Europe/Paris] 0:admin:payroll_db.inc:16: include_once(): Failed opening '../modules/payroll/includes/db/job_positions_db.inc' for inclusion (include_path='../modules/payroll;.;C:\php\pear')
+[24-Jun-2015 08:25:28 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[24-Jun-2015 08:25:28 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[24-Jun-2015 08:25:28 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[24-Jun-2015 08:25:28 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[24-Jun-2015 08:25:30 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[24-Jun-2015 08:25:30 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[24-Jun-2015 08:25:34 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[24-Jun-2015 08:25:34 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[24-Jun-2015 08:25:37 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[24-Jun-2015 08:25:37 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[24-Jun-2015 08:38:35 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[24-Jun-2015 08:38:35 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[24-Jun-2015 08:38:36 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[24-Jun-2015 08:38:36 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[24-Jun-2015 08:38:39 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[24-Jun-2015 08:38:39 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[24-Jun-2015 08:38:43 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[24-Jun-2015 08:38:43 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[24-Jun-2015 08:38:59 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[24-Jun-2015 08:38:59 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[24-Jun-2015 08:39:02 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[24-Jun-2015 08:39:02 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[24-Jun-2015 08:39:04 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[24-Jun-2015 08:39:04 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[24-Jun-2015 08:39:13 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[24-Jun-2015 08:39:13 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[24-Jun-2015 08:39:16 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[24-Jun-2015 08:39:16 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[24-Jun-2015 08:39:18 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[24-Jun-2015 08:39:18 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[24-Jun-2015 08:45:33 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\replist.php:33:<br>could not get employees<br>error code : 1146<br>error message : Table 'fair.0_passports' doesn't exist<br>sql that failed was : SELECT * FROM 0_employees as emp
+	
+	LEFT JOIN 0_passports as pt ON
+	
+	pt.emp_id=emp.emp_id<br><br><br>
+[24-Jun-2015 08:46:51 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[24-Jun-2015 08:46:51 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[24-Jun-2015 08:46:51 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[24-Jun-2015 08:46:51 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[24-Jun-2015 08:46:53 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[24-Jun-2015 08:46:53 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[24-Jun-2015 08:46:54 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[24-Jun-2015 08:46:54 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[24-Jun-2015 08:46:55 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[24-Jun-2015 08:46:55 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[24-Jun-2015 08:46:58 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[24-Jun-2015 08:46:58 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[24-Jun-2015 08:47:04 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[24-Jun-2015 08:47:04 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[24-Jun-2015 08:51:00 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\replist.php:35:<br>could not get employees<br>error code : 1054<br>error message : Unknown column 'jb.job_position_id' in 'on clause'<br>sql that failed was : SELECT * FROM 0_employees as emp
+	
+	LEFT JOIN 0_passport as pt ON
+	pt.emp_id=emp.emp_id
+	
+	LEFT JOIN 0_jobnames as jb ON
+	jb.job_position_id=emp.job_position_id<br><br><br>
+[24-Jun-2015 08:53:46 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\replist.php:38:<br>could not get employees<br>error code : 1146<br>error message : Table 'fair.0_deaprtment' doesn't exist<br>sql that failed was : SELECT * FROM 0_employees as emp
+	
+	LEFT JOIN 0_passport as pt ON
+	pt.emp_id=emp.emp_id
+	
+	LEFT JOIN 0_jobnames as jb ON
+	jb.job_name_id=emp.job_position_id
+	
+	LEFT JOIN 0_deaprtment as dpt ON
+	dpt.dept_id=emp.department_id<br><br><br>
+[24-Jun-2015 08:53:49 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\replist.php:38:<br>could not get employees<br>error code : 1146<br>error message : Table 'fair.0_deaprtment' doesn't exist<br>sql that failed was : SELECT * FROM 0_employees as emp
+	
+	LEFT JOIN 0_passport as pt ON
+	pt.emp_id=emp.emp_id
+	
+	LEFT JOIN 0_jobnames as jb ON
+	jb.job_name_id=emp.job_position_id
+	
+	LEFT JOIN 0_deaprtment as dpt ON
+	dpt.dept_id=emp.department_id<br><br><br>
+[24-Jun-2015 08:53:49 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\replist.php:38:<br>could not get employees<br>error code : 1146<br>error message : Table 'fair.0_deaprtment' doesn't exist<br>sql that failed was : SELECT * FROM 0_employees as emp
+	
+	LEFT JOIN 0_passport as pt ON
+	pt.emp_id=emp.emp_id
+	
+	LEFT JOIN 0_jobnames as jb ON
+	jb.job_name_id=emp.job_position_id
+	
+	LEFT JOIN 0_deaprtment as dpt ON
+	dpt.dept_id=emp.department_id<br><br><br>
+[24-Jun-2015 08:53:49 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\replist.php:38:<br>could not get employees<br>error code : 1146<br>error message : Table 'fair.0_deaprtment' doesn't exist<br>sql that failed was : SELECT * FROM 0_employees as emp
+	
+	LEFT JOIN 0_passport as pt ON
+	pt.emp_id=emp.emp_id
+	
+	LEFT JOIN 0_jobnames as jb ON
+	jb.job_name_id=emp.job_position_id
+	
+	LEFT JOIN 0_deaprtment as dpt ON
+	dpt.dept_id=emp.department_id<br><br><br>
+[24-Jun-2015 08:54:08 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\replist.php:38:<br>could not get employees<br>error code : 1146<br>error message : Table 'fair.0_deaprtments' doesn't exist<br>sql that failed was : SELECT * FROM 0_employees as emp
+	
+	LEFT JOIN 0_passport as pt ON
+	pt.emp_id=emp.emp_id
+	
+	LEFT JOIN 0_jobnames as jb ON
+	jb.job_name_id=emp.job_position_id
+	
+	LEFT JOIN 0_deaprtments as dpt ON
+	dpt.dept_id=emp.department_id<br><br><br>
+[24-Jun-2015 08:54:10 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\replist.php:38:<br>could not get employees<br>error code : 1146<br>error message : Table 'fair.0_deaprtments' doesn't exist<br>sql that failed was : SELECT * FROM 0_employees as emp
+	
+	LEFT JOIN 0_passport as pt ON
+	pt.emp_id=emp.emp_id
+	
+	LEFT JOIN 0_jobnames as jb ON
+	jb.job_name_id=emp.job_position_id
+	
+	LEFT JOIN 0_deaprtments as dpt ON
+	dpt.dept_id=emp.department_id<br><br><br>
+[24-Jun-2015 08:54:10 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\replist.php:38:<br>could not get employees<br>error code : 1146<br>error message : Table 'fair.0_deaprtments' doesn't exist<br>sql that failed was : SELECT * FROM 0_employees as emp
+	
+	LEFT JOIN 0_passport as pt ON
+	pt.emp_id=emp.emp_id
+	
+	LEFT JOIN 0_jobnames as jb ON
+	jb.job_name_id=emp.job_position_id
+	
+	LEFT JOIN 0_deaprtments as dpt ON
+	dpt.dept_id=emp.department_id<br><br><br>
