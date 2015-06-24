@@ -166,7 +166,7 @@ start_form();
 
 	start_table(TABLESTYLE, "width='80%'", 10);
 		echo "<tr><td>";
-		display_payslip_header();
+		display_payslip_batch_header();
 		echo "</td></tr>";
 		echo "<tr><td>";
 		display_employee_batch_payslip();

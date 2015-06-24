@@ -25,15 +25,16 @@ if (isset($_GET['BatchPaymentAdvice'])) {
 	$batch 	= $_SESSION['PaymentAdviceBatch'];
 	unset($_SESSION['PaymentAdviceBatch']);
 
+
 	foreach($batch as $trans_id){
-		write_cart($trans_id,$post['to_the_order_of']);
+		write_cart($trans_id,$_GET['AC']);
 	}
 
 	display_notification("Batch payment advice processed");
 }
 
 //create cart
-function write_cart($trans_id)
+function write_cart($trans_id,$bank_ac)
 {
 	global $Refs;
 	$type = $trans_no = 0;
@@ -66,10 +67,10 @@ function write_cart($trans_id)
 		$ac_pmt_amt = -($payslip['amount']);
 		$cash_amt = -($ac_pmt_amt);
 
-		$bank = get_default_bank_account();
+		$bank_ac_code = get_bank_gl_account($bank_ac);
 	
 		$cart->add_gl_item(AC_PAYABLE, 0, 0, $ac_pmt_amt, '');
-		$cart->add_gl_item($bank['account_code'], 0, 0, $cash_amt, '');
+		$cart->add_gl_item($bank_ac_code, 0, 0, $cash_amt, '');
 	}
 
 	$_SESSION['journal_items'] = &$cart;
@@ -111,7 +112,7 @@ if (isset($_POST['BatchPaymentAdvice']))
 	} else {
 		$_SESSION['PaymentAdviceBatch'] = $selected;
 		
-		meta_forward($_SERVER['PHP_SELF'],'BatchPaymentAdvice=Yes');
+		meta_forward($_SERVER['PHP_SELF'],'BatchPaymentAdvice=Yes&AC='.$_POST['bank_account']);
 	}
 }
 
@@ -119,42 +120,26 @@ if (isset($_POST['BatchPaymentAdvice']))
 
 start_form();
 
-start_table(TABLESTYLE_NOBORDER);
-	start_row();
-		employee_list_cells(_("Employee"), "employee",null,_("All Employees"));
+	start_table(TABLESTYLE_NOBORDER);
+		start_row();
+			employee_list_cells(_("Employee"), "employee",null,_("All Employees"));
 
-		date_cells(_("From:"), 'FromDate', '', null, 0, -1, 0);
-		date_cells(_("To:"), 'ToDate');
+			date_cells(_("From:"), 'FromDate', '', null, 0, -1, 0);
+			date_cells(_("To:"), 'ToDate');
 
-		submit_cells('Search', _("Search"), '', '', 'default');
-	end_row();
-end_table();
+			submit_cells('Search', _("Search"), '', '', 'default');
+		end_row();
+	end_table();
 
 
-$sql = get_sql_for_payslips(get_post('employee', -1), get_post('FromDate'),
-	get_post('ToDate'));
-
-//echo $sql;exit;
-
-$cols = array(
-	_("Pay Generated") => array('type'=>'date'), 
-	_("Employee Name") ,
-	_("Job Position") , 
-	_("Department") , 
-	_("To The Order Of"), 
-	_("Amount Payable") => array('type'=>'amount'),
-	_("Narration"),
-	submit('BatchPaymentAdvice',_("Batch"), false, _("Batch Payment Advice")) 
-			=> array('insert'=>true, 'fun'=>'batch_checkbox', 'align'=>'center'),
-	array('insert'=>true, 'fun'=>'pmt_advice_link')
-);
-
-$table =& new_db_pager('pmt_advs_tbl', $sql, $cols);
-
-$table->width = "80%";
-
-display_db_pager($table);
-
+	start_table(TABLESTYLE, "width='80%'", 10);
+			echo "<tr><td>";
+			display_advice_batch_header();
+			echo "</td></tr>";
+			echo "<tr><td>";
+			display_employee_batch_advice();
+			echo "</td></tr>";
+	end_table(1);
 
 end_form();
 end_page();

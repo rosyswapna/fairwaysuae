@@ -334,7 +334,7 @@ if (isset($_POST['go']))
 
 start_form();
 
-display_order_header($_SESSION['journal_items']);
+display_payslip_header($_SESSION['journal_items']);
 
 start_table(TABLESTYLE2, "width='90%'", 10);
 start_row();

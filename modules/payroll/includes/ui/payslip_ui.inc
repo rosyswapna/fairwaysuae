@@ -14,7 +14,7 @@ include_once($path_to_root . "/includes/ui/items_cart.inc");
 
 //--------------------------------------------------------------------------------
 
-function display_order_header(&$Order)
+function display_payslip_header(&$Order)
 {
 	global $Ajax;
 
@@ -75,44 +75,8 @@ function display_order_header(&$Order)
 	}
 
 	
-
- 	/*if ($new) {
-		table_section(3, "20%");
- 		start_row();
- 		check_cells(_("Reverse Transaction:"), 'Reverse', null);
- 		end_row();
- 	}
-
-	if ($qes !== false)
-	{
-		table_section(3, "40%");
-		start_row();
-		quick_entries_list_cells(_("Quick Entry").":", 'person_id', null, QE_JOURNAL, true);
-		$qid = get_quick_entry(get_post('person_id'));
-		if (list_updated('person_id')) {
-			unset($_POST['totamount']); // enable default
-		$Ajax->activate('totamount');
-		}
-		if ($qid['bal_type'] == 1)
-		{
-			end_row();
-			start_row();
-			$accname = get_gl_account_name($qid['base_desc']);
-			label_cell(($qid['base_amount'] == 0 ? _("Yearly") : _("Monthly")) . " ". _("balance from account")." ".
-				$qid['base_desc']." ".$accname."&nbsp;&nbsp;".submit('go', _("Go"), false, false, true), "colspan=2");
-		}
-		else
-			amount_cells($qid['base_desc'].":", 'totamount', price_format($qid['base_amount']),
-		 		null, "&nbsp;&nbsp;".submit('go', _("Go"), false, false, true));
-		end_row();
-
-	}*/
 		
 	end_outer_table(1);
-}
-
-function display_advice_header1(&$Order){
-
 }
 
 
@@ -226,6 +190,11 @@ function display_advice_header(&$Order)
 	
 	end_outer_table(1);
 }
+
+
+
+
+
 
 //---------------------------------------------------------------------------------
 
