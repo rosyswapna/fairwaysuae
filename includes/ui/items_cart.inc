@@ -18,7 +18,7 @@ class items_cart
 	var $line_items;
 	var $gl_items;
 
-	var	$order_id;
+	var $order_id;
 
 	var $from_loc;
 	var $to_loc;
@@ -35,6 +35,7 @@ class items_cart
 
 	var $to_the_order_of;
 	var $payslip_no;
+	var $payslip_trans_no;
 	
 	function items_cart($type)
 	{

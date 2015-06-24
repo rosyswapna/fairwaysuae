@@ -19,11 +19,11 @@ add_access_extensions();
 include_once($path_to_root . "/includes/date_functions.inc");
 include_once($path_to_root . "/includes/data_checks.inc");
 
-include_once($path_to_root . "/modules/payroll/includes/ui/payslip_ui.inc");
-include_once($path_to_root . "/modules/payroll/includes/ui/employee_ui.inc");
+
+include_once($path_to_root . "/modules/payroll/includes/payroll_ui.inc");
 include_once($path_to_root . "/modules/payroll/includes/payroll_db.inc");
 include_once($path_to_root . "/gl/includes/gl_db.inc");
-include_once($path_to_root . "/gl/includes/gl_ui.inc");
+
 
 
 
@@ -34,8 +34,10 @@ if ($use_date_picker)
 	$js .= get_js_date_picker();
 
 if(isset($_GET['PaymentAdvice'])) {
+	
 	$_SESSION['page_title'] = _($help_context = "Make Payment Advice for Payslip #".$_GET['PaymentAdvice']);	
 }else{
+	$_POST['NewPaymentAdvice'] = 'Yes';
 	$_SESSION['page_title'] = _($help_context = "Make Payment Advice");
 }
 
@@ -96,17 +98,19 @@ if (isset($_GET['PaymentAdvice']))
 		$_POST['PaySlipNo'] = $payslip['payslip_no'];
 		$_POST['memo_'] = "Payment advice gl entry For Payslip".$payslip['payslip_no'];
 	}
+	$_POST['PaySlipNo'] = $_GET['PaymentAdvice'];
 
 	create_cart(0,0,$payslip);
+
 }elseif (isset($_GET['NewPaymentAdvice'])){
+
+		$_POST['PaySlipNo'] = 0;
 		create_cart(0,0);
-	
 }
 
 
 function create_cart($type = 0, $trans_no =0,$payslip=array())
 {
-	
 	//echo "<pre>";print_r($payslip);echo "</pre>";exit;
 	global $Refs;
 
@@ -114,6 +118,9 @@ function create_cart($type = 0, $trans_no =0,$payslip=array())
 	{
 		unset ($_SESSION['journal_items']);
 	}
+
+
+	$cart->payslip_no = $_POST['PaySlipNo'];
 
 	$cart = new items_cart($type);
 	$cart->clear_items();
@@ -134,6 +141,8 @@ function create_cart($type = 0, $trans_no =0,$payslip=array())
 	$_POST['date_'] = $cart->tran_date;
 
 	if($payslip){
+
+		$cart->payslip_trans_no = $payslip['type_no'];
 		$cart->person_id = $payslip['person_id'];
 		$cart->to_the_order_of = $payslip['to_the_order_of'];
 		$cart->payslip_no = $payslip['payslip_no'];
@@ -142,6 +151,8 @@ function create_cart($type = 0, $trans_no =0,$payslip=array())
 		$cash_amt = -($ac_pmt_amt);
 
 		$bank = get_default_bank_account();
+
+		$_POST['bank_account'] = $bank['id'];
 	
 		$cart->add_gl_item(AC_PAYABLE, 0, 0, $ac_pmt_amt, '');
 		$cart->add_gl_item($bank['account_code'], 0, 0, $cash_amt, '');
@@ -347,6 +358,8 @@ if (isset($_POST['go']))
 //-----------------------------------------------------------------------------------------------
 
 start_form();
+if(isset($_GET['NewPaymentAdvice']))
+	hidden('NewPaymentAdvice');
 
 display_advice_header($_SESSION['journal_items']);
 

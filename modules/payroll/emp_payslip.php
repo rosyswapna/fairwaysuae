@@ -19,11 +19,10 @@ add_access_extensions();
 include_once($path_to_root . "/includes/date_functions.inc");
 include_once($path_to_root . "/includes/data_checks.inc");
 
-include_once($path_to_root . "/modules/payroll/includes/ui/payslip_ui.inc");
-include_once($path_to_root . "/modules/payroll/includes/ui/employee_ui.inc");
+include_once($path_to_root . "/modules/payroll/includes/payroll_ui.inc");
 include_once($path_to_root . "/modules/payroll/includes/payroll_db.inc");
 include_once($path_to_root . "/gl/includes/gl_db.inc");
-include_once($path_to_root . "/gl/includes/gl_ui.inc");
+
 
 $js = '';
 if ($use_popup_windows)
@@ -335,7 +334,7 @@ if (isset($_POST['go']))
 
 start_form();
 
-display_order_header($_SESSION['journal_items']);
+display_payslip_header($_SESSION['journal_items']);
 
 start_table(TABLESTYLE2, "width='90%'", 10);
 start_row();
