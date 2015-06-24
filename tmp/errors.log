@@ -11671,3 +11671,339 @@
 	
 	LEFT JOIN 0_deaprtments as dpt ON
 	dpt.dept_id=emp.department_id<br><br><br>
+[24-Jun-2015 09:08:11 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[24-Jun-2015 09:08:11 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[24-Jun-2015 09:08:11 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[24-Jun-2015 09:08:11 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[24-Jun-2015 09:08:38 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\replist.php:38:<br>could not get employees<br>error code : 1052<br>error message : Column 'emp_id' in where clause is ambiguous<br>sql that failed was : SELECT * FROM 0_employees as emp
+	
+	LEFT JOIN 0_passport as pt ON
+	pt.emp_id=emp.emp_id
+	
+	/*LEFT JOIN 0_jobnames as jb ON
+	jb.job_name_id=emp.job_position_id
+	
+	LEFT JOIN 0_departments as dpt ON
+	dpt.dept_id=emp.department_id*/ WHERE emp_id='5'<br><br><br>
+[24-Jun-2015 09:08:42 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\replist.php:38:<br>could not get employees<br>error code : 1052<br>error message : Column 'emp_id' in where clause is ambiguous<br>sql that failed was : SELECT * FROM 0_employees as emp
+	
+	LEFT JOIN 0_passport as pt ON
+	pt.emp_id=emp.emp_id
+	
+	/*LEFT JOIN 0_jobnames as jb ON
+	jb.job_name_id=emp.job_position_id
+	
+	LEFT JOIN 0_departments as dpt ON
+	dpt.dept_id=emp.department_id*/ WHERE emp_id='5'<br><br><br>
+[24-Jun-2015 09:08:43 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\replist.php:38:<br>could not get employees<br>error code : 1052<br>error message : Column 'emp_id' in where clause is ambiguous<br>sql that failed was : SELECT * FROM 0_employees as emp
+	
+	LEFT JOIN 0_passport as pt ON
+	pt.emp_id=emp.emp_id
+	
+	/*LEFT JOIN 0_jobnames as jb ON
+	jb.job_name_id=emp.job_position_id
+	
+	LEFT JOIN 0_departments as dpt ON
+	dpt.dept_id=emp.department_id*/ WHERE emp_id='5'<br><br><br>
+[24-Jun-2015 09:08:44 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\replist.php:38:<br>could not get employees<br>error code : 1052<br>error message : Column 'emp_id' in where clause is ambiguous<br>sql that failed was : SELECT * FROM 0_employees as emp
+	
+	LEFT JOIN 0_passport as pt ON
+	pt.emp_id=emp.emp_id
+	
+	/*LEFT JOIN 0_jobnames as jb ON
+	jb.job_name_id=emp.job_position_id
+	
+	LEFT JOIN 0_departments as dpt ON
+	dpt.dept_id=emp.department_id*/ WHERE emp_id='5'<br><br><br>
+[24-Jun-2015 09:20:22 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\replist.php:38:<br>could not get employees<br>error code : 1052<br>error message : Column 'emp_id' in where clause is ambiguous<br>sql that failed was : SELECT * FROM 0_employees as emp
+	
+	LEFT JOIN 0_passport as pt ON
+	pt.emp_id=emp.emp_id
+	
+	LEFT JOIN 0_jobnames as jb ON
+	jb.job_name_id=emp.job_position_id
+	
+	LEFT JOIN 0_departments as dpt ON
+	dpt.dept_id=emp.department_id WHERE emp_id='5'<br><br><br>
+[24-Jun-2015 09:24:24 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\replist.php:38:<br>could not get employees<br>error code : 1052<br>error message : Column 'emp_id' in where clause is ambiguous<br>sql that failed was : SELECT * FROM 0_employees as emp
+	
+	LEFT JOIN 0_passport as pt ON
+	pt.emp_id=emp.emp_id
+	
+	/*LEFT JOIN 0_jobnames as jb ON
+	jb.job_name_id=emp.job_position_id
+	
+	LEFT JOIN 0_departments as dpt ON
+	dpt.dept_id=emp.department_id*/ WHERE emp_id='5'<br><br><br>
+[24-Jun-2015 09:27:47 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\replist.php:38:<br>could not get employees<br>error code : 1052<br>error message : Column 'emp_id' in where clause is ambiguous<br>sql that failed was : SELECT * FROM 0_employees as emp
+	
+	LEFT JOIN 0_passport as pt ON
+	pt.emp_id=emp.emp_id
+	
+	/*LEFT JOIN 0_jobnames as jb ON
+	jb.job_name_id=emp.job_position_id
+	
+	LEFT JOIN 0_departments as dpt ON
+	dpt.dept_id=emp.department_id*/ WHERE emp_id='5'<br><br><br>
+[24-Jun-2015 09:28:00 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\replist.php:38:<br>could not get employees<br>error code : 1052<br>error message : Column 'emp_id' in where clause is ambiguous<br>sql that failed was : SELECT * FROM 0_employees as emp
+	
+	LEFT JOIN 0_passport as pt ON
+	pt.emp_id=emp.emp_id
+	
+	/*LEFT JOIN 0_jobnames as jb ON
+	jb.job_name_id=emp.job_position_id
+	
+	LEFT JOIN 0_departments as dpt ON
+	dpt.dept_id=emp.department_id*/ WHERE emp_id='7'<br><br><br>
+[24-Jun-2015 09:29:28 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\replist.php:38:<br>could not get employees<br>error code : 1052<br>error message : Column 'emp_id' in where clause is ambiguous<br>sql that failed was : SELECT * FROM 0_employees as emp
+	
+	LEFT JOIN 0_passport as pt ON
+	pt.emp_id=emp.emp_id
+	
+	/*LEFT JOIN 0_jobnames as jb ON
+	jb.job_name_id=emp.job_position_id
+	
+	LEFT JOIN 0_departments as dpt ON
+	dpt.dept_id=emp.department_id*/ WHERE emp_id='5'<br><br><br>
+[24-Jun-2015 09:30:01 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\replist.php:38:<br>could not get employees<br>error code : 1052<br>error message : Column 'emp_id' in where clause is ambiguous<br>sql that failed was : SELECT * FROM 0_employees as emp
+	
+	LEFT JOIN 0_passport as pt ON
+	pt.emp_id=emp.emp_id
+	
+	/*LEFT JOIN 0_jobnames as jb ON
+	jb.job_name_id=emp.job_position_id
+	
+	LEFT JOIN 0_departments as dpt ON
+	dpt.dept_id=emp.department_id*/ WHERE emp_id='6'<br><br><br>
+[24-Jun-2015 09:30:02 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\replist.php:38:<br>could not get employees<br>error code : 1052<br>error message : Column 'emp_id' in where clause is ambiguous<br>sql that failed was : SELECT * FROM 0_employees as emp
+	
+	LEFT JOIN 0_passport as pt ON
+	pt.emp_id=emp.emp_id
+	
+	/*LEFT JOIN 0_jobnames as jb ON
+	jb.job_name_id=emp.job_position_id
+	
+	LEFT JOIN 0_departments as dpt ON
+	dpt.dept_id=emp.department_id*/ WHERE emp_id='6'<br><br><br>
+[24-Jun-2015 09:30:43 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\replist.php:38:<br>could not get employees<br>error code : 1052<br>error message : Column 'emp_id' in where clause is ambiguous<br>sql that failed was : SELECT * FROM 0_employees as emp
+	
+	LEFT JOIN 0_passport as pt ON
+	pt.emp_id=emp.emp_id
+	
+	/*LEFT JOIN 0_jobnames as jb ON
+	jb.job_name_id=emp.job_position_id
+	
+	LEFT JOIN 0_departments as dpt ON
+	dpt.dept_id=emp.department_id*/ WHERE emp_id='6'<br><br><br>
+[24-Jun-2015 09:38:21 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\replist.php:38:<br>could not get employees<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM 0_employees as emp
+	
+	LEFT JOIN 0_passport as pt ON
+	pt.emp_id=emp.emp_i' at line 1<br>sql that failed was : SELECT emp* FROM 0_employees as emp
+	
+	LEFT JOIN 0_passport as pt ON
+	pt.emp_id=emp.emp_id
+	
+	/*LEFT JOIN 0_jobnames as jb ON
+	jb.job_name_id=emp.job_position_id
+	
+	LEFT JOIN 0_departments as dpt ON
+	dpt.dept_id=emp.department_id*/<br><br><br>
+[24-Jun-2015 09:38:22 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\replist.php:38:<br>could not get employees<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM 0_employees as emp
+	
+	LEFT JOIN 0_passport as pt ON
+	pt.emp_id=emp.emp_i' at line 1<br>sql that failed was : SELECT emp* FROM 0_employees as emp
+	
+	LEFT JOIN 0_passport as pt ON
+	pt.emp_id=emp.emp_id
+	
+	/*LEFT JOIN 0_jobnames as jb ON
+	jb.job_name_id=emp.job_position_id
+	
+	LEFT JOIN 0_departments as dpt ON
+	dpt.dept_id=emp.department_id*/<br><br><br>
+[24-Jun-2015 09:38:23 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\replist.php:38:<br>could not get employees<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM 0_employees as emp
+	
+	LEFT JOIN 0_passport as pt ON
+	pt.emp_id=emp.emp_i' at line 1<br>sql that failed was : SELECT emp* FROM 0_employees as emp
+	
+	LEFT JOIN 0_passport as pt ON
+	pt.emp_id=emp.emp_id
+	
+	/*LEFT JOIN 0_jobnames as jb ON
+	jb.job_name_id=emp.job_position_id
+	
+	LEFT JOIN 0_departments as dpt ON
+	dpt.dept_id=emp.department_id*/ WHERE emp_id='5'<br><br><br>
+[24-Jun-2015 09:38:51 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\replist.php:38:<br>could not get employees<br>error code : 1052<br>error message : Column 'emp_id' in where clause is ambiguous<br>sql that failed was : SELECT emp.* FROM 0_employees as emp
+	
+	LEFT JOIN 0_passport as pt ON
+	pt.emp_id=emp.emp_id
+	
+	/*LEFT JOIN 0_jobnames as jb ON
+	jb.job_name_id=emp.job_position_id
+	
+	LEFT JOIN 0_departments as dpt ON
+	dpt.dept_id=emp.department_id*/ WHERE emp_id='7'<br><br><br>
+[24-Jun-2015 09:47:55 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\replist.php:38:<br>could not get employees<br>error code : 1052<br>error message : Column 'emp_id' in where clause is ambiguous<br>sql that failed was : SELECT emp.* FROM 0_employees as emp
+	
+	LEFT JOIN 0_passport as pt ON
+	pt.emp_id=emp.emp_id
+	
+	/*LEFT JOIN 0_jobnames as jb ON
+	jb.job_name_id=emp.job_position_id
+	
+	LEFT JOIN 0_departments as dpt ON
+	dpt.dept_id=emp.department_id*/ WHERE emp_id='5'<br><br><br>
+[24-Jun-2015 09:50:09 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\replist.php:38:<br>could not get employees<br>error code : 1052<br>error message : Column 'emp_id' in where clause is ambiguous<br>sql that failed was : SELECT emp.* FROM 0_employees as emp
+	
+	LEFT JOIN 0_passport as pt ON
+	pt.emp_id=emp.emp_id
+	
+	/*LEFT JOIN 0_jobnames as jb ON
+	jb.job_name_id=emp.job_position_id
+	
+	LEFT JOIN 0_departments as dpt ON
+	dpt.dept_id=emp.department_id*/ WHERE emp_id='5'<br><br><br>
+[24-Jun-2015 09:57:41 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\replist.php:38:<br>could not get employees<br>error code : 1052<br>error message : Column 'emp_id' in where clause is ambiguous<br>sql that failed was : SELECT emp.* FROM 0_employees as emp
+	
+	LEFT JOIN 0_passport as pt ON
+	pt.emp_id=emp.emp_id
+	
+	LEFT JOIN 0_jobnames as jb ON
+	jb.job_name_id=emp.job_position_id
+	
+	LEFT JOIN 0_departments as dpt ON
+	dpt.dept_id=emp.department_id WHERE emp_id='7'<br><br><br>
+[24-Jun-2015 09:57:44 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\replist.php:38:<br>could not get employees<br>error code : 1052<br>error message : Column 'emp_id' in where clause is ambiguous<br>sql that failed was : SELECT emp.* FROM 0_employees as emp
+	
+	LEFT JOIN 0_passport as pt ON
+	pt.emp_id=emp.emp_id
+	
+	LEFT JOIN 0_jobnames as jb ON
+	jb.job_name_id=emp.job_position_id
+	
+	LEFT JOIN 0_departments as dpt ON
+	dpt.dept_id=emp.department_id WHERE emp_id='6'<br><br><br>
+[24-Jun-2015 09:58:15 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\replist.php:38:<br>could not get employees<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM 0_employees as emp
+	
+	LEFT JOIN 0_passport as pt ON
+	pt.emp_id=emp.emp_i' at line 1<br>sql that failed was : SELECT emp * FROM 0_employees as emp
+	
+	LEFT JOIN 0_passport as pt ON
+	pt.emp_id=emp.emp_id
+	
+	LEFT JOIN 0_jobnames as jb ON
+	jb.job_name_id=emp.job_position_id
+	
+	LEFT JOIN 0_departments as dpt ON
+	dpt.dept_id=emp.department_id<br><br><br>
+[24-Jun-2015 09:58:16 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\replist.php:38:<br>could not get employees<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM 0_employees as emp
+	
+	LEFT JOIN 0_passport as pt ON
+	pt.emp_id=emp.emp_i' at line 1<br>sql that failed was : SELECT emp * FROM 0_employees as emp
+	
+	LEFT JOIN 0_passport as pt ON
+	pt.emp_id=emp.emp_id
+	
+	LEFT JOIN 0_jobnames as jb ON
+	jb.job_name_id=emp.job_position_id
+	
+	LEFT JOIN 0_departments as dpt ON
+	dpt.dept_id=emp.department_id<br><br><br>
+[24-Jun-2015 09:58:20 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\replist.php:38:<br>could not get employees<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM 0_employees as emp
+	
+	LEFT JOIN 0_passport as pt ON
+	pt.emp_id=emp.emp_i' at line 1<br>sql that failed was : SELECT emp * FROM 0_employees as emp
+	
+	LEFT JOIN 0_passport as pt ON
+	pt.emp_id=emp.emp_id
+	
+	LEFT JOIN 0_jobnames as jb ON
+	jb.job_name_id=emp.job_position_id
+	
+	LEFT JOIN 0_departments as dpt ON
+	dpt.dept_id=emp.department_id WHERE department_id='2'<br><br><br>
+[24-Jun-2015 10:02:26 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\replist.php:38:<br>could not get employees<br>error code : 1052<br>error message : Column 'emp_id' in where clause is ambiguous<br>sql that failed was : SELECT emp.* FROM 0_employees as emp
+	
+	LEFT JOIN 0_passport as pt ON
+	pt.emp_id=emp.emp_id
+	
+	/*LEFT JOIN 0_jobnames as jb ON
+	jb.job_name_id=emp.job_position_id
+	
+	LEFT JOIN 0_departments as dpt ON
+	dpt.dept_id=emp.department_id*/ WHERE emp_id='5'<br><br><br>
+[24-Jun-2015 10:05:57 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\replist.php:38:<br>could not get employees<br>error code : 1052<br>error message : Column 'emp_id' in where clause is ambiguous<br>sql that failed was : SELECT emp.* FROM 0_employees as emp
+	
+	LEFT JOIN 0_passport as pt ON
+	pt.emp_id=emp.emp_id
+	
+	/*LEFT JOIN 0_jobnames as jb ON
+	jb.job_name_id=emp.job_position_id
+	
+	LEFT JOIN 0_departments as dpt ON
+	dpt.dept_id=emp.department_id*/ WHERE emp_id='5'<br><br><br>
+[24-Jun-2015 10:07:51 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\replist.php:38:<br>could not get employees<br>error code : 1052<br>error message : Column 'emp_id' in where clause is ambiguous<br>sql that failed was : SELECT * FROM 0_employees as emp
+	
+	LEFT JOIN 0_passport as pt ON
+	pt.emp_id=emp.emp_id WHERE emp_id='5'<br><br><br>
+[24-Jun-2015 10:09:35 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\replist.php:38:<br>could not get employees<br>error code : 1052<br>error message : Column 'emp_id' in where clause is ambiguous<br>sql that failed was : SELECT * FROM 0_employees as emp
+	
+	LEFT JOIN 0_passport as pt ON
+	pt.emp_id=emp.emp_id WHERE emp_id='5'<br><br><br>
+[24-Jun-2015 10:09:40 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\replist.php:38:<br>could not get employees<br>error code : 1052<br>error message : Column 'emp_id' in where clause is ambiguous<br>sql that failed was : SELECT * FROM 0_employees as emp
+	
+	LEFT JOIN 0_passport as pt ON
+	pt.emp_id=emp.emp_id WHERE emp_id='6'<br><br><br>
+[24-Jun-2015 10:09:41 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\replist.php:38:<br>could not get employees<br>error code : 1052<br>error message : Column 'emp_id' in where clause is ambiguous<br>sql that failed was : SELECT * FROM 0_employees as emp
+	
+	LEFT JOIN 0_passport as pt ON
+	pt.emp_id=emp.emp_id WHERE emp_id='6'<br><br><br>
+[24-Jun-2015 10:09:48 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\replist.php:38:<br>could not get employees<br>error code : 1052<br>error message : Column 'emp_id' in where clause is ambiguous<br>sql that failed was : SELECT * FROM 0_employees as emp
+	
+	LEFT JOIN 0_passport as pt ON
+	pt.emp_id=emp.emp_id WHERE emp_id='5'<br><br><br>
+[24-Jun-2015 10:10:33 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\replist.php:38:<br>could not get employees<br>error code : 1052<br>error message : Column 'emp_id' in where clause is ambiguous<br>sql that failed was : SELECT emp.* FROM 0_employees as emp
+	
+	LEFT JOIN 0_passport as pt ON
+	pt.emp_id=emp.emp_id WHERE emp_id='5'<br><br><br>
+[24-Jun-2015 10:10:35 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\replist.php:38:<br>could not get employees<br>error code : 1052<br>error message : Column 'emp_id' in where clause is ambiguous<br>sql that failed was : SELECT emp.* FROM 0_employees as emp
+	
+	LEFT JOIN 0_passport as pt ON
+	pt.emp_id=emp.emp_id WHERE emp_id='6'<br><br><br>
+[24-Jun-2015 10:56:48 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\replist.php:38:<br>could not get employees<br>error code : 1052<br>error message : Column 'emp_id' in where clause is ambiguous<br>sql that failed was : SELECT * FROM 0_employees as emp
+	
+	LEFT JOIN 0_passport as pt ON
+	pt.emp_id=emp.emp_id WHERE emp_id='5'<br><br><br>
+[24-Jun-2015 10:56:49 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\replist.php:38:<br>could not get employees<br>error code : 1052<br>error message : Column 'emp_id' in where clause is ambiguous<br>sql that failed was : SELECT * FROM 0_employees as emp
+	
+	LEFT JOIN 0_passport as pt ON
+	pt.emp_id=emp.emp_id WHERE emp_id='5'<br><br><br>
+[24-Jun-2015 10:58:17 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\replist.php:38:<br>could not get employees<br>error code : 1052<br>error message : Column 'emp_id' in where clause is ambiguous<br>sql that failed was : SELECT emp.* FROM 0_employees as emp
+	
+	LEFT JOIN 0_passport as pt ON
+	pt.emp_id=emp.emp_id WHERE emp_id='5'<br><br><br>
+[24-Jun-2015 10:58:19 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\replist.php:38:<br>could not get employees<br>error code : 1052<br>error message : Column 'emp_id' in where clause is ambiguous<br>sql that failed was : SELECT emp.* FROM 0_employees as emp
+	
+	LEFT JOIN 0_passport as pt ON
+	pt.emp_id=emp.emp_id WHERE emp_id='6'<br><br><br>
+[24-Jun-2015 10:58:56 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\replist.php:38:<br>could not get employees<br>error code : 1052<br>error message : Column 'emp_id' in where clause is ambiguous<br>sql that failed was : SELECT * FROM 0_employees as emp
+	
+	LEFT JOIN 0_passport as pt ON
+	pt.emp_id=emp.emp_id WHERE emp_id='5'<br><br><br>
+[24-Jun-2015 10:58:59 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\replist.php:38:<br>could not get employees<br>error code : 1052<br>error message : Column 'emp_id' in where clause is ambiguous<br>sql that failed was : SELECT * FROM 0_employees as emp
+	
+	LEFT JOIN 0_passport as pt ON
+	pt.emp_id=emp.emp_id WHERE emp_id='6'<br><br><br>
+[24-Jun-2015 11:10:04 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\replist.php:38:<br>could not get employees<br>error code : 1052<br>error message : Column 'emp_id' in where clause is ambiguous<br>sql that failed was : SELECT * FROM 0_employees as emp
+	
+	LEFT JOIN 0_passport as pt ON
+	pt.emp_id=emp.emp_id WHERE emp_id='7'<br><br><br>
+[24-Jun-2015 11:10:04 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\replist.php:38:<br>could not get employees<br>error code : 1052<br>error message : Column 'emp_id' in where clause is ambiguous<br>sql that failed was : SELECT * FROM 0_employees as emp
+	
+	LEFT JOIN 0_passport as pt ON
+	pt.emp_id=emp.emp_id WHERE emp_id='7'<br><br><br>
+[24-Jun-2015 11:14:10 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\reporting\replist.php:38:<br>could not get employees<br>error code : 1052<br>error message : Column 'emp_id' in where clause is ambiguous<br>sql that failed was : SELECT * FROM 0_employees as emp
+	
+	LEFT JOIN 0_passport as pt ON
+	pt.emp_id=emp.emp_id WHERE emp_id='5'<br><br><br>
