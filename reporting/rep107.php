@@ -58,7 +58,7 @@ function print_invoices()
 	$cols = array(2, 30, 120, 300, 340, 380, 420, 480);
 
 	// $headers in doctext.inc
-	$aligns = array('left', 'left', 'left',	'left', 'left', 'left', 'left', 'right');
+	$aligns = array('center', 'left', 'left',	'left', 'left', 'left', 'left', 'right');
 
 	$params = array('comments' => $comments);
 
@@ -164,7 +164,8 @@ function print_invoices()
 			$Displayduties = number_format2($sign*$myrow["ov_duties"],$dec);
 			$Displayservice = number_format2($sign*$myrow["ov_service_charge"],$dec);
 			$Displaycommission = number_format2($sign*$myrow["ov_commission"],$dec);
-    		$rep->row = $rep->bottomMargin + (18 * $rep->lineHeight);
+			$discount_total=number_format2($total_discount,$dec);
+    		$rep->row = $rep->bottomMargin + (14 * $rep->lineHeight);
 			$doctype = ST_SALESINVOICE;
 
 			$rep->TextCol(4, 7, _("Sub-total"), -2);
@@ -204,9 +205,7 @@ function print_invoices()
 			$rep->TextCol(4, 7, _("Commission"), -2);
 			$rep->TextCol(7, 8,	$Displaycommission, -2);
 			}
-			$rep->NewLine();
-			$rep->TextCol(4, 7, _("Total Discount"), -2);
-			$rep->TextCol(7, 8,	$total_discount, -2);
+			
 			
 			$rep->NewLine();
 			$tax_items = get_trans_tax_details(ST_SALESINVOICE, $i);
@@ -258,11 +257,19 @@ function print_invoices()
 			$rep->Font('bold');
 			$rep->TextCol(4, 7, _("TOTAL INVOICE"), - 2);
 			$rep->TextCol(7, 8, $DisplayTotal, -2);
-			$words = price_in_words($myrow['Total'], ST_SALESINVOICE);
+			$rep->Font();
+
+			$rep->NewLine();
+			$rep->TextCol(4, 7, _("Total Discount"), -2);
+			$rep->TextCol(7, 8,	$discount_total, -2);
+			
+			$words = price_in_words_custom($myrow['Total']);
 			if ($words != "")
 			{
 				$rep->NewLine(1);
+				$rep->Font('B');
 				$rep->TextCol(1, 7, $myrow['curr_code'] . ": " . $words, - 2);
+				$rep->Font('B');
 			}
 			$rep->Font();
 			if ($email == 1)

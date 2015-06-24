@@ -40,6 +40,7 @@
 		$c3col = $ccol + 40;
 		$ccol2 = $icol / 2;
 		$mcol = $icol + 8;
+		
 		$mcol2 = $this->pageWidth - $ccol2;
 		$cols = count($this->cols);
 		$this->SetDrawColor(205, 205, 205);
@@ -70,13 +71,13 @@
 
 		// Company Logo
 		$this->NewLine();
-		$this->fontSize += 4;
+		$this->fontSize += 7;
 			$this->Font('bold');
 			$this->Text($ccol, $this->company['coy_name'], $icol);
 			$this->Font();
-			$this->fontSize -= 4;
+			$this->fontSize -= 7;
 		$logo = company_path() . "/images/" . $this->company['coy_logo'];
-		//$this->AddImage($logo,$ccol + 120, $this->row , 0, 40);
+		//$this->AddImage($logo,$ccol + 120, $this->row , 0, 80);
 		//if ($this->company['coy_logo'] != '' && file_exists($logo))
 		//{
 			//$this->AddImage($logo, $ccol, $this->row, 0, 40);
@@ -91,18 +92,18 @@
 		//}
 		// Document title
 		$this->SetTextColor(190, 190, 190);
-		$this->fontSize += 10;
+		$this->fontSize += 7;
 		$this->Font('bold');
 		$this->TextWrap($mcol, $this->row, $this->pageWidth - $this->rightMargin - $mcol - 20, $this->title, 'right');
 		$this->Font();
-		$this->fontSize -= 10;
+		$this->fontSize -= 7;
 		$this->NewLine();
 		$this->SetTextColor(0, 0, 0);
 		$adrline = $this->row;
 
 		// Company data
 		$this->TextWrapLines($ccol, $icol, $this->company['postal_address']);
-		$this->AddImage($logo,$icol, $this->row , 0, 40);
+		
 		//$this->Font('italic');
 		if (@$this->company['phone'])
 		{
@@ -127,6 +128,7 @@
 			$this->addLink($url, $c3col, $this->row, $mcol, $this->row + $this->lineHeight);
 
 			$this->NewLine();
+			
 		}
 		if (@$this->company['gst_no'])
 		{
@@ -139,7 +141,16 @@
 			$this->Text($ccol, _("Domicile"), $c2col);
 			$this->Text($c2col, $this->company['domicile'], $mcol);
 			$this->NewLine();
+			
 		}
+		$this->AddImage($logo,$icol -30, $this->row , 0, 50);
+		
+		$this->NewLine(2);
+		$this->fontSize += 7;
+		$this->Font('B');
+		$this->Text($mcol -40  , _("INVOICE"));
+		$this->fontSize -= 7;
+		
 		$this->Font();
 		$this->row = $adrline;
 		$this->NewLine(3);
