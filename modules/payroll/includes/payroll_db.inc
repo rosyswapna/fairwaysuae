@@ -5,11 +5,6 @@
 */
 // SC: 18.04.2012: include various helpers
 
-/*
-include_once($path_to_root."/modules/payroll/includes/db/paytype_db.inc");
-include_once($path_to_root."/modules/payroll/includes/db/employee_db.inc");
-include_once($path_to_root."/modules/payroll/includes/db/taxes_db.inc");
-*/
 
 include_once($path_to_root."/modules/payroll/includes/db/department_db.inc");
 include_once($path_to_root."/modules/payroll/includes/db/employee_db.inc");
@@ -21,22 +16,101 @@ include_once($path_to_root."/modules/payroll/includes/db/salary_structure_db.inc
 include_once($path_to_root."/modules/payroll/includes/db/taxes_db.inc");
 
 
-//get all payroll accounts from chart master
-/*function get_payroll_rules()
+//write payslip and payment advice
+function write_payslip(&$cart, $reverse, $use_transaction=true)
 {
+	global $Refs;
+
+	$date_ = $cart->tran_date;
+	$ref   = $cart->reference;
+	$memo_ = $cart->memo_;
+	$trans_type = $cart->trans_type;
+	$new = $cart->order_id == 0;
 	
+	if ($new)
+	    $cart->order_id = get_next_trans_no($trans_type);
 
-	$sql = "SELECT salary.pay_rule_id as payroll_rule, chart.account_name 
-		FROM ".TB_PREF."chart_types type, ".TB_PREF."salary_structure salary
-		INNER JOIN ".TB_PREF."chart_master chart
-		ON salary.pay_rule_id = chart.account_code
-		WHERE chart.account_type=type.id and chart.account_type=".AC_TYPE_PAYROLL;
+    $trans_id = $cart->order_id;
+
+	if ($use_transaction)
+		begin_transaction();
+	
+	if(!$new)
+		void_journal_trans($trans_type, $trans_id, false);
+
+	foreach ($cart->gl_items as $journal_item)
+	{
+		// post to first found bank account using given gl acount code.
+		$is_bank_to = is_bank_account($journal_item->code_id);
+
+		add_gl_trans($trans_type, $trans_id, $date_, $journal_item->code_id,
+			$journal_item->dimension_id, $journal_item->dimension2_id,
+			$journal_item->reference, $journal_item->amount,null,
+			$cart->paytype,$cart->person_id,"",0,
+			$cart->to_the_order_of,$cart->payslip_no);
 
 
-	return db_query($sql,"oops");
-			
-}*/
+	    	if ($is_bank_to)
+	    	{
+	    		add_bank_trans($trans_type, $trans_id, $is_bank_to, $ref,
+	    			$date_, $journal_item->amount,$cart->paytype,$cart->person_id, get_company_currency(),
+	    			"Cannot insert a destination bank transaction");
+	    	}
 
+		// store tax details if the gl account is a tax account
+		add_gl_tax_details($journal_item->code_id, 
+			ST_JOURNAL, $trans_id, $journal_item->amount, 1, $date_, $memo_);
+	}
+	
+	$Refs->save($trans_type, $trans_id, $ref);
+	if ($new) {
+		add_comments($trans_type, $trans_id, $date_, $memo_);
+	} else {
+		update_comments($trans_type, $trans_id, null, $memo_);
+	}
+
+	add_audit_trail($trans_type, $trans_id, $date_);
+
+	if ($reverse)
+	{
+    	//$reversingDate = date(user_date_display(),
+    	//	Mktime(0,0,0,get_month($date_)+1,1,get_year($date_)));
+    	$reversingDate = begin_month(add_months($date_, 1));
+
+    	$trans_id_reverse = get_next_trans_no($trans_type);
+
+    	foreach ($cart->gl_items as $journal_item)
+    	{
+			$is_bank_to = is_bank_account($journal_item->code_id);
+
+    		add_gl_trans($trans_type, $trans_id_reverse, $reversingDate,
+    			$journal_item->code_id, $journal_item->dimension_id, $journal_item->dimension2_id,
+    			$journal_item->reference, -$journal_item->amount);
+    		if ($is_bank_to)
+    		{
+    			add_bank_trans($trans_type, $trans_id_reverse, $is_bank_to, $ref,
+    				$reversingDate, -$journal_item->amount,
+    				0, "", get_company_currency(),
+    				"Cannot insert a destination bank transaction");
+    		}
+			// store tax details if the gl account is a tax account
+			add_gl_tax_details($journal_item->code_id, 
+				ST_JOURNAL, $trans_id, $journal_item->amount, 1, $reversingDate, $memo_);
+    	}
+
+    	add_comments($trans_type, $trans_id_reverse, $reversingDate, $memo_);
+
+    	$Refs->save($trans_type, $trans_id_reverse, $ref);
+		add_audit_trail($trans_type, $trans_id_reverse, $reversingDate);
+	}
+
+	if ($use_transaction)
+		commit_transaction();
+
+	return $trans_id;
+}
+
+//get all payroll accounts from chart master
 function get_payroll_rules()
 {
 	

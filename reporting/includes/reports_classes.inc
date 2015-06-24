@@ -510,31 +510,7 @@ class BoxReports
 					$sql = "SELECT pos.id,pos.pos_name as name FROM  "
 						.TB_PREF."sales_pos as pos";
 						return combo_input($name, '', $sql, 'id', 'name',array('order'=>false));
-						
-				/*case 'EMPLOYEES_NO_FILTER':
-				case 'EMPLOYEES':
-					$sql = "SELECT emp_id, CONCAT_WS(' ', emp_first_name, emp_last_name) as emp_name, inactive FROM ".TB_PREF."employees ";	
-					if ($type == 'EMPLOYEES_NO_FILTER')
-						return employee_list($name, null, _("No Employee Filter"));
-					else
-						return employee_list($name,'',$sql,'emp_id','emp_name');
 					
-					
-				case 'DEPARTMENTS_NO_FILTER':
-				case 'DEPARTMENTS':
-						if ($type == 'DEPARTMENTS_NO_FILTER')
-						return department_list($name, null, _("No Department Filter"));
-					else
-						return department_list($name);
-					
-				case 'JOBPOSITIONS_NO_FILTER':
-				case 'JOBPOSITIONS':
-					if ($type == 'JOBPOSITIONS_NO_FILTER')
-						return job_list($name, null, _("No Job position Filter"));
-					else
-						return job_list($name);
-					//return job_list($name);
-*/
 
 			}
 		return '';
