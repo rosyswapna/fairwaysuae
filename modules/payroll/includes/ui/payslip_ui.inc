@@ -22,14 +22,14 @@ function display_payslip_header(&$Order)
 	$new = $Order->order_id==0;
 
 	hidden('ref_original');
-	start_outer_table(TABLESTYLE2, "width='90%'");
+	start_outer_table(TABLESTYLE2, "width='50%'");
 
 	table_section(1);
 
    		date_row(_("Date:"), 'date_', '', $new);
 		ref_row(_("Reference:"), 'ref', '');
 
-	table_section(2, "35%");
+	table_section(2, "55%");
 		
 		hidden('PayType', PT_EMPLOYEE);
 		employee_list_row(_("Pay To: "), 'person_id',null, _("Select Employee"), true, false, true);
@@ -42,11 +42,6 @@ function display_payslip_header(&$Order)
 		hidden('PaySlipNo',$_POST['PaySlipNo']);
 		label_row(_("Payslip No:"),$_POST['PaySlipNo']);
 
-	table_section(3, "35%");
-
-		bank_accounts_list_row(_("From:"), 'bank_account', null, true);
-		bank_balance_row(price_format(0));
-
 
 	if (list_updated('person_id')) {
 		//get employee salary structure----------------====================
@@ -57,7 +52,7 @@ function display_payslip_header(&$Order)
 
 			$totalCredit = $totalDebit = 0;
 			while($myrow = db_fetch($salary_rules)){
-				//echo "<pre>";print_r($myrow);echo "</pre>";exit;
+				
 				$Order->add_gl_item($myrow['pay_rule_id'], 0,0, ($myrow['type'] == CREDIT) ? -$myrow['pay_amount']:$myrow['pay_amount'], '');
 
 				if($myrow['type'] == CREDIT){
@@ -104,17 +99,21 @@ function display_advice_header(&$Order)
 
 		$employee = get_employee($Order->person_id);
 
+		$_POST['to_the_order_of'] = $Order->to_the_order_of;
+
 		if(isset($_GET['PaymentAdvice']) || isset($_POST['PaymentAdvice'])){
 			label_row(_("Pay To: "),$employee['emp_first_name']." ".$employee['emp_last_name']);
 			hidden('person_id',$Order->person_id);
 			label_row(_("To the Order of:"),$Order->to_the_order_of);
+
+			hidden('to_the_order_of');
 
 			if(!isset($_POST['PaymentAdvice']))
 				$_POST['PaymentAdvice'] =$_GET['PaymentAdvice'];
 			hidden('PaymentAdvice');
 		}else{
 			employee_list_row(_("Pay To: "), 'person_id',null, _("Select Employee"), true, false, true);
-			text_row(_("To the Order of:"),'to_the_order_of',$_POST['to_the_order_of']);
+			text_row(_("To the Order of:"),'to_the_order_of');
 		}
 		
 	table_section(3, "35%");	
@@ -124,7 +123,7 @@ function display_advice_header(&$Order)
 		
 
 		bank_accounts_list_row(_("From:"), 'bank_account', null, true);
-		bank_balance_row(price_format(0));
+		bank_balance_row(get_post('bank_account'));
 	
 		if(isset($_GET['PaymentAdvice']) || isset($_POST['PaymentAdvice'])){
 			

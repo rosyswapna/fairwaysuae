@@ -87,7 +87,7 @@ function display_advice_batch_header()
 		start_row();
 		date_cells(_("Date:"),'date_');
 		bank_accounts_list_cells(_("From:"), 'bank_account', null, true);
-		bank_balance_cells(price_format(0));
+		bank_balance_cells(get_post('bank_account'));
 		end_row();
 	end_table();
 }
