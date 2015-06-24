@@ -1,8 +1,9 @@
 <?php
 
 
-global $reports, $dim;
+include_once($path_to_root . "/modules/payroll/includes/payroll_ui.inc");
 
+global $reports, $dim;
 
 
 define('RC_HR', 9);
@@ -49,8 +50,8 @@ $reports->register_controls('set_payroll_ctrl');
 function set_payroll_ctrl($name,$type){
 
 	global $path_to_root;
-	//include_once($path_to_root . "/modules/payroll/includes/payroll_ui.inc");
-display_notification($path_to_root);exit;
+	
+
 	switch ($type)
 	{
 		case 'EMPLOYEES_NO_FILTER':
