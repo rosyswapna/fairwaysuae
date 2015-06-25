@@ -202,7 +202,7 @@ function print_invoices()
 				$totals[_("Commission")]=$Displaycommission;
 			
 			}
-			
+			$totals[_("Total Discount")]=$discount_total;
 			
 			
 			
@@ -215,9 +215,7 @@ function print_invoices()
 				$rep->TextCol(4, 7,$label, -2);
 				$rep->TextCol(7, 8,	$val, -2);
 			}
-			$rep->NewLine();
-			$rep->TextCol(4, 7, _("Total Discount"), -2);
-			$rep->TextCol(7, 8,	$discount_total, -2);
+			
 			
 			
 			
