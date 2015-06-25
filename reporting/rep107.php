@@ -89,12 +89,15 @@ function print_invoices()
 				//$rep->title = _('INVOICE');
 				$rep->filename = "Invoice" . $myrow['reference'] . ".pdf";
 			}
+			
+			
+			$payment_terms = get_payment_terms($myrow['payment_terms']);
 
-			if($myrow['payment_terms']==PM_CASH)
-				
-				$rep->title = _('CASH-SALES');
-			else
-				$rep->title = _('CREDIT-SALES');
+            if ($payment_terms['cash_sale'])
+                $rep->title = _('CASH-SALES');
+            else
+                $rep->title = _('CREDIT-SALES');
+
 			
 			$rep->SetHeaderType('HeaderINV');
 			$rep->currency = $cur;
