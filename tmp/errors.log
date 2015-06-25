@@ -12009,3 +12009,4 @@
 	pt.emp_id=emp.emp_id WHERE emp_id='5'<br><br><br>
 [24-Jun-2015 12:44:46 Europe/Paris] 0:admin:current_user.inc:307: number_format() expects parameter 2 to be long, string given
 [24-Jun-2015 12:44:46 Europe/Paris] 0:admin:current_user.inc:307: number_format() expects parameter 2 to be long, string given
+[24-Jun-2015 13:13:55 Europe/Paris] 0:admin:sales_order_entry.php:674: Division by zero

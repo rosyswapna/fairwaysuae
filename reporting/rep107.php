@@ -91,6 +91,7 @@ function print_invoices()
 			}
 
 			if($myrow['payment_terms']==PM_CASH)
+				
 				$rep->title = _('CASH-SALES');
 			else
 				$rep->title = _('CREDIT-SALES');
@@ -165,46 +166,57 @@ function print_invoices()
 			$Displayservice = number_format2($sign*$myrow["ov_service_charge"],$dec);
 			$Displaycommission = number_format2($sign*$myrow["ov_commission"],$dec);
 			$discount_total=number_format2($total_discount,$dec);
-    		$rep->row = $rep->bottomMargin + (14 * $rep->lineHeight);
+    		
 			$doctype = ST_SALESINVOICE;
-
-			$rep->TextCol(4, 7, _("Sub-total"), -2);
-			$rep->TextCol(7, 8,	$DisplaySubTot, -2);
-			$rep->NewLine();
+			$totals=array(_("Sub-total")=>$DisplaySubTot);
+			
 			if($DisplayFreight>0){
-			$rep->TextCol(4, 7, _("Shipping"), -2);
-			$rep->TextCol(7, 8,	$DisplayFreight, -2);
+				$totals[ _("Shipping")]=$DisplayFreight;
+				
 			}
+			
 			if($DisplayFreight1>0){
-			$rep->NewLine();
-			$rep->TextCol(4, 7, _("Freight"), -2);
-			$rep->TextCol(7, 8,	$DisplayFreight1, -2);
+				$totals[_("Freight")]=$DisplayFreight1;
+			
 			}
 			if($Displayinsurance>0){
-			$rep->NewLine();
-			$rep->TextCol(4, 7, _("Insurance"), -2);
-			$rep->TextCol(7, 8,	$Displayinsurance, -2);
+				$totals[_("Insurance")]=$Displayinsurance;
+			
 			}
 			if($Displaypacking>0){
-			$rep->NewLine();
-			$rep->TextCol(4, 7, _("Packing "), -2);
-			$rep->TextCol(7, 8,	$Displaypacking, -2);
+				$totals[_("Packing ")]=$Displaypacking;
+			
 			}
 			if($Displayduties>0){
-			$rep->NewLine();
-			$rep->TextCol(4, 7, _("Duties"), -2);
-			$rep->TextCol(7, 8,	$Displayduties, -2);
+				$totals[_("Duties")]=$Displayduties;
+			
 			}
 			if($Displayservice>0){
-			$rep->NewLine();
-			$rep->TextCol(4, 7, _("Service"), -2);
-			$rep->TextCol(7, 8,	$Displayservice, -2);
+				$totals[_("Service")]=$Displayservice;
+			
 			}
 			if($Displaycommission>0){
-			$rep->NewLine();
-			$rep->TextCol(4, 7, _("Commission"), -2);
-			$rep->TextCol(7, 8,	$Displaycommission, -2);
+				$totals[_("Commission")]=$Displaycommission;
+			
 			}
+			
+			
+			
+			
+			
+			
+			$rep->row = $rep->bottomMargin + ((count($total)+20) * $rep->lineHeight);
+			foreach($totals as $label=>$val)
+			{$rep->NewLine();
+				$rep->TextCol(4, 7,$label, -2);
+				$rep->TextCol(7, 8,	$val, -2);
+			}
+			$rep->NewLine();
+			$rep->TextCol(4, 7, _("Total Discount"), -2);
+			$rep->TextCol(7, 8,	$discount_total, -2);
+			
+			
+			
 			
 			
 			$rep->NewLine();
@@ -247,7 +259,7 @@ function print_invoices()
 				$rep->NewLine();
     		}
 		
-    		$rep->NewLine();
+    		$rep->NewLine(2);
 			$billing_total=$myrow["ov_freight_charge"] + $myrow["ov_insurance"] + $myrow["ov_packing_charge"] + $myrow["ov_duties"] + $myrow["ov_service_charge"] + $myrow["ov_commission"];
 			$DisplayTotal = number_format2($sign*($myrow["ov_freight"] + $myrow["ov_gst"] +
 				$myrow["ov_amount"]+$myrow["ov_freight_tax"]+$billing_total),$dec);
@@ -259,14 +271,12 @@ function print_invoices()
 			$rep->TextCol(7, 8, $DisplayTotal, -2);
 			$rep->Font();
 
-			$rep->NewLine();
-			$rep->TextCol(4, 7, _("Total Discount"), -2);
-			$rep->TextCol(7, 8,	$discount_total, -2);
+			
 			
 			$words = price_in_words_custom($myrow['Total']);
 			if ($words != "")
 			{
-				$rep->NewLine(1);
+				
 				$rep->Font('B');
 				$rep->TextCol(1, 7, $myrow['curr_code'] . ": " . $words, - 2);
 				$rep->Font('B');
