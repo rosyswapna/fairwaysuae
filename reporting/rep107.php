@@ -205,7 +205,8 @@ function print_invoices()
 			
 			
 			
-			$rep->row = $rep->bottomMargin + ((count($total)+20) * $rep->lineHeight);
+			$calc = count($totals)+12;
+			$rep->row = $rep->bottomMargin + ($calc * $rep->lineHeight);
 			foreach($totals as $label=>$val)
 			{$rep->NewLine();
 				$rep->TextCol(4, 7,$label, -2);

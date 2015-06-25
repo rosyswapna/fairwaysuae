@@ -225,11 +225,14 @@
 				$this->fontSize += 2;
 			}
 			else
-				$this->TextWrap($ccol, $this->row, $right - $ccol, $txt, 'C');
+			$this->TextWrap($ccol, $this->row, $right - $ccol, $txt, 'C');
+			
 			$this->row -= $this->lineHeight;
 
 		}
-
+		$this->Text($ccol,_("Receiver's Signature"));
+		$this->NewLine(2);
+		$this->Text($ccol + 350,_('For, ')."".$this->company['coy_name']);
 		$this->Font();
 		$temp = $iline6 - $this->lineHeight - 2;
 ?>
