@@ -8796,6 +8796,7 @@ if (!class_exists('TCPDF')) {
 		 * @access public
 		 */
 		function write1DBarcode($code, $type, $x='', $y='', $w='', $h='', $xres=0.4, $style='', $align='') {
+			
 			if (empty($code)) {
 				return;
 			}

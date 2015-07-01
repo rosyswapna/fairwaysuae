@@ -280,7 +280,7 @@ function print_invoices()
 			{
 				
 				$rep->Font('B');
-				$rep->TextCol(1, 7, $myrow['curr_code'] . ": " . $words, - 2);
+				$rep->TextCol(1, 7, $myrow['curr_code'] . ": " . $words ." "._("Only"), - 2);
 				$rep->Font('B');
 			}
 			$rep->Font();
