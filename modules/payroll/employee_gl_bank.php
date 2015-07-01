@@ -9,25 +9,25 @@
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  
     See the License here <http://www.gnu.org/licenses/gpl-3.0.html>.
 ***********************************************************************/
+
 $path_to_root = "../..";
 include_once($path_to_root . "/includes/ui/items_cart.inc");
 include_once($path_to_root . "/includes/session.inc");
-$page_security = 'SA_EMPLOYEES_EXPENCES';
+$page_security = isset($_GET['EmployeeExpences']) || 
+	@($_SESSION['pay_items']->trans_type==ST_BANKPAYMENT)
+ ? 'SA_EMPLOYEES_EXPENCES' : 'SA_EMPLOYEES_RECIPTS_DEPOSITS' ;
+ 
 add_access_extensions();
 
 include_once($path_to_root . "/includes/date_functions.inc");
 include_once($path_to_root . "/includes/data_checks.inc");
-
-include_once($path_to_root . "/modules/payroll/includes/ui/employee_res_dep_ui.inc");
-//include_once($path_to_root . "/modules/payroll/includes/ui/employees_expenses_ui.inc");
-include_once($path_to_root . "/modules/payroll/includes/db/employee_db.inc");
-include_once($path_to_root . "/modules/payroll/includes/ui/employee_ui.inc");
+//include_once($path_to_root . "/gl/includes/ui/gl_bank_ui.inc");
 include_once($path_to_root . "/gl/includes/gl_db.inc");
 include_once($path_to_root . "/gl/includes/gl_ui.inc");
 include_once($path_to_root . "/admin/db/attachments_db.inc");
-
-include_once($path_to_root . "/modules/payroll/includes/payroll_db.inc");
-//include_once($path_to_root . "/modules/payroll/includes/payroll_ui.inc");
+include_once($path_to_root . "/modules/payroll/includes/db/employee_db.inc");
+include_once($path_to_root . "/modules/payroll/includes/ui/employee_ui.inc");
+include_once($path_to_root . "/modules/payroll/includes/ui/employee_gl_bank_ui.inc");
 
 
 $js = '';
@@ -36,11 +36,11 @@ if ($use_popup_windows)
 if ($use_date_picker)
 	$js .= get_js_date_picker();
 
-if (isset($_GET['NewPayment'])) {
-	$_SESSION['page_title'] = _($help_context = "Bank Account Payment Entry");
+if (isset($_GET['EmployeeExpences'])) {
+	$_SESSION['page_title'] = _($help_context = "Employee Bank Account Payment Entry");
 	create_cart(ST_BANKPAYMENT, 0);
-} else if(isset($_GET['NewDeposit'])) {
-	$_SESSION['page_title'] = _($help_context = "Bank Account Deposit Entry");
+} else if(isset($_GET['EmployeeDeposit'])) {
+	$_SESSION['page_title'] = _($help_context = "Employee Bank Account Deposit Entry");
 	create_cart(ST_BANKDEPOSIT, 0);
 } else if(isset($_GET['ModifyPayment'])) {
 	$_SESSION['page_title'] = _($help_context = "Modify Bank Account Entry")." #".$_GET['trans_no'];
@@ -81,9 +81,9 @@ if (isset($_GET['AddedID']))
 
 	display_note(get_gl_view_str($trans_type, $trans_no, _("&View the GL Postings for this Payment")));
 
-	hyperlink_params($_SERVER['PHP_SELF'], _("Enter Another &Payment"), "NewPayment=yes");
+	hyperlink_params($_SERVER['PHP_SELF'], _("Enter Another &Payment"), "EmployeeExpences=yes");
 
-	hyperlink_params($_SERVER['PHP_SELF'], _("Enter A &Deposit"), "NewDeposit=yes");
+	hyperlink_params($_SERVER['PHP_SELF'], _("Enter A &Deposit"), "EmployeeDeposit=yes");
 
 	hyperlink_params("$path_to_root/admin/attachments.php", _("Add an Attachment"), "filterType=$trans_type&trans_no=$trans_no");
 
@@ -99,9 +99,9 @@ if (isset($_GET['UpdatedID']))
 
 	display_note(get_gl_view_str($trans_type, $trans_no, _("&View the GL Postings for this Payment")));
 
-	hyperlink_params($_SERVER['PHP_SELF'], _("Enter Another &Payment"), "NewPayment=yes");
+	hyperlink_params($_SERVER['PHP_SELF'], _("Enter Another &Payment"), "EmployeeExpences=yes");
 
-	hyperlink_params($_SERVER['PHP_SELF'], _("Enter A &Deposit"), "NewDeposit=yes");
+	hyperlink_params($_SERVER['PHP_SELF'], _("Enter A &Deposit"), "EmployeeDeposit=yes");
 
 	display_footer_exit();
 }
@@ -115,9 +115,9 @@ if (isset($_GET['AddedDep']))
 
 	display_note(get_gl_view_str($trans_type, $trans_no, _("View the GL Postings for this Deposit")));
 
-	hyperlink_params($_SERVER['PHP_SELF'], _("Enter Another Deposit"), "NewDeposit=yes");
+	hyperlink_params($_SERVER['PHP_SELF'], _("Enter Another Deposit"), "EmployeeDeposit=yes");
 
-	hyperlink_params($_SERVER['PHP_SELF'], _("Enter A Payment"), "NewPayment=yes");
+	hyperlink_params($_SERVER['PHP_SELF'], _("Enter A Payment"), "EmployeeExpences=yes");
 
 	display_footer_exit();
 }
@@ -130,9 +130,9 @@ if (isset($_GET['UpdatedDep']))
 
 	display_note(get_gl_view_str($trans_type, $trans_no, _("&View the GL Postings for this Deposit")));
 
-	hyperlink_params($_SERVER['PHP_SELF'], _("Enter Another &Deposit"), "NewDeposit=yes");
+	hyperlink_params($_SERVER['PHP_SELF'], _("Enter Another &Deposit"), "EmployeeDeposit=yes");
 
-	hyperlink_params($_SERVER['PHP_SELF'], _("Enter A &Payment"), "NewPayment=yes");
+	hyperlink_params($_SERVER['PHP_SELF'], _("Enter A &Payment"), "EmployeeExpences=yes");
 
 	display_footer_exit();
 }
@@ -168,18 +168,17 @@ function create_cart($type, $trans_no)
 			$trans = get_supp_trans($trans_no, $type);
 			$_POST['person_id'] = $trans["supplier_id"];
 		}
+		elseif ($bank_trans["person_type_id"] == PT_EMPLOYEE){	
+			$trans =get_employee($trans_no, $type);	
+			$_POST['person_id'] = $trans["person_id"];
+		}
+		
 		elseif ($bank_trans["person_type_id"] == PT_MISC)
 			$_POST['person_id'] = $bank_trans["person_id"];
 		elseif ($bank_trans["person_type_id"] == PT_QUICKENTRY)
 			$_POST['person_id'] = $bank_trans["person_id"];
-			
-		elseif ($bank_trans["person_type_id"] == PT_EMPLOYEE){
-			$trans =get_employee($trans_no, $type);	
-			$_POST['person_id'] = $trans["person_id"];
-		}
 		else 
 			$_POST['person_id'] = $bank_trans["person_id"];
-		
 
 		$cart->memo_ = get_comments_string($type, $trans_no);
 		$cart->tran_date = sql2date($bank_trans['trans_date']);
@@ -201,7 +200,7 @@ function create_cart($type, $trans_no)
 			}
 		}
 
-		// apply exchange rate 
+		// apply exchange rate
 		foreach($cart->gl_items as $line_no => $line)
 			$cart->gl_items[$line_no]->amount *= $ex_rate;
 		

@@ -19,9 +19,9 @@ class payroll_app extends application
                 $this->add_rapp_function(0, _("Make Employee Payment Advice"),
                         $path_to_root.'/modules/payroll/payment_advice.php?NewPaymentAdvice=Yes', 'SA_PMTADVICE', MENU_TRANSACTION);
 				$this->add_rapp_function(0, _("Manage &Employee Recipts/Deposits"),
-                        $path_to_root.'/modules/payroll/employee_res_dep.php', 'SA_EMPLOYEES_RECIPTS_DEPOSITS', MENU_TRANSACTION);
+                        $path_to_root.'/modules/payroll/employee_gl_bank.php?EmployeeDeposit=yes', 'SA_EMPLOYEES_RECIPTS_DEPOSITS', MENU_TRANSACTION);
 				$this->add_rapp_function(0, _("Manage &Employee Expences"),
-                        $path_to_root.'/modules/payroll/employee_expences.php', 'SA_EMPLOYEES_EXPENCES', MENU_TRANSACTION);
+                        $path_to_root.'/modules/payroll/employee_gl_bank.php?EmployeeExpences=yes', 'SA_EMPLOYEES_EXPENCES', MENU_TRANSACTION);
                 $this->add_rapp_function(0, _("Manage Pay&check Printable"),
                         $path_to_root.'/modules/payroll/paycheck_printable.php', 'SA_PAYCHECK_PRINTABLE', MENU_TRANSACTION);
 

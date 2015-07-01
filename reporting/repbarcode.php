@@ -33,7 +33,7 @@ print_code();
 
 function print_code()
 {
-    global $path_to_root, $systypes_array, $print_invoice_no;
+    global $path_to_root;
 	
 	
 	$item_code = $_POST['PARAM_0'];

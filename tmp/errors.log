@@ -12437,3 +12437,30 @@
 [01-Jul-2015 09:54:18 Europe/Paris] 0:admin:tcpdf.php:8798: Missing argument 2 for TCPDF::write1DBarcode(), called in C:\wamp\www\fairwaysuae\reporting\repbarcode.php on line 91 and defined
 [01-Jul-2015 10:01:21 Europe/Paris] 0:admin:tcpdf.php:8943: Invalid argument supplied for foreach()
 [01-Jul-2015 11:16:31 Europe/Paris] 0:admin:employee_res_dep_ui.inc:176: Invalid argument supplied for foreach()
+[01-Jul-2015 11:42:01 Europe/Paris] 0:admin:employee_expences.php:21: include_once(../../modules/payroll/includes/ui/employee_res_dep_ui.inc): failed to open stream: No such file or directory
+[01-Jul-2015 11:42:01 Europe/Paris] 0:admin:employee_expences.php:21: include_once(): Failed opening '../../modules/payroll/includes/ui/employee_res_dep_ui.inc' for inclusion (include_path='.;C:\php\pear')
+[01-Jul-2015 11:42:01 Europe/Paris] 0:admin:employee_expences.php:21: include_once(../../modules/payroll/includes/ui/employee_res_dep_ui.inc): failed to open stream: No such file or directory
+[01-Jul-2015 11:42:01 Europe/Paris] 0:admin:employee_expences.php:21: include_once(): Failed opening '../../modules/payroll/includes/ui/employee_res_dep_ui.inc' for inclusion (include_path='.;C:\php\pear')
+[01-Jul-2015 11:59:13 Europe/Paris] 0:admin:gl_bank_ui.inc:170: Invalid argument supplied for foreach()
+[01-Jul-2015 12:02:58 Europe/Paris] 0:admin:employee_res_dep_ui.inc:176: Invalid argument supplied for foreach()
+[01-Jul-2015 12:02:59 Europe/Paris] 0:admin:employee_res_dep_ui.inc:176: Invalid argument supplied for foreach()
+[01-Jul-2015 12:07:59 Europe/Paris] 0:admin:gl_bank_ui.inc:170: Invalid argument supplied for foreach()
+[01-Jul-2015 12:08:01 Europe/Paris] 0:admin:gl_bank_ui.inc:170: Invalid argument supplied for foreach()
+[01-Jul-2015 12:08:08 Europe/Paris] 0:admin:gl_bank_ui.inc:170: Invalid argument supplied for foreach()
+[01-Jul-2015 12:08:08 Europe/Paris] 0:admin:gl_bank_ui.inc:170: Invalid argument supplied for foreach()
+[01-Jul-2015 12:09:40 Europe/Paris] 0:admin:employee_res_dep_ui.inc:176: Invalid argument supplied for foreach()
+[01-Jul-2015 12:09:40 Europe/Paris] 0:admin:employee_res_dep_ui.inc:176: Invalid argument supplied for foreach()
+[01-Jul-2015 12:10:36 Europe/Paris] 0:admin:employee_res_dep_ui.inc:176: Invalid argument supplied for foreach()
+[01-Jul-2015 12:10:36 Europe/Paris] 0:admin:employee_res_dep_ui.inc:176: Invalid argument supplied for foreach()
+[01-Jul-2015 12:11:51 Europe/Paris] 0:admin:employee_res_dep_ui.inc:176: Invalid argument supplied for foreach()
+[01-Jul-2015 12:28:49 Europe/Paris] 0::logout.php:50: session_destroy(): Session object destruction failed
+[01-Jul-2015 12:28:57 Europe/Paris] 0:admin:employee_gl_bank_ui.inc:176: Invalid argument supplied for foreach()
+[01-Jul-2015 12:28:57 Europe/Paris] 0:admin:employee_gl_bank_ui.inc:176: Invalid argument supplied for foreach()
+[01-Jul-2015 12:29:05 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 37 and defined
+[01-Jul-2015 12:29:05 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 37 and defined
+[01-Jul-2015 12:29:08 Europe/Paris] 0:admin:payment_advice.php:123: Creating default object from empty value
+[01-Jul-2015 12:29:08 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 3 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 116 and defined
+[01-Jul-2015 12:29:08 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 116 and defined
+[01-Jul-2015 12:29:08 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 116 and defined
+[01-Jul-2015 12:29:11 Europe/Paris] 0:admin:employee_gl_bank_ui.inc:176: Invalid argument supplied for foreach()
+[01-Jul-2015 12:29:12 Europe/Paris] 0:admin:employee_gl_bank_ui.inc:176: Invalid argument supplied for foreach()

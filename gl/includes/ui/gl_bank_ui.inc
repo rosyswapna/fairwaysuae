@@ -53,6 +53,10 @@ function display_bank_header(&$order)
 		 'PayType', $_POST['PayType'], true);
     switch ($_POST['PayType'])
     {
+	
+	
+		
+			
 		case PT_MISC :
     		text_row_ex($payment ?_("To the Order of:"):_("Name:"),
 				 'person_id', 40, 50);

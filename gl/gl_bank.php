@@ -163,6 +163,7 @@ function create_cart($type, $trans_no)
 			$_POST['person_id'] = $trans["supplier_id"];
 		}
 		
+		
 		elseif ($bank_trans["person_type_id"] == PT_MISC)
 			$_POST['person_id'] = $bank_trans["person_id"];
 		elseif ($bank_trans["person_type_id"] == PT_QUICKENTRY)
