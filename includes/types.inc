@@ -101,8 +101,9 @@ function payment_person_currency($type, $person_id)  {
 		case PT_MISC :
 		case PT_QUICKENTRY :
 		case PT_WORKORDER :
+		case PT_EMPLOYEE :
 			return get_company_currency();
-
+		
 		case PT_CUSTOMER :
 			return get_customer_currency($person_id);
 
@@ -131,6 +132,8 @@ function payment_person_name($type, $person_id, $full=true) {
 			return ($full ?$payment_person_types[$type] . " ":"") . get_customer_name($person_id);
 		case PT_SUPPLIER :
 			return ($full ? $payment_person_types[$type] . " ":"") . get_supplier_name($person_id);
+		case PT_EMPLOYEE :
+			return ($full ?$payment_person_types[$type] . " ":"") . get_customer_name($person_id);
 		default :
 			//DisplayDBerror("Invalid type sent to person_name");
 			//return;
@@ -151,6 +154,8 @@ function payment_person_has_items($type) {
 			return db_has_customers();
 		case PT_SUPPLIER :
 			return db_has_suppliers();
+		case PT_EMPLOYEE :
+			return db_has_customers();
 		default :
 			display_db_error("Invalid type sent to has_items", "");
 			return false;

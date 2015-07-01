@@ -18,8 +18,10 @@ class payroll_app extends application
                         $path_to_root.'/modules/payroll/inquiry/payment_advices.php', 'SA_PMTADVICE', MENU_TRANSACTION);
                 $this->add_rapp_function(0, _("Make Employee Payment Advice"),
                         $path_to_root.'/modules/payroll/payment_advice.php?NewPaymentAdvice=Yes', 'SA_PMTADVICE', MENU_TRANSACTION);
-				$this->add_rapp_function(0, _("Manage &Employee Expenses"),
-                        $path_to_root.'/modules/payroll/', 'SA_PAYROLL', MENU_TRANSACTION);
+				$this->add_rapp_function(0, _("Manage &Employee Recipts/Deposits"),
+                        $path_to_root.'/modules/payroll/employee_res_dep.php', 'SA_EMPLOYEES_RECIPTS_DEPOSITS', MENU_TRANSACTION);
+				$this->add_rapp_function(0, _("Manage &Employee Expences"),
+                        $path_to_root.'/modules/payroll/employee_expences.php', 'SA_EMPLOYEES_EXPENCES', MENU_TRANSACTION);
                 $this->add_rapp_function(0, _("Manage Pay&check Printable"),
                         $path_to_root.'/modules/payroll/paycheck_printable.php', 'SA_PAYCHECK_PRINTABLE', MENU_TRANSACTION);
 
@@ -43,7 +45,7 @@ class payroll_app extends application
                         $path_to_root.'/modules/payroll/employees.php', 'SA_PAYROLL', MENU_MAINTENANCE);
 				
 						
-						
+					
 						
                 $this->add_rapp_function(2, _("Manage &Departments"),
                         $path_to_root.'/modules/payroll/manage/department.php', 'SA_DEPARTMENT', MENU_MAINTENANCE);
@@ -101,6 +103,10 @@ class hooks_payroll extends hooks {
 		$security_areas['SA_PAYROLL_REPORTS_ADVICE'] = array(SS_PAYROLL|1, _("payroll report advice"));
 		$security_areas['SA_PAYROLL_REPORTS_LIST'] = array(SS_PAYROLL|1, _("payroll report list"));
 		$security_areas['SA_PAYROLL_REPORTS_RELEASE'] = array(SS_PAYROLL|1, _("payroll report release"));
+		
+		$security_areas['SA_EMPLOYEES_RECIPTS_DEPOSITS'] = array(SS_PAYROLL|1, _("Manage Employee recipts/deposits"));
+		$security_areas['SA_EMPLOYEES_EXPENCES'] = array(SS_PAYROLL|1, _("Manage Employee recipts/deposits"));
+
 		
 
 

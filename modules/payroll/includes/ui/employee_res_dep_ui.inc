@@ -26,7 +26,8 @@ function display_bank_header(&$order)
 	ref_row(_("Reference:"), 'ref', '');
 
 	table_section(2, "33%");
-
+	
+	
 	if (!isset($_POST['PayType']))
 	{
 		if (isset($_GET['PayType']))
@@ -49,10 +50,17 @@ function display_bank_header(&$order)
 		$Ajax->activate('editors');
 		$Ajax->activate('footer');
 	}
-    payment_person_types_list_row($payment ? _("Pay To:"):_("From:"),
+    payment_person_types_list_row( $payment ? _("Pay To:"):_("From:"),
 		 'PayType', $_POST['PayType'], true);
+		// display_notification($_POST['PayType']);
     switch ($_POST['PayType'])
+	
     {
+		
+		case PT_EMPLOYEE :
+				employee_list_row(_("Employee:"), 'person_id', null, false, true, false, true);
+			break;
+			
 		case PT_MISC :
     		text_row_ex($payment ?_("To the Order of:"):_("Name:"),
 				 'person_id', 40, 50);
@@ -100,8 +108,6 @@ function display_bank_header(&$order)
 			amount_row($qid['base_desc'].":", 'totamount', price_format($qid['base_amount']),
 				 null, "&nbsp;&nbsp;".submit('go', _("Go"), false, false, true));
 			break;	
-			
-		
 		
 		//case payment_person_types::Project() :
     	//	dimensions_list_row(_("Dimension:"), 'person_id', $_POST['person_id'], false, null, true);

@@ -19,13 +19,13 @@ function get_empl_list($emp, $department, $position)
 	$sql = "SELECT * FROM ".TB_PREF."employees as emp
 	
 	LEFT JOIN ".TB_PREF."passport as pt ON
-	pt.emp_id=emp.emp_id";
+	pt.emp_id=emp.emp_id
 	
-	/*LEFT JOIN ".TB_PREF."jobnames as jb ON
+	LEFT JOIN ".TB_PREF."jobnames as jb ON
 	jb.job_name_id=emp.job_position_id
 	
 	LEFT JOIN ".TB_PREF."departments as dpt ON
-	dpt.dept_id=emp.department_id*/
+	dpt.dept_id=emp.department_id";
 	
 	if($department){
 		$sql .= " WHERE department_id=".db_escape($department);
@@ -74,8 +74,8 @@ function print_replist_report()
 		
 			$rep->TextCol(0, 1,$myrow['emp_code']);
 			$rep->TextCol(1, 2,$myrow['emp_first_name']." ".$myrow['emp_last_name']);
-			$rep->TextCol(2, 3,$myrow['job_position_id']);
-			$rep->TextCol(3, 4,$myrow['department_id']);
+			$rep->TextCol(2, 3,$myrow['job_name']);
+			$rep->TextCol(3, 4,$myrow['dept_name']);
 			$rep->TextCol(4, 5,$myrow['passport_no']);
 		
 		

@@ -13,12 +13,14 @@ $page_security = 'SA_FORITEMCODE';
 $path_to_root = "../..";
 include_once($path_to_root . "/includes/session.inc");
 
-page(_($help_context = "Foreign Item Codes"));
+page(_($help_context = "Manage Item Barcodes"));
 
 include_once($path_to_root . "/includes/date_functions.inc");
 include_once($path_to_root . "/includes/ui.inc");
 include_once($path_to_root . "/includes/manufacturing.inc");
 include_once($path_to_root . "/includes/data_checks.inc");
+include_once($path_to_root . "/reporting/includes/reporting.inc");
+
 
 check_db_has_purchasable_items(_("There are no inventory items defined in the system."));
 
@@ -77,6 +79,10 @@ if ($Mode=='ADD_ITEM' || $Mode=='UPDATE_ITEM')
 }
 
 //--------------------------------------------------------------------------------------------------
+/*function prt_link($row){
+	return print_document_link($myrow['id'], _("Print"), true,'', ICON_PRINT);
+}*/
+//--------------------------------------------------------------------------------------------------
 
 if ($Mode == 'Delete')
 {
@@ -85,7 +91,6 @@ if ($Mode == 'Delete')
 	display_notification(_("Item code has been sucessfully deleted."));
 	$Mode = 'RESET';
 }
-
 if ($Mode == 'RESET')
 {
 	$selected_id = -1;
@@ -122,12 +127,12 @@ div_start('code_table');
 	start_table(TABLESTYLE, "width='60%'");
 
 	$th = array(_("EAN/UPC Code"), _("Quantity"), _("Units"), 
-		_("Description"),_("Category"), "", "");
-
-        table_header($th);
+		_("Description"),_("Category"), "", "", "");
+		
+	 table_header($th);
 
         $k = $j = 0; //row colour counter
-
+		
         while ($myrow = db_fetch($result))
         {
 			alt_table_row_color($k);
@@ -139,8 +144,9 @@ div_start('code_table');
             label_cell($myrow["cat_name"]);
 		 	edit_button_cell("Edit".$myrow['id'], _("Edit"));
 		 	edit_button_cell("Delete".$myrow['id'], _("Delete"));
+			$ar = array('PARAM_0' => $myrow["item_code"],'PARAM_1' =>$_POST['stock_id']); 
+			label_cell(print_link('print', 'barcode',$ar,'',ICON_PRINT));
             end_row();
-
             $j++;
             If ($j == 12)
             {
@@ -153,6 +159,7 @@ div_start('code_table');
 div_end();
 
 //-----------------------------------------------------------------------------------------------
+
 
 if ($selected_id != '') {
 	if ($Mode =='Edit')
@@ -175,8 +182,8 @@ start_table(TABLESTYLE2);
 
 hidden('code_id', $selected_id);
 
-text_row(_("UPC/EAN code:"), 'item_code', null, 20, 21);
-qty_row(_("Quantity:"), 'quantity', null, '', $units, $dec);
+text_row(_("Read UPC/EAN code:"), 'item_code',null, 20, 21);
+qty_row(_("Assign Quantity:"), 'quantity', null, '', $units, $dec);
 text_row(_("Description:"), 'description', null, 50, 200);
 stock_categories_list_row(_("Category:"), 'category_id', null);
 
@@ -184,6 +191,7 @@ end_table(1);
 
 submit_add_or_update_center($selected_id == -1, '', 'both');
 
+				
 end_form();
 end_page();
 
