@@ -70,5 +70,14 @@ $installed_extensions = array (
     'active' => 1,
     'path' => 'modules/rep_statement_reconcile',
   ),
+  11 => 
+  array (
+    'name' => 'Annual balance breakdown report',
+    'package' => 'rep_annual_balance_breakdown',
+    'version' => '2.3.3-3',
+    'type' => 'extension',
+    'active' => 1,
+    'path' => 'modules/rep_annual_balance_breakdown',
+  ),
 );
 ?>
