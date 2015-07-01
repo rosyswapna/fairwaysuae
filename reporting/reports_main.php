@@ -349,7 +349,15 @@ if ($dim == 2)
 			_('Comments') => 'TEXTBOX',
 			_('Orientation') => 'ORIENTATION',
 			_('Destination') => 'DESTINATION'));
-	$reports->addReport(RC_GL, 705, _('Annual &Expense Breakdown'),
+	/*$reports->addReport(RC_GL, 705, _('Annual &Expense Breakdown'),
+	array(	_('Year') => 'TRANS_YEARS',
+			_('Dimension')." 1" =>  'DIMENSIONS1',
+			_('Dimension')." 2" =>  'DIMENSIONS2',
+			_('Account Tags') =>  'ACCOUNTTAGS',
+			_('Comments') => 'TEXTBOX',
+			_('Orientation') => 'ORIENTATION',
+			_('Destination') => 'DESTINATION'));*/
+	$reports->addReport(RC_GL, 705, _('Income Vs Costs Comparison'),
 	array(	_('Year') => 'TRANS_YEARS',
 			_('Dimension')." 1" =>  'DIMENSIONS1',
 			_('Dimension')." 2" =>  'DIMENSIONS2',
@@ -357,6 +365,7 @@ if ($dim == 2)
 			_('Comments') => 'TEXTBOX',
 			_('Orientation') => 'ORIENTATION',
 			_('Destination') => 'DESTINATION'));
+
 	$reports->addReport(RC_GL, 706, _('&Balance Sheet'),
 	array(	_('Start Date') => 'DATEBEGIN',
 			_('End Date') => 'DATEENDM',
@@ -402,13 +411,21 @@ else if ($dim == 1)
 			_('Comments') => 'TEXTBOX',
 			_('Orientation') => 'ORIENTATION',
 			_('Destination') => 'DESTINATION'));
-	$reports->addReport(RC_GL, 705, _('Annual &Expense Breakdown'),
+	/*$reports->addReport(RC_GL, 705, _('Annual &Expense Breakdown'),
+	array(	_('Year') => 'TRANS_YEARS',
+			_('Dimension') =>  'DIMENSIONS1',
+			_('Account Tags') =>  'ACCOUNTTAGS',
+			_('Comments') => 'TEXTBOX',
+			_('Orientation') => 'ORIENTATION',
+			_('Destination') => 'DESTINATION'));*/
+	$reports->addReport(RC_GL, 705, _('Income Vs Costs Comparison'),
 	array(	_('Year') => 'TRANS_YEARS',
 			_('Dimension') =>  'DIMENSIONS1',
 			_('Account Tags') =>  'ACCOUNTTAGS',
 			_('Comments') => 'TEXTBOX',
 			_('Orientation') => 'ORIENTATION',
 			_('Destination') => 'DESTINATION'));
+
 	$reports->addReport(RC_GL, 706, _('&Balance Sheet'),
 	array(	_('Start Date') => 'DATEBEGIN',
 			_('End Date') => 'DATEENDM',
@@ -450,12 +467,19 @@ else
 			_('Comments') => 'TEXTBOX',
 			_('Orientation') => 'ORIENTATION',
 			_('Destination') => 'DESTINATION'));
-	$reports->addReport(RC_GL, 705, _('Annual &Expense Breakdown'),
+	/*$reports->addReport(RC_GL, 705, _('Annual &Expense Breakdown'),
+	array(	_('Year') => 'TRANS_YEARS',
+			_('Account Tags') =>  'ACCOUNTTAGS',
+			_('Comments') => 'TEXTBOX',
+			_('Orientation') => 'ORIENTATION',
+			_('Destination') => 'DESTINATION'));*/
+	$reports->addReport(RC_GL, 705, _('Income Vs Costs Comparison'),
 	array(	_('Year') => 'TRANS_YEARS',
 			_('Account Tags') =>  'ACCOUNTTAGS',
 			_('Comments') => 'TEXTBOX',
 			_('Orientation') => 'ORIENTATION',
 			_('Destination') => 'DESTINATION'));
+
 	$reports->addReport(RC_GL, 706, _('&Balance Sheet'),
 	array(	_('Start Date') => 'DATEBEGIN',
 			_('End Date') => 'DATEENDM',

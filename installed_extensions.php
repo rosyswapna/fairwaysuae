@@ -6,7 +6,7 @@
 	FA extension system documentation.
 */
 
-$next_extension_id = 11; // unique id for next installed extension
+$next_extension_id = 12; // unique id for next installed extension
 
 $installed_extensions = array (
   1 => 
@@ -72,6 +72,15 @@ $installed_extensions = array (
     'type' => 'extension',
     'active' => false,
     'path' => 'modules/rep_statement_reconcile',
+  ),
+ 11 => 
+  array (
+    'name' => 'Annual balance breakdown report',
+    'package' => 'rep_annual_balance_breakdown',
+    'version' => '2.3.3-3',
+    'type' => 'extension',
+    'active' => false,
+    'path' => 'modules/rep_annual_balance_breakdown',
   ),
 );
 ?>

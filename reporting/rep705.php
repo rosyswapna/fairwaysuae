@@ -275,7 +275,8 @@ function print_annual_expense_breakdown()
                     		'to' => ''));
     }
 
-	$rep = new FrontReport(_('Annual Expense Breakdown'), "AnnualBreakDown", user_pagesize(), 9, $orientation);
+	//$rep = new FrontReport(_('Annual Expense Breakdown'), "AnnualBreakDown", user_pagesize(), 9, $orientation);
+	$rep = new FrontReport(_('Income Vs Costs Comparison'), "IncomeVsCostsComparison", user_pagesize(), 9, $orientation);
     if ($orientation == 'L')
     	recalculate_cols($cols);
 
