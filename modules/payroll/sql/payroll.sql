@@ -27,7 +27,7 @@ CREATE TABLE IF NOT EXISTS `0_departments` (
   PRIMARY KEY (`dept_id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
--- --------------------------------------------------------
+----------------------------------------------------------
 
 --
 -- Table structure for table `0_employees`
@@ -244,7 +244,7 @@ CREATE TABLE IF NOT EXISTS `0_payroll_tax_rate` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
--- --------------------------------------------------------
+-----------------------------------------------------------
 
 --
 -- Table structure for table `0_payroll_tax_type`
@@ -310,4 +310,4 @@ CREATE TABLE IF NOT EXISTS `0_visa` (
 
 
 ALTER TABLE `0_gl_trans` ADD `to_the_order_of` VARCHAR(225) NULL , ADD `payslip_no` INT(11) NOT NULL DEFAULT '0' ;
-
+ALTER TABLE `0_gl_trans` ADD `from_date` DATE NOT NULL , ADD `to_date` DATE NOT NULL ;

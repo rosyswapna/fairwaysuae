@@ -203,7 +203,9 @@ if (isset($_POST['Process']))
 	$cart->reference = $_POST['ref'];
 	$cart->memo_ = $_POST['memo_'];
 	$cart->tran_date = $_POST['date_'];
-
+	$cart->from_date = $_POST['from_date'];
+	$cart->to_date = $_POST['to_date'];
+	
 	$trans_no = write_payslip($cart, check_value('Reverse'));
 
 	$cart->clear_items();

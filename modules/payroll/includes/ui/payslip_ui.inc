@@ -41,6 +41,11 @@ function display_payslip_header(&$Order)
 		}
 		hidden('PaySlipNo',$_POST['PaySlipNo']);
 		label_row(_("Payslip No:"),$_POST['PaySlipNo']);
+	
+	table_section(3, "55%");
+		date_row(_("From Date:"), 'from_date', '', $new);
+		date_row(_("To Date:"), 'to_date', '', $new);
+		
 
 
 	if (list_updated('person_id')) {

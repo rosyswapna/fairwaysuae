@@ -24,6 +24,8 @@ function write_payslip(&$cart, $reverse, $use_transaction=true)
 	$date_ = $cart->tran_date;
 	$ref   = $cart->reference;
 	$memo_ = $cart->memo_;
+	$from_date=$cart->from_date;
+	$to_date=$cart->to_date;
 	$trans_type = $cart->trans_type;
 	$new = $cart->order_id == 0;
 	
@@ -47,7 +49,7 @@ function write_payslip(&$cart, $reverse, $use_transaction=true)
 			$journal_item->dimension_id, $journal_item->dimension2_id,
 			$journal_item->reference, $journal_item->amount,null,
 			$cart->paytype,$cart->person_id,"",0,
-			$cart->to_the_order_of,$cart->payslip_no);
+			$cart->to_the_order_of,$cart->payslip_no,$cart->from_date,$cart->to_date);
 
 
 	    	if ($is_bank_to)

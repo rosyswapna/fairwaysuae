@@ -18,11 +18,13 @@
 
 function add_gl_trans($type, $trans_id, $date_, $account, $dimension, $dimension2, $memo_,
 	$amount, $currency=null, $person_type_id=null, $person_id=null,	$err_msg="", $rate=0,
-	$to_the_order_of=null,$payslip_no=0)
+	$to_the_order_of=null,$payslip_no=0,$from_date,$to_date)
 {
 	global $use_audit_trail;
 
 	$date = date2sql($date_);
+	$from_date=date2sql($from_date);
+	$to_date=date2sql($to_date);
 	if ($currency != null)
 	{
 		if ($rate == 0)
@@ -44,7 +46,7 @@ function add_gl_trans($type, $trans_id, $date_, $account, $dimension, $dimension
 			$memo_ = $_SESSION["wa_current_user"]->username . " - " . $memo_;
 	}
 	$sql = "INSERT INTO ".TB_PREF."gl_trans ( type, type_no, tran_date,
-		account, dimension_id, dimension2_id, memo_, amount, to_the_order_of, payslip_no";
+		account, dimension_id, dimension2_id, memo_, amount, to_the_order_of, payslip_no,from_date,to_date";
 
 	if ($person_type_id != null)
 		$sql .= ", person_type_id, person_id";
@@ -55,7 +57,7 @@ function add_gl_trans($type, $trans_id, $date_, $account, $dimension, $dimension
 		".db_escape($account).", ".db_escape($dimension).", "
 		.db_escape($dimension2).", ".db_escape($memo_).", "
 		.db_escape($amount_in_home_currency).","
-		.db_escape($to_the_order_of).",".db_escape($payslip_no);
+		.db_escape($to_the_order_of).",".db_escape($payslip_no).",'$from_date','$to_date'";
 
 	if ($person_type_id != null)
 		$sql .= ", ".db_escape($person_type_id).", ". db_escape($person_id);
