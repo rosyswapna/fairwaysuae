@@ -45,14 +45,14 @@ if (isset($_GET['BatchPaySlip'])) {
 	unset($_SESSION['PaySlipBatch']);
 
 	foreach($batch as $emp_id){
-		write_cart($emp_id,$post['to_the_order_of'],$post['date_'],$post['memo_']);
+		write_cart($emp_id,$post['to_the_order_of'],$post['date_'],$post['memo_'],$post['from_date'],$post['to_date']);
 	}
 
 	display_notification("Batch Payslip processed");
 }
 
 //create cart
-function write_cart($emp_id,$to_the_order_of,$date_,$narration)
+function write_cart($emp_id,$to_the_order_of,$date_,$narration,$from_date,$to_date)
 {
 	global $Refs;
 	$type = $trans_no = 0;
@@ -77,8 +77,9 @@ function write_cart($emp_id,$to_the_order_of,$date_,$narration)
 	
 	$cart->memo_	 = $narration;
 	$cart->tran_date = $date_;
-
-
+	$cart->from_date=$from_date;
+	$cart->to_date=$to_date;
+	
 	//get employee salary structure----------------====================
 	$salary_rules = get_emp_salary_structure($emp_id);
 

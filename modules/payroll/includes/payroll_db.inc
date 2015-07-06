@@ -14,6 +14,7 @@ include_once($path_to_root."/modules/payroll/includes/db/payroll_structure_db.in
 include_once($path_to_root."/modules/payroll/includes/db/paytype_db.inc");
 include_once($path_to_root."/modules/payroll/includes/db/salary_structure_db.inc");
 include_once($path_to_root."/modules/payroll/includes/db/taxes_db.inc");
+include_once($path_to_root."/modules/payroll/includes/db/payroll_db_trans.inc");
 
 
 //write payslip and payment advice
@@ -39,13 +40,14 @@ function write_payslip(&$cart, $reverse, $use_transaction=true)
 	
 	if(!$new)
 		void_journal_trans($trans_type, $trans_id, false);
+	
 
 	foreach ($cart->gl_items as $journal_item)
 	{
 		// post to first found bank account using given gl acount code.
 		$is_bank_to = is_bank_account($journal_item->code_id);
 
-		add_gl_trans($trans_type, $trans_id, $date_, $journal_item->code_id,
+		add_payroll_trans($trans_type, $trans_id, $date_, $journal_item->code_id,
 			$journal_item->dimension_id, $journal_item->dimension2_id,
 			$journal_item->reference, $journal_item->amount,null,
 			$cart->paytype,$cart->person_id,"",0,
@@ -62,7 +64,7 @@ function write_payslip(&$cart, $reverse, $use_transaction=true)
 		// store tax details if the gl account is a tax account
 		add_gl_tax_details($journal_item->code_id, 
 			ST_JOURNAL, $trans_id, $journal_item->amount, 1, $date_, $memo_);
-	}
+	}//echo "<pre>";print_r($cart);echo "</pre>";exit;
 	
 	$Refs->save($trans_type, $trans_id, $ref);
 	if ($new) {
@@ -85,7 +87,7 @@ function write_payslip(&$cart, $reverse, $use_transaction=true)
     	{
 			$is_bank_to = is_bank_account($journal_item->code_id);
 
-    		add_gl_trans($trans_type, $trans_id_reverse, $reversingDate,
+    		add_payroll_trans($trans_type, $trans_id_reverse, $reversingDate,
     			$journal_item->code_id, $journal_item->dimension_id, $journal_item->dimension2_id,
     			$journal_item->reference, -$journal_item->amount);
     		if ($is_bank_to)

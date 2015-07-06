@@ -43,6 +43,8 @@ function display_payslip_batch_header()
 		date_cells(_("Date:"),'date_');
 		text_cells(_("To the order Of:"),'to_the_order_of');
 		text_cells(_("Narration"),'memo_');
+		date_cells(_("From Date:"),'from_date');
+		date_cells(_("To Date:"),'to_date');
 		end_row();
 	end_table();
 }
