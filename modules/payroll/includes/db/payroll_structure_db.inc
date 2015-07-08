@@ -84,8 +84,9 @@ function get_payroll_structure($job_position_id)
 	}
 
 	return $row;
-
 }
+
+
 
 
 

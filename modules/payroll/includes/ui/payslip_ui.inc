@@ -22,14 +22,14 @@ function display_payslip_header(&$Order)
 	$new = $Order->order_id==0;
 
 	hidden('ref_original');
-	start_outer_table(TABLESTYLE2, "width='50%'");
+	start_outer_table(TABLESTYLE2, "width='80%'");
 
 	table_section(1);
 
    		date_row(_("Date:"), 'date_', '', $new);
 		ref_row(_("Reference:"), 'ref', '');
 
-	table_section(2, "55%");
+	table_section(2, "35%");
 		
 		hidden('PayType', PT_EMPLOYEE);
 		employee_list_row(_("Pay To: "), 'person_id',null, _("Select Employee"), true, false, true);
@@ -42,21 +42,27 @@ function display_payslip_header(&$Order)
 		hidden('PaySlipNo',$_POST['PaySlipNo']);
 		label_row(_("Payslip No:"),$_POST['PaySlipNo']);
 	
-	table_section(3, "55%");
+	table_section(3,"35%");
 		date_row(_("From Date:"), 'from_date', '', $new);
 		date_row(_("To Date:"), 'to_date', '', $new);
 		
+	table_section(4, "30%");
+		text_row(_("No of Leaves:"),'leaves');
+		text_row(_("Deductable Leaves:"),'deductableleaves');
 
 
 	if (list_updated('person_id')) {
 		//get employee salary structure----------------====================
 		$Order->clear_items();
+		$totalCredit = $totalDebit = 0;
+		$ac_payable_amount=0;
 		$salary_rules = get_emp_salary_structure(get_post('person_id'));
-
+		
+		
 		if(db_num_rows($salary_rules) > 0){
 
-			$totalCredit = $totalDebit = 0;
-			while($myrow = db_fetch($salary_rules)){
+			
+			while($myrow = db_fetch($salary_rules) ){
 				
 				$Order->add_gl_item($myrow['pay_rule_id'], 0,0, ($myrow['type'] == CREDIT) ? -$myrow['pay_amount']:$myrow['pay_amount'], '');
 
@@ -66,16 +72,35 @@ function display_payslip_header(&$Order)
 					$totalDebit += $myrow['pay_amount'];
 				}
 			}
-			$ac_payable_amount = $totalCredit - $totalDebit;
+			
+		}
+		
+		$expences = get_expences(get_post('person_id'));
+		if(db_num_rows($expences) > 0){
+		
+			while($myrow1 = db_fetch($expences)){
+				
+				$Order->add_gl_item($myrow1['account'], 0,0,$myrow1['amount'], '');
+				$amount=abs($myrow1['amount']);
+				if($myrow1['type'] == ST_BANKDEPOSIT){
+					$totalCredit +=$amount;
+				}else{
+					$totalDebit += $amount;
+				}
+				
+			}
+			
+		}
+		$ac_payable_amount = $totalCredit - $totalDebit;
+		if($ac_payable_amount!=0){
+			
 			$Order->add_gl_item(AC_PAYABLE, 0,0, $ac_payable_amount, '');
 		}
 		//------------------------------------------------==================
 		unset($_POST['totamount']); // enable default
 		$Ajax->activate('totamount');
 	}
-
 	
-		
 	end_outer_table(1);
 }
 
@@ -319,6 +344,7 @@ function gl_edit_item_controls(&$order, $dim, $Index=null)
 		if ($dim > 1) 
 			dimensions_list_cells(null, 'dimension2_id', null, true, " ", false, 2);
 	    $Ajax->activate('items_table');
+
 	}
 	else
 	{
