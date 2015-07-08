@@ -22,7 +22,7 @@ function display_payslip_header(&$Order)
 	$new = $Order->order_id==0;
 
 	hidden('ref_original');
-	start_outer_table(TABLESTYLE2, "width='80%'");
+	start_outer_table(TABLESTYLE2, "width='90%'");
 
 	table_section(1);
 
@@ -44,12 +44,13 @@ function display_payslip_header(&$Order)
 	
 	table_section(3,"35%");
 		date_row(_("From Date:"), 'from_date', '', $new);
-		date_row(_("To Date:"), 'to_date', '', $new);
+		date_row(_("TO Date:"), 'to_date', '', $new);
+		
 		
 	table_section(4, "30%");
 		text_row(_("No of Leaves:"),'leaves');
 		text_row(_("Deductable Leaves:"),'deductableleaves');
-
+		
 
 	if (list_updated('person_id')) {
 		//get employee salary structure----------------====================
