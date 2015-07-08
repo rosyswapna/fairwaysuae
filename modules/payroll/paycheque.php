@@ -52,38 +52,43 @@ function handle_submit()
 
 //-------------------------------------------------------------------------
 if(isset($_POST['submit'])) 
-		handle_submit();
+	handle_submit();
 
 	
 	
 
-$sql=get_payment_advice_details($trans_no);
+$advice = get_payment_advice_details($trans_no);
+//echo "<pre>";print_r($advice);echo "</pre>";exit;
 page($help_context, @$_REQUEST['popup'], false, "", $js);
 start_form();
-	start_outer_table(TABLESTYLE2);
+	start_outer_table(TABLESTYLE2,'width=70%');
 		table_section(1);
 		table_section_title(_("Paycheque Details"));
-			label_row(_("Employee name:"),$sql['emp_name']);
-			label_row(_("Trans Date:"),$sql['tran_date']);
-			label_row(_("Department:"),$sql['dept_name']);
-			label_row(_("Job:"),$sql['job_name']);
-			label_row(_("Memo:"),$sql['memo_']);
-			label_row(_("Type no:"),$sql['type_no']);
-			label_row(_("Account:"),$sql['account']);
-			label_row(_("Account name:"),$sql['bank_account_name']);
-			label_row(_("Account no:"),$sql['bank_account_number']);
-			label_row(_("Bank name:"),$sql['bank_name']);
-			label_row(_("Bank address:"),$sql['bank_address']);
-			label_row(_("Amount:"),$sql['amount']);
+			label_row(_("Employee name:"),$advice['emp_name']);
+			label_row(_("Trans Date:"),$advice['tran_date']);
+			label_row(_("Department:"),$advice['dept_name']);
+			label_row(_("Job:"),$advice['job_name']);
+			label_row(_("Memo:"),$advice['memo_']);
+			label_row(_("Type no:"),$advice['type_no']);
+			label_row(_("Account:"),$advice['account']);
+			label_row(_("Account name:"),$advice['bank_account_name']);
+			label_row(_("Account no:"),$advice['bank_account_number']);
+			label_row(_("Bank name:"),$advice['bank_name']);
+			label_row(_("Bank address:"),$advice['bank_address']);
+			label_row(_("Amount:"),$advice['amount']);
 			
 		table_section(2);
-		$ch=$sql['account_type'];
-		hidden('id',$sql['id']);
-			if($ch==BT_CHEQUE)
+			hidden('id',$advice['id']);
+			if($advice['account_type'] == BT_CHEQUE)
 			{
+
+			$_POST['chequeno'] = @$advice['cheque_no'];
+			if($advice['cheque_date'] !='0000-00-00')
+			$_POST['chequedate'] = sql2date($advice['cheque_date']);
+
 			table_section_title(_("Enter cheque details"));
 				date_row(_("Cheque date:"),'chequedate');
-				text_row(_("Cheque no:"), 'chequeno',  40, 30);
+				text_row(_("Cheque no:"), 'chequeno',  null, 30,40);
 				end_outer_table(TABLESTYLE2);
 				div_start('controls');
 				submit_center_first('submit', _("Update Cheque details"), true, '', 'default');

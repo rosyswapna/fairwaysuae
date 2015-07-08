@@ -357,7 +357,7 @@ function get_sql_for_payment_advices($employee,$job_position,$department,$from,$
 function get_payment_advice_details($trans_no)
 {
 	$sql="SELECT gl.tran_date,CONCAT(emp.emp_first_name,' ',emp.emp_last_name) as emp_name,'',gl.memo_,gl.account,gl.amount,gl.type_no,dp.dept_name,jb.job_name,ba.bank_account_name,ba.bank_account_number,
-	ba.bank_name,ba.bank_address,ba.account_type,bt.id
+	ba.bank_name,ba.bank_address,ba.account_type,bt.id,bt.cheque_no,bt.cheque_date
 	FROM ".TB_PREF."gl_trans as gl
 	LEFT JOIN ".TB_PREF."employees as emp ON
 			emp.emp_id = gl.person_id
