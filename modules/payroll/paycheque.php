@@ -92,6 +92,11 @@ start_form();
 				end_outer_table(TABLESTYLE2);
 				div_start('controls');
 				submit_center_first('submit', _("Update Cheque details"), true, '', 'default');
+
+				$button_label='<button type="button" class="inputsubmit">Print Payslip</button>';
+				$ar = array('PARAM_0' => $_GET['EditPayCheque'],'PARAM_1' =>ST_JOURNAL); 
+				echo print_link($button_label,'payslip',$ar);
+
 				$button_label='<button type="button" class="inputsubmit">Print cheque</button>';
 				$ar = array('PARAM_0' => $_GET['EditPayCheque'],'PARAM_1' =>ST_JOURNAL); 
 				echo print_link($button_label,'cheque',$ar);
