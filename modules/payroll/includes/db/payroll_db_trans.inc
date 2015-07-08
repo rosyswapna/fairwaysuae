@@ -77,4 +77,13 @@ function add_payroll_trans($type, $trans_id, $date_, $account, $dimension, $dime
 // $amount is in HOME currency
 
 
+
+function get_expences_n_deposits($emp_id)
+{
+	$sql= "SELECT * FROM ".TB_PREF."gl_trans WHERE type IN (".ST_BANKPAYMENT.",".ST_BANKDEPOSIT.") AND person_type_id=".PT_EMPLOYEE." AND account NOT IN (SELECT account_code FROM ".TB_PREF."bank_accounts) AND person_id=".db_escape($emp_id);
+	
+	//display_notification($sql);
+	return db_query($sql,"oops");
+}
+
 ?>

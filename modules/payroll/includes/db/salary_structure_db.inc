@@ -66,13 +66,7 @@ function get_emp_salary_structure($emp_id)
 	return db_query($sql, "Could not get employee salary structure");
 }
 
-function get_expences($emp_id)
-{
-	$sql= "SELECT * FROM ".TB_PREF."gl_trans WHERE type IN (".ST_BANKPAYMENT.",".ST_BANKDEPOSIT.") AND person_type_id=".PT_EMPLOYEE." AND account NOT IN (SELECT account_code FROM ".TB_PREF."bank_accounts) AND person_id=".db_escape($emp_id);
-	
-	//display_notification($sql);
-	return db_query($sql,"oops");
-}
+
 
 
 ?>

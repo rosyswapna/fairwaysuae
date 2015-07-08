@@ -82,7 +82,7 @@ function write_cart($emp_id,$to_the_order_of,$date_,$narration,$from_date,$to_da
 	
 	//get employee salary structure----------------====================
 	$salary_rules = get_emp_salary_structure($emp_id);
-
+	$ac_payable_amount=0;
 	if(db_num_rows($salary_rules) > 0){
 
 		$totalCredit = $totalDebit = 0;
@@ -96,9 +96,31 @@ function write_cart($emp_id,$to_the_order_of,$date_,$narration,$from_date,$to_da
 				$totalDebit += $myrow['pay_amount'];
 			}
 		}
-		$ac_payable_amount = $totalCredit - $totalDebit;
+		
+		
+	}
+
+	//get expenses and employee deposits
+	$expences = get_expences_n_deposits($emp_id);
+	if(db_num_rows($expences) > 0){
+	
+		while($myrow1 = db_fetch($expences)){
+			
+			$cart->add_gl_item($myrow1['account'], 0,0,$myrow1['amount'], '');
+			$amount=abs($myrow1['amount']);
+			if($myrow1['type'] == ST_BANKDEPOSIT){
+				$totalCredit +=$amount;
+			}else{
+				$totalDebit += $amount;
+			}	
+		}
+	}
+	//account payable amount 
+	$ac_payable_amount = $totalCredit - $totalDebit;
+	if($ac_payable_amount!=0){
 		$cart->add_gl_item(AC_PAYABLE, 0,0, $ac_payable_amount, '');
 	}
+	//======================
 
 	$_SESSION['journal_items'] = &$cart;
 

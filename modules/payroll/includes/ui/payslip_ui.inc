@@ -75,7 +75,7 @@ function display_payslip_header(&$Order)
 			
 		}
 		
-		$expences = get_expences(get_post('person_id'));
+		$expences = get_expences_n_deposits(get_post('person_id'));
 		if(db_num_rows($expences) > 0){
 		
 			while($myrow1 = db_fetch($expences)){
