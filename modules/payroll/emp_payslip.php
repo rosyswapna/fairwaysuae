@@ -265,6 +265,7 @@ if (isset($_POST['Process']))
 //clear gl items if cancel payslip or employee not set
 if (isset($_POST['CancelOrder']) || !$_POST['person_id']){
 	$_SESSION['journal_items']->clear_items();
+	$_POST['from_date'] = $_POST['to_date'] =  $_POST['leaves'] = $_POST['deductableleaves'] ='';
 	$Ajax->activate('_page_body');
 }
 
