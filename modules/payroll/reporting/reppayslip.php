@@ -46,25 +46,30 @@ function print_payslip_report()
 	$emp=get_employee($employee);
 	
 	
-	$orientation = ($orientation ? 'L' : 'P');
-	$cols = array(2, 70, 340, 440);
 	
-	$headers=array(_('Account code'), _('Paystructure Rules'),  _('Credits'), _('Debit'));
+	$orientation = ($orientation ? 'L' : 'P');
+	$cols = array(2, 90, 340, 440);
+	
+	//$headers=array(_('Account code'), _('Paystructure Rules'),  _('Credits'), _('Debit'));
 	
 	$aligns = array('left', 'left', 'left',	'left');
 	
 	
-	$rep = new FrontReport(_('PaySlip Report'), "PaySlip Report", user_pagesize(), 9, $orientation);
+	$rep = new FrontReport(_('PAYSLIP REPORT'), "PaySlip Report", user_pagesize(), 9, $orientation);
+	$rep->NewLine(1.5);
 	
 	if ($orientation == 'L')
 		recalculate_cols($cols);
+	
 
 	$dec = user_price_dec();
-	//$rep->SetHeaderType('Header2');
+	$rep->SetHeaderType(null);
 	$rep->Font();
 	$rep->Info($params,$cols, $headers, $aligns);
 	$rep->NewPage();
 	$iline1 = $rep->row;
+	$rep->NewLine(1.5);
+	$rep->Line($rep->row);
 	
 	$iline2 = $iline1 - 4 * $rep->lineHeight;
 	//$rep->Line($iline2);
@@ -73,11 +78,40 @@ function print_payslip_report()
 	
 	$result = get_payslip_list($type_no,$payslip_no);
 	$rep->Font('b');
-	$rep->TextCol(0, 2,_("Employee : ").$emp['emp_first_name']." ".$emp['emp_last_name']);
-	$rep->Font('');
 	
+	$rep->TextWrap($leftmargin,$rep->row, $rep->pageWidth - $rep->rightMargin - $rightmargin - 20, $rep->title, 'center');
+	//$rep->TextCol(1, 2,'PAYSLIP REPORT');
+	$rep->NewLine(3);
+	$rep->Font('b');
+	$rep->TextCol(0, 2,_("Employee : ").$emp['emp_first_name']." ".$emp['emp_last_name']);
+	$rep->TextCol(2,3,_("Payslip Id :").$emp['emp_id']);
+	$rep->NewLine();
+	$rep->TextCol(0,2,_("Employee Code : ").$emp['emp_id']);
+	$rep->TextCol(2,3,_("Payslip Reference :").$emp['emp_id']);
+	$rep->NewLine();
+	$rep->TextCol(0,2,_("Payslip Generated Date :").$emp['emp_id']);
+	$rep->TextCol(2,3,_("To The Order Of :").$emp['emp_id']);
+	$rep->NewLine();
+	$rep->TextCol(0,2,_("Payslip From Date :").$emp['emp_id']);
+	$rep->TextCol(2,3,_("Total Leaves :").$emp['emp_id']);
+	$rep->NewLine();
+	$rep->TextCol(0,2,_("Payslip To Date :").$emp['emp_id']);
+	$rep->TextCol(2,3,_("Deductable Leaves :").$emp['emp_id']);
+	
+	$rep->NewLine(5);
+	$rep->Font('');
+	$rep->Line($rep->row);
 	//$rep->row=$iline2+ $rep->lineHeight;
-	$rep->NewLine(1.2);
+		$rep->Font('b');
+		$rep->NewLine(1.2);
+		$rep->TextCol(0, 1,'Account');
+		$rep->TextCol(1, 2,'Payrules');
+		$rep->TextCol(2, 3,'Credits');
+		$rep->TextCol(3, 4,'Debit');
+		$rep->NewLine(1.2);
+		$rep->Line($rep->row);
+		$rep->Font('');
+	$rep->NewLine();
 	while ($myrow=db_fetch($result))
 	{
 		
@@ -89,8 +123,10 @@ function print_payslip_report()
 		$rep->TextCol(2, 3,number_format2($myrow['credit'],$dec));
 		$rep->TextCol(3, 4,number_format2($myrow['debit'],$dec));
 		
-	}
+	}$rep->NewLine();
+	$rep->Line($rep->row);
 	$rep->End();
+	
 }
 
 

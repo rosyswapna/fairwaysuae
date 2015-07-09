@@ -370,6 +370,86 @@ class FrontReport extends Cpdf
 
 		$this->NewLine(2);
 	}
+	
+	
+/*	function HeaderPayslip()
+	{
+		$companyCol = $this->endLine - 150;
+		$titleCol = $this->leftMargin + 100;
+
+		$this->row = $this->pageHeight - $this->topMargin;
+
+		$this->SetDrawColor(128, 128, 128);
+		$this->Line($this->row + 5, 1);
+
+		$this->NewLine();
+
+		$this->fontSize += 4;
+		$this->Font('bold');
+		$this->Text($this->leftMargin, $this->title, $companyCol);
+		$this->Font();
+		$this->fontSize -= 4;
+		$this->Text($companyCol, $this->company['coy_name']);
+		$this->row -= ($this->lineHeight + 4);
+
+		$str = _("Print Out Date") . ':';
+		$this->Text($this->leftMargin, $str, $titleCol);
+		$str = Today() . '   ' . Now();
+		if ($this->company['time_zone'])
+			$str .= ' ' . date('O') . ' GMT';
+		$this->Text($titleCol, $str, $companyCol);
+		$this->Text($companyCol, $this->host);
+
+		$this->NewLine();
+		$str = _("Fiscal Year") . ':';
+		$this->Text($this->leftMargin, $str, $titleCol);
+		$str = $this->fiscal_year;
+		$this->Text($titleCol, $str, $companyCol);
+		$this->Text($companyCol, $this->user);
+		for ($i = 1; $i < count($this->params); $i++)
+		{
+			if ($this->params[$i]['from'] != '')
+			{
+				$this->NewLine();
+				$str = $this->params[$i]['text'] . ':';
+				$this->Text($this->leftMargin, $str, $titleCol);
+				$str = $this->params[$i]['from'];
+				if ($this->params[$i]['to'] != '')
+					$str .= " - " . $this->params[$i]['to'];
+				$this->Text($titleCol, $str, $companyCol);
+			}
+		}
+		if ($this->params[0] != '') // Comments
+		{
+			$this->NewLine();
+			$str = _("Comments") . ':';
+			$this->Text($this->leftMargin, $str, $titleCol);
+			$this->Font('bold');
+			$this->Text($titleCol, $this->params[0], $this->endLine - 35);
+			$this->Font();
+		}
+		$str = _("Page") . ' ' . $this->pageNumber;
+		$this->Text($this->endLine - 38, $str);
+		$this->Line($this->row - 5, 1);
+
+		$this->row -= ($this->lineHeight + 6);
+		$this->Font('italic');
+		if ($this->headers2 != null)
+		{
+			$count = count($this->headers2);
+			for ($i = 0; $i < $count; $i++)
+				$this->TextCol2($i, $i + 1,	$this->headers2[$i]);
+			$this->NewLine();
+		}
+		$this->Text($this->)
+		$count = count($this->headers);
+		for ($i = 0; $i < $count; $i++)
+			$this->TextCol($i, $i + 1, $this->headers[$i]);
+		$this->Font();
+		$this->Line($this->row - 5, 1);
+		
+		$this->NewLine(2);
+	}*/
 	/*
 		Transition function 
 	*/

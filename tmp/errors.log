@@ -17541,3 +17541,43 @@
 [09-Jul-2015 08:56:01 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 3 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 52 and defined
 [09-Jul-2015 08:56:01 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 52 and defined
 [09-Jul-2015 08:56:01 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 52 and defined
+[09-Jul-2015 13:02:53 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[09-Jul-2015 13:02:53 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[09-Jul-2015 13:02:56 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[09-Jul-2015 13:02:56 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[09-Jul-2015 13:02:57 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[09-Jul-2015 13:02:57 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[09-Jul-2015 13:03:57 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[09-Jul-2015 13:03:57 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[09-Jul-2015 13:03:57 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[09-Jul-2015 13:03:57 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[09-Jul-2015 13:04:00 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[09-Jul-2015 13:04:00 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[09-Jul-2015 13:04:02 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[09-Jul-2015 13:04:02 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[09-Jul-2015 13:04:13 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[09-Jul-2015 13:04:13 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[09-Jul-2015 13:04:14 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[09-Jul-2015 13:04:14 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[09-Jul-2015 13:04:40 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[09-Jul-2015 13:04:40 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[09-Jul-2015 13:04:42 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[09-Jul-2015 13:04:42 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[09-Jul-2015 13:05:28 Europe/Paris] 0:admin:employees.php:34: include_once(../../modules/payroll/labour.php): failed to open stream: No such file or directory
+[09-Jul-2015 13:05:28 Europe/Paris] 0:admin:employees.php:34: include_once(): Failed opening '../../modules/payroll/labour.php' for inclusion (include_path='.;C:\php\pear')
+[09-Jul-2015 13:16:44 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 42 and defined
+[09-Jul-2015 13:16:44 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 42 and defined
+[09-Jul-2015 13:16:45 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 3 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 53 and defined
+[09-Jul-2015 13:16:45 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 53 and defined
+[09-Jul-2015 13:16:45 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 53 and defined
+[09-Jul-2015 13:16:45 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 3 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 54 and defined
+[09-Jul-2015 13:16:45 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 54 and defined
+[09-Jul-2015 13:16:45 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 54 and defined
+[09-Jul-2015 13:16:45 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 42 and defined
+[09-Jul-2015 13:16:45 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 42 and defined
+[09-Jul-2015 13:16:45 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 3 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 53 and defined
+[09-Jul-2015 13:16:45 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 53 and defined
+[09-Jul-2015 13:16:45 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 53 and defined
+[09-Jul-2015 13:16:45 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 3 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 54 and defined
+[09-Jul-2015 13:16:45 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 54 and defined
+[09-Jul-2015 13:16:45 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 54 and defined
