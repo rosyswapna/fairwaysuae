@@ -11,6 +11,7 @@ include_once($path_to_root . "/includes/data_checks.inc");
 
 include_once($path_to_root . "/modules/payroll/includes/db/salary_structure_db.inc");
 include_once($path_to_root . "/modules/payroll/includes/db/employee_db.inc");
+include_once($path_to_root . "/modules/payroll/includes/db/payslip_details_db.inc");
 
 add_access_extensions();
 
@@ -45,6 +46,7 @@ function print_payslip_report()
 	$employee=$_POST['PARAM_2'];
 	$emp=get_employee($employee);
 	
+	$slip=get_payslip_details($payslip_no);
 	
 	
 	$orientation = ($orientation ? 'L' : 'P');
@@ -72,31 +74,28 @@ function print_payslip_report()
 	$rep->Line($rep->row);
 	
 	$iline2 = $iline1 - 4 * $rep->lineHeight;
-	//$rep->Line($iline2);
-	//$rep->LineTo($cols[2], $iline1 ,$cols[2], $iline2);
-	//$rep->NewLine(1.2);
+	
 	
 	$result = get_payslip_list($type_no,$payslip_no);
 	$rep->Font('b');
-	
 	$rep->TextWrap($leftmargin,$rep->row, $rep->pageWidth - $rep->rightMargin - $rightmargin - 20, $rep->title, 'center');
 	//$rep->TextCol(1, 2,'PAYSLIP REPORT');
 	$rep->NewLine(3);
-	$rep->Font('b');
+	
 	$rep->TextCol(0, 2,_("Employee : ").$emp['emp_first_name']." ".$emp['emp_last_name']);
 	$rep->TextCol(2,3,_("Payslip Id :").$emp['emp_id']);
 	$rep->NewLine();
 	$rep->TextCol(0,2,_("Employee Code : ").$emp['emp_id']);
 	$rep->TextCol(2,3,_("Payslip Reference :").$emp['emp_id']);
 	$rep->NewLine();
-	$rep->TextCol(0,2,_("Payslip Generated Date :").$emp['emp_id']);
-	$rep->TextCol(2,3,_("To The Order Of :").$emp['emp_id']);
+	$rep->TextCol(0,2,_("Payslip Generated Date :").sql2date($slip['generated_date']));
+	$rep->TextCol(2,3,_("To The Order Of :").$slip['to_the_order_of']);
 	$rep->NewLine();
-	$rep->TextCol(0,2,_("Payslip From Date :").$emp['emp_id']);
-	$rep->TextCol(2,3,_("Total Leaves :").$emp['emp_id']);
+	$rep->TextCol(0,2,_("Payslip From Date :").sql2date($slip['from_date']));
+	$rep->TextCol(2,3,_("Total Leaves :").$slip['leaves']);
 	$rep->NewLine();
-	$rep->TextCol(0,2,_("Payslip To Date :").$emp['emp_id']);
-	$rep->TextCol(2,3,_("Deductable Leaves :").$emp['emp_id']);
+	$rep->TextCol(0,2,_("Payslip To Date :").sql2date($slip['to_date']));
+	$rep->TextCol(2,3,_("Deductable Leaves :").$slip['deductable_leaves']);
 	
 	$rep->NewLine(5);
 	$rep->Font('');
