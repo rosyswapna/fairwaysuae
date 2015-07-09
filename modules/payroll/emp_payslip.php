@@ -133,19 +133,29 @@ function create_cart($type=0, $trans_no=0)
 	$_POST['ref'] = $cart->reference;
 	$_POST['date_'] = $cart->tran_date;
 
+	$_POST['from_date'] = '';
+	$_POST['from_date'] = '';
+	$_POST['leaves'] = '';
+	$_POST['deductableleaves'] = '';
+
 	$_SESSION['journal_items'] = &$cart;
 }
 
 
 //-----------------------------------------------------------------------------------------------
 
-if(isset($_POST['GeneratePayslip'])){
+function validate_payslip_generation()
+{
 	if (!$_POST['person_id'])
 	{
-		display_error(_("Select Employee"));
+		display_error(_("Employee not selected"));
 		set_focus('person_id');
 		return false;
 	} 
+	return true;
+}
+
+if(isset($_POST['GeneratePayslip']) && validate_payslip_generation()){
 
 	generate_gl_items($_SESSION['journal_items']);
 	

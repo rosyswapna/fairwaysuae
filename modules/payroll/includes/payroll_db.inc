@@ -20,6 +20,8 @@ include_once($path_to_root."/modules/payroll/includes/db/payroll_db_trans.inc");
 //write payslip and payment advice
 function write_payslip(&$cart, $reverse, $use_transaction=true)
 {
+
+	
 	global $Refs;
 
 	$date_ = $cart->tran_date;

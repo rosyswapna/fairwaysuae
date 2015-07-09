@@ -55,8 +55,9 @@ function display_payslip_header(&$Order)
 		
 
 	if (list_updated('person_id')) {
-		//get employee salary structure----------------====================
+
 		//generate_gl_items($Order,get_post('person_id'));
+		$Order->clear_items();
 	}
 	
 	end_outer_table(1);
