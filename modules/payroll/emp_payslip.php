@@ -152,6 +152,27 @@ function validate_payslip_generation()
 		set_focus('person_id');
 		return false;
 	} 
+	
+	if (!is_date($_POST['from_date'])) {
+		display_error(_("The entered date is invalid."));
+		set_focus('from_date');
+		return false;
+	}
+
+	if (!is_date($_POST['to_date'])) {
+		display_error(_("The entered date is invalid."));
+		set_focus('to_date');
+		return false;
+	}
+
+	if(date_diff2($_POST['to_date'], $_POST['from_date'], "d") > 30){
+		display_error(_("Payroll Period Exeeds 30 days."));
+		set_focus('to_date');
+		return false;
+	}
+	
+
+
 	return true;
 }
 
