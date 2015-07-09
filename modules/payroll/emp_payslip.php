@@ -136,12 +136,24 @@ function create_cart($type=0, $trans_no=0)
 	$_SESSION['journal_items'] = &$cart;
 }
 
+
 //-----------------------------------------------------------------------------------------------
+
+if(isset($_POST['GeneratePayslip'])){
+	if (!$_POST['person_id'])
+	{
+		display_error(_("Select Employee"));
+		set_focus('person_id');
+		return false;
+	} 
+
+	generate_gl_items($_SESSION['journal_items']);
+	
+}
+//------------------------------------------------------------------------
 
 if (isset($_POST['Process']))
 {
-
-
 	$input_error = 0;
 
 	if ($_SESSION['journal_items']->count_gl_items() < 1) {
@@ -215,6 +227,14 @@ if (isset($_POST['Process']))
 		meta_forward($_SERVER['PHP_SELF'], "AddedID=$trans_no");
 	else
 		meta_forward($_SERVER['PHP_SELF'], "UpdatedID=$trans_no");
+}
+
+//------------------------------------------------------------------
+
+//clear gl items if cancel payslip or employee not set
+if (isset($_POST['CancelOrder']) || !$_POST['person_id']){
+	$_SESSION['journal_items']->clear_items();
+	$Ajax->activate('_page_body');
 }
 
 //-----------------------------------------------------------------------------------------------
@@ -338,20 +358,34 @@ start_form();
 
 display_payslip_header($_SESSION['journal_items']);
 
-start_table(TABLESTYLE2, "width='90%'", 10);
-start_row();
-echo "<td>";
-display_gl_items(_("Rows"), $_SESSION['journal_items']);
-gl_options_controls();
-echo "</td>";
-end_row();
-end_table(1);
+if (!count($_SESSION['journal_items']->gl_items)){
+	br();
+	submit_center('GeneratePayslip', _("Generate Payslip"),_('Generate Payslip For Process'),false);
+	br();
+}
 
-/*submit_center('Process', _("Process PaySlip"), true , 
-	_('Process journal entry only if debits equal to credits'), 'default');*/
-submit_center('Process', _("Process PaySlip"), true , 
-	_('Process journal entry only if debits equal to credits'));
 
+div_start('payslip_trans');
+	if (count($_SESSION['journal_items']->gl_items)){
+		start_table(TABLESTYLE2, "width='90%'", 10);
+		start_row();
+		echo "<td>";
+		display_gl_items(_("Rows"), $_SESSION['journal_items']);
+		gl_options_controls();
+		echo "</td>";
+		end_row();
+		end_table(1);
+
+
+		/*submit_center('Process', _("Process PaySlip"), true , 
+			_('Process journal entry only if debits equal to credits'), 'default');*/
+		submit_center_first('Process', _("Process PaySlip"), true , 
+			_('Process journal entry only if debits equal to credits'));
+
+		submit_center_last('CancelOrder', _("Cancel"),
+	   		_('Cancels document entry or removes Gl items'), true);
+	}
+div_end();
 end_form();
 //------------------------------------------------------------------------------------------------
 

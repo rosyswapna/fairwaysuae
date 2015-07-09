@@ -29,6 +29,11 @@ function display_payslip_header(&$Order)
    		date_row(_("Date:"), 'date_', '', $new);
 		ref_row(_("Reference:"), 'ref', '');
 
+	table_section(3,"35%");
+		date_row(_("From Date:"), 'from_date', '', $new);
+		date_row(_("TO Date:"), 'to_date', '', $new);
+		
+
 	table_section(2, "35%");
 		
 		hidden('PayType', PT_EMPLOYEE);
@@ -42,10 +47,7 @@ function display_payslip_header(&$Order)
 		hidden('PaySlipNo',$_POST['PaySlipNo']);
 		label_row(_("Payslip No:"),$_POST['PaySlipNo']);
 	
-	table_section(3,"35%");
-		date_row(_("From Date:"), 'from_date', '', $new);
-		date_row(_("TO Date:"), 'to_date', '', $new);
-		
+	
 		
 	table_section(4, "30%");
 		text_row(_("No of Leaves:"),'leaves');
@@ -54,55 +56,88 @@ function display_payslip_header(&$Order)
 
 	if (list_updated('person_id')) {
 		//get employee salary structure----------------====================
-		$Order->clear_items();
-		$totalCredit = $totalDebit = 0;
-		$ac_payable_amount=0;
-		$salary_rules = get_emp_salary_structure(get_post('person_id'));
-		
-		
-		if(db_num_rows($salary_rules) > 0){
-
-			
-			while($myrow = db_fetch($salary_rules) ){
-				
-				$Order->add_gl_item($myrow['pay_rule_id'], 0,0, ($myrow['type'] == CREDIT) ? -$myrow['pay_amount']:$myrow['pay_amount'], '');
-
-				if($myrow['type'] == CREDIT){
-					$totalCredit += $myrow['pay_amount'];
-				}else{
-					$totalDebit += $myrow['pay_amount'];
-				}
-			}
-			
-		}
-		
-		$expences = get_expences_n_deposits(get_post('person_id'));
-		if(db_num_rows($expences) > 0){
-		
-			while($myrow1 = db_fetch($expences)){
-				
-				$Order->add_gl_item($myrow1['account'], 0,0,$myrow1['amount'], '');
-				$amount=abs($myrow1['amount']);
-				if($myrow1['type'] == ST_BANKDEPOSIT){
-					$totalCredit +=$amount;
-				}else{
-					$totalDebit += $amount;
-				}
-				
-			}
-			
-		}
-		$ac_payable_amount = $totalCredit - $totalDebit;
-		if($ac_payable_amount!=0){
-			
-			$Order->add_gl_item(AC_PAYABLE, 0,0, $ac_payable_amount, '');
-		}
-		//------------------------------------------------==================
-		unset($_POST['totamount']); // enable default
-		$Ajax->activate('totamount');
+		//generate_gl_items($Order,get_post('person_id'));
 	}
 	
 	end_outer_table(1);
+	
+	
+	
+}
+
+//-------------------------generate cart gl items-------------------------
+function generate_gl_items($Order){
+
+	global $Ajax;
+
+	$emp_id 	= $_POST['person_id'];
+	$from_date 	= $_POST['from_date'];
+	$to_date 	= $_POST['to_date'];
+	
+
+	$Order->clear_items();
+	$totalCredit = $totalDebit = 0;
+	$ac_payable_amount=0;
+	$salary_rules = get_emp_salary_structure($emp_id);
+	if(db_num_rows($salary_rules) > 0){
+
+		
+		while($myrow = db_fetch($salary_rules) ){
+
+			if($myrow['pay_rule_id'] == GL_BASIC_SALARY){
+				$salary_amount = $myrow['pay_amount'];
+			}
+			
+			$Order->add_gl_item($myrow['pay_rule_id'], 0,0, ($myrow['type'] == CREDIT) ? -$myrow['pay_amount']:$myrow['pay_amount'], '');
+
+			if($myrow['type'] == CREDIT){
+				$totalCredit += $myrow['pay_amount'];
+			}else{
+				$totalDebit += $myrow['pay_amount'];
+			}
+		}
+		
+	}
+	
+
+	//leave calculation
+	$deductableleaves = input_num('deductableleaves',0);
+	$leave_deduct_amount = $salary_amount/30*$deductableleaves;
+	if($leave_deduct_amount != 0){
+		$Order->add_gl_item(GL_DEDUCT_LEAVE, 0,0,-$leave_deduct_amount, '');
+		$totalCredit += $leave_deduct_amount;
+	}	
+
+	
+	//expenses and deposits
+	$expences = get_expences_n_deposits($emp_id,$from_date,$to_date);
+	if(db_num_rows($expences) > 0){
+	
+		while($myrow1 = db_fetch($expences)){
+			
+			$Order->add_gl_item($myrow1['account'], 0,0,$myrow1['amount'], '');
+			$amount=abs($myrow1['amount']);
+			if($myrow1['type'] == ST_BANKDEPOSIT){
+				$totalCredit +=$amount;
+			}else{
+				$totalDebit += $amount;
+			}
+			
+		}
+		
+	}
+
+	
+
+	$ac_payable_amount = $totalCredit - $totalDebit;
+	if($ac_payable_amount!=0){
+		
+		$Order->add_gl_item(AC_PAYABLE, 0,0, $ac_payable_amount, '');
+	}
+	//------------------------------------------------==================
+	unset($_POST['totamount']); // enable default
+	$Ajax->activate('totamount');
+	
 }
 
 
