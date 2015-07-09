@@ -21,7 +21,7 @@ include_once($path_to_root."/modules/payroll/includes/db/payslip_details_db.inc"
 function write_payslip(&$cart, $reverse, $use_transaction=true)
 {
 
-	
+	//echo "<pre>";print_r($cart);echo "</pre>";exit;
 	global $Refs;
 
 	$date_ = $cart->tran_date;
@@ -67,6 +67,9 @@ function write_payslip(&$cart, $reverse, $use_transaction=true)
 		add_gl_tax_details($journal_item->code_id, 
 			ST_JOURNAL, $trans_id, $journal_item->amount, 1, $date_, $memo_);
 	}//echo "<pre>";print_r($cart);echo "</pre>";exit;
+
+	//add payslip details
+	add_payslip_details($cart->payslip_no,$cart->to_the_order_of,$cart->from_date,$cart->to_date,$cart->leaves,$cart->deductable_leaves);
 	
 	$Refs->save($trans_type, $trans_id, $ref);
 	if ($new) {

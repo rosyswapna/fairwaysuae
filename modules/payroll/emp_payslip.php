@@ -230,6 +230,7 @@ if (isset($_POST['Process']))
 		unset($_POST['Process']);
 }
 
+
 if (isset($_POST['Process']))
 {
 	$cart = &$_SESSION['journal_items'];
@@ -246,8 +247,11 @@ if (isset($_POST['Process']))
 	$cart->reference = $_POST['ref'];
 	$cart->memo_ = $_POST['memo_'];
 	$cart->tran_date = $_POST['date_'];
+
 	$cart->from_date = $_POST['from_date'];
 	$cart->to_date = $_POST['to_date'];
+	$cart->leaves = $_POST['leaves'];
+	$cart->deductable_leaves = $_POST['deductableleaves'];
 	
 	$trans_no = write_payslip($cart, check_value('Reverse'));
 
@@ -411,7 +415,7 @@ div_start('payslip_trans');
 
 		/*submit_center('Process', _("Process PaySlip"), true , 
 			_('Process journal entry only if debits equal to credits'), 'default');*/
-		submit_center_first('Process', _("Process PaySlip"), true , 
+		submit_center_first('Process', _("Process PaySlip"), 
 			_('Process journal entry only if debits equal to credits'));
 
 		submit_center_last('CancelOrder', _("Cancel"),

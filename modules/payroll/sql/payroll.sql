@@ -317,9 +317,10 @@ ALTER TABLE `0_gl_trans` ADD `from_date` DATE NOT NULL , ADD `to_date` DATE NOT 
 -- Table structure for table `0_paylsip_details`
 --
 
-CREATE TABLE IF NOT EXISTS `0_paylsip_details` (
+CREATE TABLE IF NOT EXISTS `0_payslip_details` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `payslip_no` int(11) NOT NULL,
+  `generated_date` date NOT NULL,
   `to_the_order_of` varchar(255) NOT NULL,
   `from_date` date NOT NULL,
   `to_date` date NOT NULL,

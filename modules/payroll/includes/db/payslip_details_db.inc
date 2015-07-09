@@ -5,12 +5,18 @@
 /////////////////////////////////////////////////////
 //department Database Functions
 /////////////////////////////////////////////////////
-function add_payslip_details($name)
+function add_payslip_details($payslip_no,$to_the_order_of,$from_date,$to_date,$leaves,$deductable_leaves)
 {
-	$sql = "INSERT INTO ".TB_PREF."payslip_details (payslip_no,to_the_order_of,from_date,to_date,leaves,deductable_leaves) VALUES ("
-		.db_escape($payslip_no).",".db_escape($to_the_order_of).",".db_escape($from_date)."
-		,".db_escape($to_date).",".db_escape($leaves).",".db_escape($deductable_leaves)
+
+	$from = date2sql($from_date);
+	$to = date2sql($to_date);
+	$generated = date2sql(Today());
+	$sql = "INSERT INTO ".TB_PREF."payslip_details (payslip_no,generated_date,to_the_order_of,from_date,to_date,leaves,deductable_leaves) VALUES ("
+		.db_escape($payslip_no).",'$generated',".db_escape($to_the_order_of).",'$from'
+		,'$to',".db_escape($leaves).",".db_escape($deductable_leaves)
 		.")";
+
+//echo $sql;exit;
 	
 	db_query($sql,"The payslip details could not be added");
 	
