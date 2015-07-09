@@ -99,6 +99,7 @@ class hooks_payroll extends hooks {
 		$security_areas['SA_PMTADVICE'] = array(SS_PAYROLL|1, _("Payment Advice"));
 		$security_areas['SA_PAYCHECK_PRINTABLE'] = array(SS_PAYROLL|1, _("paycheck printable"));
 		$security_areas['SA_PAYCHECK_REPORT'] = array(SS_PAYROLL|1, _("paycheck report"));
+		$security_areas['SA_PAYSLIP_REPORT'] = array(SS_PAYROLL|1, _("payslip report"));
 		
 		$security_areas['SA_PAYROLL_REPORTS'] = array(SS_PAYROLL|1, _("payroll report"));
 		$security_areas['SA_PAYROLL_REPORTS_STRUCT'] = array(SS_PAYROLL|1, _("payroll report structure"));

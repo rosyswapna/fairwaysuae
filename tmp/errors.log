@@ -17361,3 +17361,183 @@
 [08-Jul-2015 13:25:13 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 3 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 52 and defined
 [08-Jul-2015 13:25:13 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 52 and defined
 [08-Jul-2015 13:25:13 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 52 and defined
+[08-Jul-2015 13:40:44 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 37 and defined
+[08-Jul-2015 13:40:44 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 37 and defined
+[08-Jul-2015 13:40:44 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 3 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 51 and defined
+[08-Jul-2015 13:40:44 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 51 and defined
+[08-Jul-2015 13:40:44 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 51 and defined
+[08-Jul-2015 13:40:44 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 3 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 52 and defined
+[08-Jul-2015 13:40:44 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 52 and defined
+[08-Jul-2015 13:40:44 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 52 and defined
+[08-Jul-2015 13:40:45 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 37 and defined
+[08-Jul-2015 13:40:45 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 37 and defined
+[08-Jul-2015 13:40:45 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 3 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 51 and defined
+[08-Jul-2015 13:40:45 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 51 and defined
+[08-Jul-2015 13:40:45 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 51 and defined
+[08-Jul-2015 13:40:45 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 3 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 52 and defined
+[08-Jul-2015 13:40:45 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 52 and defined
+[08-Jul-2015 13:40:45 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 52 and defined
+[08-Jul-2015 13:40:49 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 37 and defined
+[08-Jul-2015 13:40:49 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 37 and defined
+[08-Jul-2015 13:40:49 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 3 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 51 and defined
+[08-Jul-2015 13:40:49 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 51 and defined
+[08-Jul-2015 13:40:49 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 51 and defined
+[08-Jul-2015 13:40:49 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 3 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 52 and defined
+[08-Jul-2015 13:40:49 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 52 and defined
+[08-Jul-2015 13:40:49 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 52 and defined
+[08-Jul-2015 13:43:41 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 37 and defined
+[08-Jul-2015 13:43:41 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 37 and defined
+[08-Jul-2015 13:43:41 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 3 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 51 and defined
+[08-Jul-2015 13:43:41 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 51 and defined
+[08-Jul-2015 13:43:41 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 51 and defined
+[08-Jul-2015 13:43:41 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 3 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 52 and defined
+[08-Jul-2015 13:43:41 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 52 and defined
+[08-Jul-2015 13:43:41 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 52 and defined
+[08-Jul-2015 13:43:41 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 37 and defined
+[08-Jul-2015 13:43:41 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 37 and defined
+[08-Jul-2015 13:43:41 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 3 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 51 and defined
+[08-Jul-2015 13:43:41 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 51 and defined
+[08-Jul-2015 13:43:41 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 51 and defined
+[08-Jul-2015 13:43:41 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 3 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 52 and defined
+[08-Jul-2015 13:43:41 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 52 and defined
+[08-Jul-2015 13:43:41 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 52 and defined
+[08-Jul-2015 13:46:22 Europe/Paris] 0::logout.php:50: session_destroy(): Session object destruction failed
+[08-Jul-2015 13:50:42 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 37 and defined
+[08-Jul-2015 13:50:42 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 37 and defined
+[08-Jul-2015 13:50:42 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 3 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 51 and defined
+[08-Jul-2015 13:50:42 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 51 and defined
+[08-Jul-2015 13:50:42 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 51 and defined
+[08-Jul-2015 13:50:42 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 3 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 52 and defined
+[08-Jul-2015 13:50:42 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 52 and defined
+[08-Jul-2015 13:50:42 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 52 and defined
+[08-Jul-2015 13:50:42 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 37 and defined
+[08-Jul-2015 13:50:42 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 37 and defined
+[08-Jul-2015 13:50:42 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 3 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 51 and defined
+[08-Jul-2015 13:50:42 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 51 and defined
+[08-Jul-2015 13:50:42 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 51 and defined
+[08-Jul-2015 13:50:42 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 3 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 52 and defined
+[08-Jul-2015 13:50:42 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 52 and defined
+[08-Jul-2015 13:50:42 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 52 and defined
+[08-Jul-2015 13:50:44 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 37 and defined
+[08-Jul-2015 13:50:44 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 37 and defined
+[08-Jul-2015 13:50:44 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 3 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 51 and defined
+[08-Jul-2015 13:50:44 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 51 and defined
+[08-Jul-2015 13:50:44 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 51 and defined
+[08-Jul-2015 13:50:44 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 3 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 52 and defined
+[08-Jul-2015 13:50:44 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 52 and defined
+[08-Jul-2015 13:50:44 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 52 and defined
+[08-Jul-2015 13:59:10 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 37 and defined
+[08-Jul-2015 13:59:10 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 37 and defined
+[08-Jul-2015 13:59:10 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 3 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 51 and defined
+[08-Jul-2015 13:59:10 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 51 and defined
+[08-Jul-2015 13:59:10 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 51 and defined
+[08-Jul-2015 13:59:10 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 3 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 52 and defined
+[08-Jul-2015 13:59:10 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 52 and defined
+[08-Jul-2015 13:59:10 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 52 and defined
+[08-Jul-2015 13:59:10 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 37 and defined
+[08-Jul-2015 13:59:10 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 37 and defined
+[08-Jul-2015 13:59:10 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 3 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 51 and defined
+[08-Jul-2015 13:59:10 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 51 and defined
+[08-Jul-2015 13:59:10 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 51 and defined
+[08-Jul-2015 13:59:10 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 3 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 52 and defined
+[08-Jul-2015 13:59:10 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 52 and defined
+[08-Jul-2015 13:59:10 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 52 and defined
+[08-Jul-2015 14:13:53 Europe/Paris] 0::logout.php:50: session_destroy(): Session object destruction failed
+[08-Jul-2015 14:46:02 Europe/Paris] 0:admin:pdf_report.inc:418: Missing argument 1 for FrontReport::SetHeaderType(), called in C:\wamp\www\fairwaysuae\modules\payroll\reporting\reppayslip.php on line 89 and defined
+[08-Jul-2015 14:46:35 Europe/Paris] 0:admin:pdf_report.inc:418: Missing argument 1 for FrontReport::SetHeaderType(), called in C:\wamp\www\fairwaysuae\modules\payroll\reporting\reppayslip.php on line 89 and defined
+[08-Jul-2015 14:47:53 Europe/Paris] 0:admin:pdf_report.inc:418: Missing argument 1 for FrontReport::SetHeaderType(), called in C:\wamp\www\fairwaysuae\modules\payroll\reporting\reppayslip.php on line 89 and defined
+[08-Jul-2015 14:51:23 Europe/Paris] 0:admin:pdf_report.inc:418: Missing argument 1 for FrontReport::SetHeaderType(), called in C:\wamp\www\fairwaysuae\modules\payroll\reporting\reppayslip.php on line 89 and defined
+[08-Jul-2015 14:51:37 Europe/Paris] 0:admin:pdf_report.inc:418: Missing argument 1 for FrontReport::SetHeaderType(), called in C:\wamp\www\fairwaysuae\modules\payroll\reporting\reppayslip.php on line 89 and defined
+[08-Jul-2015 14:52:43 Europe/Paris] 0:admin:pdf_report.inc:418: Missing argument 1 for FrontReport::SetHeaderType(), called in C:\wamp\www\fairwaysuae\modules\payroll\reporting\reppayslip.php on line 89 and defined
+[08-Jul-2015 14:52:55 Europe/Paris] 0:admin:pdf_report.inc:418: Missing argument 1 for FrontReport::SetHeaderType(), called in C:\wamp\www\fairwaysuae\modules\payroll\reporting\reppayslip.php on line 89 and defined
+[08-Jul-2015 14:53:05 Europe/Paris] 0:admin:pdf_report.inc:418: Missing argument 1 for FrontReport::SetHeaderType(), called in C:\wamp\www\fairwaysuae\modules\payroll\reporting\reppayslip.php on line 86 and defined
+[08-Jul-2015 14:54:36 Europe/Paris] 0:admin:pdf_report.inc:418: Missing argument 1 for FrontReport::SetHeaderType(), called in C:\wamp\www\fairwaysuae\modules\payroll\reporting\reppayslip.php on line 86 and defined
+[08-Jul-2015 14:55:11 Europe/Paris] 0:admin:pdf_report.inc:418: Missing argument 1 for FrontReport::SetHeaderType(), called in C:\wamp\www\fairwaysuae\modules\payroll\reporting\reppayslip.php on line 86 and defined
+[09-Jul-2015 06:26:05 Europe/Paris] 0:admin:headerINV.inc:186: Invalid argument supplied for foreach()
+[09-Jul-2015 06:26:38 Europe/Paris] 0:admin:header2.inc:164: Invalid argument supplied for foreach()
+[09-Jul-2015 06:39:41 Europe/Paris] 0:admin:header2.inc:164: Invalid argument supplied for foreach()
+[09-Jul-2015 07:03:50 Europe/Paris] 0:admin:header2.inc:164: Invalid argument supplied for foreach()
+[09-Jul-2015 07:06:08 Europe/Paris] 0:admin:header2.inc:164: Invalid argument supplied for foreach()
+[09-Jul-2015 07:36:58 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\includes\payroll_db.inc:375:<br>oops<br>error code : 1054<br>error message : Unknown column 'emp.emp_name' in 'field list'<br>sql that failed was : SELECT gl.tran_date,CONCAT(emp.emp_first_name,' ',emp.emp_last_name) as emp_name,'',gl.memo_,gl.account,gl.amount,gl.type_no,dp.dept_name,jb.job_name,ba.bank_account_name,ba.bank_account_number,
+	ba.bank_name,ba.bank_address,ba.account_type,bt.id,bt.cheque_no,bt.cheque_date,emp.emp_name,gl.payslip_no
+	FROM 0_gl_trans as gl
+	LEFT JOIN 0_employees as emp ON
+			emp.emp_id = gl.person_id
+	LEFT JOIN 0_departments as dp ON
+			dp.dept_id = gl.person_id
+	LEFT JOIN 0_jobnames as jb ON
+			jb.job_name_id = emp.job_position_id
+	LEFT JOIN 0_bank_trans as bt ON
+			bt.trans_no = gl.type_no AND bt.type=gl.type
+	LEFT JOIN 0_bank_accounts as ba ON
+			ba.id = bt.bank_act
+	
+	WHERE gl.type=0 AND gl.account IN (select account_code from 0_bank_accounts) AND type_no='8'<br><br><br>
+[09-Jul-2015 07:37:00 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\includes\payroll_db.inc:375:<br>oops<br>error code : 1054<br>error message : Unknown column 'emp.emp_name' in 'field list'<br>sql that failed was : SELECT gl.tran_date,CONCAT(emp.emp_first_name,' ',emp.emp_last_name) as emp_name,'',gl.memo_,gl.account,gl.amount,gl.type_no,dp.dept_name,jb.job_name,ba.bank_account_name,ba.bank_account_number,
+	ba.bank_name,ba.bank_address,ba.account_type,bt.id,bt.cheque_no,bt.cheque_date,emp.emp_name,gl.payslip_no
+	FROM 0_gl_trans as gl
+	LEFT JOIN 0_employees as emp ON
+			emp.emp_id = gl.person_id
+	LEFT JOIN 0_departments as dp ON
+			dp.dept_id = gl.person_id
+	LEFT JOIN 0_jobnames as jb ON
+			jb.job_name_id = emp.job_position_id
+	LEFT JOIN 0_bank_trans as bt ON
+			bt.trans_no = gl.type_no AND bt.type=gl.type
+	LEFT JOIN 0_bank_accounts as ba ON
+			ba.id = bt.bank_act
+	
+	WHERE gl.type=0 AND gl.account IN (select account_code from 0_bank_accounts) AND type_no='8'<br><br><br>
+[09-Jul-2015 07:37:05 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\includes\payroll_db.inc:375:<br>oops<br>error code : 1054<br>error message : Unknown column 'emp.emp_name' in 'field list'<br>sql that failed was : SELECT gl.tran_date,CONCAT(emp.emp_first_name,' ',emp.emp_last_name) as emp_name,'',gl.memo_,gl.account,gl.amount,gl.type_no,dp.dept_name,jb.job_name,ba.bank_account_name,ba.bank_account_number,
+	ba.bank_name,ba.bank_address,ba.account_type,bt.id,bt.cheque_no,bt.cheque_date,emp.emp_name,gl.payslip_no
+	FROM 0_gl_trans as gl
+	LEFT JOIN 0_employees as emp ON
+			emp.emp_id = gl.person_id
+	LEFT JOIN 0_departments as dp ON
+			dp.dept_id = gl.person_id
+	LEFT JOIN 0_jobnames as jb ON
+			jb.job_name_id = emp.job_position_id
+	LEFT JOIN 0_bank_trans as bt ON
+			bt.trans_no = gl.type_no AND bt.type=gl.type
+	LEFT JOIN 0_bank_accounts as ba ON
+			ba.id = bt.bank_act
+	
+	WHERE gl.type=0 AND gl.account IN (select account_code from 0_bank_accounts) AND type_no='8'<br><br><br>
+[09-Jul-2015 07:37:52 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\includes\payroll_db.inc:375:<br>oops<br>error code : 1054<br>error message : Unknown column 'emp.emp_name' in 'field list'<br>sql that failed was : SELECT gl.tran_date,CONCAT(emp.emp_first_name,' ',emp.emp_last_name) as emp_name,'',gl.memo_,gl.account,gl.amount,gl.type_no,dp.dept_name,jb.job_name,ba.bank_account_name,ba.bank_account_number,
+	ba.bank_name,ba.bank_address,ba.account_type,bt.id,bt.cheque_no,bt.cheque_date,emp.emp_name,gl.payslip_no
+	FROM 0_gl_trans as gl
+	LEFT JOIN 0_employees as emp ON
+			emp.emp_id = gl.person_id
+	LEFT JOIN 0_departments as dp ON
+			dp.dept_id = gl.person_id
+	LEFT JOIN 0_jobnames as jb ON
+			jb.job_name_id = emp.job_position_id
+	LEFT JOIN 0_bank_trans as bt ON
+			bt.trans_no = gl.type_no AND bt.type=gl.type
+	LEFT JOIN 0_bank_accounts as ba ON
+			ba.id = bt.bank_act
+	
+	WHERE gl.type=0 AND gl.account IN (select account_code from 0_bank_accounts) AND type_no='8'<br><br><br>
+[09-Jul-2015 07:57:10 Europe/Paris] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\modules\payroll\includes\payroll_db.inc:375:<br>oops<br>error code : 1054<br>error message : Unknown column 'jb.job_position_id' in 'field list'<br>sql that failed was : SELECT gl.tran_date,CONCAT(emp.emp_first_name,' ',emp.emp_last_name) as emp_name,'',gl.memo_,gl.account,gl.amount,gl.type_no,dp.dept_name,jb.job_name,ba.bank_account_name,ba.bank_account_number,
+	ba.bank_name,ba.bank_address,ba.account_type,bt.id,bt.cheque_no,bt.cheque_date,emp.emp_id,gl.payslip_no,jb.job_position_id
+	FROM 0_gl_trans as gl
+	LEFT JOIN 0_employees as emp ON
+			emp.emp_id = gl.person_id
+	LEFT JOIN 0_departments as dp ON
+			dp.dept_id = gl.person_id
+	LEFT JOIN 0_jobnames as jb ON
+			jb.job_name_id = emp.job_position_id
+	LEFT JOIN 0_bank_trans as bt ON
+			bt.trans_no = gl.type_no AND bt.type=gl.type
+	LEFT JOIN 0_bank_accounts as ba ON
+			ba.id = bt.bank_act
+	
+	WHERE gl.type=0 AND gl.account IN (select account_code from 0_bank_accounts) AND type_no='8'<br><br><br>
+[09-Jul-2015 08:56:01 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 37 and defined
+[09-Jul-2015 08:56:01 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 37 and defined
+[09-Jul-2015 08:56:01 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 3 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 51 and defined
+[09-Jul-2015 08:56:01 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 51 and defined
+[09-Jul-2015 08:56:01 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 51 and defined
+[09-Jul-2015 08:56:01 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 3 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 52 and defined
+[09-Jul-2015 08:56:01 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 4 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 52 and defined
+[09-Jul-2015 08:56:01 Europe/Paris] 0:admin:ui_input.inc:550: Missing argument 5 for text_row(), called in C:\wamp\www\fairwaysuae\modules\payroll\includes\ui\payslip_ui.inc on line 52 and defined
