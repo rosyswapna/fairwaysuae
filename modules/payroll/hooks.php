@@ -1,6 +1,9 @@
 <?php
 define('SS_PAYROLL',71<<8);
 
+define('GL_DEDUCT_LEAVE',5560);
+define('GL_BASIC_SALARY',5410);
+
 class payroll_app extends application
 {
         function payroll_app()
