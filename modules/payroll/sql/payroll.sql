@@ -311,3 +311,20 @@ CREATE TABLE IF NOT EXISTS `0_visa` (
 
 ALTER TABLE `0_gl_trans` ADD `to_the_order_of` VARCHAR(225) NULL , ADD `payslip_no` INT(11) NOT NULL DEFAULT '0' ;
 ALTER TABLE `0_gl_trans` ADD `from_date` DATE NOT NULL , ADD `to_date` DATE NOT NULL ;
+
+
+--
+-- Table structure for table `0_paylsip_details`
+--
+
+CREATE TABLE IF NOT EXISTS `0_paylsip_details` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `payslip_no` int(11) NOT NULL,
+  `to_the_order_of` varchar(255) NOT NULL,
+  `from_date` date NOT NULL,
+  `to_date` date NOT NULL,
+  `leaves` int(11) NOT NULL,
+  `deductable_leaves` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+

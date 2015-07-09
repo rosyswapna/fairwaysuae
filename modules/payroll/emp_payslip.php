@@ -133,19 +133,50 @@ function create_cart($type=0, $trans_no=0)
 	$_POST['ref'] = $cart->reference;
 	$_POST['date_'] = $cart->tran_date;
 
+	$_POST['from_date'] = '';
+	$_POST['from_date'] = '';
+	$_POST['leaves'] = '';
+	$_POST['deductableleaves'] = '';
+
 	$_SESSION['journal_items'] = &$cart;
 }
 
 
 //-----------------------------------------------------------------------------------------------
 
-if(isset($_POST['GeneratePayslip'])){
+function validate_payslip_generation()
+{
 	if (!$_POST['person_id'])
 	{
-		display_error(_("Select Employee"));
+		display_error(_("Employee not selected"));
 		set_focus('person_id');
 		return false;
 	} 
+	
+	if (!is_date($_POST['from_date'])) {
+		display_error(_("The entered date is invalid."));
+		set_focus('from_date');
+		return false;
+	}
+
+	if (!is_date($_POST['to_date'])) {
+		display_error(_("The entered date is invalid."));
+		set_focus('to_date');
+		return false;
+	}
+
+	if(date_diff2($_POST['to_date'], $_POST['from_date'], "d") > 30){
+		display_error(_("Payroll Period Exeeds 30 days."));
+		set_focus('to_date');
+		return false;
+	}
+	
+
+
+	return true;
+}
+
+if(isset($_POST['GeneratePayslip']) && validate_payslip_generation()){
 
 	generate_gl_items($_SESSION['journal_items']);
 	
@@ -234,6 +265,7 @@ if (isset($_POST['Process']))
 //clear gl items if cancel payslip or employee not set
 if (isset($_POST['CancelOrder']) || !$_POST['person_id']){
 	$_SESSION['journal_items']->clear_items();
+	$_POST['from_date'] = $_POST['to_date'] =  $_POST['leaves'] = $_POST['deductableleaves'] ='';
 	$Ajax->activate('_page_body');
 }
 

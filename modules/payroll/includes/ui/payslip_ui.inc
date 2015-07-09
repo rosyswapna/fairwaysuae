@@ -55,8 +55,9 @@ function display_payslip_header(&$Order)
 		
 
 	if (list_updated('person_id')) {
-		//get employee salary structure----------------====================
+
 		//generate_gl_items($Order,get_post('person_id'));
+		$Order->clear_items();
 	}
 	
 	end_outer_table(1);
@@ -102,6 +103,13 @@ function generate_gl_items($Order){
 
 	//leave calculation
 	$deductableleaves = input_num('deductableleaves',0);
+	$payroll_days = date_diff2($_POST['to_date'], $_POST['from_date'], "d");
+	if($payroll_days < 30){
+		$deductableleaves += 30-$payroll_days;
+		$_POST['deductableleaves'] = $deductableleaves;
+		
+	}
+	
 	$leave_deduct_amount = $salary_amount/30*$deductableleaves;
 	if($leave_deduct_amount != 0){
 		$Order->add_gl_item(GL_DEDUCT_LEAVE, 0,0,-$leave_deduct_amount, '');

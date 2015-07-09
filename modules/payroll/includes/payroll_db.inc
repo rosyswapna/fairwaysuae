@@ -15,11 +15,13 @@ include_once($path_to_root."/modules/payroll/includes/db/paytype_db.inc");
 include_once($path_to_root."/modules/payroll/includes/db/salary_structure_db.inc");
 include_once($path_to_root."/modules/payroll/includes/db/taxes_db.inc");
 include_once($path_to_root."/modules/payroll/includes/db/payroll_db_trans.inc");
-
+include_once($path_to_root."/modules/payroll/includes/db/payslip_details_db.inc");
 
 //write payslip and payment advice
 function write_payslip(&$cart, $reverse, $use_transaction=true)
 {
+
+	
 	global $Refs;
 
 	$date_ = $cart->tran_date;
