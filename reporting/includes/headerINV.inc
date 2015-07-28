@@ -153,17 +153,25 @@
 		
 		$this->Font();
 		$this->row = $adrline;
-		$this->NewLine(3);
+		$this->NewLine(1);
 		$this->Text($mcol + 100, _("Date"));
 		$this->Text($mcol + 180, sql2date($this->formData['document_date']));
 		
-		/*$this->NewLine();
-		$this->Text($mcol + 100, _("Time"));
-		//$this->Text($mcol + 180, ($this->now()));*/
+		
 
 		$this->NewLine();
 		$this->Text($mcol + 100, $this->formData['document_name']);
 		$this->Text($mcol + 180, $this->formData['document_number']);
+		
+		$this->NewLine();
+		$this->Text($mcol + 100, _("System User"));
+		$this->Text($mcol + 180, ($_SESSION["wa_current_user"]->username));
+		
+		$this->NewLine();
+		$this->Text($mcol + 100, _("Print Time"));
+		$this->Text($mcol + 180, (Now()));
+		
+		
 
 		if ($this->pageNumber > 1)
 			$this->Text($this->endLine - 35, _("Page") . ' ' . $this->pageNumber);
