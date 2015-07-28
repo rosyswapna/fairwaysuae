@@ -124,12 +124,12 @@ function generate_gl_items($Order){
 	
 		while($myrow1 = db_fetch($expences)){
 			
-			$Order->add_gl_item($myrow1['account'], 0,0,$myrow1['amount'], '');
+			$Order->add_gl_item($myrow1['account'], 0,0,-$myrow1['amount'], '');
 			$amount=abs($myrow1['amount']);
 			if($myrow1['type'] == ST_BANKDEPOSIT){
-				$totalCredit +=$amount;
-			}else{
 				$totalDebit += $amount;
+			}else{
+				$totalCredit +=$amount;
 			}
 			
 		}
@@ -341,7 +341,7 @@ function display_gl_items($title, &$order)
 	{
 		$colspan = ($dim == 2 ? "4" : ($dim == 1 ? "3" : "2"));
 		start_row();
-		label_cell(_("Total"), "align=right colspan=" . $colspan);
+		label_cell(_("Total Salary"), "align=right colspan=" . $colspan);
 		amount_cell($order->gl_items_total_debit());
 		amount_cell(abs($order->gl_items_total_credit()));
 		label_cell('', "colspan=3");

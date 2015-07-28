@@ -52,57 +52,54 @@ function print_payslip_report()
 	
 	$aligns = array('left', 'left', 'left',	'left');
 	
-	$rep = new FrontReport(_('PAYSLIP REPORT'), "PaySlip Report", user_pagesize(), 9, $orientation);
-	$rep->NewLine(1.5);
+	$rep = new FrontReport(_('PAYSLIP REPORT'), "PaySlip Report", user_pagesize(),9, $orientation);
+
 	
 	if ($orientation == 'L')
 		recalculate_cols($cols);
 	
 
 	$dec = user_price_dec();
-	$rep->SetHeaderType(null);
+	//$rep->SetHeaderType(null);
 	$rep->Font();
 	$rep->Info($params,$cols, $headers, $aligns);
 	$rep->NewPage();
+	
+	$rep->NewLine(1);
 	$iline1 = $rep->row;
-	$rep->NewLine(1.5);
-	$rep->Line($rep->row);
+	//$rep->Line($iline1);
 	$iline2 = $iline1 - 4 * $rep->lineHeight;
+	$iline3 = $iline2 - 1 * $rep->lineHeight;
+	$iline4 = $iline3 - 1.5 * $rep->lineHeight;
 	
-	
+	$rep->Line($iline3);
+	$rep->Line($iline4);
+
 	$result = get_payslip_list($type_no,$payslip_no);
-	$rep->Font('b');
-	$rep->TextWrap($leftmargin,$rep->row, $rep->pageWidth - $rep->rightMargin - $rightmargin - 20, $rep->title, 'center');
-	$rep->NewLine(3);
 	
 	$rep->TextCol(0, 2,_("Employee : ").$emp['emp_first_name']." ".$emp['emp_last_name']);
 	$rep->TextCol(2,3,_("Payslip Id :").$slip['payslip_no']);
-	$rep->NewLine();
+	$rep->NewLine(1.1);
 	$rep->TextCol(0,2,_("Employee Code : ").$emp['emp_id']);
 	$rep->TextCol(2,3,_("Payslip Reference :").$slip['memo']);
-	$rep->NewLine();
+	$rep->NewLine(1.1);
 	$rep->TextCol(0,2,_("Payslip Generated Date :").sql2date($slip['generated_date']));
 	$rep->TextCol(2,3,_("To The Order Of :").$slip['to_the_order_of']);
-	$rep->NewLine();
+	$rep->NewLine(1.1);
 	$rep->TextCol(0,2,_("Payslip From Date :").sql2date($slip['from_date']));
 	$rep->TextCol(2,3,_("Total Leaves :").$slip['leaves']);
-	$rep->NewLine();
+	$rep->NewLine(1.1);
 	$rep->TextCol(0,2,_("Payslip To Date :").sql2date($slip['to_date']));
 	$rep->TextCol(2,3,_("Deductable Leaves :").$slip['deductable_leaves']);
 
-	$rep->NewLine(5);
-	$rep->Font('');
-	$rep->Line($rep->row);
-	
-		$rep->Font('b');
-		$rep->NewLine(1.2);
-		$rep->TextCol(0, 1,'Account');
-		$rep->TextCol(1, 2,'Payrules');
-		$rep->TextCol(2, 3,'Credits');
-		$rep->TextCol(3, 4,'Debit');
-		$rep->NewLine(1.2);
-		$rep->Line($rep->row);
-		$rep->Font('');
+	$rep->Font('b');
+	$rep->row = $iline4 + $rep->lineHeight-6;
+	$rep->TextCol(0, 1,'Account');
+	$rep->TextCol(1, 2,'Payrules');
+	$rep->TextCol(2, 3,'Debit');
+	$rep->TextCol(3, 4,'Credit');
+	$rep->Font();
+	$total = 0;
 	$rep->NewLine();
 	while ($myrow=db_fetch($result))
 	{
@@ -110,12 +107,26 @@ function print_payslip_report()
 		$rep->NewLine(1.2);
 		$rep->TextCol(0, 1,$myrow['account_code']);
 		$rep->TextCol(1, 2,$myrow['account_name']);
-		$rep->TextCol(2, 3,number_format2($myrow['credit'],$dec));
-		$rep->TextCol(3, 4,number_format2($myrow['debit'],$dec));
+		$rep->TextCol(2, 3,number_format2($myrow['debit'],$dec));
+		$rep->TextCol(3, 4,number_format2($myrow['credit'],$dec));
+
+		$total += $myrow['debit'];
 		
 	}
 	$rep->NewLine();
 	$rep->Line($rep->row);
+	$rep->NewLine();
+	$rep->Font('b');
+	$rep->TextCol(2, 3,_("Total Salary"));
+	$rep->TextCol(3, 4,number_format2($total,$dec));
+	$rep->Font();
+
+	$rep->NewLine(4);
+
+	
+	$rep->TextCol(0, 3,_("Authorised Signature"));
+	$rep->NewLine();
+	$rep->TextCol(0, 3,_("For ,").$rep->company['coy_name']);
 	$rep->End();
 }
 
