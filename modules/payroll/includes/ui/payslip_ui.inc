@@ -103,7 +103,8 @@ function generate_gl_items($Order){
 
 	//leave calculation
 	$deductableleaves = input_num('deductableleaves',0);
-	$payroll_days = date_diff2($_POST['to_date'], $_POST['from_date'], "d");
+	$payroll_days = 1;
+	$payroll_days += date_diff2($_POST['to_date'], $_POST['from_date'], "d");
 	if($payroll_days < 30){
 		$deductableleaves += 30-$payroll_days;
 		$_POST['deductableleaves'] = $deductableleaves;
