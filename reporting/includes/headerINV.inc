@@ -31,7 +31,7 @@
 		$iline4 = $iline3 - 1.5 * $this->lineHeight;
 		$iline5 = $iline4 - 3 * $this->lineHeight;
 		$iline6 = $iline5 - 1.5 * $this->lineHeight;
-		$iline7 = $lower;
+		$iline7 = $lower + 13;
 		$right = $this->pageWidth - $this->rightMargin;
 		$width = ($right - $this->leftMargin) / 5;
 		$icol = $this->pageWidth / 2;
@@ -64,8 +64,8 @@
 		}
 		$this->LineTo($right, $iline2 ,$right, $iline4);
 		$this->LineTo($this->leftMargin, $iline5 ,$this->leftMargin, $iline7);
-		$this->LineTo($this->cols[$cols - 7] - 4, $iline5 ,$this->cols[$cols - 7] - 4, $iline7);
-		$this->LineTo($this->cols[$cols - 5] - 4, $iline5 ,$this->cols[$cols - 5] - 4, $iline7);
+		$this->LineTo($this->cols[$cols - 6] - 1, $iline5 ,$this->cols[$cols - 6] - 1, $iline7);
+		$this->LineTo($this->cols[$cols - 4] - 4, $iline5 ,$this->cols[$cols - 4] - 4, $iline7);
 		$this->LineTo($this->cols[$cols - 1] - 8, $iline5 ,$this->cols[$cols - 1] - 8, $iline7);
 		$this->LineTo($right, $iline5 ,$right, $iline7);
 
@@ -156,6 +156,10 @@
 		$this->NewLine(3);
 		$this->Text($mcol + 100, _("Date"));
 		$this->Text($mcol + 180, sql2date($this->formData['document_date']));
+		
+		/*$this->NewLine();
+		$this->Text($mcol + 100, _("Time"));
+		//$this->Text($mcol + 180, ($this->now()));*/
 
 		$this->NewLine();
 		$this->Text($mcol + 100, $this->formData['document_name']);
