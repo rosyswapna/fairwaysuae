@@ -108,6 +108,8 @@
 
 		case ST_SALESINVOICE:
 			//$this->title = _("SALES-CASH");
+			$this->headers = array(_("Sl No"),_("Item Code"), _("Item Description"), _("Quantity"),
+		_("Unit"), _("Price"),  _("Total"));
 			$this->formData['document_name'] =_("Invoice No.");
 			$this->formData['domicile'] = $this->company['domicile'];
 			$Footer[0] = _("Please quote Invoice no. when paying. All amounts stated in"). " - " . $this->formData['curr_code'];

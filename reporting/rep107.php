@@ -55,7 +55,7 @@ function print_invoices()
 	$from = min($fno[0], $tno[0]);
 	$to = max($fno[0], $tno[0]);
 
-	$cols = array(2, 30, 120, 300, 340, 380, 420, 480);
+	$cols = array(2, 30, 120, 280, 340, 380, 450);
 
 	// $headers in doctext.inc
 	$aligns = array('center', 'left', 'left',	'left', 'left', 'left', 'left', 'right');
@@ -117,10 +117,12 @@ function print_invoices()
 				if ($myrow2["quantity"] == 0)
 					continue;
 
-				$Net = round2($sign * ((1 - $myrow2["discount_percent"]) * $myrow2["unit_price"] * $myrow2["quantity"]),
+				//$Net = round2($sign * ((1 - $myrow2["discount_percent"]) * $myrow2["unit_price"] * $myrow2["quantity"]),
+				$Net = round2($sign * (  $myrow2["unit_price"] * $myrow2["quantity"]),
+				
 				   user_price_dec());
 				$SubTotal += $Net;
-	    		$DisplayPrice = number_format2($myrow2["unit_price"],$dec);
+	    	$DisplayPrice = number_format2($myrow2["unit_price"],$dec);
 			$DisplayDiscAmt = number_format2($myrow2["discount_amount"],$dec);
 			$total_discount+=$DisplayDiscAmt;
 	    		$DisplayQty = number_format2($sign*$myrow2["quantity"],get_qty_dec($myrow2['stock_id']));
@@ -142,9 +144,9 @@ function print_invoices()
 					$rep->TextCol(4, 5,	$myrow2['units'], -2);
 					$rep->TextCol(5, 6,	$DisplayPrice, -2);
 					//$rep->TextCol(5, 6,	$DisplayDiscount, -2);
-					$rep->TextCol(6, 7,	$DisplayDiscAmt, -2);
+					//$rep->TextCol(6, 7,	$DisplayDiscAmt, -2);
 					
-					$rep->TextCol(7, 8,	$DisplayNet, -2);
+					$rep->TextCol(6, 8,	$DisplayNet, -2);
 				}	
 				$slno++;
 				$rep->row = $newrow;
@@ -212,8 +214,8 @@ function print_invoices()
 			$rep->row = $rep->bottomMargin + ($calc * $rep->lineHeight);
 			foreach($totals as $label=>$val)
 			{$rep->NewLine();
-				$rep->TextCol(4, 7,$label, -2);
-				$rep->TextCol(7, 8,	$val, -2);
+				$rep->TextCol(4, 7,$label, -1);
+				$rep->TextCol(6, 8,	$val, -2);
 			}
 			
 			
@@ -256,22 +258,24 @@ function print_invoices()
     			else
     			{
 					$rep->TextCol(4, 7, $tax_type_name, -2);
-					$rep->TextCol(7, 8,	$DisplayTax, -2);
+					$rep->TextCol(6, 8,	$DisplayTax, -2);
 				}
 				$rep->NewLine();
     		}
 		
-    		$rep->NewLine(2);
+    		$rep->NewLine(1);
 			$billing_total=$myrow["ov_freight_charge"] + $myrow["ov_insurance"] + $myrow["ov_packing_charge"] + $myrow["ov_duties"] + $myrow["ov_service_charge"] + $myrow["ov_commission"];
 			$DisplayTotal = number_format2($sign*($myrow["ov_freight"] + $myrow["ov_gst"] +
 				$myrow["ov_amount"]+$myrow["ov_freight_tax"]+$billing_total),$dec);
 				
 			
 				
-			$rep->Font('bold');
-			$rep->TextCol(4, 7, _("TOTAL INVOICE"), - 2);
-			$rep->TextCol(7, 8, $DisplayTotal, -2);
+			$rep->Font('B');
+			$rep->fontSize += 2;
+			$rep->TextCol(4, 6, _("TOTAL INVOICE"), -2);
+			$rep->TextCol(6, 8, $DisplayTotal, -2);
 			$rep->Font();
+			$rep->fontSize -= 2;
 
 			
 			
