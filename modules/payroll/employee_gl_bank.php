@@ -37,11 +37,11 @@ if ($use_date_picker)
 	$js .= get_js_date_picker();
 
 if (isset($_GET['EmployeeExpences'])) {
-	$_SESSION['page_title'] = _($help_context = "Employee Bank Account Payment Entry");
-	create_cart(ST_BANKPAYMENT, 0);
-} else if(isset($_GET['EmployeeDeposit'])) {
-	$_SESSION['page_title'] = _($help_context = "Employee Bank Account Deposit Entry");
+	$_SESSION['page_title'] = _($help_context = "Employee Expense");
 	create_cart(ST_BANKDEPOSIT, 0);
+} else if(isset($_GET['EmployeeDeposit'])) {
+	$_SESSION['page_title'] = _($help_context = "Employee Receipt");
+	create_cart(ST_BANKPAYMENT, 0);
 } else if(isset($_GET['ModifyPayment'])) {
 	$_SESSION['page_title'] = _($help_context = "Modify Bank Account Entry")." #".$_GET['trans_no'];
 	create_cart(ST_BANKPAYMENT, $_GET['trans_no']);
