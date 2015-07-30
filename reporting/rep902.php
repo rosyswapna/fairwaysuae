@@ -141,12 +141,12 @@ function print_purchase_report()
 	$orientation = ($orientation ? 'L' : 'P');
 	
 
-	$cols = array(2, 40, 130, 230,	330,  390, 460,510);
+	$cols = array(2, 40, 130, 190,	380,  450, 500);
 
 	$headers = array(_('Id'), _('Reference'), _('Date'), _('Supplier '), _('Currency'), _('Debit'));
 
 	
-	$aligns = array('left',	'left',	'left',	'left',	'right', 'right', 'right', 'right');
+	$aligns = array('left',	'left',	'left',	'left',	'left', 'right', 'right', 'right');
 
     $params =   array('');
 
