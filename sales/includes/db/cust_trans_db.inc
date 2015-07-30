@@ -327,7 +327,7 @@ function get_sql_for_customer_inquiry()
 			+ trans.ov_service_charge + trans.ov_commission
 			)	AS TotalAmount ,"; 
    	if ($_POST['filterType'] != ALL_TEXT)
-		$sql .= "@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freight_tax + trans.ov_discount + trans.ov_freight_charge + trans.ov_insurance + trans.ov_packing_charge + trans.ov_duties + trans.ov_service_charge + trans.ov_commission) AS Rb, ";
+		$sql .= "@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freight_tax + trans.ov_discount + trans.ov_freight_charge + trans.ov_insurance + trans.ov_packing_charge + trans.ov_duties + trans.ov_service_charge + trans.ov_commission)  Rb, ";
 
 //	else
 //		$sql .= "IF(trans.type=".ST_CUSTDELIVERY.",'', IF(trans.type=".ST_SALESINVOICE." OR trans.type=".ST_BANKPAYMENT.",@bal := @bal+
@@ -337,7 +337,7 @@ function get_sql_for_customer_inquiry()
 		((trans.type = ".ST_SALESINVOICE.")
 			AND trans.due_date < '" . date2sql(Today()) . "') AS OverDue ,
 		Sum(line.quantity-line.qty_done) AS Outstanding
-		FROM "
+		FROM (SELECT @bal:=0) v,"
 			.TB_PREF."debtor_trans as trans
 			LEFT JOIN ".TB_PREF."debtor_trans_details as line
 				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,"
@@ -386,7 +386,7 @@ function get_sql_for_customer_inquiry()
     	}
    	}
 	$sql .= " GROUP BY trans.trans_no, trans.type";
-display_notification($sql);
+	//	display_notification($sql);
    	return $sql;
 }
 
