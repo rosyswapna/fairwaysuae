@@ -296,6 +296,17 @@ function post_void_customer_trans($type, $type_no)
 
 function get_sql_for_customer_inquiry()
 {
+	if(isset($_POST['PARAM_0']))
+	$_POST['TransAfterDate']=$_POST['PARAM_0'];
+	
+	if(isset($_POST['PARAM_1']))
+	$_POST['TransToDate']=$_POST['PARAM_1'];
+	
+	if(isset($_POST['PARAM_2']))
+	$_POST['filterType']=$_POST['PARAM_2'];
+	
+	
+
     $date_after = date2sql($_POST['TransAfterDate']);
     $date_to = date2sql($_POST['TransToDate']);
 
@@ -314,9 +325,9 @@ function get_sql_for_customer_inquiry()
 			+ trans.ov_freight_charge + trans.ov_insurance
 			+ trans.ov_packing_charge + trans.ov_duties 
 			+ trans.ov_service_charge + trans.ov_commission
-			)	AS TotalAmount, "; 
+			)	AS TotalAmount ,"; 
    	if ($_POST['filterType'] != ALL_TEXT)
-		$sql .= "@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freight_tax + trans.ov_discount + trans.ov_freight_charge + trans.ov_insurance + trans.ov_packing_charge + trans.ov_duties + trans.ov_service_charge + trans.ov_commission), ";
+		$sql .= "@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freight_tax + trans.ov_discount + trans.ov_freight_charge + trans.ov_insurance + trans.ov_packing_charge + trans.ov_duties + trans.ov_service_charge + trans.ov_commission) AS Rb, ";
 
 //	else
 //		$sql .= "IF(trans.type=".ST_CUSTDELIVERY.",'', IF(trans.type=".ST_SALESINVOICE." OR trans.type=".ST_BANKPAYMENT.",@bal := @bal+
@@ -375,7 +386,7 @@ function get_sql_for_customer_inquiry()
     	}
    	}
 	$sql .= " GROUP BY trans.trans_no, trans.type";
-
+display_notification($sql);
    	return $sql;
 }
 

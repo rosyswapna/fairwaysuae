@@ -17728,3 +17728,3177 @@
 [28-Jul-2015 06:47:07 Europe/Paris] 0:admin:gl_db_trans.inc:21: Missing argument 17 for add_gl_trans(), called in C:\wamp\www\fairwaysuae\sales\includes\sales_db.inc on line 57 and defined
 [28-Jul-2015 06:47:07 Europe/Paris] 0:admin:gl_db_trans.inc:21: Missing argument 16 for add_gl_trans(), called in C:\wamp\www\fairwaysuae\sales\includes\sales_db.inc on line 57 and defined
 [28-Jul-2015 06:47:07 Europe/Paris] 0:admin:gl_db_trans.inc:21: Missing argument 17 for add_gl_trans(), called in C:\wamp\www\fairwaysuae\sales\includes\sales_db.inc on line 57 and defined
+[28-Jul-2015 11:14:22 Asia/Dubai] 0::logout.php:50: session_destroy(): Session object destruction failed
+[28-Jul-2015 12:58:31 Asia/Dubai] 0::logout.php:50: session_destroy(): Session object destruction failed
+[28-Jul-2015 12:58:31 Asia/Dubai] 0::logout.php:50: session_destroy(): Session object destruction failed
+[28-Jul-2015 12:58:31 Asia/Dubai] 0::logout.php:50: session_destroy(): Session object destruction failed
+[28-Jul-2015 12:58:31 Asia/Dubai] 0::logout.php:50: session_destroy(): Session object destruction failed
+[28-Jul-2015 12:58:31 Asia/Dubai] 0::logout.php:50: session_destroy(): Session object destruction failed
+[28-Jul-2015 12:58:31 Asia/Dubai] 0::logout.php:50: session_destroy(): Session object destruction failed
+[28-Jul-2015 12:58:33 Asia/Dubai] 0::logout.php:50: session_destroy(): Session object destruction failed
+[28-Jul-2015 13:35:23 Asia/Dubai] 0::logout.php:50: session_destroy(): Session object destruction failed
+[28-Jul-2015 13:35:23 Asia/Dubai] 0::logout.php:50: session_destroy(): Session object destruction failed
+[28-Jul-2015 13:35:23 Asia/Dubai] 0::logout.php:50: session_destroy(): Session object destruction failed
+[28-Jul-2015 13:35:23 Asia/Dubai] 0::logout.php:50: session_destroy(): Session object destruction failed
+[28-Jul-2015 13:35:23 Asia/Dubai] 0::logout.php:50: session_destroy(): Session object destruction failed
+[28-Jul-2015 13:35:23 Asia/Dubai] 0::logout.php:50: session_destroy(): Session object destruction failed
+[28-Jul-2015 13:35:23 Asia/Dubai] 0::logout.php:50: session_destroy(): Session object destruction failed
+[28-Jul-2015 13:35:23 Asia/Dubai] 0::logout.php:50: session_destroy(): Session object destruction failed
+[28-Jul-2015 13:35:26 Asia/Dubai] 0::logout.php:50: session_destroy(): Session object destruction failed
+[28-Jul-2015 13:35:26 Asia/Dubai] 0::logout.php:50: session_destroy(): Session object destruction failed
+[28-Jul-2015 11:50:07 Europe/Paris] 0:admin:rep901.php:22: include_once(../../includes/session.inc): failed to open stream: No such file or directory
+[28-Jul-2015 11:50:07 Europe/Paris] 0:admin:rep901.php:22: include_once(): Failed opening '../../includes/session.inc' for inclusion (include_path='.;C:\php\pear')
+[28-Jul-2015 11:50:07 Europe/Paris] 0:admin:rep901.php:23: include_once(../../includes/date_functions.inc): failed to open stream: No such file or directory
+[28-Jul-2015 11:50:07 Europe/Paris] 0:admin:rep901.php:23: include_once(): Failed opening '../../includes/date_functions.inc' for inclusion (include_path='.;C:\php\pear')
+[28-Jul-2015 11:50:07 Europe/Paris] 0:admin:rep901.php:24: include_once(../../includes/data_checks.inc): failed to open stream: No such file or directory
+[28-Jul-2015 11:50:07 Europe/Paris] 0:admin:rep901.php:24: include_once(): Failed opening '../../includes/data_checks.inc' for inclusion (include_path='.;C:\php\pear')
+[28-Jul-2015 11:50:07 Europe/Paris] 0:admin:rep901.php:25: include_once(../../sales/includes/sales_db.inc): failed to open stream: No such file or directory
+[28-Jul-2015 11:50:07 Europe/Paris] 0:admin:rep901.php:25: include_once(): Failed opening '../../sales/includes/sales_db.inc' for inclusion (include_path='.;C:\php\pear')
+[28-Jul-2015 11:50:07 Europe/Paris] 0:admin:rep901.php:37: include_once(../../reporting/includes/pdf_report.inc): failed to open stream: No such file or directory
+[28-Jul-2015 11:50:07 Europe/Paris] 0:admin:rep901.php:37: include_once(): Failed opening '../../reporting/includes/pdf_report.inc' for inclusion (include_path='.;C:\php\pear')
+[28-Jul-2015 11:50:09 Europe/Paris] 0:admin:rep901.php:22: include_once(../../includes/session.inc): failed to open stream: No such file or directory
+[28-Jul-2015 11:50:09 Europe/Paris] 0:admin:rep901.php:22: include_once(): Failed opening '../../includes/session.inc' for inclusion (include_path='.;C:\php\pear')
+[28-Jul-2015 11:50:09 Europe/Paris] 0:admin:rep901.php:23: include_once(../../includes/date_functions.inc): failed to open stream: No such file or directory
+[28-Jul-2015 11:50:09 Europe/Paris] 0:admin:rep901.php:23: include_once(): Failed opening '../../includes/date_functions.inc' for inclusion (include_path='.;C:\php\pear')
+[28-Jul-2015 11:50:09 Europe/Paris] 0:admin:rep901.php:24: include_once(../../includes/data_checks.inc): failed to open stream: No such file or directory
+[28-Jul-2015 11:50:09 Europe/Paris] 0:admin:rep901.php:24: include_once(): Failed opening '../../includes/data_checks.inc' for inclusion (include_path='.;C:\php\pear')
+[28-Jul-2015 11:50:09 Europe/Paris] 0:admin:rep901.php:25: include_once(../../sales/includes/sales_db.inc): failed to open stream: No such file or directory
+[28-Jul-2015 11:50:09 Europe/Paris] 0:admin:rep901.php:25: include_once(): Failed opening '../../sales/includes/sales_db.inc' for inclusion (include_path='.;C:\php\pear')
+[28-Jul-2015 11:50:09 Europe/Paris] 0:admin:rep901.php:37: include_once(../../reporting/includes/pdf_report.inc): failed to open stream: No such file or directory
+[28-Jul-2015 11:50:09 Europe/Paris] 0:admin:rep901.php:37: include_once(): Failed opening '../../reporting/includes/pdf_report.inc' for inclusion (include_path='.;C:\php\pear')
+[28-Jul-2015 11:50:10 Europe/Paris] 0:admin:rep901.php:22: include_once(../../includes/session.inc): failed to open stream: No such file or directory
+[28-Jul-2015 11:50:10 Europe/Paris] 0:admin:rep901.php:22: include_once(): Failed opening '../../includes/session.inc' for inclusion (include_path='.;C:\php\pear')
+[28-Jul-2015 11:50:10 Europe/Paris] 0:admin:rep901.php:23: include_once(../../includes/date_functions.inc): failed to open stream: No such file or directory
+[28-Jul-2015 11:50:10 Europe/Paris] 0:admin:rep901.php:23: include_once(): Failed opening '../../includes/date_functions.inc' for inclusion (include_path='.;C:\php\pear')
+[28-Jul-2015 11:50:10 Europe/Paris] 0:admin:rep901.php:24: include_once(../../includes/data_checks.inc): failed to open stream: No such file or directory
+[28-Jul-2015 11:50:10 Europe/Paris] 0:admin:rep901.php:24: include_once(): Failed opening '../../includes/data_checks.inc' for inclusion (include_path='.;C:\php\pear')
+[28-Jul-2015 11:50:10 Europe/Paris] 0:admin:rep901.php:25: include_once(../../sales/includes/sales_db.inc): failed to open stream: No such file or directory
+[28-Jul-2015 11:50:10 Europe/Paris] 0:admin:rep901.php:25: include_once(): Failed opening '../../sales/includes/sales_db.inc' for inclusion (include_path='.;C:\php\pear')
+[28-Jul-2015 11:50:10 Europe/Paris] 0:admin:rep901.php:37: include_once(../../reporting/includes/pdf_report.inc): failed to open stream: No such file or directory
+[28-Jul-2015 11:50:10 Europe/Paris] 0:admin:rep901.php:37: include_once(): Failed opening '../../reporting/includes/pdf_report.inc' for inclusion (include_path='.;C:\php\pear')
+[28-Jul-2015 14:38:06 Asia/Dubai] 0:admin:connect_db.inc:98: mysql_fetch_array() expects parameter 1 to be resource, string given
+[28-Jul-2015 14:40:07 Asia/Dubai] 0:admin:connect_db.inc:98: mysql_fetch_array() expects parameter 1 to be resource, string given
+[28-Jul-2015 14:41:30 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\reporting\rep901.php:59:<br>oops<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 16<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_code,
+		(trans.ov_amount + trans.ov_gst + trans.ov_freight 
+			+ trans.ov_freight_tax + trans.ov_discount
+			+ trans.ov_freight_charge + trans.ov_insurance
+			+ trans.ov_packing_charge + trans.ov_duties 
+			+ trans.ov_service_charge + trans.ov_commission
+			)	AS TotalAmount, <br><br><br>
+[28-Jul-2015 14:41:32 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\reporting\rep901.php:59:<br>oops<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 16<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_code,
+		(trans.ov_amount + trans.ov_gst + trans.ov_freight 
+			+ trans.ov_freight_tax + trans.ov_discount
+			+ trans.ov_freight_charge + trans.ov_insurance
+			+ trans.ov_packing_charge + trans.ov_duties 
+			+ trans.ov_service_charge + trans.ov_commission
+			)	AS TotalAmount, <br><br><br>
+[28-Jul-2015 14:42:22 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\reporting\rep901.php:59:<br>No transactions were returned<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 16<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_code,
+		(trans.ov_amount + trans.ov_gst + trans.ov_freight 
+			+ trans.ov_freight_tax + trans.ov_discount
+			+ trans.ov_freight_charge + trans.ov_insurance
+			+ trans.ov_packing_charge + trans.ov_duties 
+			+ trans.ov_service_charge + trans.ov_commission
+			)	AS TotalAmount, <br><br><br>
+[28-Jul-2015 14:42:27 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\reporting\rep901.php:59:<br>No transactions were returned<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 16<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_code,
+		(trans.ov_amount + trans.ov_gst + trans.ov_freight 
+			+ trans.ov_freight_tax + trans.ov_discount
+			+ trans.ov_freight_charge + trans.ov_insurance
+			+ trans.ov_packing_charge + trans.ov_duties 
+			+ trans.ov_service_charge + trans.ov_commission
+			)	AS TotalAmount, <br><br><br>
+[28-Jul-2015 14:44:11 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\reporting\rep901.php:60:<br>No transactions were returned<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 16<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_code,
+		(trans.ov_amount + trans.ov_gst + trans.ov_freight 
+			+ trans.ov_freight_tax + trans.ov_discount
+			+ trans.ov_freight_charge + trans.ov_insurance
+			+ trans.ov_packing_charge + trans.ov_duties 
+			+ trans.ov_service_charge + trans.ov_commission
+			)	AS TotalAmount, <br><br><br>
+[28-Jul-2015 14:44:49 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\reporting\rep901.php:60:<br>No transactions were returned<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 16<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_code,
+		(trans.ov_amount + trans.ov_gst + trans.ov_freight 
+			+ trans.ov_freight_tax + trans.ov_discount
+			+ trans.ov_freight_charge + trans.ov_insurance
+			+ trans.ov_packing_charge + trans.ov_duties 
+			+ trans.ov_service_charge + trans.ov_commission
+			)	AS TotalAmount, <br><br><br>
+[28-Jul-2015 14:44:50 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\reporting\rep901.php:60:<br>No transactions were returned<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 16<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_code,
+		(trans.ov_amount + trans.ov_gst + trans.ov_freight 
+			+ trans.ov_freight_tax + trans.ov_discount
+			+ trans.ov_freight_charge + trans.ov_insurance
+			+ trans.ov_packing_charge + trans.ov_duties 
+			+ trans.ov_service_charge + trans.ov_commission
+			)	AS TotalAmount, <br><br><br>
+[28-Jul-2015 14:45:52 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\reporting\rep901.php:58:<br>No transactions were returned<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 16<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_code,
+		(trans.ov_amount + trans.ov_gst + trans.ov_freight 
+			+ trans.ov_freight_tax + trans.ov_discount
+			+ trans.ov_freight_charge + trans.ov_insurance
+			+ trans.ov_packing_charge + trans.ov_duties 
+			+ trans.ov_service_charge + trans.ov_commission
+			)	AS TotalAmount, <br><br><br>
+[28-Jul-2015 14:45:57 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\reporting\rep901.php:58:<br>No transactions were returned<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 16<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_code,
+		(trans.ov_amount + trans.ov_gst + trans.ov_freight 
+			+ trans.ov_freight_tax + trans.ov_discount
+			+ trans.ov_freight_charge + trans.ov_insurance
+			+ trans.ov_packing_charge + trans.ov_duties 
+			+ trans.ov_service_charge + trans.ov_commission
+			)	AS TotalAmount, <br><br><br>
+[28-Jul-2015 14:52:57 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\reporting\rep901.php:58:<br>No transactions were returned<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 16<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_code,
+		(trans.ov_amount + trans.ov_gst + trans.ov_freight 
+			+ trans.ov_freight_tax + trans.ov_discount
+			+ trans.ov_freight_charge + trans.ov_insurance
+			+ trans.ov_packing_charge + trans.ov_duties 
+			+ trans.ov_service_charge + trans.ov_commission
+			)	AS TotalAmount, <br><br><br>
+[28-Jul-2015 15:01:28 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\reporting\rep901.php:58:<br>No transactions were returned<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 16<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_code,
+		(trans.ov_amount + trans.ov_gst + trans.ov_freight 
+			+ trans.ov_freight_tax + trans.ov_discount
+			+ trans.ov_freight_charge + trans.ov_insurance
+			+ trans.ov_packing_charge + trans.ov_duties 
+			+ trans.ov_service_charge + trans.ov_commission
+			)	AS TotalAmount, <br><br><br>
+[28-Jul-2015 15:01:30 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\reporting\rep901.php:58:<br>No transactions were returned<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 16<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_code,
+		(trans.ov_amount + trans.ov_gst + trans.ov_freight 
+			+ trans.ov_freight_tax + trans.ov_discount
+			+ trans.ov_freight_charge + trans.ov_insurance
+			+ trans.ov_packing_charge + trans.ov_duties 
+			+ trans.ov_service_charge + trans.ov_commission
+			)	AS TotalAmount, <br><br><br>
+[28-Jul-2015 15:01:36 Asia/Dubai] 0::logout.php:50: session_destroy(): Session object destruction failed
+[28-Jul-2015 15:03:21 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\reporting\rep901.php:58:<br>No transactions were returned<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 16<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_code,
+		(trans.ov_amount + trans.ov_gst + trans.ov_freight 
+			+ trans.ov_freight_tax + trans.ov_discount
+			+ trans.ov_freight_charge + trans.ov_insurance
+			+ trans.ov_packing_charge + trans.ov_duties 
+			+ trans.ov_service_charge + trans.ov_commission
+			)	AS TotalAmount, <br><br><br>
+[28-Jul-2015 15:03:39 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\reporting\rep901.php:58:<br>No transactions were returned<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 16<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_code,
+		(trans.ov_amount + trans.ov_gst + trans.ov_freight 
+			+ trans.ov_freight_tax + trans.ov_discount
+			+ trans.ov_freight_charge + trans.ov_insurance
+			+ trans.ov_packing_charge + trans.ov_duties 
+			+ trans.ov_service_charge + trans.ov_commission
+			)	AS TotalAmount, <br><br><br>
+[28-Jul-2015 15:33:01 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\db_pager.inc:188:<br>Error browsing database: SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_codetrans.alloc AS Allocated,
+		((trans.type = 10)
+			AND trans.due_date < '2015-07-28') AS OverDue ,
+		Sum(line.quantity-line.qty_done) AS Outstanding
+	 FROM &TB_PREF&debtor_trans as trans
+			LEFT JOIN &TB_PREF&debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,&TB_PREF&debtors_master as debtor, &TB_PREF&cust_branch as branch
+	  WHERE (debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-06-28'
+			AND trans.tran_date <= '2015-07-28'
+			AND trans.branch_code = branch.branch_code) GROUP BY trans.trans_no, trans.type LIMIT 0, 25<br>error code : 1054<br>error message : Unknown column 'debtor.curr_codetrans.alloc' in 'field list'<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_codetrans.alloc AS Allocated,
+		((trans.type = 10)
+			AND trans.due_date < '2015-07-28') AS OverDue ,
+		Sum(line.quantity-line.qty_done) AS Outstanding
+	 FROM 0_debtor_trans as trans
+			LEFT JOIN 0_debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,0_debtors_master as debtor, 0_cust_branch as branch
+	  WHERE (debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-06-28'
+			AND trans.tran_date <= '2015-07-28'
+			AND trans.branch_code = branch.branch_code) GROUP BY trans.trans_no, trans.type LIMIT 0, 25<br><br><br>
+[28-Jul-2015 15:33:01 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\db_pager.inc:188:<br>Error browsing database: SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_codetrans.alloc AS Allocated,
+		((trans.type = 10)
+			AND trans.due_date < '2015-07-28') AS OverDue ,
+		Sum(line.quantity-line.qty_done) AS Outstanding
+	 FROM &TB_PREF&debtor_trans as trans
+			LEFT JOIN &TB_PREF&debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,&TB_PREF&debtors_master as debtor, &TB_PREF&cust_branch as branch
+	  WHERE (debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-06-28'
+			AND trans.tran_date <= '2015-07-28'
+			AND trans.branch_code = branch.branch_code) GROUP BY trans.trans_no, trans.type LIMIT 0, 25<br>error code : 1054<br>error message : Unknown column 'debtor.curr_codetrans.alloc' in 'field list'<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_codetrans.alloc AS Allocated,
+		((trans.type = 10)
+			AND trans.due_date < '2015-07-28') AS OverDue ,
+		Sum(line.quantity-line.qty_done) AS Outstanding
+	 FROM 0_debtor_trans as trans
+			LEFT JOIN 0_debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,0_debtors_master as debtor, 0_cust_branch as branch
+	  WHERE (debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-06-28'
+			AND trans.tran_date <= '2015-07-28'
+			AND trans.branch_code = branch.branch_code) GROUP BY trans.trans_no, trans.type LIMIT 0, 25<br><br><br>
+[28-Jul-2015 15:33:05 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\db_pager.inc:188:<br>Error browsing database: SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_codetrans.alloc AS Allocated,
+		((trans.type = 10)
+			AND trans.due_date < '2015-07-28') AS OverDue ,
+		Sum(line.quantity-line.qty_done) AS Outstanding
+	 FROM &TB_PREF&debtor_trans as trans
+			LEFT JOIN &TB_PREF&debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,&TB_PREF&debtors_master as debtor, &TB_PREF&cust_branch as branch
+	  WHERE (debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-06-28'
+			AND trans.tran_date <= '2015-07-28'
+			AND trans.branch_code = branch.branch_code) GROUP BY trans.trans_no, trans.type LIMIT 0, 25<br>error code : 1054<br>error message : Unknown column 'debtor.curr_codetrans.alloc' in 'field list'<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_codetrans.alloc AS Allocated,
+		((trans.type = 10)
+			AND trans.due_date < '2015-07-28') AS OverDue ,
+		Sum(line.quantity-line.qty_done) AS Outstanding
+	 FROM 0_debtor_trans as trans
+			LEFT JOIN 0_debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,0_debtors_master as debtor, 0_cust_branch as branch
+	  WHERE (debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-06-28'
+			AND trans.tran_date <= '2015-07-28'
+			AND trans.branch_code = branch.branch_code) GROUP BY trans.trans_no, trans.type LIMIT 0, 25<br><br><br>
+[28-Jul-2015 15:39:16 Asia/Dubai] 0:admin:connect_db.inc:98: mysql_fetch_array() expects parameter 1 to be resource, string given
+[28-Jul-2015 15:42:32 Asia/Dubai] 0:admin:connect_db.inc:98: mysql_fetch_array() expects parameter 1 to be resource, string given
+[28-Jul-2015 15:47:22 Asia/Dubai] 0:admin:connect_db.inc:98: mysql_fetch_array() expects parameter 1 to be resource, string given
+[28-Jul-2015 15:47:58 Asia/Dubai] 0:admin:connect_db.inc:98: mysql_fetch_array() expects parameter 1 to be resource, string given
+[28-Jul-2015 15:50:13 Asia/Dubai] 0:admin:connect_db.inc:98: mysql_fetch_array() expects parameter 1 to be resource, string given
+[28-Jul-2015 15:50:48 Asia/Dubai] 0:admin:connect_db.inc:98: mysql_fetch_array() expects parameter 1 to be resource, string given
+[28-Jul-2015 15:51:35 Asia/Dubai] 0:admin:connect_db.inc:98: mysql_fetch_array() expects parameter 1 to be resource, string given
+[28-Jul-2015 15:53:08 Asia/Dubai] 0:admin:connect_db.inc:98: mysql_fetch_array() expects parameter 1 to be resource, string given
+[28-Jul-2015 16:05:29 Asia/Dubai] 0:admin:connect_db.inc:98: mysql_fetch_array() expects parameter 1 to be resource, string given
+[28-Jul-2015 16:09:11 Asia/Dubai] 0:admin:connect_db.inc:98: mysql_fetch_array() expects parameter 1 to be resource, string given
+[28-Jul-2015 16:19:04 Asia/Dubai] 0:admin:connect_db.inc:98: mysql_fetch_array() expects parameter 1 to be resource, string given
+[28-Jul-2015 16:19:25 Asia/Dubai] 0:admin:connect_db.inc:98: mysql_fetch_array() expects parameter 1 to be resource, string given
+[28-Jul-2015 16:19:52 Asia/Dubai] 0:admin:connect_db.inc:98: mysql_fetch_array() expects parameter 1 to be resource, string given
+[28-Jul-2015 16:41:51 Asia/Dubai] 0:admin:connect_db.inc:98: mysql_fetch_array() expects parameter 1 to be resource, string given
+[28-Jul-2015 16:43:10 Asia/Dubai] 0:admin:connect_db.inc:98: mysql_fetch_array() expects parameter 1 to be resource, string given
+[28-Jul-2015 16:43:11 Asia/Dubai] 0:admin:connect_db.inc:98: mysql_fetch_array() expects parameter 1 to be resource, string given
+[28-Jul-2015 16:43:13 Asia/Dubai] 0:admin:connect_db.inc:98: mysql_fetch_array() expects parameter 1 to be resource, string given
+[28-Jul-2015 16:43:28 Asia/Dubai] 0:admin:connect_db.inc:98: mysql_fetch_array() expects parameter 1 to be resource, string given
+[28-Jul-2015 16:44:56 Asia/Dubai] 0:admin:connect_db.inc:98: mysql_fetch_array() expects parameter 1 to be resource, string given
+[29-Jul-2015 08:04:52 Asia/Dubai] 0:admin:connect_db.inc:98: mysql_fetch_array() expects parameter 1 to be resource, string given
+[29-Jul-2015 08:33:47 Asia/Dubai] 0:admin:connect_db.inc:98: mysql_fetch_array() expects parameter 1 to be resource, string given
+[29-Jul-2015 08:35:19 Asia/Dubai] 0:admin:connect_db.inc:98: mysql_fetch_array() expects parameter 1 to be resource, string given
+[29-Jul-2015 08:36:45 Asia/Dubai] 0:admin:connect_db.inc:98: mysql_fetch_array() expects parameter 1 to be resource, string given
+[29-Jul-2015 08:39:34 Asia/Dubai] 0:admin:connect_db.inc:98: mysql_fetch_array() expects parameter 1 to be resource, string given
+[29-Jul-2015 08:43:00 Asia/Dubai] 0:admin:connect_db.inc:98: mysql_fetch_array() expects parameter 1 to be resource, string given
+[29-Jul-2015 08:44:11 Asia/Dubai] 0:admin:rep901.php:150: Illegal string offset 'reference'
+[29-Jul-2015 08:44:11 Asia/Dubai] 0:admin:connect_db.inc:98: mysql_fetch_array() expects parameter 1 to be resource, string given
+[29-Jul-2015 08:44:49 Asia/Dubai] 0:admin:rep901.php:150: Illegal string offset 'name'
+[29-Jul-2015 08:44:49 Asia/Dubai] 0:admin:connect_db.inc:98: mysql_fetch_array() expects parameter 1 to be resource, string given
+[29-Jul-2015 08:45:36 Asia/Dubai] 0:admin:connect_db.inc:98: mysql_fetch_array() expects parameter 1 to be resource, string given
+[29-Jul-2015 08:46:29 Asia/Dubai] 0:admin:connect_db.inc:98: mysql_fetch_array() expects parameter 1 to be resource, string given
+[29-Jul-2015 08:47:46 Asia/Dubai] 0:admin:connect_db.inc:98: mysql_fetch_array() expects parameter 1 to be resource, string given
+[29-Jul-2015 08:50:53 Asia/Dubai] 0:admin:connect_db.inc:98: mysql_fetch_array() expects parameter 1 to be resource, string given
+[29-Jul-2015 09:00:41 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\db_pager.inc:188:<br>Error browsing database: SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_codetrans.alloc AS Allocated,
+		((trans.type = 10)
+			AND trans.due_date < '2015-07-29') AS OverDue ,
+		Sum(line.quantity-line.qty_done) AS Outstanding
+	 FROM &TB_PREF&debtor_trans as trans
+			LEFT JOIN &TB_PREF&debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,&TB_PREF&debtors_master as debtor, &TB_PREF&cust_branch as branch
+	  WHERE (debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-06-29'
+			AND trans.tran_date <= '2015-07-29'
+			AND trans.branch_code = branch.branch_code AND trans.debtor_no = '17') GROUP BY trans.trans_no, trans.type LIMIT 0, 25<br>error code : 1054<br>error message : Unknown column 'debtor.curr_codetrans.alloc' in 'field list'<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_codetrans.alloc AS Allocated,
+		((trans.type = 10)
+			AND trans.due_date < '2015-07-29') AS OverDue ,
+		Sum(line.quantity-line.qty_done) AS Outstanding
+	 FROM 0_debtor_trans as trans
+			LEFT JOIN 0_debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,0_debtors_master as debtor, 0_cust_branch as branch
+	  WHERE (debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-06-29'
+			AND trans.tran_date <= '2015-07-29'
+			AND trans.branch_code = branch.branch_code AND trans.debtor_no = '17') GROUP BY trans.trans_no, trans.type LIMIT 0, 25<br><br><br>
+[29-Jul-2015 09:00:41 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\db_pager.inc:188:<br>Error browsing database: SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_codetrans.alloc AS Allocated,
+		((trans.type = 10)
+			AND trans.due_date < '2015-07-29') AS OverDue ,
+		Sum(line.quantity-line.qty_done) AS Outstanding
+	 FROM &TB_PREF&debtor_trans as trans
+			LEFT JOIN &TB_PREF&debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,&TB_PREF&debtors_master as debtor, &TB_PREF&cust_branch as branch
+	  WHERE (debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-06-29'
+			AND trans.tran_date <= '2015-07-29'
+			AND trans.branch_code = branch.branch_code AND trans.debtor_no = '17') GROUP BY trans.trans_no, trans.type LIMIT 0, 25<br>error code : 1054<br>error message : Unknown column 'debtor.curr_codetrans.alloc' in 'field list'<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_codetrans.alloc AS Allocated,
+		((trans.type = 10)
+			AND trans.due_date < '2015-07-29') AS OverDue ,
+		Sum(line.quantity-line.qty_done) AS Outstanding
+	 FROM 0_debtor_trans as trans
+			LEFT JOIN 0_debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,0_debtors_master as debtor, 0_cust_branch as branch
+	  WHERE (debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-06-29'
+			AND trans.tran_date <= '2015-07-29'
+			AND trans.branch_code = branch.branch_code AND trans.debtor_no = '17') GROUP BY trans.trans_no, trans.type LIMIT 0, 25<br><br><br>
+[29-Jul-2015 09:00:47 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\db_pager.inc:188:<br>Error browsing database: SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_codetrans.alloc AS Allocated,
+		((trans.type = 10)
+			AND trans.due_date < '2015-07-29') AS OverDue ,
+		Sum(line.quantity-line.qty_done) AS Outstanding
+	 FROM &TB_PREF&debtor_trans as trans
+			LEFT JOIN &TB_PREF&debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,&TB_PREF&debtors_master as debtor, &TB_PREF&cust_branch as branch
+	  WHERE (debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-06-29'
+			AND trans.tran_date <= '2015-07-29'
+			AND trans.branch_code = branch.branch_code AND trans.debtor_no = '17') GROUP BY trans.trans_no, trans.type LIMIT 0, 25<br>error code : 1054<br>error message : Unknown column 'debtor.curr_codetrans.alloc' in 'field list'<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_codetrans.alloc AS Allocated,
+		((trans.type = 10)
+			AND trans.due_date < '2015-07-29') AS OverDue ,
+		Sum(line.quantity-line.qty_done) AS Outstanding
+	 FROM 0_debtor_trans as trans
+			LEFT JOIN 0_debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,0_debtors_master as debtor, 0_cust_branch as branch
+	  WHERE (debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-06-29'
+			AND trans.tran_date <= '2015-07-29'
+			AND trans.branch_code = branch.branch_code AND trans.debtor_no = '17') GROUP BY trans.trans_no, trans.type LIMIT 0, 25<br><br><br>
+[29-Jul-2015 09:00:48 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\db_pager.inc:188:<br>Error browsing database: SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_codetrans.alloc AS Allocated,
+		((trans.type = 10)
+			AND trans.due_date < '2015-07-29') AS OverDue ,
+		Sum(line.quantity-line.qty_done) AS Outstanding
+	 FROM &TB_PREF&debtor_trans as trans
+			LEFT JOIN &TB_PREF&debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,&TB_PREF&debtors_master as debtor, &TB_PREF&cust_branch as branch
+	  WHERE (debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-06-29'
+			AND trans.tran_date <= '2015-07-29'
+			AND trans.branch_code = branch.branch_code AND trans.debtor_no = '17') GROUP BY trans.trans_no, trans.type LIMIT 0, 25<br>error code : 1054<br>error message : Unknown column 'debtor.curr_codetrans.alloc' in 'field list'<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_codetrans.alloc AS Allocated,
+		((trans.type = 10)
+			AND trans.due_date < '2015-07-29') AS OverDue ,
+		Sum(line.quantity-line.qty_done) AS Outstanding
+	 FROM 0_debtor_trans as trans
+			LEFT JOIN 0_debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,0_debtors_master as debtor, 0_cust_branch as branch
+	  WHERE (debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-06-29'
+			AND trans.tran_date <= '2015-07-29'
+			AND trans.branch_code = branch.branch_code AND trans.debtor_no = '17') GROUP BY trans.trans_no, trans.type LIMIT 0, 25<br><br><br>
+[29-Jul-2015 09:00:58 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\db_pager.inc:188:<br>Error browsing database: SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_code@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freight_tax + trans.ov_discount + trans.ov_freight_charge + trans.ov_insurance + trans.ov_packing_charge + trans.ov_duties + trans.ov_service_charge + trans.ov_commission), trans.alloc AS Allocated,
+		((trans.type = 10)
+			AND trans.due_date < '2015-07-29') AS OverDue ,
+		Sum(line.quantity-line.qty_done) AS Outstanding
+	 FROM &TB_PREF&debtor_trans as trans
+			LEFT JOIN &TB_PREF&debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,&TB_PREF&debtors_master as debtor, &TB_PREF&cust_branch as branch
+	  WHERE (debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-06-29'
+			AND trans.tran_date <= '2015-07-29'
+			AND trans.branch_code = branch.branch_code AND (trans.type = 10) ) GROUP BY trans.trans_no, trans.type LIMIT 0, 25<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freig' at line 10<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_code@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freight_tax + trans.ov_discount + trans.ov_freight_charge + trans.ov_insurance + trans.ov_packing_charge + trans.ov_duties + trans.ov_service_charge + trans.ov_commission), trans.alloc AS Allocated,
+		((trans.type = 10)
+			AND trans.due_date < '2015-07-29') AS OverDue ,
+		Sum(line.quantity-line.qty_done) AS Outstanding
+	 FROM 0_debtor_trans as trans
+			LEFT JOIN 0_debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,0_debtors_master as debtor, 0_cust_branch as branch
+	  WHERE (debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-06-29'
+			AND trans.tran_date <= '2015-07-29'
+			AND trans.branch_code = branch.branch_code AND (trans.type = 10) ) GROUP BY trans.trans_no, trans.type LIMIT 0, 25<br><br><br>
+[29-Jul-2015 09:01:00 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\db_pager.inc:188:<br>Error browsing database: SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_code@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freight_tax + trans.ov_discount + trans.ov_freight_charge + trans.ov_insurance + trans.ov_packing_charge + trans.ov_duties + trans.ov_service_charge + trans.ov_commission), trans.alloc AS Allocated,
+		((trans.type = 10)
+			AND trans.due_date < '2015-07-29') AS OverDue ,
+		Sum(line.quantity-line.qty_done) AS Outstanding
+	 FROM &TB_PREF&debtor_trans as trans
+			LEFT JOIN &TB_PREF&debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,&TB_PREF&debtors_master as debtor, &TB_PREF&cust_branch as branch
+	  WHERE (debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-06-29'
+			AND trans.tran_date <= '2015-07-29'
+			AND trans.branch_code = branch.branch_code AND (trans.type = 10) ) GROUP BY trans.trans_no, trans.type LIMIT 0, 25<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freig' at line 10<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_code@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freight_tax + trans.ov_discount + trans.ov_freight_charge + trans.ov_insurance + trans.ov_packing_charge + trans.ov_duties + trans.ov_service_charge + trans.ov_commission), trans.alloc AS Allocated,
+		((trans.type = 10)
+			AND trans.due_date < '2015-07-29') AS OverDue ,
+		Sum(line.quantity-line.qty_done) AS Outstanding
+	 FROM 0_debtor_trans as trans
+			LEFT JOIN 0_debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,0_debtors_master as debtor, 0_cust_branch as branch
+	  WHERE (debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-06-29'
+			AND trans.tran_date <= '2015-07-29'
+			AND trans.branch_code = branch.branch_code AND (trans.type = 10) ) GROUP BY trans.trans_no, trans.type LIMIT 0, 25<br><br><br>
+[29-Jul-2015 09:01:09 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\db_pager.inc:188:<br>Error browsing database: SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_code@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freight_tax + trans.ov_discount + trans.ov_freight_charge + trans.ov_insurance + trans.ov_packing_charge + trans.ov_duties + trans.ov_service_charge + trans.ov_commission), trans.alloc AS Allocated,
+		((trans.type = 10)
+			AND trans.due_date < '2015-07-29') AS OverDue ,
+		Sum(line.quantity-line.qty_done) AS Outstanding
+	 FROM &TB_PREF&debtor_trans as trans
+			LEFT JOIN &TB_PREF&debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,&TB_PREF&debtors_master as debtor, &TB_PREF&cust_branch as branch
+	  WHERE (debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-06-01'
+			AND trans.tran_date <= '2015-07-29'
+			AND trans.branch_code = branch.branch_code AND (trans.type = 10) ) GROUP BY trans.trans_no, trans.type LIMIT 0, 25<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freig' at line 10<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_code@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freight_tax + trans.ov_discount + trans.ov_freight_charge + trans.ov_insurance + trans.ov_packing_charge + trans.ov_duties + trans.ov_service_charge + trans.ov_commission), trans.alloc AS Allocated,
+		((trans.type = 10)
+			AND trans.due_date < '2015-07-29') AS OverDue ,
+		Sum(line.quantity-line.qty_done) AS Outstanding
+	 FROM 0_debtor_trans as trans
+			LEFT JOIN 0_debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,0_debtors_master as debtor, 0_cust_branch as branch
+	  WHERE (debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-06-01'
+			AND trans.tran_date <= '2015-07-29'
+			AND trans.branch_code = branch.branch_code AND (trans.type = 10) ) GROUP BY trans.trans_no, trans.type LIMIT 0, 25<br><br><br>
+[29-Jul-2015 09:01:15 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\db_pager.inc:188:<br>Error browsing database: SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_codetrans.alloc AS Allocated,
+		((trans.type = 10)
+			AND trans.due_date < '2015-07-29') AS OverDue ,
+		Sum(line.quantity-line.qty_done) AS Outstanding
+	 FROM &TB_PREF&debtor_trans as trans
+			LEFT JOIN &TB_PREF&debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,&TB_PREF&debtors_master as debtor, &TB_PREF&cust_branch as branch
+	  WHERE (debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-06-29'
+			AND trans.tran_date <= '2015-07-29'
+			AND trans.branch_code = branch.branch_code) GROUP BY trans.trans_no, trans.type LIMIT 0, 25<br>error code : 1054<br>error message : Unknown column 'debtor.curr_codetrans.alloc' in 'field list'<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_codetrans.alloc AS Allocated,
+		((trans.type = 10)
+			AND trans.due_date < '2015-07-29') AS OverDue ,
+		Sum(line.quantity-line.qty_done) AS Outstanding
+	 FROM 0_debtor_trans as trans
+			LEFT JOIN 0_debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,0_debtors_master as debtor, 0_cust_branch as branch
+	  WHERE (debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-06-29'
+			AND trans.tran_date <= '2015-07-29'
+			AND trans.branch_code = branch.branch_code) GROUP BY trans.trans_no, trans.type LIMIT 0, 25<br><br><br>
+[29-Jul-2015 09:01:15 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\db_pager.inc:188:<br>Error browsing database: SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_codetrans.alloc AS Allocated,
+		((trans.type = 10)
+			AND trans.due_date < '2015-07-29') AS OverDue ,
+		Sum(line.quantity-line.qty_done) AS Outstanding
+	 FROM &TB_PREF&debtor_trans as trans
+			LEFT JOIN &TB_PREF&debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,&TB_PREF&debtors_master as debtor, &TB_PREF&cust_branch as branch
+	  WHERE (debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-06-29'
+			AND trans.tran_date <= '2015-07-29'
+			AND trans.branch_code = branch.branch_code) GROUP BY trans.trans_no, trans.type LIMIT 0, 25<br>error code : 1054<br>error message : Unknown column 'debtor.curr_codetrans.alloc' in 'field list'<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_codetrans.alloc AS Allocated,
+		((trans.type = 10)
+			AND trans.due_date < '2015-07-29') AS OverDue ,
+		Sum(line.quantity-line.qty_done) AS Outstanding
+	 FROM 0_debtor_trans as trans
+			LEFT JOIN 0_debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,0_debtors_master as debtor, 0_cust_branch as branch
+	  WHERE (debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-06-29'
+			AND trans.tran_date <= '2015-07-29'
+			AND trans.branch_code = branch.branch_code) GROUP BY trans.trans_no, trans.type LIMIT 0, 25<br><br><br>
+[29-Jul-2015 09:01:50 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\db_pager.inc:188:<br>Error browsing database: SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_codetrans.alloc AS Allocated,
+		((trans.type = 10)
+			AND trans.due_date < '2015-07-29') AS OverDue ,
+		Sum(line.quantity-line.qty_done) AS Outstanding
+	 FROM &TB_PREF&debtor_trans as trans
+			LEFT JOIN &TB_PREF&debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,&TB_PREF&debtors_master as debtor, &TB_PREF&cust_branch as branch
+	  WHERE (debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-06-29'
+			AND trans.tran_date <= '2015-07-29'
+			AND trans.branch_code = branch.branch_code) GROUP BY trans.trans_no, trans.type LIMIT 0, 25<br>error code : 1054<br>error message : Unknown column 'debtor.curr_codetrans.alloc' in 'field list'<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_codetrans.alloc AS Allocated,
+		((trans.type = 10)
+			AND trans.due_date < '2015-07-29') AS OverDue ,
+		Sum(line.quantity-line.qty_done) AS Outstanding
+	 FROM 0_debtor_trans as trans
+			LEFT JOIN 0_debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,0_debtors_master as debtor, 0_cust_branch as branch
+	  WHERE (debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-06-29'
+			AND trans.tran_date <= '2015-07-29'
+			AND trans.branch_code = branch.branch_code) GROUP BY trans.trans_no, trans.type LIMIT 0, 25<br><br><br>
+[29-Jul-2015 09:01:50 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\db_pager.inc:188:<br>Error browsing database: SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_codetrans.alloc AS Allocated,
+		((trans.type = 10)
+			AND trans.due_date < '2015-07-29') AS OverDue ,
+		Sum(line.quantity-line.qty_done) AS Outstanding
+	 FROM &TB_PREF&debtor_trans as trans
+			LEFT JOIN &TB_PREF&debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,&TB_PREF&debtors_master as debtor, &TB_PREF&cust_branch as branch
+	  WHERE (debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-06-29'
+			AND trans.tran_date <= '2015-07-29'
+			AND trans.branch_code = branch.branch_code) GROUP BY trans.trans_no, trans.type LIMIT 0, 25<br>error code : 1054<br>error message : Unknown column 'debtor.curr_codetrans.alloc' in 'field list'<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_codetrans.alloc AS Allocated,
+		((trans.type = 10)
+			AND trans.due_date < '2015-07-29') AS OverDue ,
+		Sum(line.quantity-line.qty_done) AS Outstanding
+	 FROM 0_debtor_trans as trans
+			LEFT JOIN 0_debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,0_debtors_master as debtor, 0_cust_branch as branch
+	  WHERE (debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-06-29'
+			AND trans.tran_date <= '2015-07-29'
+			AND trans.branch_code = branch.branch_code) GROUP BY trans.trans_no, trans.type LIMIT 0, 25<br><br><br>
+[29-Jul-2015 09:01:54 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\db_pager.inc:188:<br>Error browsing database: SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_codetrans.alloc AS Allocated,
+		((trans.type = 10)
+			AND trans.due_date < '2015-07-29') AS OverDue ,
+		Sum(line.quantity-line.qty_done) AS Outstanding
+	 FROM &TB_PREF&debtor_trans as trans
+			LEFT JOIN &TB_PREF&debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,&TB_PREF&debtors_master as debtor, &TB_PREF&cust_branch as branch
+	  WHERE (debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-06-29'
+			AND trans.tran_date <= '2015-07-29'
+			AND trans.branch_code = branch.branch_code AND trans.debtor_no = '17') GROUP BY trans.trans_no, trans.type LIMIT 0, 25<br>error code : 1054<br>error message : Unknown column 'debtor.curr_codetrans.alloc' in 'field list'<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_codetrans.alloc AS Allocated,
+		((trans.type = 10)
+			AND trans.due_date < '2015-07-29') AS OverDue ,
+		Sum(line.quantity-line.qty_done) AS Outstanding
+	 FROM 0_debtor_trans as trans
+			LEFT JOIN 0_debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,0_debtors_master as debtor, 0_cust_branch as branch
+	  WHERE (debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-06-29'
+			AND trans.tran_date <= '2015-07-29'
+			AND trans.branch_code = branch.branch_code AND trans.debtor_no = '17') GROUP BY trans.trans_no, trans.type LIMIT 0, 25<br><br><br>
+[29-Jul-2015 09:02:02 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\db_pager.inc:188:<br>Error browsing database: SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_codetrans.alloc AS Allocated,
+		((trans.type = 10)
+			AND trans.due_date < '2015-07-29') AS OverDue ,
+		Sum(line.quantity-line.qty_done) AS Outstanding
+	 FROM &TB_PREF&debtor_trans as trans
+			LEFT JOIN &TB_PREF&debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,&TB_PREF&debtors_master as debtor, &TB_PREF&cust_branch as branch
+	  WHERE (debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-06-29'
+			AND trans.tran_date <= '2015-07-29'
+			AND trans.branch_code = branch.branch_code AND trans.debtor_no = '17') GROUP BY trans.trans_no, trans.type LIMIT 0, 25<br>error code : 1054<br>error message : Unknown column 'debtor.curr_codetrans.alloc' in 'field list'<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_codetrans.alloc AS Allocated,
+		((trans.type = 10)
+			AND trans.due_date < '2015-07-29') AS OverDue ,
+		Sum(line.quantity-line.qty_done) AS Outstanding
+	 FROM 0_debtor_trans as trans
+			LEFT JOIN 0_debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,0_debtors_master as debtor, 0_cust_branch as branch
+	  WHERE (debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-06-29'
+			AND trans.tran_date <= '2015-07-29'
+			AND trans.branch_code = branch.branch_code AND trans.debtor_no = '17') GROUP BY trans.trans_no, trans.type LIMIT 0, 25<br><br><br>
+[29-Jul-2015 09:02:03 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\db_pager.inc:188:<br>Error browsing database: SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_codetrans.alloc AS Allocated,
+		((trans.type = 10)
+			AND trans.due_date < '2015-07-29') AS OverDue ,
+		Sum(line.quantity-line.qty_done) AS Outstanding
+	 FROM &TB_PREF&debtor_trans as trans
+			LEFT JOIN &TB_PREF&debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,&TB_PREF&debtors_master as debtor, &TB_PREF&cust_branch as branch
+	  WHERE (debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-06-29'
+			AND trans.tran_date <= '2015-07-29'
+			AND trans.branch_code = branch.branch_code AND trans.debtor_no = '17') GROUP BY trans.trans_no, trans.type LIMIT 0, 25<br>error code : 1054<br>error message : Unknown column 'debtor.curr_codetrans.alloc' in 'field list'<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_codetrans.alloc AS Allocated,
+		((trans.type = 10)
+			AND trans.due_date < '2015-07-29') AS OverDue ,
+		Sum(line.quantity-line.qty_done) AS Outstanding
+	 FROM 0_debtor_trans as trans
+			LEFT JOIN 0_debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,0_debtors_master as debtor, 0_cust_branch as branch
+	  WHERE (debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-06-29'
+			AND trans.tran_date <= '2015-07-29'
+			AND trans.branch_code = branch.branch_code AND trans.debtor_no = '17') GROUP BY trans.trans_no, trans.type LIMIT 0, 25<br><br><br>
+[29-Jul-2015 09:02:06 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\db_pager.inc:188:<br>Error browsing database: SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_codetrans.alloc AS Allocated,
+		((trans.type = 10)
+			AND trans.due_date < '2015-07-29') AS OverDue ,
+		Sum(line.quantity-line.qty_done) AS Outstanding
+	 FROM &TB_PREF&debtor_trans as trans
+			LEFT JOIN &TB_PREF&debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,&TB_PREF&debtors_master as debtor, &TB_PREF&cust_branch as branch
+	  WHERE (debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-06-29'
+			AND trans.tran_date <= '2015-07-29'
+			AND trans.branch_code = branch.branch_code AND trans.debtor_no = '17') GROUP BY trans.trans_no, trans.type LIMIT 0, 25<br>error code : 1054<br>error message : Unknown column 'debtor.curr_codetrans.alloc' in 'field list'<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_codetrans.alloc AS Allocated,
+		((trans.type = 10)
+			AND trans.due_date < '2015-07-29') AS OverDue ,
+		Sum(line.quantity-line.qty_done) AS Outstanding
+	 FROM 0_debtor_trans as trans
+			LEFT JOIN 0_debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,0_debtors_master as debtor, 0_cust_branch as branch
+	  WHERE (debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-06-29'
+			AND trans.tran_date <= '2015-07-29'
+			AND trans.branch_code = branch.branch_code AND trans.debtor_no = '17') GROUP BY trans.trans_no, trans.type LIMIT 0, 25<br><br><br>
+[29-Jul-2015 09:02:19 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\db_pager.inc:188:<br>Error browsing database: SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_code@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freight_tax + trans.ov_discount + trans.ov_freight_charge + trans.ov_insurance + trans.ov_packing_charge + trans.ov_duties + trans.ov_service_charge + trans.ov_commission), trans.alloc AS Allocated,
+		((trans.type = 10)
+			AND trans.due_date < '2015-07-29') AS OverDue ,
+		Sum(line.quantity-line.qty_done) AS Outstanding
+	 FROM &TB_PREF&debtor_trans as trans
+			LEFT JOIN &TB_PREF&debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,&TB_PREF&debtors_master as debtor, &TB_PREF&cust_branch as branch
+	  WHERE (debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-06-29'
+			AND trans.tran_date <= '2015-07-29'
+			AND trans.branch_code = branch.branch_code AND trans.debtor_no = '17' AND (trans.type = 10) ) GROUP BY trans.trans_no, trans.type LIMIT 0, 25<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freig' at line 10<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_code@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freight_tax + trans.ov_discount + trans.ov_freight_charge + trans.ov_insurance + trans.ov_packing_charge + trans.ov_duties + trans.ov_service_charge + trans.ov_commission), trans.alloc AS Allocated,
+		((trans.type = 10)
+			AND trans.due_date < '2015-07-29') AS OverDue ,
+		Sum(line.quantity-line.qty_done) AS Outstanding
+	 FROM 0_debtor_trans as trans
+			LEFT JOIN 0_debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,0_debtors_master as debtor, 0_cust_branch as branch
+	  WHERE (debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-06-29'
+			AND trans.tran_date <= '2015-07-29'
+			AND trans.branch_code = branch.branch_code AND trans.debtor_no = '17' AND (trans.type = 10) ) GROUP BY trans.trans_no, trans.type LIMIT 0, 25<br><br><br>
+[29-Jul-2015 09:03:17 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\db_pager.inc:188:<br>Error browsing database: SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_codetrans.alloc AS Allocated,
+		((trans.type = 10)
+			AND trans.due_date < '2015-07-29') AS OverDue ,
+		Sum(line.quantity-line.qty_done) AS Outstanding
+	 FROM &TB_PREF&debtor_trans as trans
+			LEFT JOIN &TB_PREF&debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,&TB_PREF&debtors_master as debtor, &TB_PREF&cust_branch as branch
+	  WHERE (debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-06-29'
+			AND trans.tran_date <= '2015-07-29'
+			AND trans.branch_code = branch.branch_code AND trans.debtor_no = '17') GROUP BY trans.trans_no, trans.type LIMIT 0, 25<br>error code : 1054<br>error message : Unknown column 'debtor.curr_codetrans.alloc' in 'field list'<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_codetrans.alloc AS Allocated,
+		((trans.type = 10)
+			AND trans.due_date < '2015-07-29') AS OverDue ,
+		Sum(line.quantity-line.qty_done) AS Outstanding
+	 FROM 0_debtor_trans as trans
+			LEFT JOIN 0_debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,0_debtors_master as debtor, 0_cust_branch as branch
+	  WHERE (debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-06-29'
+			AND trans.tran_date <= '2015-07-29'
+			AND trans.branch_code = branch.branch_code AND trans.debtor_no = '17') GROUP BY trans.trans_no, trans.type LIMIT 0, 25<br><br><br>
+[29-Jul-2015 09:03:17 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\db_pager.inc:188:<br>Error browsing database: SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_codetrans.alloc AS Allocated,
+		((trans.type = 10)
+			AND trans.due_date < '2015-07-29') AS OverDue ,
+		Sum(line.quantity-line.qty_done) AS Outstanding
+	 FROM &TB_PREF&debtor_trans as trans
+			LEFT JOIN &TB_PREF&debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,&TB_PREF&debtors_master as debtor, &TB_PREF&cust_branch as branch
+	  WHERE (debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-06-29'
+			AND trans.tran_date <= '2015-07-29'
+			AND trans.branch_code = branch.branch_code AND trans.debtor_no = '17') GROUP BY trans.trans_no, trans.type LIMIT 0, 25<br>error code : 1054<br>error message : Unknown column 'debtor.curr_codetrans.alloc' in 'field list'<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_codetrans.alloc AS Allocated,
+		((trans.type = 10)
+			AND trans.due_date < '2015-07-29') AS OverDue ,
+		Sum(line.quantity-line.qty_done) AS Outstanding
+	 FROM 0_debtor_trans as trans
+			LEFT JOIN 0_debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,0_debtors_master as debtor, 0_cust_branch as branch
+	  WHERE (debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-06-29'
+			AND trans.tran_date <= '2015-07-29'
+			AND trans.branch_code = branch.branch_code AND trans.debtor_no = '17') GROUP BY trans.trans_no, trans.type LIMIT 0, 25<br><br><br>
+[29-Jul-2015 09:03:24 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\db_pager.inc:188:<br>Error browsing database: SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_code@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freight_tax + trans.ov_discount + trans.ov_freight_charge + trans.ov_insurance + trans.ov_packing_charge + trans.ov_duties + trans.ov_service_charge + trans.ov_commission), trans.alloc AS Allocated,
+		((trans.type = 10)
+			AND trans.due_date < '2015-07-29') AS OverDue ,
+		Sum(line.quantity-line.qty_done) AS Outstanding
+	 FROM &TB_PREF&debtor_trans as trans
+			LEFT JOIN &TB_PREF&debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,&TB_PREF&debtors_master as debtor, &TB_PREF&cust_branch as branch
+	  WHERE (debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-06-29'
+			AND trans.tran_date <= '2015-07-29'
+			AND trans.branch_code = branch.branch_code AND trans.debtor_no = '17' AND (trans.type = 10) ) GROUP BY trans.trans_no, trans.type LIMIT 0, 25<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freig' at line 10<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_code@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freight_tax + trans.ov_discount + trans.ov_freight_charge + trans.ov_insurance + trans.ov_packing_charge + trans.ov_duties + trans.ov_service_charge + trans.ov_commission), trans.alloc AS Allocated,
+		((trans.type = 10)
+			AND trans.due_date < '2015-07-29') AS OverDue ,
+		Sum(line.quantity-line.qty_done) AS Outstanding
+	 FROM 0_debtor_trans as trans
+			LEFT JOIN 0_debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,0_debtors_master as debtor, 0_cust_branch as branch
+	  WHERE (debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-06-29'
+			AND trans.tran_date <= '2015-07-29'
+			AND trans.branch_code = branch.branch_code AND trans.debtor_no = '17' AND (trans.type = 10) ) GROUP BY trans.trans_no, trans.type LIMIT 0, 25<br><br><br>
+[29-Jul-2015 09:03:37 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\db_pager.inc:188:<br>Error browsing database: SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_codetrans.alloc AS Allocated,
+		((trans.type = 10)
+			AND trans.due_date < '2015-07-29') AS OverDue ,
+		Sum(line.quantity-line.qty_done) AS Outstanding
+	 FROM &TB_PREF&debtor_trans as trans
+			LEFT JOIN &TB_PREF&debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,&TB_PREF&debtors_master as debtor, &TB_PREF&cust_branch as branch
+	  WHERE (debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-06-29'
+			AND trans.tran_date <= '2015-07-29'
+			AND trans.branch_code = branch.branch_code AND trans.debtor_no = '17') GROUP BY trans.trans_no, trans.type LIMIT 0, 25<br>error code : 1054<br>error message : Unknown column 'debtor.curr_codetrans.alloc' in 'field list'<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_codetrans.alloc AS Allocated,
+		((trans.type = 10)
+			AND trans.due_date < '2015-07-29') AS OverDue ,
+		Sum(line.quantity-line.qty_done) AS Outstanding
+	 FROM 0_debtor_trans as trans
+			LEFT JOIN 0_debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,0_debtors_master as debtor, 0_cust_branch as branch
+	  WHERE (debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-06-29'
+			AND trans.tran_date <= '2015-07-29'
+			AND trans.branch_code = branch.branch_code AND trans.debtor_no = '17') GROUP BY trans.trans_no, trans.type LIMIT 0, 25<br><br><br>
+[29-Jul-2015 09:03:37 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\db_pager.inc:188:<br>Error browsing database: SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_codetrans.alloc AS Allocated,
+		((trans.type = 10)
+			AND trans.due_date < '2015-07-29') AS OverDue ,
+		Sum(line.quantity-line.qty_done) AS Outstanding
+	 FROM &TB_PREF&debtor_trans as trans
+			LEFT JOIN &TB_PREF&debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,&TB_PREF&debtors_master as debtor, &TB_PREF&cust_branch as branch
+	  WHERE (debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-06-29'
+			AND trans.tran_date <= '2015-07-29'
+			AND trans.branch_code = branch.branch_code AND trans.debtor_no = '17') GROUP BY trans.trans_no, trans.type LIMIT 0, 25<br>error code : 1054<br>error message : Unknown column 'debtor.curr_codetrans.alloc' in 'field list'<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_codetrans.alloc AS Allocated,
+		((trans.type = 10)
+			AND trans.due_date < '2015-07-29') AS OverDue ,
+		Sum(line.quantity-line.qty_done) AS Outstanding
+	 FROM 0_debtor_trans as trans
+			LEFT JOIN 0_debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,0_debtors_master as debtor, 0_cust_branch as branch
+	  WHERE (debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-06-29'
+			AND trans.tran_date <= '2015-07-29'
+			AND trans.branch_code = branch.branch_code AND trans.debtor_no = '17') GROUP BY trans.trans_no, trans.type LIMIT 0, 25<br><br><br>
+[29-Jul-2015 09:05:09 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\db_pager.inc:188:<br>Error browsing database: SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_codetrans.alloc AS Allocated,
+		((trans.type = 10)
+			AND trans.due_date < '2015-07-29') AS OverDue ,
+		Sum(line.quantity-line.qty_done) AS Outstanding
+	 FROM &TB_PREF&debtor_trans as trans
+			LEFT JOIN &TB_PREF&debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,&TB_PREF&debtors_master as debtor, &TB_PREF&cust_branch as branch
+	  WHERE (debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-06-29'
+			AND trans.tran_date <= '2015-07-29'
+			AND trans.branch_code = branch.branch_code AND trans.debtor_no = '17') GROUP BY trans.trans_no, trans.type LIMIT 0, 25<br>error code : 1054<br>error message : Unknown column 'debtor.curr_codetrans.alloc' in 'field list'<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_codetrans.alloc AS Allocated,
+		((trans.type = 10)
+			AND trans.due_date < '2015-07-29') AS OverDue ,
+		Sum(line.quantity-line.qty_done) AS Outstanding
+	 FROM 0_debtor_trans as trans
+			LEFT JOIN 0_debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,0_debtors_master as debtor, 0_cust_branch as branch
+	  WHERE (debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-06-29'
+			AND trans.tran_date <= '2015-07-29'
+			AND trans.branch_code = branch.branch_code AND trans.debtor_no = '17') GROUP BY trans.trans_no, trans.type LIMIT 0, 25<br><br><br>
+[29-Jul-2015 09:05:09 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\db_pager.inc:188:<br>Error browsing database: SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_codetrans.alloc AS Allocated,
+		((trans.type = 10)
+			AND trans.due_date < '2015-07-29') AS OverDue ,
+		Sum(line.quantity-line.qty_done) AS Outstanding
+	 FROM &TB_PREF&debtor_trans as trans
+			LEFT JOIN &TB_PREF&debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,&TB_PREF&debtors_master as debtor, &TB_PREF&cust_branch as branch
+	  WHERE (debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-06-29'
+			AND trans.tran_date <= '2015-07-29'
+			AND trans.branch_code = branch.branch_code AND trans.debtor_no = '17') GROUP BY trans.trans_no, trans.type LIMIT 0, 25<br>error code : 1054<br>error message : Unknown column 'debtor.curr_codetrans.alloc' in 'field list'<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_codetrans.alloc AS Allocated,
+		((trans.type = 10)
+			AND trans.due_date < '2015-07-29') AS OverDue ,
+		Sum(line.quantity-line.qty_done) AS Outstanding
+	 FROM 0_debtor_trans as trans
+			LEFT JOIN 0_debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,0_debtors_master as debtor, 0_cust_branch as branch
+	  WHERE (debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-06-29'
+			AND trans.tran_date <= '2015-07-29'
+			AND trans.branch_code = branch.branch_code AND trans.debtor_no = '17') GROUP BY trans.trans_no, trans.type LIMIT 0, 25<br><br><br>
+[29-Jul-2015 09:05:14 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\db_pager.inc:188:<br>Error browsing database: SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_codetrans.alloc AS Allocated,
+		((trans.type = 10)
+			AND trans.due_date < '2015-07-29') AS OverDue ,
+		Sum(line.quantity-line.qty_done) AS Outstanding
+	 FROM &TB_PREF&debtor_trans as trans
+			LEFT JOIN &TB_PREF&debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,&TB_PREF&debtors_master as debtor, &TB_PREF&cust_branch as branch
+	  WHERE (debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-06-29'
+			AND trans.tran_date <= '2015-07-29'
+			AND trans.branch_code = branch.branch_code) GROUP BY trans.trans_no, trans.type LIMIT 0, 25<br>error code : 1054<br>error message : Unknown column 'debtor.curr_codetrans.alloc' in 'field list'<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_codetrans.alloc AS Allocated,
+		((trans.type = 10)
+			AND trans.due_date < '2015-07-29') AS OverDue ,
+		Sum(line.quantity-line.qty_done) AS Outstanding
+	 FROM 0_debtor_trans as trans
+			LEFT JOIN 0_debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,0_debtors_master as debtor, 0_cust_branch as branch
+	  WHERE (debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-06-29'
+			AND trans.tran_date <= '2015-07-29'
+			AND trans.branch_code = branch.branch_code) GROUP BY trans.trans_no, trans.type LIMIT 0, 25<br><br><br>
+[29-Jul-2015 09:05:17 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\db_pager.inc:188:<br>Error browsing database: SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_code@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freight_tax + trans.ov_discount + trans.ov_freight_charge + trans.ov_insurance + trans.ov_packing_charge + trans.ov_duties + trans.ov_service_charge + trans.ov_commission), trans.alloc AS Allocated,
+		((trans.type = 10)
+			AND trans.due_date < '2015-07-29') AS OverDue ,
+		Sum(line.quantity-line.qty_done) AS Outstanding
+	 FROM &TB_PREF&debtor_trans as trans
+			LEFT JOIN &TB_PREF&debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,&TB_PREF&debtors_master as debtor, &TB_PREF&cust_branch as branch
+	  WHERE (debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-06-29'
+			AND trans.tran_date <= '2015-07-29'
+			AND trans.branch_code = branch.branch_code AND (trans.type = 10) ) GROUP BY trans.trans_no, trans.type LIMIT 0, 25<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freig' at line 10<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_code@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freight_tax + trans.ov_discount + trans.ov_freight_charge + trans.ov_insurance + trans.ov_packing_charge + trans.ov_duties + trans.ov_service_charge + trans.ov_commission), trans.alloc AS Allocated,
+		((trans.type = 10)
+			AND trans.due_date < '2015-07-29') AS OverDue ,
+		Sum(line.quantity-line.qty_done) AS Outstanding
+	 FROM 0_debtor_trans as trans
+			LEFT JOIN 0_debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,0_debtors_master as debtor, 0_cust_branch as branch
+	  WHERE (debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-06-29'
+			AND trans.tran_date <= '2015-07-29'
+			AND trans.branch_code = branch.branch_code AND (trans.type = 10) ) GROUP BY trans.trans_no, trans.type LIMIT 0, 25<br><br><br>
+[29-Jul-2015 09:05:20 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\db_pager.inc:188:<br>Error browsing database: SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_codetrans.alloc AS Allocated,
+		((trans.type = 10)
+			AND trans.due_date < '2015-07-29') AS OverDue ,
+		Sum(line.quantity-line.qty_done) AS Outstanding
+	 FROM &TB_PREF&debtor_trans as trans
+			LEFT JOIN &TB_PREF&debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,&TB_PREF&debtors_master as debtor, &TB_PREF&cust_branch as branch
+	  WHERE (debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-06-29'
+			AND trans.tran_date <= '2015-07-29'
+			AND trans.branch_code = branch.branch_code) GROUP BY trans.trans_no, trans.type LIMIT 0, 25<br>error code : 1054<br>error message : Unknown column 'debtor.curr_codetrans.alloc' in 'field list'<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_codetrans.alloc AS Allocated,
+		((trans.type = 10)
+			AND trans.due_date < '2015-07-29') AS OverDue ,
+		Sum(line.quantity-line.qty_done) AS Outstanding
+	 FROM 0_debtor_trans as trans
+			LEFT JOIN 0_debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,0_debtors_master as debtor, 0_cust_branch as branch
+	  WHERE (debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-06-29'
+			AND trans.tran_date <= '2015-07-29'
+			AND trans.branch_code = branch.branch_code) GROUP BY trans.trans_no, trans.type LIMIT 0, 25<br><br><br>
+[29-Jul-2015 09:05:25 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\db_pager.inc:188:<br>Error browsing database: SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_codetrans.alloc AS Allocated,
+		((trans.type = 10)
+			AND trans.due_date < '2015-07-29') AS OverDue ,
+		Sum(line.quantity-line.qty_done) AS Outstanding
+	 FROM &TB_PREF&debtor_trans as trans
+			LEFT JOIN &TB_PREF&debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,&TB_PREF&debtors_master as debtor, &TB_PREF&cust_branch as branch
+	  WHERE (debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-04-01'
+			AND trans.tran_date <= '2015-07-29'
+			AND trans.branch_code = branch.branch_code) GROUP BY trans.trans_no, trans.type LIMIT 0, 25<br>error code : 1054<br>error message : Unknown column 'debtor.curr_codetrans.alloc' in 'field list'<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_codetrans.alloc AS Allocated,
+		((trans.type = 10)
+			AND trans.due_date < '2015-07-29') AS OverDue ,
+		Sum(line.quantity-line.qty_done) AS Outstanding
+	 FROM 0_debtor_trans as trans
+			LEFT JOIN 0_debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,0_debtors_master as debtor, 0_cust_branch as branch
+	  WHERE (debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-04-01'
+			AND trans.tran_date <= '2015-07-29'
+			AND trans.branch_code = branch.branch_code) GROUP BY trans.trans_no, trans.type LIMIT 0, 25<br><br><br>
+[29-Jul-2015 09:05:39 Asia/Dubai] 0:admin:gl_db_trans.inc:21: Missing argument 16 for add_gl_trans(), called in C:\wamp\www\fairwaysuae\gl\includes\db\gl_db_trans.inc on line 85 and defined
+[29-Jul-2015 09:05:39 Asia/Dubai] 0:admin:gl_db_trans.inc:21: Missing argument 17 for add_gl_trans(), called in C:\wamp\www\fairwaysuae\gl\includes\db\gl_db_trans.inc on line 85 and defined
+[29-Jul-2015 09:05:39 Asia/Dubai] 0:admin:gl_db_trans.inc:21: Missing argument 16 for add_gl_trans(), called in C:\wamp\www\fairwaysuae\gl\includes\db\gl_db_trans.inc on line 85 and defined
+[29-Jul-2015 09:05:39 Asia/Dubai] 0:admin:gl_db_trans.inc:21: Missing argument 17 for add_gl_trans(), called in C:\wamp\www\fairwaysuae\gl\includes\db\gl_db_trans.inc on line 85 and defined
+[29-Jul-2015 09:05:40 Asia/Dubai] 0:admin:gl_db_trans.inc:21: Missing argument 16 for add_gl_trans(), called in C:\wamp\www\fairwaysuae\sales\includes\sales_db.inc on line 57 and defined
+[29-Jul-2015 09:05:40 Asia/Dubai] 0:admin:gl_db_trans.inc:21: Missing argument 17 for add_gl_trans(), called in C:\wamp\www\fairwaysuae\sales\includes\sales_db.inc on line 57 and defined
+[29-Jul-2015 09:05:40 Asia/Dubai] 0:admin:gl_db_trans.inc:21: Missing argument 16 for add_gl_trans(), called in C:\wamp\www\fairwaysuae\sales\includes\sales_db.inc on line 57 and defined
+[29-Jul-2015 09:05:40 Asia/Dubai] 0:admin:gl_db_trans.inc:21: Missing argument 17 for add_gl_trans(), called in C:\wamp\www\fairwaysuae\sales\includes\sales_db.inc on line 57 and defined
+[29-Jul-2015 09:05:46 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\db_pager.inc:188:<br>Error browsing database: SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_codetrans.alloc AS Allocated,
+		((trans.type = 10)
+			AND trans.due_date < '2015-07-29') AS OverDue ,
+		Sum(line.quantity-line.qty_done) AS Outstanding
+	 FROM &TB_PREF&debtor_trans as trans
+			LEFT JOIN &TB_PREF&debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,&TB_PREF&debtors_master as debtor, &TB_PREF&cust_branch as branch
+	  WHERE (debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-06-29'
+			AND trans.tran_date <= '2015-07-29'
+			AND trans.branch_code = branch.branch_code AND trans.debtor_no = '17') GROUP BY trans.trans_no, trans.type LIMIT 0, 25<br>error code : 1054<br>error message : Unknown column 'debtor.curr_codetrans.alloc' in 'field list'<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_codetrans.alloc AS Allocated,
+		((trans.type = 10)
+			AND trans.due_date < '2015-07-29') AS OverDue ,
+		Sum(line.quantity-line.qty_done) AS Outstanding
+	 FROM 0_debtor_trans as trans
+			LEFT JOIN 0_debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,0_debtors_master as debtor, 0_cust_branch as branch
+	  WHERE (debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-06-29'
+			AND trans.tran_date <= '2015-07-29'
+			AND trans.branch_code = branch.branch_code AND trans.debtor_no = '17') GROUP BY trans.trans_no, trans.type LIMIT 0, 25<br><br><br>
+[29-Jul-2015 09:05:46 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\db_pager.inc:188:<br>Error browsing database: SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_codetrans.alloc AS Allocated,
+		((trans.type = 10)
+			AND trans.due_date < '2015-07-29') AS OverDue ,
+		Sum(line.quantity-line.qty_done) AS Outstanding
+	 FROM &TB_PREF&debtor_trans as trans
+			LEFT JOIN &TB_PREF&debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,&TB_PREF&debtors_master as debtor, &TB_PREF&cust_branch as branch
+	  WHERE (debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-06-29'
+			AND trans.tran_date <= '2015-07-29'
+			AND trans.branch_code = branch.branch_code AND trans.debtor_no = '17') GROUP BY trans.trans_no, trans.type LIMIT 0, 25<br>error code : 1054<br>error message : Unknown column 'debtor.curr_codetrans.alloc' in 'field list'<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_codetrans.alloc AS Allocated,
+		((trans.type = 10)
+			AND trans.due_date < '2015-07-29') AS OverDue ,
+		Sum(line.quantity-line.qty_done) AS Outstanding
+	 FROM 0_debtor_trans as trans
+			LEFT JOIN 0_debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,0_debtors_master as debtor, 0_cust_branch as branch
+	  WHERE (debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-06-29'
+			AND trans.tran_date <= '2015-07-29'
+			AND trans.branch_code = branch.branch_code AND trans.debtor_no = '17') GROUP BY trans.trans_no, trans.type LIMIT 0, 25<br><br><br>
+[29-Jul-2015 09:05:53 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\db_pager.inc:188:<br>Error browsing database: SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_codetrans.alloc AS Allocated,
+		((trans.type = 10)
+			AND trans.due_date < '2015-07-29') AS OverDue ,
+		Sum(line.quantity-line.qty_done) AS Outstanding
+	 FROM &TB_PREF&debtor_trans as trans
+			LEFT JOIN &TB_PREF&debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,&TB_PREF&debtors_master as debtor, &TB_PREF&cust_branch as branch
+	  WHERE (debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-06-29'
+			AND trans.tran_date <= '2015-07-29'
+			AND trans.branch_code = branch.branch_code) GROUP BY trans.trans_no, trans.type LIMIT 0, 25<br>error code : 1054<br>error message : Unknown column 'debtor.curr_codetrans.alloc' in 'field list'<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_codetrans.alloc AS Allocated,
+		((trans.type = 10)
+			AND trans.due_date < '2015-07-29') AS OverDue ,
+		Sum(line.quantity-line.qty_done) AS Outstanding
+	 FROM 0_debtor_trans as trans
+			LEFT JOIN 0_debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,0_debtors_master as debtor, 0_cust_branch as branch
+	  WHERE (debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-06-29'
+			AND trans.tran_date <= '2015-07-29'
+			AND trans.branch_code = branch.branch_code) GROUP BY trans.trans_no, trans.type LIMIT 0, 25<br><br><br>
+[29-Jul-2015 09:05:55 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\db_pager.inc:188:<br>Error browsing database: SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_code@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freight_tax + trans.ov_discount + trans.ov_freight_charge + trans.ov_insurance + trans.ov_packing_charge + trans.ov_duties + trans.ov_service_charge + trans.ov_commission), trans.alloc AS Allocated,
+		((trans.type = 10)
+			AND trans.due_date < '2015-07-29') AS OverDue ,
+		Sum(line.quantity-line.qty_done) AS Outstanding
+	 FROM &TB_PREF&debtor_trans as trans
+			LEFT JOIN &TB_PREF&debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,&TB_PREF&debtors_master as debtor, &TB_PREF&cust_branch as branch
+	  WHERE (debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-06-29'
+			AND trans.tran_date <= '2015-07-29'
+			AND trans.branch_code = branch.branch_code AND (trans.type = 10) ) GROUP BY trans.trans_no, trans.type LIMIT 0, 25<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freig' at line 10<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_code@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freight_tax + trans.ov_discount + trans.ov_freight_charge + trans.ov_insurance + trans.ov_packing_charge + trans.ov_duties + trans.ov_service_charge + trans.ov_commission), trans.alloc AS Allocated,
+		((trans.type = 10)
+			AND trans.due_date < '2015-07-29') AS OverDue ,
+		Sum(line.quantity-line.qty_done) AS Outstanding
+	 FROM 0_debtor_trans as trans
+			LEFT JOIN 0_debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,0_debtors_master as debtor, 0_cust_branch as branch
+	  WHERE (debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-06-29'
+			AND trans.tran_date <= '2015-07-29'
+			AND trans.branch_code = branch.branch_code AND (trans.type = 10) ) GROUP BY trans.trans_no, trans.type LIMIT 0, 25<br><br><br>
+[29-Jul-2015 09:06:00 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\includes\db_pager.inc:188:<br>Error browsing database: SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_code@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freight_tax + trans.ov_discount + trans.ov_freight_charge + trans.ov_insurance + trans.ov_packing_charge + trans.ov_duties + trans.ov_service_charge + trans.ov_commission), trans.alloc AS Allocated,
+		((trans.type = 10)
+			AND trans.due_date < '2015-07-29') AS OverDue ,
+		Sum(line.quantity-line.qty_done) AS Outstanding
+	 FROM &TB_PREF&debtor_trans as trans
+			LEFT JOIN &TB_PREF&debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,&TB_PREF&debtors_master as debtor, &TB_PREF&cust_branch as branch
+	  WHERE (debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-06-29'
+			AND trans.tran_date <= '2015-07-29'
+			AND trans.branch_code = branch.branch_code AND (trans.type = 10) ) GROUP BY trans.trans_no, trans.type LIMIT 0, 25<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freig' at line 10<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date, 
+		debtor.name, 
+		branch.br_name,
+		debtor.curr_code@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freight_tax + trans.ov_discount + trans.ov_freight_charge + trans.ov_insurance + trans.ov_packing_charge + trans.ov_duties + trans.ov_service_charge + trans.ov_commission), trans.alloc AS Allocated,
+		((trans.type = 10)
+			AND trans.due_date < '2015-07-29') AS OverDue ,
+		Sum(line.quantity-line.qty_done) AS Outstanding
+	 FROM 0_debtor_trans as trans
+			LEFT JOIN 0_debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,0_debtors_master as debtor, 0_cust_branch as branch
+	  WHERE (debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-06-29'
+			AND trans.tran_date <= '2015-07-29'
+			AND trans.branch_code = branch.branch_code AND (trans.type = 10) ) GROUP BY trans.trans_no, trans.type LIMIT 0, 25<br><br><br>
+[29-Jul-2015 09:25:07 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\reporting\rep901.php:116:<br>oops<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '		
+		Sum(line.quantity-line.qty_done) AS Outstanding
+		FROM 0_debtor_trans as ' at line 15<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date,
+		debtor.curr_code,	
+		debtor.name
+		(trans.ov_amount + trans.ov_gst + trans.ov_freight 
+			+ trans.ov_freight_tax + trans.ov_discount
+			+ trans.ov_freight_charge + trans.ov_insurance
+			+ trans.ov_packing_charge + trans.ov_duties 
+			+ trans.ov_service_charge + trans.ov_commission
+			)	AS TotalAmount,,		
+		Sum(line.quantity-line.qty_done) AS Outstanding
+		FROM 0_debtor_trans as trans
+			LEFT JOIN 0_debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,0_debtors_master as debtor, 0_cust_branch as branch
+		WHERE debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '01/06/2015'
+			AND trans.tran_date <= '30/06/2015'
+			AND trans.type=10
+			AND trans.branch_code = branch.branch_code GROUP BY trans.trans_no, trans.type<br><br><br>
+[29-Jul-2015 09:25:15 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\reporting\rep901.php:116:<br>oops<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '		
+		Sum(line.quantity-line.qty_done) AS Outstanding
+		FROM 0_debtor_trans as ' at line 15<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date,
+		debtor.curr_code,	
+		debtor.name
+		(trans.ov_amount + trans.ov_gst + trans.ov_freight 
+			+ trans.ov_freight_tax + trans.ov_discount
+			+ trans.ov_freight_charge + trans.ov_insurance
+			+ trans.ov_packing_charge + trans.ov_duties 
+			+ trans.ov_service_charge + trans.ov_commission
+			)	AS TotalAmount,,		
+		Sum(line.quantity-line.qty_done) AS Outstanding
+		FROM 0_debtor_trans as trans
+			LEFT JOIN 0_debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,0_debtors_master as debtor, 0_cust_branch as branch
+		WHERE debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '01/06/2015'
+			AND trans.tran_date <= '30/06/2015'
+			AND trans.type=10
+			AND trans.branch_code = branch.branch_code GROUP BY trans.trans_no, trans.type<br><br><br>
+[29-Jul-2015 10:06:56 Asia/Dubai] 0:admin:rep902.php:34: Missing argument 3 for get_sql_purchase_inquiry(), called in C:\wamp\www\fairwaysuae\reporting\rep902.php on line 154 and defined
+[29-Jul-2015 10:06:56 Asia/Dubai] 0:admin:connect_db.inc:98: mysql_fetch_array() expects parameter 1 to be resource, string given
+[29-Jul-2015 10:07:50 Asia/Dubai] 0:admin:rep902.php:34: Missing argument 3 for get_sql_purchase_inquiry(), called in C:\wamp\www\fairwaysuae\reporting\rep902.php on line 154 and defined
+[29-Jul-2015 10:07:50 Asia/Dubai] 0:admin:connect_db.inc:98: mysql_fetch_array() expects parameter 1 to be resource, string given
+[29-Jul-2015 10:14:11 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\reporting\rep902.php:116:<br>pruchse report not queried<br>error code : 1054<br>error message : Unknown column 'trans.type' in 'where clause'<br>sql that failed was : SELECT * FROM ((SELECT trans.type, 
+		trans.trans_no,
+		trans.reference, 
+		supplier.supp_name, 
+		trans.supp_reference,
+    	trans.tran_date, 
+		trans.due_date,
+		supplier.curr_code, 
+    	(trans.ov_amount + trans.ov_gst  + trans.ov_discount
+	+ trans.ov_freight_charge + trans.ov_insurance
+	+ trans.ov_packing_charge + trans.ov_duties 
+	+ trans.ov_service_charge + trans.ov_commission) AS TotalAmount, 
+		trans.alloc AS Allocated,
+		((trans.type = 20 OR trans.type = 21) AND trans.due_date < '2015-07-29') AS OverDue,
+    	(ABS(trans.ov_amount + trans.ov_gst  + trans.ov_discount) - trans.alloc <= 0.004) AS Settled
+    	FROM 0_supp_trans as trans, 0_suppliers as supplier
+    	WHERE supplier.supplier_id = trans.supplier_id
+     	AND trans.tran_date >= '01/06/2015'
+    	AND trans.tran_date <= '30/06/2015'
+		AND trans.ov_amount != 0) UNION (SELECT 25 as type, 
+		trans.id as trans_no,
+		trans.reference, 
+		supplier.supp_name, 
+		po.requisition_no AS supp_reference,
+    	delivery_date as tran_date, 
+		'' as due_date,
+		supplier.curr_code, 
+    	'' AS TotalAmount,
+		'' AS Allocated,
+		0 as OverDue,
+    	1 as Settled
+    	FROM 0_grn_batch as trans, 0_suppliers as supplier, 0_purch_orders as po
+    	WHERE supplier.supplier_id = trans.supplier_id
+    	AND trans.purch_order_no = po.order_no
+		AND trans.type=20
+     	AND trans.delivery_date >= '01/06/2015'
+    	AND trans.delivery_date <= '30/06/2015')) as tr<br><br><br>
+[29-Jul-2015 10:14:50 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\reporting\rep902.php:116:<br>pruchse report not queried<br>error code : 1054<br>error message : Unknown column 'trans.supp_trans_type' in 'where clause'<br>sql that failed was : SELECT * FROM ((SELECT trans.type, 
+		trans.trans_no,
+		trans.reference, 
+		supplier.supp_name, 
+		trans.supp_reference,
+    	trans.tran_date, 
+		trans.due_date,
+		supplier.curr_code, 
+    	(trans.ov_amount + trans.ov_gst  + trans.ov_discount
+	+ trans.ov_freight_charge + trans.ov_insurance
+	+ trans.ov_packing_charge + trans.ov_duties 
+	+ trans.ov_service_charge + trans.ov_commission) AS TotalAmount, 
+		trans.alloc AS Allocated,
+		((trans.type = 20 OR trans.type = 21) AND trans.due_date < '2015-07-29') AS OverDue,
+    	(ABS(trans.ov_amount + trans.ov_gst  + trans.ov_discount) - trans.alloc <= 0.004) AS Settled
+    	FROM 0_supp_trans as trans, 0_suppliers as supplier
+    	WHERE supplier.supplier_id = trans.supplier_id
+     	AND trans.tran_date >= '01/06/2015'
+    	AND trans.tran_date <= '30/06/2015'
+		AND trans.ov_amount != 0) UNION (SELECT 25 as type, 
+		trans.id as trans_no,
+		trans.reference, 
+		supplier.supp_name, 
+		po.requisition_no AS supp_reference,
+    	delivery_date as tran_date, 
+		'' as due_date,
+		supplier.curr_code, 
+    	'' AS TotalAmount,
+		'' AS Allocated,
+		0 as OverDue,
+    	1 as Settled
+    	FROM 0_grn_batch as trans, 0_suppliers as supplier, 0_purch_orders as po
+    	WHERE supplier.supplier_id = trans.supplier_id
+    	AND trans.purch_order_no = po.order_no
+		AND trans.supp_trans_type=20
+     	AND trans.delivery_date >= '01/06/2015'
+    	AND trans.delivery_date <= '30/06/2015')) as tr<br><br><br>
+[29-Jul-2015 10:17:13 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\reporting\rep902.php:117:<br>pruchse report not queried<br>error code : 1054<br>error message : Unknown column 'trans.type' in 'where clause'<br>sql that failed was : SELECT * FROM ((SELECT trans.type, 
+		trans.trans_no,
+		trans.reference, 
+		supplier.supp_name, 
+		trans.supp_reference,
+    	trans.tran_date, 
+		trans.due_date,
+		supplier.curr_code, 
+    	(trans.ov_amount + trans.ov_gst  + trans.ov_discount
+	+ trans.ov_freight_charge + trans.ov_insurance
+	+ trans.ov_packing_charge + trans.ov_duties 
+	+ trans.ov_service_charge + trans.ov_commission) AS TotalAmount, 
+		trans.alloc AS Allocated,
+		((trans.type = 20 OR trans.type = 21) AND trans.due_date < '2015-07-29') AS OverDue,
+    	(ABS(trans.ov_amount + trans.ov_gst  + trans.ov_discount) - trans.alloc <= 0.004) AS Settled
+    	FROM 0_supp_trans as trans, 0_suppliers as supplier
+    	WHERE supplier.supplier_id = trans.supplier_id
+		AND trans.type=20
+     	AND trans.tran_date >= '01/06/2015'
+    	AND trans.tran_date <= '30/06/2015'
+		AND trans.ov_amount != 0) UNION (SELECT 25 as type, 
+		trans.id as trans_no,
+		trans.reference, 
+		supplier.supp_name, 
+		po.requisition_no AS supp_reference,
+    	delivery_date as tran_date, 
+		'' as due_date,
+		supplier.curr_code, 
+    	'' AS TotalAmount,
+		'' AS Allocated,
+		0 as OverDue,
+    	1 as Settled
+    	FROM 0_grn_batch as trans, 0_suppliers as supplier, 0_purch_orders as po
+    	WHERE supplier.supplier_id = trans.supplier_id
+    	AND trans.purch_order_no = po.order_no
+		AND trans.type=20
+     	AND trans.delivery_date >= '01/06/2015'
+    	AND trans.delivery_date <= '30/06/2015')) as tr<br><br><br>
+[29-Jul-2015 10:17:17 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\reporting\rep902.php:117:<br>pruchse report not queried<br>error code : 1054<br>error message : Unknown column 'trans.type' in 'where clause'<br>sql that failed was : SELECT * FROM ((SELECT trans.type, 
+		trans.trans_no,
+		trans.reference, 
+		supplier.supp_name, 
+		trans.supp_reference,
+    	trans.tran_date, 
+		trans.due_date,
+		supplier.curr_code, 
+    	(trans.ov_amount + trans.ov_gst  + trans.ov_discount
+	+ trans.ov_freight_charge + trans.ov_insurance
+	+ trans.ov_packing_charge + trans.ov_duties 
+	+ trans.ov_service_charge + trans.ov_commission) AS TotalAmount, 
+		trans.alloc AS Allocated,
+		((trans.type = 20 OR trans.type = 21) AND trans.due_date < '2015-07-29') AS OverDue,
+    	(ABS(trans.ov_amount + trans.ov_gst  + trans.ov_discount) - trans.alloc <= 0.004) AS Settled
+    	FROM 0_supp_trans as trans, 0_suppliers as supplier
+    	WHERE supplier.supplier_id = trans.supplier_id
+		AND trans.type=20
+     	AND trans.tran_date >= '01/06/2015'
+    	AND trans.tran_date <= '30/06/2015'
+		AND trans.ov_amount != 0) UNION (SELECT 25 as type, 
+		trans.id as trans_no,
+		trans.reference, 
+		supplier.supp_name, 
+		po.requisition_no AS supp_reference,
+    	delivery_date as tran_date, 
+		'' as due_date,
+		supplier.curr_code, 
+    	'' AS TotalAmount,
+		'' AS Allocated,
+		0 as OverDue,
+    	1 as Settled
+    	FROM 0_grn_batch as trans, 0_suppliers as supplier, 0_purch_orders as po
+    	WHERE supplier.supplier_id = trans.supplier_id
+    	AND trans.purch_order_no = po.order_no
+		AND trans.type=20
+     	AND trans.delivery_date >= '01/06/2015'
+    	AND trans.delivery_date <= '30/06/2015')) as tr<br><br><br>
+[29-Jul-2015 10:17:36 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\reporting\rep902.php:117:<br>pruchse report not queried<br>error code : 1054<br>error message : Unknown column 'trans.type' in 'where clause'<br>sql that failed was : SELECT * FROM ((SELECT trans.type, 
+		trans.trans_no,
+		trans.reference, 
+		supplier.supp_name, 
+		trans.supp_reference,
+    	trans.tran_date, 
+		trans.due_date,
+		supplier.curr_code, 
+    	(trans.ov_amount + trans.ov_gst  + trans.ov_discount
+	+ trans.ov_freight_charge + trans.ov_insurance
+	+ trans.ov_packing_charge + trans.ov_duties 
+	+ trans.ov_service_charge + trans.ov_commission) AS TotalAmount, 
+		trans.alloc AS Allocated,
+		((trans.type = 20 OR trans.type = 21) AND trans.due_date < '2015-07-29') AS OverDue,
+    	(ABS(trans.ov_amount + trans.ov_gst  + trans.ov_discount) - trans.alloc <= 0.004) AS Settled
+    	FROM 0_supp_trans as trans, 0_suppliers as supplier
+    	WHERE supplier.supplier_id = trans.supplier_id
+		AND trans.type=20
+     	AND trans.tran_date >= '01/06/2015'
+    	AND trans.tran_date <= '30/06/2015'
+		AND trans.ov_amount != 0) UNION (SELECT 25 as type, 
+		trans.id as trans_no,
+		trans.reference, 
+		supplier.supp_name, 
+		po.requisition_no AS supp_reference,
+    	delivery_date as tran_date, 
+		'' as due_date,
+		supplier.curr_code, 
+    	'' AS TotalAmount,
+		'' AS Allocated,
+		0 as OverDue,
+    	1 as Settled
+    	FROM 0_grn_batch as trans, 0_suppliers as supplier, 0_purch_orders as po
+    	WHERE supplier.supplier_id = trans.supplier_id
+    	AND trans.purch_order_no = po.order_no
+		AND trans.type=20
+     	AND trans.delivery_date >= '01/06/2015'
+    	AND trans.delivery_date <= '30/06/2015')) as tr<br><br><br>
+[29-Jul-2015 10:23:30 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\reporting\rep902.php:118:<br>pruchse report not queried<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')) as tr' at line 22<br>sql that failed was : SELECT * FROM ((SELECT trans.type, 
+		trans.trans_no,
+		trans.reference, 
+		supplier.supp_name, 
+		trans.supp_reference,
+    	trans.tran_date, 
+		trans.due_date,
+		supplier.curr_code, 
+    	(trans.ov_amount + trans.ov_gst  + trans.ov_discount
+	+ trans.ov_freight_charge + trans.ov_insurance
+	+ trans.ov_packing_charge + trans.ov_duties 
+	+ trans.ov_service_charge + trans.ov_commission) AS TotalAmount, 
+		trans.alloc AS Allocated,
+		((trans.type = 20 OR trans.type = 21) AND trans.due_date < '2015-07-29') AS OverDue,
+    	(ABS(trans.ov_amount + trans.ov_gst  + trans.ov_discount) - trans.alloc <= 0.004) AS Settled
+    	FROM 0_supp_trans as trans, 0_suppliers as supplier
+    	WHERE supplier.supplier_id = trans.supplier_id
+		
+     	AND trans.tran_date >= '01/06/2015'
+    	AND trans.tran_date <= '30/06/2015'
+		AND trans.type=20
+		AND trans.ov_amount != 0) UNION ()) as tr<br><br><br>
+[29-Jul-2015 10:23:32 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\reporting\rep902.php:118:<br>pruchse report not queried<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')) as tr' at line 22<br>sql that failed was : SELECT * FROM ((SELECT trans.type, 
+		trans.trans_no,
+		trans.reference, 
+		supplier.supp_name, 
+		trans.supp_reference,
+    	trans.tran_date, 
+		trans.due_date,
+		supplier.curr_code, 
+    	(trans.ov_amount + trans.ov_gst  + trans.ov_discount
+	+ trans.ov_freight_charge + trans.ov_insurance
+	+ trans.ov_packing_charge + trans.ov_duties 
+	+ trans.ov_service_charge + trans.ov_commission) AS TotalAmount, 
+		trans.alloc AS Allocated,
+		((trans.type = 20 OR trans.type = 21) AND trans.due_date < '2015-07-29') AS OverDue,
+    	(ABS(trans.ov_amount + trans.ov_gst  + trans.ov_discount) - trans.alloc <= 0.004) AS Settled
+    	FROM 0_supp_trans as trans, 0_suppliers as supplier
+    	WHERE supplier.supplier_id = trans.supplier_id
+		
+     	AND trans.tran_date >= '01/06/2015'
+    	AND trans.tran_date <= '30/06/2015'
+		AND trans.type=20
+		AND trans.ov_amount != 0) UNION ()) as tr<br><br><br>
+[29-Jul-2015 10:24:18 Asia/Dubai] 0:admin:ui_msgs.inc:19: trigger_error() expects parameter 1 to be string, resource given
+[29-Jul-2015 10:24:32 Asia/Dubai] 0:admin:ui_msgs.inc:19: trigger_error() expects parameter 1 to be string, resource given
+[29-Jul-2015 10:24:56 Asia/Dubai] 0:admin:ui_msgs.inc:19: trigger_error() expects parameter 1 to be string, resource given
+[29-Jul-2015 10:32:55 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\reporting\rep902.php:117:<br>pruchse report not queried<br>error code : 1054<br>error message : Unknown column 'trans.type' in 'where clause'<br>sql that failed was : SELECT * FROM ((SELECT trans.type, 
+		trans.trans_no,
+		trans.reference, 
+		supplier.supp_name, 
+		trans.supp_reference,
+    	trans.tran_date, 
+		trans.due_date,
+		supplier.curr_code, 
+    	(trans.ov_amount + trans.ov_gst  + trans.ov_discount
+	+ trans.ov_freight_charge + trans.ov_insurance
+	+ trans.ov_packing_charge + trans.ov_duties 
+	+ trans.ov_service_charge + trans.ov_commission) AS TotalAmount, 
+		trans.alloc AS Allocated,
+		((trans.type = 20 OR trans.type = 21) AND trans.due_date < '2015-07-29') AS OverDue,
+    	(ABS(trans.ov_amount + trans.ov_gst  + trans.ov_discount) - trans.alloc <= 0.004) AS Settled
+    	FROM 0_supp_trans as trans, 0_suppliers as supplier
+    	WHERE supplier.supplier_id = trans.supplier_id
+     	AND trans.tran_date >= '01/06/2015'
+    	AND trans.tran_date <= '30/06/2015'
+		AND trans.type=20
+		AND trans.ov_amount != 0) UNION (SELECT 25 as type, 
+		trans.id as trans_no,
+		trans.reference, 
+		supplier.supp_name, 
+		po.requisition_no AS supp_reference,
+    	delivery_date as tran_date, 
+		'' as due_date,
+		supplier.curr_code, 
+    	'' AS TotalAmount,
+		'' AS Allocated,
+		0 as OverDue,
+    	1 as Settled
+    	FROM 0_grn_batch as trans, 0_suppliers as supplier, 0_purch_orders as po
+    	WHERE supplier.supplier_id = trans.supplier_id
+    	AND trans.purch_order_no = po.order_no
+		AND trans.type=20
+     	AND trans.delivery_date >= '01/06/2015'
+    	AND trans.delivery_date <= '30/06/2015')) as tr<br><br><br>
+[29-Jul-2015 11:15:02 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\reporting\rep902.php:120:<br>pruchse report not queried<br>error code : 1054<br>error message : Unknown column 'trans.type' in 'where clause'<br>sql that failed was : SELECT * FROM ((SELECT trans.type, 
+		trans.trans_no,
+		trans.reference, 
+		supplier.supp_name, 
+		trans.supp_reference,
+    	trans.tran_date, 
+		trans.due_date,
+		supplier.curr_code, 
+    	(trans.ov_amount + trans.ov_gst  + trans.ov_discount
+	+ trans.ov_freight_charge + trans.ov_insurance
+	+ trans.ov_packing_charge + trans.ov_duties 
+	+ trans.ov_service_charge + trans.ov_commission) AS TotalAmount, 
+		trans.alloc AS Allocated,
+		((trans.type = 20 OR trans.type = 21) AND trans.due_date < '2015-07-29') AS OverDue,
+    	(ABS(trans.ov_amount + trans.ov_gst  + trans.ov_discount) - trans.alloc <= 0.004) AS Settled
+    	FROM 0_supp_trans as trans, 0_suppliers as supplier
+    	WHERE supplier.supplier_id = trans.supplier_id
+     	AND trans.tran_date >= '2015-06-01'
+    	AND trans.tran_date <= '2015-07-27'
+		AND trans.type=20
+		AND trans.ov_amount != 0) UNION (SELECT 25 as type, 
+		trans.id as trans_no,
+		trans.reference, 
+		supplier.supp_name, 
+		po.requisition_no AS supp_reference,
+    	delivery_date as tran_date, 
+		'' as due_date,
+		supplier.curr_code, 
+    	'' AS TotalAmount,
+		'' AS Allocated,
+		0 as OverDue,
+    	1 as Settled
+    	FROM 0_grn_batch as trans, 0_suppliers as supplier, 0_purch_orders as po
+    	WHERE supplier.supplier_id = trans.supplier_id
+    	AND trans.purch_order_no = po.order_no
+		AND trans.type=20
+     	AND trans.delivery_date >= '2015-06-01'
+    	AND trans.delivery_date <= '2015-07-27')) as tr<br><br><br>
+[29-Jul-2015 11:15:05 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\reporting\rep902.php:120:<br>pruchse report not queried<br>error code : 1054<br>error message : Unknown column 'trans.type' in 'where clause'<br>sql that failed was : SELECT * FROM ((SELECT trans.type, 
+		trans.trans_no,
+		trans.reference, 
+		supplier.supp_name, 
+		trans.supp_reference,
+    	trans.tran_date, 
+		trans.due_date,
+		supplier.curr_code, 
+    	(trans.ov_amount + trans.ov_gst  + trans.ov_discount
+	+ trans.ov_freight_charge + trans.ov_insurance
+	+ trans.ov_packing_charge + trans.ov_duties 
+	+ trans.ov_service_charge + trans.ov_commission) AS TotalAmount, 
+		trans.alloc AS Allocated,
+		((trans.type = 20 OR trans.type = 21) AND trans.due_date < '2015-07-29') AS OverDue,
+    	(ABS(trans.ov_amount + trans.ov_gst  + trans.ov_discount) - trans.alloc <= 0.004) AS Settled
+    	FROM 0_supp_trans as trans, 0_suppliers as supplier
+    	WHERE supplier.supplier_id = trans.supplier_id
+     	AND trans.tran_date >= '2015-06-01'
+    	AND trans.tran_date <= '2015-07-27'
+		AND trans.type=20
+		AND trans.ov_amount != 0) UNION (SELECT 25 as type, 
+		trans.id as trans_no,
+		trans.reference, 
+		supplier.supp_name, 
+		po.requisition_no AS supp_reference,
+    	delivery_date as tran_date, 
+		'' as due_date,
+		supplier.curr_code, 
+    	'' AS TotalAmount,
+		'' AS Allocated,
+		0 as OverDue,
+    	1 as Settled
+    	FROM 0_grn_batch as trans, 0_suppliers as supplier, 0_purch_orders as po
+    	WHERE supplier.supplier_id = trans.supplier_id
+    	AND trans.purch_order_no = po.order_no
+		AND trans.type=20
+     	AND trans.delivery_date >= '2015-06-01'
+    	AND trans.delivery_date <= '2015-07-27')) as tr<br><br><br>
+[29-Jul-2015 11:15:52 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\reporting\rep902.php:121:<br>pruchse report not queried<br>error code : 1054<br>error message : Unknown column 'trans.type' in 'field list'<br>sql that failed was : SELECT * FROM ((SELECT trans.type, 
+		trans.trans_no,
+		trans.reference, 
+		supplier.supp_name, 
+		trans.supp_reference,
+    	trans.tran_date, 
+		trans.due_date,
+		supplier.curr_code, 
+    	(trans.ov_amount + trans.ov_gst  + trans.ov_discount
+	+ trans.ov_freight_charge + trans.ov_insurance
+	+ trans.ov_packing_charge + trans.ov_duties 
+	+ trans.ov_service_charge + trans.ov_commission) AS TotalAmount, 
+		trans.alloc AS Allocated,
+		((trans.type = 20 OR trans.type = 21) AND trans.due_date < '2015-07-29') AS OverDue,
+    	(ABS(trans.ov_amount + trans.ov_gst  + trans.ov_discount) - trans.alloc <= 0.004) AS Settled
+    	FROM 0_supp_trans as trans, 0_suppliers as supplier
+    	WHERE supplier.supplier_id = trans.supplier_id
+     	AND trans.tran_date >= '2015-06-01'
+    	AND trans.tran_date <= '2015-07-27'
+		AND trans.type=20
+		AND trans.ov_amount != 0) UNION (SELECT 25 as type, 
+		trans.id as trans_no,
+		trans.type,
+		trans.reference, 
+		supplier.supp_name, 
+		po.requisition_no AS supp_reference,
+    	delivery_date as tran_date, 
+		'' as due_date,
+		supplier.curr_code, 
+    	'' AS TotalAmount,
+		'' AS Allocated,
+		0 as OverDue,
+    	1 as Settled
+    	FROM 0_grn_batch as trans, 0_suppliers as supplier, 0_purch_orders as po
+    	WHERE supplier.supplier_id = trans.supplier_id
+    	AND trans.purch_order_no = po.order_no
+		AND trans.type=20
+     	AND trans.delivery_date >= '2015-06-01'
+    	AND trans.delivery_date <= '2015-07-27')) as tr<br><br><br>
+[29-Jul-2015 11:15:54 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\reporting\rep902.php:121:<br>pruchse report not queried<br>error code : 1054<br>error message : Unknown column 'trans.type' in 'field list'<br>sql that failed was : SELECT * FROM ((SELECT trans.type, 
+		trans.trans_no,
+		trans.reference, 
+		supplier.supp_name, 
+		trans.supp_reference,
+    	trans.tran_date, 
+		trans.due_date,
+		supplier.curr_code, 
+    	(trans.ov_amount + trans.ov_gst  + trans.ov_discount
+	+ trans.ov_freight_charge + trans.ov_insurance
+	+ trans.ov_packing_charge + trans.ov_duties 
+	+ trans.ov_service_charge + trans.ov_commission) AS TotalAmount, 
+		trans.alloc AS Allocated,
+		((trans.type = 20 OR trans.type = 21) AND trans.due_date < '2015-07-29') AS OverDue,
+    	(ABS(trans.ov_amount + trans.ov_gst  + trans.ov_discount) - trans.alloc <= 0.004) AS Settled
+    	FROM 0_supp_trans as trans, 0_suppliers as supplier
+    	WHERE supplier.supplier_id = trans.supplier_id
+     	AND trans.tran_date >= '2015-06-01'
+    	AND trans.tran_date <= '2015-07-27'
+		AND trans.type=20
+		AND trans.ov_amount != 0) UNION (SELECT 25 as type, 
+		trans.id as trans_no,
+		trans.type,
+		trans.reference, 
+		supplier.supp_name, 
+		po.requisition_no AS supp_reference,
+    	delivery_date as tran_date, 
+		'' as due_date,
+		supplier.curr_code, 
+    	'' AS TotalAmount,
+		'' AS Allocated,
+		0 as OverDue,
+    	1 as Settled
+    	FROM 0_grn_batch as trans, 0_suppliers as supplier, 0_purch_orders as po
+    	WHERE supplier.supplier_id = trans.supplier_id
+    	AND trans.purch_order_no = po.order_no
+		AND trans.type=20
+     	AND trans.delivery_date >= '2015-06-01'
+    	AND trans.delivery_date <= '2015-07-27')) as tr<br><br><br>
+[29-Jul-2015 11:17:47 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\reporting\rep902.php:121:<br>pruchse report not queried<br>error code : 1054<br>error message : Unknown column 'trans.type' in 'where clause'<br>sql that failed was : SELECT * FROM ((SELECT trans.type, 
+		trans.trans_no,
+		trans.reference, 
+		supplier.supp_name, 
+		trans.supp_reference,
+    	trans.tran_date, 
+		trans.due_date,
+		supplier.curr_code, 
+    	(trans.ov_amount + trans.ov_gst  + trans.ov_discount
+	+ trans.ov_freight_charge + trans.ov_insurance
+	+ trans.ov_packing_charge + trans.ov_duties 
+	+ trans.ov_service_charge + trans.ov_commission) AS TotalAmount, 
+		trans.alloc AS Allocated,
+		((trans.type = 20 OR trans.type = 21) AND trans.due_date < '2015-07-29') AS OverDue,
+    	(ABS(trans.ov_amount + trans.ov_gst  + trans.ov_discount) - trans.alloc <= 0.004) AS Settled
+    	FROM 0_supp_trans as trans, 0_suppliers as supplier
+    	WHERE supplier.supplier_id = trans.supplier_id
+     	AND trans.tran_date >= '2015-06-01'
+    	AND trans.tran_date <= '2015-07-27'
+		AND trans.type=20
+		AND trans.ov_amount != 0) UNION (SELECT 25 as type, 
+		trans.id as trans_no,
+		
+		trans.reference, 
+		supplier.supp_name, 
+		po.requisition_no AS supp_reference,
+    	delivery_date as tran_date, 
+		'' as due_date,
+		supplier.curr_code, 
+    	'' AS TotalAmount,
+		'' AS Allocated,
+		0 as OverDue,
+    	1 as Settled
+    	FROM 0_grn_batch as trans, 0_suppliers as supplier,0_supp_trans as trans1, 0_purch_orders as po
+    	WHERE supplier.supplier_id = trans.supplier_id
+    	AND trans.purch_order_no = po.order_no
+		AND trans.type=20
+     	AND trans.delivery_date >= '2015-06-01'
+    	AND trans.delivery_date <= '2015-07-27')) as tr<br><br><br>
+[29-Jul-2015 11:17:50 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\reporting\rep902.php:121:<br>pruchse report not queried<br>error code : 1054<br>error message : Unknown column 'trans.type' in 'where clause'<br>sql that failed was : SELECT * FROM ((SELECT trans.type, 
+		trans.trans_no,
+		trans.reference, 
+		supplier.supp_name, 
+		trans.supp_reference,
+    	trans.tran_date, 
+		trans.due_date,
+		supplier.curr_code, 
+    	(trans.ov_amount + trans.ov_gst  + trans.ov_discount
+	+ trans.ov_freight_charge + trans.ov_insurance
+	+ trans.ov_packing_charge + trans.ov_duties 
+	+ trans.ov_service_charge + trans.ov_commission) AS TotalAmount, 
+		trans.alloc AS Allocated,
+		((trans.type = 20 OR trans.type = 21) AND trans.due_date < '2015-07-29') AS OverDue,
+    	(ABS(trans.ov_amount + trans.ov_gst  + trans.ov_discount) - trans.alloc <= 0.004) AS Settled
+    	FROM 0_supp_trans as trans, 0_suppliers as supplier
+    	WHERE supplier.supplier_id = trans.supplier_id
+     	AND trans.tran_date >= '2015-06-01'
+    	AND trans.tran_date <= '2015-07-27'
+		AND trans.type=20
+		AND trans.ov_amount != 0) UNION (SELECT 25 as type, 
+		trans.id as trans_no,
+		
+		trans.reference, 
+		supplier.supp_name, 
+		po.requisition_no AS supp_reference,
+    	delivery_date as tran_date, 
+		'' as due_date,
+		supplier.curr_code, 
+    	'' AS TotalAmount,
+		'' AS Allocated,
+		0 as OverDue,
+    	1 as Settled
+    	FROM 0_grn_batch as trans, 0_suppliers as supplier,0_supp_trans as trans1, 0_purch_orders as po
+    	WHERE supplier.supplier_id = trans.supplier_id
+    	AND trans.purch_order_no = po.order_no
+		AND trans.type=20
+     	AND trans.delivery_date >= '2015-06-01'
+    	AND trans.delivery_date <= '2015-07-27')) as tr<br><br><br>
+[29-Jul-2015 11:22:57 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\reporting\rep902.php:121:<br>pruchse report not queried<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')) as tr' at line 21<br>sql that failed was : SELECT * FROM ((SELECT trans.type, 
+		trans.trans_no,
+		trans.reference, 
+		supplier.supp_name, 
+		trans.supp_reference,
+    	trans.tran_date, 
+		trans.due_date,
+		supplier.curr_code, 
+    	(trans.ov_amount + trans.ov_gst  + trans.ov_discount
+	+ trans.ov_freight_charge + trans.ov_insurance
+	+ trans.ov_packing_charge + trans.ov_duties 
+	+ trans.ov_service_charge + trans.ov_commission) AS TotalAmount, 
+		trans.alloc AS Allocated,
+		((trans.type = 20 OR trans.type = 21) AND trans.due_date < '2015-07-29') AS OverDue,
+    	(ABS(trans.ov_amount + trans.ov_gst  + trans.ov_discount) - trans.alloc <= 0.004) AS Settled
+    	FROM 0_supp_trans as trans, 0_suppliers as supplier
+    	WHERE supplier.supplier_id = trans.supplier_id
+     	AND trans.tran_date >= '2015-06-01'
+    	AND trans.tran_date <= '2015-07-27'
+		AND trans.type=20
+		AND trans.ov_amount != 0) UNION ()) as tr<br><br><br>
+[29-Jul-2015 11:23:04 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\reporting\rep902.php:121:<br>pruchse report not queried<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')) as tr' at line 21<br>sql that failed was : SELECT * FROM ((SELECT trans.type, 
+		trans.trans_no,
+		trans.reference, 
+		supplier.supp_name, 
+		trans.supp_reference,
+    	trans.tran_date, 
+		trans.due_date,
+		supplier.curr_code, 
+    	(trans.ov_amount + trans.ov_gst  + trans.ov_discount
+	+ trans.ov_freight_charge + trans.ov_insurance
+	+ trans.ov_packing_charge + trans.ov_duties 
+	+ trans.ov_service_charge + trans.ov_commission) AS TotalAmount, 
+		trans.alloc AS Allocated,
+		((trans.type = 20 OR trans.type = 21) AND trans.due_date < '2015-07-29') AS OverDue,
+    	(ABS(trans.ov_amount + trans.ov_gst  + trans.ov_discount) - trans.alloc <= 0.004) AS Settled
+    	FROM 0_supp_trans as trans, 0_suppliers as supplier
+    	WHERE supplier.supplier_id = trans.supplier_id
+     	AND trans.tran_date >= '2015-06-01'
+    	AND trans.tran_date <= '2015-07-27'
+		AND trans.type=20
+		AND trans.ov_amount != 0) UNION ()) as tr<br><br><br>
+[29-Jul-2015 11:43:19 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\reporting\rep902.php:122:<br>pruchse report not queried<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/AND trans.supplier_id='62'
+     	AND trans.tran_date >= '2015-06-01'
+    	AND' at line 18<br>sql that failed was : SELECT trans.type, 
+		trans.trans_no,
+		trans.reference, 
+		supplier.supp_name, 
+		trans.supp_reference,
+    	trans.tran_date, 
+		trans.due_date,
+		supplier.curr_code, 
+    	(trans.ov_amount + trans.ov_gst  + trans.ov_discount
+	+ trans.ov_freight_charge + trans.ov_insurance
+	+ trans.ov_packing_charge + trans.ov_duties 
+	+ trans.ov_service_charge + trans.ov_commission) AS TotalAmount, 
+		trans.alloc AS Allocated,
+		((trans.type = 20 OR trans.type = 21) AND trans.due_date < '2015-07-29') AS OverDue,
+    	(ABS(trans.ov_amount + trans.ov_gst  + trans.ov_discount) - trans.alloc <= 0.004) AS Settled
+    	FROM 0_supp_trans as trans, 0_suppliers as supplier
+    	WHERE supplier.supplier_id = trans.supplier_id
+		//AND trans.supplier_id='62'
+     	AND trans.tran_date >= '2015-06-01'
+    	AND trans.tran_date <= '2015-07-27'
+		AND trans.type=20
+		AND trans.ov_amount != 0<br><br><br>
+[29-Jul-2015 16:49:20 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\reporting\rep901.php:119:<br>oops<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.alloc AS Allocated,
+		((trans.type = 10)
+			AND trans.due_date < '2015-07-29'' at line 15<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date,
+		debtor.curr_code,	
+		debtor.name,
+		(trans.ov_amount + trans.ov_gst + trans.ov_freight 
+			+ trans.ov_freight_tax + trans.ov_discount
+			+ trans.ov_freight_charge + trans.ov_insurance
+			+ trans.ov_packing_charge + trans.ov_duties 
+			+ trans.ov_service_charge + trans.ov_commission
+			)	AS TotalAmounttrans.alloc AS Allocated,
+		((trans.type = 10)
+			AND trans.due_date < '2015-07-29') AS OverDue,		
+		Sum(line.quantity-line.qty_done) AS Outstanding
+		FROM 0_debtor_trans as trans
+			LEFT JOIN 0_debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,0_debtors_master as debtor, 0_cust_branch as branch
+		WHERE debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-07-01'
+			AND trans.tran_date <= '2015-07-31'
+			AND trans.type=10
+			AND trans.branch_code = branch.branch_code GROUP BY trans.trans_no, trans.type<br><br><br>
+[30-Jul-2015 08:11:38 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\reporting\rep901.php:117:<br>oops<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freig' at line 15<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date,
+		debtor.curr_code,	
+		debtor.name,
+		(trans.ov_amount + trans.ov_gst + trans.ov_freight 
+			+ trans.ov_freight_tax + trans.ov_discount
+			+ trans.ov_freight_charge + trans.ov_insurance
+			+ trans.ov_packing_charge + trans.ov_duties 
+			+ trans.ov_service_charge + trans.ov_commission
+			)	AS TotalAmount@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freight_tax + trans.ov_discount + trans.ov_freight_charge + trans.ov_insurance + trans.ov_packing_charge + trans.ov_duties + trans.ov_service_charge + trans.ov_commission), ,		
+		Sum(line.quantity-line.qty_done) AS Outstanding
+		FROM 0_debtor_trans as trans
+			LEFT JOIN 0_debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,0_debtors_master as debtor, 0_cust_branch as branch
+		WHERE debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-07-01'
+			AND trans.tran_date <= '2015-07-31'
+			AND trans.type=10
+			AND trans.branch_code = branch.branch_code GROUP BY trans.trans_no, trans.type<br><br><br>
+[30-Jul-2015 08:11:41 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\reporting\rep901.php:117:<br>oops<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freig' at line 15<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date,
+		debtor.curr_code,	
+		debtor.name,
+		(trans.ov_amount + trans.ov_gst + trans.ov_freight 
+			+ trans.ov_freight_tax + trans.ov_discount
+			+ trans.ov_freight_charge + trans.ov_insurance
+			+ trans.ov_packing_charge + trans.ov_duties 
+			+ trans.ov_service_charge + trans.ov_commission
+			)	AS TotalAmount@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freight_tax + trans.ov_discount + trans.ov_freight_charge + trans.ov_insurance + trans.ov_packing_charge + trans.ov_duties + trans.ov_service_charge + trans.ov_commission), ,		
+		Sum(line.quantity-line.qty_done) AS Outstanding
+		FROM 0_debtor_trans as trans
+			LEFT JOIN 0_debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,0_debtors_master as debtor, 0_cust_branch as branch
+		WHERE debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-07-01'
+			AND trans.tran_date <= '2015-07-31'
+			AND trans.type=10
+			AND trans.branch_code = branch.branch_code GROUP BY trans.trans_no, trans.type<br><br><br>
+[30-Jul-2015 08:25:27 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\reporting\rep901.php:117:<br>oops<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freig' at line 15<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date,
+		debtor.curr_code,	
+		debtor.name,
+		(trans.ov_amount + trans.ov_gst + trans.ov_freight 
+			+ trans.ov_freight_tax + trans.ov_discount
+			+ trans.ov_freight_charge + trans.ov_insurance
+			+ trans.ov_packing_charge + trans.ov_duties 
+			+ trans.ov_service_charge + trans.ov_commission
+			)	AS TotalAmount@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freight_tax + trans.ov_discount + trans.ov_freight_charge + trans.ov_insurance + trans.ov_packing_charge + trans.ov_duties + trans.ov_service_charge + trans.ov_commission) as rb, ,		
+		Sum(line.quantity-line.qty_done) AS Outstanding
+		FROM 0_debtor_trans as trans
+			LEFT JOIN 0_debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,0_debtors_master as debtor, 0_cust_branch as branch
+		WHERE debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-07-01'
+			AND trans.tran_date <= '2015-07-31'
+			AND trans.type=10
+			AND trans.branch_code = branch.branch_code GROUP BY trans.trans_no, trans.type<br><br><br>
+[30-Jul-2015 08:25:30 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\reporting\rep901.php:117:<br>oops<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freig' at line 15<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date,
+		debtor.curr_code,	
+		debtor.name,
+		(trans.ov_amount + trans.ov_gst + trans.ov_freight 
+			+ trans.ov_freight_tax + trans.ov_discount
+			+ trans.ov_freight_charge + trans.ov_insurance
+			+ trans.ov_packing_charge + trans.ov_duties 
+			+ trans.ov_service_charge + trans.ov_commission
+			)	AS TotalAmount@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freight_tax + trans.ov_discount + trans.ov_freight_charge + trans.ov_insurance + trans.ov_packing_charge + trans.ov_duties + trans.ov_service_charge + trans.ov_commission) as rb, ,		
+		Sum(line.quantity-line.qty_done) AS Outstanding
+		FROM 0_debtor_trans as trans
+			LEFT JOIN 0_debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,0_debtors_master as debtor, 0_cust_branch as branch
+		WHERE debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-07-01'
+			AND trans.tran_date <= '2015-07-31'
+			AND trans.type=10
+			AND trans.branch_code = branch.branch_code GROUP BY trans.trans_no, trans.type<br><br><br>
+[30-Jul-2015 08:25:56 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\reporting\rep901.php:118:<br>oops<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freig' at line 15<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date,
+		debtor.curr_code,	
+		debtor.name,
+		(trans.ov_amount + trans.ov_gst + trans.ov_freight 
+			+ trans.ov_freight_tax + trans.ov_discount
+			+ trans.ov_freight_charge + trans.ov_insurance
+			+ trans.ov_packing_charge + trans.ov_duties 
+			+ trans.ov_service_charge + trans.ov_commission
+			)	AS TotalAmount@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freight_tax + trans.ov_discount + trans.ov_freight_charge + trans.ov_insurance + trans.ov_packing_charge + trans.ov_duties + trans.ov_service_charge + trans.ov_commission) as rb, ,		
+		Sum(line.quantity-line.qty_done) AS Outstanding
+		FROM 0_debtor_trans as trans
+			LEFT JOIN 0_debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,0_debtors_master as debtor, 0_cust_branch as branch
+		WHERE debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-07-01'
+			AND trans.tran_date <= '2015-07-31'
+			AND trans.type=10
+			AND trans.branch_code = branch.branch_code GROUP BY trans.trans_no, trans.type<br><br><br>
+[30-Jul-2015 08:26:02 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\reporting\rep901.php:118:<br>oops<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freig' at line 15<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date,
+		debtor.curr_code,	
+		debtor.name,
+		(trans.ov_amount + trans.ov_gst + trans.ov_freight 
+			+ trans.ov_freight_tax + trans.ov_discount
+			+ trans.ov_freight_charge + trans.ov_insurance
+			+ trans.ov_packing_charge + trans.ov_duties 
+			+ trans.ov_service_charge + trans.ov_commission
+			)	AS TotalAmount@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freight_tax + trans.ov_discount + trans.ov_freight_charge + trans.ov_insurance + trans.ov_packing_charge + trans.ov_duties + trans.ov_service_charge + trans.ov_commission) as rb, ,		
+		Sum(line.quantity-line.qty_done) AS Outstanding
+		FROM 0_debtor_trans as trans
+			LEFT JOIN 0_debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,0_debtors_master as debtor, 0_cust_branch as branch
+		WHERE debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-07-01'
+			AND trans.tran_date <= '2015-07-31'
+			AND trans.type=10
+			AND trans.branch_code = branch.branch_code GROUP BY trans.trans_no, trans.type<br><br><br>
+[30-Jul-2015 08:27:12 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\reporting\rep901.php:117:<br>oops<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freig' at line 15<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date,
+		debtor.curr_code,	
+		debtor.name,
+		(trans.ov_amount + trans.ov_gst + trans.ov_freight 
+			+ trans.ov_freight_tax + trans.ov_discount
+			+ trans.ov_freight_charge + trans.ov_insurance
+			+ trans.ov_packing_charge + trans.ov_duties 
+			+ trans.ov_service_charge + trans.ov_commission
+			)	AS TotalAmount@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freight_tax + trans.ov_discount + trans.ov_freight_charge + trans.ov_insurance + trans.ov_packing_charge + trans.ov_duties + trans.ov_service_charge + trans.ov_commission) as rb, ,		
+		Sum(line.quantity-line.qty_done) AS Outstanding
+		FROM 0_debtor_trans as trans
+			LEFT JOIN 0_debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,0_debtors_master as debtor, 0_cust_branch as branch
+		WHERE debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-07-01'
+			AND trans.tran_date <= '2015-07-31'
+			AND trans.type=10
+			AND trans.branch_code = branch.branch_code GROUP BY trans.trans_no, trans.type<br><br><br>
+[30-Jul-2015 08:27:14 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\reporting\rep901.php:117:<br>oops<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freig' at line 15<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date,
+		debtor.curr_code,	
+		debtor.name,
+		(trans.ov_amount + trans.ov_gst + trans.ov_freight 
+			+ trans.ov_freight_tax + trans.ov_discount
+			+ trans.ov_freight_charge + trans.ov_insurance
+			+ trans.ov_packing_charge + trans.ov_duties 
+			+ trans.ov_service_charge + trans.ov_commission
+			)	AS TotalAmount@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freight_tax + trans.ov_discount + trans.ov_freight_charge + trans.ov_insurance + trans.ov_packing_charge + trans.ov_duties + trans.ov_service_charge + trans.ov_commission) as rb, ,		
+		Sum(line.quantity-line.qty_done) AS Outstanding
+		FROM 0_debtor_trans as trans
+			LEFT JOIN 0_debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,0_debtors_master as debtor, 0_cust_branch as branch
+		WHERE debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-07-01'
+			AND trans.tran_date <= '2015-07-31'
+			AND trans.type=10
+			AND trans.branch_code = branch.branch_code GROUP BY trans.trans_no, trans.type<br><br><br>
+[30-Jul-2015 08:27:31 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\reporting\rep901.php:117:<br>oops<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freig' at line 15<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date,
+		debtor.curr_code,	
+		debtor.name,
+		(trans.ov_amount + trans.ov_gst + trans.ov_freight 
+			+ trans.ov_freight_tax + trans.ov_discount
+			+ trans.ov_freight_charge + trans.ov_insurance
+			+ trans.ov_packing_charge + trans.ov_duties 
+			+ trans.ov_service_charge + trans.ov_commission
+			)	AS TotalAmount@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freight_tax + trans.ov_discount + trans.ov_freight_charge + trans.ov_insurance + trans.ov_packing_charge + trans.ov_duties + trans.ov_service_charge + trans.ov_commission) as rb, ,		
+		Sum(line.quantity-line.qty_done) AS Outstanding
+		FROM 0_debtor_trans as trans
+			LEFT JOIN 0_debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,0_debtors_master as debtor, 0_cust_branch as branch
+		WHERE debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-07-01'
+			AND trans.tran_date <= '2015-07-31'
+			AND trans.type=10
+			AND trans.branch_code = branch.branch_code GROUP BY trans.trans_no, trans.type<br><br><br>
+[30-Jul-2015 08:28:15 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\reporting\rep901.php:117:<br>oops<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freig' at line 15<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date,
+		debtor.curr_code,	
+		debtor.name,
+		(trans.ov_amount + trans.ov_gst + trans.ov_freight 
+			+ trans.ov_freight_tax + trans.ov_discount
+			+ trans.ov_freight_charge + trans.ov_insurance
+			+ trans.ov_packing_charge + trans.ov_duties 
+			+ trans.ov_service_charge + trans.ov_commission
+			)	AS TotalAmount@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freight_tax + trans.ov_discount + trans.ov_freight_charge + trans.ov_insurance + trans.ov_packing_charge + trans.ov_duties + trans.ov_service_charge + trans.ov_commission) , ,		
+		Sum(line.quantity-line.qty_done) AS Outstanding
+		FROM 0_debtor_trans as trans
+			LEFT JOIN 0_debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,0_debtors_master as debtor, 0_cust_branch as branch
+		WHERE debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-07-01'
+			AND trans.tran_date <= '2015-07-31'
+			AND trans.type=10
+			AND trans.branch_code = branch.branch_code GROUP BY trans.trans_no, trans.type<br><br><br>
+[30-Jul-2015 08:28:16 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\reporting\rep901.php:117:<br>oops<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freig' at line 15<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date,
+		debtor.curr_code,	
+		debtor.name,
+		(trans.ov_amount + trans.ov_gst + trans.ov_freight 
+			+ trans.ov_freight_tax + trans.ov_discount
+			+ trans.ov_freight_charge + trans.ov_insurance
+			+ trans.ov_packing_charge + trans.ov_duties 
+			+ trans.ov_service_charge + trans.ov_commission
+			)	AS TotalAmount@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freight_tax + trans.ov_discount + trans.ov_freight_charge + trans.ov_insurance + trans.ov_packing_charge + trans.ov_duties + trans.ov_service_charge + trans.ov_commission) , ,		
+		Sum(line.quantity-line.qty_done) AS Outstanding
+		FROM 0_debtor_trans as trans
+			LEFT JOIN 0_debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,0_debtors_master as debtor, 0_cust_branch as branch
+		WHERE debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-07-01'
+			AND trans.tran_date <= '2015-07-31'
+			AND trans.type=10
+			AND trans.branch_code = branch.branch_code GROUP BY trans.trans_no, trans.type<br><br><br>
+[30-Jul-2015 08:31:28 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\reporting\rep901.php:117:<br>oops<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freig' at line 15<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date,
+		debtor.curr_code,	
+		debtor.name,
+		(trans.ov_amount + trans.ov_gst + trans.ov_freight 
+			+ trans.ov_freight_tax + trans.ov_discount
+			+ trans.ov_freight_charge + trans.ov_insurance
+			+ trans.ov_packing_charge + trans.ov_duties 
+			+ trans.ov_service_charge + trans.ov_commission
+			)	AS TotalAmount@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freight_tax + trans.ov_discount + trans.ov_freight_charge + trans.ov_insurance + trans.ov_packing_charge + trans.ov_duties + trans.ov_service_charge + trans.ov_commission) as RB , ,		
+		Sum(line.quantity-line.qty_done) AS Outstanding
+		FROM 0_debtor_trans as trans
+			LEFT JOIN 0_debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,0_debtors_master as debtor, 0_cust_branch as branch
+		WHERE debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-07-01'
+			AND trans.tran_date <= '2015-07-31'
+			AND trans.type=10
+			AND trans.branch_code = branch.branch_code GROUP BY trans.trans_no, trans.type<br><br><br>
+[30-Jul-2015 08:32:14 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\reporting\rep901.php:118:<br>oops<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freig' at line 15<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date,
+		debtor.curr_code,	
+		debtor.name,
+		(trans.ov_amount + trans.ov_gst + trans.ov_freight 
+			+ trans.ov_freight_tax + trans.ov_discount
+			+ trans.ov_freight_charge + trans.ov_insurance
+			+ trans.ov_packing_charge + trans.ov_duties 
+			+ trans.ov_service_charge + trans.ov_commission
+			)	AS TotalAmount@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freight_tax + trans.ov_discount + trans.ov_freight_charge + trans.ov_insurance + trans.ov_packing_charge + trans.ov_duties + trans.ov_service_charge + trans.ov_commission) as RB , ,		
+		Sum(line.quantity-line.qty_done) AS Outstanding
+		FROM 0_debtor_trans as trans
+			LEFT JOIN 0_debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,0_debtors_master as debtor, 0_cust_branch as branch
+		WHERE debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-07-01'
+			AND trans.tran_date <= '2015-07-31'
+			AND trans.type=10
+			AND trans.branch_code = branch.branch_code GROUP BY trans.trans_no, trans.type<br><br><br>
+[30-Jul-2015 08:32:16 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\reporting\rep901.php:118:<br>oops<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freig' at line 15<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date,
+		debtor.curr_code,	
+		debtor.name,
+		(trans.ov_amount + trans.ov_gst + trans.ov_freight 
+			+ trans.ov_freight_tax + trans.ov_discount
+			+ trans.ov_freight_charge + trans.ov_insurance
+			+ trans.ov_packing_charge + trans.ov_duties 
+			+ trans.ov_service_charge + trans.ov_commission
+			)	AS TotalAmount@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freight_tax + trans.ov_discount + trans.ov_freight_charge + trans.ov_insurance + trans.ov_packing_charge + trans.ov_duties + trans.ov_service_charge + trans.ov_commission) as RB , ,		
+		Sum(line.quantity-line.qty_done) AS Outstanding
+		FROM 0_debtor_trans as trans
+			LEFT JOIN 0_debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,0_debtors_master as debtor, 0_cust_branch as branch
+		WHERE debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-07-01'
+			AND trans.tran_date <= '2015-07-31'
+			AND trans.type=10
+			AND trans.branch_code = branch.branch_code GROUP BY trans.trans_no, trans.type<br><br><br>
+[30-Jul-2015 08:32:16 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\reporting\rep901.php:118:<br>oops<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freig' at line 15<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date,
+		debtor.curr_code,	
+		debtor.name,
+		(trans.ov_amount + trans.ov_gst + trans.ov_freight 
+			+ trans.ov_freight_tax + trans.ov_discount
+			+ trans.ov_freight_charge + trans.ov_insurance
+			+ trans.ov_packing_charge + trans.ov_duties 
+			+ trans.ov_service_charge + trans.ov_commission
+			)	AS TotalAmount@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freight_tax + trans.ov_discount + trans.ov_freight_charge + trans.ov_insurance + trans.ov_packing_charge + trans.ov_duties + trans.ov_service_charge + trans.ov_commission) as RB , ,		
+		Sum(line.quantity-line.qty_done) AS Outstanding
+		FROM 0_debtor_trans as trans
+			LEFT JOIN 0_debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,0_debtors_master as debtor, 0_cust_branch as branch
+		WHERE debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-07-01'
+			AND trans.tran_date <= '2015-07-31'
+			AND trans.type=10
+			AND trans.branch_code = branch.branch_code GROUP BY trans.trans_no, trans.type<br><br><br>
+[30-Jul-2015 08:33:02 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\reporting\rep901.php:117:<br>oops<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freig' at line 15<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date,
+		debtor.curr_code,	
+		debtor.name,
+		(trans.ov_amount + trans.ov_gst + trans.ov_freight 
+			+ trans.ov_freight_tax + trans.ov_discount
+			+ trans.ov_freight_charge + trans.ov_insurance
+			+ trans.ov_packing_charge + trans.ov_duties 
+			+ trans.ov_service_charge + trans.ov_commission
+			)	AS TotalAmount@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freight_tax + trans.ov_discount + trans.ov_freight_charge + trans.ov_insurance + trans.ov_packing_charge + trans.ov_duties + trans.ov_service_charge + trans.ov_commission) as RB , ,		
+		Sum(line.quantity-line.qty_done) AS Outstanding
+		FROM 0_debtor_trans as trans
+			LEFT JOIN 0_debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,0_debtors_master as debtor, 0_cust_branch as branch
+		WHERE debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-07-01'
+			AND trans.tran_date <= '2015-07-31'
+			AND trans.type=10
+			AND trans.branch_code = branch.branch_code GROUP BY trans.trans_no, trans.type<br><br><br>
+[30-Jul-2015 08:33:05 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\reporting\rep901.php:117:<br>oops<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freig' at line 15<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date,
+		debtor.curr_code,	
+		debtor.name,
+		(trans.ov_amount + trans.ov_gst + trans.ov_freight 
+			+ trans.ov_freight_tax + trans.ov_discount
+			+ trans.ov_freight_charge + trans.ov_insurance
+			+ trans.ov_packing_charge + trans.ov_duties 
+			+ trans.ov_service_charge + trans.ov_commission
+			)	AS TotalAmount@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freight_tax + trans.ov_discount + trans.ov_freight_charge + trans.ov_insurance + trans.ov_packing_charge + trans.ov_duties + trans.ov_service_charge + trans.ov_commission) as RB , ,		
+		Sum(line.quantity-line.qty_done) AS Outstanding
+		FROM 0_debtor_trans as trans
+			LEFT JOIN 0_debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,0_debtors_master as debtor, 0_cust_branch as branch
+		WHERE debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-07-01'
+			AND trans.tran_date <= '2015-07-31'
+			AND trans.type=10
+			AND trans.branch_code = branch.branch_code GROUP BY trans.trans_no, trans.type<br><br><br>
+[30-Jul-2015 08:33:14 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\reporting\rep901.php:117:<br>oops<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freig' at line 15<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date,
+		debtor.curr_code,	
+		debtor.name,
+		(trans.ov_amount + trans.ov_gst + trans.ov_freight 
+			+ trans.ov_freight_tax + trans.ov_discount
+			+ trans.ov_freight_charge + trans.ov_insurance
+			+ trans.ov_packing_charge + trans.ov_duties 
+			+ trans.ov_service_charge + trans.ov_commission
+			)	AS TotalAmount@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freight_tax + trans.ov_discount + trans.ov_freight_charge + trans.ov_insurance + trans.ov_packing_charge + trans.ov_duties + trans.ov_service_charge + trans.ov_commission) as RB , ,		
+		Sum(line.quantity-line.qty_done) AS Outstanding
+		FROM 0_debtor_trans as trans
+			LEFT JOIN 0_debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,0_debtors_master as debtor, 0_cust_branch as branch
+		WHERE debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-07-01'
+			AND trans.tran_date <= '2015-07-31'
+			AND trans.type=10
+			AND trans.branch_code = branch.branch_code GROUP BY trans.trans_no, trans.type<br><br><br>
+[30-Jul-2015 08:33:24 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\reporting\rep901.php:117:<br>oops<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freig' at line 15<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date,
+		debtor.curr_code,	
+		debtor.name,
+		(trans.ov_amount + trans.ov_gst + trans.ov_freight 
+			+ trans.ov_freight_tax + trans.ov_discount
+			+ trans.ov_freight_charge + trans.ov_insurance
+			+ trans.ov_packing_charge + trans.ov_duties 
+			+ trans.ov_service_charge + trans.ov_commission
+			)	AS TotalAmount@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freight_tax + trans.ov_discount + trans.ov_freight_charge + trans.ov_insurance + trans.ov_packing_charge + trans.ov_duties + trans.ov_service_charge + trans.ov_commission) as RB , ,		
+		Sum(line.quantity-line.qty_done) AS Outstanding
+		FROM 0_debtor_trans as trans
+			LEFT JOIN 0_debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,0_debtors_master as debtor, 0_cust_branch as branch
+		WHERE debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-07-01'
+			AND trans.tran_date <= '2015-07-31'
+			AND trans.type=10
+			AND trans.branch_code = branch.branch_code GROUP BY trans.trans_no, trans.type<br><br><br>
+[30-Jul-2015 08:34:35 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\reporting\rep901.php:118:<br>oops<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freig' at line 15<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date,
+		debtor.curr_code,	
+		debtor.name,
+		(trans.ov_amount + trans.ov_gst + trans.ov_freight 
+			+ trans.ov_freight_tax + trans.ov_discount
+			+ trans.ov_freight_charge + trans.ov_insurance
+			+ trans.ov_packing_charge + trans.ov_duties 
+			+ trans.ov_service_charge + trans.ov_commission
+			)	AS TotalAmount@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freight_tax + trans.ov_discount + trans.ov_freight_charge + trans.ov_insurance + trans.ov_packing_charge + trans.ov_duties + trans.ov_service_charge + trans.ov_commission) as RB , ,		
+		Sum(line.quantity-line.qty_done) AS Outstanding
+		FROM 0_debtor_trans as trans
+			LEFT JOIN 0_debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,0_debtors_master as debtor, 0_cust_branch as branch
+		WHERE debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-07-01'
+			AND trans.tran_date <= '2015-07-31'
+			AND trans.type=10
+			AND trans.branch_code = branch.branch_code GROUP BY trans.trans_no, trans.type<br><br><br>
+[30-Jul-2015 08:38:20 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\reporting\rep901.php:118:<br>oops<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freig' at line 15<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date,
+		debtor.curr_code,	
+		debtor.name,
+		(trans.ov_amount + trans.ov_gst + trans.ov_freight 
+			+ trans.ov_freight_tax + trans.ov_discount
+			+ trans.ov_freight_charge + trans.ov_insurance
+			+ trans.ov_packing_charge + trans.ov_duties 
+			+ trans.ov_service_charge + trans.ov_commission
+			)	AS TotalAmount@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freight_tax + trans.ov_discount + trans.ov_freight_charge + trans.ov_insurance + trans.ov_packing_charge + trans.ov_duties + trans.ov_service_charge + trans.ov_commission) as RB , ,		
+		Sum(line.quantity-line.qty_done) AS Outstanding
+		FROM 0_debtor_trans as trans
+			LEFT JOIN 0_debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,0_debtors_master as debtor, 0_cust_branch as branch
+		WHERE debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-07-01'
+			AND trans.tran_date <= '2015-07-31'
+			AND trans.type=10
+			AND trans.branch_code = branch.branch_code GROUP BY trans.trans_no, trans.type<br><br><br>
+[30-Jul-2015 08:38:21 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\reporting\rep901.php:118:<br>oops<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freig' at line 15<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date,
+		debtor.curr_code,	
+		debtor.name,
+		(trans.ov_amount + trans.ov_gst + trans.ov_freight 
+			+ trans.ov_freight_tax + trans.ov_discount
+			+ trans.ov_freight_charge + trans.ov_insurance
+			+ trans.ov_packing_charge + trans.ov_duties 
+			+ trans.ov_service_charge + trans.ov_commission
+			)	AS TotalAmount@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freight_tax + trans.ov_discount + trans.ov_freight_charge + trans.ov_insurance + trans.ov_packing_charge + trans.ov_duties + trans.ov_service_charge + trans.ov_commission) as RB , ,		
+		Sum(line.quantity-line.qty_done) AS Outstanding
+		FROM 0_debtor_trans as trans
+			LEFT JOIN 0_debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,0_debtors_master as debtor, 0_cust_branch as branch
+		WHERE debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-07-01'
+			AND trans.tran_date <= '2015-07-31'
+			AND trans.type=10
+			AND trans.branch_code = branch.branch_code GROUP BY trans.trans_no, trans.type<br><br><br>
+[30-Jul-2015 08:42:07 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\reporting\rep901.php:118:<br>oops<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freig' at line 15<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date,
+		debtor.curr_code,	
+		debtor.name,
+		(trans.ov_amount + trans.ov_gst + trans.ov_freight 
+			+ trans.ov_freight_tax + trans.ov_discount
+			+ trans.ov_freight_charge + trans.ov_insurance
+			+ trans.ov_packing_charge + trans.ov_duties 
+			+ trans.ov_service_charge + trans.ov_commission
+			)	AS TotalAmount@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freight_tax + trans.ov_discount + trans.ov_freight_charge + trans.ov_insurance + trans.ov_packing_charge + trans.ov_duties + trans.ov_service_charge + trans.ov_commission) AS Rb , ,		
+		Sum(line.quantity-line.qty_done) AS Outstanding
+		FROM 0_debtor_trans as trans
+			LEFT JOIN 0_debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,0_debtors_master as debtor, 0_cust_branch as branch
+		WHERE debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-07-01'
+			AND trans.tran_date <= '2015-07-31'
+			AND trans.type=10
+			AND trans.branch_code = branch.branch_code GROUP BY trans.trans_no, trans.type<br><br><br>
+[30-Jul-2015 08:42:08 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\reporting\rep901.php:118:<br>oops<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freig' at line 15<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date,
+		debtor.curr_code,	
+		debtor.name,
+		(trans.ov_amount + trans.ov_gst + trans.ov_freight 
+			+ trans.ov_freight_tax + trans.ov_discount
+			+ trans.ov_freight_charge + trans.ov_insurance
+			+ trans.ov_packing_charge + trans.ov_duties 
+			+ trans.ov_service_charge + trans.ov_commission
+			)	AS TotalAmount@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freight_tax + trans.ov_discount + trans.ov_freight_charge + trans.ov_insurance + trans.ov_packing_charge + trans.ov_duties + trans.ov_service_charge + trans.ov_commission) AS Rb , ,		
+		Sum(line.quantity-line.qty_done) AS Outstanding
+		FROM 0_debtor_trans as trans
+			LEFT JOIN 0_debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,0_debtors_master as debtor, 0_cust_branch as branch
+		WHERE debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-07-01'
+			AND trans.tran_date <= '2015-07-31'
+			AND trans.type=10
+			AND trans.branch_code = branch.branch_code GROUP BY trans.trans_no, trans.type<br><br><br>
+[30-Jul-2015 08:42:23 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\reporting\rep901.php:118:<br>oops<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freig' at line 15<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date,
+		debtor.curr_code,	
+		debtor.name,
+		(trans.ov_amount + trans.ov_gst + trans.ov_freight 
+			+ trans.ov_freight_tax + trans.ov_discount
+			+ trans.ov_freight_charge + trans.ov_insurance
+			+ trans.ov_packing_charge + trans.ov_duties 
+			+ trans.ov_service_charge + trans.ov_commission
+			)	AS TotalAmount@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freight_tax + trans.ov_discount + trans.ov_freight_charge + trans.ov_insurance + trans.ov_packing_charge + trans.ov_duties + trans.ov_service_charge + trans.ov_commission) AS Rb  ,		
+		Sum(line.quantity-line.qty_done) AS Outstanding
+		FROM 0_debtor_trans as trans
+			LEFT JOIN 0_debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,0_debtors_master as debtor, 0_cust_branch as branch
+		WHERE debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-07-01'
+			AND trans.tran_date <= '2015-07-31'
+			AND trans.type=10
+			AND trans.branch_code = branch.branch_code GROUP BY trans.trans_no, trans.type<br><br><br>
+[30-Jul-2015 08:42:38 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\reporting\rep901.php:118:<br>oops<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freig' at line 15<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date,
+		debtor.curr_code,	
+		debtor.name,
+		(trans.ov_amount + trans.ov_gst + trans.ov_freight 
+			+ trans.ov_freight_tax + trans.ov_discount
+			+ trans.ov_freight_charge + trans.ov_insurance
+			+ trans.ov_packing_charge + trans.ov_duties 
+			+ trans.ov_service_charge + trans.ov_commission
+			)	AS TotalAmount@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freight_tax + trans.ov_discount + trans.ov_freight_charge + trans.ov_insurance + trans.ov_packing_charge + trans.ov_duties + trans.ov_service_charge + trans.ov_commission)  , AS Rb,		
+		Sum(line.quantity-line.qty_done) AS Outstanding
+		FROM 0_debtor_trans as trans
+			LEFT JOIN 0_debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,0_debtors_master as debtor, 0_cust_branch as branch
+		WHERE debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-07-01'
+			AND trans.tran_date <= '2015-07-31'
+			AND trans.type=10
+			AND trans.branch_code = branch.branch_code GROUP BY trans.trans_no, trans.type<br><br><br>
+[30-Jul-2015 08:43:02 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\reporting\rep901.php:118:<br>oops<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freig' at line 15<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date,
+		debtor.curr_code,	
+		debtor.name,
+		(trans.ov_amount + trans.ov_gst + trans.ov_freight 
+			+ trans.ov_freight_tax + trans.ov_discount
+			+ trans.ov_freight_charge + trans.ov_insurance
+			+ trans.ov_packing_charge + trans.ov_duties 
+			+ trans.ov_service_charge + trans.ov_commission
+			)	AS TotalAmount@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freight_tax + trans.ov_discount + trans.ov_freight_charge + trans.ov_insurance + trans.ov_packing_charge + trans.ov_duties + trans.ov_service_charge + trans.ov_commission) AS Rb ,		
+		Sum(line.quantity-line.qty_done) AS Outstanding
+		FROM 0_debtor_trans as trans
+			LEFT JOIN 0_debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,0_debtors_master as debtor, 0_cust_branch as branch
+		WHERE debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-07-01'
+			AND trans.tran_date <= '2015-07-31'
+			AND trans.type=10
+			AND trans.branch_code = branch.branch_code GROUP BY trans.trans_no, trans.type<br><br><br>
+[30-Jul-2015 08:43:42 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\reporting\rep901.php:118:<br>oops<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freig' at line 15<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date,
+		debtor.curr_code,	
+		debtor.name,
+		(trans.ov_amount + trans.ov_gst + trans.ov_freight 
+			+ trans.ov_freight_tax + trans.ov_discount
+			+ trans.ov_freight_charge + trans.ov_insurance
+			+ trans.ov_packing_charge + trans.ov_duties 
+			+ trans.ov_service_charge + trans.ov_commission
+			)	AS TotalAmount@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freight_tax + trans.ov_discount + trans.ov_freight_charge + trans.ov_insurance + trans.ov_packing_charge + trans.ov_duties + trans.ov_service_charge + trans.ov_commission) AS Rb ,		
+		Sum(line.quantity-line.qty_done) AS Outstanding
+		FROM 0_debtor_trans as trans
+			LEFT JOIN 0_debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,0_debtors_master as debtor, 0_cust_branch as branch
+		WHERE debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-07-01'
+			AND trans.tran_date <= '2015-07-31'
+			AND trans.type=10
+			AND trans.branch_code = branch.branch_code GROUP BY trans.trans_no, trans.type<br><br><br>
+[30-Jul-2015 08:43:47 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\reporting\rep901.php:118:<br>oops<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freig' at line 15<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date,
+		debtor.curr_code,	
+		debtor.name,
+		(trans.ov_amount + trans.ov_gst + trans.ov_freight 
+			+ trans.ov_freight_tax + trans.ov_discount
+			+ trans.ov_freight_charge + trans.ov_insurance
+			+ trans.ov_packing_charge + trans.ov_duties 
+			+ trans.ov_service_charge + trans.ov_commission
+			)	AS TotalAmount@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freight_tax + trans.ov_discount + trans.ov_freight_charge + trans.ov_insurance + trans.ov_packing_charge + trans.ov_duties + trans.ov_service_charge + trans.ov_commission) AS Rb ,		
+		Sum(line.quantity-line.qty_done) AS Outstanding
+		FROM 0_debtor_trans as trans
+			LEFT JOIN 0_debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,0_debtors_master as debtor, 0_cust_branch as branch
+		WHERE debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-07-01'
+			AND trans.tran_date <= '2015-07-31'
+			AND trans.type=10
+			AND trans.branch_code = branch.branch_code GROUP BY trans.trans_no, trans.type<br><br><br>
+[30-Jul-2015 08:44:02 Asia/Dubai] 0:admin:ui_msgs.inc:19: trigger_error() expects parameter 1 to be string, resource given
+[30-Jul-2015 08:44:27 Asia/Dubai] 0:admin:ui_msgs.inc:19: trigger_error() expects parameter 1 to be string, resource given
+[30-Jul-2015 08:44:28 Asia/Dubai] 0:admin:ui_msgs.inc:19: trigger_error() expects parameter 1 to be string, resource given
+[30-Jul-2015 08:45:13 Asia/Dubai] 0:admin:connect_db.inc:98: mysql_fetch_array() expects parameter 1 to be resource, string given
+[30-Jul-2015 08:48:34 Asia/Dubai] 0:admin:connect_db.inc:98: mysql_fetch_array() expects parameter 1 to be resource, string given
+[30-Jul-2015 08:49:09 Asia/Dubai] 0:admin:connect_db.inc:98: mysql_fetch_array() expects parameter 1 to be resource, string given
+[30-Jul-2015 08:50:06 Asia/Dubai] 0:admin:ui_msgs.inc:19: trigger_error() expects parameter 1 to be string, resource given
+[30-Jul-2015 08:50:31 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\reporting\rep901.php:118:<br>oops<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '		
+		Sum(line.quantity-line.qty_done) AS Outstanding
+		FROM 0_debtor_trans as ' at line 15<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date,
+		debtor.curr_code,	
+		debtor.name,
+		(trans.ov_amount + trans.ov_gst + trans.ov_freight 
+			+ trans.ov_freight_tax + trans.ov_discount
+			+ trans.ov_freight_charge + trans.ov_insurance
+			+ trans.ov_packing_charge + trans.ov_duties 
+			+ trans.ov_service_charge + trans.ov_commission
+			)	AS TotalAmount,@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freight_tax + trans.ov_discount + trans.ov_freight_charge + trans.ov_insurance + trans.ov_packing_charge + trans.ov_duties + trans.ov_service_charge + trans.ov_commission) AS Rb ,,		
+		Sum(line.quantity-line.qty_done) AS Outstanding
+		FROM 0_debtor_trans as trans
+			LEFT JOIN 0_debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,0_debtors_master as debtor, 0_cust_branch as branch
+		WHERE debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-07-01'
+			AND trans.tran_date <= '2015-07-31'
+			AND trans.type=10
+			AND trans.branch_code = branch.branch_code GROUP BY trans.trans_no, trans.type<br><br><br>
+[30-Jul-2015 08:50:32 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\reporting\rep901.php:118:<br>oops<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '		
+		Sum(line.quantity-line.qty_done) AS Outstanding
+		FROM 0_debtor_trans as ' at line 15<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date,
+		debtor.curr_code,	
+		debtor.name,
+		(trans.ov_amount + trans.ov_gst + trans.ov_freight 
+			+ trans.ov_freight_tax + trans.ov_discount
+			+ trans.ov_freight_charge + trans.ov_insurance
+			+ trans.ov_packing_charge + trans.ov_duties 
+			+ trans.ov_service_charge + trans.ov_commission
+			)	AS TotalAmount,@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freight_tax + trans.ov_discount + trans.ov_freight_charge + trans.ov_insurance + trans.ov_packing_charge + trans.ov_duties + trans.ov_service_charge + trans.ov_commission) AS Rb ,,		
+		Sum(line.quantity-line.qty_done) AS Outstanding
+		FROM 0_debtor_trans as trans
+			LEFT JOIN 0_debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,0_debtors_master as debtor, 0_cust_branch as branch
+		WHERE debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-07-01'
+			AND trans.tran_date <= '2015-07-31'
+			AND trans.type=10
+			AND trans.branch_code = branch.branch_code GROUP BY trans.trans_no, trans.type<br><br><br>
+[30-Jul-2015 08:50:46 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\reporting\rep901.php:118:<br>oops<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freig' at line 15<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date,
+		debtor.curr_code,	
+		debtor.name,
+		(trans.ov_amount + trans.ov_gst + trans.ov_freight 
+			+ trans.ov_freight_tax + trans.ov_discount
+			+ trans.ov_freight_charge + trans.ov_insurance
+			+ trans.ov_packing_charge + trans.ov_duties 
+			+ trans.ov_service_charge + trans.ov_commission
+			)	AS TotalAmount@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freight_tax + trans.ov_discount + trans.ov_freight_charge + trans.ov_insurance + trans.ov_packing_charge + trans.ov_duties + trans.ov_service_charge + trans.ov_commission) AS Rb ,,		
+		Sum(line.quantity-line.qty_done) AS Outstanding
+		FROM 0_debtor_trans as trans
+			LEFT JOIN 0_debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,0_debtors_master as debtor, 0_cust_branch as branch
+		WHERE debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-07-01'
+			AND trans.tran_date <= '2015-07-31'
+			AND trans.type=10
+			AND trans.branch_code = branch.branch_code GROUP BY trans.trans_no, trans.type<br><br><br>
+[30-Jul-2015 08:51:02 Asia/Dubai] 0:admin:ui_msgs.inc:19: trigger_error() expects parameter 1 to be string, resource given
+[30-Jul-2015 08:52:09 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\reporting\rep901.php:118:<br>oops<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '		
+		Sum(line.quantity-line.qty_done) AS Outstanding
+		FROM 0_debtor_trans as ' at line 15<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date,
+		debtor.curr_code,	
+		debtor.name,
+		(trans.ov_amount + trans.ov_gst + trans.ov_freight 
+			+ trans.ov_freight_tax + trans.ov_discount
+			+ trans.ov_freight_charge + trans.ov_insurance
+			+ trans.ov_packing_charge + trans.ov_duties 
+			+ trans.ov_service_charge + trans.ov_commission
+			)	AS TotalAmount,@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freight_tax + trans.ov_discount + trans.ov_freight_charge + trans.ov_insurance + trans.ov_packing_charge + trans.ov_duties + trans.ov_service_charge + trans.ov_commission) AS Rb, ,		
+		Sum(line.quantity-line.qty_done) AS Outstanding
+		FROM 0_debtor_trans as trans
+			LEFT JOIN 0_debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,0_debtors_master as debtor, 0_cust_branch as branch
+		WHERE debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-07-01'
+			AND trans.tran_date <= '2015-07-31'
+			AND trans.type=10
+			AND trans.branch_code = branch.branch_code GROUP BY trans.trans_no, trans.type<br><br><br>
+[30-Jul-2015 08:52:21 Asia/Dubai] <b>DATABASE ERROR :</b> <br>At file C:\wamp\www\fairwaysuae\reporting\rep901.php:118:<br>oops<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freig' at line 15<br>sql that failed was : SELECT 
+  		trans.type, 
+		trans.trans_no, 
+		trans.order_, 
+		trans.reference,
+		trans.tran_date, 
+		trans.due_date,
+		debtor.curr_code,	
+		debtor.name,
+		(trans.ov_amount + trans.ov_gst + trans.ov_freight 
+			+ trans.ov_freight_tax + trans.ov_discount
+			+ trans.ov_freight_charge + trans.ov_insurance
+			+ trans.ov_packing_charge + trans.ov_duties 
+			+ trans.ov_service_charge + trans.ov_commission
+			)	AS TotalAmount@bal := @bal+(trans.ov_amount + trans.ov_gst + trans.ov_freight + trans.ov_freight_tax + trans.ov_discount + trans.ov_freight_charge + trans.ov_insurance + trans.ov_packing_charge + trans.ov_duties + trans.ov_service_charge + trans.ov_commission) AS Rb ,		
+		Sum(line.quantity-line.qty_done) AS Outstanding
+		FROM 0_debtor_trans as trans
+			LEFT JOIN 0_debtor_trans_details as line
+				ON trans.trans_no=line.debtor_trans_no AND trans.type=line.debtor_trans_type,0_debtors_master as debtor, 0_cust_branch as branch
+		WHERE debtor.debtor_no = trans.debtor_no
+			AND trans.tran_date >= '2015-07-01'
+			AND trans.tran_date <= '2015-07-31'
+			AND trans.type=10
+			AND trans.branch_code = branch.branch_code GROUP BY trans.trans_no, trans.type<br><br><br>
+[30-Jul-2015 08:53:37 Asia/Dubai] 0:admin:connect_db.inc:98: mysql_fetch_array() expects parameter 1 to be resource, string given
+[30-Jul-2015 08:54:17 Asia/Dubai] 0:admin:connect_db.inc:98: mysql_fetch_array() expects parameter 1 to be resource, string given
+[30-Jul-2015 08:54:44 Asia/Dubai] 0:admin:ui_msgs.inc:19: trigger_error() expects parameter 1 to be string, resource given
+[30-Jul-2015 08:58:14 Asia/Dubai] 0:admin:ui_msgs.inc:19: trigger_error() expects parameter 1 to be string, resource given
+[30-Jul-2015 08:58:20 Asia/Dubai] 0:admin:ui_msgs.inc:19: trigger_error() expects parameter 1 to be string, resource given
+[30-Jul-2015 09:44:45 Asia/Dubai] 0:admin:connect_db.inc:98: mysql_fetch_array() expects parameter 1 to be resource, boolean given
+[30-Jul-2015 09:51:36 Asia/Dubai] 0:admin:connect_db.inc:98: mysql_fetch_array() expects parameter 1 to be resource, boolean given
+[30-Jul-2015 10:10:26 Asia/Dubai] 0:admin:connect_db.inc:98: mysql_fetch_array() expects parameter 1 to be resource, boolean given

@@ -11,7 +11,7 @@
 ***********************************************************************/
 
 // Standard report classess
-define('RC_CUSTOMER', 0);
+define('RC_CUSTOMER',0 );
 define('RC_SUPPLIER', 1);
 define('RC_INVENTORY', 2);
 define('RC_MANUFACTURE', 3);
@@ -19,6 +19,8 @@ define('RC_DIMENSIONS', 4);
 define('RC_BANKING', 5);
 define('RC_GL', 6);
 define('RC_POS', 7);
+define('RC_SALES', 10);
+define('RC_PURCHASE', 11);
 
 
 class BoxReports
@@ -228,6 +230,10 @@ class BoxReports
 
 				case 'YES_NO':
 					return yesno_list($name);
+					
+				case 'HIDDEN':
+				$st = "<input type='hidden' name='$name' value='1'>";
+				return $st;break;
 
 				case 'PAYMENT_LINK':
 					return payment_services($name, null);

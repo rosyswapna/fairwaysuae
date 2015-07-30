@@ -144,6 +144,16 @@ $reports->addReport(RC_CUSTOMER, 112, _('Print Receipts'),
 			_('Currency Filter') => 'CURRENCY',
 			_('Comments') => 'TEXTBOX',
 			_('Orientation') => 'ORIENTATION'));
+			
+$reports->addReportClass(_('Sales'), RC_SALES);
+$reports->addReport(RC_SALES, 901, _('Sale Report'),
+	array(	_('Start Date') => 'DATEBEGINM',
+			_('End Date') => 'DATEENDM',
+			_('')=> 'HIDDEN',
+			_('Pos')=> 'POS',			
+			_('Orientation') => 'ORIENTATION',
+			_('Destination') => 'DESTINATION'));
+			
 
 $reports->addReportClass(_('Supplier'), RC_SUPPLIER);
 $reports->addReport(RC_SUPPLIER, 201, _('Supplier &Balances'),
@@ -201,6 +211,17 @@ $reports->addReport(RC_SUPPLIER, 210, _('Print Remittances'),
 			_('Email Suppliers') => 'YES_NO',
 			_('Comments') => 'TEXTBOX',
 			_('Orientation') => 'ORIENTATION'));
+			
+$reports->addReportClass(_('Purchase'), RC_PURCHASE);
+$reports->addReport(RC_PURCHASE, 902, _('Purchase Report'),
+	array(	_('Start Date') => 'DATEBEGINM',
+			_('End Date') => 'DATEENDM',	
+		//	_('Suppliers')=>'SUPPLIERS',
+			_('Pos')=> 'POS',
+		//	_('Comments') => 'TEXTBOX',
+			_('Orientation') => 'ORIENTATION',
+			_('Destination') => 'DESTINATION'));
+			
 
 $reports->addReportClass(_('Inventory'), RC_INVENTORY);
 $reports->addReport(RC_INVENTORY,  301, _('Inventory &Valuation Report'),
@@ -572,6 +593,8 @@ $reports->addReport(RC_POS, 801, _('Pos Sale Summary Report'),
 			_('Comments') => 'TEXTBOX',
 			_('Orientation') => 'ORIENTATION',
 			_('Destination') => 'DESTINATION'));
+			
+
 
 add_custom_reports($reports);
 
