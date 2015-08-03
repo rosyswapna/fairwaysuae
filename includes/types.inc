@@ -84,6 +84,8 @@ include_once($path_to_root . "/manufacturing/includes/manufacturing_db.inc");
 include_once($path_to_root . "/purchasing/includes/purchasing_db.inc");
 include_once($path_to_root . "/sales/includes/sales_db.inc");
 include_once($path_to_root . "/dimensions/includes/dimensions_db.inc");
+
+include_once($path_to_root . "/modules/payroll/includes/payroll_db.inc");
 //----------------------------------------------------------------------------------
 //	Payment types
 //
@@ -133,7 +135,8 @@ function payment_person_name($type, $person_id, $full=true) {
 		case PT_SUPPLIER :
 			return ($full ? $payment_person_types[$type] . " ":"") . get_supplier_name($person_id);
 		case PT_EMPLOYEE :
-			return ($full ?$payment_person_types[$type] . " ":"") . get_customer_name($person_id);
+			return ($full ?$payment_person_types[$type] . " ":"") . get_employee_name($person_id);
+			
 		default :
 			//DisplayDBerror("Invalid type sent to person_name");
 			//return;

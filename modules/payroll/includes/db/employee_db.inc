@@ -84,6 +84,20 @@ function get_employee($employee_id)
 	return db_fetch($result);
 }
 
+
+function get_employee_name($customer_id)
+{
+	$sql = "SELECT CONCAT(emp_first_name,' ', emp_last_name) as name FROM ".TB_PREF."employees WHERE emp_id=".db_escape($customer_id);
+
+	$result = db_query($sql, "could not get employee");
+
+	$row = db_fetch_row($result);
+
+	return $row[0];
+
+}
+
+
 //--------------------------------------------------------------------------------------------
 function db_has_employees()
 {
