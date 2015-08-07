@@ -32,6 +32,7 @@ ALTER TABLE `0_supp_trans`  ADD `ov_freight_charge` DOUBLE NOT NULL DEFAULT '0' 
 
 ---- 07 august 2015---------------------------
 ALTER TABLE `0_users`  ADD `salesman` INT(11) NOT NULL,  ADD INDEX (`salesman`);
+ALTER TABLE `0_sales_orders`  ADD `salesman` INT(11) NOT NULL,  ADD INDEX (`salesman`) ;
 
 
 

@@ -97,6 +97,8 @@ if (isset($_GET['NewDelivery']) && is_numeric($_GET['NewDelivery'])) {
 page($_SESSION['page_title'], false, false, "", $js);
 //-----------------------------------------------------------------------------
 
+
+
 unset($_SESSION['autofill_li']);
 
 if(get_post('autofill_search')){

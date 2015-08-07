@@ -35,6 +35,8 @@ class user_prefs
 	var $graphic_links; // use graphic links
 	var $sticky_date;	// save date on subsequent document entry
 	var $startup_tab;  // default start-up menu tab
+
+	var $salesman;
 	
 	function user_prefs($user=null)
 	{
@@ -68,6 +70,9 @@ class user_prefs
 			$this->dec_sep = $user["dec_sep"];
 			$this->theme = $user["theme"];
 			$this->pagesize = $user["page_size"];
+
+			$this->salesman = $user["salesman"];
+
 			$this->show_hints = $user["show_hints"];
 			$this->print_profile = $user["print_profile"];
 			$this->rep_popup = $user["rep_popup"];
@@ -229,6 +234,11 @@ class user_prefs
 	function start_up_tab()
 	{
 		return $this->startup_tab;
+	}
+
+	function salesman()
+	{
+		return $this->salesman;
 	}
 
 	function set_dec($price_dec, $qty_dec, $exrate_dec, $percent_dec, $showgl, $showcodes) 
