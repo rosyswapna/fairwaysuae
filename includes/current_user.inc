@@ -532,6 +532,12 @@ function user_startup_tab()
 	return $_SESSION["wa_current_user"]->prefs->start_up_tab();
 }
 
+function user_salesman()
+{
+	return $_SESSION["wa_current_user"]->prefs->salesman();
+}
+
+
 function set_user_prefs($prefs)
 {
 	$_SESSION["wa_current_user"]->update_prefs($prefs);
