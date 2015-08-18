@@ -55,7 +55,7 @@ function print_sales_report()
 
 	$cols = array(2, 40, 130, 230,	330,  390, 460,510);
 
-	$headers = array(_('Id'), _('Reference'), _('Date'), _('Customer '), _('Currency'), _('Balance'));
+	$headers = array(_('Id'), _('Reference'), _('Date'), _('Customer '), _('Currency'),_('Amount') ,_('Balance'));
 
 	
 	$aligns = array('left',	'left',	'left',	'left',	'right', 'right', 'right', 'right');
@@ -82,7 +82,8 @@ function print_sales_report()
 		$rep->TextCol(2, 3, $trans['tran_date']);
 		$rep->TextCol(3, 4, $trans['name']);
 		$rep->TextCol(4, 5, $trans['curr_code']);
-		$rep->TextCol(5, 6, $trans['Rb']);
+		$rep->TextCol(5,6,$trans['TotalAmount']);
+		$rep->TextCol(6, 7, $trans['Rb']);
 	}
 	
 		$rep->End();

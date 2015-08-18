@@ -175,7 +175,7 @@ function print_inventory_valuation_report()
     				    2 => array('text' => _('Category'), 'from' => $cat, 'to' => ''),
     				    3 => array('text' => _('Location'), 'from' => $loc, 'to' => ''));
 
-    $rep = new FrontReport(_('Inventory Valuation Report'), "InventoryValReport", user_pagesize(), 9, $orientation);
+    $rep = new FrontReport(_('Inventory Valuation Report'), "InventoryStockValReport", user_pagesize(), 9, $orientation);
     if ($orientation == 'L')
     	recalculate_cols($cols);
     $rep->Font();

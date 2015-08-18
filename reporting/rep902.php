@@ -143,7 +143,7 @@ function print_purchase_report()
 
 	$cols = array(2, 40, 130, 190,	380,  450, 500);
 
-	$headers = array(_('Id'), _('Reference'), _('Date'), _('Supplier '), _('Currency'), _('Debit'));
+	$headers = array(_('Id'), _('Reference'), _('Date'), _('Supplier '), _('Currency'), _('Amount'));
 
 	
 	$aligns = array('left',	'left',	'left',	'left',	'left', 'right', 'right', 'right');
