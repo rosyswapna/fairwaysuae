@@ -42,8 +42,9 @@ function print_sales_report()
     	$from = $_POST['PARAM_0'];
     	$to = $_POST['PARAM_1'];
     	$hidden = $_POST['PARAM_2'];	
-		$orientation = $_POST['PARAM_7'];
-		$destination = $_POST['PARAM_8'];
+    	$pos = $_POST['PARAM_3'];	
+		$orientation = $_POST['PARAM_4'];
+		$destination = $_POST['PARAM_5'];
 	
 	if ($destination)
 		include_once($path_to_root . "/reporting/includes/excel_report.inc");
@@ -53,7 +54,7 @@ function print_sales_report()
 	$orientation = ($orientation ? 'L' : 'P');
 	
 
-	$cols = array(2, 40, 130, 230,	330,  390, 460,510);
+	$cols = array(2, 40, 130, 230,	300,  350, 430,510);
 
 	$headers = array(_('Id'), _('Reference'), _('Date'), _('Customer '), _('Currency'),_('Amount') ,_('Balance'));
 
@@ -68,7 +69,7 @@ function print_sales_report()
     $rep->Font();
     $rep->Info($params, $cols, $headers, $aligns);
     $rep->NewPage();
-
+	$dec = user_price_dec();
 	$res=get_sql_for_customer_inquiry();
 	
 	$qr=db_query($res);
@@ -79,11 +80,11 @@ function print_sales_report()
 		$rep->NewLine(2);
 		$rep->TextCol(0, 1, $trans['trans_no']);
 		$rep->TextCol(1, 2, $trans['reference']);
-		$rep->TextCol(2, 3, $trans['tran_date']);
+		$rep->TextCol(2, 3, sql2date($trans['tran_date']));
 		$rep->TextCol(3, 4, $trans['name']);
 		$rep->TextCol(4, 5, $trans['curr_code']);
-		$rep->TextCol(5,6,$trans['TotalAmount']);
-		$rep->TextCol(6, 7, $trans['Rb']);
+		$rep->AmountCol(5,6,$trans['TotalAmount'],$dec);
+		$rep->AmountCol(6, 7, $trans['Rb'],$dec);
 	}
 	
 		$rep->End();

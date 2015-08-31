@@ -141,7 +141,7 @@ function print_purchase_report()
 	$orientation = ($orientation ? 'L' : 'P');
 	
 
-	$cols = array(2, 40, 130, 190,	380,  450, 500);
+	$cols = array(2, 40, 130, 190,	380,  450, 520);
 
 	$headers = array(_('Id'), _('Reference'), _('Date'), _('Supplier '), _('Currency'), _('Amount'));
 
@@ -156,7 +156,8 @@ function print_purchase_report()
     $rep->Font();
     $rep->Info($params, $cols, $headers, $aligns);
     $rep->NewPage();
-
+	
+	$dec = user_price_dec();
 	$res=get_sql_purchase_inquiry($from,$to);
 	//display_notification($res);exit;
 	
@@ -166,10 +167,10 @@ function print_purchase_report()
 		$rep->NewLine(2);
 		$rep->TextCol(0, 1, $trans['trans_no']);
 		$rep->TextCol(1, 2, $trans['reference']);
-		$rep->TextCol(2, 3, $trans['tran_date']);
+		$rep->TextCol(2, 3, sql2date($trans['tran_date']));
 		$rep->TextCol(3, 4, $trans['supp_name']);
 		$rep->TextCol(4, 5, $trans['curr_code']);
-		$rep->TextCol(5, 6, $trans['TotalAmount']);
+		$rep->AmountCol(5, 6, $trans['TotalAmount'],$dec);
 	}
 	
 		$rep->End();

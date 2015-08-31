@@ -149,7 +149,7 @@ $reports->addReportClass(_('Sales'), RC_SALES);
 $reports->addReport(RC_SALES, 901, _('Sale Report'),
 	array(	_('Start Date') => 'DATEBEGINM',
 			_('End Date') => 'DATEENDM',
-			_('')=> 'HIDDEN',
+			_('Sales Report')=> 'HIDDEN',
 			_('Pos')=> 'POS',			
 			_('Orientation') => 'ORIENTATION',
 			_('Destination') => 'DESTINATION'));
