@@ -150,7 +150,7 @@ $reports->addReport(RC_SALES, 901, _('Sale Report'),
 	array(	_('Start Date') => 'DATEBEGINM',
 			_('End Date') => 'DATEENDM',
 			_('Sales Report')=> 'HIDDEN',
-			_('Salesman')=> 'SALESMEN',			
+			//_('Salesman')=> 'SALESMEN',			
 			_('Orientation') => 'ORIENTATION',
 			_('Destination') => 'DESTINATION'));
 			

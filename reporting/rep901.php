@@ -42,9 +42,9 @@ function print_sales_report()
     	$from = $_POST['PARAM_0'];
     	$to = $_POST['PARAM_1'];
     	$hidden = $_POST['PARAM_2'];	
-    	$pos = $_POST['PARAM_3'];	
-		$orientation = $_POST['PARAM_4'];
-		$destination = $_POST['PARAM_5'];
+    	//$pos = $_POST['PARAM_3'];	
+		$orientation = $_POST['PARAM_3'];
+		$destination = $_POST['PARAM_4'];
 	
 	if ($destination)
 		include_once($path_to_root . "/reporting/includes/excel_report.inc");
