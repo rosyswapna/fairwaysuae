@@ -36,13 +36,13 @@ function get_open_balance($debtorno, $to)
 		$to = date2sql($to);
 
     $sql = "SELECT SUM(IF(t.type = ".ST_SALESINVOICE." OR t.type = ".ST_BANKPAYMENT.",
-    	(t.ov_amount + t.ov_gst + t.ov_freight + t.ov_freight_tax + t.ov_discount), 0)) AS charges,
+    	(t.ov_amount + t.ov_gst + t.ov_freight + t.ov_freight_tax + t.ov_discount+ t.ov_freight_charge + t.ov_insurance + t.ov_packing_charge + t.ov_duties + t.ov_service_charge + t.ov_commission), 0)) AS charges,
     	SUM(IF(t.type <> ".ST_SALESINVOICE." AND t.type <> ".ST_BANKPAYMENT.",
-	    	(t.ov_amount + t.ov_gst + t.ov_freight + t.ov_freight_tax + t.ov_discount) * -1, 0)) AS credits,
+	    	(t.ov_amount + t.ov_gst + t.ov_freight + t.ov_freight_tax + t.ov_discount + t.ov_freight_charge + t.ov_insurance + t.ov_packing_charge + t.ov_duties + t.ov_service_charge + t.ov_commission) * -1, 0)) AS credits,
 		SUM(t.alloc) AS Allocated,
 		SUM(IF(t.type = ".ST_SALESINVOICE." OR t.type = ".ST_BANKPAYMENT.",
 			(t.ov_amount + t.ov_gst + t.ov_freight + t.ov_freight_tax + t.ov_discount - t.alloc),
-	    	((t.ov_amount + t.ov_gst + t.ov_freight + t.ov_freight_tax + t.ov_discount) * -1 + t.alloc))) AS OutStanding
+	    	((t.ov_amount + t.ov_gst + t.ov_freight + t.ov_freight_tax + t.ov_discount + t.ov_freight_charge + t.ov_insurance + t.ov_packing_charge + t.ov_duties + t.ov_service_charge + t.ov_commission) * -1 + t.alloc))) AS OutStanding
 		FROM ".TB_PREF."debtor_trans t
     	WHERE t.debtor_no = ".db_escape($debtorno)
 		." AND t.type <> ".ST_CUSTDELIVERY;
@@ -61,7 +61,7 @@ function get_transactions($debtorno, $from, $to)
 
     $sql = "SELECT ".TB_PREF."debtor_trans.*,
 		(".TB_PREF."debtor_trans.ov_amount + ".TB_PREF."debtor_trans.ov_gst + ".TB_PREF."debtor_trans.ov_freight + 
-		".TB_PREF."debtor_trans.ov_freight_tax + ".TB_PREF."debtor_trans.ov_discount)
+		".TB_PREF."debtor_trans.ov_freight_tax + ".TB_PREF."debtor_trans.ov_discount + ".TB_PREF."debtor_trans.ov_freight_charge + ".TB_PREF."debtor_trans.ov_insurance + ".TB_PREF."debtor_trans.ov_packing_charge + ".TB_PREF."debtor_trans.ov_duties + ".TB_PREF."debtor_trans.ov_service_charge + ".TB_PREF."debtor_trans.ov_commission)
 		AS TotalAmount, ".TB_PREF."debtor_trans.alloc AS Allocated,
 		((".TB_PREF."debtor_trans.type = ".ST_SALESINVOICE.")
 		AND ".TB_PREF."debtor_trans.due_date < '$to') AS OverDue
@@ -71,6 +71,8 @@ function get_transactions($debtorno, $from, $to)
 		AND ".TB_PREF."debtor_trans.debtor_no = ".db_escape($debtorno)."
 		AND ".TB_PREF."debtor_trans.type <> ".ST_CUSTDELIVERY."
     	ORDER BY ".TB_PREF."debtor_trans.tran_date";
+
+	display_notification($sql);exit;
 
     return db_query($sql,"No transactions were returned");
 }
