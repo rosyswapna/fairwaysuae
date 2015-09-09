@@ -43,7 +43,7 @@ function GetSalesmanTrans($from, $to)
 			".TB_PREF."salesman
 		WHERE ".TB_PREF."sales_orders.order_no=".TB_PREF."debtor_trans.order_
 		    AND ".TB_PREF."sales_orders.branch_code=".TB_PREF."cust_branch.branch_code
-		    AND ".TB_PREF."cust_branch.salesman=".TB_PREF."salesman.salesman_code
+		    AND ".TB_PREF."sales_orders.salesman=".TB_PREF."salesman.salesman_code
 		    AND ".TB_PREF."debtor_trans.debtor_no=".TB_PREF."debtors_master.debtor_no
 		    AND (".TB_PREF."debtor_trans.type=".ST_SALESINVOICE." OR ".TB_PREF."debtor_trans.type=".ST_CUSTCREDIT.")
 		    AND ".TB_PREF."debtor_trans.tran_date>='$fromdate'
