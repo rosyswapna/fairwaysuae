@@ -72,7 +72,7 @@ function get_transactions($debtorno, $from, $to)
 		AND ".TB_PREF."debtor_trans.type <> ".ST_CUSTDELIVERY."
     	ORDER BY ".TB_PREF."debtor_trans.tran_date";
 
-	display_notification($sql);exit;
+	//display_notification($sql);exit;
 
     return db_query($sql,"No transactions were returned");
 }
