@@ -73,10 +73,10 @@ function print_sales_report()
 	$res=get_sql_for_customer_inquiry();
 	
 	$qr=db_query($res);
-	
+	$rb=0;
 	while ($trans=db_fetch($qr))
 	{
-		
+		$rb += $trans['TotalAmount'];
 		$rep->NewLine(2);
 		$rep->TextCol(0, 1, $trans['trans_no']);
 		$rep->TextCol(1, 2, $trans['reference']);
@@ -84,7 +84,8 @@ function print_sales_report()
 		$rep->TextCol(3, 4, $trans['name']);
 		$rep->TextCol(4, 5, $trans['curr_code']);
 		$rep->AmountCol(5,6,$trans['TotalAmount'],$dec);
-		$rep->AmountCol(6, 7, $trans['Rb'],$dec);
+		//$rep->AmountCol(6, 7, $trans['Rb'],$dec);
+		$rep->AmountCol(6, 7, $rb,$dec);
 	}
 	
 		$rep->End();
