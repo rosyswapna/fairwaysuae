@@ -186,12 +186,12 @@ function check_inputs()
 		set_focus('DatePaid');
 		return false;
 	} 
-	elseif (!is_date_in_fiscalyear($_POST['DatePaid'])) 
+/*	elseif (!is_date_in_fiscalyear($_POST['DatePaid'])) 
 	{
 		display_error(_("The entered date is out of fiscal year or is closed for further data entry."));
 		set_focus('DatePaid');
 		return false;
-	}
+	} */
 
 	$limit = get_bank_account_limit($_POST['bank_account'], $_POST['DatePaid']);
 
