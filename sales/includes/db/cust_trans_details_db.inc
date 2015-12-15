@@ -18,7 +18,7 @@ if (!is_array($debtor_trans_no))
 
 	$sql = "SELECT ".TB_PREF."debtor_trans_details.*,
 		".TB_PREF."debtor_trans_details.unit_price+".TB_PREF."debtor_trans_details.unit_tax AS FullUnitPrice,
-		".TB_PREF."debtor_trans_details.description As StockDescription,
+		".TB_PREF."debtor_trans_details.description As StockDescription,".TB_PREF."debtor_trans_details.stock_id As stk_code,
 		".TB_PREF."stock_master.units, ".TB_PREF."stock_master.mb_flag
 		FROM ".TB_PREF."debtor_trans_details, ".TB_PREF."stock_master
 		WHERE (";
