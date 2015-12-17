@@ -132,6 +132,7 @@ function print_deliveries()
 				if ($Net != 0.0  || !is_service($myrow2['mb_flag']) || !isset($no_zero_lines_amount) || $no_zero_lines_amount == 0)
 				{			
 					$rep->TextCol(3, 4,	$DisplayQty, -2);
+					$tot_Quantity += $DisplayQty;
 					$rep->TextCol(4, 5,	$myrow2['units'], -2);
 					if ($packing_slip == 0)
 					{
@@ -157,10 +158,13 @@ function print_deliveries()
    			$DisplaySubTot = number_format2($SubTotal,$dec);
    			$DisplayFreight = number_format2($myrow["ov_freight"],$dec);
 
-    		$rep->row = $rep->bottomMargin + (15 * $rep->lineHeight);
+    		$rep->row = $rep->bottomMargin + (13 * $rep->lineHeight);
 			$doctype=ST_CUSTDELIVERY;
 			if ($packing_slip == 0)
 			{
+				$rep->TextCol(3, 6, _("Toatal Quantity"), -2);
+				$rep->TextCol(7, 8,	$tot_Quantity, -2);
+				$rep->NewLine();
 				$rep->TextCol(3, 6, _("Sub-total"), -2);
 				$rep->TextCol(7, 8,	$DisplaySubTot, -2);
 				$rep->NewLine();
