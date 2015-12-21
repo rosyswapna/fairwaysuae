@@ -123,6 +123,7 @@ function print_sales_quotations()
 				$rep->TextCol(4, 5,	$myrow2['units'], -2);
 				$rep->TextCol(5, 6,	$DisplayPrice, -2);
 				$rep->TextCol(6, 7,	$DisplayDiscount, -2);
+				$tot_Disc += $DisplayDiscount;
 				$rep->TextCol(7, 8,	$DisplayNet, -2);
 			}	
 			$rep->row = $newrow;
@@ -152,7 +153,7 @@ function print_sales_quotations()
 		$DisplaySubTot = number_format2($SubTotal,$dec);
 		$DisplayFreight = number_format2($myrow["freight_cost"],$dec);
 
-		$rep->row = $rep->bottomMargin + (15 * $rep->lineHeight);
+		$rep->row = $rep->bottomMargin + (13 * $rep->lineHeight);
 		$doctype = ST_SALESQUOTE;
 
 		$rep->TextCol(3, 6, _("Sub-total"), -2);
@@ -160,6 +161,9 @@ function print_sales_quotations()
 		$rep->NewLine();
 		$rep->TextCol(3, 6, _("Shipping"), -2);
 		$rep->TextCol(7, 8,	$DisplayFreight, -2);
+		$rep->NewLine();
+		$rep->TextCol(3, 6, _("Total Discount"), -2);
+		$rep->TextCol(7, 8,	$tot_Disc."%", -2);
 		$rep->NewLine();
 
 		$DisplayTotal = number_format2($myrow["freight_cost"] + $SubTotal, $dec);

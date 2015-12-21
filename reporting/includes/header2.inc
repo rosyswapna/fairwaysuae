@@ -67,9 +67,10 @@
 		// Company Logo
 		$this->NewLine();
 		$logo = company_path() . "/images/" . $this->company['coy_logo'];
-		if ($this->company['coy_logo'] != '' && file_exists($logo))
+	/*	if ($this->company['coy_logo'] != '' && file_exists($logo))
 		{
-			$this->AddImage($logo, $ccol, $this->row, 0, 40);
+			$logo_col=$c2col+150;
+			$this->AddImage($logo, $logo_col, $this->row, 0, 40);
 		}
 		else
 		{
@@ -78,7 +79,7 @@
 			$this->Text($ccol, $this->company['coy_name'], $icol);
 			$this->Font();
 			$this->fontSize -= 4;
-		}
+		}*/
 		// Document title
 		$this->SetTextColor(190, 190, 190);
 		$this->fontSize += 10;
@@ -117,6 +118,22 @@
 
 			$this->NewLine();
 		}
+		//===========================================================================================>logo
+		if ($this->company['coy_logo'] != '' && file_exists($logo))
+		{
+			$logo_col=$c2col+150;
+			$this->AddImage($logo, $logo_col, $this->row, 0, 40);
+		}
+		else
+		{
+			$this->fontSize += 4;
+			$this->Font('bold');
+			$this->Text($ccol, $this->company['coy_name'], $icol);
+			$this->Font();
+			$this->fontSize -= 4;
+		}
+		//============================================================================================
+		
 		if (@$this->company['gst_no'])
 		{
 			$this->Text($ccol, _("Our VAT No."), $c2col);
@@ -207,7 +224,8 @@
 			$this->row -= $this->lineHeight;
 
 		}
-
+		$this->NewLine(2);
+		$this->Text($ccol + 350,_('For, ')."".$this->company['coy_name']);
 		$this->Font();
 		$temp = $iline6 - $this->lineHeight - 2;
 ?>
