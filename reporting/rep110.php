@@ -55,10 +55,10 @@ function print_deliveries()
 	$from = min($fno[0], $tno[0]);
 	$to = max($fno[0], $tno[0]);
 
-	$cols = array(4, 35, 130, 300, 350, 385, 420, 460,550);
+	$cols = array(4, 35, 130, 330, 380, 450, 580);
 
 	// $headers in doctext.inc
-	$aligns = array('left',	'left',	'left', 'left', 'left', 'left', 'left','right');
+	$aligns = array('left',	'left',	'left', 'left', 'left', 'right');
 
 	$params = array('comments' => $comments);
 
@@ -136,10 +136,10 @@ function print_deliveries()
 					$rep->TextCol(4, 5,	$myrow2['units'], -2);
 					if ($packing_slip == 0)
 					{
-						$rep->TextCol(5, 6,	$DisplayPrice, -2);
+					//	$rep->TextCol(5, 6,	$DisplayPrice, -2);
 						//$rep->TextCol(5, 6,	$DisplayDiscount, -2);
-						$rep->TextCol(6, 7,	$DisplayDiscountAmt, -2);
-						$rep->TextCol(7, 8,	$DisplayNet, -2);
+					//	$rep->TextCol(6, 7,	$DisplayDiscountAmt, -2);
+						$rep->TextCol(5, 6,	$DisplayNet, -2);
 					}
 				}	
 				$rep->row = $newrow;
@@ -163,13 +163,13 @@ function print_deliveries()
 			if ($packing_slip == 0)
 			{
 				$rep->TextCol(3, 6, _("Toatal Quantity"), -2);
-				$rep->TextCol(7, 8,	$tot_Quantity, -2);
+				$rep->TextCol(5, 6,	$tot_Quantity, -2);
 				$rep->NewLine();
 				$rep->TextCol(3, 6, _("Sub-total"), -2);
-				$rep->TextCol(7, 8,	$DisplaySubTot, -2);
+				$rep->TextCol(5, 6,	$DisplaySubTot, -2);
 				$rep->NewLine();
 				$rep->TextCol(3, 6, _("Shipping"), -2);
-				$rep->TextCol(7, 8,	$DisplayFreight, -2);
+				$rep->TextCol(5, 6,	$DisplayFreight, -2);
 				$rep->NewLine();
 				$tax_items = get_trans_tax_details(ST_CUSTDELIVERY, $i);
 				$first = true;
@@ -191,11 +191,11 @@ function print_deliveries()
     						if ($first)
     						{
 								$rep->TextCol(3, 6, _("Total Tax Excluded"), -2);
-								$rep->TextCol(7, 8,	number_format2($tax_item['net_amount'], $dec), -2);
+								$rep->TextCol(5, 6,	number_format2($tax_item['net_amount'], $dec), -2);
 								$rep->NewLine();
     						}
 							$rep->TextCol(3, 6, $tax_type_name, -2);
-							$rep->TextCol(7, 8,	$DisplayTax, -2);
+							$rep->TextCol(5, 6,	$DisplayTax, -2);
 							$first = false;
     					}
     					else
@@ -204,7 +204,7 @@ function print_deliveries()
     				else
     				{
 						$rep->TextCol(3, 6, $tax_type_name, -2);
-						$rep->TextCol(7, 8,	$DisplayTax, -2);
+						$rep->TextCol(5, 6,	$DisplayTax, -2);
 					}
 					$rep->NewLine();
     			}
@@ -213,7 +213,7 @@ function print_deliveries()
 					$myrow["ov_amount"],$dec);
 				$rep->Font('bold');
 				$rep->TextCol(3, 6, _("TOTAL DELIVERY INCL. VAT"), - 2);
-				$rep->TextCol(7, 8,	$DisplayTotal, -2);
+				$rep->TextCol(5, 6,	$DisplayTotal, -2);
 				$words = price_in_words($myrow['Total'], ST_CUSTDELIVERY);
 				if ($words != "")
 				{
